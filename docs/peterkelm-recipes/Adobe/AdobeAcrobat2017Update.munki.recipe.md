@@ -1,6 +1,6 @@
 # AdobeAcrobat2017Update.munki.recipe
 
-_Last updated 2021-12-23 19:43:34Z_
+_Last updated 2021-12-23 19:46:15Z_
 
 - **Description**: Download the latest version of Adobe Acrobat 2017 and imports it into Munki.
 

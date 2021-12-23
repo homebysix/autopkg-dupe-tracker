@@ -1,6 +1,6 @@
 # DeepL.munki.recipe
 
-_Last updated 2021-12-23 19:46:15Z_
+_Last updated 2021-12-23 19:49:47Z_
 
 - **Description**: Downloads the latest version of DeepL and imports it into Munki.
 

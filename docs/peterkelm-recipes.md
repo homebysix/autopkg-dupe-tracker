@@ -1,6 +1,6 @@
 # peterkelm-recipes
 
-_Last updated 2021-12-23 19:46:15Z_
+_Last updated 2021-12-23 19:49:47Z_
 - [Nextcloud/NextcloudDesktopClient.download.recipe](/docs/peterkelm-recipes/Nextcloud/NextcloudDesktopClient.download.recipe)
 - [Nextcloud/NextcloudDesktopClient.munki.recipe](/docs/peterkelm-recipes/Nextcloud/NextcloudDesktopClient.munki.recipe)
 - [Serif/AffinityPublisher.download.recipe](/docs/peterkelm-recipes/Serif/AffinityPublisher.download.recipe)

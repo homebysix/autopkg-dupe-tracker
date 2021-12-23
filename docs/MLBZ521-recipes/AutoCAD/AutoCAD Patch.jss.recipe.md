@@ -1,0 +1,13 @@
+# AutoCAD Patch.jss.recipe
+
+            _Last updated 2021-12-23 19:58:06Z_
+
+            - **Description**: Downloads and packages the latest patch of AutoCAD based supplied "major_version" and then uploads it to a JPS.
+
+The created Policy's name will be in the format of "AutoCAD %MAJOR_VERSION% Patch"
+
+major_version examples:  2020, 2019, 2018, etc
+
+            - **Identifier**: `com.github.mlbz521.jss.AutoCADPatch`
+
+            - **Parent Recipes**: `com.github.mlbz521.pkg.AutoCADPatch`

@@ -1,0 +1,9 @@
+# install4j.download.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of install4j.
+
+- **Identifier**: `com.github.ahousseini-recipes.download.install4j`
+
+- **Parent Recipes**: `None`

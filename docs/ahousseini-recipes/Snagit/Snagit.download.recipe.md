@@ -1,0 +1,9 @@
+# Snagit.download.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of Snagit.
+
+- **Identifier**: `com.github.ahousseini-recipes.download.Snagit`
+
+- **Parent Recipes**: `None`

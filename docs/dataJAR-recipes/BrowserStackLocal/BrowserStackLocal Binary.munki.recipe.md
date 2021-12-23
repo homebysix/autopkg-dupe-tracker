@@ -1,0 +1,9 @@
+# BrowserStackLocal Binary.munki.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of the BrowserStackLocal binary and creates a pkg, placing the binary at /usr/local/bin/BrowserStackLocal and imports into Munki.
+
+- **Identifier**: `com.github.dataJAR-recipes.munki.BrowserStackLocal Binary`
+
+- **Parent Recipes**: `com.github.dataJAR-recipes.pkg.BrowserStackLocal Binary`

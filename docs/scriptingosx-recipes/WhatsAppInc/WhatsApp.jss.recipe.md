@@ -1,0 +1,9 @@
+# WhatsApp.jss.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of WhatsApp and imports it into your JSS.
+
+- **Identifier**: `com.scriptingosx.jss.WhatsApp`
+
+- **Parent Recipes**: `com.scriptingosx.pkg.WhatsApp`

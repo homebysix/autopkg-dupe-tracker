@@ -1,0 +1,9 @@
+# NameChanger.pkg.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of NameChanger and creates a package.
+
+- **Identifier**: `com.github.homebysix.pkg.NameChanger`
+
+- **Parent Recipes**: `com.github.homebysix.download.NameChanger`

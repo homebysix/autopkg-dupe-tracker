@@ -1,12 +1,13 @@
 # NextcloudDesktopClient.download.recipe
 
-_Last updated 2021-12-23 19:54:13Z_
+_Last updated 2021-12-23 19:58:06Z_
 
 - **Description**: Downloads the latest version of Nextcloud Desktop Client.
 
 - **Identifier**: `com.github.peterkelm.download.nextcloud`
 
 - **Parent Recipes**: `None`
+
 ## Warnings
 
 - These recipes have duplicate NAMEs:

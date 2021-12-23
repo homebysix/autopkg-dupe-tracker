@@ -1,0 +1,9 @@
+# Leech.pkg.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of Leech and creates a package.
+
+- **Identifier**: `com.github.homebysix.pkg.Leech`
+
+- **Parent Recipes**: `com.github.homebysix.download.Leech`

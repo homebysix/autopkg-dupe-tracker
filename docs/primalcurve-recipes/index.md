@@ -1,0 +1,20 @@
+# primalcurve-recipes
+
+_Last updated 2021-12-23 19:58:06Z_
+- [OpenJDK15/OpenJDK15.download.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK15/OpenJDK15.download.recipe)
+- [OpenJDK15/OpenJDK15.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK15/OpenJDK15.pkg.recipe)
+- [ReadWrite7/ReadWrite7.licensed.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/ReadWrite7/ReadWrite7.licensed.pkg.recipe)
+- [SharedProcessors/SharedProcessors.recipe](/autopkg-dupe-tracker/primalcurve-recipes/SharedProcessors/SharedProcessors.recipe)
+- [HPPrinterDrivers/HPPrinterDrivers.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/HPPrinterDrivers/HPPrinterDrivers.pkg.recipe)
+- [MicrosoftSkype/Skype.published_version.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/MicrosoftSkype/Skype.published_version.pkg.recipe)
+- [Hudl/HudlSportscode.download.recipe](/autopkg-dupe-tracker/primalcurve-recipes/Hudl/HudlSportscode.download.recipe)
+- [Hudl/HudlSportscode.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/Hudl/HudlSportscode.pkg.recipe)
+- [Hudl/SportsCode.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/Hudl/SportsCode.pkg.recipe)
+- [Hudl/SportsCode.download.recipe](/autopkg-dupe-tracker/primalcurve-recipes/Hudl/SportsCode.download.recipe)
+- [OpenJDK16/OpenJDK16.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK16/OpenJDK16.pkg.recipe)
+- [OpenJDK16/OpenJDK16.download.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK16/OpenJDK16.download.recipe)
+- [OpenJDK17/OpenJDK17.arm64.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK17/OpenJDK17.arm64.pkg.recipe)
+- [OpenJDK17/OpenJDK17.download.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK17/OpenJDK17.download.recipe)
+- [OpenJDK17/OpenJDK17.arm64.download.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK17/OpenJDK17.arm64.download.recipe)
+- [OpenJDK17/OpenJDK17.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/OpenJDK17/OpenJDK17.pkg.recipe)
+- [MicrosoftTeams/MicrosoftTeams.published_version.pkg.recipe](/autopkg-dupe-tracker/primalcurve-recipes/MicrosoftTeams/MicrosoftTeams.published_version.pkg.recipe)

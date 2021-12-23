@@ -1,0 +1,9 @@
+# PingID.jss.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of PingID and imports it into your JSS.
+
+- **Identifier**: `com.github.jss-recipes.jss.PingID`
+
+- **Parent Recipes**: `com.rderewianko.pkg.PingID`

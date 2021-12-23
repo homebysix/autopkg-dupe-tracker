@@ -1,0 +1,9 @@
+# DattoDrive.install.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Installs the latest version of DattoDrive.
+
+- **Identifier**: `com.github.homebysix.install.DattoDrive`
+
+- **Parent Recipes**: `com.github.homebysix.download.DattoDrive`

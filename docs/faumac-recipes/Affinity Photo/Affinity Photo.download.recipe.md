@@ -1,12 +1,13 @@
 # Affinity Photo.download.recipe
 
-_Last updated 2021-12-23 19:54:13Z_
+_Last updated 2021-12-23 19:58:07Z_
 
 - **Description**: Downloads the current release version of Affintiy Photo.
 
 - **Identifier**: `com.github.faumac.download.AffinityPhoto`
 
 - **Parent Recipes**: `None`
+
 ## Warnings
 
 - These recipes have duplicate filenames:

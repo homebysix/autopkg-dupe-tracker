@@ -1,0 +1,23 @@
+# typora.pkg.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Create a package from the Typora download
+
+- **Identifier**: `com.github.andrewvalentine.pkg.typora`
+
+- **Parent Recipes**: `com.github.andrewvalentine.download.typora`
+
+## Warnings
+
+- These recipes have duplicate filenames:
+    - [faumac-recipes/Typora/Typora.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Typora/Typora.pkg.recipe)
+    - [andrewvalentine-recipes/typora/typora.pkg.recipe](/autopkg-dupe-tracker/andrewvalentine-recipes/typora/typora.pkg.recipe)
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [faumac-recipes/Typora/Typora.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Typora/Typora.pkg.recipe)
+    - [andrewvalentine-recipes/typora/typora.pkg.recipe](/autopkg-dupe-tracker/andrewvalentine-recipes/typora/typora.pkg.recipe)
+
+- These recipes have duplicate NAMEs:
+    - [faumac-recipes/Typora/Typora.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Typora/Typora.pkg.recipe)
+    - [andrewvalentine-recipes/typora/typora.pkg.recipe](/autopkg-dupe-tracker/andrewvalentine-recipes/typora/typora.pkg.recipe)

@@ -1,0 +1,28 @@
+# MakerBotPrint.download.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest verison of MakerBot Print
+
+- **Identifier**: `com.github.dataJAR-recipes.download.MakerBotPrint`
+
+- **Parent Recipes**: `None`
+
+## Warnings
+
+- These recipes have duplicate filenames:
+    - [dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe](/autopkg-dupe-tracker/dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe)
+    - [hansen-m-recipes/MakerBot/MakerBotPrint.download.recipe](/autopkg-dupe-tracker/hansen-m-recipes/MakerBot/MakerBotPrint.download.recipe)
+
+- These recipes have duplicate URLDownloader URLs:
+    - [joshua-d-miller-recipes/MakerBot/MakerBot.download.recipe](/autopkg-dupe-tracker/joshua-d-miller-recipes/MakerBot/MakerBot.download.recipe)
+    - [dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe](/autopkg-dupe-tracker/dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe)
+    - [dataJAR-recipes/MakerBotPrint/MakerBotPrint.munki.recipe](/autopkg-dupe-tracker/dataJAR-recipes/MakerBotPrint/MakerBotPrint.munki.recipe)
+
+- These recipes have duplicate CURLDownloader URLs:
+    - [dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe](/autopkg-dupe-tracker/dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe)
+    - [dataJAR-recipes/MakerBotPrint/MakerBotPrint.munki.recipe](/autopkg-dupe-tracker/dataJAR-recipes/MakerBotPrint/MakerBotPrint.munki.recipe)
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe](/autopkg-dupe-tracker/dataJAR-recipes/MakerBotPrint/MakerBotPrint.download.recipe)
+    - [hansen-m-recipes/MakerBot/MakerBotPrint.download.recipe](/autopkg-dupe-tracker/hansen-m-recipes/MakerBot/MakerBotPrint.download.recipe)

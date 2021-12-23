@@ -1,0 +1,9 @@
+# Spotify.Absolute.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Creates an Absolute Manage package (.amsdpackages), imports it into the Absolute Manage Admin console and uploads it to the Absolute Manage Server.
+
+- **Identifier**: `com.github.seansgm.autopkg-absolute-recipes.Spotify`
+
+- **Parent Recipes**: `com.github.homebysix.pkg.Spotify`

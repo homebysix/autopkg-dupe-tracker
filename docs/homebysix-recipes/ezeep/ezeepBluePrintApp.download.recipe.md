@@ -1,0 +1,14 @@
+# ezeepBluePrintApp.download.recipe
+
+            _Last updated 2021-12-23 19:58:07Z_
+
+            - **Description**: Downloads the latest version of ezeep "Blue" Print App.
+
+The ezeep "Blue" app is only for administrators of ezeep Blue. Details:
+https://www.ezeep.com/downloads/ezeep-blue/
+
+For the older "ezeep Desktop" app, use the ezeepDesktop recipes.
+
+            - **Identifier**: `com.github.homebysix.download.ezeepBluePrintApp`
+
+            - **Parent Recipes**: `None`

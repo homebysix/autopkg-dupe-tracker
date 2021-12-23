@@ -1,0 +1,16 @@
+# Nextcloud-Win64.download.recipe
+
+_Last updated 2021-12-23 19:58:08Z_
+
+- **Description**: Downloads the latest version of Nextcloud MSI installer for Windows.
+
+- **Identifier**: `com.github.andredb90.download.nextcloud-Win64`
+
+- **Parent Recipes**: `None`
+
+## Warnings
+
+- These recipes have duplicate NAMEs:
+    - [peterkelm-recipes/Nextcloud/NextcloudDesktopClient.download.recipe](/autopkg-dupe-tracker/peterkelm-recipes/Nextcloud/NextcloudDesktopClient.download.recipe)
+    - [andredb90-recipes/Nextcloud/Nextcloud-Win64.download.recipe](/autopkg-dupe-tracker/andredb90-recipes/Nextcloud/Nextcloud-Win64.download.recipe)
+    - [andredb90-recipes/Nextcloud/Nextcloud.download.recipe](/autopkg-dupe-tracker/andredb90-recipes/Nextcloud/Nextcloud.download.recipe)

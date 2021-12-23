@@ -1,0 +1,22 @@
+# ZoomOutlookPlugin.download.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest verison of Zoom Outlook Plugin
+
+- **Identifier**: `com.github.joshua-d-miller.download.zoomoutlookplugin`
+
+- **Parent Recipes**: `None`
+
+## Warnings
+
+- These recipes have duplicate URLDownloader URLs:
+    - [MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.download.recipe](/autopkg-dupe-tracker/MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.download.recipe)
+    - [MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.pkg.recipe](/autopkg-dupe-tracker/MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.pkg.recipe)
+    - [MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.jss.recipe](/autopkg-dupe-tracker/MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.jss.recipe)
+    - [joshua-d-miller-recipes/Zoom/ZoomOutlookPlugin.download.recipe](/autopkg-dupe-tracker/joshua-d-miller-recipes/Zoom/ZoomOutlookPlugin.download.recipe)
+    - [smithjw-recipes/Zoom/ZoomOutlook.download.recipe](/autopkg-dupe-tracker/smithjw-recipes/Zoom/ZoomOutlook.download.recipe)
+
+- These recipes have duplicate NAMEs:
+    - [MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.download.recipe](/autopkg-dupe-tracker/MLBZ521-recipes/Zoom/Zoom-OutlookPlugin.download.recipe)
+    - [joshua-d-miller-recipes/Zoom/ZoomOutlookPlugin.download.recipe](/autopkg-dupe-tracker/joshua-d-miller-recipes/Zoom/ZoomOutlookPlugin.download.recipe)

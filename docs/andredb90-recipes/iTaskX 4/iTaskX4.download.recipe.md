@@ -1,0 +1,16 @@
+# iTaskX4.download.recipe
+
+_Last updated 2021-12-23 19:58:08Z_
+
+- **Description**: Downloads the latest version of iTaskX 4.
+
+- **Identifier**: `com.github.andredb90.download.iTaskX4`
+
+- **Parent Recipes**: `None`
+
+## Warnings
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [ygini-recipes/Techno-Grafik Christian Lackner eU/iTaskX3.download.recipe](/autopkg-dupe-tracker/ygini-recipes/Techno-Grafik Christian Lackner eU/iTaskX3.download.recipe)
+    - [zentral-recipes/iTaskX/iTaskX.download.recipe](/autopkg-dupe-tracker/zentral-recipes/iTaskX/iTaskX.download.recipe)
+    - [andredb90-recipes/iTaskX 4/iTaskX4.download.recipe](/autopkg-dupe-tracker/andredb90-recipes/iTaskX 4/iTaskX4.download.recipe)

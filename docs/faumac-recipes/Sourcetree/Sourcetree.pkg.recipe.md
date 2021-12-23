@@ -1,12 +1,13 @@
 # Sourcetree.pkg.recipe
 
-_Last updated 2021-12-23 19:54:13Z_
+_Last updated 2021-12-23 19:58:07Z_
 
 - **Description**: Downloads the current release version of Sourcetree and builds a package.
 
 - **Identifier**: `com.github.faumac.pkg.Sourcetree`
 
 - **Parent Recipes**: `com.github.faumac.download.Sourcetree`
+
 ## Warnings
 
 - These recipes have duplicate filenames:

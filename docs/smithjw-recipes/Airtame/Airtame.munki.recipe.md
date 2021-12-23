@@ -1,0 +1,9 @@
+# Airtame.munki.recipe
+
+_Last updated 2021-12-23 19:58:08Z_
+
+- **Description**: Downloads the latest version of Airtame and imports it into Munki.
+
+- **Identifier**: `com.github.smithjw.Airtame.munki`
+
+- **Parent Recipes**: `tecnico1931.download.Airtame`

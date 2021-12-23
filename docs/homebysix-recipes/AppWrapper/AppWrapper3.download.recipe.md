@@ -1,0 +1,15 @@
+# AppWrapper3.download.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of App Wrapper 3.
+
+- **Identifier**: `com.github.homebysix.download.AppWrapper3`
+
+- **Parent Recipes**: `None`
+
+## Warnings
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [ahousseini-recipes/AppWrapper4/AppWrapper4.download.recipe](/autopkg-dupe-tracker/ahousseini-recipes/AppWrapper4/AppWrapper4.download.recipe)
+    - [homebysix-recipes/AppWrapper/AppWrapper3.download.recipe](/autopkg-dupe-tracker/homebysix-recipes/AppWrapper/AppWrapper3.download.recipe)

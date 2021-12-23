@@ -1,0 +1,15 @@
+# F5transkript.munki.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of F5transkript and imports into Munki.
+
+- **Identifier**: `com.github.its-unibas.munki.F5transkript`
+
+- **Parent Recipes**: `com.github.its-unibas.pkg.F5transkript`
+
+## Warnings
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [its-unibas-recipes/F5transkript/F5transkript.munki.recipe](/autopkg-dupe-tracker/its-unibas-recipes/F5transkript/F5transkript.munki.recipe)
+    - [its-unibas-recipes/F4transkript/f4transkript.munki.recipe](/autopkg-dupe-tracker/its-unibas-recipes/F4transkript/f4transkript.munki.recipe)

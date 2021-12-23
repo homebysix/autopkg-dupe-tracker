@@ -1,0 +1,9 @@
+# Sublime Merge.pkg.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of Sublime Merge and creates a package.
+
+- **Identifier**: `com.github.homebysix.pkg.SublimeMerge`
+
+- **Parent Recipes**: `com.github.homebysix.download.SublimeMerge`

@@ -1,0 +1,23 @@
+# Zeplin.download.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of Zeplin.
+
+- **Identifier**: `com.github.hobbithardcase.download.Zeplin`
+
+- **Parent Recipes**: `None`
+
+## Warnings
+
+- These recipes have duplicate filenames:
+    - [HobbitHardcase-recipes/Zeplin/Zeplin.download.recipe](/autopkg-dupe-tracker/HobbitHardcase-recipes/Zeplin/Zeplin.download.recipe)
+    - [ahousseini-recipes/Zeplin/Zeplin.download.recipe](/autopkg-dupe-tracker/ahousseini-recipes/Zeplin/Zeplin.download.recipe)
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [HobbitHardcase-recipes/Zeplin/Zeplin.download.recipe](/autopkg-dupe-tracker/HobbitHardcase-recipes/Zeplin/Zeplin.download.recipe)
+    - [ahousseini-recipes/Zeplin/Zeplin.download.recipe](/autopkg-dupe-tracker/ahousseini-recipes/Zeplin/Zeplin.download.recipe)
+
+- These recipes have duplicate NAMEs:
+    - [HobbitHardcase-recipes/Zeplin/Zeplin.download.recipe](/autopkg-dupe-tracker/HobbitHardcase-recipes/Zeplin/Zeplin.download.recipe)
+    - [ahousseini-recipes/Zeplin/Zeplin.download.recipe](/autopkg-dupe-tracker/ahousseini-recipes/Zeplin/Zeplin.download.recipe)

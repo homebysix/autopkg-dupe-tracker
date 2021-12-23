@@ -1,0 +1,19 @@
+# CloudMounter.pkg.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: 
+
+- **Identifier**: `com.github.moofit-recipes.pkg.CloudMounter`
+
+- **Parent Recipes**: `com.github.moofit-recipes.download.CloudMounter`
+
+## Warnings
+
+- These recipes have duplicate URLDownloader URLs:
+    - [moofit-recipes/CloudMounter/CloudMounter.download.recipe](/autopkg-dupe-tracker/moofit-recipes/CloudMounter/CloudMounter.download.recipe)
+    - [moofit-recipes/CloudMounter/CloudMounter.pkg.recipe](/autopkg-dupe-tracker/moofit-recipes/CloudMounter/CloudMounter.pkg.recipe)
+
+- These recipes have duplicate CURLDownloader URLs:
+    - [moofit-recipes/CloudMounter/CloudMounter.download.recipe](/autopkg-dupe-tracker/moofit-recipes/CloudMounter/CloudMounter.download.recipe)
+    - [moofit-recipes/CloudMounter/CloudMounter.pkg.recipe](/autopkg-dupe-tracker/moofit-recipes/CloudMounter/CloudMounter.pkg.recipe)

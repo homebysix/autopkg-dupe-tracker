@@ -1,0 +1,26 @@
+# MicrosoftRemoteDesktop.jss.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of Microsoft's Remote Desktop installer package,renames the package and imports it into your JSS.
+
+- **Identifier**: `com.github.rtrouton.jss.microsoftremotedesktop`
+
+- **Parent Recipes**: `com.github.rtrouton.pkg.microsoftremotedesktop`
+
+## Warnings
+
+- These recipes have duplicate filenames:
+    - [rtrouton-recipes/JSS/MicrosoftRemoteDesktop.jss.recipe](/autopkg-dupe-tracker/rtrouton-recipes/JSS/MicrosoftRemoteDesktop.jss.recipe)
+    - [jss-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe](/autopkg-dupe-tracker/jss-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe)
+    - [novaksam-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe](/autopkg-dupe-tracker/novaksam-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe)
+
+- These recipes have duplicate filenames, ignoring numbers:
+    - [rtrouton-recipes/JSS/MicrosoftRemoteDesktop.jss.recipe](/autopkg-dupe-tracker/rtrouton-recipes/JSS/MicrosoftRemoteDesktop.jss.recipe)
+    - [jss-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe](/autopkg-dupe-tracker/jss-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe)
+    - [novaksam-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe](/autopkg-dupe-tracker/novaksam-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe)
+
+- These recipes have duplicate NAMEs:
+    - [rtrouton-recipes/JSS/MicrosoftRemoteDesktop.jss.recipe](/autopkg-dupe-tracker/rtrouton-recipes/JSS/MicrosoftRemoteDesktop.jss.recipe)
+    - [jss-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe](/autopkg-dupe-tracker/jss-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe)
+    - [novaksam-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe](/autopkg-dupe-tracker/novaksam-recipes/Microsoft Remote Desktop/Microsoft Remote Desktop.jss.recipe)

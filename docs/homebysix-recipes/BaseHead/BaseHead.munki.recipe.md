@@ -1,0 +1,9 @@
+# BaseHead.munki.recipe
+
+_Last updated 2021-12-23 19:58:07Z_
+
+- **Description**: Downloads the latest version of BaseHead and imports it into Munki.
+
+- **Identifier**: `com.github.homebysix.munki.BaseHead`
+
+- **Parent Recipes**: `com.github.homebysix.download.BaseHead`

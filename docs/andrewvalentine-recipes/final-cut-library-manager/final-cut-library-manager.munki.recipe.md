@@ -1,12 +1,13 @@
 # final-cut-library-manager.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads and imports the current release version of Final Cut Library Manager into Munki
 
 - **Identifier**: `com.github.andrewvalentine.munki.final-cut-library-manager`
 
 - **Parent Recipes**: `com.github.andrewvalentine.download.final-cut-library-manager`
+
 
 ## Warnings
 

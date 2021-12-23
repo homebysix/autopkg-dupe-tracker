@@ -1,6 +1,6 @@
 # InspireDesignerExportCC2015.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages Inspire Designer Export plugin for InDesign CC 2015 
 
@@ -17,6 +17,7 @@ autopkg run InspireDesignerExportCC2015.pkg -p /path/to/Adobe-InDesign-CC-2015-M
             - **Identifier**: `com.github.foigus.pkg.InspireDesignerExportPluginCC2015`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

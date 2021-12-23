@@ -1,6 +1,6 @@
 # iTunes.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current version of iTunes from Apple's iTunes download page.
 
@@ -8,6 +8,7 @@ _Last updated 2021-12-23 19:58:07Z_
 - **Identifier**: `com.github.timsutton.download.iTunes`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

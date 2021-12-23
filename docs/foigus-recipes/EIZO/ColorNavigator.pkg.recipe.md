@@ -1,12 +1,13 @@
 # ColorNavigator.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest ColorNavigator installer and extracts the embedded package.
 
 - **Identifier**: `com.github.foigus.pkg.ColorNavigator`
 
 - **Parent Recipes**: `com.github.foigus.download.ColorNavigator`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Onyx10.10.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Onyx client for macOS 10.10 and installs it into a Munki Repo.
 
 - **Identifier**: `com.github.tallfunnyjew.munki.Onyx1010`
 
 - **Parent Recipes**: `com.github.tallfunnyjew.download.Onyx1010`
+
 
 ## Warnings
 

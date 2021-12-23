@@ -1,6 +1,6 @@
 # AmadeusPro2.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current version of Amadeus Pro and creates a pkg installer.
 This recipe is a stub, as it has been superseded by AmadeusPro.pkg.
@@ -8,6 +8,7 @@ This recipe is a stub, as it has been superseded by AmadeusPro.pkg.
             - **Identifier**: `com.github.jazzace.pkg.AmadeusPro2`
 
             - **Parent Recipes**: `com.github.jazzace.pkg.AmadeusPro`
+
 
 ## Warnings
 

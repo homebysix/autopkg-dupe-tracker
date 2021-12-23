@@ -1,12 +1,13 @@
 # BarcodeProducer.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download latest zip containing app and repackages into a pkg. Latest version is always at this URL.
 
 - **Identifier**: `com.github.moofit-recipes.pkg.BarcodeProducer`
 
 - **Parent Recipes**: `com.github.mosen.download.BarcodeProducer`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Insta360Studio2021.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the Insta360 Studio 2021 application.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.insta360studio2021`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

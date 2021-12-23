@@ -1,12 +1,13 @@
 # Microsoft AutoUpdate-CFBundleVersion.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads Microsoft Auto Update installer and grabs the shortened version, and uploads to JSS.
 
 - **Identifier**: `com.github.novaksam.jss.MicrosoftAutoUpdateCFBundleVersion`
 
 - **Parent Recipes**: `com.github.novaksam.pkg.MicrosoftAutoUpdateCFBundleVersion`
+
 
 ## Warnings
 

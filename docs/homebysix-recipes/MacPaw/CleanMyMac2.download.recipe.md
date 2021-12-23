@@ -1,12 +1,13 @@
 # CleanMyMac2.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of CleanMyMac 2.
 
 - **Identifier**: `com.github.homebysix.download.CleanMyMac2`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

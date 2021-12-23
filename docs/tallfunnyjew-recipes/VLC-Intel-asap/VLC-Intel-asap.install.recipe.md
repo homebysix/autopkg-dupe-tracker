@@ -1,12 +1,13 @@
 # VLC-Intel-asap.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads and installs the VERY latest VLC available for INTEL Macs. Do not use this version of VLC if you're on a newer Mac with Apple/Arm Silicon.
 
 - **Identifier**: `com.github.tallfunnyjew.install.VLC-Intel-asap`
 
 - **Parent Recipes**: `com.github.tallfunnyjew.download.VLC-Intel-asap`
+
 
 ## Warnings
 

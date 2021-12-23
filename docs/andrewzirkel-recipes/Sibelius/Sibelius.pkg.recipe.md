@@ -1,12 +1,13 @@
 # Sibelius.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads Sibelius dmg and gets version from app.
 
 - **Identifier**: `com.andrewzirkel.pkg.sibelius`
 
 - **Parent Recipes**: `com.andrewzirkel.download.sibelius`
+
 
 ## Warnings
 

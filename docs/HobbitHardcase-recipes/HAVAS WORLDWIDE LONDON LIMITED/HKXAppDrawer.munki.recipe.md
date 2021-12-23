@@ -1,6 +1,6 @@
 # HKXAppDrawer.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of HKXAppDrawer and imports it into Munki. This will only work for Havas sites. Access from the general internet is blocked.
 

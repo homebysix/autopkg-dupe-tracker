@@ -1,6 +1,6 @@
 # AmazonCorretto.jss.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the Amazon Corretto OpenJDK, builds a package, and uploads it to the JSS.
 
@@ -11,6 +11,7 @@ The JDK Major Version can be specified using the override variable "JDK_MAJOR_VE
             - **Identifier**: `com.github.mlbz521.jss.AmazonCorrettoOpenJDK`
 
             - **Parent Recipes**: `com.github.mlbz521.pkg.AmazonCorrettoOpenJDK`
+
 
 ## Warnings
 

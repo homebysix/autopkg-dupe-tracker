@@ -1,6 +1,6 @@
 # AutodeskFusion360.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Autodesk Fusion 360 for Education, creates a package and uploads it to jss.
 

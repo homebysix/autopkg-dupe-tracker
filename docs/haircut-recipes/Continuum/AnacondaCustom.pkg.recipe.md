@@ -1,6 +1,6 @@
 # AnacondaCustom.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Anaconda Python, then creates a package that installs Anaconda to a known location defined by the PREFIX_DIR key. The intent is to install Anaconda in a location accessible to all users on a system. The default PREFIX_DIR is '/usr/local/anaconda'. A postinstall script symlinks all the binaries in the anaconda 'bin' directory to /usr/local/bin so users do not have to individually update their paths.
 

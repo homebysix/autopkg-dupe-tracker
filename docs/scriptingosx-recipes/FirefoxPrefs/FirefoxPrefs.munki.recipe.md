@@ -1,6 +1,6 @@
 # FirefoxPrefs.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Firefox disk image and imports into Munki.
 Values for RELEASE correspond to directories here: http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/

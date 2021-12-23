@@ -1,12 +1,13 @@
 # AdobeReaderDC.filewave.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Adobe Reader DC and imports into FileWave.
 
 - **Identifier**: `com.github.autopkg.seansgm-filewave.AdobeReaderDC`
 
 - **Parent Recipes**: `com.github.autopkg.pkg.AdobeReaderDC`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # VLC.munki.recipe
 
-    _Last updated 2021-12-23 19:58:07Z_
+    _Last updated 2021-12-23 20:01:50Z_
 
     - **Description**: Downloads latest VLC disk image and imports into Munki.
 This recipe defaults supported_architectures to x86_64. 
@@ -11,6 +11,7 @@ adjust ARCH to "arm64".
     - **Identifier**: `com.github.autopkg.munki.VLC`
 
     - **Parent Recipes**: `com.github.autopkg.download.VLC`
+
 
 ## Warnings
 

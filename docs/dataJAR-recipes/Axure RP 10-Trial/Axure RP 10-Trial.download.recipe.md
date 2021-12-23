@@ -1,12 +1,13 @@
 # Axure RP 10-Trial.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe of the Axure RP 10 Trial.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Axure RP 10-Trial`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

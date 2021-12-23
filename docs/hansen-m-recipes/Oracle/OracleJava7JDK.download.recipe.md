@@ -1,12 +1,13 @@
 # OracleJava7JDK.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Java 7 JDK from Oracle.
 
 - **Identifier**: `com.github.hansen-m.download.OracleJava7JDK`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

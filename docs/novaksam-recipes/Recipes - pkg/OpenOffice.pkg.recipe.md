@@ -1,12 +1,13 @@
 # OpenOffice.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Open Office disk image and builds a package.
 
 - **Identifier**: `com.github.novaksam.pkg.OpenOffice`
 
 - **Parent Recipes**: `com.github.novaksam.download.OpenOffice`
+
 
 ## Warnings
 

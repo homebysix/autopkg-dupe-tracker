@@ -1,12 +1,13 @@
 # OutputFactoryCC2018.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Output Factory disk image and imports a CC 2018-aimed package into Munki.
 
 - **Identifier**: `com.github.foigus.munki.OutputFactoryCC2018`
 
 - **Parent Recipes**: `com.github.foigus.pkg.OutputFactoryCC2018`
+
 
 ## Warnings
 

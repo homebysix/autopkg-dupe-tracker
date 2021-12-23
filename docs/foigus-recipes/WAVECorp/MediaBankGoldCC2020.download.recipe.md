@@ -1,6 +1,6 @@
 # MediaBankGoldCC2020.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: "Downloads" MediaBank Gold CC 2020 for installation.  This recipe does not download the MediaBank Gold tar archive--feed the tar archive into the recipe via the following format:
 
@@ -9,6 +9,7 @@ autopkg run MediaBankGoldCC2020.download -p /path/to/mediabankgold_installer_osx
             - **Identifier**: `com.github.foigus.download.MediaBankGoldCC2020`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

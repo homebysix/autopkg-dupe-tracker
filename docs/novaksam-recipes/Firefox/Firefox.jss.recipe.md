@@ -1,6 +1,6 @@
 # Firefox.jss.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Firefox disk image and builds a package, then uploads to the JSS.
 Values for FIREFOX_BUILD correspond to directories here: http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/
@@ -13,6 +13,7 @@ combination is offered.
             - **Identifier**: `com.github.novaksam.jss.Firefox`
 
             - **Parent Recipes**: `com.github.autopkg.pkg.Firefox_EN`
+
 
 ## Warnings
 

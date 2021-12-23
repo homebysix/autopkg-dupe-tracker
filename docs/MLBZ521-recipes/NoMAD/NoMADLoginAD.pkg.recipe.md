@@ -1,6 +1,6 @@
 # NoMADLoginAD.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the latest version of NoMAD Login AD, creates a package, and uploads to the JSS.
 
@@ -9,6 +9,7 @@ This recipe differs from nstrauss-recipes in that it downloads NoLoAD from sourc
             - **Identifier**: `com.github.mlbz521.pkg.NoMADLoginAD`
 
             - **Parent Recipes**: `com.github.peetinc.download.NoMADLoginAD`
+
 
 ## Warnings
 

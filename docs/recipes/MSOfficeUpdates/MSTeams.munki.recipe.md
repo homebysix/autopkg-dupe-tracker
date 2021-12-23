@@ -1,6 +1,6 @@
 # MSTeams.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest MS Teams pkg,
 appends the version to the end of the filename, and imports into
@@ -30,6 +30,7 @@ the latest full update for the given CHANNEL.
             - **Identifier**: `com.github.autopkg.munki.MSTeams`
 
             - **Parent Recipes**: `com.github.autopkg.download.MSTeams`
+
 
 ## Warnings
 

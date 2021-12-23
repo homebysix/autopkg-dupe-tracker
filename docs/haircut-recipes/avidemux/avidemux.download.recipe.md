@@ -1,6 +1,6 @@
 # avidemux.download.recipe
 
-    _Last updated 2021-12-23 19:58:07Z_
+    _Last updated 2021-12-23 20:01:50Z_
 
     - **Description**: Download latest avidemux dmg. Permission has been granted by FOSSHub to automate downloads of this project. Specifically:
 
@@ -10,6 +10,7 @@
     - **Identifier**: `com.github.haircut.download.avidemux`
 
     - **Parent Recipes**: `None`
+
 
 ## Warnings
 

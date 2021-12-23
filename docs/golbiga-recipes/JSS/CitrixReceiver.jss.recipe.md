@@ -1,12 +1,13 @@
 # CitrixReceiver.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest CitrixReceiver version and extracts the package. Then, uploads to the JSS.
 
 - **Identifier**: `com.github.golbiga.jss.CitrixReceiver`
 
 - **Parent Recipes**: `com.github.homebysix.pkg.CitrixReceiver`
+
 
 ## Warnings
 

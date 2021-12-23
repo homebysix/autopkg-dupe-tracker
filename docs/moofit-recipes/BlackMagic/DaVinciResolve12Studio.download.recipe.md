@@ -1,6 +1,6 @@
 # DaVinciResolve12Studio.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of DaVinci Resolve 12 Studio
 Duplicated from Time Sutton's DaVinci Resolve 12 recipe
@@ -12,6 +12,7 @@ and they must contain data.
             - **Identifier**: `com.github.amsysuk-recipes.download.DaVinciResolve12Studio`
 
             - **Parent Recipes**: `com.github.timsutton.download.davinciresolve12`
+
 
 ## Warnings
 

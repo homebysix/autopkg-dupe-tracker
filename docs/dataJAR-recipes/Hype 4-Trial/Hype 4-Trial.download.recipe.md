@@ -1,12 +1,13 @@
 # Hype 4-Trial.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for the latest trial version of Hype 4-Trial.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Hype 4-Trial`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

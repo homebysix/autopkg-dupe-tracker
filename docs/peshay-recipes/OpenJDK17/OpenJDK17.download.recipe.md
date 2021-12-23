@@ -1,12 +1,13 @@
 # OpenJDK17.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest OpenJDK 17 early access for macOS.
 
 - **Identifier**: `com.github.peshay.download.OpenJDK17`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

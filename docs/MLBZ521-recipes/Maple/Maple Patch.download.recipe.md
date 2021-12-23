@@ -1,6 +1,6 @@
 # Maple Patch.download.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the patch for the specified Maple major version.
 
@@ -9,6 +9,7 @@ Specify major version as:  '2020', '2019', '2018', '2017', or 2016
             - **Identifier**: `com.github.mlbz521.download.MaplePatch`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

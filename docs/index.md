@@ -1,8 +1,6 @@
 # AutoPkg Org Recipe Info
 
-_Last updated 2021-12-23 19:58:06Z_
-
-## By Repository
+_Last updated 2021-12-23 20:01:49Z_
 
 - [48kRAM-recipes](/autopkg-dupe-tracker/48kRAM-recipes)
 - [aanklewicz-recipes](/autopkg-dupe-tracker/aanklewicz-recipes)
@@ -141,10 +139,6 @@ _Last updated 2021-12-23 19:58:06Z_
 - [zachtarr-recipes](/autopkg-dupe-tracker/zachtarr-recipes)
 - [zentral-recipes](/autopkg-dupe-tracker/zentral-recipes)
 - [znerol-recipes](/autopkg-dupe-tracker/znerol-recipes)
-
-## By Redundancy
-
-%BYDUPE%
 
 ---
 

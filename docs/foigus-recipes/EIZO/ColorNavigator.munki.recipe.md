@@ -1,6 +1,6 @@
 # ColorNavigator.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest ColorNavigator installer and imports it into Munki.
 
@@ -15,6 +15,7 @@ Requiring a logout since the GUI installer reopens ColorNavigator, but not from 
             - **Identifier**: `com.github.foigus.munki.ColorNavigator`
 
             - **Parent Recipes**: `com.github.foigus.pkg.ColorNavigator`
+
 
 ## Warnings
 

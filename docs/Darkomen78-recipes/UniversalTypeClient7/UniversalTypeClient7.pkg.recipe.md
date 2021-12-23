@@ -1,12 +1,13 @@
 # UniversalTypeClient7.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads Universal Type Client 7 and makes a pkg of it.
 
 - **Identifier**: `com.github.darkomen78.pkg.UniversalTypeClient7`
 
 - **Parent Recipes**: `com.github.darkomen78.download.UniversalTypeClient7`
+
 
 ## Warnings
 

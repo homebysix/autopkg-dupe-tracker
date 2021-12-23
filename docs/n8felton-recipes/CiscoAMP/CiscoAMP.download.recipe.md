@@ -1,6 +1,6 @@
 # CiscoAMP.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Cisco AMP for Endpoints.
 
@@ -9,6 +9,7 @@ DOWNLOAD_URL can be found at https://console.amp.cisco.com/download_connector
             - **Identifier**: `com.github.n8felton.download.CiscoAMP`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

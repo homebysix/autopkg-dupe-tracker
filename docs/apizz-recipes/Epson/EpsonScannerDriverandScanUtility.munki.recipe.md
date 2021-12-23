@@ -1,6 +1,6 @@
 # EpsonScannerDriverandScanUtility.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of the Epson Scanner Driver and EPSON Scan Utility from Epson's site and imports it into a munki repo.  
 
@@ -34,6 +34,7 @@ For example, the URL for the Epson Perfection V850 Pro fetched from the US Epson
             - **Identifier**: `com.github.apizz.munki.EpsonScannerDriverandScanUtility`
 
             - **Parent Recipes**: `com.github.apizz.download.EpsonScannerDriverandScanUtility`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # JD-GUI.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of JavaDecompiler-GUI from Github. The .app bundle is not signed.
 
 - **Identifier**: `com.github.andrewvalentine.download.jdgui`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

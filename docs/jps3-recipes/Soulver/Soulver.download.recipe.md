@@ -1,12 +1,13 @@
 # Soulver.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Soulver.app.
 
 - **Identifier**: `com.github.jps3.download.Soulver`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

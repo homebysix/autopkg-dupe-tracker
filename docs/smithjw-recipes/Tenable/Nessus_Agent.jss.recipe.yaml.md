@@ -1,6 +1,6 @@
 # Nessus_Agent.jss.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Uses parent pkg recipe to download latest GoogleChrome and import it into the JSS.
 

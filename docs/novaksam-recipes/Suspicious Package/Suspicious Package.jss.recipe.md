@@ -1,12 +1,13 @@
 # Suspicious Package.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Suspicious Package installer, unpacks it, and re-labels the installer. Then, uploads to the JSS.
 
 - **Identifier**: `com.github.novaksam.jss.SuspiciousPackage`
 
 - **Parent Recipes**: `com.github.novaksam.pkg.SuspiciousPackage`
+
 
 ## Warnings
 

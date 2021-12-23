@@ -1,12 +1,13 @@
 # Onyx10.10.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Onyx client for macOS 10.10.
 
 - **Identifier**: `com.github.tallfunnyjew.download.Onyx1010`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Alfred4.install.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads and installs the current release version of Alfred 4.
 
 - **Identifier**: `io.github.hjuutilainen.install.Alfred4`
 
 - **Parent Recipes**: `io.github.hjuutilainen.pkg.Alfred4`
+
 
 ## Warnings
 

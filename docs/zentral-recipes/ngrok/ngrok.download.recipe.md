@@ -1,12 +1,13 @@
 # ngrok.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads ngrok (zip); the one command for an instant, secure URL to your localhost server through any NAT or firewall.
 
 - **Identifier**: `com.github.apfelwerk.download.ngrok`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

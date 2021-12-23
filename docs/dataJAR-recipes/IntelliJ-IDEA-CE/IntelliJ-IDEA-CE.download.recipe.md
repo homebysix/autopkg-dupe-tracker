@@ -1,12 +1,13 @@
 # IntelliJ-IDEA-CE.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of IntelliJ IDEA Community Edition. Taken from bnpl-recipes repo
 
 - **Identifier**: `com.github.dataJAR-recipes.download.intellijideace`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

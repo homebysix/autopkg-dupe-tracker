@@ -1,6 +1,6 @@
 # Xray_Exploratory_App.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest version of Xray Exploratory App and creates a package.
 

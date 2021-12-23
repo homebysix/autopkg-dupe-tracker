@@ -1,12 +1,13 @@
 # MotuAudioInstaller.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of the MOTU Audio Installer
 
 - **Identifier**: `com.github.andrewvalentine.download.MotuAudioInstaller`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

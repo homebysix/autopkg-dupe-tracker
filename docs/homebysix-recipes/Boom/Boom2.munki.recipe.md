@@ -1,6 +1,6 @@
 # Boom2.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Boom 2 and imports it into Munki. Note: An admin account is required to set up Boom upon first launch.
 

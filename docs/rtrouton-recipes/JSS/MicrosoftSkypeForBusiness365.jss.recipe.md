@@ -1,12 +1,13 @@
 # MicrosoftSkypeForBusiness365.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft's Skype for Business installer and imports it into your JSS.
 
 - **Identifier**: `com.github.rtrouton.jss.skypeforbusiness365`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.skypeforbusiness365`
+
 
 ## Warnings
 

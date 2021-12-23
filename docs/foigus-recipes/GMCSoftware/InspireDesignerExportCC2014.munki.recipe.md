@@ -1,6 +1,6 @@
 # InspireDesignerExportCC2014.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages Inspire Designer Export plugin for InDesign CC 2014 and imports it into Munki
 
@@ -17,6 +17,7 @@ autopkg run InspireDesignerExportCC2014.munki -p /path/to/Adobe-InDesign-CC-Plug
             - **Identifier**: `com.github.foigus.munki.InspireDesignerExportPluginCC2014`
 
             - **Parent Recipes**: `com.github.foigus.pkg.InspireDesignerExportPluginCC2014`
+
 
 ## Warnings
 

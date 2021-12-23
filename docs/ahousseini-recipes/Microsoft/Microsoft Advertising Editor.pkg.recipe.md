@@ -1,12 +1,13 @@
 # Microsoft Advertising Editor.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft Advertising Editor and creates a package.
 
 - **Identifier**: `com.github.ahousseini-recipes.MicrosoftAdvertisingEditor`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.MicrosoftAdvertisingEditor`
+
 
 ## Warnings
 

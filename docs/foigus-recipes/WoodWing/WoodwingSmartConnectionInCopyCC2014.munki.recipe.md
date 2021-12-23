@@ -1,6 +1,6 @@
 # WoodwingSmartConnectionInCopyCC2014.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages InCopy Smart Connection for installation for InCopy CC 2014 and imports it into Munki
 
@@ -18,6 +18,7 @@ autopkg run WoodwingSmartConnectionInCopyCC2014.munki -p /path/to/Smart_Connecti
             - **Identifier**: `com.github.foigus.munki.WoodwingSmartConnectionInCopyCC2014`
 
             - **Parent Recipes**: `com.github.foigus.pkg.WoodwingSmartConnectionCC2014`
+
 
 ## Warnings
 

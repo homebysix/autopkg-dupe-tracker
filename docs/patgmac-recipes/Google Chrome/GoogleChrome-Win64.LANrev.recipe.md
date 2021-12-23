@@ -1,12 +1,13 @@
 # GoogleChrome-Win64.LANrev.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Google Chrome x86 MSI for Windows and adds to LANrev
 
 - **Identifier**: `com.github.patgmac.lanrev.GoogleChrome-Win64`
 
 - **Parent Recipes**: `com.github.hansen-m.download.googlechrome-Win64`
+
 
 ## Warnings
 

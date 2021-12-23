@@ -1,6 +1,6 @@
 # ARCHICADUpdate.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Imports the latest update build of ARCHICAD into munki which has been downloaded by its parent based on the override-able parameters: MAJOR_VERSION, LOCALIZATION, and RELEASE_TYPE
 The installation target can be changed by setting INSTALL_DIR to a different location. Useful e.g. if multiple language versions should be available on a Mac.
@@ -14,6 +14,7 @@ MINIMUM_OS_VERSION: AC 20: 10.9, AC 21: 10.10, AC 22: 10.11, AC 23: 10.13, AC 24
             - **Identifier**: `com.github.wycomco.munki.ARCHICADUpdate`
 
             - **Parent Recipes**: `com.github.wycomco.download.ARCHICADUpdate`
+
 
 ## Warnings
 

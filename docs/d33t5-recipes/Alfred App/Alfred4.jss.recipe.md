@@ -1,12 +1,13 @@
 # Alfred4.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Alfred and imports it into your JSS.
 
 - **Identifier**: `com.github.d33t5.jss.Alfred`
 
 - **Parent Recipes**: `io.github.hjuutilainen.pkg.Alfred4`
+
 
 ## Warnings
 

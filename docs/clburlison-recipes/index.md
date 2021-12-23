@@ -1,6 +1,7 @@
 # clburlison-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [pinpoint/pinpoint.install.recipe](/autopkg-dupe-tracker/clburlison-recipes/pinpoint/pinpoint.install.recipe)
 - [pinpoint/pinpoint.download.recipe](/autopkg-dupe-tracker/clburlison-recipes/pinpoint/pinpoint.download.recipe)
 - [pinpoint/pinpoint.munki.recipe](/autopkg-dupe-tracker/clburlison-recipes/pinpoint/pinpoint.munki.recipe)

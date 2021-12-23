@@ -1,12 +1,13 @@
 # OpenJDK16.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of OpenJDK 16 early access and builds a package.
 
 - **Identifier**: `com.github.peshay.pkg.OpenJDK16`
 
 - **Parent Recipes**: `com.github.peshay.download.OpenJDK16`
+
 
 ## Warnings
 

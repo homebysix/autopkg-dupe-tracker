@@ -1,6 +1,6 @@
 # FirefoxSignedPkg.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: This recipe downloads the signed installer package that Mozilla made available starting in Firefox 69.0. Because the downloaded file is already a package, this pkg recipe does not add any further actions.
 
@@ -14,6 +14,7 @@ See the following URL for possible LOCALE values:
             - **Identifier**: `com.github.autopkg.pkg.FirefoxSignedPkg`
 
             - **Parent Recipes**: `com.github.autopkg.download.FirefoxSignedPkg`
+
 
 ## Warnings
 

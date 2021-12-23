@@ -1,12 +1,13 @@
 # NVivo 12.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of NVivo 12 and imports into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.NVivo 12`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.NVivo 12`
+
 
 ## Warnings
 

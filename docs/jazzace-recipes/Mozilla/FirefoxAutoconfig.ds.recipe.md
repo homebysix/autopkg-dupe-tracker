@@ -1,6 +1,6 @@
 # FirefoxAutoconfig.ds.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Firefox disk image, builds a package that includes autoconfig resources 
 (typically as generated via the CCK2 tool), and copies the package to a local path of your choosing.

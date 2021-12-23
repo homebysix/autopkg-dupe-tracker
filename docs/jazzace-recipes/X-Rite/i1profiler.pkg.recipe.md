@@ -1,6 +1,6 @@
 # i1profiler.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current release of i1Profiler and extracts the installation package.
 This recipe is a stub, as the updated parent recipe provides a pkg installer.
@@ -12,6 +12,7 @@ SparkleUpdateInfoProvider processor in the download recipe (%version%).
             - **Identifier**: `com.github.jazzace.pkg.i1profiler`
 
             - **Parent Recipes**: `com.github.jazzace.download.i1profiler`
+
 
 ## Warnings
 

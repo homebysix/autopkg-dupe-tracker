@@ -1,12 +1,13 @@
 # Basecamp3.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Basecamp 3 Mac app.
 
 - **Identifier**: `com.github.autopkg.jessepeterson-recipes.download.Basecamp3`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

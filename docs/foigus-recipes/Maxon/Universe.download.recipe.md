@@ -1,12 +1,13 @@
 # Universe.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Universe (part of Red Giant Complete).
 
 - **Identifier**: `com.github.foigus.download.Universe`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # MicrosoftOffice2019Suite.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft's Excel for Office 365 installer package and renames the package.
 
 - **Identifier**: `com.github.novaksam.pkg.microsoftoffice2019suite`
 
 - **Parent Recipes**: `com.github.novaksam.download.microsoftoffice2019suite`
+
 
 ## Warnings
 

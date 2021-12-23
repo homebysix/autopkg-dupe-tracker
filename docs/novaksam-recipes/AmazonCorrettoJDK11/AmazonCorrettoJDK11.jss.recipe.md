@@ -1,12 +1,13 @@
 # AmazonCorrettoJDK11.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Amazon Corretto Java JDK 11, builds an installer package, then uploads to the JSS.
 
 - **Identifier**: `com.github.novaksam.jss.amazoncorrettojdk11`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.amazoncorettojdk11`
+
 
 ## Warnings
 

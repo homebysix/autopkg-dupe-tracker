@@ -1,12 +1,13 @@
 # RStudio.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest RStudio application. Original recipe by Matt Hansen - https://github.com/autopkg/hansen-m-recipes
 
 - **Identifier**: `com.github.rtrouton.download.RStudio`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

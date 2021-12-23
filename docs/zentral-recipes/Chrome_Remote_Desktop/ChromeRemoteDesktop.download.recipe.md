@@ -1,12 +1,13 @@
 # ChromeRemoteDesktop.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download the latest Chrome Remote Desktop and extract the pkg from the dmg
 
 - **Identifier**: `com.github.apfelwerk.download.chromeremotedesktop`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

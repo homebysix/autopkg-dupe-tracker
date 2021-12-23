@@ -1,6 +1,6 @@
 # Puppet-Agent.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest PuppetAgent and imports into Munki.
 
@@ -11,6 +11,7 @@ specifically for each OS, we're setting the 'minimum_os_version' and 'maximum_os
             - **Identifier**: `com.github.autopkg.munki.puppet-agent`
 
             - **Parent Recipes**: `com.github.autopkg.download.puppet-agent`
+
 
 ## Warnings
 

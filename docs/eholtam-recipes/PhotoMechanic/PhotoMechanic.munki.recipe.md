@@ -1,12 +1,13 @@
 # PhotoMechanic.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the Photo Mechanic application and imports into munki.
 
 - **Identifier**: `com.github.poundbangbash.eholtam-recipes.munki.photomechanic`
 
 - **Parent Recipes**: `com.github.poundbangbash.eholtam-recipes.pkg.photomechanic`
+
 
 ## Warnings
 

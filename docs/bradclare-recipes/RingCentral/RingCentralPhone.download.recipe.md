@@ -1,12 +1,13 @@
 # RingCentralPhone.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for RingCentral Phone (RingCentral for Mac.app)
 
 - **Identifier**: `com.github.bradclare.download.ringcentralphone`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

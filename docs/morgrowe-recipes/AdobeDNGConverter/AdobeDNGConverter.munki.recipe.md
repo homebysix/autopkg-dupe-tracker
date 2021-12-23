@@ -1,12 +1,13 @@
 # AdobeDNGConverter.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Usues sheagcraig's AdobeDNGConverter.pkg and imports into Munki.
 
 - **Identifier**: `com.github.morgrowe.munki.AdobeDNGConverter`
 
 - **Parent Recipes**: `com.github.sheagcraig.pkg.AdobeDNGConverter`
+
 
 ## Warnings
 

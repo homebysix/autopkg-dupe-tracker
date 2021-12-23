@@ -1,12 +1,13 @@
 # Postman.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Postman. Taken from bnpl-recipes repo. thanks to TSPARR for the Code Signature Check
 
 - **Identifier**: `com.github.dataJAR-recipes.download.postman`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

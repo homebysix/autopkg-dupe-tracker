@@ -1,6 +1,6 @@
 # ColorNavigator7.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest ColorNavigator installer and imports it into Munki.
 
@@ -13,6 +13,7 @@ autopkg repo-add hjuutilainen-recipes
             - **Identifier**: `com.github.foigus.munki.ColorNavigator7`
 
             - **Parent Recipes**: `com.github.foigus.pkg.ColorNavigator7`
+
 
 ## Warnings
 

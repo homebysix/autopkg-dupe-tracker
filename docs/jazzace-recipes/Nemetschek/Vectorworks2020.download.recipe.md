@@ -1,12 +1,13 @@
 # Vectorworks2020.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Vectorworks 2020, as specified via Input Variables.
 
 - **Identifier**: `com.github.jazzace.download.vectorworks2020`
 
 - **Parent Recipes**: `com.github.jazzace.download.vectorworks`
+
 
 ## Warnings
 

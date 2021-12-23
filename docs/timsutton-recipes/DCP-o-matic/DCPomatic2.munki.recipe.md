@@ -1,6 +1,6 @@
 # DCPomatic2.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest DCP-o-matic from the official DCP-o-matic
 website, and imports it into Munki.

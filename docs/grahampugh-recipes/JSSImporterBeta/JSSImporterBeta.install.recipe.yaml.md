@@ -1,12 +1,13 @@
 # JSSImporterBeta.install.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Installs the current release of JSSImporter from Github.
 
 - **Identifier**: `com.github.grahampugh.install.JSSImporterBeta`
 
 - **Parent Recipes**: `com.github.grahampugh.download.JSSImporterBeta`
+
 
 ## Warnings
 

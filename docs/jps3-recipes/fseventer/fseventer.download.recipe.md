@@ -1,12 +1,13 @@
 # fseventer.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of fseventer. For more information about this application, see: http://www.fernlightning.com/doku.php?id=software:fseventer:start
 
 - **Identifier**: `com.github.jps3.download.fseventer`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

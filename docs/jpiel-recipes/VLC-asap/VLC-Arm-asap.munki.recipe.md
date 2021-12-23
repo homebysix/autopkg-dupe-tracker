@@ -1,12 +1,13 @@
 # VLC-Arm-asap.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of VLC and imports into Munki.
 
 - **Identifier**: `com.github.jpiel.munki.VLC-Arm-asap`
 
 - **Parent Recipes**: `com.github.tallfunnyjew.download.VLC-Arm-asap`
+
 
 ## Warnings
 

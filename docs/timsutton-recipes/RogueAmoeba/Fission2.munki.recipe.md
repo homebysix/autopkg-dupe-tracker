@@ -1,6 +1,6 @@
 # Fission2.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads and imports Fission 2 into Munki.
 
@@ -16,6 +16,7 @@ correct minimum_os_version pkginfo key.
             - **Identifier**: `com.github.timsutton.munki.Fission2`
 
             - **Parent Recipes**: `com.github.timsutton.download.Fission2`
+
 
 ## Warnings
 

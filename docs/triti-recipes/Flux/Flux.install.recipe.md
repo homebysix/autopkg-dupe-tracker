@@ -1,12 +1,13 @@
 # Flux.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads and installs the latest f.lux application.
 
 - **Identifier**: `com.github.triti.install.Flux`
 
 - **Parent Recipes**: `com.github.jaharmi.download.Flux`
+
 
 ## Warnings
 

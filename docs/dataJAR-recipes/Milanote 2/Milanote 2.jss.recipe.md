@@ -1,12 +1,13 @@
 # Milanote 2.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Milanote 2 and then uploads to the JSS
 
 - **Identifier**: `com.github.dataJAR-recipes.jss.Milanote 2`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.pkg.Milanote 2`
+
 
 ## Warnings
 

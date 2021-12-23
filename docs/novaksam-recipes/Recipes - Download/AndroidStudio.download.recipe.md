@@ -1,12 +1,13 @@
 # AndroidStudio.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Android Studio IDE from Google.
 
 - **Identifier**: `com.github.novaksam.download.AndroidStudio`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

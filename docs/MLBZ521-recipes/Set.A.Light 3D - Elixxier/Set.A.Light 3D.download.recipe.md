@@ -1,6 +1,6 @@
 # Set.A.Light 3D.download.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the latest release of Set.A.Light 3D from Elixxier.
 
@@ -9,6 +9,7 @@ I have not attempted to license this in an programmatic way yet, so the result w
             - **Identifier**: `com.github.mlbz521.download.SetALight3D`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

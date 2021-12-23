@@ -1,12 +1,13 @@
 # Infinite Algebra 2.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Infinite Algebra 2 and imports it into Munki.
 
 - **Identifier**: `com.github.macprince.munki.InfiniteAlgebra2`
 
 - **Parent Recipes**: `com.github.macprince.download.InfiniteAlgebra2`
+
 
 ## Warnings
 

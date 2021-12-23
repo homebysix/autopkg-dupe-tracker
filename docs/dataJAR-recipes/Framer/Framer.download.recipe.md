@@ -1,12 +1,13 @@
 # Framer.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest version of Framer.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Framer`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

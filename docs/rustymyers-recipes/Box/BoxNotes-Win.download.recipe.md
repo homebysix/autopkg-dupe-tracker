@@ -1,12 +1,13 @@
 # BoxNotes-Win.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of Box Notes for Windows.
 
 - **Identifier**: `com.github.rustymyers.download.boxnotes-win`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

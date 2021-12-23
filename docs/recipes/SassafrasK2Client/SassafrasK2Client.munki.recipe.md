@@ -1,6 +1,6 @@
 # SassafrasK2Client.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Fetches the latest Sassafras KeyClient Mac installer and imports into
 Munki. Additionally, fetch the k2clientconfig tool from the Sassafras website
@@ -37,6 +37,7 @@ we use its version in the pkginfo.
             - **Identifier**: `com.github.autopkg.munki.sassafras-k2client`
 
             - **Parent Recipes**: `com.github.autopkg.download.sassafras-k2client`
+
 
 ## Warnings
 

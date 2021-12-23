@@ -1,6 +1,6 @@
 # FirefoxWindows.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: This recipe downloads the latest 64-bit or 32-bit Windows MSI installer.
 
@@ -8,6 +8,7 @@ _Last updated 2021-12-23 19:58:07Z_
 - **Identifier**: `com.github.autopkg.download.FirefoxWindows`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

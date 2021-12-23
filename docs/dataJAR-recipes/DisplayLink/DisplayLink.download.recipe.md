@@ -1,6 +1,6 @@
 # DisplayLink.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of the DisplayLink Drivers (not Manager).
 	Taken over from bochoven-recipe (https://github.com/autopkg/bochoven-recipes/issues/35)
@@ -8,6 +8,7 @@
             - **Identifier**: `com.github.dataJAR-recipes.download.DisplayLink`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

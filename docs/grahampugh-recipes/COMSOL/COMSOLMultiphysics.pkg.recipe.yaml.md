@@ -1,6 +1,6 @@
 # COMSOLMultiphysics.pkg.recipe.yaml
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:51Z_
 
             - **Description**: Creates a package for COMSOL Multiphysics.
 There is no download recipe since COMSOL is not publicly available.

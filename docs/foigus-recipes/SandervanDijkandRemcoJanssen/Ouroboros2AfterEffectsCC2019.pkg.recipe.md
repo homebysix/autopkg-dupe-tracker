@@ -1,6 +1,6 @@
 # Ouroboros2AfterEffectsCC2019.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: "Downloads" Ouroboros 2 and packages it for installation under After Effects CC 2019.
 
@@ -15,6 +15,7 @@ autopkg run Ouroboros2AfterEffectsCC2019.pkg -p /path/to/ouroboros_2.0.3.zip -k 
             - **Identifier**: `com.github.foigus.pkg.Ouroboros2AfterEffectsCC2019`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

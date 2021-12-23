@@ -1,12 +1,13 @@
 # DupeGuru.download.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the current stable macOS version of dupeGuru.
 
 - **Identifier**: `com.github.grahampugh.recipes.download.dupeGuru`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

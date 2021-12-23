@@ -1,12 +1,13 @@
 # AdobeShockwavePlayer.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Adobe Shockwave Player disk image from macromedia.com.
 
 - **Identifier**: `com.github.jleggat.download.AdobeShockwavePlayer`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

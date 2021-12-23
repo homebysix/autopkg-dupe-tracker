@@ -1,6 +1,6 @@
 # Mailplane 3.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Mailplane 3 and makes a pkg of it then uploads it to the JSS.
 

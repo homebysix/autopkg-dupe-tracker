@@ -1,12 +1,13 @@
 # MSTeams-Win.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of Microsoft Teams dmg from Microsoft. Environment can be defined (although production seems to be the only available), as can platform (defaults to osx).
 
 - **Identifier**: `com.github.rustymyers.download.MSTeams-Win`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

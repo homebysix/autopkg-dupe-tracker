@@ -1,6 +1,6 @@
 # AutoCADLegacy.download.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the latest verison of AutoCAD from a local file share.
 
@@ -9,6 +9,7 @@ Supports the installer format found with AutoCAD 2020 and older.
             - **Identifier**: `com.github.mlbz521.download.AutoCADLegacy`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

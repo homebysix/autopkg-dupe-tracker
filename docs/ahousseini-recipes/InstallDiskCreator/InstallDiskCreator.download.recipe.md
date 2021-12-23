@@ -1,12 +1,13 @@
 # InstallDiskCreator.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Install Disk Creator.
 
 - **Identifier**: `com.github.ahousseini-recipes.download.InstallDiskCreator`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

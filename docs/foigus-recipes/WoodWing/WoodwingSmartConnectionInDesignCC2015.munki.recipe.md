@@ -1,6 +1,6 @@
 # WoodwingSmartConnectionInDesignCC2015.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages InDesign Smart Connection for installation for InDesign CC 2015 and imports it into Munki
 
@@ -17,6 +17,7 @@ autopkg run WoodwingSmartConnectionInDesignCC2015.munki -p /path/to/Smart_Connec
             - **Identifier**: `com.github.foigus.munki.WoodwingSmartConnectionInDesignCC2015`
 
             - **Parent Recipes**: `com.github.foigus.pkg.WoodwingSmartConnectionCC2015`
+
 
 ## Warnings
 

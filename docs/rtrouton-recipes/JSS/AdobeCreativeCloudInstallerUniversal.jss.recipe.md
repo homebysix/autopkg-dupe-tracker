@@ -1,12 +1,13 @@
 # AdobeCreativeCloudInstallerUniversal.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Adobe's Creative Cloud Installer, builds an installer package which installs the correct Creative Cloud for your Mac's processor and imports it into your JSS.
 
 - **Identifier**: `com.github.rtrouton.jss.AdobeCreativeCloudInstallerUniversal`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.AdobeCreativeCloudInstallerUniversal`
+
 
 ## Warnings
 

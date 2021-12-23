@@ -1,6 +1,6 @@
 # GoogleDrive_app.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Google Drive (previously File Stream) and imports it into a munki repo.
 
@@ -9,6 +9,7 @@ Since Google Drive has macOS architecture specific PKGs that won't be installed,
             - **Identifier**: `com.github.apizz.munki.GoogleDrive_app`
 
             - **Parent Recipes**: `com.github.nstrauss.pkg.GoogleDrive`
+
 
 ## Warnings
 

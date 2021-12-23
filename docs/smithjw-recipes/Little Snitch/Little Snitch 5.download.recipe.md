@@ -1,6 +1,6 @@
 # Little Snitch 5.download.recipe
 
-    _Last updated 2021-12-23 19:58:08Z_
+    _Last updated 2021-12-23 20:01:50Z_
 
     - **Description**: Downloads the latest version of Little Snitch 5.
 Please Note: In order to minimise user requests on first launch you'll need to 
@@ -10,6 +10,7 @@ Minimum OS is macOS 11.x
     - **Identifier**: `com.github.smithjw.download.LittleSnitch5`
 
     - **Parent Recipes**: `None`
+
 
 ## Warnings
 

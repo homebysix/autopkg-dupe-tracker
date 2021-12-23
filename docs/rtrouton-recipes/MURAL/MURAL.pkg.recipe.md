@@ -1,12 +1,13 @@
 # MURAL.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of MURAL and creates a package.
 
 - **Identifier**: `com.github.rtrouton.pkg.MURAL`
 
 - **Parent Recipes**: `com.github.rtrouton.download.MURAL`
+
 
 ## Warnings
 

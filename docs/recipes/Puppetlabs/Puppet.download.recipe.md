@@ -1,6 +1,6 @@
 # Puppet.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest Puppet using Puppet Labs' Mac download list at
 downloads.puppetlabs.com/mac.
@@ -13,6 +13,7 @@ the default, 'latest'.
             - **Identifier**: `com.github.autopkg.download.puppet`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

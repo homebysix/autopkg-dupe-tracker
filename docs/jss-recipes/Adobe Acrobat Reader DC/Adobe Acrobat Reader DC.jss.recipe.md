@@ -1,12 +1,13 @@
 # Adobe Acrobat Reader DC.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Adobe Acrobat Reader DC and makes a pkg of it then uploads it to the JSS.
 
 - **Identifier**: `com.github.jss-recipes.jss.AdobeReaderDC`
 
 - **Parent Recipes**: `com.github.autopkg.pkg.AdobeReaderDC`
+
 
 ## Warnings
 

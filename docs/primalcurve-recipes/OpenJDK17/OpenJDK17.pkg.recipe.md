@@ -1,12 +1,13 @@
 # OpenJDK17.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of OpenJDK 17 and builds a package.
 
 - **Identifier**: `com.github.primalcurve.pkg.OpenJDK17`
 
 - **Parent Recipes**: `com.github.primalcurve.download.OpenJDK17`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # FirefoxAutoconfig.jss.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: IMPORTANT: This recipe is meant to be overridden, not run as-is.
 
@@ -14,6 +14,7 @@ necessary if the value you want differs from the parent pkg recipe.
             - **Identifier**: `com.github.jss-recipes.jss.FirefoxAutoconfig`
 
             - **Parent Recipes**: `com.github.gregneagle.pkg.FirefoxAutoconfig`
+
 
 ## Warnings
 

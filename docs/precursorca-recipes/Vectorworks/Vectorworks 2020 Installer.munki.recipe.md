@@ -1,12 +1,13 @@
 # Vectorworks 2020 Installer.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Vectorworks 2020 Installer and imports it into Munki.
 
 - **Identifier**: `com.github.precursorca.munki.Vectorworks2020Installer`
 
 - **Parent Recipes**: `com.github.precursorca.download.Vectorworks2020Installer`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # InspireDesigner14ExportCC2020.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Verifies the Inspire Designer 14 Export Plugins package.
 
@@ -12,6 +12,7 @@ autopkg run InspireDesigner14ExportCC2020.download -p /path/to/Adobe-InDesign-20
             - **Identifier**: `com.github.foigus.download.InspireDesigner14ExportCC2020`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

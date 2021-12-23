@@ -1,12 +1,13 @@
 # ImageProcessorProPhotoshopCC2020.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Image Processor Pro and imports a Photoshop 2020-aimed package into Munki.
 
 - **Identifier**: `com.github.foigus.munki.ImageProcessorProPhotoshopCC2020`
 
 - **Parent Recipes**: `com.github.foigus.pkg.ImageProcessorProPhotoshopCC2020`
+
 
 ## Warnings
 

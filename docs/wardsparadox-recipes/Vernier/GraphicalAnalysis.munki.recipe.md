@@ -1,12 +1,13 @@
 # GraphicalAnalysis.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads and Vernier Graphical Analysis into Munki Repo
 
 - **Identifier**: `com.github.wardsparadox.munki.vernier.graphicalanalysis`
 
 - **Parent Recipes**: `com.github.wardsparadox.download.vernier.graphicalanalysis`
+
 
 ## Warnings
 

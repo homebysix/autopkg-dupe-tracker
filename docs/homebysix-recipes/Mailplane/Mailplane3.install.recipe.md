@@ -1,12 +1,13 @@
 # Mailplane3.install.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Installs the latest version of Mailplane.
 
 - **Identifier**: `com.github.homebysix.install.Mailplane`
 
 - **Parent Recipes**: `com.github.keeleysam.recipes.Mailplane.3.download`
+
 
 ## Warnings
 

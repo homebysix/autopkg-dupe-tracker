@@ -1,12 +1,13 @@
 # lastfm.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current version of LastFM via Sparkle. Note that Code Signature Verification is not possible on this .app, as it uses Sealed Resources v.1.
 
 - **Identifier**: `com.github.andrewvalentine.download.lastfm`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

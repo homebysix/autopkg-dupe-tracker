@@ -1,6 +1,6 @@
 # FirefoxESRPolicies.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads Firefox disk image and builds a package, injecting a policies.json file as "distribution"
 
@@ -24,6 +24,7 @@ Adapted from FirefoxAutoconfig.pkg.recipe by Greg Neagle
 - **Identifier**: `com.github.mosen.pkg.FirefoxESRPolicies`
 
 - **Parent Recipes**: `com.github.autopkg.download.firefox-rc-en_US`
+
 
 ## Warnings
 

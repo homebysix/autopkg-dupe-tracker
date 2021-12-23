@@ -1,6 +1,6 @@
 # ARCHICADUpdate.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest update build of ARCHICAD based on the override-able parameters: MAJOR_VERSION, LOCALIZATION, and RELEASE_TYPE
 
@@ -11,6 +11,7 @@ RELEASE_TYPE options include:  AC (for full version), SOLO, and START
             - **Identifier**: `com.github.wycomco.download.ARCHICADUpdate`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

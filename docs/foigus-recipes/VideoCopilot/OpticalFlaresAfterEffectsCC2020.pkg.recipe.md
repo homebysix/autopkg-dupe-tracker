@@ -1,6 +1,6 @@
 # OpticalFlaresAfterEffectsCC2020.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: "Downloads" Optical Flares and packages it for installation under After Effects CC 2020.
 
@@ -19,6 +19,7 @@ autopkg repo-add jessepeterson-recipes
             - **Identifier**: `com.github.foigus.pkg.OpticalFlaresAfterEffectsCC2020`
 
             - **Parent Recipes**: `com.github.foigus.download.OpticalFlares`
+
 
 ## Warnings
 

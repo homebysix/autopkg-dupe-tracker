@@ -1,12 +1,13 @@
 # ShutterEncoder.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Shutter Encoder
 
 - **Identifier**: `com.github.moofit-recipes.download.ShutterEncoder`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

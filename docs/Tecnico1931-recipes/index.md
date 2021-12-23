@@ -1,6 +1,7 @@
 # Tecnico1931-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [PritunlClient/PritunlClient.download.recipe](/autopkg-dupe-tracker/Tecnico1931-recipes/PritunlClient/PritunlClient.download.recipe)
 - [PritunlClient/PritunlClient.install.recipe](/autopkg-dupe-tracker/Tecnico1931-recipes/PritunlClient/PritunlClient.install.recipe)
 - [PritunlClient/PritunlClient.munki.recipe](/autopkg-dupe-tracker/Tecnico1931-recipes/PritunlClient/PritunlClient.munki.recipe)

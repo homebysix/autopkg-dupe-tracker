@@ -1,6 +1,6 @@
 # Firefox.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Firefox disk image and builds a package.
 Some useful values for RELEASE are: 'latest', 'esr-latest', 'beta-latest'.
@@ -14,6 +14,7 @@ See the following URLs for more info:
             - **Identifier**: `com.github.autopkg.pkg.Firefox_EN`
 
             - **Parent Recipes**: `com.github.autopkg.download.firefox-rc-en_US`
+
 
 ## Warnings
 

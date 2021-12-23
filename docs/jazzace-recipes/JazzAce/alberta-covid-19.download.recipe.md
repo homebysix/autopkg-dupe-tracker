@@ -1,6 +1,6 @@
 # alberta-covid-19.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the Alberta COVID-19 Data page and date stamps it using the date at the 
 top of the web page (the last date of full results). Designed to run daily.

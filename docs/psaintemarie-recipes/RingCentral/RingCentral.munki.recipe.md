@@ -1,12 +1,13 @@
 # RingCentral.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of RingCentral (Glip) and imports it into Munki.
 
 - **Identifier**: `com.github.psaintemarie.munki.RingCentral`
 
 - **Parent Recipes**: `com.github.psaintemarie.download.RingCentral`
+
 
 ## Warnings
 

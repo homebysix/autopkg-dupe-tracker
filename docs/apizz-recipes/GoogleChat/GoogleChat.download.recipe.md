@@ -1,12 +1,13 @@
 # GoogleChat.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Google Chat disk image.
 
 - **Identifier**: `com.github.apizz.download.hangoutschat`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

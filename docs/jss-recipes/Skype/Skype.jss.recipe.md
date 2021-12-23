@@ -1,12 +1,13 @@
 # Skype.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Skype disk image, builds a package, and uploads to the JSS.
 
 - **Identifier**: `com.github.jss-recipes.jss.Skype`
 
 - **Parent Recipes**: `com.github.autopkg.pkg.Skype`
+
 
 ## Warnings
 

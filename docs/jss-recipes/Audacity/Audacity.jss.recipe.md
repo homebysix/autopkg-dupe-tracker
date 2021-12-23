@@ -1,6 +1,6 @@
 # Audacity.jss.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Creates a pkg using the Audacity disk image, then uploads it to the JSS.
 
@@ -9,6 +9,7 @@ NOTE: Because Audacity cannot be automatically downloaded due to Fosshub's TOS, 
             - **Identifier**: `com.github.jss-recipes.jss.Audacity`
 
             - **Parent Recipes**: `com.github.scriptingosx.pkg.audacity`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Zoom-ForIT.download.recipe
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of Zoom for IT Admins package.  For customizing the package (i.e. SSO, etc).
 
 - **Identifier**: `com.github.mlbz521.download.ZoomUS-ForIT`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

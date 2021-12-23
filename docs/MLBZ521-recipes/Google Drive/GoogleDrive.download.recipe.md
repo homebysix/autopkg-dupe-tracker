@@ -1,6 +1,6 @@
 # GoogleDrive.download.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the current release of Google Drive.
 
@@ -9,6 +9,7 @@ This recipe differs from wardsparadox-recipes as it uses the static URL instead 
             - **Identifier**: `com.github.mlbz521.download.GoogleDrive`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

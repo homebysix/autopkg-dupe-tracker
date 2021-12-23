@@ -1,12 +1,13 @@
 # Suitcase Fusion 21.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Suitcase Fusion 21 and makes a pkg of it
 
 - **Identifier**: `com.github.dataJAR-recipes.pkg.Suitcase Fusion 21`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.Suitcase Fusion 21`
+
 
 ## Warnings
 

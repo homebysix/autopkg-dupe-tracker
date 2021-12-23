@@ -1,6 +1,6 @@
 # PowerPanel.download.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: Downloads the CyberPower PowerPanel app to configure their UPS.
 NOTE: This app is not code-signed by the developer
@@ -9,6 +9,7 @@ NOTE: This app is not code-signed by the developer
         - **Identifier**: `com.github.poundbangbash.eholtam-recipes.download.powerpanel`
 
         - **Parent Recipes**: `None`
+
 
 ## Warnings
 

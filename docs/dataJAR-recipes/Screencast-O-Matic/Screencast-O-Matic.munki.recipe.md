@@ -1,12 +1,13 @@
 # Screencast-O-Matic.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest version of Screencast-O-Matic for macOS and imports into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.Screencast-O-Matic`
 
 - **Parent Recipes**: `com.github.mlbz521.download.Screencast-O-Matic`
+
 
 ## Warnings
 

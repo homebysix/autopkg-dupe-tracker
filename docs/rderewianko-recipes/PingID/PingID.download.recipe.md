@@ -1,12 +1,13 @@
 # PingID.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest PingID desktop app for macOS.
 
 - **Identifier**: `com.rderewianko.download.PingID`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

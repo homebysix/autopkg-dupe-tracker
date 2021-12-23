@@ -1,12 +1,13 @@
 # AdoptOpenJDK 11.jss.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the current release version of AdoptOpenJDK 8 and builds a package. This is based from the tar version rather than the signed pkg version, so that the true version number can be obtained. Then, uploads to the Jamf Pro Server.
 
 - **Identifier**: `com.github.grahampugh.recipes.jss.AdoptOpenJDK11`
 
 - **Parent Recipes**: `com.github.grahampugh.recipes.pkg.AdoptOpenJDK11`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # SassafrasAllSight.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest installer (as specified by INSTALLER_TYPE) for Sassafras AllSight/LabSight/KeySight.
 
@@ -11,6 +11,7 @@ or you can use the SassafrasClient, SassafrasAdmin, and SassafrasServer recipes 
             - **Identifier**: `com.github.jazzace.download.sassafrasallsight`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

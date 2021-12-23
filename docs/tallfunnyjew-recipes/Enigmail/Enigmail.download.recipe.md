@@ -1,12 +1,13 @@
 # Enigmail.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Enigmail openPGP plug-in for Thunderbird
 
 - **Identifier**: `com.github.tallfunnyjew.download.Enigmail`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

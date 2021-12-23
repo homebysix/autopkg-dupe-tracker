@@ -1,12 +1,13 @@
 # Silverlight.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Silverlight installer, copies the package to the build directory with an appended version number, and uploads to the JSS.
 
 - **Identifier**: `com.github.novaksam.jss.Silverlight`
 
 - **Parent Recipes**: `com.github.novaksam.pkg.Silverlight`
+
 
 ## Warnings
 

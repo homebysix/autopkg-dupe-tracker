@@ -1,12 +1,13 @@
 # minecraft.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Packages up Minecraft for deployment.  THIS RECIPE REQUIRES JAVA TO BE INSTALLED IN ORDER TO RUN.
 
 - **Identifier**: `com.github.nmcspadden.pkg.minecraft`
 
 - **Parent Recipes**: `com.github.nmcspadden.download.minecraft`
+
 
 ## Warnings
 

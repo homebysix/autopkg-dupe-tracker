@@ -1,12 +1,13 @@
 # Alfred2.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest Alfred 2.
 
 - **Identifier**: `io.github.hjuutilainen.download.Alfred2`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

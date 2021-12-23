@@ -1,6 +1,6 @@
 # AdobeReader.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current Adobe Reader pkg and repackages, replacing a problematic preinstall script, 
 and enabling installation on non-boot volumes. Setting MAJOR_VERSION to "10" will cause a download of the 
@@ -12,6 +12,7 @@ I just wanted to tweak it a little and get the version number on the installer.
             - **Identifier**: `com.github.novaksam.pkg.AdobeReader`
 
             - **Parent Recipes**: `com.github.autopkg.download.AdobeReader`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Firefox.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of the Mozilla Firefox installer package and renames the installer package.
 
 - **Identifier**: `com.github.rtrouton.pkg.Firefox`
 
 - **Parent Recipes**: `com.github.autopkg.download.FirefoxSignedPkg`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # Vectorworks.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of the major version of Vectorworks specified via Input Variable.
 Please use the child recipe for your version of Vectorworks to avoid problems with 
@@ -10,6 +10,7 @@ Note that this recipe only works for Vectorworks 2021 and later. (A separate rec
             - **Identifier**: `com.github.jazzace.download.vectorworks`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

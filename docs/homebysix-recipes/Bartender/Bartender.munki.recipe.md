@@ -1,6 +1,6 @@
 # Bartender.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Bartender and imports it into Munki.
 
@@ -9,6 +9,7 @@ Specify which major version you want in the MAJOR_VERSION input variable. Suppor
             - **Identifier**: `com.github.homebysix.munki.Bartender`
 
             - **Parent Recipes**: `com.github.homebysix.download.Bartender`
+
 
 ## Warnings
 

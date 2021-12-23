@@ -1,12 +1,13 @@
 # iShowUInstant.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of iShowU Instant. The .dmg includes the main .app and the supplemental Audio Capture .pkg. This recipe runs CodeSignatureVerifier on both.
 
 - **Identifier**: `com.github.andrewvalentine.download.ishowuinstant`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

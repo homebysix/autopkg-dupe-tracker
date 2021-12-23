@@ -1,12 +1,13 @@
 # RemoteUpdateManager.M1.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: 
 
 - **Identifier**: `com.github.precursorca.munki.RemoteUpdateManager.M1`
 
 - **Parent Recipes**: `com.github.precursorca.pkg.RemoteUpdateManager.M1`
+
 
 ## Warnings
 

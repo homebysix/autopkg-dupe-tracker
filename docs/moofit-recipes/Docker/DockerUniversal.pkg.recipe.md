@@ -1,12 +1,13 @@
 # DockerUniversal.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest amd64 and arm64 versions of Docker and combines them into a package
 
 - **Identifier**: `com.github.moofit-recipes.pkg.DockerUniversal`
 
 - **Parent Recipes**: `com.github.moofit-recipes.download.DockerUniversal`
+
 
 ## Warnings
 

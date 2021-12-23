@@ -1,12 +1,13 @@
 # NikCollectionPSCC2017.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Nik Collection and packages it for Photoshop CC 2017.
 
 - **Identifier**: `com.github.foigus.pkg.NikCollectionPSCC2017`
 
 - **Parent Recipes**: `com.github.foigus.download.NikCollection`
+
 
 ## Warnings
 

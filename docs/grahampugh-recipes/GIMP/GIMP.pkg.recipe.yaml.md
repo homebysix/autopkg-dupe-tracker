@@ -1,12 +1,13 @@
 # GIMP.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest version of GIMP from gimp.org and builds a package.
 
 - **Identifier**: `com.github.grahampugh.pkg.GIMP`
 
 - **Parent Recipes**: `io.github.hjuutilainen.download.GIMP`
+
 
 ## Warnings
 

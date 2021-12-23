@@ -1,12 +1,13 @@
 # JabraDirect.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest verison of Jabra Direct
 
 - **Identifier**: `com.github.moofit-recipes.pkg.jabradirect`
 
 - **Parent Recipes**: `com.github.joshua-d-miller.download.jabradirect`
+
 
 ## Warnings
 

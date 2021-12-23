@@ -1,12 +1,13 @@
 # BlackboardCollaborateLauncher.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Takes a downloaded "Blackboard Collaborate Launcher.app" from the Caches folder and turns it into a package.
 
 - **Identifier**: `com.github.grahamgilbert.BlackboardCollaborateLauncher.pkg`
 
 - **Parent Recipes**: `com.github.autopkg.download.blackboardcollaboratelauncher`
+
 
 ## Warnings
 

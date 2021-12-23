@@ -1,6 +1,6 @@
 # SendtoKindle.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest Send to Kindle and modifies a postinstall to exit 0 in case of scripting failure.
 
@@ -11,6 +11,7 @@ autopkg repo-add https://github.com/facebook/Recipes-for-AutoPkg
             - **Identifier**: `com.github.foigus.pkg.SendToKindle`
 
             - **Parent Recipes**: `com.github.foigus.download.SendToKindle`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # AdobeReaderUpdates.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest update for Adobe Reader and imports into Munki. This is not a complete
 installer for Adobe Reader as is provided by AdobeReader.munki, but recent versions (11.0.11 and 11.0.12)

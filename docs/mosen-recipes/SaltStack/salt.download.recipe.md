@@ -1,6 +1,6 @@
 # salt.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of SaltStack, specify python version
 in the PYVERSION variable to switch between 2 (default) and 3 versions of the installer.
@@ -8,6 +8,7 @@ in the PYVERSION variable to switch between 2 (default) and 3 versions of the in
             - **Identifier**: `com.github.mosen.download.salt`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

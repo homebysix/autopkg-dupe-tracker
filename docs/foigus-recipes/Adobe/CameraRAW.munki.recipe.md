@@ -1,6 +1,6 @@
 # CameraRAW.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Adobe Camera RAW.
 
@@ -16,6 +16,7 @@ autopkg repo-add homebysix-recipes
             - **Identifier**: `com.github.foigus.munki.CameraRAW`
 
             - **Parent Recipes**: `com.github.foigus.download.CameraRAW`
+
 
 ## Warnings
 

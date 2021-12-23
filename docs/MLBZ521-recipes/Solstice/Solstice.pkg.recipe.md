@@ -1,6 +1,6 @@
 # Solstice.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads Mersive's Solstice and creates a package.
 
@@ -15,6 +15,7 @@ Download recipe's original author was @joshua-d-miller (https://github.com/autop
             - **Identifier**: `com.github.mlbz521.pkg.Solstice`
 
             - **Parent Recipes**: `com.github.mlbz521.download.Solstice`
+
 
 ## Warnings
 

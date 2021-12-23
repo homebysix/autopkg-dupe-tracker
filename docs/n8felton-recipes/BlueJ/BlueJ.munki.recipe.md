@@ -1,12 +1,13 @@
 # BlueJ.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of BlueJ and imports it into Munki.
 
 - **Identifier**: `com.github.n8felton.munki.BlueJ`
 
 - **Parent Recipes**: `com.github.n8felton.download.BlueJ`
+
 
 ## Warnings
 

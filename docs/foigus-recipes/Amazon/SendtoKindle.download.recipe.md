@@ -1,12 +1,13 @@
 # SendtoKindle.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Send to Kindle disk image.
 
 - **Identifier**: `com.github.foigus.download.SendToKindle`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

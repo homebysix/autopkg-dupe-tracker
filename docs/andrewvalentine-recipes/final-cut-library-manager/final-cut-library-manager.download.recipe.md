@@ -1,12 +1,13 @@
 # final-cut-library-manager.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Final Cut Library Manager
 
 - **Identifier**: `com.github.andrewvalentine.download.final-cut-library-manager`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,7 @@
 # jleggat-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [QLMarkdown/QLMarkdown.install.recipe](/autopkg-dupe-tracker/jleggat-recipes/QLMarkdown/QLMarkdown.install.recipe)
 - [QLMarkdown/QLMarkdown.download.recipe](/autopkg-dupe-tracker/jleggat-recipes/QLMarkdown/QLMarkdown.download.recipe)
 - [QLMarkdown/QLMarkdown.munki.recipe](/autopkg-dupe-tracker/jleggat-recipes/QLMarkdown/QLMarkdown.munki.recipe)

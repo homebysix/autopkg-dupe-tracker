@@ -1,12 +1,13 @@
 # AMS Neve GenesysControl Plugin - 10.15+.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of AMS Neve GenesysControl Plugin for macOS 10.15+ and imports into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.AMS Neve GenesysControl Plugin - 10.15+`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.pkg.AMS Neve GenesysControl Plugin - 10.15+`
+
 
 ## Warnings
 

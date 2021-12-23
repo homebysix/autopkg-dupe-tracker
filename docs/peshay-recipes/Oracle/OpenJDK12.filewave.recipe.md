@@ -1,12 +1,13 @@
 # OpenJDK12.filewave.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest version of OpenJDK12 and imports into FileWave.
 
 - **Identifier**: `com.github.peshay.filewave.OpenJDK12`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.OpenJDK12`
+
 
 ## Warnings
 

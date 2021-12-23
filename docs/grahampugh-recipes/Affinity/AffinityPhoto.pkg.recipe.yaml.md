@@ -1,12 +1,13 @@
 # AffinityPhoto.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest version of Affinity Photo and creates a pkg including version number.
 
 - **Identifier**: `com.github.grahampugh.recipes.pkg.AffinityPhoto`
 
 - **Parent Recipes**: `com.github.peterkelm.download.AffinityPhoto`
+
 
 ## Warnings
 

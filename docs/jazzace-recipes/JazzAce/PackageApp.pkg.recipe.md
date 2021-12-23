@@ -1,6 +1,6 @@
 # PackageApp.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: This is a generic recipe to turn an app into a .pkg installer for it.
 The user must specify the path to the app at runtime via the --pkg option.

@@ -1,6 +1,6 @@
 # EskoDataExchange.pkg.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: 
 Remove AppleScript which creates alert dialogs, use exit status only.

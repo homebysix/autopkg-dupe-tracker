@@ -1,6 +1,6 @@
 # AssetsInDesignCC2020Plugin.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Assets Plugin and imports it into Munki for installation for InDesign 2020.
 
@@ -17,6 +17,7 @@ autopkg run AssetsInDesignCC2020Plugin.munki -p /path/WoodWing\ Assets\ for\ InD
             - **Identifier**: `com.github.foigus.munki.AssetsInDesignCC2020Plugin`
 
             - **Parent Recipes**: `com.github.foigus.download.AssetsInDesignPlugin`
+
 
 ## Warnings
 

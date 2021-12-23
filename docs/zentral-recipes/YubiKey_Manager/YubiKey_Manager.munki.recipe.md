@@ -1,6 +1,6 @@
 # YubiKey_Manager.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download and import to Munki the latest version of YubiKey Manager from Yubico
 

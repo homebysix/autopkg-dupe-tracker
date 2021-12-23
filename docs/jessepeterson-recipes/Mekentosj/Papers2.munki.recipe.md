@@ -1,12 +1,13 @@
 # Papers2.munki.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Imports latest Papers2 into Munki repo.
 
 - **Identifier**: `com.github.jessepeterson.Papers2.munki`
 
 - **Parent Recipes**: `com.github.jessepeterson.Papers2.download`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Cocktail-10.9.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release of Cocktail (for Mavericks).
 
 - **Identifier**: `com.github.homebysix.download.Cocktail-10.9`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

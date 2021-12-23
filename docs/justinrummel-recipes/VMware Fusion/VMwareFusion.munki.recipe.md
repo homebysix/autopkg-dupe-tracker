@@ -1,12 +1,13 @@
 # VMwareFusion.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Imports the VMwareFusion app into Munki.
 
 - **Identifier**: `com.justinrummel.munki.VMwareFusion`
 
 - **Parent Recipes**: `com.justinrummel.download.VMwareFusion`
+
 
 ## Warnings
 

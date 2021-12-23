@@ -1,12 +1,13 @@
 # Dash3.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the current version of Dash 3.
 
 - **Identifier**: `io.github.hjuutilainen.download.Dash3`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

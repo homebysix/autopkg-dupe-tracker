@@ -1,12 +1,13 @@
 # IntelliJ-IDEA-CE.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Intellij IDEA and imports into Munki. Taken from bnpl-recipes repo
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.intellijideace`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.intellijideace`
+
 
 ## Warnings
 

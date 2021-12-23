@@ -1,12 +1,13 @@
 # Zoom-OutlookPlugin.jss.recipe
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of the Zoom Outlook Plugin, builds a package, and uploads it to the JSS.
 
 - **Identifier**: `com.github.mlbz521.jss.Zoom-OutlookPlugin`
 
 - **Parent Recipes**: `com.github.mlbz521.pkg.Zoom-OutlookPlugin`
+
 
 ## Warnings
 

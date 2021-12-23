@@ -1,6 +1,6 @@
 # MediaBankGoldCreativeCloudExtension2018.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Repackage the MediaBank Gold Creative Cloud Extension.  This recipe does not download the MediaBank Gold tar archive--feed the tar archive into the recipe via the following format:
 
@@ -9,6 +9,7 @@ autopkg run MediaBankGoldCreativeCloudExtension2018.pkg -p /path/to/MediaBankGol
             - **Identifier**: `com.github.foigus.pkg.MediaBankGoldCreativeCloudExtension2018`
 
             - **Parent Recipes**: `com.github.foigus.download.MediaBankGoldCC2018`
+
 
 ## Warnings
 

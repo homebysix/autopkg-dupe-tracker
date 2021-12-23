@@ -1,12 +1,13 @@
 # Onyx12.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of Onyx for macOS 12, builds a pkg and installs it.
 
 - **Identifier**: `com.github.darkomen78.install.Onyx12`
 
 - **Parent Recipes**: `com.github.darkomen78.pkg.Onyx12`
+
 
 ## Warnings
 

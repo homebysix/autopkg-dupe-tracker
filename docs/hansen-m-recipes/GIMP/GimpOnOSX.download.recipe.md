@@ -1,12 +1,13 @@
 # GimpOnOSX.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest GIMP for Mac OS X where MAJOR_OS_VERSION is SL-Lion-ML, MountainLion or Mavericks (default).
 
 - **Identifier**: `com.github.hansen-m.download.gimponosx`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # Cinema4DSubscription.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Cinema 4D Subscription.
 
@@ -13,6 +13,7 @@ autopkg repo-add homebysix-recipes
             - **Identifier**: `com.github.foigus.download.Cinema4DSubscription`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

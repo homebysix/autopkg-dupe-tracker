@@ -1,12 +1,13 @@
 # Microsoft Remote Desktop Beta.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft Remote Desktop Beta and creates a package.
 
 - **Identifier**: `com.github.n8felton.pkg.MicrosoftRemoteDesktopBeta`
 
 - **Parent Recipes**: `com.github.n8felton.download.MicrosoftRemoteDesktopBeta`
+
 
 ## Warnings
 

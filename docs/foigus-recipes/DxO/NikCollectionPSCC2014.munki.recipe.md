@@ -1,12 +1,13 @@
 # NikCollectionPSCC2014.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Nik Collection, packages it for Photoshop CC 2014, and imports it into Munki.
 
 - **Identifier**: `com.github.foigus.munki.NikCollectionPSCC2014`
 
 - **Parent Recipes**: `com.github.foigus.pkg.NikCollectionPSCC2014`
+
 
 ## Warnings
 

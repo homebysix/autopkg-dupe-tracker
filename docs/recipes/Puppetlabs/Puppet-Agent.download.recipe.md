@@ -1,6 +1,6 @@
 # Puppet-Agent.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest Puppet-Agent in the Collections format from
 downloads.puppetlabs.com/mac/PC1. Bundles vendored Ruby, Facter, Hiera, Augeas, Puppet and MCollective.
@@ -10,6 +10,7 @@ OS_VERSION can be overridden, or left to the default, '10.10'.
             - **Identifier**: `com.github.autopkg.download.puppet-agent`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

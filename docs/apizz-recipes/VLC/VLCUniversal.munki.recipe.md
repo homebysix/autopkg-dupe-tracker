@@ -1,12 +1,13 @@
 # VLCUniversal.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the VERY latest Universal version of VLC from the website and imports it into a munk_repo.
 
 - **Identifier**: `com.github.apizz.munki.VLCUniversal`
 
 - **Parent Recipes**: `com.github.apizz.download.VLCUniversal`
+
 
 ## Warnings
 

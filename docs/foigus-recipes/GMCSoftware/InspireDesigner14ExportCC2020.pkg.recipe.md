@@ -1,6 +1,6 @@
 # InspireDesigner14ExportCC2020.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages Inspire Designer 14 Export plugin for InDesign CC 2020.
 
@@ -17,6 +17,7 @@ autopkg run InspireDesigner14ExportCC2020.pkg -p /path/to/Adobe-InDesign-2020-Pl
             - **Identifier**: `com.github.foigus.pkg.InspireDesigner14ExportCC2020`
 
             - **Parent Recipes**: `com.github.foigus.download.InspireDesigner14ExportCC2020`
+
 
 ## Warnings
 

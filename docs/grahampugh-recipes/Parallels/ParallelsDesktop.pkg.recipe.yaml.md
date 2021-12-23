@@ -1,6 +1,6 @@
 # ParallelsDesktop.pkg.recipe.yaml
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:51Z_
 
             - **Description**: Creates a package for Parallels Desktop.
 This is done with the help of the pd-autodeploy file obtained from Parallels website.
@@ -13,6 +13,7 @@ It is also possible to override the software update settings. See ParallelsDeskt
             - **Identifier**: `com.github.grahampugh.recipes.pkg.ParallelsDesktop`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

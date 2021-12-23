@@ -1,6 +1,6 @@
 # BBEdit.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of BBEdit and makes a pkg of it then uploads it to the JSS.
 

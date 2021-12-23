@@ -1,12 +1,13 @@
 # ngrok.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads and builds a package that installs ngrok. The resulting package installs to /usr/local/bin/ngrok
 
 - **Identifier**: `com.github.apfelwerk.pkg.ngrok`
 
 - **Parent Recipes**: `com.github.apfelwerk.download.ngrok`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Oracle Java 8 JDK.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Oracle Java 8 JDK and creates a package. Then, uploads to the JSS.
 
 - **Identifier**: `com.github.jss-recipes.jss.OracleJava8JDK`
 
 - **Parent Recipes**: `com.github.novaksam.pkg.OracleJava8JDK`
+
 
 ## Warnings
 

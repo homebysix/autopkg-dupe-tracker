@@ -1,12 +1,13 @@
 # TextExpander6.pkg.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the current release version of TextExpander 6 and makes a package.
 
 - **Identifier**: `io.github.hjuutilainen.pkg.TextExpander6`
 
 - **Parent Recipes**: `io.github.hjuutilainen.download.TextExpander6`
+
 
 ## Warnings
 

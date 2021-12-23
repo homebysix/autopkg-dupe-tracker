@@ -1,12 +1,13 @@
 # MicrosoftYammer.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft's Yammer installer package and installs it.
 
 - **Identifier**: `com.github.rtrouton.install.microsoftyammer`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.microsoftyammer`
+
 
 ## Warnings
 

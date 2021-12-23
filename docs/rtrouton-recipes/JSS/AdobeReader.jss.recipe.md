@@ -1,12 +1,13 @@
 # AdobeReader.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Uses parent pkg recipe to download latest Adobe Reader and import it into the JSS.
 
 - **Identifier**: `com.github.rtrouton.jss.AdobeReader`
 
 - **Parent Recipes**: `com.github.autopkg.pkg.AdobeReader`
+
 
 ## Warnings
 

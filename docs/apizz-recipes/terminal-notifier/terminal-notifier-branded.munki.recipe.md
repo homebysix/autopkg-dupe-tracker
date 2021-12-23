@@ -1,12 +1,13 @@
 # terminal-notifier-branded.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Replaces terminal-notifier app icns file with your own for custom branding and imports into Munki.
 
 - **Identifier**: `com.github.apizz.munki.terminal-notifier-branded`
 
 - **Parent Recipes**: `com.github.morgrowe.download.terminal-notifier`
+
 
 ## Warnings
 

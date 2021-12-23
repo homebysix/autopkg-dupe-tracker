@@ -1,12 +1,13 @@
 # VMware Fusion 11.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of VMware Fusion 11 and creates a package
 
 - **Identifier**: `com.github.dataJAR-recipes.pkg.VMware Fusion 11`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.VMware Fusion 11`
+
 
 ## Warnings
 

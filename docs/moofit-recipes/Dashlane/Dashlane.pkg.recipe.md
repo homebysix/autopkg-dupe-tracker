@@ -1,12 +1,13 @@
 # Dashlane.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest verison of Dashlane Password Management Software
 
 - **Identifier**: `com.github.moofit-recipes.pkg.Dashlane`
 
 - **Parent Recipes**: `com.github.joshua-d-miller.download.dashlane`
+
 
 ## Warnings
 

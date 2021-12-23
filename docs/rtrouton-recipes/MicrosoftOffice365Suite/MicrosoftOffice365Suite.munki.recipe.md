@@ -1,6 +1,6 @@
 # MicrosoftOffice365Suite.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest Microsoft Office 365 SKU-less installer suite package,
 appends the version to the end of the filename, and imports into Munki.

@@ -1,12 +1,13 @@
 # i1Profiler.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest client installer for i1Profiler and imports it into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.i1Profiler`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.i1Profiler`
+
 
 ## Warnings
 

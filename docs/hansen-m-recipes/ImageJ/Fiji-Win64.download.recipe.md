@@ -1,12 +1,13 @@
 # Fiji-Win64.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for the latest stable version of Fiji 64-bit for Windows. Adapted from the Fiji OS X recipe created by Rich Trouton.
 
 - **Identifier**: `com.github.hansen-m.download.Fiji-Win64`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

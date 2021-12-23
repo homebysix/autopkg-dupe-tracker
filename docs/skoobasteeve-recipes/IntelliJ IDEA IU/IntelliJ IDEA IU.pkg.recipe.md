@@ -1,12 +1,13 @@
 # IntelliJ IDEA IU.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of IDEA Ultimate and creates a package.
 
 - **Identifier**: `com.github.skoobasteeve.pkg.IntelliJIDEAIU`
 
 - **Parent Recipes**: `com.github.mosen.download.IDEA-IU`
+
 
 ## Warnings
 

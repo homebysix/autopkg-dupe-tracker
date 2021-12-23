@@ -1,12 +1,13 @@
 # AutodeskFusion360.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Imports Autodesk's Fusion 360 into the Munki repo.
 
 - **Identifier**: `com.github.morgrowe.munki.AutodeskFusion360`
 
 - **Parent Recipes**: `com.github.morgrowe.download.AutodeskFusion360`
+
 
 ## Warnings
 

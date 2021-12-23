@@ -1,6 +1,6 @@
 # EnterpriseConnect.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Enterprise Connect and imports it into Munki.
 
@@ -10,6 +10,7 @@ https://github.com/autopkg/rtrouton-recipes/tree/master/EnterpriseConnect
             - **Identifier**: `com.github.homebysix.munki.EnterpriseConnect`
 
             - **Parent Recipes**: `com.github.rtrouton.pkg.EnterpriseConnect`
+
 
 ## Warnings
 

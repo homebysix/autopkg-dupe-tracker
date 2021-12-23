@@ -1,6 +1,6 @@
 # SketchUp Pro 2019 EN.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of SketchUp Pro 2019 EN and imports into Munki.
 
@@ -13,6 +13,7 @@ Removed superfluous CodeSignatureVerification from PKG.
             - **Identifier**: `com.github.dataJAR-recipes.munki.SketchUp Pro 2019 EN`
 
             - **Parent Recipes**: `com.github.dataJAR-recipes.pkg.SketchUp Pro 2019 EN`
+
 
 ## Warnings
 

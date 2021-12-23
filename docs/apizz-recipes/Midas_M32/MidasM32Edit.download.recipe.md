@@ -1,12 +1,13 @@
 # MidasM32Edit.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of the Midas M32 Edit app.
 
 - **Identifier**: `com.github.apizz.download.M32Edit`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

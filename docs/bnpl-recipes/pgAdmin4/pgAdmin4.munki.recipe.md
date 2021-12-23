@@ -1,12 +1,13 @@
 # pgAdmin4.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of pgAdmin 4 and imports it to Munki.
 
 - **Identifier**: `com.github.bnpl.autopkg.munki.pgAdmin4`
 
 - **Parent Recipes**: `com.github.bnpl.autopkg.download.pgadmin4`
+
 
 ## Warnings
 

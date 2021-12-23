@@ -1,12 +1,13 @@
 # MediaMaster Pro 5.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest version of MediaMaster Pro 5.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.MediaMaster Pro 5`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # QGIS.download.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the latest version of QGIS.  Requires python.org Python 3.6 to be pre-installed - other distributions are not supported.
 
@@ -11,6 +11,7 @@ Long Term (support) Release = "ltr"
             - **Identifier**: `com.github.mlbz521.download.QGIS`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # UXProtect.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download and unpack the latest version of UXProtect, which provides the missing UI to Apple's built-in XProtect and extends its malware detection/scanning capabilities.
 
 - **Identifier**: `com.github.apfelwerk.download.uxprotect`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

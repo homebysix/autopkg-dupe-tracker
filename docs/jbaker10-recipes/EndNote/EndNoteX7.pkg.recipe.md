@@ -1,12 +1,13 @@
 # EndNoteX7.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest full installer of EndNote X7 and builds an Apple installer pkg.
 
 - **Identifier**: `com.github.jbaker10.pkg.EndNoteX7`
 
 - **Parent Recipes**: `com.github.jbaker10.download.EndNoteX7`
+
 
 ## Warnings
 

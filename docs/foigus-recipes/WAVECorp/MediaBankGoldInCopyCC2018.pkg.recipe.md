@@ -1,6 +1,6 @@
 # MediaBankGoldInCopyCC2018.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Repackage the MediaBank Gold plugin for InCopy CC 2018.  This recipe does not download the MediaBank Gold tar archive--feed the tar archive into the recipe via the following format:
 

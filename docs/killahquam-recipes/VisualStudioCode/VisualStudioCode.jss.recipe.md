@@ -1,12 +1,13 @@
 # VisualStudioCode.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of VS Code and then uploads to the JSS
 
 - **Identifier**: `com.github.killahquam.jss.visualstudiocode`
 
 - **Parent Recipes**: `com.github.killahquam.pkg.visualstudioscode`
+
 
 ## Warnings
 

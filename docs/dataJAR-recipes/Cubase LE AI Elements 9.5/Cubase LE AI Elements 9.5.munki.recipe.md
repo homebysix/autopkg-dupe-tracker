@@ -1,6 +1,6 @@
 # Cubase LE AI Elements 9.5.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of Cubase LE AI Elements 9.5 and imports into Munki.
 

@@ -1,6 +1,6 @@
 # Waterfox-Classic.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of the Classic branch of Waterfox.
 	To download the Current branch of the app, use the Waterfox recipe.
@@ -9,6 +9,7 @@
             - **Identifier**: `com.github.jpiel.download.Waterfox-Classic`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

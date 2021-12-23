@@ -1,12 +1,13 @@
 # Ghostlab3.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Ghostlab3
 
 - **Identifier**: `com.github.andrewvalentine.download.Ghostlab3`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

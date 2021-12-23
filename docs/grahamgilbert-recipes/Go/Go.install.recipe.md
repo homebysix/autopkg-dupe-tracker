@@ -1,12 +1,13 @@
 # Go.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Uses parent pkg recipe to download latest Go and installs it.
 
 - **Identifier**: `com.github.grahamgilbert.install.go`
 
 - **Parent Recipes**: `com.github.timsutton.download.Go`
+
 
 ## Warnings
 

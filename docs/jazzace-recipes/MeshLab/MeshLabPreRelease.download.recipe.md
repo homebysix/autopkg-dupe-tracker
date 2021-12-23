@@ -1,12 +1,13 @@
 # MeshLabPreRelease.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest pre-release version of MeshLab for macOS.
 
 - **Identifier**: `com.github.jazzace.download.MeshLabPreRelease`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

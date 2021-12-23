@@ -1,12 +1,13 @@
 # MindManager2017Win.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest version of MindManager2017EnterpriseWin.
 
 - **Identifier**: `com.github.peshay.download.MindManager2017EnterpriseWin`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # AppStoreApp.ds.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Note: Please read information on how to use the AppStoreApp recipes in the ReadMe
 in Nick McSpadden's recipe repo; they do not function in the same way as other AutoPkg recipes:

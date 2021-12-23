@@ -1,12 +1,13 @@
 # InDataCC2019.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest InData CC 2019 package and imports it into Munki.
 
 - **Identifier**: `com.github.foigus.munki.InDataCC2019`
 
 - **Parent Recipes**: `com.github.foigus.download.InDataCC2019`
+
 
 ## Warnings
 

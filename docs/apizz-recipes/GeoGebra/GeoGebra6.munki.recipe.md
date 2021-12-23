@@ -1,12 +1,13 @@
 # GeoGebra6.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest verison of GeoGebra Classic 6 and imports it into a munki_repo.
 
 - **Identifier**: `com.github.apizz.munki.geogebra6`
 
 - **Parent Recipes**: `com.github.apizz.download.geogebra6`
+
 
 ## Warnings
 

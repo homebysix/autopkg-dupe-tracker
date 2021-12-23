@@ -1,6 +1,6 @@
 # FusionInventoryAgent.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest release of FusionInventory Agent and creates a pkg.
 

@@ -1,12 +1,13 @@
 # LogMeIn Rescue Technician Console.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of LogMeIn Rescue Technician Console and imports into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.LogMeInRescueTechnicianConsole`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.LogMeInRescueTechnicianConsole`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Inquisit 5 Lab.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for the latest version of Inquisit 5 Lab.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Inquisit 5 Lab`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

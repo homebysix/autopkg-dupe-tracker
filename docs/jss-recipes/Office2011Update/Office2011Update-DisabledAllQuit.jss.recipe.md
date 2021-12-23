@@ -1,12 +1,13 @@
 # Office2011Update-DisabledAllQuit.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest MS Office 2011 installer, makes a pkg (disabling the All Quit package), and uploads to the JSS.
 
 - **Identifier**: `com.github.jss-recipes.jss.Office2011Update-DisabledAllQuit`
 
 - **Parent Recipes**: `com.github.sheagcraig.pkg.Office2011UpdatesDisabledAllQuit`
+
 
 ## Warnings
 

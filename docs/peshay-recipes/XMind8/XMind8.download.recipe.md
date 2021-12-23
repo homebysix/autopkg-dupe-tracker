@@ -1,12 +1,13 @@
 # XMind8.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of XMind8.
 
 - **Identifier**: `com.github.peshay.download.XMind8`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

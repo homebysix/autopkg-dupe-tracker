@@ -1,6 +1,6 @@
 # Localized-LibreOffice.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: This recipe downloads latest LibreOffice and the language pack of the specified language.
 
@@ -12,6 +12,7 @@ LibreOffice main app is downloaded according to io.github.hjuutilainen.download.
             - **Identifier**: `com.github.jpiel.download.Localized-LibreOffice`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

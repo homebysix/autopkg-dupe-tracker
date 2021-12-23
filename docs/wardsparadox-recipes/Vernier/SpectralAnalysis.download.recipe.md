@@ -1,12 +1,13 @@
 # SpectralAnalysis.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release of Vernier's Spectral Analysis.
 
 - **Identifier**: `com.github.wardsparadox.download.vernier.spectralanalysis`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

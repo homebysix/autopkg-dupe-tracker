@@ -1,12 +1,13 @@
 # GoogleVoiceAndVideo.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download the latest version of the Google Voice and Video Plugin.
 
 - **Identifier**: `com.github.hansen-m.download.GoogleVoiceAndVideo`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

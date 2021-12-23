@@ -1,12 +1,13 @@
 # Papers2.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Find latest Papers2 from appcast and download.
 
 - **Identifier**: `com.github.jessepeterson.Papers2.download`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

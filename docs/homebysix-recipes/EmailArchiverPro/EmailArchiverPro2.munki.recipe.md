@@ -1,12 +1,13 @@
 # EmailArchiverPro2.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of EmailArchiverPro2 and imports it into Munki.
 
 - **Identifier**: `com.github.homebysix.munki.EmailArchiverPro2`
 
 - **Parent Recipes**: `com.github.homebysix.download.EmailArchiverPro2`
+
 
 ## Warnings
 

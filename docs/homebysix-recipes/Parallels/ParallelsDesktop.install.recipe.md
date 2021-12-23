@@ -1,6 +1,6 @@
 # ParallelsDesktop.install.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Installs the major version of Parallels Desktop specified by MAJOR_VERSION. This recipe has been tested with major versions 9 through 16.
 

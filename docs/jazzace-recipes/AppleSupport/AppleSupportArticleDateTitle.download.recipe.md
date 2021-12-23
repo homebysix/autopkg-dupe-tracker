@@ -1,6 +1,6 @@
 # AppleSupportArticleDateTitle.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of a particular Apple Support Article (specified in the input keys)
 and, if it has updated, copies it to the designated directory as HTML.
@@ -18,6 +18,7 @@ Input Keys:
             - **Identifier**: `com.github.jazzace.download.AppleSupportArticleDateTitle`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

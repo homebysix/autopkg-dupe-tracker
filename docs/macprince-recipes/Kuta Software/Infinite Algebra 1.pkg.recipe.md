@@ -1,12 +1,13 @@
 # Infinite Algebra 1.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Infinite Algebra 1 and creates a package.
 
 - **Identifier**: `com.github.macprince.pkg.InfiniteAlgebra1`
 
 - **Parent Recipes**: `com.github.macprince.download.InfiniteAlgebra1`
+
 
 ## Warnings
 

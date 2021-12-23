@@ -1,6 +1,6 @@
 # MicrosoftMacProductFWLink.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads any Microsoft product that can be located using a Microsoft FWLink number.
 Because this recipe is targeted at Mac products, the download is assumed to be a package (.pkg).

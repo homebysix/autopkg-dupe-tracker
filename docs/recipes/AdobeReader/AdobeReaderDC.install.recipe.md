@@ -1,12 +1,13 @@
 # AdobeReaderDC.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current Adobe Acrobat Reader DC pkg and installs it.
 
 - **Identifier**: `com.github.autopkg.install.AdobeReaderDC`
 
 - **Parent Recipes**: `com.github.autopkg.pkg.AdobeReaderDC`
+
 
 ## Warnings
 

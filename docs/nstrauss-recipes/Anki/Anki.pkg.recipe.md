@@ -1,12 +1,13 @@
 # Anki.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Anki disk image and builds a package.
 
 - **Identifier**: `com.github.nstrauss.pkg.Anki`
 
 - **Parent Recipes**: `com.github.nstrauss.download.Anki`
+
 
 ## Warnings
 

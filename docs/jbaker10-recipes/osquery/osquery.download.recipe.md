@@ -1,12 +1,13 @@
 # osquery.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest osquery installer .pkg from the osquery.io/downloads page
 
 - **Identifier**: `com.github.jbaker10.download.osquery`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

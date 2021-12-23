@@ -1,12 +1,13 @@
 # Logitech Camera Settings.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Logitech Camera Settings.
 
 - **Identifier**: `com.github.neilmartin83-recipes.download.Logitech Camera Settings`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

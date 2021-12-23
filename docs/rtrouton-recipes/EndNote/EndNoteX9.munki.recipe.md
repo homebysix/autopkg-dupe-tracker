@@ -1,12 +1,13 @@
 # EndNoteX9.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Endnote X9 installer and imports it into munki.
 
 - **Identifier**: `com.github.rtrouton.munki.EndNoteX9`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.EndNoteX9`
+
 
 ## Warnings
 

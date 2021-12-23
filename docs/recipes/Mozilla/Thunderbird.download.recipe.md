@@ -1,6 +1,6 @@
 # Thunderbird.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Thunderbird disk image.
 Some useful values for RELEASE are: 'latest', 'beta-latest'.
@@ -13,6 +13,7 @@ See the following URLs for more info:
             - **Identifier**: `com.github.autopkg.download.thunderbird`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

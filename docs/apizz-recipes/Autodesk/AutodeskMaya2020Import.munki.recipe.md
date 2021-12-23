@@ -1,6 +1,6 @@
 # AutodeskMaya2020Import.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Imports a DMG with an Autodesk Maya installer app inside. Install requires copying the install app to a desired location on the endpoint and using a postinstall script to trigger the install.
 

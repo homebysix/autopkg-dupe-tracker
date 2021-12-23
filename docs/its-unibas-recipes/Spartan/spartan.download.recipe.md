@@ -1,6 +1,6 @@
 # spartan.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Spartan from www.wavefun.com
 			The Processor AppDmgVersioner is used to read out the Bundle ID and App name. The version info is not used.
@@ -9,6 +9,7 @@
             - **Identifier**: `com.github.its-unibas.download.spartan`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

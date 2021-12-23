@@ -1,12 +1,13 @@
 # CleanMyMac3.pkg.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of CleanMyMac 3 and creates a package.
 
 - **Identifier**: `com.github.homebysix.pkg.CleanMyMac3`
 
 - **Parent Recipes**: `com.github.homebysix.download.CleanMyMac3`
+
 
 ## Warnings
 

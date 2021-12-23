@@ -1,6 +1,6 @@
 # AdobeReader.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest Adobe Reader.
 Set MAJOR_VERSION to "10" to get the latest/last version of Adobe Reader 10 instead of 11.
@@ -9,6 +9,7 @@ Set MAJOR_VERSION to "10" to get the latest/last version of Adobe Reader 10 inst
             - **Identifier**: `com.github.autopkg.download.AdobeReader`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # DaVinciResolve15.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of DaVinci Resolve 15. Duplicated from Tim
 Sutton's DaVinci Resolve 14 recipe. This product requires registration in order
@@ -10,6 +10,7 @@ and they must contain data.
             - **Identifier**: `com.github.moofit-recipes.download.DaVinciResolve15`
 
             - **Parent Recipes**: `com.github.timsutton.download.davinciresolve14`
+
 
 ## Warnings
 

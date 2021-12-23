@@ -1,12 +1,13 @@
 # 360Controller.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of 360Controller
 
 - **Identifier**: `com.github.andrewvalentine.download.360Controller`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

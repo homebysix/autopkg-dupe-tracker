@@ -1,6 +1,6 @@
 # ProToolsImport.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Copies the Pro Tools PKG out from a Pro Tools .dmg download, collects the version from the filename, and imports it into a munki_repo. Adds the specific Pro Tools Codecs and HD Driver versions to the `requires` array.
 

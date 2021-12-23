@@ -1,12 +1,13 @@
 # GoogleChrome-Win64.filewave.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of the Google Chrome installer for Windows x64 and imports it into FileWave.
 
 - **Identifier**: `com.github.andredb90.filewave.googlechrome-Win64`
 
 - **Parent Recipes**: `com.github.hansen-m.download.googlechrome-Win64`
+
 
 ## Warnings
 

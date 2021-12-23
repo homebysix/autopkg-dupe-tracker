@@ -1,12 +1,13 @@
 # Prey.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Prey using the package based batch installer.
 
 - **Identifier**: `com.github.hansen-m.download.Prey`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

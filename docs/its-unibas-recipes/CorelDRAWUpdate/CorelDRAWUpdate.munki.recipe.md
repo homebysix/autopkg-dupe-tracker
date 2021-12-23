@@ -1,6 +1,6 @@
 # CorelDRAWUpdate.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest updates for CorelDRAW and imports it into Munki. The base version is modifiable via the BASE_VERSION input variable. 
 		The architecture can be chosen from Intel and M1 by modifying the ARCHITECTURE variable. 

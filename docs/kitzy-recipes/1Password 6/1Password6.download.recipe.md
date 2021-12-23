@@ -1,12 +1,13 @@
 # 1Password6.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of 1Password 6.
 
 - **Identifier**: `com.github.kitzy.download.1Password6`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

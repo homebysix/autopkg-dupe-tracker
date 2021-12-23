@@ -1,6 +1,6 @@
 # NoteAbilityPro.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of NoteAbilityPro 3 and extracts the package installer.
 If there is no new installer, the file will not be extracted from the archive.

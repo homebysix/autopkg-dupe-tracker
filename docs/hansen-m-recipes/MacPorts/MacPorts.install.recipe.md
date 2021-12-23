@@ -1,6 +1,6 @@
 # MacPorts.install.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest MacPorts package for 10.10-Yosemite and installs it. Use -k MACPORTS_REQUESTED_OS for other options.
 

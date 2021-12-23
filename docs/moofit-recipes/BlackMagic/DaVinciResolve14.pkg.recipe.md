@@ -1,6 +1,6 @@
 # DaVinciResolve14.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of DaVinci Resolve 14 and turns it into
 a package. This product requires registration in order to download, so you
@@ -10,6 +10,7 @@ data.
             - **Identifier**: `com.github.moofit-recipes.pkg.DaVinciResolve14`
 
             - **Parent Recipes**: `com.github.timsutton.download.davinciresolve14`
+
 
 ## Warnings
 

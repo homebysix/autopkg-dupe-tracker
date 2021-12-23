@@ -1,12 +1,13 @@
 # Screens 4.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Screens 4 and imports it into Munki.
 
 - **Identifier**: `com.github.macprince.munki.Screens4`
 
 - **Parent Recipes**: `com.github.macprince.download.Screens4`
+
 
 ## Warnings
 

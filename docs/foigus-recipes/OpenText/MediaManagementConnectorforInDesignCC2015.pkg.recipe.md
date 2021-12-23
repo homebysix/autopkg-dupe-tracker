@@ -1,12 +1,13 @@
 # MediaManagementConnectorforInDesignCC2015.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Repackage the Media Management plugin for InDesign CC 2015.
 
 - **Identifier**: `com.github.foigus.pkg.MediaManagementConnectorforInDesignCC2015`
 
 - **Parent Recipes**: `com.github.foigus.download.MediaManagementConnectorforAdobeCreativeCloud`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # Git.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Git for OS X dmg from sourceforge.
 By default downloads version for the newest OS X release.
@@ -10,6 +10,7 @@ Note: Code signature verification on Git cannot be done at this time.
             - **Identifier**: `com.github.jleggat.Git.download`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

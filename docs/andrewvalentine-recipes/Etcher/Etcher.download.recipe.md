@@ -1,12 +1,13 @@
 # Etcher.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads balenaEtcher from Github. If you run this recipe as is, it will download v.1.4.4, which has not been updated since April 2018. At the time of writing, all subsequent releases are tagged as pre-releases. If you want the most recent version of the app, you should set PRERELEASE to a non-empty string, either with Input in an override or via the -k option, i.e. `-k PRERELEASE=yes`
 
 - **Identifier**: `com.github.andrewvalentine.download.Etcher`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

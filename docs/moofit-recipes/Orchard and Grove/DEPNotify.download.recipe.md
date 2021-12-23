@@ -1,12 +1,13 @@
 # DEPNotify.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: This recipe downloads a specific version of DEPNotify.
 
 - **Identifier**: `com.github.moofit-recipes.download.DEPNotify`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

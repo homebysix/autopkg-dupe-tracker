@@ -1,12 +1,13 @@
 # GoogleBackupAndSync.jss.recipe
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads the latest version of Backup and Sync and creates a package.
 
 - **Identifier**: `com.github.mlbz521.jss.GoogleBackupAndSync`
 
 - **Parent Recipes**: `com.github.nstrauss.pkg.BackupandSync`
+
 
 ## Warnings
 

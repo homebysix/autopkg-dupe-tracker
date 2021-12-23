@@ -1,12 +1,13 @@
 # Smultron 12.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest version of Smultron 12 and imports into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.Smultron 12`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.Smultron 12`
+
 
 ## Warnings
 

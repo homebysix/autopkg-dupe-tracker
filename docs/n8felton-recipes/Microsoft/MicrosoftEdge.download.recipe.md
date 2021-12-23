@@ -1,12 +1,13 @@
 # MicrosoftEdge.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft Edge for the specified branch.
 
 - **Identifier**: `com.github.n8felton.download.MicrosoftEdge`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

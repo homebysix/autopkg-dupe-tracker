@@ -1,6 +1,6 @@
 # KeyStore Explorer.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the latest version of KeyStore Explorer.
 Set PRERELEASE to a non-empty string to download prereleases, either
@@ -10,6 +10,7 @@ i.e.: `-k PRERELEASE=yes`
             - **Identifier**: `com.github.dataJAR-recipes.download.KeyStore Explorer`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

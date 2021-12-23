@@ -1,6 +1,6 @@
 # Microsoft Outlook 365.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: This recipe downloads and imports the full installer pkg for Microsoft Outlook 365 into Munki
 
@@ -11,6 +11,7 @@
             - **Identifier**: `com.github.dataJAR-recipes.munki.Microsoft Outlook 365`
 
             - **Parent Recipes**: `com.github.rtrouton.pkg.microsoftoutlook365`
+
 
 ## Warnings
 

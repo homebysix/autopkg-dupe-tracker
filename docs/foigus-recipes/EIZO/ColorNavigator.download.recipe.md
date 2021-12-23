@@ -1,6 +1,6 @@
 # ColorNavigator.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest ColorNavigator installer.
 
@@ -9,6 +9,7 @@ As of this writing, the valid LANGUAGE_CODEs are "en" (English) and "ja" (Japane
             - **Identifier**: `com.github.foigus.download.ColorNavigator`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # NikCollectionPSCC2014.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Nik Collection and packages it for Photoshop CC 2014.
 
 - **Identifier**: `com.github.foigus.pkg.NikCollectionPSCC2014`
 
 - **Parent Recipes**: `com.github.foigus.download.NikCollection`
+
 
 ## Warnings
 

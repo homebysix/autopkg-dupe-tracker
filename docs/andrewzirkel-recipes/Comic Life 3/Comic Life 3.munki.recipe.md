@@ -1,12 +1,13 @@
 # Comic Life 3.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Comic Life 3 and makes a pkg of it, uploaded to Munki.
 
 - **Identifier**: `com.andrewzirkel.munki.ComicLife3`
 
 - **Parent Recipes**: `com.andrewzirkel.pkg.ComicLife3`
+
 
 ## Warnings
 

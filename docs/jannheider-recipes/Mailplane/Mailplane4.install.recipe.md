@@ -1,12 +1,13 @@
 # Mailplane4.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Installs the latest version of Mailplane.
 
 - **Identifier**: `com.github.jannheider.install.Mailplane`
 
 - **Parent Recipes**: `com.github.jannheider.download.Mailplane`
+
 
 ## Warnings
 

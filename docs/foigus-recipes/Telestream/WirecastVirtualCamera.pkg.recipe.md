@@ -1,6 +1,6 @@
 # WirecastVirtualCamera.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current version of the Wirecast Virtual Camera driver for Wirecast and extracts the package from the dmg.
 

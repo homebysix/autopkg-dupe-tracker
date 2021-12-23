@@ -1,12 +1,13 @@
 # SapMachineJDK17Universal.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of SapMachine Java 17 JDK and builds an installer package.
 
 - **Identifier**: `com.github.rtrouton.pkg.SapMachineUniversalJDK17`
 
 - **Parent Recipes**: `com.github.rtrouton.download.SapMachineUniversalJDK17`
+
 
 ## Warnings
 

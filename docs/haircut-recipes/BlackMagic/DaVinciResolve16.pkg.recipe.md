@@ -1,6 +1,6 @@
 # DaVinciResolve16.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of DaVinci Resolve 16 and turns it into
 a package.
@@ -20,6 +20,7 @@ Notably, REG_STATE and REG_COUNTRY must contain sane values:
             - **Identifier**: `com.github.haircut.pkg.DaVinciResolve16`
 
             - **Parent Recipes**: `com.github.haircut.download.DaVinciResolve16`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # DaVinciResolve14Studio.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of DaVinci Resolve 14 Studio. Duplicated
 from Time Sutton's DaVinci Resolve 12 recipe. This product requires registration
@@ -10,6 +10,7 @@ in order to download, so you _must_ override all input variables beginning with
             - **Identifier**: `com.github.moofit-recipes.download.DaVinciResolve14Studio`
 
             - **Parent Recipes**: `com.github.timsutton.download.davinciresolve14`
+
 
 ## Warnings
 

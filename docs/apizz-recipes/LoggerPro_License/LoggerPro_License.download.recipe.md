@@ -1,12 +1,13 @@
 # LoggerPro_License.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of LoggerPro. This recipe requires you to create an override and substitute your unique 5-digit letter and number string in the DOWNLOAD_URL variable
 
 - **Identifier**: `com.github.apizz.download.loggerpro_license`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

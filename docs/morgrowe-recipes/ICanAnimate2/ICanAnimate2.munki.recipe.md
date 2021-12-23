@@ -1,12 +1,13 @@
 # ICanAnimate2.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Imports I Can Animate 2 into the Munki repo.
 
 - **Identifier**: `com.github.morgrowe.munki.ICanAnimate2`
 
 - **Parent Recipes**: `com.github.morgrowe.download.ICanAnimate2`
+
 
 ## Warnings
 

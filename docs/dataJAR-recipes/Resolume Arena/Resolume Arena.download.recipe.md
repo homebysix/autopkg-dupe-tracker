@@ -1,12 +1,13 @@
 # Resolume Arena.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Resolume Arena.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Resolume Arena`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

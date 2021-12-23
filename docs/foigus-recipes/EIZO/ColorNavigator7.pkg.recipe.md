@@ -1,6 +1,6 @@
 # ColorNavigator7.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest ColorNavigator 7 installer and modifies a postinstall to no longer open the ColorNavigator 7 window following installation. 
 
@@ -15,6 +15,7 @@ autopkg repo-add jessepeterson-recipes
             - **Identifier**: `com.github.foigus.pkg.ColorNavigator7`
 
             - **Parent Recipes**: `com.github.foigus.download.ColorNavigator7`
+
 
 ## Warnings
 

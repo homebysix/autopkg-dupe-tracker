@@ -1,6 +1,6 @@
 # Cinema4DImporterPluginAfterEffectsCC2019.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages Cinema 4D Importer plugin for After Effects CC 2019.
 
@@ -15,6 +15,7 @@ autopkg repo-add homebysix-recipes
             - **Identifier**: `com.github.foigus.pkg.Cinema4DImporterPluginAfterEffectsCC2019`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

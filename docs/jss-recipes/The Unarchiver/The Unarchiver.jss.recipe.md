@@ -1,12 +1,13 @@
 # The Unarchiver.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads Unarchiver installer and extracts the embedded package, uploads to JSS.
 
 - **Identifier**: `com.github.jss-recipes.jss.TheUnarchiver`
 
 - **Parent Recipes**: `com.github.autopkg.pkg.TheUnarchiver`
+
 
 ## Warnings
 

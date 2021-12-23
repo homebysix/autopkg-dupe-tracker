@@ -1,6 +1,6 @@
 # ElvisInDesignCC2018Plugin.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Elvis Plugin and imports it into Munki for installation for InDesign CC 2018.
 
@@ -17,6 +17,7 @@ autopkg run ElvisInDesignCC2018Plugin.munki -p /path/to/Elvis\ InDesign.pkg
             - **Identifier**: `com.github.foigus.munki.ElvisInDesignCC2018Plugin`
 
             - **Parent Recipes**: `com.github.foigus.download.ElvisInDesignPlugin`
+
 
 ## Warnings
 

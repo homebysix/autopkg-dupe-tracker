@@ -1,12 +1,13 @@
 # GPGSuiteUniversal.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads GPGSuite and imports into Munki. This import won't account for different versions of macOS that require different versions of the GPGMail plugin.
 
 - **Identifier**: `com.github.gerardkok.munki.GPGSuiteUniversal`
 
 - **Parent Recipes**: `com.github.gerardkok.download.GPGSuite`
+
 
 ## Warnings
 

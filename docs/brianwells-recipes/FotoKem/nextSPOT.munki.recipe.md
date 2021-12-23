@@ -1,6 +1,6 @@
 # nextSPOT.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Imports a manually-download copy of nextSPOT Download Manager into Munki.
 

@@ -1,6 +1,6 @@
 # Crypt2.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release of Crypt 2 from Github and imports into Munki.
 
@@ -8,6 +8,7 @@ _Last updated 2021-12-23 19:58:07Z_
 - **Identifier**: `com.github.grahamgilbert.Crypt2.munki`
 
 - **Parent Recipes**: `com.github.grahamgilbert.Crypt2.download`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # Wrike.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Wrike application.
 
 - **Identifier**: `com.github.foigus.download.Wrike`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

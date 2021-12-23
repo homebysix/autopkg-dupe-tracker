@@ -1,12 +1,13 @@
 # GoogleChromeUniversal.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Uses parent pkg recipe to download latest Google Chrome disk image with Universal build of Chrome, build an installer package and import it into the JSS.
 
 - **Identifier**: `com.github.rtrouton.jss.googlechromeuniversal`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.googlechromeuniversal`
+
 
 ## Warnings
 

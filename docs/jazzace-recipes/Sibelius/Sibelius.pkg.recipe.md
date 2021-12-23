@@ -1,6 +1,6 @@
 # Sibelius.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Sibelius and extracts the package from the dmg.
 
@@ -13,6 +13,7 @@ the package that this recipe creates.
             - **Identifier**: `com.github.jazzace.pkg.Sibelius`
 
             - **Parent Recipes**: `com.github.hansen-m.download.Sibelius`
+
 
 ## Warnings
 

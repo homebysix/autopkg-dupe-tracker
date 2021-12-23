@@ -1,6 +1,6 @@
 # i1Profiler.download.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: 
 Download the current mpkg of XRite i1Profiler
@@ -9,6 +9,7 @@ Download the current mpkg of XRite i1Profiler
         - **Identifier**: `com.github.mosen.download.i1Profiler`
 
         - **Parent Recipes**: `None`
+
 
 ## Warnings
 

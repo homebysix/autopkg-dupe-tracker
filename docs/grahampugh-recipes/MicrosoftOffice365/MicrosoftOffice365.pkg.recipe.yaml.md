@@ -1,6 +1,6 @@
 # MicrosoftOffice365.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest version of Microsoft's Office 365 Suite installer package and renames the package.
 

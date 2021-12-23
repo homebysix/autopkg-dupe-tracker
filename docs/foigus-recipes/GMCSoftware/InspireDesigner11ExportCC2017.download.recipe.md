@@ -1,6 +1,6 @@
 # InspireDesigner11ExportCC2017.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Verifies the Inspire Designer 11 Export Plugins package.
 
@@ -12,6 +12,7 @@ autopkg run InspireDesigner11ExportCC2017.download -p /path/to/Adobe-InDesign-CC
             - **Identifier**: `com.github.foigus.download.InspireDesigner11ExportCC2017`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

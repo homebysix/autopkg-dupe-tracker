@@ -1,6 +1,7 @@
 # mikestechshop-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [SnapzPro/SnapzPro.pkg.recipe](/autopkg-dupe-tracker/mikestechshop-recipes/SnapzPro/SnapzPro.pkg.recipe)
 - [Discord/Discord.pkg.recipe](/autopkg-dupe-tracker/mikestechshop-recipes/Discord/Discord.pkg.recipe)
 - [Microsoft Teams/MSTeams.pkg.recipe](/autopkg-dupe-tracker/mikestechshop-recipes/Microsoft Teams/MSTeams.pkg.recipe)

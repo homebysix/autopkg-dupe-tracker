@@ -1,12 +1,13 @@
 # Vernier Graphical Analysis.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Vernier Graphical Analysis and imports it into Munki.
 
 - **Identifier**: `com.github.dataJAR-recipes.munki.Vernier Graphical Analysis`
 
 - **Parent Recipes**: `com.github.nstrauss.download.VernierGraphicalAnalysis`
+
 
 ## Warnings
 

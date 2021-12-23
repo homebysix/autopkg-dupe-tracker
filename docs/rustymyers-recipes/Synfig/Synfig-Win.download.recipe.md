@@ -1,12 +1,13 @@
 # Synfig-Win.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Download latest Synfig 64bit exe. Permission was obtained from FossHub to automate the download of this software. Please follow their terms of service: https://www.fosshub.com/tos.html
 
 - **Identifier**: `com.github.rustymyers.download.Synfig-Win`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

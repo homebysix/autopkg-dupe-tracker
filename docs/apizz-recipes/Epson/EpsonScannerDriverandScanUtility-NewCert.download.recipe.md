@@ -1,6 +1,6 @@
 # EpsonScannerDriverandScanUtility-NewCert.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of the Epson Scanner Driver and Epson Scan Utility from Epson's site.  This recipe should be used with items that use Epson's newer signing certificate.  Use EpsonScannerDriverandScanUtility.download.recipe for older items.
 
@@ -36,6 +36,7 @@ For example, the URL for the Epson Perfection V850 Pro fetched from the US Epson
             - **Identifier**: `com.github.apizz.download.EpsonScannerDriverandScanUtility-NewCert`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

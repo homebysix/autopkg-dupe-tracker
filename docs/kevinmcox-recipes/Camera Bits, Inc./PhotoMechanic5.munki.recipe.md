@@ -1,12 +1,13 @@
 # PhotoMechanic5.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Photo Mechanic 5 and imports it into Munki.
 
 - **Identifier**: `com.github.kevinmcox.munki.PhotoMechanic5`
 
 - **Parent Recipes**: `com.github.kevinmcox.download.PhotoMechanic5`
+
 
 ## Warnings
 

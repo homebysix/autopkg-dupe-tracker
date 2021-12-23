@@ -1,6 +1,6 @@
 # Gladinet Cloud Mac Client 9.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the Gladinet Cloud Mac Client 9 dmg and then uploads to the JSS
 

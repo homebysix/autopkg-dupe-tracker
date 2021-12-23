@@ -1,12 +1,13 @@
 # Anaconda3.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Anaconda for Python 3 and imports it into Munki.
 
 - **Identifier**: `com.github.ygini.munki.anaconda3`
 
 - **Parent Recipes**: `com.github.hansen-m.download.Anaconda`
+
 
 ## Warnings
 

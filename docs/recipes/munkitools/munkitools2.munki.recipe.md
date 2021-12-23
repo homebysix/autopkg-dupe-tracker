@@ -1,6 +1,6 @@
 # munkitools2.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Note: munkitools does not include a code signature. If your
 organization requires code signature, it is recommend to internally sign
@@ -30,6 +30,7 @@ MUNKI_ICON should be overridden with your icon name.
             - **Identifier**: `com.github.autopkg.munki.munkitools2`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # AppCleaner.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of AppCleaner and creates a package.
 
 - **Identifier**: `com.github.d33t5.pkg.AppCleaner`
 
 - **Parent Recipes**: `com.github.d33t5.download.AppCleaner`
+
 
 ## Warnings
 

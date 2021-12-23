@@ -1,12 +1,13 @@
 # Scratch2.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for Scratch 2 Offline Editor
 
 - **Identifier**: `com.github.aysiu.download.Scratch2`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # HopperDisassembler4.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of Hopper Disassembler 4 and imports into a Munki repo.
 
@@ -10,6 +10,7 @@ of a current issue preventing the downloading of the full version.
             - **Identifier**: `com.github.timsutton.munki.HopperDisassembler4`
 
             - **Parent Recipes**: `com.github.timsutton.download.HopperDisassembler4`
+
 
 ## Warnings
 

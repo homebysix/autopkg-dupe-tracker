@@ -1,12 +1,13 @@
 # Cocktail-10.10.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Cocktail (for Yosemite) and builds a package.
 
 - **Identifier**: `com.github.homebysix.pkg.Cocktail-10.10`
 
 - **Parent Recipes**: `com.github.homebysix.download.Cocktail-10.10`
+
 
 ## Warnings
 

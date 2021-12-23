@@ -1,12 +1,13 @@
 # DockerDesktop.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Docker Desktop and imports it into Munki. See the download recipe description for information about using the PLATFORM_ARCH input variable to download the Intel/Apple Silicon version of Docker.
 
 - **Identifier**: `com.github.homebysix.munki.DockerDesktop`
 
 - **Parent Recipes**: `com.github.homebysix.download.DockerDesktop`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # EndNoteX7Updates.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest EndNote X7 release and unzips the contents.
 
 - **Identifier**: `com.github.jbaker10.download.EndNoteX7Updates`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

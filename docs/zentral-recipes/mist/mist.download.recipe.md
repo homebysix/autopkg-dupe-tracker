@@ -1,6 +1,6 @@
 # mist.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download Mist, a command-line tool that automatically generates macOS Installer Disk Images and Packages.
 

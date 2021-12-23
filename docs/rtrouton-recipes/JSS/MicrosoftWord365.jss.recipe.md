@@ -1,12 +1,13 @@
 # MicrosoftWord365.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Uses parent download recipe to download the latest unlicensed Microsoft Word 2016 installer package for Office 365 and import it into the JSS.
 
 - **Identifier**: `com.github.rtrouton.jss.microsoftword365`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.microsoftword365`
+
 
 ## Warnings
 

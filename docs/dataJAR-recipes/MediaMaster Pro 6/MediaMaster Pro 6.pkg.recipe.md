@@ -1,12 +1,13 @@
 # MediaMaster Pro 6.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of MediaMaster Pro 6 and creates a PKG.
 
 - **Identifier**: `com.github.dataJAR-recipes.pkg.MediaMaster Pro 6`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.MediaMaster Pro 6`
+
 
 ## Warnings
 

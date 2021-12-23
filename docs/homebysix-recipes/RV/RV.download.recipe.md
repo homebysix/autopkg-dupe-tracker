@@ -1,12 +1,13 @@
 # RV.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of RV. This recipe differs from the version in ygini-recipes because it downloads the latest "RV" app instead of the older "RV64" app.
 
 - **Identifier**: `com.github.homebysix.download.RV`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

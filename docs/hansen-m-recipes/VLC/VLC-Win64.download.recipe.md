@@ -1,12 +1,13 @@
 # VLC-Win64.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of VLC 64bit for Windows.
 
 - **Identifier**: `com.github.hansen-m.download.VLC-Win64`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

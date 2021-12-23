@@ -1,6 +1,6 @@
 # SuspiciousPackageXip.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the SuspiciousPackage app xip archive, builds a package,
 and imports into your Munki repo.
@@ -8,6 +8,7 @@ and imports into your Munki repo.
             - **Identifier**: `com.github.gregneagle.munki.suspiciouspackagexip`
 
             - **Parent Recipes**: `com.github.gregneagle.pkg.suspiciouspackagexip`
+
 
 ## Warnings
 

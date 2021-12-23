@@ -1,6 +1,6 @@
 # MunkiToolsCore.pkg.recipe.yaml
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:51Z_
 
             - **Description**: Note: munkitools does not include a code signature. If your organization requires code signature, it is recommended to internally sign the application.
 

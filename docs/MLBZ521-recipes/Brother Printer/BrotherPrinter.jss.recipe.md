@@ -1,6 +1,6 @@
 # BrotherPrinter.jss.recipe
 
-            _Last updated 2021-12-23 19:58:06Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: Downloads the Brother Printer Driver, Software Package, Utility, or Firmware specified, creates a package, and uploads it to the JPS.  Obviously some packages are compatible with different models, but I haven't been able to think of a way to specify this in the name without it being extremely long.  You will need to specify the model specifically for this to work, take a look at the examples below.
 

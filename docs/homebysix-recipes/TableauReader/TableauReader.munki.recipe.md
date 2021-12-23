@@ -1,12 +1,13 @@
 # TableauReader.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Tableau Reader and imports into Munki.
 
 - **Identifier**: `com.github.homebysix.munki.TableauReader`
 
 - **Parent Recipes**: `com.github.homebysix.pkg.TableauReader`
+
 
 ## Warnings
 

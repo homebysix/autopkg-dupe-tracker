@@ -1,12 +1,13 @@
 # ReadWrite7.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Read&Write 7 disk image and creates a package.
 
 - **Identifier**: `com.github.haircut.pkg.ReadWrite7`
 
 - **Parent Recipes**: `com.github.haircut.download.ReadWrite7`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # i1profiler.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current release version of i1 Profiler and verifies the code signature
 of the pkg intaller inside the zip archive downloaded.
@@ -8,6 +8,7 @@ of the pkg intaller inside the zip archive downloaded.
             - **Identifier**: `com.github.jazzace.download.i1profiler`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

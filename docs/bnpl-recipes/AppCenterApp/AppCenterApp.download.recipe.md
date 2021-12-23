@@ -1,12 +1,13 @@
 # AppCenterApp.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest release of an application from Microsoft App Center. This recipe should only ever be used through its child recipe with specific values overridden (OWNER_NAME, APP_NAME, X_API_TOKEN, CSV_REQ, NAME).
 
 - **Identifier**: `com.github.bnpl.autopkg.download.appcenterapp`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

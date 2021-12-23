@@ -1,6 +1,6 @@
 # Finale_NoGarritan.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Creates an installer pkg for Finale (v.25 and later) that installs properly using a management system.
 This recipe uses the PackageRequired option and assumes you are specifying the Disk Image that contains 
@@ -18,6 +18,7 @@ https://makemusic.zendesk.com/hc/en-us/articles/115007423647-Commands-to-silentl
             - **Identifier**: `com.github.jazzace.pkg.finalenogarritan`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

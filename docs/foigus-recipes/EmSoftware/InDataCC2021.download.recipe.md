@@ -1,12 +1,13 @@
 # InDataCC2021.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest InData CC 2021 package.
 
 - **Identifier**: `com.github.foigus.download.InDataCC2021`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # SWITCHcast.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Find and download the newest version of SWITCHcast. Currently, none of the contained Apps are signed.
 
 - **Identifier**: `com.github.its-unibas.download.switchcast`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

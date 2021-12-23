@@ -1,12 +1,13 @@
 # AccountEdgeNECanada.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for AccountEdge Network Edition (Canada).
 
 - **Identifier**: `com.github.bradclare.download.accountedgenecanada`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

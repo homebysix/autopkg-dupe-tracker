@@ -1,6 +1,6 @@
 # Ouroboros2AfterEffectsCC2020.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: "Downloads" Ouroboros 2, packages it for installation under After Effects CC 2020, and imports it into Munki.
 
@@ -15,6 +15,7 @@ autopkg run Ouroboros2AfterEffectsCC2020.munki -p /path/to/ouroboros_2.0.3.zip -
             - **Identifier**: `com.github.foigus.munki.Ouroboros2AfterEffectsCC2020`
 
             - **Parent Recipes**: `com.github.foigus.pkg.Ouroboros2AfterEffectsCC2020`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # RespondusLockDownBrowser.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest LockDown Browser student version. Be sure to change the institution ID to be your institution's ID.
 
 - **Identifier**: `com.github.nstrauss.download.RespondusLockDownBrowser`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

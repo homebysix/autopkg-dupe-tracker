@@ -1,12 +1,13 @@
 # BlueJ.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of University of Kent's BlueJ
 
 - **Identifier**: `uk.ac.ox.orchard.download.BlueJ`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # MSOffice2011Updates.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Finds latest Office 2011 update, downloads the disk image and extracts the pkg.
 Set VERSION to a specific version number to download that version instead.
@@ -20,6 +20,7 @@ certificate for the downloaded update can still be manually verified, however.
             - **Identifier**: `com.github.autopkg.munki.Office2011Updates`
 
             - **Parent Recipes**: `com.github.autopkg.download.Office2011Updates`
+
 
 ## Warnings
 

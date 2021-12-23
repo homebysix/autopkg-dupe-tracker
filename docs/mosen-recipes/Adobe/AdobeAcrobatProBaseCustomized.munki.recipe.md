@@ -1,6 +1,6 @@
 # AdobeAcrobatProBaseCustomized.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest Adobe Acrobat Pro DC (Continuous) Enterprise installer
 as provided at https://helpx.adobe.com/acrobat/kb/acrobat-dc-downloads.html,

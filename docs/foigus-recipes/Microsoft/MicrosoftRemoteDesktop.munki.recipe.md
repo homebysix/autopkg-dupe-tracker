@@ -1,12 +1,13 @@
 # MicrosoftRemoteDesktop.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Microsoft Remote Desktop installer pkg and imports it into Munki.
 
 - **Identifier**: `com.github.foigus.munki.microsoftremotedesktop`
 
 - **Parent Recipes**: `com.github.rtrouton.download.microsoftremotedesktop`
+
 
 ## Warnings
 

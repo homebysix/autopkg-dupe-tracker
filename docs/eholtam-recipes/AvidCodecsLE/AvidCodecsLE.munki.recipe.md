@@ -1,6 +1,6 @@
 # AvidCodecsLE.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Avid Codecs LE for QuickTime allow QuickTime movies using Avid codecs to be used on systems without Media Composer installed.
 

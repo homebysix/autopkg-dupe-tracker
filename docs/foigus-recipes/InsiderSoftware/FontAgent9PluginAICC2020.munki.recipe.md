@@ -1,12 +1,13 @@
 # FontAgent9PluginAICC2020.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the most current FontAgent 9 Plugin for Illustrator CC 2020 and imports it into Munki.
 
 - **Identifier**: `com.github.foigus.munki.FontAgent9PluginAICC2020`
 
 - **Parent Recipes**: `com.github.foigus.pkg.FontAgent9PluginAICC2020`
+
 
 ## Warnings
 

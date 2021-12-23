@@ -1,12 +1,13 @@
 # LegoMindstormsEducationEV3Classroom.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download the latest Lego Mindstorms Education EV3 Classroom disk image.
 
 - **Identifier**: `com.github.nstrauss.download.LegoMindstormsEducationEV3Classroom`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

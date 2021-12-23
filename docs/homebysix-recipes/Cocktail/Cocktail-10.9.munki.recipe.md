@@ -1,12 +1,13 @@
 # Cocktail-10.9.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Cocktail for Mavericks and imports into Munki.
 
 - **Identifier**: `com.github.homebysix.munki.Cocktail-10.9`
 
 - **Parent Recipes**: `com.github.homebysix.download.Cocktail-10.9`
+
 
 ## Warnings
 

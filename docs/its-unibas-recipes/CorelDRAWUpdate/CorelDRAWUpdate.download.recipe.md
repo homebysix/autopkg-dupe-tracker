@@ -1,12 +1,13 @@
 # CorelDRAWUpdate.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download the latest update for CorelDRAW. The base version is modifiable via the BASE_VERSION input variable. The architecture can be chosen from Intel and M1 by modifying the ARCHITECTURE variable.
 
 - **Identifier**: `com.github.its-unibas.download.CorelDRAWUpdate`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

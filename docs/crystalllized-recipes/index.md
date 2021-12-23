@@ -1,6 +1,7 @@
 # crystalllized-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [Astrill/AstrillVPN.download.recipe](/autopkg-dupe-tracker/crystalllized-recipes/Astrill/AstrillVPN.download.recipe)
 - [Astrill/AstrillVPN.pkg.recipe](/autopkg-dupe-tracker/crystalllized-recipes/Astrill/AstrillVPN.pkg.recipe)
 - [Astrill/AstrillVPN.jss.recipe](/autopkg-dupe-tracker/crystalllized-recipes/Astrill/AstrillVPN.jss.recipe)

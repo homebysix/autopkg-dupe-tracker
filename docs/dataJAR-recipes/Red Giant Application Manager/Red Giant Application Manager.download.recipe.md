@@ -1,12 +1,13 @@
 # Red Giant Application Manager.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Red Giant Application Manager
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Red Giant Application Manager`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

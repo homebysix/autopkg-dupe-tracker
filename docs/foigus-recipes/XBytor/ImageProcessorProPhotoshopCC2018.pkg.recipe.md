@@ -1,12 +1,13 @@
 # ImageProcessorProPhotoshopCC2018.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Image Processor Pro and creates a Photoshop CC 2018-aimed package.
 
 - **Identifier**: `com.github.foigus.pkg.ImageProcessorProPhotoshopCC2018`
 
 - **Parent Recipes**: `com.github.foigus.download.ImageProcessorPro`
+
 
 ## Warnings
 

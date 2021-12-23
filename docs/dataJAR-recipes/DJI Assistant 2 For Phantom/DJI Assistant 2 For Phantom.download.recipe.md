@@ -1,12 +1,13 @@
 # DJI Assistant 2 For Phantom.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Downloads latest version of DJI Assistant 2 For Phantom.
 
 - **Identifier**: `com.github.dataJAR-recipes.download.DJI Assistant 2 For Phantom`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

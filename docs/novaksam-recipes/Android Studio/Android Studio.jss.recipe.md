@@ -1,12 +1,13 @@
 # Android Studio.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Android Studio disk image and builds a package, uploads to JSS.
 
 - **Identifier**: `com.github.novaksam.jss.AndroidStudio`
 
 - **Parent Recipes**: `com.github.novaksam.pkg.AndroidStudio`
+
 
 ## Warnings
 

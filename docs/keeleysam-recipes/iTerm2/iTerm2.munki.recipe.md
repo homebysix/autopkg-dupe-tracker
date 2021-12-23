@@ -1,12 +1,13 @@
 # iTerm2.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of iTerm 2 and imports into Munki.
 
 - **Identifier**: `com.github.keeleysam.autopkg.munki.iTerm2`
 
 - **Parent Recipes**: `com.github.keeleysam.autopkg.download.iTerm2`
+
 
 ## Warnings
 

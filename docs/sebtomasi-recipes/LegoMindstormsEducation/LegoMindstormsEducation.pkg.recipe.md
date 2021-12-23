@@ -1,12 +1,13 @@
 # LegoMindstormsEducation.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download the latest version of Lego Mindstorms Education, then packages it
 
 - **Identifier**: `com.github.sebtomasi.pkg.LegoMindstormsEducation`
 
 - **Parent Recipes**: `com.github.sebtomasi.download.LegoMindstormsEducation`
+
 
 ## Warnings
 

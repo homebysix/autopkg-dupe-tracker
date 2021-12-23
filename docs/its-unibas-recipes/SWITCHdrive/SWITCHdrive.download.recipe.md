@@ -1,12 +1,13 @@
 # SWITCHdrive.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Find and download the newest version of SWITCHdrive
 
 - **Identifier**: `com.github.its-unibas.download.switchdrive`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

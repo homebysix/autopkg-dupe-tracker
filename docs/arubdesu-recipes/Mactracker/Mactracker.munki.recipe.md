@@ -1,12 +1,13 @@
 # Mactracker.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of Mactracker and imports into Munki.
 
 - **Identifier**: `com.github.arubdesu.munki.Mactracker`
 
 - **Parent Recipes**: `com.github.arubdesu.download.Mactracker`
+
 
 ## Warnings
 

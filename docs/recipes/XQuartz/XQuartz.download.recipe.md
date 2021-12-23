@@ -1,6 +1,6 @@
 # XQuartz.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Download recipe for XQuartz. Downloads latest XQuartz disk image.
 
@@ -10,6 +10,7 @@ Override BRANCH with either 'beta' or 'release' for the applicable Sparkle feed.
             - **Identifier**: `com.github.autopkg.download.xquartz`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # LaTeXiT.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of LaTeXiT.
 
 - **Identifier**: `com.github.scriptingosx.download.LaTeXiT`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

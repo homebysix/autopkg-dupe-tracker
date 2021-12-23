@@ -1,12 +1,13 @@
 # Signal.pkg.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads the latest version of Signal and creates a package.
 
 - **Identifier**: `com.github.jaharmi.pkg.Signal`
 
 - **Parent Recipes**: `com.github.jaharmi.download.Signal`
+
 
 ## Warnings
 

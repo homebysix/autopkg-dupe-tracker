@@ -1,6 +1,6 @@
 # AdobeAIR.filewave.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest Adobe AIR installer and repackages it for unattended, silent installation, then imports into FileWave.
 Based on jamesz's work here: https://github.com/jamesez/automunki/tree/master/adobe-air

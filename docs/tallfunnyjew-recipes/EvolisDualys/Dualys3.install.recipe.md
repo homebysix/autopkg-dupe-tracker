@@ -1,12 +1,13 @@
 # Dualys3.install.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest macOS drivers for Evolis Dualys3 Printer and installs it.
 
 - **Identifier**: `com.github.tallfunnyjew.install.EvolisDualys3`
 
 - **Parent Recipes**: `com.github.tallfunnyjew.download.EvolisDualys3`
+
 
 ## Warnings
 

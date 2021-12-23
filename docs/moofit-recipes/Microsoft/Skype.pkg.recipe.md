@@ -1,6 +1,6 @@
 # Skype.pkg.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: Downloads latest Skype disk image using the parent recipe
 com.github.autopkg.download.Skype and builds a package.
@@ -9,6 +9,7 @@ com.github.autopkg.download.Skype and builds a package.
         - **Identifier**: `com.github.amsysuk-recipes.pkg.Skype`
 
         - **Parent Recipes**: `com.github.autopkg.download.Skype`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # ZoomIT.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of the Zoom client for IT Administrators.
 
 - **Identifier**: `com.github.smithjw.download.ZoomIT`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

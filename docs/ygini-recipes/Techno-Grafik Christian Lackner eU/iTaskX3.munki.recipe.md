@@ -1,12 +1,13 @@
 # iTaskX3.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of iTaskX3 and imports it into Munki.
 
 - **Identifier**: `com.github.ygini.munki.iTaskX3`
 
 - **Parent Recipes**: `com.github.ygini.download.iTaskX3`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # ChemDraw.pkg.recipe.yaml
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:51Z_
 
             - **Description**: Creates a package for ChemDraw.
 There is no download recipe since ChemDraw is not publicly available.

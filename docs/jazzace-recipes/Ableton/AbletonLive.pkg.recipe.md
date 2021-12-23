@@ -1,6 +1,6 @@
 # AbletonLive.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the most recent version of Ableton Live and creates an installer package.
 The major version and edition is specified through input variables (see the parent download recipe).
@@ -14,6 +14,7 @@ If a new package is created, the temporary files needed during packaging are del
             - **Identifier**: `com.github.jazzace.pkg.AbletonLive`
 
             - **Parent Recipes**: `com.github.jazzace.download.AbletonLive`
+
 
 ## Warnings
 

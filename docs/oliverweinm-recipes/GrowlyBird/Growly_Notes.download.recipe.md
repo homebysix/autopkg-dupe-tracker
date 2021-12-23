@@ -1,12 +1,13 @@
 # Growly_Notes.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: A note-taking app somewhat like Microsoft OneNote. Gather text, images, PDFs, links and anything else you can think of in free-form pages organized into sections
 
 - **Identifier**: `com.github.oliverweinm-recipes.download.GrowlyNotes`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

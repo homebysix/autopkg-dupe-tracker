@@ -1,12 +1,13 @@
 # MSTeams.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft Teams dmg from Microsoft. Environment can be defined (although production seems to be the only available), as can platform (defaults to osx).
 
 - **Identifier**: `com.github.apettinen.download.MSTeams`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

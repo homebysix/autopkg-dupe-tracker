@@ -1,6 +1,7 @@
 # faumac-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [Affinity Publisher/Affinity Publisher.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Affinity Publisher/Affinity Publisher.pkg.recipe)
 - [Affinity Publisher/Affinity Publisher.download.recipe](/autopkg-dupe-tracker/faumac-recipes/Affinity Publisher/Affinity Publisher.download.recipe)
 - [FFmpeg/FFmpeg.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/FFmpeg/FFmpeg.pkg.recipe)

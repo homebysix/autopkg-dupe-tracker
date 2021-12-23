@@ -1,12 +1,13 @@
 # SubEthaEdit.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads SubEthaEdit 3.5.4 (the last non-Mac App Store version) from The Coding Monkeys.
 
 - **Identifier**: `com.github.hansen-m.download.SubEthaEdit`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

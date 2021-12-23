@@ -1,6 +1,6 @@
 # MediaBank5CreativeCloudExtension2020.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Repackage the MediaBank 5 Creative Cloud Extension and import it into Munki.  This recipe does not download the MediaBank 5 tar.gz archive--feed the tar.gz archive into the recipe via the following format:
 
@@ -9,6 +9,7 @@ autopkg run MediaBank5CreativeCloudExtension2020.munki -p /path/to/MediaBank_Ins
             - **Identifier**: `com.github.foigus.munki.MediaBank5CreativeCloudExtension2020`
 
             - **Parent Recipes**: `com.github.foigus.pkg.MediaBank5CreativeCloudExtension2020`
+
 
 ## Warnings
 

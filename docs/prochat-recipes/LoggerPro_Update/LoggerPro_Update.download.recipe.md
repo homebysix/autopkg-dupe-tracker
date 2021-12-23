@@ -1,6 +1,6 @@
 # LoggerPro_Update.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Logger Pro is a data-collection software
 	The installation of an update needs a previous licensed version

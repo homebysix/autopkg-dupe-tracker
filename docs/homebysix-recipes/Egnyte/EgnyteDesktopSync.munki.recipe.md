@@ -1,6 +1,6 @@
 # EgnyteDesktopSync.munki.recipe
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Egnyte Desktop Sync and imports it into Munki.
 
@@ -22,6 +22,7 @@ NOTE: According to Egnyte, Desktop Sync will no longer be supported after Decemb
             - **Identifier**: `com.github.homebysix.munki.EgnyteDesktopSync`
 
             - **Parent Recipes**: `com.github.homebysix.download.EgnyteDesktopSync`
+
 
 ## Warnings
 

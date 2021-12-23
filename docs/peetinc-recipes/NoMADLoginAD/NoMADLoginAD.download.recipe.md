@@ -1,6 +1,6 @@
 # NoMADLoginAD.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of NoMAD Login AD.
 This recipe differs from the ones in bochoven-recipes in the following ways:
@@ -12,6 +12,7 @@ This recipe differs from the ones in bochoven-recipes in the following ways:
             - **Identifier**: `com.github.peetinc.download.NoMADLoginAD`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

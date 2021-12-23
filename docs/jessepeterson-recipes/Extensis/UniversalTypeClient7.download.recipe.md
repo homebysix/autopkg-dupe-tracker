@@ -1,12 +1,13 @@
 # UniversalTypeClient7.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads, Extensis Universal Type Client 7.
 
 - **Identifier**: `com.github.jessepeterson.download.UniversalTypeClient7`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

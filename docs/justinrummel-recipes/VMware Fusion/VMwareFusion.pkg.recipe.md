@@ -1,12 +1,13 @@
 # VMwareFusion.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Takes .zip.tar VMware Fusion download and extracts the data
 
 - **Identifier**: `com.justinrummel.pkg.VMwareFusion`
 
 - **Parent Recipes**: `com.justinrummel.download.VMwareFusion`
+
 
 ## Warnings
 

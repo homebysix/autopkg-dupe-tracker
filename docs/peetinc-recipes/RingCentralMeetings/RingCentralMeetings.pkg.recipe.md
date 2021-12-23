@@ -1,6 +1,6 @@
 # RingCentralMeetings.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current release version of RingCentral Meetings and builds a package.
 	This recipe differs from the ones in homebysix-recipes in the following ways:
@@ -10,6 +10,7 @@
             - **Identifier**: `com.github.peetinc.pkg.RingCentralMeetings`
 
             - **Parent Recipes**: `com.github.homebysix.download.RingCentralMeetings`
+
 
 ## Warnings
 

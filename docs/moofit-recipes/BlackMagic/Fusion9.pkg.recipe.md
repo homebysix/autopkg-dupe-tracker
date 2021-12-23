@@ -1,6 +1,6 @@
 # Fusion9.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads and packages the latest version of Fusion 9.
     This product requires registration in order to download, so
@@ -14,6 +14,7 @@ Notably, REG_STATE and REG_COUNTRY must contain sane values:
             - **Identifier**: `com.github.moofit-recipes.pkg.Fusion9`
 
             - **Parent Recipes**: `com.github.timsutton.download.fusion8`
+
 
 ## Warnings
 

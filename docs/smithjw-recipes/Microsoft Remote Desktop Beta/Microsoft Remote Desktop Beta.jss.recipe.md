@@ -1,6 +1,6 @@
 # Microsoft Remote Desktop Beta.jss.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Microsoft Remote Desktop Beta and imports it into your JSS.
 

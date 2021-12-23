@@ -1,6 +1,6 @@
 # FortiClientImport.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Copies the FortiClient PKG out from a FortiClient .dmg download and collects the version from the PKG.
 

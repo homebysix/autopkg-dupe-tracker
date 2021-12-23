@@ -1,6 +1,6 @@
 # DaVinciResolve12.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the most recent version of DaVinci Resolve 12 and imports into Munki.
 
@@ -27,6 +27,7 @@ this user's home will be used, and if run at the loginwindow, the root user's ho
             - **Identifier**: `com.github.timsutton.munki.davinciresolve12`
 
             - **Parent Recipes**: `com.github.timsutton.download.davinciresolve12`
+
 
 ## Warnings
 

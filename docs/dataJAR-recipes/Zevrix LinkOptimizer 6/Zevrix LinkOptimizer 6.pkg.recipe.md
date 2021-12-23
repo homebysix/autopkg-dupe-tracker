@@ -1,12 +1,13 @@
 # Zevrix LinkOptimizer 6.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Zevrix LinkOptimizer 6 and creates a package.
 
 - **Identifier**: `com.github.dataJAR-recipes.pkg.Zevrix LinkOptimizer 6`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.Zevrix LinkOptimizer 6`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # ParallelsDesktop.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Parallels Desktop and imports it into Munki. This recipe has been tested with major versions 9 through 16.
 
@@ -15,6 +15,7 @@ This recipe differs from the one in keeleysam-recipes because it offers code sig
             - **Identifier**: `com.github.homebysix.munki.ParallelsDesktop`
 
             - **Parent Recipes**: `com.github.homebysix.pkg.ParallelsDesktop`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # spartan.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Spartan from www.wavefun.com and imports it into Munki
 			The Versioner Processor overwrites the version defined in the download recipe because the CFBundleVersion is better for munki to process. 

@@ -1,12 +1,13 @@
 # Stellarium-Win.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version Stellarium for Windows. Valid PLATFORM values are: win32 or win64 (default is win64)
 
 - **Identifier**: `com.github.hansen-m.download.Stellarium-Win`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

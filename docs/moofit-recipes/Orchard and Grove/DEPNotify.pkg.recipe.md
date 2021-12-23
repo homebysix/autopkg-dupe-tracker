@@ -1,6 +1,6 @@
 # DEPNotify.pkg.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: Downloads a specific version of DEPNotify, as determined by the input field below, and adds in additional
 resources to allow for customisation.
@@ -19,6 +19,7 @@ Bear in mind, by repackaging the installer, it will remove the original signatur
         - **Identifier**: `com.github.moofit-recipes.pkg.DEPNotify`
 
         - **Parent Recipes**: `com.github.moofit-recipes.download.DEPNotify`
+
 
 ## Warnings
 

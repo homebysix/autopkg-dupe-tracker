@@ -1,12 +1,13 @@
 # createuserpkg.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Takes an existing CreateUserPkg .pkg file and adds Munki-specific features. You should override the NAME and PKG_PATH variables.
 
 - **Identifier**: `com.github.nmcspadden.munki.CreateUserPkg`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

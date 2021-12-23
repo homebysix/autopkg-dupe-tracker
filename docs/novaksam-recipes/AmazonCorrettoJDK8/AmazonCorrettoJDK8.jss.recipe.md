@@ -1,12 +1,13 @@
 # AmazonCorrettoJDK8.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Amazon Corretto Java JDK 8, builds an installer package, then uploads to the JSS.
 
 - **Identifier**: `com.github.novaksam.jss.amazoncorrettojdk8`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.amazoncorettojdk8`
+
 
 ## Warnings
 

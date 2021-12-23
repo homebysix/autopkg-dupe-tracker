@@ -1,6 +1,6 @@
 # Crescendo.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Crescendo is a swift based application providing a real time event viewe for macOS. It utilizes Apple's Endpoint Security Framework. The resulting package installs to /Applications/Crescendo.app.
 

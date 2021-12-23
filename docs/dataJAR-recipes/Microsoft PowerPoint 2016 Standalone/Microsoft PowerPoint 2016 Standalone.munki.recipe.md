@@ -1,6 +1,6 @@
 # Microsoft PowerPoint 2016 Standalone.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:49Z_
 
             - **Description**: This recipe downloads and imports the full installer pkg for Microsoft PowerPoint 2016 Standalone into Munki
 

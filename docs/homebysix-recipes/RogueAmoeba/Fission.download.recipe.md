@@ -1,6 +1,6 @@
 # Fission.download.recipe
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Fission.
 
@@ -13,6 +13,7 @@ updated rogueamoeba.com download link now.
             - **Identifier**: `com.github.homebysix.download.Fission`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

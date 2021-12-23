@@ -1,6 +1,6 @@
 # FirefoxPrefs.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads Firefox disk image and builds a package. This also adds the configuration files necessary for the USC Labs
 Values for FIREFOX_BUILD correspond to directories here: http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/

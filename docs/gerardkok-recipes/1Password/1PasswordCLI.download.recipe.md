@@ -1,12 +1,13 @@
 # 1PasswordCLI.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for the 1Password command-line tool.
 
 - **Identifier**: `com.github.gerardkok.download.1PasswordCLI`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # ComicLife2.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Comic Life 2.
 
 - **Identifier**: `com.github.groob.download.ComicLife2`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

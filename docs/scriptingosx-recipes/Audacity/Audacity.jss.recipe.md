@@ -1,12 +1,13 @@
 # Audacity.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Uses parent pkg recipe to download latest Audacity and import it into the JSS.
 
 - **Identifier**: `com.github.scriptingosx.jss.audacity`
 
 - **Parent Recipes**: `com.github.jss-recipes.jss.Audacity`
+
 
 ## Warnings
 

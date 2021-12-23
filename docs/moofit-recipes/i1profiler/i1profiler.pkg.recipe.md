@@ -1,6 +1,6 @@
 # i1profiler.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the current release version of i1 Profiler as a Zip
 archive (via Sparkle) and saves it as a package
@@ -8,6 +8,7 @@ archive (via Sparkle) and saves it as a package
             - **Identifier**: `com.github.amsysuk-recipes.i1profiler`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

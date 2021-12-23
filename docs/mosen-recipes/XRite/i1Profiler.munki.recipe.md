@@ -1,6 +1,6 @@
 # i1Profiler.munki.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: 
 Import X-Rite i1Profiler into your munki repository (Using the unattended package created by i1Profiler.pkg).
@@ -23,6 +23,7 @@ OVERRIDES
         - **Identifier**: `com.github.mosen.munki.i1Profiler`
 
         - **Parent Recipes**: `com.github.mosen.download.i1Profiler`
+
 
 ## Warnings
 

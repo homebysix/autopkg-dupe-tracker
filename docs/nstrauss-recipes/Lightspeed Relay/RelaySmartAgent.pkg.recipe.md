@@ -1,6 +1,6 @@
 # RelaySmartAgent.pkg.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: Repackage the DMG installer Lightspeed provides because developers hate admins.
 The user must specify the path to the app at runtime via the `--key AGENT_DMG="/path/to/dmg"` option.
@@ -8,6 +8,7 @@ The user must specify the path to the app at runtime via the `--key AGENT_DMG="/
         - **Identifier**: `com.github.nstrauss.pkg.RelaySmartAgent`
 
         - **Parent Recipes**: `None`
+
 
 ## Warnings
 

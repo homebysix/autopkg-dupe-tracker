@@ -1,6 +1,6 @@
 # MicrosoftOffice365.download.recipe.yaml
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:51Z_
 
             - **Description**: Downloads the latest Microsoft Office 365 SKU-less installer package.
 Override the PRODUCTID key to:
@@ -14,6 +14,7 @@ Override the PRODUCTID key to:
             - **Identifier**: `com.github.grahampugh.recipes.download.MicrosoftOffice365`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

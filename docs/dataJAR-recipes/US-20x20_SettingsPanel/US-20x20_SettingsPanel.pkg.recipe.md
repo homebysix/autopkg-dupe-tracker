@@ -1,12 +1,13 @@
 # US-20x20_SettingsPanel.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads LFXFree Disk image and extracts the embedded package. No repackaging done.
 
 - **Identifier**: `com.github.dataJAR-recipes.pkg.US-20x20SettingsPanel`
 
 - **Parent Recipes**: `com.github.dataJAR-recipes.download.US-20x20SettingsPanel`
+
 
 ## Warnings
 

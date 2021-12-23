@@ -1,12 +1,13 @@
 # OmniDiskSweeper.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Packages the download of OmniDiskSweeper.
 
 - **Identifier**: `com.github.jpiel.pkg.OmniDiskSweeper`
 
 - **Parent Recipes**: `com.github.jpiel.download.OmniDiskSweeper`
+
 
 ## Warnings
 

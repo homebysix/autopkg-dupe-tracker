@@ -1,12 +1,13 @@
 # VLC-Arm-asap.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the VERY latest VLC available for Arm-based Macs and builds a pkg. Do NOT use this recipe for Intel Macs.
 
 - **Identifier**: `com.github.tallfunnyjew.pkg.VLC-Arm-asap`
 
 - **Parent Recipes**: `com.github.tallfunnyjew.download.VLC-Arm-asap`
+
 
 ## Warnings
 

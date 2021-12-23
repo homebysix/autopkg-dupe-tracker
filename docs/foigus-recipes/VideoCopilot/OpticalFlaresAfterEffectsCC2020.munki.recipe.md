@@ -1,6 +1,6 @@
 # OpticalFlaresAfterEffectsCC2020.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: "Downloads" Optical Flares, packages it for installation under After Effects CC 2020, and imports the package into Munki.
 
@@ -13,6 +13,7 @@ autopkg run OpticalFlaresAfterEffectsCC2020.munki -p /path/to/OpticalFlaresInsta
             - **Identifier**: `com.github.foigus.munki.OpticalFlaresAfterEffectsCC2020`
 
             - **Parent Recipes**: `com.github.foigus.pkg.OpticalFlaresAfterEffectsCC2020`
+
 
 ## Warnings
 

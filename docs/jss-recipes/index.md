@@ -1,6 +1,7 @@
 # jss-recipes
 
-_Last updated 2021-12-23 19:58:06Z_
+_Last updated 2021-12-23 20:01:49Z_
+
 - [Firefox/Firefox.jss.recipe](/autopkg-dupe-tracker/jss-recipes/Firefox/Firefox.jss.recipe)
 - [Firefox/FirefoxAutoconfig.jss.recipe](/autopkg-dupe-tracker/jss-recipes/Firefox/FirefoxAutoconfig.jss.recipe)
 - [Sequel Pro/Sequel Pro.jss.recipe](/autopkg-dupe-tracker/jss-recipes/Sequel Pro/Sequel Pro.jss.recipe)

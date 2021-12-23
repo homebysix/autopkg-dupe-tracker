@@ -1,12 +1,13 @@
 # Scratch Desktop.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Download recipe for Scratch Desktop
 
 - **Identifier**: `com.github.dataJAR-recipes.download.Scratch Desktop`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

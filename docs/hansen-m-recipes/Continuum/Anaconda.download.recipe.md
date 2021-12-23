@@ -1,6 +1,6 @@
 # Anaconda.download.recipe
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Anaconda Python.
 Different installer types are available. Use INSTALLER_TYPE
@@ -9,6 +9,7 @@ to chose between 'sh' or 'pkg'.
             - **Identifier**: `com.github.hansen-m.download.Anaconda`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

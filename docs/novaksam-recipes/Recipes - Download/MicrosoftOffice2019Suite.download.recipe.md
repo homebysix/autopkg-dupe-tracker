@@ -1,12 +1,13 @@
 # MicrosoftOffice2019Suite.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Suite installer for Office 365.
 
 - **Identifier**: `com.github.novaksam.download.microsoftoffice2019suite`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # LibreOfficeLangPack.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads and package the latest LibreOffice with the right language. Imports it into Munki. Set RELEASE to either "fresh" or "still"
 
 - **Identifier**: `com.github.sebtomasi.munki.LibreOfficeLangPack`
 
 - **Parent Recipes**: `com.github.sebtomasi.pkg.LibreOfficeLangPack`
+
 
 ## Warnings
 

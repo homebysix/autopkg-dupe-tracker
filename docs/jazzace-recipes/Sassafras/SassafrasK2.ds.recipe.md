@@ -1,6 +1,6 @@
 # SassafrasK2.ds.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Fetches the latest Sassafras K2 Mac installer (specified by PRODUCT) for versions 7.0-7.6
 and copies it to a local/mounted drive.

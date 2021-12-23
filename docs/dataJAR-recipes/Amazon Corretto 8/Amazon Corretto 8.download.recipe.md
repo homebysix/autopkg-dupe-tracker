@@ -1,6 +1,6 @@
 # Amazon Corretto 8.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of Amazon Corretto 8.
 Set PRERELEASE to a non-empty string to download prereleases, either
@@ -12,6 +12,7 @@ NOTE: URLTextSearcher is used as the releases on GitHub have no releases.
             - **Identifier**: `com.github.dataJAR-recipes.download.Amazon Corretto 8`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

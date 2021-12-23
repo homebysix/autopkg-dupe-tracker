@@ -1,12 +1,13 @@
 # ImageJ.munki.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads ImageJ and imports into Munki.
 
 - **Identifier**: `com.github.jessepeterson.munki.ImageJ`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # BasicTeX.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current version of BasicTeX, a reduced distribution of MacTeX.
 
 - **Identifier**: `com.github.andrewvalentine.download.basictex`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

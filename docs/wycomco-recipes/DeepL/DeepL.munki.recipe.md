@@ -1,12 +1,13 @@
 # DeepL.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest DeepL disk image and imports into Munki. Override NAME and MUNKI_REPO_SUBDIR to your own preferences. Download is performed by using andredb90's download-recipe.
 
 - **Identifier**: `com.github.wycomco.munki.deepl`
 
 - **Parent Recipes**: `com.github.andredb90.download.DeepL`
+
 
 ## Warnings
 

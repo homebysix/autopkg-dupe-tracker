@@ -1,12 +1,13 @@
 # Terminus.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download Terminus
 
 - **Identifier**: `com.github.ygini.download.terminus`
 
 - **Parent Recipes**: `com.github.ygini.download.termius`
+
 
 ## Warnings
 

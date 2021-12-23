@@ -1,12 +1,13 @@
 # EndNoteX9-self-install.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Creates a self installer pkg for EndNote
 
 - **Identifier**: `com.github.andrewvalentine.pkg.EndNote-self-install`
 
 - **Parent Recipes**: `com.github.rtrouton.pkg.EndNoteX9`
+
 
 ## Warnings
 

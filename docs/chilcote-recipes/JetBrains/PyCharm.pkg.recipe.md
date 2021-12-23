@@ -1,12 +1,13 @@
 # PyCharm.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of PyCharm (Professional) and converts it into a pkg.
 
 - **Identifier**: `com.github.chilcote.pkg.PyCharm`
 
 - **Parent Recipes**: `com.github.mosen.download.PyCharmPro`
+
 
 ## Warnings
 

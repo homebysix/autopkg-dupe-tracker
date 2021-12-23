@@ -1,12 +1,13 @@
 # MediaManagementConnectorforInDesignCC2015.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Repackage the Media Management plugin for InDesign CC 2015 and import it into Munki.
 
 - **Identifier**: `com.github.foigus.munki.MediaManagementConnectorforInDesignCC2015`
 
 - **Parent Recipes**: `com.github.foigus.pkg.MediaManagementConnectorforInDesignCC2015`
+
 
 ## Warnings
 

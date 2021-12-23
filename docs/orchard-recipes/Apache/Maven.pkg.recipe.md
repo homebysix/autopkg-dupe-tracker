@@ -1,12 +1,13 @@
 # Maven.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Packages a the latest version of Apache Maven
 
 - **Identifier**: `uk.ac.ox.orchard.pkg.apache-maven`
 
 - **Parent Recipes**: `uk.ac.ox.orchard.download.apache-maven`
+
 
 ## Warnings
 

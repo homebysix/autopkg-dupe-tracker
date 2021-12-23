@@ -1,6 +1,6 @@
 # RingCentralMeetings.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest version of RingCentral Meetings and imports it into Munki.
 	This recipe differs from the ones in homebysix-recipes in the following ways:
@@ -12,6 +12,7 @@
             - **Identifier**: `com.github.peetinc.munki.RingCentralMeetings`
 
             - **Parent Recipes**: `com.github.peetinc.pkg.RingCentralMeetings`
+
 
 ## Warnings
 

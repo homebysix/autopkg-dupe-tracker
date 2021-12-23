@@ -1,6 +1,6 @@
 # JabraDirect.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:49Z_
 
 - **Description**: Download the latest version of Jabra Direct and imports it into Munki.
 

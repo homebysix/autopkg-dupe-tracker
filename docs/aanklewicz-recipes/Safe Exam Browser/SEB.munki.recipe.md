@@ -1,12 +1,13 @@
 # SEB.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest Safe Exam Browser disk image and imports into Munki.
 
 - **Identifier**: `com.github.aanklewicz.munki.SEB`
 
 - **Parent Recipes**: `com.github.aanklewicz.download.SEB`
+
 
 ## Warnings
 

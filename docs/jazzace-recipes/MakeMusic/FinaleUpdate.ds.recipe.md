@@ -1,6 +1,6 @@
 # FinaleUpdate.ds.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest update for Finale, extracts the package, and then copies it to a local path of your choosing.
 Note: This recipe is no longer supported. Expect it to be removed at a future date.

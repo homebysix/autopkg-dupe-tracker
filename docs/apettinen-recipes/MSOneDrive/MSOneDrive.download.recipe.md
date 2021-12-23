@@ -1,12 +1,13 @@
 # MSOneDrive.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of OneDrive Standalone installer pkg from Microsoft. Allows you to override if you are using some internal source to download.
 
 - **Identifier**: `com.github.apettinen.download.MSOneDrive`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

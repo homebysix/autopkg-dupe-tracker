@@ -1,12 +1,13 @@
 # Growly_Write.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Small but capable word processor
 
 - **Identifier**: `com.github.oliverweinm-recipes.download.GrowlyWrite`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

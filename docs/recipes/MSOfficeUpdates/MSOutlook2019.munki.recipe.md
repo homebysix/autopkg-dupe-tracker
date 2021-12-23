@@ -1,6 +1,6 @@
 # MSOutlook2019.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest Outlook 2019 multilingual update pkg,
 appends the version to the end of the filename, and imports into
@@ -34,6 +34,7 @@ installer for the given CHANNEL. 'latest-standalone' does not support
             - **Identifier**: `com.github.autopkg.munki.MSOutlook2019`
 
             - **Parent Recipes**: `com.github.autopkg.download.MSOutlook2019`
+
 
 ## Warnings
 

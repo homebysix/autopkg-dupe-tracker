@@ -1,12 +1,13 @@
 # Sibelius.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Imports latest version of Sibelius into Munki. Requires hansen-m-recipes repo. Works for Sibelius version 7.X.X.
 
 - **Identifier**: `com.github.jlehikoinen.munki.Sibelius`
 
 - **Parent Recipes**: `com.github.hansen-m.download.Sibelius`
+
 
 ## Warnings
 

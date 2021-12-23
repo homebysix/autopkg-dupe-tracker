@@ -1,12 +1,13 @@
 # SapMachineIntelJDK17.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the current release version of SapMachine Java 17 JDK for Intel and builds an installer package.
 
 - **Identifier**: `com.github.rtrouton.pkg.SapMachineIntelJDK17`
 
 - **Parent Recipes**: `com.github.rtrouton.download.SapMachineIntelJDK17`
+
 
 ## Warnings
 

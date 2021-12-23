@@ -1,6 +1,6 @@
 # MSLync.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Finds latest Lync installer, downloads the disk image and extracts the pkg.
 Set VERSION to a specific version number to download that version instead.

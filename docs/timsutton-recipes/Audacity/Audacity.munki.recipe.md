@@ -1,6 +1,6 @@
 # Audacity.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Imports a manually-download copy of Audacity into Munki.
 
@@ -15,6 +15,7 @@ Note: the Audacity.app code object is not signed at all.
             - **Identifier**: `com.github.timsutton.munki.audacity`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

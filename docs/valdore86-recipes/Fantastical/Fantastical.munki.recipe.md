@@ -1,12 +1,13 @@
 # Fantastical.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest release version of Fantastical and imports it into a Munki repository.
 
 - **Identifier**: `com.github.valdore86.munki.fantastical`
 
 - **Parent Recipes**: `com.github.valdore86.download.fantastical`
+
 
 ## Warnings
 

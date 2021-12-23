@@ -1,6 +1,6 @@
 # AppleHPPrinterDrivers.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads latest version of the HP Printer Drivers from Apple and extracts the package from the dmg.
 
@@ -8,6 +8,7 @@ _Last updated 2021-12-23 19:58:08Z_
 - **Identifier**: `com.github.grahampugh.pkg.AppleHPPrinterDrivers`
 
 - **Parent Recipes**: `com.github.n8felton.download.AppleHPPrinterDrivers`
+
 
 ## Warnings
 

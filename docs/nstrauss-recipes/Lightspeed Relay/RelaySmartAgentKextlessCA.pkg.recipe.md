@@ -1,6 +1,6 @@
 # RelaySmartAgentKextlessCA.pkg.recipe
 
-        _Last updated 2021-12-23 19:58:07Z_
+        _Last updated 2021-12-23 20:01:50Z_
 
         - **Description**: Repackage the DMG installer Lightspeed, exclude MobileFilterKext
 and include certificate material. The user must specify the path to the a folder containing
@@ -10,6 +10,7 @@ the path via the `--key RELAY_DIR="/path/to/folder/"` option.
         - **Identifier**: `com.github.nstrauss.pkg.RelaySmartAgentKextlessCA`
 
         - **Parent Recipes**: `None`
+
 
 ## Warnings
 

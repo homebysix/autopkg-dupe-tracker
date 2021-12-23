@@ -1,12 +1,13 @@
 # Google_Chrome.pkg.recipe.yaml
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:51Z_
 
 - **Description**: Downloads latest Google Chrome enterprise package and renames it based on the Chrome version.
 
 - **Identifier**: `com.github.smithjw.pkg.Google_Chrome`
 
 - **Parent Recipes**: `com.github.smithjw.download.Google_Chrome`
+
 
 ## Warnings
 

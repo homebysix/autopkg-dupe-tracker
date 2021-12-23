@@ -1,6 +1,6 @@
 # HopperDisassembler4.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest version of Hopper Disassembler 4.
 
@@ -17,6 +17,7 @@ the latest full version.
             - **Identifier**: `com.github.timsutton.download.HopperDisassembler4`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

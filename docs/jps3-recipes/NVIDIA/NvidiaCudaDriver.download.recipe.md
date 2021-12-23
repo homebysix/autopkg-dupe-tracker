@@ -1,12 +1,13 @@
 # NvidiaCudaDriver.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest NVIDIA CUDA driver for Mac from the NVDIA web site.
 
 - **Identifier**: `com.github.jps3.download.NvidiaCudaDriver`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,12 +1,13 @@
 # OpenSCAD.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest OpenSCAD.  Note: Developer does not codesign or notarize this app.
 
 - **Identifier**: `com.github.jps3.download.OpenSCAD`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

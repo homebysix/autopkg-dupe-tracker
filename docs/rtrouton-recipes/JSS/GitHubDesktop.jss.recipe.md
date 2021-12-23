@@ -1,12 +1,13 @@
 # GitHubDesktop.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Uses parent recipe to download the latest version of GitHub Desktop, build an installer package and then upload the package to the JSS.
 
 - **Identifier**: `com.github.rtrouton.jss.GitHubDesktop`
 
 - **Parent Recipes**: `com.github.homebysix.pkg.GitHubDesktop`
+
 
 ## Warnings
 

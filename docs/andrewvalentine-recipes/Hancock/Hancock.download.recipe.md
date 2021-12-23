@@ -1,12 +1,13 @@
 # Hancock.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest version of Hancock from Github. Set INCLUDE_PRERELEASES to a non-empty value to download prerelease versions of the app.
 
 - **Identifier**: `com.github.andrewvalentine.download.Hancock`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

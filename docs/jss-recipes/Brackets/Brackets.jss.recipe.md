@@ -1,12 +1,13 @@
 # Brackets.jss.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Brackets disk image and builds a package, uploads to JSS.
 
 - **Identifier**: `com.github.jss-recipes.jss.Brackets`
 
 - **Parent Recipes**: `com.github.novaksam.pkg.Brackets`
+
 
 ## Warnings
 

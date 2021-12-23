@@ -1,6 +1,6 @@
 # AdobeFlashPlayerExtractPackage.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: 
 - Downloads the latest Adobe Flash Player installer, 
@@ -16,6 +16,7 @@ This pkg created with this recipe will just install:
             - **Identifier**: `com.github.vmule.munki.FlashPlayerExtractPackage`
 
             - **Parent Recipes**: `com.github.autopkg.download.FlashPlayer`
+
 
 ## Warnings
 

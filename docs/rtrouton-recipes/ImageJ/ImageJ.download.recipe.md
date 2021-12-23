@@ -1,12 +1,13 @@
 # ImageJ.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download recipe for ImageJ, which downloads a zip file containing the latest stable version of ImageJ for Mac OS X. ImageJ is an image processing package which display, edit, analyze, process, save and print 8-bit, 16-bit and 32-bit images.
 
 - **Identifier**: `com.github.rtrouton.download.ImageJ`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

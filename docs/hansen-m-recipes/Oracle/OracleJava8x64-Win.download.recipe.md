@@ -1,6 +1,6 @@
 # OracleJava8x64-Win.download.recipe
 
-            _Last updated 2021-12-23 19:58:08Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Download recipe for Oracle's Java 8 for . Finds and downloads the latest Oracle Java 8 JRE CPU release.
 
@@ -15,6 +15,7 @@ http://www.oracle.com/technetwork/java/javase/terms/license/index.html
             - **Identifier**: `com.github.hansen-m.download.OracleJava8x64-Win`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # SUIDGuardNG.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: DEPRECATED software. Do not use. Recipe does nothing. Will be removed from repo.
 

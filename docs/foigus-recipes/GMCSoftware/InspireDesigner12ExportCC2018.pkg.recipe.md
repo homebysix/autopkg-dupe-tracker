@@ -1,6 +1,6 @@
 # InspireDesigner12ExportCC2018.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Packages Inspire Designer 12 Export plugin for InDesign CC 2018.
 
@@ -17,6 +17,7 @@ autopkg run InspireDesigner12ExportCC2018.pkg -p /path/to/Adobe-InDesign-CC-2018
             - **Identifier**: `com.github.foigus.pkg.InspireDesigner12ExportCC2018`
 
             - **Parent Recipes**: `com.github.foigus.download.InspireDesigner12ExportCC2018`
+
 
 ## Warnings
 

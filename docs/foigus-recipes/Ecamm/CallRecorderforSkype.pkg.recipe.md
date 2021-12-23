@@ -1,6 +1,6 @@
 # CallRecorderforSkype.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads latest Call Recorder for Skype installer and uses it to create a package.
 
@@ -20,6 +20,7 @@ this in the override to indicate understanding of the change to Skype.
             - **Identifier**: `com.github.foigus.pkg.CallRecorderforSkype`
 
             - **Parent Recipes**: `com.github.foigus.download.CallRecorderforSkype`
+
 
 ## Warnings
 

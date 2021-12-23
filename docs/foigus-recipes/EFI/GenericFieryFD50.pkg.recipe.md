@@ -1,6 +1,6 @@
 # GenericFieryFD50.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Deconstruct a Fiery driver package, remove the Fiery Driver Updater.app, and repack.  The FD50 and FD51-revision Fiery drivers appear to properly handle installing when COMMAND_LINE_INSTALL is set.
 

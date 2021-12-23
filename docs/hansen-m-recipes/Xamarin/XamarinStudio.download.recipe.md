@@ -1,12 +1,13 @@
 # XamarinStudio.download.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Download the latest version of Xamarin Studio.
 
 - **Identifier**: `com.github.hansen-m.download.XamarinStudio`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

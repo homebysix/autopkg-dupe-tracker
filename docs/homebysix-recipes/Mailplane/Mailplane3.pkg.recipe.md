@@ -1,12 +1,13 @@
 # Mailplane3.pkg.recipe
 
-_Last updated 2021-12-23 19:58:08Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads latest Mailplane 3 app and builds a package.
 
 - **Identifier**: `com.github.homebysix.pkg.Mailplane3`
 
 - **Parent Recipes**: `com.github.keeleysam.recipes.Mailplane.3.download`
+
 
 ## Warnings
 

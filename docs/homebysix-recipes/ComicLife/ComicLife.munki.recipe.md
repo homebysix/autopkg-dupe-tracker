@@ -1,12 +1,13 @@
 # ComicLife.munki.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Imports Comic Life into Munki.
 
 - **Identifier**: `com.github.homebysix.munki.ComicLife`
 
 - **Parent Recipes**: `com.github.homebysix.download.ComicLife`
+
 
 ## Warnings
 

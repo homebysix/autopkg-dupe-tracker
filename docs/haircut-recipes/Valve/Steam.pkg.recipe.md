@@ -1,6 +1,6 @@
 # Steam.pkg.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest the Steam disk image and creates a versioned package.
 
@@ -9,6 +9,7 @@ Please note that the resultant package simply installs Steam.app to /Application
             - **Identifier**: `com.github.haircut.pkg.Steam`
 
             - **Parent Recipes**: `com.github.haircut.download.Steam`
+
 
 ## Warnings
 

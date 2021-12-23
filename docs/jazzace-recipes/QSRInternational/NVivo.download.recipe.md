@@ -1,6 +1,6 @@
 # NVivo.download.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Downloads the latest release of NVivo (Version 20 or later).
 This recipe requires that you have Elliot Jordan's recipes (homebysix-recipes) in your RecipeRepos,
@@ -13,6 +13,7 @@ using a processor like AppDmgVersioner.
             - **Identifier**: `com.github.jazzace.download.NVivo`
 
             - **Parent Recipes**: `None`
+
 
 ## Warnings
 

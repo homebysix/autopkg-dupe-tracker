@@ -1,12 +1,13 @@
 # FontAgent9PluginIDCC2020.pkg.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the most current FontAgent 9 Plugin for InDesign CC 2020 and packages it.
 
 - **Identifier**: `com.github.foigus.pkg.FontAgent9PluginIDCC2020`
 
 - **Parent Recipes**: `com.github.foigus.download.FontAgent9`
+
 
 ## Warnings
 

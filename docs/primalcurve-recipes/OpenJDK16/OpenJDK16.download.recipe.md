@@ -1,12 +1,13 @@
 # OpenJDK16.download.recipe
 
-_Last updated 2021-12-23 19:58:07Z_
+_Last updated 2021-12-23 20:01:50Z_
 
 - **Description**: Downloads the latest OpenJDK 16 for macOS.
 
 - **Identifier**: `com.github.primalcurve.download.OpenJDK16`
 
 - **Parent Recipes**: `None`
+
 
 ## Warnings
 

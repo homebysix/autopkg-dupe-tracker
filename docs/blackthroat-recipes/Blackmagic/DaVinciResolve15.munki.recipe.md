@@ -1,6 +1,6 @@
 # DaVinciResolve15.munki.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Recipe politely borrowed from Tim Sutton (https://github.com/autopkg/timsutton-recipes/blob/master/Blackmagic/DaVinciResolve14.munki.recipe)
 
@@ -29,6 +29,7 @@ this user's home will be used, and if run at the loginwindow, the root user's ho
             - **Identifier**: `com.github.blackthroat-recipes.munki.DaVinciResolve15`
 
             - **Parent Recipes**: `com.github.moofit-recipes.download.DaVinciResolve15`
+
 
 ## Warnings
 

@@ -1,6 +1,6 @@
 # SassafrasK2Client.ds.recipe
 
-            _Last updated 2021-12-23 19:58:07Z_
+            _Last updated 2021-12-23 20:01:50Z_
 
             - **Description**: Fetches the latest Sassafras KeyClient Mac installer for versions 7.0-7.6 and copies it to a location of your choosing.
 Additionally, fetches the k2clientconfig tool from the Sassafras website
@@ -40,6 +40,7 @@ pane, etc.), so we use the three-decimal version.
             - **Identifier**: `com.github.jazzace.ds.sassafras-k2client`
 
             - **Parent Recipes**: `com.github.autopkg.download.sassafras-k2client`
+
 
 ## Warnings
 

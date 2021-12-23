@@ -1,6 +1,6 @@
 # Affinity Designer.pkg.recipe
 
-_Last updated 2021-12-23 19:49:47Z_
+_Last updated 2021-12-23 19:54:13Z_
 
 - **Description**: Downloads the current release version of Affintiy Designer and builds a package.
 
@@ -10,5 +10,5 @@ _Last updated 2021-12-23 19:49:47Z_
 ## Warnings
 
 - These recipes have duplicate NAMEs:
-    - [faumac-recipes/Affinity Designer/Affinity Designer.pkg.recipe](/docs/faumac-recipes/Affinity Designer/Affinity Designer.pkg.recipe)
-    - [grahampugh-recipes/Affinity/AffinityDesigner.pkg.recipe.yaml](/docs/grahampugh-recipes/Affinity/AffinityDesigner.pkg.recipe.yaml)
+    - [faumac-recipes/Affinity Designer/Affinity Designer.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Affinity Designer/Affinity Designer.pkg.recipe)
+    - [grahampugh-recipes/Affinity/AffinityDesigner.pkg.recipe.yaml](/autopkg-dupe-tracker/grahampugh-recipes/Affinity/AffinityDesigner.pkg.recipe.yaml)

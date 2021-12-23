@@ -1,6 +1,6 @@
 # DeepL.munki.recipe
 
-_Last updated 2021-12-23 19:49:47Z_
+_Last updated 2021-12-23 19:54:13Z_
 
 - **Description**: Downloads the latest version of DeepL and imports it into Munki.
 
@@ -10,15 +10,15 @@ _Last updated 2021-12-23 19:49:47Z_
 ## Warnings
 
 - These recipes have duplicate filenames:
-    - [peterkelm-recipes/DeepL/DeepL.munki.recipe](/docs/peterkelm-recipes/DeepL/DeepL.munki.recipe)
-    - [macprince-recipes/DeepL/DeepL.munki.recipe](/docs/macprince-recipes/DeepL/DeepL.munki.recipe)
-    - [wycomco-recipes/DeepL/DeepL.munki.recipe](/docs/wycomco-recipes/DeepL/DeepL.munki.recipe)
+    - [peterkelm-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/peterkelm-recipes/DeepL/DeepL.munki.recipe)
+    - [macprince-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/macprince-recipes/DeepL/DeepL.munki.recipe)
+    - [wycomco-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/wycomco-recipes/DeepL/DeepL.munki.recipe)
 
 - These recipes have duplicate filenames, ignoring numbers:
-    - [peterkelm-recipes/DeepL/DeepL.munki.recipe](/docs/peterkelm-recipes/DeepL/DeepL.munki.recipe)
-    - [macprince-recipes/DeepL/DeepL.munki.recipe](/docs/macprince-recipes/DeepL/DeepL.munki.recipe)
-    - [wycomco-recipes/DeepL/DeepL.munki.recipe](/docs/wycomco-recipes/DeepL/DeepL.munki.recipe)
+    - [peterkelm-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/peterkelm-recipes/DeepL/DeepL.munki.recipe)
+    - [macprince-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/macprince-recipes/DeepL/DeepL.munki.recipe)
+    - [wycomco-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/wycomco-recipes/DeepL/DeepL.munki.recipe)
 
 - These recipes have duplicate NAMEs:
-    - [peterkelm-recipes/DeepL/DeepL.munki.recipe](/docs/peterkelm-recipes/DeepL/DeepL.munki.recipe)
-    - [macprince-recipes/DeepL/DeepL.munki.recipe](/docs/macprince-recipes/DeepL/DeepL.munki.recipe)
+    - [peterkelm-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/peterkelm-recipes/DeepL/DeepL.munki.recipe)
+    - [macprince-recipes/DeepL/DeepL.munki.recipe](/autopkg-dupe-tracker/macprince-recipes/DeepL/DeepL.munki.recipe)

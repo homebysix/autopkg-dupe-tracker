@@ -1,6 +1,6 @@
 # Sourcetree.pkg.recipe
 
-_Last updated 2021-12-23 19:49:47Z_
+_Last updated 2021-12-23 19:54:13Z_
 
 - **Description**: Downloads the current release version of Sourcetree and builds a package.
 
@@ -10,13 +10,13 @@ _Last updated 2021-12-23 19:49:47Z_
 ## Warnings
 
 - These recipes have duplicate filenames:
-    - [faumac-recipes/Sourcetree/Sourcetree.pkg.recipe](/docs/faumac-recipes/Sourcetree/Sourcetree.pkg.recipe)
-    - [hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe](/docs/hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe)
+    - [faumac-recipes/Sourcetree/Sourcetree.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Sourcetree/Sourcetree.pkg.recipe)
+    - [hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe](/autopkg-dupe-tracker/hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe)
 
 - These recipes have duplicate filenames, ignoring numbers:
-    - [faumac-recipes/Sourcetree/Sourcetree.pkg.recipe](/docs/faumac-recipes/Sourcetree/Sourcetree.pkg.recipe)
-    - [hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe](/docs/hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe)
+    - [faumac-recipes/Sourcetree/Sourcetree.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Sourcetree/Sourcetree.pkg.recipe)
+    - [hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe](/autopkg-dupe-tracker/hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe)
 
 - These recipes have duplicate NAMEs:
-    - [faumac-recipes/Sourcetree/Sourcetree.pkg.recipe](/docs/faumac-recipes/Sourcetree/Sourcetree.pkg.recipe)
-    - [hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe](/docs/hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe)
+    - [faumac-recipes/Sourcetree/Sourcetree.pkg.recipe](/autopkg-dupe-tracker/faumac-recipes/Sourcetree/Sourcetree.pkg.recipe)
+    - [hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe](/autopkg-dupe-tracker/hjuutilainen-recipes/Atlassian/SourceTree.pkg.recipe)

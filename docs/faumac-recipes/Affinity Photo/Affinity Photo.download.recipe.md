@@ -1,6 +1,6 @@
 # Affinity Photo.download.recipe
 
-_Last updated 2021-12-23 19:49:47Z_
+_Last updated 2021-12-23 19:54:13Z_
 
 - **Description**: Downloads the current release version of Affintiy Photo.
 
@@ -10,13 +10,13 @@ _Last updated 2021-12-23 19:49:47Z_
 ## Warnings
 
 - These recipes have duplicate filenames:
-    - [peterkelm-recipes/Serif/AffinityPhoto.download.recipe](/docs/peterkelm-recipes/Serif/AffinityPhoto.download.recipe)
-    - [faumac-recipes/Affinity Photo/Affinity Photo.download.recipe](/docs/faumac-recipes/Affinity Photo/Affinity Photo.download.recipe)
+    - [peterkelm-recipes/Serif/AffinityPhoto.download.recipe](/autopkg-dupe-tracker/peterkelm-recipes/Serif/AffinityPhoto.download.recipe)
+    - [faumac-recipes/Affinity Photo/Affinity Photo.download.recipe](/autopkg-dupe-tracker/faumac-recipes/Affinity Photo/Affinity Photo.download.recipe)
 
 - These recipes have duplicate filenames, ignoring numbers:
-    - [peterkelm-recipes/Serif/AffinityPhoto.download.recipe](/docs/peterkelm-recipes/Serif/AffinityPhoto.download.recipe)
-    - [faumac-recipes/Affinity Photo/Affinity Photo.download.recipe](/docs/faumac-recipes/Affinity Photo/Affinity Photo.download.recipe)
+    - [peterkelm-recipes/Serif/AffinityPhoto.download.recipe](/autopkg-dupe-tracker/peterkelm-recipes/Serif/AffinityPhoto.download.recipe)
+    - [faumac-recipes/Affinity Photo/Affinity Photo.download.recipe](/autopkg-dupe-tracker/faumac-recipes/Affinity Photo/Affinity Photo.download.recipe)
 
 - These recipes have duplicate NAMEs:
-    - [peterkelm-recipes/Serif/AffinityPhoto.download.recipe](/docs/peterkelm-recipes/Serif/AffinityPhoto.download.recipe)
-    - [faumac-recipes/Affinity Photo/Affinity Photo.download.recipe](/docs/faumac-recipes/Affinity Photo/Affinity Photo.download.recipe)
+    - [peterkelm-recipes/Serif/AffinityPhoto.download.recipe](/autopkg-dupe-tracker/peterkelm-recipes/Serif/AffinityPhoto.download.recipe)
+    - [faumac-recipes/Affinity Photo/Affinity Photo.download.recipe](/autopkg-dupe-tracker/faumac-recipes/Affinity Photo/Affinity Photo.download.recipe)

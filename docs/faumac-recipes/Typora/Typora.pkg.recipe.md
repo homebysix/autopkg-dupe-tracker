@@ -1,5 +1,7 @@
 # Typora.pkg.recipe
 
+_Last updated 2021-12-23 19:43:34Z_
+
 - **Description**: Create a package from the Typora download
 
 - **Identifier**: `com.github.faumac.pkg.Typora`

@@ -1,37 +1,151 @@
-## Welcome to GitHub Pages
+# AutoPkg Org Recipe Info
 
-You can use the [editor on GitHub](https://github.com/homebysix/autopkg-dupe-tracker/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+_Last updated 2021-12-23 19:43:34Z_
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## By Repository
 
-### Markdown
+- [48kRAM-recipes](/docs/48kRAM-recipes)
+- [aanklewicz-recipes](/docs/aanklewicz-recipes)
+- [ahousseini-recipes](/docs/ahousseini-recipes)
+- [andredb90-recipes](/docs/andredb90-recipes)
+- [andrewvalentine-recipes](/docs/andrewvalentine-recipes)
+- [andrewzirkel-recipes](/docs/andrewzirkel-recipes)
+- [apettinen-recipes](/docs/apettinen-recipes)
+- [apizz-recipes](/docs/apizz-recipes)
+- [arubdesu-recipes](/docs/arubdesu-recipes)
+- [aysiu-recipes](/docs/aysiu-recipes)
+- [bkerns-recipes](/docs/bkerns-recipes)
+- [blackthroat-recipes](/docs/blackthroat-recipes)
+- [bnpl-recipes](/docs/bnpl-recipes)
+- [bochoven-recipes](/docs/bochoven-recipes)
+- [bradclare-recipes](/docs/bradclare-recipes)
+- [brianwells-recipes](/docs/brianwells-recipes)
+- [chalcahuite-recipes](/docs/chalcahuite-recipes)
+- [chefaustin-recipes](/docs/chefaustin-recipes)
+- [chilcote-recipes](/docs/chilcote-recipes)
+- [clburlison-recipes](/docs/clburlison-recipes)
+- [crystalllized-recipes](/docs/crystalllized-recipes)
+- [ctueck-recipes](/docs/ctueck-recipes)
+- [d33t5-recipes](/docs/d33t5-recipes)
+- [dankeller-recipes](/docs/dankeller-recipes)
+- [Darkomen78-recipes](/docs/Darkomen78-recipes)
+- [dataJAR-recipes](/docs/dataJAR-recipes)
+- [dcoobs-recipes](/docs/dcoobs-recipes)
+- [denmoff-recipes](/docs/denmoff-recipes)
+- [drewdiver-recipes](/docs/drewdiver-recipes)
+- [eholtam-recipes](/docs/eholtam-recipes)
+- [erikng-recipes](/docs/erikng-recipes)
+- [faumac-recipes](/docs/faumac-recipes)
+- [filewave](/docs/filewave)
+- [fishd72-recipes](/docs/fishd72-recipes)
+- [flammable-recipes](/docs/flammable-recipes)
+- [flywire-recipes](/docs/flywire-recipes)
+- [foigus-recipes](/docs/foigus-recipes)
+- [ftiff-recipes](/docs/ftiff-recipes)
+- [gerardkok-recipes](/docs/gerardkok-recipes)
+- [gilbertpalau-recipes](/docs/gilbertpalau-recipes)
+- [giobbi-recipes](/docs/giobbi-recipes)
+- [gmarnin-recipes](/docs/gmarnin-recipes)
+- [golbiga-recipes](/docs/golbiga-recipes)
+- [grahamgilbert-recipes](/docs/grahamgilbert-recipes)
+- [grahampugh-recipes](/docs/grahampugh-recipes)
+- [gregneagle-recipes](/docs/gregneagle-recipes)
+- [groob-recipes](/docs/groob-recipes)
+- [haircut-recipes](/docs/haircut-recipes)
+- [hansen-m-recipes](/docs/hansen-m-recipes)
+- [hjuutilainen-recipes](/docs/hjuutilainen-recipes)
+- [HobbitHardcase-recipes](/docs/HobbitHardcase-recipes)
+- [homebysix-recipes](/docs/homebysix-recipes)
+- [its-unibas-recipes](/docs/its-unibas-recipes)
+- [jaharmi-recipes](/docs/jaharmi-recipes)
+- [jannheider-recipes](/docs/jannheider-recipes)
+- [jazzace-recipes](/docs/jazzace-recipes)
+- [jbaker10-recipes](/docs/jbaker10-recipes)
+- [jessepeterson-recipes](/docs/jessepeterson-recipes)
+- [jleggat-recipes](/docs/jleggat-recipes)
+- [jlehikoinen-recipes](/docs/jlehikoinen-recipes)
+- [joncrain-recipes](/docs/joncrain-recipes)
+- [joshua-d-miller-recipes](/docs/joshua-d-miller-recipes)
+- [jpiel-recipes](/docs/jpiel-recipes)
+- [jps3-recipes](/docs/jps3-recipes)
+- [jrsd-recipes](/docs/jrsd-recipes)
+- [jss-recipes](/docs/jss-recipes)
+- [justinrummel-recipes](/docs/justinrummel-recipes)
+- [keeleysam-recipes](/docs/keeleysam-recipes)
+- [kevinmcox-recipes](/docs/kevinmcox-recipes)
+- [killahquam-recipes](/docs/killahquam-recipes)
+- [kitzy-recipes](/docs/kitzy-recipes)
+- [lashomb-recipes](/docs/lashomb-recipes)
+- [lrz-recipes](/docs/lrz-recipes)
+- [luisgiraldo-recipes](/docs/luisgiraldo-recipes)
+- [macprince-recipes](/docs/macprince-recipes)
+- [macvfx-recipes](/docs/macvfx-recipes)
+- [MichalMMac-recipes](/docs/MichalMMac-recipes)
+- [mikestechshop-recipes](/docs/mikestechshop-recipes)
+- [MLBZ521-recipes](/docs/MLBZ521-recipes)
+- [moofit-recipes](/docs/moofit-recipes)
+- [morgrowe-recipes](/docs/morgrowe-recipes)
+- [mosen-recipes](/docs/mosen-recipes)
+- [munkireport-recipes](/docs/munkireport-recipes)
+- [n8felton-recipes](/docs/n8felton-recipes)
+- [natewalck-recipes](/docs/natewalck-recipes)
+- [nbalonso-recipes](/docs/nbalonso-recipes)
+- [neilmartin83-recipes](/docs/neilmartin83-recipes)
+- [nmcspadden-recipes](/docs/nmcspadden-recipes)
+- [novaksam-recipes](/docs/novaksam-recipes)
+- [nstrauss-recipes](/docs/nstrauss-recipes)
+- [nzmacgeek-recipes](/docs/nzmacgeek-recipes)
+- [oliverweinm-recipes](/docs/oliverweinm-recipes)
+- [orbsmiv-recipes](/docs/orbsmiv-recipes)
+- [orchard-recipes](/docs/orchard-recipes)
+- [patgmac-recipes](/docs/patgmac-recipes)
+- [paul-cossey-recipes](/docs/paul-cossey-recipes)
+- [peetinc-recipes](/docs/peetinc-recipes)
+- [peshay-recipes](/docs/peshay-recipes)
+- [peterkelm-recipes](/docs/peterkelm-recipes)
+- [precursorca-recipes](/docs/precursorca-recipes)
+- [primalcurve-recipes](/docs/primalcurve-recipes)
+- [prochat-recipes](/docs/prochat-recipes)
+- [psaintemarie-recipes](/docs/psaintemarie-recipes)
+- [rderewianko-recipes](/docs/rderewianko-recipes)
+- [recipes](/docs/recipes)
+- [rmanly-recipes](/docs/rmanly-recipes)
+- [robperc-recipes](/docs/robperc-recipes)
+- [rtrouton-recipes](/docs/rtrouton-recipes)
+- [rustymyers-recipes](/docs/rustymyers-recipes)
+- [scriptingosx-recipes](/docs/scriptingosx-recipes)
+- [seansgm-recipes](/docs/seansgm-recipes)
+- [sebtomasi-recipes](/docs/sebtomasi-recipes)
+- [skoobasteeve-recipes](/docs/skoobasteeve-recipes)
+- [smithjw-recipes](/docs/smithjw-recipes)
+- [swy-recipes](/docs/swy-recipes)
+- [tallfunnyjew-recipes](/docs/tallfunnyjew-recipes)
+- [tbridge-recipes](/docs/tbridge-recipes)
+- [Tecnico1931-recipes](/docs/Tecnico1931-recipes)
+- [TekTekkers-recipes](/docs/TekTekkers-recipes)
+- [thenikola-recipes](/docs/thenikola-recipes)
+- [timsutton-recipes](/docs/timsutton-recipes)
+- [triti-recipes](/docs/triti-recipes)
+- [ucam-apple-support-recipes](/docs/ucam-apple-support-recipes)
+- [valdore86-recipes](/docs/valdore86-recipes)
+- [Vinrobot-recipes](/docs/Vinrobot-recipes)
+- [vmiller-recipes](/docs/vmiller-recipes)
+- [vmule-recipes](/docs/vmule-recipes)
+- [wardsparadox-recipes](/docs/wardsparadox-recipes)
+- [watchmanmonitoring-recipes](/docs/watchmanmonitoring-recipes)
+- [weswhet-recipes](/docs/weswhet-recipes)
+- [wholtz-recipes](/docs/wholtz-recipes)
+- [wycomco-recipes](/docs/wycomco-recipes)
+- [ygini-recipes](/docs/ygini-recipes)
+- [Yohan460-recipes](/docs/Yohan460-recipes)
+- [zachtarr-recipes](/docs/zachtarr-recipes)
+- [zentral-recipes](/docs/zentral-recipes)
+- [znerol-recipes](/docs/znerol-recipes)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## By Redundancy
 
-```markdown
-Syntax highlighted code block
+%BYDUPE%
 
-# Header 1
-## Header 2
-### Header 3
+---
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/homebysix/autopkg-dupe-tracker/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Project source: https://github.com/homebysix/autopkg-dupe-tracker/

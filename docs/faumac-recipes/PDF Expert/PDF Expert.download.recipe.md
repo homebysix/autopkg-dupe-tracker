@@ -1,5 +1,7 @@
 # PDF Expert.download.recipe
 
+_Last updated 2021-12-23 19:43:34Z_
+
 - **Description**: Downloads the current release of PDF Expert.
 
 - **Identifier**: `com.github.faumac.download.pdfexpert`

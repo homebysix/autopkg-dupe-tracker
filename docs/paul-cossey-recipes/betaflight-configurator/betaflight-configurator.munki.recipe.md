@@ -1,9 +1,0 @@
-# betaflight-configurator.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of betaflight-configurator and imports it into Munki.
-
-- **Identifier**: `com.github.paul-cossey.munki.betaflight-configurator`
-
-- **Parent Recipes**: `com.github.paul-cossey.download.betaflight-configurator`

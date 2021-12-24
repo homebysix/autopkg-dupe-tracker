@@ -1,9 +1,0 @@
-# Hugo.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Hugo, a fast and modern static website engine written in Golang. Defaults to 64bit version.
-
-- **Identifier**: `com.github.apettinen.download.Hugo`
-
-- **Parent Recipes**: `None`

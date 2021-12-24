@@ -1,9 +1,0 @@
-# MicrosoftDefenderATP.install.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of the Microsoft Defender ATP installer package and installs it.
-
-- **Identifier**: `com.github.rtrouton.install.microsoftdefenderatp`
-
-- **Parent Recipes**: `com.github.rtrouton.pkg.microsoftdefenderatp`

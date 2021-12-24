@@ -1,9 +1,0 @@
-# Stitch Connect.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Stitch Connect and imports it into Munki.
-
-- **Identifier**: `com.github.tbridge.munki.StitchConnect`
-
-- **Parent Recipes**: `com.github.tbridge.download.StitchConnect`

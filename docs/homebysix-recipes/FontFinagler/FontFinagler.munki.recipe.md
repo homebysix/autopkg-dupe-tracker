@@ -1,9 +1,0 @@
-# FontFinagler.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Font Finagler and imports it into Munki.
-
-- **Identifier**: `com.github.homebysix.munki.FontFinagler`
-
-- **Parent Recipes**: `com.github.homebysix.download.FontFinagler`

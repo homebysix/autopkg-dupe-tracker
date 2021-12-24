@@ -1,9 +1,0 @@
-# VirtualC64.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of VirtualC64 and imports it into Munki.
-
-- **Identifier**: `com.github.homebysix.munki.VirtualC64`
-
-- **Parent Recipes**: `com.github.homebysix.download.VirtualC64`

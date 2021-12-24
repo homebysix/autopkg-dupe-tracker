@@ -1,9 +1,0 @@
-# MachineProfile.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of MachineProfile and creates a package.
-
-- **Identifier**: `com.github.kevinmcox.pkg.MachineProfile`
-
-- **Parent Recipes**: `com.github.kevinmcox.download.MachineProfile`

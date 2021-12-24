@@ -1,9 +1,0 @@
-# ResilioSync.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Resilio Sync (formerly BitTorrent Sync).
-
-- **Identifier**: `com.github.homebysix.download.ResilioSync`
-
-- **Parent Recipes**: `None`

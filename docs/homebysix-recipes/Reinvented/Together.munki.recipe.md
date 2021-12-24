@@ -1,9 +1,0 @@
-# Together.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Together 3 and imports it into Munki.
-
-- **Identifier**: `com.github.homebysix.munki.Together3`
-
-- **Parent Recipes**: `com.github.homebysix.download.Together3`

@@ -1,9 +1,0 @@
-# Tweetbot.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Tweetbot.
-
-- **Identifier**: `com.github.macprince.download.Tweetbot`
-
-- **Parent Recipes**: `None`

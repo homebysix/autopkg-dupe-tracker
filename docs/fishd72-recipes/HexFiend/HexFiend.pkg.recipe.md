@@ -1,9 +1,0 @@
-# HexFiend.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of HexFiend and creates a package.
-
-- **Identifier**: `com.github.fishd72.pkg.HexFiend`
-
-- **Parent Recipes**: `com.github.michalmmac.download.HexFiend`

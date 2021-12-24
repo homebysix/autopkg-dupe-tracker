@@ -1,9 +1,0 @@
-# Backup Manager.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Backup Manager and imports into Munki.
-
-- **Identifier**: `com.github.dataJAR-recipes.munki.Backup Manager`
-
-- **Parent Recipes**: `com.github.dataJAR-recipes.download.Backup Manager`

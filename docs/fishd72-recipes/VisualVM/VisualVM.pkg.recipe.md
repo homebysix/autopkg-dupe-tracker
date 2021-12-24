@@ -1,9 +1,0 @@
-# VisualVM.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of VisualVM and creates a package.
-
-- **Identifier**: `com.github.fishd72.pkg.VisualVM`
-
-- **Parent Recipes**: `com.github.fishd72.download.VisualVM`

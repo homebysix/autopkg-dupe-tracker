@@ -1,9 +1,0 @@
-# BankID.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the current release version of BankID
-
-- **Identifier**: `com.github.giobbi.download.bankid`
-
-- **Parent Recipes**: `None`

@@ -1,9 +1,0 @@
-# sqlops.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of SQL Operations Studio and imports it into Munki.
-
-- **Identifier**: `com.github.swy.munki.sqlops`
-
-- **Parent Recipes**: `com.github.swy.download.sqlops`

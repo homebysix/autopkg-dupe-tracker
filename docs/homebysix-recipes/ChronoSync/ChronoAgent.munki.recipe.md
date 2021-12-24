@@ -1,9 +1,0 @@
-# ChronoAgent.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of ChronoAgent and imports it into Munki.
-
-- **Identifier**: `com.github.homebysix.munki.ChronoAgent`
-
-- **Parent Recipes**: `com.github.homebysix.pkg.ChronoAgent`

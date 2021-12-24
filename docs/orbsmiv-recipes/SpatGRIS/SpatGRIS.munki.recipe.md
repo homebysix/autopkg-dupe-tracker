@@ -1,9 +1,0 @@
-# SpatGRIS.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Import the SpatGRIS pkg into Munki.
-
-- **Identifier**: `com.github.orbsmiv.munki.SpatGRIS`
-
-- **Parent Recipes**: `com.github.orbsmiv.pkg.SpatGRIS`

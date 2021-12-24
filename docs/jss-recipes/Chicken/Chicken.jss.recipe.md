@@ -1,9 +1,0 @@
-# Chicken.jss.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of chicken and makes a pkg of it Then, uploads to the JSS.
-
-- **Identifier**: `com.github.jss-recipes.jss.Chicken`
-
-- **Parent Recipes**: `com.rderewianko.pkg.Chicken`

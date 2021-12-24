@@ -1,9 +1,0 @@
-# OpenSCAD.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest OpenSCAD and imports into Munki
-
-- **Identifier**: `com.github.jps3.munki.OpenSCAD`
-
-- **Parent Recipes**: `com.github.jps3.download.OpenSCAD`

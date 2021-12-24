@@ -1,9 +1,0 @@
-# Timing.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the current release version of Timing and creates a package.
-
-- **Identifier**: `com.github.apizz.pkg.timing`
-
-- **Parent Recipes**: `com.github.apizz.download.timing`

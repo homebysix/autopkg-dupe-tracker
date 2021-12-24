@@ -1,9 +1,0 @@
-# IntelHAXM.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Intel HAXM and imports it into Munki.
-
-- **Identifier**: `com.github.n8felton.munki.IntelHAXM`
-
-- **Parent Recipes**: `com.github.n8felton.download.IntelHAXM`

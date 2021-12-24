@@ -1,9 +1,0 @@
-# Stats.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Stats and creates a package.
-
-- **Identifier**: `com.github.kevinmcox.pkg.Stats`
-
-- **Parent Recipes**: `com.github.kevinmcox.download.Stats`

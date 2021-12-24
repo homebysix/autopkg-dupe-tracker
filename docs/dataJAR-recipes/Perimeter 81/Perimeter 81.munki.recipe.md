@@ -1,9 +1,0 @@
-# Perimeter 81.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the current release version of Perimeter 81, builds a package and imports it to Munki.
-
-- **Identifier**: `com.github.dataJAR-recipes.munki.Perimeter 81`
-
-- **Parent Recipes**: `com.github.dataJAR-recipes.pkg.Perimeter 81`

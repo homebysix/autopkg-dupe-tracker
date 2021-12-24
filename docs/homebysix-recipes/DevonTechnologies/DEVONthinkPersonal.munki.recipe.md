@@ -1,9 +1,0 @@
-# DEVONthinkPersonal.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of DEVONthink Personal and imports it into Munki.
-
-- **Identifier**: `com.github.homebysix.munki.DEVONthinkPersonal`
-
-- **Parent Recipes**: `com.github.homebysix.download.DEVONthinkPersonal`

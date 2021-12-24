@@ -1,9 +1,0 @@
-# Blue Jeans Scheduler for Mac.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Blue Jeans Scheduler for Mac and creates a package.
-
-- **Identifier**: `com.github.dataJAR-recipes.pkg.Blue Jeans Scheduler for Mac`
-
-- **Parent Recipes**: `com.github.dataJAR-recipes.download.Blue Jeans Scheduler for Mac`

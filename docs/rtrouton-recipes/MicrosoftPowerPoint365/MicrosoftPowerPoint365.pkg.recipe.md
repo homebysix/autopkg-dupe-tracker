@@ -1,9 +1,0 @@
-# MicrosoftPowerPoint365.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Microsoft's PowerPoint for Office 365 installer package and renames the package.
-
-- **Identifier**: `com.github.rtrouton.pkg.microsoftpowerpoint365`
-
-- **Parent Recipes**: `com.github.rtrouton.download.microsoftpowerpoint365`

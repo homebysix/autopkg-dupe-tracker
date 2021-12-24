@@ -1,9 +1,0 @@
-# Stream Deck.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Stream Deck and imports it into Munki.
-
-- **Identifier**: `com.github.dataJAR-recipes.munki.Stream Deck`
-
-- **Parent Recipes**: `com.github.dataJAR-recipes.download.Stream Deck`

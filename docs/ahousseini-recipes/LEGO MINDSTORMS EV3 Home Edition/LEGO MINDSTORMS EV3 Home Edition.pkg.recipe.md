@@ -1,9 +1,0 @@
-# LEGO MINDSTORMS EV3 Home Edition.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of LEGO MINDSTORMS EV3 Home Edition and creates a package.
-
-- **Identifier**: `com.github.ahousseini-recipes.pkg.LEGOMINDSTORMSEV3HomeEdition`
-
-- **Parent Recipes**: `com.github.ahousseini-recipes.download.LEGOMINDSTORMSEV3HomeEdition`

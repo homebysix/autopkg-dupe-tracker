@@ -1,9 +1,0 @@
-# Packer.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the current release of Packer from http://packer.io
-
-- **Identifier**: `com.github.timsutton.download.Packer`
-
-- **Parent Recipes**: `None`

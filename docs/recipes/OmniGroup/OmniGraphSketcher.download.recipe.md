@@ -1,9 +1,0 @@
-# OmniGraphSketcher.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads latest OmniGraphSketcher disk image.
-
-- **Identifier**: `com.github.autopkg.download.omnigraphsketcher`
-
-- **Parent Recipes**: `com.github.autopkg.download.omnigroupproduct`

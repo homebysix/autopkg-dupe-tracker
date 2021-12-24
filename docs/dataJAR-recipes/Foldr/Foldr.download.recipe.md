@@ -1,9 +1,0 @@
-# Foldr.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Download recipe for the latest trial version of Foldr.
-
-- **Identifier**: `com.github.dataJAR-recipes.download.Foldr`
-
-- **Parent Recipes**: `None`

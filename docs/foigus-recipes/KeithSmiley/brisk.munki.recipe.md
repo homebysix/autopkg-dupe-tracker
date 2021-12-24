@@ -1,9 +1,0 @@
-# brisk.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of brisk and imports it into Munki.
-
-- **Identifier**: `com.github.foigus.munki.brisk`
-
-- **Parent Recipes**: `com.github.foigus.download.brisk`

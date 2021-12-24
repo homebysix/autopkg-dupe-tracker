@@ -1,9 +1,0 @@
-# NBICreator.install.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Installs the latest version of NBICreator.
-
-- **Identifier**: `com.github.gmarnin.install.NBICreator`
-
-- **Parent Recipes**: `com.github.gmarnin.download.NBICreator`

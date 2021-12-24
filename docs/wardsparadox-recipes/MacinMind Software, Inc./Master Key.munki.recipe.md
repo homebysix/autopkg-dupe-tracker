@@ -1,9 +1,0 @@
-# Master Key.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Master Key and imports it into Munki.
-
-- **Identifier**: `com.github.autopkg.wardsparadox.munki.MasterKey`
-
-- **Parent Recipes**: `com.github.autopkg.wardsparadox.download.MasterKey`

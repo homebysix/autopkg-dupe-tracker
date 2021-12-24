@@ -1,9 +1,0 @@
-# AppleInfotecPrinterDrivers.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads latest Apple Infotec printer drivers and builds a package.
-
-- **Identifier**: `com.github.novaksam.pkg.AppleInfotecPrinterDrivers`
-
-- **Parent Recipes**: `com.github.n8felton.download.AppleInfotecPrinterDrivers`

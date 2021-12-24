@@ -1,9 +1,0 @@
-# Araxis Merge.pkg.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Araxis Merge and creates a package.
-
-- **Identifier**: `com.github.ahousseini-recipes.pkg.AraxisMerge`
-
-- **Parent Recipes**: `com.github.ahousseini-recipes.download.AraxisMerge`

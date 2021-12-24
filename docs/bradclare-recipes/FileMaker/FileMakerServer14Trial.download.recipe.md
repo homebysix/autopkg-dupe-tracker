@@ -1,9 +1,0 @@
-# FileMakerServer14Trial.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Download recipe for FileMaker Server 14 Trial.
-
-- **Identifier**: `com.github.bradclare.download.filemakerserver14trial`
-
-- **Parent Recipes**: `None`

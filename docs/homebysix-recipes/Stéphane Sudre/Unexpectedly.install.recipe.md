@@ -1,9 +1,0 @@
-# Unexpectedly.install.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Installs the latest version of Unexpectedly.
-
-- **Identifier**: `com.github.homebysix.install.Unexpectedly`
-
-- **Parent Recipes**: `com.github.homebysix.download.Unexpectedly`

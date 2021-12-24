@@ -1,9 +1,0 @@
-# ApacheDirectoryStudio.filewave.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of ApacheDirectoryStudio and imports into FileWave.
-
-- **Identifier**: `com.github.peshay.filewave.ApacheDirectoryStudio`
-
-- **Parent Recipes**: `com.github.homebysix.download.ApacheDirectoryStudio`

@@ -1,9 +1,0 @@
-# Migros Bank E-Banking.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Migros Bank E-Banking.
-
-- **Identifier**: `com.github.ahousseini-recipes.download.MigrosBankEBanking`
-
-- **Parent Recipes**: `None`

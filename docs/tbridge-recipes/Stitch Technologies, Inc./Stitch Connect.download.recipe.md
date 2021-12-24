@@ -1,9 +1,0 @@
-# Stitch Connect.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Stitch Connect.
-
-- **Identifier**: `com.github.tbridge.download.StitchConnect`
-
-- **Parent Recipes**: `None`

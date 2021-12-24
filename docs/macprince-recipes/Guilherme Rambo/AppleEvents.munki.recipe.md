@@ -1,9 +1,0 @@
-# AppleEvents.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Apple Events and imports it into Munki.
-
-- **Identifier**: `com.github.macprince.munki.AppleEvents`
-
-- **Parent Recipes**: `com.github.macprince.download.AppleEvents`

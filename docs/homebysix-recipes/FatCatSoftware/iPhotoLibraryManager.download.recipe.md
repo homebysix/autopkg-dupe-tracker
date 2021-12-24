@@ -1,9 +1,0 @@
-# iPhotoLibraryManager.download.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of iPhoto Library Manager.
-
-- **Identifier**: `com.github.homebysix.download.iPhotoLibraryManager`
-
-- **Parent Recipes**: `None`

@@ -1,9 +1,0 @@
-# MasergyCommunicator.munki.recipe
-
-_Last updated 2021-12-23 20:01:50Z_
-
-- **Description**: Downloads the latest version of Masergy Communicator and imports it into Munki.
-
-- **Identifier**: `com.rderewianko.munki.MasergyCommunicator`
-
-- **Parent Recipes**: `com.rderewianko.download.MasergyCommunicator`

@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>FirefoxPrefs.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>FirefoxPrefs.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads Firefox disk image and imports into Munki.
+Values for RELEASE correspond to directories here: http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/
+Some useful values are: 'latest', 'latest-10.0esr', 'latest-esr', 'latest-3.6', 'latest-beta'
+LOCALE corresponds to directories at http://download-origin.cdn.mozilla.net/pub/mozilla.org/firefox/releases/$RELEASE/mac/
+Examples include 'en-US', 'de', 'ja-JP-mac', 'sv-SE', and 'zh-TW'
+No idea if all Firefox builds are available in all the same localizations, so you may need to verify that any particular
+combination is offered.</p>
+    <p>Identifier: <code>com.github.scriptingosx.munki.Firefox</code></p>
+    <p>Parent Recipes: com.github.scriptingosx.pkg.Firefox</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

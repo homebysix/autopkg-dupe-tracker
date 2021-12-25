@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>AdobeAcrobatProBaseCustomized.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>AdobeAcrobatProBaseCustomized.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads latest Adobe Acrobat Pro DC (Continuous) Enterprise installer
+as provided at https://helpx.adobe.com/acrobat/kb/acrobat-dc-downloads.html,
+and uses the Customization Wizard for DC to output a customized installer package.
+
+MAJOR_VERSION can be updated if Adobe updates this to 2017, 2018, etc.
+
+FEATURE_LOCKDOWN_PLIST can be provided to add additional parameters as documented on
+Adobe's Acrobat Enterprise website. The default provided by this recipe is to
+disable the built-in auto-updater for both the "DC" and "2015" (Classic) releases
+of Acrobat Pro DC. Other parameters may be added by the admin as desired.
+
+SERIAL_NUMBER can contain a serial number for the license. If omitted, either
+Named Licensing or a license file provided by a serialization/device license
+from CCP can be used.
+</p>
+    <p>Identifier: <code>com.github.timsutton.pkg.adobe-acrobat-pro-base-customized</code></p>
+    <p>Parent Recipes: com.github.timsutton.download.adobe-acrobat-pro-base</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

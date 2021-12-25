@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>AmazonCorretto.jss.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>AmazonCorretto.jss.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads the Amazon Corretto OpenJDK, builds a package, and uploads it to the JSS.
+
+Optionally, this package will pull out the JVM Version which can be used with a Smart Group pointing to an extension attribute to determine latest version.  Use the EXTENSION_ATTRIBUTE override variable to use your current EA.
+
+The JDK Major Version can be specified using the override variable "JDK_MAJOR_VERSION".  Currently available from Amazon are the 8 and 11 JDKs.</p>
+    <p>Identifier: <code>com.github.mlbz521.jss.AmazonCorrettoOpenJDK</code></p>
+    <p>Parent Recipes: com.github.mlbz521.pkg.AmazonCorrettoOpenJDK</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate URLDownloader URLs (<code>https://corretto.aws/downloads/latest/amazon-corretto-%JDK_MAJOR_VERSION%-x64-macos-jdk.tar.gz</code>):</p>
+<ul>
+<li><a href="/MLBZ521-recipes/AmazonCorretto/AmazonCorretto.download.recipe.html">MLBZ521-recipes/AmazonCorretto/AmazonCorretto.download.recipe</a></li>
+<li><a href="/MLBZ521-recipes/AmazonCorretto/AmazonCorretto.pkg.recipe.html">MLBZ521-recipes/AmazonCorretto/AmazonCorretto.pkg.recipe</a></li>
+</ul>
+</body>
+
+</html>

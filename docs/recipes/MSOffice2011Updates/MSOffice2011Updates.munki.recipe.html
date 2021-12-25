@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>MSOffice2011Updates.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>MSOffice2011Updates.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Finds latest Office 2011 update, downloads the disk image and extracts the pkg.
+Set VERSION to a specific version number to download that version instead.
+Set CULTURE_CODE to a different value to get a different localization. See http://msdn.microsoft.com/en-us/library/ee825488(v=cs.20).aspx for a table of Culture Codes.
+
+If you would like to use an undocumented HTTPS download, set DOWNLOAD_URL_SCHEME to https.
+
+`autopkg run MSOffice2011Updates.munki -k VERSION=14.1.0 -k DISABLE_CODE_SIGNATURE_VERIFICATION=true`
+will download and import the 14.1.0 update; most of the later Office updates declare they require
+this update, so save yourself some headaches by adding this update to your repo even if you don't
+technically require it because your base installer is 14.1.0 or higher. The
+DISABLE_CODE_SIGNATURE_VERIFICATION flag is required for 14.1.0 because the installer certificate name
+in the download recipe (for current versions) doesn't match that of the 14.1.0 update. The installer
+certificate for the downloaded update can still be manually verified, however.
+        </p>
+    <p>Identifier: <code>com.github.autopkg.munki.Office2011Updates</code></p>
+    <p>Parent Recipes: com.github.autopkg.download.Office2011Updates</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>office2011_update.munki</code>):</p>
+<ul>
+<li><a href="/ygini-recipes/MSOfficeUpdates/Office2011Updates-fr_FR.munki.recipe.html">ygini-recipes/MSOfficeUpdates/Office2011Updates-fr_FR.munki.recipe</a></li>
+</ul>
+</body>
+
+</html>

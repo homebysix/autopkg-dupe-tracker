@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Mathematica.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Mathematica.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Imports Mathematica into Munki.
+
+This is designed to be run against a local .dmg. To run this recipe successfully, you must:
+
+- Register for a Wolfram ID.
+- Download the latest version of Mathematica using the Wolfram Research Mathematica Download Manager (WRMDM). The WRMDM downloads the Mathematica dmg to your Downloads folder.
+- Run the following command:
+
+autopkg run -vvv -p /path/to/downloaded_mathematica_dmg Mathematica.munki
+
+A postinstall_script that adds Mathematica to the client application firewall is included in this repo. If you wish to use this, add it to your recipe override.</p>
+    <p>Identifier: <code>com.github.andrewvalentine.munki.Mathematica</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

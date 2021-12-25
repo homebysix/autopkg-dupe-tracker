@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>webpage.download.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>webpage.download.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads the latest version of a particular web page when it changes and makes a date-stamped copy.
+Since this recipe simply captures the raw HTML, if you open the resulting file, it will often fail in resolving things
+like stylesheets and internal links because any shorthand references will not point to the correct location.
+
+This recipe date+timestamps the filename of the download, using Elliot Jordan’s FindAndReplace processor
+to strip the (reserved) colons and " GMT" from the filename. You’ll need to add homebysix-recipes to your 
+local RecipeRepos in order to run this recipe.
+
+Input Keys:
+    PAGE_URL is the full URI for the page to be checked/downloaded.
+    SAVE_LOCATION is the path to the directory where the web page should be copied. The path must exist.
+    PAGE_NAME_PREFIX is the text (if any) that will precede the datestamp in the (copied) filename.
+This is useful if you are overriding this recipe multiple times and having the results sit in the same directory.
+
+The default values act as a kind of RSS feed for Anthony Reimer’s MacLabs blog posts.
+Override with the values that suit your use case.
+</p>
+    <p>Identifier: <code>com.github.jazzace.download.webpage</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

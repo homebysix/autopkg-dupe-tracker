@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>CentrifyDC.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>CentrifyDC.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: 
+        This recipe unpacks the Centrify DirectControl package, and modifies it to exclude interactive scripts.
+        See "Installing remotely using Apple Remote Desktop" pg. 253 of "Admin Guide For Mac OS X.pdf".
+        
+        I have not included the option to modify the `userscript` file inside the package to join a domain.
+        You can join a domain using your own configuration system, or using Munki's postinstall_script variable.
+
+        To do this, you can edit the CentrifyDC pkginfo file, and add a script containing `adjoin` for example:
+            
+                #!/bin/sh
+                adjoin --password *adminpassword* *domain*
+
+        See the admin guide, included with the installer for more information on the parameters to `adjoin`.
+        You should run `adcheck [domain]` on each machine to make sure that it meets the agent pre-requisites. You may need to write your own wrapper for
+        this, as the `adcheck` command returns different codes, that you may want to interpret as success.
+
+        Variables:
+        
+        TGZ_PATH: An absolute path to a downloaded copy of Centrify DirectControl for Mac from the Centrify Support Portal (tgz version).
+        VERSION:  The DirectControl version number, used when packaging. (The version number is not automatically determined yet).
+        NAME:     Base package name, defaults to CentrifyDC
+        PLATFORM: (Unused) Will be used to identify the dmg filename, currently not used.
+
+        Caveats:
+
+        Version is not determined (best location pkgroot/centrifydc.pkg/PackageInfo, pkg-info bundle id=com.centrify.CentrifyDC CFBundleShortVersionString)
+        adcheck isnt included in the install condition?
+        Detect minimum OS from original flat package, this is scripted so unsure about methodology.
+    </p>
+    <p>Identifier: <code>com.github.mosen.pkg.CentrifyDC</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

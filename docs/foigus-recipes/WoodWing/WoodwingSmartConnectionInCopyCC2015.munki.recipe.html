@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>WoodwingSmartConnectionInCopyCC2015.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>WoodwingSmartConnectionInCopyCC2015.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Packages InCopy Smart Connection for installation for InCopy CC 2015 and imports it into Munki
+
+NOTES:
+- This recipe depends on hjuutilainen's ChecksumVerifier.  Add this repos via:
+
+autopkg repo-add hjuutilainen-recipes
+
+- Specific pkgs are disabled via InstallerChoices depending on the product that's being installed.  Due to this, the packages are identical--thus force_munkiimport is set to true
+- This recipe does not download the Smart Connection disk image--feed the disk image into the recipe via the following format:
+
+autopkg run WoodwingSmartConnectionInCopyCC2015.munki -p /path/to/Smart_Connection_for_Adobe_CC_2015_v11.2.0_Build42.dmg</p>
+    <p>Identifier: <code>com.github.foigus.munki.WoodwingSmartConnectionInCopyCC2015</code></p>
+    <p>Parent Recipes: com.github.foigus.pkg.WoodwingSmartConnectionCC2015</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>woodwingsmartconnectionincopycc.munki.recipe</code>):</p>
+<ul>
+<li><a href="/foigus-recipes/WoodWing/WoodwingSmartConnectionInCopyCC2018.munki.recipe.html">foigus-recipes/WoodWing/WoodwingSmartConnectionInCopyCC2018.munki.recipe</a></li>
+<li><a href="/foigus-recipes/WoodWing/WoodwingSmartConnectionInCopyCC2014.munki.recipe.html">foigus-recipes/WoodWing/WoodwingSmartConnectionInCopyCC2014.munki.recipe</a></li>
+</ul>
+</body>
+
+</html>

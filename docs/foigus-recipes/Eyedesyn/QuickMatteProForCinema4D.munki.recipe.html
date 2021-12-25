@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>QuickMatteProForCinema4D.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>QuickMatteProForCinema4D.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Packages Quick Matte Pro plugin for Cinema 4D and imports it into Munki.
+
+NOTES:
+- This recipe needs the version of Cinema 4D to be defined in the Input, since the installation is path-specific and hopefully _should_ work for many versions of Cinema 4D
+- This recipe needs the version of Quick Matte Pro to be defined in the Input
+- This recipe does not download the Quick Matte Pro installation media--feed the compressed file into the recipe via the following format:
+
+autopkg run QuickMattePro.pkg -p /path/to/the/appropriate/QuickMattePro_RXX.zip</p>
+    <p>Identifier: <code>com.github.foigus.munki.QuickMatteProForCinema4D</code></p>
+    <p>Parent Recipes: com.github.foigus.pkg.QuickMatteProForCinema4D</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>OutsetPayloadPkgReqd.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>OutsetPayloadPkgReqd.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Takes the file specified by the --pkg (or -p) run option and builds a package
+that will install the file to /usr/local/outset/%ACTION_TYPE%.
+
+This recipe requires the robperc-recipes and homebysix-recipes repos.
+
+The pkg will be named using the payload's file name (up to the first period) 
+with underscores and spaces removed.
+
+This recipe assumes the item being passed (like a script) may not have a version number,
+so it assigns an ever-increasing number (based on the current time) as the version number.
+
+Suggested Usage:
+1.  Make an override for each type of Outset folder you wish to target. Name the override
+    to match the target folder — for example: 
+        autopkg make-override OutsetPayloadPkgReqd.pkg -n Outset-login-once.pkg
+2.  Change the value of ACTION_TYPE to match the target folder for that override.
+3.  Run the override with the --pkg option — for example:
+        autopkg run Outset-login-once.pkg --pkg /path/to/payload
+
+Input Variables:
+The legal values for ACTION_TYPE are the same as the folders within Outset's structure:
+	boot-every
+	boot-once
+	login-every
+	login-once
+	login-privileged-every
+	login-privileged-once
+	on-demand
+
+REVERSE_DOMAIN specifies what you would like the package identifier to begin with
+(it will be followed by a "." and the name of your payload file including extension).
+It is recommended that you change this value in your override to match your organization.
+</p>
+    <p>Identifier: <code>com.github.jazzace.pkg.OutsetPayloadPkgReqd</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

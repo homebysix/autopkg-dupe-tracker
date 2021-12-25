@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>ZBrushVolume.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>ZBrushVolume.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: This recipe takes the ZBrush volume license installer app that you have already downloaded and 
+creates a package that leverages the silent install CLI method to automate installation. Additionally, the
+postinstall script adds the volume licensing files (specific to your installation, provided by Pixologic) 
+and a modified DefaultZScript.txt file (e.g., to keep ZHomePage from starting at launch every time)
+to the correct locations in the application's directories.
+This version of the recipe supports ZBrush 2021.5 and later and requires the homebysix-recipes repo.
+
+Input Variables of note:
+• LIC_FILES_DIR is the path to the local *directory* that holds the volume licensing files
+  (license_ZBrush*_1seat.lic and FloatingLicenseDLL.lib will be used);
+• ZSCRIPT_FILE is the path to the *file* you wish to use for DefaultZScript.txt
+  (a sample file that suppresses the launch of ZHomePage upon opening the app is included in 
+  the repo for this recipe).
+
+Once the input variables are set (likely in an override), your command to create the pkg will
+look something like this:
+
+    autopkg run ZBrushVolume.pkg -p ~/Downloads/ZBrush_2021.6_FL_Installer.dmg
+   
+(Substitute the actual path to your downloaded disk image.)</p>
+    <p>Identifier: <code>com.github.jazzace.pkg.zbrushvolume</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

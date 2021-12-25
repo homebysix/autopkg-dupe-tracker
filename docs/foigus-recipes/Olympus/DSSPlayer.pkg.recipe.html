@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>DSSPlayer.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>DSSPlayer.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Downloads the latest DSS Player package and modifies a postinstall to handle creating a LaunchD job file, changing permissions on a folder to allow non-admin serialization, and moving a PrivilegedHelperTool into position.
+
+NOTES:
+- This recipe depends on hjuutilainen's ChecksumVerifier.  Add this repo via:
+
+autopkg repo-add hjuutilainen-recipes
+
+- This software may need .wma-capable playback libraries such as Telestream Flip4Mac or Telestream Switch.</p>
+    <p>Identifier: <code>com.github.foigus.pkg.DSSPlayer</code></p>
+    <p>Parent Recipes: com.github.foigus.download.DSSPlayer</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>AnacondaCustom.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>AnacondaCustom.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Downloads the latest version of Anaconda Python, then creates a package that installs Anaconda to a known location defined by the PREFIX_DIR key. The intent is to install Anaconda in a location accessible to all users on a system. The default PREFIX_DIR is '/usr/local/anaconda'. A postinstall script symlinks all the binaries in the anaconda 'bin' directory to /usr/local/bin so users do not have to individually update their paths.
+
+Per the parent recipe, different installer types are available. 
+Use INSTALLER_TYPE 'sh' for this recipe to work correctly!
+You can choose the Python 2 or 3 version of Anaconda with the PYTHON_MAJOR_VERSION key.
+
+The CONDARC_CONTENTS file controls what gets written to the "admin" or top-level .condarc path at PREFIX_DIR/.condarc
+In the default configuration using the supplied variables we simply specify the "defaults" package channel. You can specificy whatever you need here.
+! Make sure your spacing for this input variable is valid for YAML syntax !</p>
+    <p>Identifier: <code>com.github.haircut.pkg.AnacondaCustom</code></p>
+    <p>Parent Recipes: com.github.hansen-m.download.Anaconda</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

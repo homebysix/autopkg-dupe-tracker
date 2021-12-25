@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>i1Profiler.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>i1Profiler.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: 
+    Build an unattended version of X-Rite i1Profiler.
+
+    Remove interactive scripts and applications (usually AppleScripts) to allow for unattended installation.
+
+    Normally the i1Profiler mpkg runs loginitem.app to get i1ProfilerTray.app into Login Items. 
+    It also launches the tray application during the install. These have been removed as they fail in a non-interactive
+    installation.
+
+    OVERRIDES
+
+        NAME - The name used to find the downloaded package that was unpacked from a zip file. This should normally not change.
+
+        PKG_NAME - The name of the package that will be created by this recipe. Defaults to `i1Profiler Silent.pkg`. You may have to override
+        this in i1Profiler.munki because FlatPkgPacker does not have output variables.
+    </p>
+    <p>Identifier: <code>com.github.mosen.pkg.i1Profiler</code></p>
+    <p>Parent Recipes: com.github.mosen.download.i1Profiler</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames (<code>i1profiler.pkg.recipe</code>):</p>
+<ul>
+<li><a href="/jazzace-recipes/X-Rite/i1profiler.pkg.recipe.html">jazzace-recipes/X-Rite/i1profiler.pkg.recipe</a></li>
+<li><a href="/moofit-recipes/i1profiler/i1profiler.pkg.recipe.html">moofit-recipes/i1profiler/i1profiler.pkg.recipe</a></li>
+</ul>
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>iprofiler.pkg.recipe</code>):</p>
+<ul>
+<li><a href="/jazzace-recipes/X-Rite/i1profiler.pkg.recipe.html">jazzace-recipes/X-Rite/i1profiler.pkg.recipe</a></li>
+<li><a href="/moofit-recipes/i1profiler/i1profiler.pkg.recipe.html">moofit-recipes/i1profiler/i1profiler.pkg.recipe</a></li>
+</ul>
+<p>The following recipes have duplicate NAMEs (<code>i1profiler.pkg</code>):</p>
+<ul>
+<li><a href="/moofit-recipes/i1profiler/i1profiler.pkg.recipe.html">moofit-recipes/i1profiler/i1profiler.pkg.recipe</a></li>
+</ul>
+</body>
+
+</html>

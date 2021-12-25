@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>AdobeFlashDebuggerExtractPackage.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>AdobeFlashDebuggerExtractPackage.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:42</p>
+    <p>Desciption:  
+- Downloads the latest Adobe Flash Player installer, 
+- extracts the embedded package inside Install Adobe Flash Player.app, 
+- delete PreferencePanes files
+- wraps it in a disk image, and imports it into Munki.
+    
+This pkg created with this recipe will just install:
+    
+-  /Library/Internet\ Plug-Ins/Flash\ Player.plugin
+-  /Library/Internet\ Plug-Ins/flashplayer.xpt</p>
+    <p>Identifier: <code>com.github.vmule.munki.FlashDebuggerExtractPackage</code></p>
+    <p>Parent Recipes: com.github.vmule.download.AdobeFlashDebugger</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

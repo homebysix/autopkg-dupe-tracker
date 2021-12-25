@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>SketchUpPro.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>SketchUpPro.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads the latest version of SketchUp Pro by looking for the first match on the download page, then imports into your Munki repo. 
+		
+You can specify LOCALE (default: en) for alternative languages. At last check locales were: en, de, es, fr, it, ja, ko.
+
+Note (20-Mar-2018): The previous functionality of this recipe which attempted to allow for easy configuration of which "RELEASE_YEAR" version to download and process was not working well due to the not-quite-straightforward way the developer creates their URL patterns. For the time being that functionality has been reverted such that RELEASE_YEAR is used as a convenience variable to limit the number of locations you would need to edit in your overrides. (You will need to update or recreate your RecipeOverride(s) for these changes to take effect for you.
+
+Note (21-Mar-2018): If you encounter any errors in AutoPkg with these recipes, I recommend: (a) recreate your override(s); (b) rename or delete the cached downloads as that has cleared up the majority of hdiutil-related errors for me. Whether you save your receipts or not is up to your conscience and accountant.
+</p>
+    <p>Identifier: <code>com.github.jps3.munki.SketchUpPro</code></p>
+    <p>Parent Recipes: com.github.jps3.download.SketchUpPro</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>sketchuppro.munki.recipe</code>):</p>
+<ul>
+<li><a href="/gregneagle-recipes/SketchUpPro/SketchUpPro2018.munki.recipe.html">gregneagle-recipes/SketchUpPro/SketchUpPro2018.munki.recipe</a></li>
+</ul>
+</body>
+
+</html>

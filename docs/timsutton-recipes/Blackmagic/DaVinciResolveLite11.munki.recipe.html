@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>DaVinciResolveLite11.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>DaVinciResolveLite11.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads the most recent version of DaVinci Resolve Lite 11 and imports into Munki.
+
+Please see directions in the download recipe about additional Input variables required for this
+recipe.
+
+We extract the application bundle so that we can use it for an installs item and the pkginfo version.
+
+Resolve Lite also includes the CUDA driver installed via a postinstall script. It may or may not
+install, depending on whether a equivalent version of the CUDA driver exists already on the system.
+The postinstall script calls another script located within the application bundle to perform the
+actual installation. It can be found here within this recipe's CACHE_DIR (look for CUDA_VER):
+
+pkg_payload/Library/Application Support/Blackmagic Design/DaVinci Resolve/Prereqs/install.sh
+
+Even if the CUDA driver does install via the Resolve Lite installer pkg, it should not require a
+restart, as it reloads its kext and support daemons in postinstall scripts. You may consider
+adding the CUDA driver as a separate item in Munki and adding it as a 'requires' for Resolve.
+
+One caveat with this package, is that this installer runs a script that evalutes
+the owner of /dev/console to derive a home directory, which then is configured system-wide
+as a cache location for Resolve. If this installer is run while a user is logged in, then
+this user's home will be used, and if run at the loginwindow, the root user's home will be.
+</p>
+    <p>Identifier: <code>com.github.timsutton.munki.davinciresolvelite11</code></p>
+    <p>Parent Recipes: com.github.timsutton.download.davinciresolvelite11</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>REDCINE-XPRO.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>REDCINE-XPRO.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads the latest version of REDCINE-X PRO and imports into Munki.
+
+There is some manipulation of the version info, to ensure a number
+that always increases. The REDCINE-X PRO.app contains a CFBundleVersion
+like "MAJOR.BUILDNUMBER." The package has historically added a point
+version between these two numbers only for some releases, resulting
+in a version that doesn't always compare higher. For this reason
+we extract the CFBundleVersion and compare with this, as well as set
+the pkginfo version with this so that our latest is always the highest.
+</p>
+    <p>Identifier: <code>com.github.timsutton.munki.redcine-xpro</code></p>
+    <p>Parent Recipes: com.github.timsutton.download.redcine-xpro</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

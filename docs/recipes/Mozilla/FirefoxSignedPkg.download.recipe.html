@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>FirefoxSignedPkg.download.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>FirefoxSignedPkg.download.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: This recipe downloads the signed installer package that Mozilla made available starting in Firefox 69.0 and 68.1esr.
+
+You may choose a specific release stream by placing the appropriate key in the 
+LATEST_RELEASE input variable. The two most common are:
+    LATEST_FIREFOX_VERSION for the latest (regular) release (this is the default), and
+    FIREFOX_ESR for latest ESR release.
+Other values to try can be found by examining the JSON file at:
+    https://product-details.mozilla.org/1.0/firefox_versions.json
+(Not all will work.)
+
+LOCALE controls the language localization to be downloaded.
+Examples include 'en-US', 'de', 'sv-SE', and 'zh-TW'
+See the following URL for possible LOCALE values:
+    http://ftp.mozilla.org/pub/firefox/releases/latest/README.txt
+</p>
+    <p>Identifier: <code>com.github.autopkg.download.FirefoxSignedPkg</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>firefox.download</code>):</p>
+<ul>
+<li><a href="/recipes/Mozilla/FirefoxWindows.download.recipe.html">recipes/Mozilla/FirefoxWindows.download.recipe</a></li>
+<li><a href="/recipes/Mozilla/Firefox.download.recipe.html">recipes/Mozilla/Firefox.download.recipe</a></li>
+<li><a href="/hansen-m-recipes/Mozilla/Firefox-Win.download.recipe.html">hansen-m-recipes/Mozilla/Firefox-Win.download.recipe</a></li>
+<li><a href="/hansen-m-recipes/Mozilla/Firefox64-Win.download.recipe.html">hansen-m-recipes/Mozilla/Firefox64-Win.download.recipe</a></li>
+</ul>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>EpsonScannerDriverandScanUtility.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>EpsonScannerDriverandScanUtility.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Downloads the latest version of the Epson Scanner Driver and EPSON Scan Utility from Epson's site and imports it into a munki repo.  
+
+IMPORTANT:
+This recipe requires that you find the support page for your product and copy that URL for 
+use as the base string for the SEARCH_URL key in your override. In order for the recipe to 
+work, the target OS must be explicitly specified in the URL.
+
+Recommended Procedure for Creating URL:
+1. Go to the Epson site for your country.
+2. Find the support page for your Epson device.
+3. The support page will attempt to determine your current OS version and will display that 
+in a pop-up menu on the page. If that is OS you are targeting for deployment, temporarily 
+change the value in that popup menu to any other OS, wait a second (enough for the page to 
+quickly reload), and then change to the OS you are targeting for deployment. If you are 
+targeting a different OS, then directly change the OS in the popup menu. 
+4. Copy the URL.
+5. Create an override of this recipe (or edit an existing override).
+6. In the Input section, paste the URL that you copied earlier into the string for SEARCH_URL.
+7. Check the URL you just pasted. Confirm that it ends with one of the following strings
+(substituting the number of the OS as appropriate). You can append this string if it is not 
+present. 
+
+For macOS 10.12 and later:     ?review-filter=macOS+10.12.x
+For OS X 10.11.x and earlier:  ?review-filter=Mac+OS+X+10.11.x
+
+For example, the URL for the Epson Perfection V850 Pro fetched from the US Epson site with macOS Mojave as the deployment OS is:
+
+    https://epson.com/Support/Scanners/Perfection-Series/Epson-Perfection-V850-Pro/s/SPT_B11B224201?review-filter=macOS+10.14.x</p>
+    <p>Identifier: <code>com.github.apizz.munki.EpsonScannerDriverandScanUtility</code></p>
+    <p>Parent Recipes: com.github.apizz.download.EpsonScannerDriverandScanUtility</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>epson_scanner_driver_and_scan_utility.munki</code>):</p>
+<ul>
+<li><a href="/apizz-recipes/Epson/EpsonScannerDriverandScanUtility-NewCert.munki.recipe.html">apizz-recipes/Epson/EpsonScannerDriverandScanUtility-NewCert.munki.recipe</a></li>
+</ul>
+</body>
+
+</html>

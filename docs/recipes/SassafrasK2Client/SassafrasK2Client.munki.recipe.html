@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>SassafrasK2Client.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>SassafrasK2Client.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Fetches the latest Sassafras KeyClient Mac installer and imports into
+Munki. Additionally, fetch the k2clientconfig tool from the Sassafras website
+for the purposes of customizing the installer.
+
+This recipe supports KeyClient 7.0 and up only. See SassafrasK2Client.download
+for details on the REVISION Input variable, which you may wish to override.
+
+K2CLIENTCONFIG_OPTIONS is a string that should be overridden with command-line
+options to the 'k2clientconfig' tool. No sanity checking is performed beyond
+what's done by k2clientconfig. The recipe includes one suggested default, more
+documentation here:
+http://www.sassafras.com/hrl/7.2/k2clientconfigM.html
+
+There are k2clientconfig options to kill KeyAccess before installation, and to
+start it after installation, implying we might not necessarily need a logout.
+Some testing shows that when these options are used, the installation is still
+not in a consistent state. Requiring a restart seems the only sane choice for now,
+but it should be further investigated.
+
+We use a separate installs item for KeyAccess.app, because the options passed
+to k2clientconfig may alter which packages are installed, and therefore the
+receipts array.
+
+Sassafras uses two decimals in their mpkg versions (skipping the third) but
+uses three decimals everywhere else (webpage, actual bundle files, preference
+pane, etc.), so we use the three-decimal version.
+
+The 7.2.0.3 installer has a known issue with version numbers in the pkg
+components, but since we generate an installs item for KeyAccess.app already,
+we use its version in the pkginfo.
+</p>
+    <p>Identifier: <code>com.github.autopkg.munki.sassafras-k2client</code></p>
+    <p>Parent Recipes: com.github.autopkg.download.sassafras-k2client</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate URLDownloader URLs (<code>https://www.sassafras.com/k2/revisions%REVISION%/current/Installers/Macintosh%20Installers/Misc/k2clientconfig</code>):</p>
+<ul>
+<li><a href="/jazzace-recipes/Sassafras/SassafrasK2Client.ds.recipe.html">jazzace-recipes/Sassafras/SassafrasK2Client.ds.recipe</a></li>
+</ul>
+</body>
+
+</html>

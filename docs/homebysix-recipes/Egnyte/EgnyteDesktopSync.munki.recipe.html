@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>EgnyteDesktopSync.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>EgnyteDesktopSync.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:41</p>
+    <p>Desciption: Downloads the latest version of Egnyte Desktop Sync and imports it into Munki.
+
+This recipe generally follows the guidelines outlined on this KB article:
+    https://helpdesk.egnyte.com/hc/en-us/articles/202982694
+With one exception: A postinstall script automatically launches the Sync app after installation.
+
+The following input variables should be customized to your organization using a recipe override:
+- LOCAL_ROOT
+- DOMAIN
+- REMOTE_FOLDERS
+- SYNC_TYPE
+- SYNC_ALL_LOCAL_FOLDERS
+- SYNC_SPECIAL_CHAR_FILENAME
+
+NOTE: According to Egnyte, Desktop Sync will no longer be supported after December 31st, 2019. This recipe will be deprecated at some point in the future.
+</p>
+    <p>Identifier: <code>com.github.homebysix.munki.EgnyteDesktopSync</code></p>
+    <p>Parent Recipes: com.github.homebysix.download.EgnyteDesktopSync</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>egnytedesktopsync.munki</code>):</p>
+<ul>
+<li><a href="/dataJAR-recipes/Egnyte Desktop Sync NoPrefs/Egnyte Desktop Sync NoPrefs.munki.recipe.html">dataJAR-recipes/Egnyte Desktop Sync NoPrefs/Egnyte Desktop Sync NoPrefs.munki.recipe</a></li>
+</ul>
+</body>
+
+</html>

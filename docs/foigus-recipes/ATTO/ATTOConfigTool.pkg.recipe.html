@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>ATTOConfigTool.pkg.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>ATTOConfigTool.pkg.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Packages ATTO Config Tool.
+
+Note: This recipe requires installing BOTH AutoPkg AND the ConfigTool itself--the latter BY HAND.  IDEALLY this would occur in a clean virtual machine, and is not intended to occur on an AutoPkg "server".  Thank Flexera InstallAnywhere and a cross-platform Java-based application for this incredibly strange recipe.
+
+I'm skipping a few things I normally do for my AutoPkg recipes:
+- CodeSignatureVerifier: Presumably this software has been manually sourced from a trusted location and then manually installed
+- A .munki Recipe: Since the retrieval of the ConfigTool installer is manual, the installation is manual, and running this recipe on a clean VM is manual, there doesn't seem to make much sense to automate the import of the resulting package into Munki</p>
+    <p>Identifier: <code>com.github.foigus.pkg.ATTOConfigTool</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

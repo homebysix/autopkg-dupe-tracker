@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>AutodeskMaya2020Import.munki.recipe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>AutodeskMaya2020Import.munki.recipe</h1>
+    <p>Last refresh: 2021-12-25 04:32:40</p>
+    <p>Desciption: Imports a DMG with an Autodesk Maya installer app inside. Install requires copying the install app to a desired location on the endpoint and using a postinstall script to trigger the install.
+
+To use this recipe:
+
+1) Download a copy of Autodesk Maya 2020.
+2) Create a recipe override of this recipe.
+3) Specify a PATH where the recipe will look for a Maya 2020 DMG. If applicable, move your downloaded Maya 2020 to this location.
+4) Specify a DESTINATION_PATH which munki will copy the install app to on endpoints. This will also be inserted in the required places in the postinstall script for installation.
+5) Enter your license type in MAYA_LICENSE_TYPE. Valid options are USER, STANDALONE, and NETWORK.
+6) If applicable, update the MAYA_LOCALE. Default is 'US'.
+7) Enter your Maya's SERIAL to be used in the postinstall script to activate the software.
+8) Run the recipe.
+9) Profit.</p>
+    <p>Identifier: <code>com.github.apizz.munki.AutdoeskMayaImport</code></p>
+    <p>Parent Recipes: None</p>
+    <p>First commit: %FIRST_COMMIT%</p>
+    <p>Latest commit: %LATEST_COMMIT%</p>
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

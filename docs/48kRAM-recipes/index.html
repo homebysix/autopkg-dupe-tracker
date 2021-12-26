@@ -10,25 +10,25 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <!-- DataTables -->
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script type="text/javascript" charset="utf8"
-        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#recipes').DataTable({
+                "order": [[3, "desc"]]
+            });
+        });
+    </script>
     <!-- Custom Stylesheet -->
     <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <h1>48kRAM-recipes</h1>
-    <p>Last refresh: 2021-12-26 17:27:23</p>
-    <script type="javascript">
-        $(document).ready( function () {
-            $('#recipe_table').DataTable({
-                "order": [[ 3, "desc" ]]
-            });
-        } );
-    </script>
-    <table id="recipe_table">
+    <p>Last refresh: 2021-12-26 17:41:52</p>
+    <table id="recipes">
         <thead>
             <tr>
                 <th>Recipe</th>

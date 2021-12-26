@@ -5,20 +5,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>jbaker10-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:07</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="jbaker10-recipes/AcronisAccess/AcronisAccess.download.recipe.html">AcronisAccess/AcronisAccess.download.recipe</a></td><td>2015-10-30 11:56:58 -0400</td><td>2016-10-14 09:52:29 -0700</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/AcronisAccess/AcronisAccess.munki.recipe.html">AcronisAccess/AcronisAccess.munki.recipe</a></td><td>2017-12-18 10:11:28 -0500</td><td>2021-07-10 14:31:18 +0100</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/AcronisAccess/AcronisAccess.lanrev.recipe.html">AcronisAccess/AcronisAccess.lanrev.recipe</a></td><td>2016-02-22 16:59:54 -0500</td><td>2016-02-22 16:59:54 -0500</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/AcronisAccess/AcronisAccess.pkg.recipe.html">AcronisAccess/AcronisAccess.pkg.recipe</a></td><td>2015-10-30 11:54:29 -0400</td><td>2015-10-30 11:54:29 -0400</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/osquery/osquery.munki.recipe.html">osquery/osquery.munki.recipe</a></td><td>2018-05-15 17:28:51 -0400</td><td>2018-05-15 17:28:51 -0400</td><td>3</td></tr><tr><td><a href="jbaker10-recipes/osquery/osquery.download.recipe.html">osquery/osquery.download.recipe</a></td><td>2016-05-06 09:30:30 -0400</td><td>2021-01-07 21:20:48 -0800</td><td>3</td></tr><tr><td><a href="jbaker10-recipes/osquery/osquery.lanrev.recipe.html">osquery/osquery.lanrev.recipe</a></td><td>2016-05-06 07:59:21 -0400</td><td>2017-12-21 15:42:42 -0500</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/Box/BoxSync.lanrev.recipe.html">Box/BoxSync.lanrev.recipe</a></td><td>2016-08-19 07:12:17 -0400</td><td>2017-12-21 15:42:42 -0500</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/EndNote/EndNoteX7Updates.download.recipe.html">EndNote/EndNoteX7Updates.download.recipe</a></td><td>2015-10-30 07:35:16 -0400</td><td>2015-10-30 07:36:12 -0400</td><td>3</td></tr><tr><td><a href="jbaker10-recipes/EndNote/EndNoteX7.download.recipe.html">EndNote/EndNoteX7.download.recipe</a></td><td>2015-10-28 12:10:32 -0400</td><td>2021-01-07 21:20:48 -0800</td><td>2</td></tr><tr><td><a href="jbaker10-recipes/EndNote/EndNoteX7Updates.lanrev.recipe.html">EndNote/EndNoteX7Updates.lanrev.recipe</a></td><td>2016-02-22 16:59:54 -0500</td><td>2016-02-22 16:59:54 -0500</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/EndNote/EndNoteX7.pkg.recipe.html">EndNote/EndNoteX7.pkg.recipe</a></td><td>2015-10-28 12:10:32 -0400</td><td>2015-10-30 11:54:29 -0400</td><td>4</td></tr><tr><td><a href="jbaker10-recipes/EndNote/EndNoteX7Updates.pkg.recipe.html">EndNote/EndNoteX7Updates.pkg.recipe</a></td><td>2015-10-30 07:35:16 -0400</td><td>2015-10-30 07:36:12 -0400</td><td>1</td></tr><tr><td><a href="jbaker10-recipes/ESET/ESETRemoteAdministratorAgent.munki.recipe.html">ESET/ESETRemoteAdministratorAgent.munki.recipe</a></td><td>2017-12-21 15:39:45 -0500</td><td>2021-07-10 14:31:18 +0100</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/ESET/ESETRemoteAdministratorAgent.download.recipe.html">ESET/ESETRemoteAdministratorAgent.download.recipe</a></td><td>2017-12-21 15:39:45 -0500</td><td>2017-12-21 15:39:45 -0500</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/ESET/ESETRemoteAdministratorAgent.pkg.recipe.html">ESET/ESETRemoteAdministratorAgent.pkg.recipe</a></td><td>2017-12-21 15:39:45 -0500</td><td>2019-01-10 21:42:13 +0000</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/ESET/ESETEndpointAntiVirus.download.recipe.html">ESET/ESETEndpointAntiVirus.download.recipe</a></td><td>2017-11-22 12:47:35 -0500</td><td>2017-11-22 12:47:35 -0500</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/ESET/ESETEndpointAntiVirus.pkg.recipe.html">ESET/ESETEndpointAntiVirus.pkg.recipe</a></td><td>2017-11-22 12:47:35 -0500</td><td>2019-01-10 21:42:13 +0000</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/ESET/ESETEndpointAntiVirus.munki.recipe.html">ESET/ESETEndpointAntiVirus.munki.recipe</a></td><td>2017-11-22 12:47:35 -0500</td><td>2021-07-10 14:31:18 +0100</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/SmartCardDrivers/scmccid.download.recipe.html">SmartCardDrivers/scmccid.download.recipe</a></td><td>2016-05-13 12:45:07 -0400</td><td>2016-10-14 09:52:29 -0700</td><td>0</td></tr><tr><td><a href="jbaker10-recipes/SmartCardDrivers/scmccid.lanrev.recipe.html">SmartCardDrivers/scmccid.lanrev.recipe</a></td><td>2016-05-13 12:45:07 -0400</td><td>2018-05-15 17:30:09 -0400</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:49</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="AcronisAccess/AcronisAccess.download.recipe.html">AcronisAccess/AcronisAccess.download.recipe</a></td><td>2015-10-30 11:56:58 -0400</td><td>2016-10-14 09:52:29 -0700</td><td>0</td></tr>
+			<tr><td><a href="AcronisAccess/AcronisAccess.munki.recipe.html">AcronisAccess/AcronisAccess.munki.recipe</a></td><td>2017-12-18 10:11:28 -0500</td><td>2021-07-10 14:31:18 +0100</td><td>0</td></tr>
+			<tr><td><a href="AcronisAccess/AcronisAccess.lanrev.recipe.html">AcronisAccess/AcronisAccess.lanrev.recipe</a></td><td>2016-02-22 16:59:54 -0500</td><td>2016-02-22 16:59:54 -0500</td><td>0</td></tr>
+			<tr><td><a href="AcronisAccess/AcronisAccess.pkg.recipe.html">AcronisAccess/AcronisAccess.pkg.recipe</a></td><td>2015-10-30 11:54:29 -0400</td><td>2015-10-30 11:54:29 -0400</td><td>0</td></tr>
+			<tr><td><a href="osquery/osquery.munki.recipe.html">osquery/osquery.munki.recipe</a></td><td>2018-05-15 17:28:51 -0400</td><td>2018-05-15 17:28:51 -0400</td><td>3</td></tr>
+			<tr><td><a href="osquery/osquery.download.recipe.html">osquery/osquery.download.recipe</a></td><td>2016-05-06 09:30:30 -0400</td><td>2021-01-07 21:20:48 -0800</td><td>3</td></tr>
+			<tr><td><a href="osquery/osquery.lanrev.recipe.html">osquery/osquery.lanrev.recipe</a></td><td>2016-05-06 07:59:21 -0400</td><td>2017-12-21 15:42:42 -0500</td><td>0</td></tr>
+			<tr><td><a href="Box/BoxSync.lanrev.recipe.html">Box/BoxSync.lanrev.recipe</a></td><td>2016-08-19 07:12:17 -0400</td><td>2017-12-21 15:42:42 -0500</td><td>0</td></tr>
+			<tr><td><a href="EndNote/EndNoteX7Updates.download.recipe.html">EndNote/EndNoteX7Updates.download.recipe</a></td><td>2015-10-30 07:35:16 -0400</td><td>2015-10-30 07:36:12 -0400</td><td>3</td></tr>
+			<tr><td><a href="EndNote/EndNoteX7.download.recipe.html">EndNote/EndNoteX7.download.recipe</a></td><td>2015-10-28 12:10:32 -0400</td><td>2021-01-07 21:20:48 -0800</td><td>2</td></tr>
+			<tr><td><a href="EndNote/EndNoteX7Updates.lanrev.recipe.html">EndNote/EndNoteX7Updates.lanrev.recipe</a></td><td>2016-02-22 16:59:54 -0500</td><td>2016-02-22 16:59:54 -0500</td><td>0</td></tr>
+			<tr><td><a href="EndNote/EndNoteX7.pkg.recipe.html">EndNote/EndNoteX7.pkg.recipe</a></td><td>2015-10-28 12:10:32 -0400</td><td>2015-10-30 11:54:29 -0400</td><td>4</td></tr>
+			<tr><td><a href="EndNote/EndNoteX7Updates.pkg.recipe.html">EndNote/EndNoteX7Updates.pkg.recipe</a></td><td>2015-10-30 07:35:16 -0400</td><td>2015-10-30 07:36:12 -0400</td><td>1</td></tr>
+			<tr><td><a href="ESET/ESETRemoteAdministratorAgent.munki.recipe.html">ESET/ESETRemoteAdministratorAgent.munki.recipe</a></td><td>2017-12-21 15:39:45 -0500</td><td>2021-07-10 14:31:18 +0100</td><td>0</td></tr>
+			<tr><td><a href="ESET/ESETRemoteAdministratorAgent.download.recipe.html">ESET/ESETRemoteAdministratorAgent.download.recipe</a></td><td>2017-12-21 15:39:45 -0500</td><td>2017-12-21 15:39:45 -0500</td><td>0</td></tr>
+			<tr><td><a href="ESET/ESETRemoteAdministratorAgent.pkg.recipe.html">ESET/ESETRemoteAdministratorAgent.pkg.recipe</a></td><td>2017-12-21 15:39:45 -0500</td><td>2019-01-10 21:42:13 +0000</td><td>0</td></tr>
+			<tr><td><a href="ESET/ESETEndpointAntiVirus.download.recipe.html">ESET/ESETEndpointAntiVirus.download.recipe</a></td><td>2017-11-22 12:47:35 -0500</td><td>2017-11-22 12:47:35 -0500</td><td>0</td></tr>
+			<tr><td><a href="ESET/ESETEndpointAntiVirus.pkg.recipe.html">ESET/ESETEndpointAntiVirus.pkg.recipe</a></td><td>2017-11-22 12:47:35 -0500</td><td>2019-01-10 21:42:13 +0000</td><td>0</td></tr>
+			<tr><td><a href="ESET/ESETEndpointAntiVirus.munki.recipe.html">ESET/ESETEndpointAntiVirus.munki.recipe</a></td><td>2017-11-22 12:47:35 -0500</td><td>2021-07-10 14:31:18 +0100</td><td>0</td></tr>
+			<tr><td><a href="SmartCardDrivers/scmccid.download.recipe.html">SmartCardDrivers/scmccid.download.recipe</a></td><td>2016-05-13 12:45:07 -0400</td><td>2016-10-14 09:52:29 -0700</td><td>0</td></tr>
+			<tr><td><a href="SmartCardDrivers/scmccid.lanrev.recipe.html">SmartCardDrivers/scmccid.lanrev.recipe</a></td><td>2016-05-13 12:45:07 -0400</td><td>2018-05-15 17:30:09 -0400</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

@@ -5,20 +5,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>erikng-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:06</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="erikng-recipes/Nudge/Nudge.download.recipe.html">Nudge/Nudge.download.recipe</a></td><td>2021-02-18 14:32:57 -0600</td><td>2021-02-18 14:32:57 -0600</td><td>0</td></tr><tr><td><a href="erikng-recipes/Nudge/Nudge.munki.recipe.html">Nudge/Nudge.munki.recipe</a></td><td>2021-02-18 14:32:57 -0600</td><td>2021-08-19 14:10:12 -0500</td><td>0</td></tr><tr><td><a href="erikng-recipes/Genymobile/Genymotion.download.recipe.html">Genymobile/Genymotion.download.recipe</a></td><td>2016-07-07 18:04:59 -0700</td><td>2021-01-07 21:11:08 -0800</td><td>0</td></tr><tr><td><a href="erikng-recipes/Genymobile/Genymotion.munki.recipe.html">Genymobile/Genymotion.munki.recipe</a></td><td>2016-07-08 19:54:19 -0700</td><td>2019-11-29 15:14:24 -0800</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:49</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="Nudge/Nudge.download.recipe.html">Nudge/Nudge.download.recipe</a></td><td>2021-02-18 14:32:57 -0600</td><td>2021-02-18 14:32:57 -0600</td><td>0</td></tr>
+			<tr><td><a href="Nudge/Nudge.munki.recipe.html">Nudge/Nudge.munki.recipe</a></td><td>2021-02-18 14:32:57 -0600</td><td>2021-08-19 14:10:12 -0500</td><td>0</td></tr>
+			<tr><td><a href="Genymobile/Genymotion.download.recipe.html">Genymobile/Genymotion.download.recipe</a></td><td>2016-07-07 18:04:59 -0700</td><td>2021-01-07 21:11:08 -0800</td><td>0</td></tr>
+			<tr><td><a href="Genymobile/Genymotion.munki.recipe.html">Genymobile/Genymotion.munki.recipe</a></td><td>2016-07-08 19:54:19 -0700</td><td>2019-11-29 15:14:24 -0800</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

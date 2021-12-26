@@ -5,20 +5,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>groob-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:06</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="groob-recipes/ERBSecureBrowser/ERBSecureBrowser.munki.recipe.html">ERBSecureBrowser/ERBSecureBrowser.munki.recipe</a></td><td>2013-10-03 12:35:52 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr><tr><td><a href="groob-recipes/ERBSecureBrowser/ERBSecureBrowser.download.recipe.html">ERBSecureBrowser/ERBSecureBrowser.download.recipe</a></td><td>2013-10-03 12:35:52 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr><tr><td><a href="groob-recipes/MakerBot/MakerBot.munki.recipe.html">MakerBot/MakerBot.munki.recipe</a></td><td>2014-07-22 12:49:56 -0400</td><td>2014-07-22 12:49:56 -0400</td><td>3</td></tr><tr><td><a href="groob-recipes/MakerBot/MakerBot.download.recipe.html">MakerBot/MakerBot.download.recipe</a></td><td>2014-07-22 12:10:08 -0400</td><td>2014-07-22 12:10:08 -0400</td><td>3</td></tr><tr><td><a href="groob-recipes/ComicLife/ComicLife2.munki.recipe.html">ComicLife/ComicLife2.munki.recipe</a></td><td>2014-07-28 14:05:58 -0400</td><td>2014-07-28 14:05:58 -0400</td><td>3</td></tr><tr><td><a href="groob-recipes/ComicLife/ComicLife2.download.recipe.html">ComicLife/ComicLife2.download.recipe</a></td><td>2014-07-28 14:05:58 -0400</td><td>2016-10-14 09:45:52 -0700</td><td>5</td></tr><tr><td><a href="groob-recipes/Foldit/Foldit.download.recipe.html">Foldit/Foldit.download.recipe</a></td><td>2013-10-03 12:24:01 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr><tr><td><a href="groob-recipes/Foldit/Foldit.munki.recipe.html">Foldit/Foldit.munki.recipe</a></td><td>2013-10-03 12:24:01 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr><tr><td><a href="groob-recipes/exacqVisionClient/exacqVisionClient.download.recipe.html">exacqVisionClient/exacqVisionClient.download.recipe</a></td><td>2013-10-03 15:53:59 -0400</td><td>2013-10-03 15:53:59 -0400</td><td>0</td></tr><tr><td><a href="groob-recipes/exacqVisionClient/exacqVisionClient.munki.recipe.html">exacqVisionClient/exacqVisionClient.munki.recipe</a></td><td>2013-10-03 15:53:59 -0400</td><td>2013-10-03 15:53:59 -0400</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:49</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="ERBSecureBrowser/ERBSecureBrowser.munki.recipe.html">ERBSecureBrowser/ERBSecureBrowser.munki.recipe</a></td><td>2013-10-03 12:35:52 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr>
+			<tr><td><a href="ERBSecureBrowser/ERBSecureBrowser.download.recipe.html">ERBSecureBrowser/ERBSecureBrowser.download.recipe</a></td><td>2013-10-03 12:35:52 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr>
+			<tr><td><a href="MakerBot/MakerBot.munki.recipe.html">MakerBot/MakerBot.munki.recipe</a></td><td>2014-07-22 12:49:56 -0400</td><td>2014-07-22 12:49:56 -0400</td><td>3</td></tr>
+			<tr><td><a href="MakerBot/MakerBot.download.recipe.html">MakerBot/MakerBot.download.recipe</a></td><td>2014-07-22 12:10:08 -0400</td><td>2014-07-22 12:10:08 -0400</td><td>3</td></tr>
+			<tr><td><a href="ComicLife/ComicLife2.munki.recipe.html">ComicLife/ComicLife2.munki.recipe</a></td><td>2014-07-28 14:05:58 -0400</td><td>2014-07-28 14:05:58 -0400</td><td>3</td></tr>
+			<tr><td><a href="ComicLife/ComicLife2.download.recipe.html">ComicLife/ComicLife2.download.recipe</a></td><td>2014-07-28 14:05:58 -0400</td><td>2016-10-14 09:45:52 -0700</td><td>5</td></tr>
+			<tr><td><a href="Foldit/Foldit.download.recipe.html">Foldit/Foldit.download.recipe</a></td><td>2013-10-03 12:24:01 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr>
+			<tr><td><a href="Foldit/Foldit.munki.recipe.html">Foldit/Foldit.munki.recipe</a></td><td>2013-10-03 12:24:01 -0400</td><td>2014-07-19 11:29:40 -0400</td><td>0</td></tr>
+			<tr><td><a href="exacqVisionClient/exacqVisionClient.download.recipe.html">exacqVisionClient/exacqVisionClient.download.recipe</a></td><td>2013-10-03 15:53:59 -0400</td><td>2013-10-03 15:53:59 -0400</td><td>0</td></tr>
+			<tr><td><a href="exacqVisionClient/exacqVisionClient.munki.recipe.html">exacqVisionClient/exacqVisionClient.munki.recipe</a></td><td>2013-10-03 15:53:59 -0400</td><td>2013-10-03 15:53:59 -0400</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

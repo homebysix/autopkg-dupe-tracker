@@ -5,20 +5,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>48kRAM-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:06</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="48kRAM-recipes/yWorks/yEd.munki.recipe.html">yWorks/yEd.munki.recipe</a></td><td>2015-01-08 16:22:27 -0500</td><td>2018-07-05 09:03:36 -0400</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/yWorks/yEd.download.recipe.html">yWorks/yEd.download.recipe</a></td><td>2015-01-08 16:22:27 -0500</td><td>2021-03-15 11:23:01 -0400</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/macFUSE/macfuse.munki.recipe.html">macFUSE/macfuse.munki.recipe</a></td><td>2020-12-14 16:42:51 +0100</td><td>2020-12-14 16:42:51 +0100</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/macFUSE/macfuse.pkg.recipe.html">macFUSE/macfuse.pkg.recipe</a></td><td>2020-12-14 16:42:51 +0100</td><td>2020-12-14 16:42:51 +0100</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/macFUSE/macfuse.download.recipe.html">macFUSE/macfuse.download.recipe</a></td><td>2020-12-14 16:42:51 +0100</td><td>2021-01-18 22:32:55 -0800</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/Emacs/EmacsForMacOSX.munki.recipe.html">Emacs/EmacsForMacOSX.munki.recipe</a></td><td>2015-02-17 20:16:57 -0500</td><td>2015-02-17 20:16:57 -0500</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/Emacs/EmacsForMacOSX.install.recipe.html">Emacs/EmacsForMacOSX.install.recipe</a></td><td>2020-05-22 18:26:49 +0300</td><td>2020-05-22 18:26:49 +0300</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/Emacs/EmacsForMacOSX.pkg.recipe.html">Emacs/EmacsForMacOSX.pkg.recipe</a></td><td>2020-05-22 18:41:22 +0300</td><td>2021-01-18 20:09:00 -0800</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/Emacs/EmacsForMacOSX.download.recipe.html">Emacs/EmacsForMacOSX.download.recipe</a></td><td>2015-02-17 20:16:57 -0500</td><td>2021-01-18 16:43:35 -0800</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/SweetHome3D/SweetHome3D.download.recipe.html">SweetHome3D/SweetHome3D.download.recipe</a></td><td>2015-02-16 11:26:27 -0500</td><td>2021-03-15 11:23:01 -0400</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/SweetHome3D/SweetHome3D.munki.recipe.html">SweetHome3D/SweetHome3D.munki.recipe</a></td><td>2015-02-16 11:26:27 -0500</td><td>2018-07-05 09:03:36 -0400</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/OSXFUSE/osxfuse.pkg.recipe.html">OSXFUSE/osxfuse.pkg.recipe</a></td><td>2015-02-16 19:38:04 -0500</td><td>2016-06-20 09:12:38 +0100</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/OSXFUSE/osxfuse.munki.recipe.html">OSXFUSE/osxfuse.munki.recipe</a></td><td>2015-02-16 19:38:04 -0500</td><td>2015-02-16 19:38:04 -0500</td><td>0</td></tr><tr><td><a href="48kRAM-recipes/OSXFUSE/osxfuse.download.recipe.html">OSXFUSE/osxfuse.download.recipe</a></td><td>2015-02-16 19:38:04 -0500</td><td>2021-03-15 11:23:01 -0400</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:49</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="yWorks/yEd.munki.recipe.html">yWorks/yEd.munki.recipe</a></td><td>2015-01-08 16:22:27 -0500</td><td>2018-07-05 09:03:36 -0400</td><td>0</td></tr>
+			<tr><td><a href="yWorks/yEd.download.recipe.html">yWorks/yEd.download.recipe</a></td><td>2015-01-08 16:22:27 -0500</td><td>2021-03-15 11:23:01 -0400</td><td>0</td></tr>
+			<tr><td><a href="macFUSE/macfuse.munki.recipe.html">macFUSE/macfuse.munki.recipe</a></td><td>2020-12-14 16:42:51 +0100</td><td>2020-12-14 16:42:51 +0100</td><td>0</td></tr>
+			<tr><td><a href="macFUSE/macfuse.pkg.recipe.html">macFUSE/macfuse.pkg.recipe</a></td><td>2020-12-14 16:42:51 +0100</td><td>2020-12-14 16:42:51 +0100</td><td>0</td></tr>
+			<tr><td><a href="macFUSE/macfuse.download.recipe.html">macFUSE/macfuse.download.recipe</a></td><td>2020-12-14 16:42:51 +0100</td><td>2021-01-18 22:32:55 -0800</td><td>0</td></tr>
+			<tr><td><a href="Emacs/EmacsForMacOSX.munki.recipe.html">Emacs/EmacsForMacOSX.munki.recipe</a></td><td>2015-02-17 20:16:57 -0500</td><td>2015-02-17 20:16:57 -0500</td><td>0</td></tr>
+			<tr><td><a href="Emacs/EmacsForMacOSX.install.recipe.html">Emacs/EmacsForMacOSX.install.recipe</a></td><td>2020-05-22 18:26:49 +0300</td><td>2020-05-22 18:26:49 +0300</td><td>0</td></tr>
+			<tr><td><a href="Emacs/EmacsForMacOSX.pkg.recipe.html">Emacs/EmacsForMacOSX.pkg.recipe</a></td><td>2020-05-22 18:41:22 +0300</td><td>2021-01-18 20:09:00 -0800</td><td>0</td></tr>
+			<tr><td><a href="Emacs/EmacsForMacOSX.download.recipe.html">Emacs/EmacsForMacOSX.download.recipe</a></td><td>2015-02-17 20:16:57 -0500</td><td>2021-01-18 16:43:35 -0800</td><td>0</td></tr>
+			<tr><td><a href="SweetHome3D/SweetHome3D.download.recipe.html">SweetHome3D/SweetHome3D.download.recipe</a></td><td>2015-02-16 11:26:27 -0500</td><td>2021-03-15 11:23:01 -0400</td><td>0</td></tr>
+			<tr><td><a href="SweetHome3D/SweetHome3D.munki.recipe.html">SweetHome3D/SweetHome3D.munki.recipe</a></td><td>2015-02-16 11:26:27 -0500</td><td>2018-07-05 09:03:36 -0400</td><td>0</td></tr>
+			<tr><td><a href="OSXFUSE/osxfuse.pkg.recipe.html">OSXFUSE/osxfuse.pkg.recipe</a></td><td>2015-02-16 19:38:04 -0500</td><td>2016-06-20 09:12:38 +0100</td><td>0</td></tr>
+			<tr><td><a href="OSXFUSE/osxfuse.munki.recipe.html">OSXFUSE/osxfuse.munki.recipe</a></td><td>2015-02-16 19:38:04 -0500</td><td>2015-02-16 19:38:04 -0500</td><td>0</td></tr>
+			<tr><td><a href="OSXFUSE/osxfuse.download.recipe.html">OSXFUSE/osxfuse.download.recipe</a></td><td>2015-02-16 19:38:04 -0500</td><td>2021-03-15 11:23:01 -0400</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

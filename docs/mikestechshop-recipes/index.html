@@ -5,20 +5,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>mikestechshop-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:07</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="mikestechshop-recipes/SnapzPro/SnapzPro.pkg.recipe.html">SnapzPro/SnapzPro.pkg.recipe</a></td><td>2019-03-04 11:17:07 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Discord/Discord.pkg.recipe.html">Discord/Discord.pkg.recipe</a></td><td>2019-03-04 11:17:07 -1000</td><td>2021-02-13 20:20:56 -0800</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Microsoft Teams/MSTeams.pkg.recipe.html">Microsoft Teams/MSTeams.pkg.recipe</a></td><td>2019-03-04 11:17:07 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>4</td></tr><tr><td><a href="mikestechshop-recipes/Dockutil/Dockutil.download.recipe.html">Dockutil/Dockutil.download.recipe</a></td><td>2019-03-21 09:15:23 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>3</td></tr><tr><td><a href="mikestechshop-recipes/CloudFlare/CloudFlareWarp.pkg.recipe.html">CloudFlare/CloudFlareWarp.pkg.recipe</a></td><td>2020-10-27 12:33:30 -1000</td><td>2020-10-27 12:33:30 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/CloudFlare/CloudFlareWarp.download.recipe.html">CloudFlare/CloudFlareWarp.download.recipe</a></td><td>2020-10-27 12:00:12 -1000</td><td>2020-10-27 12:00:12 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/AirTable/airtable.pkg.recipe.html">AirTable/airtable.pkg.recipe</a></td><td>2020-02-15 13:50:04 -1000</td><td>2020-02-15 13:50:04 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Tandem/TandemChat.download.recipe.html">Tandem/TandemChat.download.recipe</a></td><td>2020-03-25 13:12:05 -1000</td><td>2020-03-25 13:12:05 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Tandem/TandemChat.pkg.recipe.html">Tandem/TandemChat.pkg.recipe</a></td><td>2020-03-25 13:12:05 -1000</td><td>2021-04-14 14:04:20 -0700</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Dialpad/Dialpad.pkg.recipe.html">Dialpad/Dialpad.pkg.recipe</a></td><td>2020-03-16 11:21:56 -1000</td><td>2020-03-16 11:21:56 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Dialpad/Dialpad.download.recipe.html">Dialpad/Dialpad.download.recipe</a></td><td>2020-03-16 11:09:27 -1000</td><td>2020-03-16 11:21:56 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Asana/Asana.pkg.recipe.html">Asana/Asana.pkg.recipe</a></td><td>2021-06-10 15:40:07 -0400</td><td>2021-06-10 15:40:07 -0400</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Asana/Asana.download.recipe.html">Asana/Asana.download.recipe</a></td><td>2021-06-10 15:40:07 -0400</td><td>2021-06-10 15:40:07 -0400</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Plantronics Hub Desktop/PlantronicsHubDesktop.download.recipe.html">Plantronics Hub Desktop/PlantronicsHubDesktop.download.recipe</a></td><td>2019-03-21 09:15:06 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>0</td></tr><tr><td><a href="mikestechshop-recipes/Plantronics Hub Desktop/PlantronicsHubDesktop.pkg.recipe.html">Plantronics Hub Desktop/PlantronicsHubDesktop.pkg.recipe</a></td><td>2019-03-21 09:15:06 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:50</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="SnapzPro/SnapzPro.pkg.recipe.html">SnapzPro/SnapzPro.pkg.recipe</a></td><td>2019-03-04 11:17:07 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>0</td></tr>
+			<tr><td><a href="Discord/Discord.pkg.recipe.html">Discord/Discord.pkg.recipe</a></td><td>2019-03-04 11:17:07 -1000</td><td>2021-02-13 20:20:56 -0800</td><td>0</td></tr>
+			<tr><td><a href="Microsoft Teams/MSTeams.pkg.recipe.html">Microsoft Teams/MSTeams.pkg.recipe</a></td><td>2019-03-04 11:17:07 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>4</td></tr>
+			<tr><td><a href="Dockutil/Dockutil.download.recipe.html">Dockutil/Dockutil.download.recipe</a></td><td>2019-03-21 09:15:23 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>3</td></tr>
+			<tr><td><a href="CloudFlare/CloudFlareWarp.pkg.recipe.html">CloudFlare/CloudFlareWarp.pkg.recipe</a></td><td>2020-10-27 12:33:30 -1000</td><td>2020-10-27 12:33:30 -1000</td><td>0</td></tr>
+			<tr><td><a href="CloudFlare/CloudFlareWarp.download.recipe.html">CloudFlare/CloudFlareWarp.download.recipe</a></td><td>2020-10-27 12:00:12 -1000</td><td>2020-10-27 12:00:12 -1000</td><td>0</td></tr>
+			<tr><td><a href="AirTable/airtable.pkg.recipe.html">AirTable/airtable.pkg.recipe</a></td><td>2020-02-15 13:50:04 -1000</td><td>2020-02-15 13:50:04 -1000</td><td>0</td></tr>
+			<tr><td><a href="Tandem/TandemChat.download.recipe.html">Tandem/TandemChat.download.recipe</a></td><td>2020-03-25 13:12:05 -1000</td><td>2020-03-25 13:12:05 -1000</td><td>0</td></tr>
+			<tr><td><a href="Tandem/TandemChat.pkg.recipe.html">Tandem/TandemChat.pkg.recipe</a></td><td>2020-03-25 13:12:05 -1000</td><td>2021-04-14 14:04:20 -0700</td><td>0</td></tr>
+			<tr><td><a href="Dialpad/Dialpad.pkg.recipe.html">Dialpad/Dialpad.pkg.recipe</a></td><td>2020-03-16 11:21:56 -1000</td><td>2020-03-16 11:21:56 -1000</td><td>0</td></tr>
+			<tr><td><a href="Dialpad/Dialpad.download.recipe.html">Dialpad/Dialpad.download.recipe</a></td><td>2020-03-16 11:09:27 -1000</td><td>2020-03-16 11:21:56 -1000</td><td>0</td></tr>
+			<tr><td><a href="Asana/Asana.pkg.recipe.html">Asana/Asana.pkg.recipe</a></td><td>2021-06-10 15:40:07 -0400</td><td>2021-06-10 15:40:07 -0400</td><td>0</td></tr>
+			<tr><td><a href="Asana/Asana.download.recipe.html">Asana/Asana.download.recipe</a></td><td>2021-06-10 15:40:07 -0400</td><td>2021-06-10 15:40:07 -0400</td><td>0</td></tr>
+			<tr><td><a href="Plantronics Hub Desktop/PlantronicsHubDesktop.download.recipe.html">Plantronics Hub Desktop/PlantronicsHubDesktop.download.recipe</a></td><td>2019-03-21 09:15:06 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>0</td></tr>
+			<tr><td><a href="Plantronics Hub Desktop/PlantronicsHubDesktop.pkg.recipe.html">Plantronics Hub Desktop/PlantronicsHubDesktop.pkg.recipe</a></td><td>2019-03-21 09:15:06 -1000</td><td>2020-02-15 13:49:07 -1000</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

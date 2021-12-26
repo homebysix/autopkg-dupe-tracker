@@ -5,20 +5,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>znerol-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:08</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="znerol-recipes/Prometheus/NodeExporter.pkg.recipe.html">Prometheus/NodeExporter.pkg.recipe</a></td><td>2017-08-23 19:37:16 +0200</td><td>2017-08-23 19:37:16 +0200</td><td>0</td></tr><tr><td><a href="znerol-recipes/Prometheus/NodeExporterLaunchDaemon.pkg.recipe.html">Prometheus/NodeExporterLaunchDaemon.pkg.recipe</a></td><td>2017-10-31 14:44:45 +0100</td><td>2017-10-31 14:44:45 +0100</td><td>0</td></tr><tr><td><a href="znerol-recipes/Prometheus/NodeExporter.download.recipe.html">Prometheus/NodeExporter.download.recipe</a></td><td>2017-08-23 19:37:16 +0200</td><td>2017-08-23 19:37:16 +0200</td><td>0</td></tr><tr><td><a href="znerol-recipes/Prometheus/NodeExporter.munki.recipe.html">Prometheus/NodeExporter.munki.recipe</a></td><td>2017-08-23 19:37:16 +0200</td><td>2017-08-23 19:37:16 +0200</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:50</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="Prometheus/NodeExporter.pkg.recipe.html">Prometheus/NodeExporter.pkg.recipe</a></td><td>2017-08-23 19:37:16 +0200</td><td>2017-08-23 19:37:16 +0200</td><td>0</td></tr>
+			<tr><td><a href="Prometheus/NodeExporterLaunchDaemon.pkg.recipe.html">Prometheus/NodeExporterLaunchDaemon.pkg.recipe</a></td><td>2017-10-31 14:44:45 +0100</td><td>2017-10-31 14:44:45 +0100</td><td>0</td></tr>
+			<tr><td><a href="Prometheus/NodeExporter.download.recipe.html">Prometheus/NodeExporter.download.recipe</a></td><td>2017-08-23 19:37:16 +0200</td><td>2017-08-23 19:37:16 +0200</td><td>0</td></tr>
+			<tr><td><a href="Prometheus/NodeExporter.munki.recipe.html">Prometheus/NodeExporter.munki.recipe</a></td><td>2017-08-23 19:37:16 +0200</td><td>2017-08-23 19:37:16 +0200</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

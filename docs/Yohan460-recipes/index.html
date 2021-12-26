@@ -5,20 +5,47 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>Yohan460-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:08</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="Yohan460-recipes/CitrixWorkspace/CitrixWorkspace.pkg.recipe.html">CitrixWorkspace/CitrixWorkspace.pkg.recipe</a></td><td>2018-11-13 14:35:03 -0500</td><td>2018-11-13 14:35:03 -0500</td><td>4</td></tr><tr><td><a href="Yohan460-recipes/CitrixWorkspace/CitrixWorkspace.jss.recipe.html">CitrixWorkspace/CitrixWorkspace.jss.recipe</a></td><td>2018-11-13 14:35:03 -0500</td><td>2018-11-13 14:35:03 -0500</td><td>3</td></tr><tr><td><a href="Yohan460-recipes/Dashlane/Dashlane.jss.recipe.html">Dashlane/Dashlane.jss.recipe</a></td><td>2017-12-08 08:14:27 -0500</td><td>2018-01-02 09:40:24 -0500</td><td>0</td></tr><tr><td><a href="Yohan460-recipes/Dashlane/Dashlane.pkg.recipe.html">Dashlane/Dashlane.pkg.recipe</a></td><td>2017-12-08 08:14:27 -0500</td><td>2017-12-08 08:23:41 -0500</td><td>3</td></tr><tr><td><a href="Yohan460-recipes/JAMFConnect/JamfConnectLogin.pkg.recipe.html">JAMFConnect/JamfConnectLogin.pkg.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:57:43 -0400</td><td>0</td></tr><tr><td><a href="Yohan460-recipes/JAMFConnect/JamfConnect.download.recipe.html">JAMFConnect/JamfConnect.download.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:54:30 -0400</td><td>0</td></tr><tr><td><a href="Yohan460-recipes/JAMFConnect/JamfConnectSync.pkg.recipe.html">JAMFConnect/JamfConnectSync.pkg.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:57:43 -0400</td><td>0</td></tr><tr><td><a href="Yohan460-recipes/JAMFConnect/JamfConnectVerify.pkg.recipe.html">JAMFConnect/JamfConnectVerify.pkg.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:57:43 -0400</td><td>0</td></tr><tr><td><a href="Yohan460-recipes/JAMFConnect/JamfConnectConfiguration.pkg.recipe.html">JAMFConnect/JamfConnectConfiguration.pkg.recipe</a></td><td>2019-09-25 09:44:06 -0400</td><td>2019-09-25 09:44:06 -0400</td><td>0</td></tr><tr><td><a href="Yohan460-recipes/NoMAD/NoMAD.jss.recipe.html">NoMAD/NoMAD.jss.recipe</a></td><td>2017-12-11 15:22:38 -0500</td><td>2017-12-11 15:22:38 -0500</td><td>3</td></tr><tr><td><a href="Yohan460-recipes/VMware Horizon Client/VMwareHorizonClient.jss.recipe.html">VMware Horizon Client/VMwareHorizonClient.jss.recipe</a></td><td>2017-12-08 11:23:56 -0500</td><td>2017-12-08 11:23:56 -0500</td><td>3</td></tr><tr><td><a href="Yohan460-recipes/KeePassX/KeePassX.jss.recipe.html">KeePassX/KeePassX.jss.recipe</a></td><td>2017-12-07 11:06:20 -0500</td><td>2018-01-02 09:40:24 -0500</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:50</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="CitrixWorkspace/CitrixWorkspace.pkg.recipe.html">CitrixWorkspace/CitrixWorkspace.pkg.recipe</a></td><td>2018-11-13 14:35:03 -0500</td><td>2018-11-13 14:35:03 -0500</td><td>4</td></tr>
+			<tr><td><a href="CitrixWorkspace/CitrixWorkspace.jss.recipe.html">CitrixWorkspace/CitrixWorkspace.jss.recipe</a></td><td>2018-11-13 14:35:03 -0500</td><td>2018-11-13 14:35:03 -0500</td><td>3</td></tr>
+			<tr><td><a href="Dashlane/Dashlane.jss.recipe.html">Dashlane/Dashlane.jss.recipe</a></td><td>2017-12-08 08:14:27 -0500</td><td>2018-01-02 09:40:24 -0500</td><td>0</td></tr>
+			<tr><td><a href="Dashlane/Dashlane.pkg.recipe.html">Dashlane/Dashlane.pkg.recipe</a></td><td>2017-12-08 08:14:27 -0500</td><td>2017-12-08 08:23:41 -0500</td><td>3</td></tr>
+			<tr><td><a href="JAMFConnect/JamfConnectLogin.pkg.recipe.html">JAMFConnect/JamfConnectLogin.pkg.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:57:43 -0400</td><td>0</td></tr>
+			<tr><td><a href="JAMFConnect/JamfConnect.download.recipe.html">JAMFConnect/JamfConnect.download.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:54:30 -0400</td><td>0</td></tr>
+			<tr><td><a href="JAMFConnect/JamfConnectSync.pkg.recipe.html">JAMFConnect/JamfConnectSync.pkg.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:57:43 -0400</td><td>0</td></tr>
+			<tr><td><a href="JAMFConnect/JamfConnectVerify.pkg.recipe.html">JAMFConnect/JamfConnectVerify.pkg.recipe</a></td><td>2019-04-05 13:49:51 -0400</td><td>2019-04-05 13:57:43 -0400</td><td>0</td></tr>
+			<tr><td><a href="JAMFConnect/JamfConnectConfiguration.pkg.recipe.html">JAMFConnect/JamfConnectConfiguration.pkg.recipe</a></td><td>2019-09-25 09:44:06 -0400</td><td>2019-09-25 09:44:06 -0400</td><td>0</td></tr>
+			<tr><td><a href="NoMAD/NoMAD.jss.recipe.html">NoMAD/NoMAD.jss.recipe</a></td><td>2017-12-11 15:22:38 -0500</td><td>2017-12-11 15:22:38 -0500</td><td>3</td></tr>
+			<tr><td><a href="VMware Horizon Client/VMwareHorizonClient.jss.recipe.html">VMware Horizon Client/VMwareHorizonClient.jss.recipe</a></td><td>2017-12-08 11:23:56 -0500</td><td>2017-12-08 11:23:56 -0500</td><td>3</td></tr>
+			<tr><td><a href="KeePassX/KeePassX.jss.recipe.html">KeePassX/KeePassX.jss.recipe</a></td><td>2017-12-07 11:06:20 -0500</td><td>2018-01-02 09:40:24 -0500</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

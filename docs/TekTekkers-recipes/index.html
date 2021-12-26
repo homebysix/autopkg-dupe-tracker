@@ -5,20 +5,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" charset="utf8"
+        src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>TekTekkers-recipes</h1>
-    <p>Last refresh: 2021-12-26 01:38:08</p>
-    <table style="width: 100%;">
-        <tr>
-            <th>Recipe</th>
-            <th>First Commit</th>
-            <th>Latest Commit</th>
-            <th>Warnings</th>
-        </tr>
-        <tr><td><a href="TekTekkers-recipes/Helicon Soft/HeliconFocus.pkg.recipe.html">Helicon Soft/HeliconFocus.pkg.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Helicon Soft/HeliconFocus.download.recipe.html">Helicon Soft/HeliconFocus.download.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Helicon Soft/HeliconFocus.install.recipe.html">Helicon Soft/HeliconFocus.install.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Helicon Soft/HeliconFocus.munki.recipe.html">Helicon Soft/HeliconFocus.munki.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Weixin/WeChat.install.recipe.html">Weixin/WeChat.install.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Weixin/WeChat.pkg.recipe.html">Weixin/WeChat.pkg.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Weixin/WeChat.munki.recipe.html">Weixin/WeChat.munki.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr><tr><td><a href="TekTekkers-recipes/Weixin/WeChat.download.recipe.html">Weixin/WeChat.download.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr>
+    <p>Last refresh: 2021-12-26 17:14:50</p>
+    <script type="javascript">
+        $(document).ready( function () {
+            $('#recipe_table').DataTable({
+                "order": [[ 3, "desc" ]]
+            });
+        } );
+    </script>
+    <table id="recipe_table">
+        <thead>
+            <tr>
+                <th>Recipe</th>
+                <th>First Commit</th>
+                <th>Latest Commit</th>
+                <th>Warnings</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+			<tr><td><a href="Helicon Soft/HeliconFocus.pkg.recipe.html">Helicon Soft/HeliconFocus.pkg.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr>
+			<tr><td><a href="Helicon Soft/HeliconFocus.download.recipe.html">Helicon Soft/HeliconFocus.download.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr>
+			<tr><td><a href="Helicon Soft/HeliconFocus.install.recipe.html">Helicon Soft/HeliconFocus.install.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr>
+			<tr><td><a href="Helicon Soft/HeliconFocus.munki.recipe.html">Helicon Soft/HeliconFocus.munki.recipe</a></td><td>2021-07-14 19:42:33 +0100</td><td>2021-07-14 19:42:33 +0100</td><td>0</td></tr>
+			<tr><td><a href="Weixin/WeChat.install.recipe.html">Weixin/WeChat.install.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr>
+			<tr><td><a href="Weixin/WeChat.pkg.recipe.html">Weixin/WeChat.pkg.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr>
+			<tr><td><a href="Weixin/WeChat.munki.recipe.html">Weixin/WeChat.munki.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr>
+			<tr><td><a href="Weixin/WeChat.download.recipe.html">Weixin/WeChat.download.recipe</a></td><td>2020-10-30 11:28:34 +0000</td><td>2020-10-30 11:28:34 +0000</td><td>0</td></tr>
+        </tbody>
     </table>
 </body>
 

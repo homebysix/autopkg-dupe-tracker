@@ -5,12 +5,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
         integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/autopkg-dupe-tracker/style.css">
 </head>
 
 <body>
     <h1>GoogleDrive.munki.recipe</h1>
-    <p>Last refresh: 2021-12-25 04:50:26</p>
+    <p>Last refresh: 2021-12-26 01:38:06</p>
     <p>Desciption: Downloads the latest version of Google Drive (previously File Stream) and imports it into a munki repo.
 
 Since Google Drive has macOS architecture specific PKGs that won't be installed, this will cause an endless install loop if the applicable PKG receipts aren't marked as optional. To address this, these items are added in the Input variable dictionary under the pkg_ids_set_optional_true key.
@@ -18,22 +18,22 @@ Since Google Drive has macOS architecture specific PKGs that won't be installed,
 If an admin wishes to use this same recipe to manage a single Google Drive PKG installer with 2 separate munki items - 1 for arm64, 1 for x86_64 - simply remove the applicable pkg ids from the pkg_ids_set_optional_true array.</p>
     <p>Identifier: <code>com.github.apizz.munki.GoogleDrive</code></p>
     <p>Parent Recipes: com.github.nstrauss.pkg.GoogleDrive</p>
-    <p>First commit: %FIRST_COMMIT%</p>
-    <p>Latest commit: %LATEST_COMMIT%</p>
+    <p>First commit: 2021-02-04 17:23:22 -0500</p>
+    <p>Latest commit: 2021-02-04 17:23:22 -0500</p>
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames (<code>googledrive.munki.recipe</code>):</p>
 <ul>
-<li><a href="/autopkg-dupe-tracker/dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe.html">dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe</a></li>
+<li><a href="dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe.html">dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe</a></li>
 </ul>
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>googledrive.munki.recipe</code>):</p>
 <ul>
-<li><a href="/autopkg-dupe-tracker/dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe.html">dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe</a></li>
+<li><a href="dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe.html">dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe</a></li>
 </ul>
 <p>The following recipes have duplicate NAMEs (<code>googledrive.munki</code>):</p>
 <ul>
-<li><a href="/autopkg-dupe-tracker/apizz-recipes/Google_Drive/GoogleDrive_app.munki.recipe.html">apizz-recipes/Google_Drive/GoogleDrive_app.munki.recipe</a></li>
-<li><a href="/autopkg-dupe-tracker/dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe.html">dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe</a></li>
+<li><a href="apizz-recipes/Google_Drive/GoogleDrive_app.munki.recipe.html">apizz-recipes/Google_Drive/GoogleDrive_app.munki.recipe</a></li>
+<li><a href="dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe.html">dankeller-recipes/GoogleDrive/GoogleDrive.munki.recipe</a></li>
 </ul>
 </body>
 

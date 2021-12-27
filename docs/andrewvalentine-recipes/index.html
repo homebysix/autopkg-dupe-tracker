@@ -17,7 +17,8 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#recipes').DataTable({
-                "order": [[3, "desc"]]
+                order: [[3, "desc"]],
+                paging: false
             });
         });
     </script>
@@ -27,7 +28,7 @@
 
 <body>
     <h1>andrewvalentine-recipes</h1>
-    <p>Last refresh: 2021-12-26 17:41:52</p>
+    <p>Last refresh: 2021-12-27 00:09:09</p>
     <table id="recipes">
         <thead>
             <tr>
@@ -50,7 +51,7 @@
 			<tr><td><a href="JavaDecompiler-GUI/JD-GUI.munki.recipe.html">JavaDecompiler-GUI/JD-GUI.munki.recipe</a></td><td>2017-04-16 19:26:54 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="JavaDecompiler-GUI/JD-GUI.install.recipe.html">JavaDecompiler-GUI/JD-GUI.install.recipe</a></td><td>2017-04-16 19:26:54 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="JavaDecompiler-GUI/JD-GUI.download.recipe.html">JavaDecompiler-GUI/JD-GUI.download.recipe</a></td><td>2017-04-16 19:26:54 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
-			<tr><td><a href="SuspiciousPackageApp/SuspiciousPackageApp.install.recipe.html">SuspiciousPackageApp/SuspiciousPackageApp.install.recipe</a></td><td>2016-03-03 16:27:44 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
+			<tr><td><a href="SuspiciousPackageApp/SuspiciousPackageApp.install.recipe.html">SuspiciousPackageApp/SuspiciousPackageApp.install.recipe</a></td><td>2016-03-03 16:27:44 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
 			<tr><td><a href="paintbrush/paintbrush.install.recipe.html">paintbrush/paintbrush.install.recipe</a></td><td>2016-01-21 22:15:55 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="paintbrush/paintbrush.download.recipe.html">paintbrush/paintbrush.download.recipe</a></td><td>2016-01-21 22:15:55 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="paintbrush/paintbrush.munki.recipe.html">paintbrush/paintbrush.munki.recipe</a></td><td>2016-01-21 22:15:55 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
@@ -85,8 +86,8 @@
 			<tr><td><a href="past/past.install.recipe.html">past/past.install.recipe</a></td><td>2016-01-17 16:25:11 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="past/past.download.recipe.html">past/past.download.recipe</a></td><td>2016-01-17 16:25:11 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="past/past.munki.recipe.html">past/past.munki.recipe</a></td><td>2016-01-17 16:25:11 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
-			<tr><td><a href="typora/typora.pkg.recipe.html">typora/typora.pkg.recipe</a></td><td>2016-02-05 22:57:54 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
-			<tr><td><a href="typora/typora.download.recipe.html">typora/typora.download.recipe</a></td><td>2016-02-05 22:57:54 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
+			<tr><td><a href="typora/typora.pkg.recipe.html">typora/typora.pkg.recipe</a></td><td>2016-02-05 22:57:54 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
+			<tr><td><a href="typora/typora.download.recipe.html">typora/typora.download.recipe</a></td><td>2016-02-05 22:57:54 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
 			<tr><td><a href="typora/typora.munki.recipe.html">typora/typora.munki.recipe</a></td><td>2016-02-05 22:57:54 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="typora/typora.install.recipe.html">typora/typora.install.recipe</a></td><td>2016-02-05 22:57:54 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="FBMacMessenger/FBMacMessenger.install.recipe.html">FBMacMessenger/FBMacMessenger.install.recipe</a></td><td>2016-05-30 07:07:39 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
@@ -106,7 +107,7 @@
 			<tr><td><a href="bleep/bleep.pkg.recipe.html">bleep/bleep.pkg.recipe</a></td><td>2016-02-03 21:35:16 +0000</td><td>2019-02-12 10:57:55 +0000</td><td>0</td></tr>
 			<tr><td><a href="bleep/bleep.download.recipe.html">bleep/bleep.download.recipe</a></td><td>2016-02-03 21:35:16 +0000</td><td>2019-02-12 10:57:55 +0000</td><td>0</td></tr>
 			<tr><td><a href="bleep/bleep.install.recipe.html">bleep/bleep.install.recipe</a></td><td>2016-02-03 21:35:16 +0000</td><td>2019-02-12 10:57:55 +0000</td><td>0</td></tr>
-			<tr><td><a href="MestReNova/MestReNova.download.recipe.html">MestReNova/MestReNova.download.recipe</a></td><td>2019-11-27 12:37:32 +0000</td><td>2019-11-27 12:37:32 +0000</td><td>6</td></tr>
+			<tr><td><a href="MestReNova/MestReNova.download.recipe.html">MestReNova/MestReNova.download.recipe</a></td><td>2019-11-27 12:37:32 +0000</td><td>2019-11-27 12:37:32 +0000</td><td>3</td></tr>
 			<tr><td><a href="MestReNova/MestReNova.munki.recipe.html">MestReNova/MestReNova.munki.recipe</a></td><td>2019-11-27 12:37:32 +0000</td><td>2019-11-27 12:37:32 +0000</td><td>0</td></tr>
 			<tr><td><a href="MestReNova/MestReNova.install.recipe.html">MestReNova/MestReNova.install.recipe</a></td><td>2019-11-27 12:37:32 +0000</td><td>2019-11-27 12:37:32 +0000</td><td>0</td></tr>
 			<tr><td><a href="Mathematica/Mathematica.munki.recipe.html">Mathematica/Mathematica.munki.recipe</a></td><td>2020-03-16 10:58:38 +0000</td><td>2020-03-16 10:58:38 +0000</td><td>0</td></tr>
@@ -125,8 +126,8 @@
 			<tr><td><a href="Mullvad/Mullvad.munki.recipe.html">Mullvad/Mullvad.munki.recipe</a></td><td>2017-06-03 16:08:35 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="Mullvad/Mullvad.install.recipe.html">Mullvad/Mullvad.install.recipe</a></td><td>2017-06-03 16:08:35 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="Mullvad/Mullvad.download.recipe.html">Mullvad/Mullvad.download.recipe</a></td><td>2017-06-03 16:08:35 +0100</td><td>2018-08-10 06:26:36 +0100</td><td>0</td></tr>
-			<tr><td><a href="Dragonframe/Dragonframe4.munki.recipe.html">Dragonframe/Dragonframe4.munki.recipe</a></td><td>2018-09-05 09:33:33 +0100</td><td>2018-09-05 09:33:33 +0100</td><td>4</td></tr>
-			<tr><td><a href="Dragonframe/Dragonframe3.munki.recipe.html">Dragonframe/Dragonframe3.munki.recipe</a></td><td>2018-09-14 11:02:47 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>4</td></tr>
+			<tr><td><a href="Dragonframe/Dragonframe4.munki.recipe.html">Dragonframe/Dragonframe4.munki.recipe</a></td><td>2018-09-05 09:33:33 +0100</td><td>2018-09-05 09:33:33 +0100</td><td>3</td></tr>
+			<tr><td><a href="Dragonframe/Dragonframe3.munki.recipe.html">Dragonframe/Dragonframe3.munki.recipe</a></td><td>2018-09-14 11:02:47 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>3</td></tr>
 			<tr><td><a href="mac-linux-usb-loader/mac-linux-usb-loader.munki.recipe.html">mac-linux-usb-loader/mac-linux-usb-loader.munki.recipe</a></td><td>2016-02-04 16:00:10 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="mac-linux-usb-loader/mac-linux-usb-loader.pkg.recipe.html">mac-linux-usb-loader/mac-linux-usb-loader.pkg.recipe</a></td><td>2016-02-04 16:00:10 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="mac-linux-usb-loader/mac-linux-usb-loader.install.recipe.html">mac-linux-usb-loader/mac-linux-usb-loader.install.recipe</a></td><td>2016-02-04 16:00:10 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
@@ -142,9 +143,9 @@
 			<tr><td><a href="panoply/panoply.pkg.recipe.html">panoply/panoply.pkg.recipe</a></td><td>2016-01-21 22:23:14 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="panoply/panoply.munki.recipe.html">panoply/panoply.munki.recipe</a></td><td>2015-11-10 09:28:14 +0000</td><td>2016-01-17 08:27:47 +0000</td><td>0</td></tr>
 			<tr><td><a href="panoply/panoply.install.recipe.html">panoply/panoply.install.recipe</a></td><td>2016-01-14 21:45:07 +0000</td><td>2016-01-17 08:27:47 +0000</td><td>0</td></tr>
-			<tr><td><a href="GPGSuite/GPGSuite.install.recipe.html">GPGSuite/GPGSuite.install.recipe</a></td><td>2017-08-30 07:30:49 +0100</td><td>2017-08-30 07:30:49 +0100</td><td>3</td></tr>
-			<tr><td><a href="NVivo/NVivo12.munki.recipe.html">NVivo/NVivo12.munki.recipe</a></td><td>2018-10-16 15:21:11 +0100</td><td>2020-09-03 13:57:22 +0100</td><td>6</td></tr>
-			<tr><td><a href="NVivo/NVivo12.download.recipe.html">NVivo/NVivo12.download.recipe</a></td><td>2018-10-16 15:21:11 +0100</td><td>2018-10-16 15:21:11 +0100</td><td>11</td></tr>
+			<tr><td><a href="GPGSuite/GPGSuite.install.recipe.html">GPGSuite/GPGSuite.install.recipe</a></td><td>2017-08-30 07:30:49 +0100</td><td>2017-08-30 07:30:49 +0100</td><td>1</td></tr>
+			<tr><td><a href="NVivo/NVivo12.munki.recipe.html">NVivo/NVivo12.munki.recipe</a></td><td>2018-10-16 15:21:11 +0100</td><td>2020-09-03 13:57:22 +0100</td><td>4</td></tr>
+			<tr><td><a href="NVivo/NVivo12.download.recipe.html">NVivo/NVivo12.download.recipe</a></td><td>2018-10-16 15:21:11 +0100</td><td>2018-10-16 15:21:11 +0100</td><td>6</td></tr>
 			<tr><td><a href="Texts/Texts.pkg.recipe.html">Texts/Texts.pkg.recipe</a></td><td>2017-02-12 10:14:30 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="Texts/Texts.download.recipe.html">Texts/Texts.download.recipe</a></td><td>2017-02-12 10:14:30 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="Texts/Texts.install.recipe.html">Texts/Texts.install.recipe</a></td><td>2017-02-12 10:14:30 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
@@ -154,7 +155,7 @@
 			<tr><td><a href="StandardNotes/StandardNotes.munki.recipe.html">StandardNotes/StandardNotes.munki.recipe</a></td><td>2017-03-31 17:53:36 +0100</td><td>2018-08-10 06:26:36 +0100</td><td>0</td></tr>
 			<tr><td><a href="StandardNotes/StandardNotes.install.recipe.html">StandardNotes/StandardNotes.install.recipe</a></td><td>2017-03-31 17:53:36 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="StandardNotes/StandardNotes.download.recipe.html">StandardNotes/StandardNotes.download.recipe</a></td><td>2017-03-31 17:53:36 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
-			<tr><td><a href="final-cut-library-manager/final-cut-library-manager.download.recipe.html">final-cut-library-manager/final-cut-library-manager.download.recipe</a></td><td>2016-02-07 08:43:21 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>2</td></tr>
+			<tr><td><a href="final-cut-library-manager/final-cut-library-manager.download.recipe.html">final-cut-library-manager/final-cut-library-manager.download.recipe</a></td><td>2016-02-07 08:43:21 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
 			<tr><td><a href="final-cut-library-manager/final-cut-library-manager.munki.recipe.html">final-cut-library-manager/final-cut-library-manager.munki.recipe</a></td><td>2016-02-07 08:43:21 +0000</td><td>2019-09-30 12:35:48 +0100</td><td>1</td></tr>
 			<tr><td><a href="final-cut-library-manager/final-cut-library-manager.pkg.recipe.html">final-cut-library-manager/final-cut-library-manager.pkg.recipe</a></td><td>2016-02-07 08:43:21 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="final-cut-library-manager/final-cut-library-manager.install.recipe.html">final-cut-library-manager/final-cut-library-manager.install.recipe</a></td><td>2016-02-07 08:43:21 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
@@ -177,13 +178,13 @@
 			<tr><td><a href="Hancock/Hancock.download.recipe.html">Hancock/Hancock.download.recipe</a></td><td>2019-04-16 16:30:55 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="Hancock/Hancock.install.recipe.html">Hancock/Hancock.install.recipe</a></td><td>2019-04-16 16:30:55 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="Hancock/Hancock.munki.recipe.html">Hancock/Hancock.munki.recipe</a></td><td>2019-04-16 16:30:55 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
-			<tr><td><a href="dash/dash.munki.recipe.html">dash/dash.munki.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>5</td></tr>
+			<tr><td><a href="dash/dash.munki.recipe.html">dash/dash.munki.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
 			<tr><td><a href="dash/dash.install.recipe.html">dash/dash.install.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
-			<tr><td><a href="dash/dash.download.recipe.html">dash/dash.download.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>8</td></tr>
-			<tr><td><a href="dash/dash.pkg.recipe.html">dash/dash.pkg.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>6</td></tr>
+			<tr><td><a href="dash/dash.download.recipe.html">dash/dash.download.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>4</td></tr>
+			<tr><td><a href="dash/dash.pkg.recipe.html">dash/dash.pkg.recipe</a></td><td>2016-01-28 21:32:48 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
 			<tr><td><a href="KnockKnock/KnockKnock.install.recipe.html">KnockKnock/KnockKnock.install.recipe</a></td><td>2016-03-17 22:15:06 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
-			<tr><td><a href="KnockKnock/KnockKnock.pkg.recipe.html">KnockKnock/KnockKnock.pkg.recipe</a></td><td>2016-03-17 22:15:06 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
-			<tr><td><a href="KnockKnock/KnockKnock.download.recipe.html">KnockKnock/KnockKnock.download.recipe</a></td><td>2016-03-17 22:15:06 +0000</td><td>2019-09-30 12:23:22 +0100</td><td>3</td></tr>
+			<tr><td><a href="KnockKnock/KnockKnock.pkg.recipe.html">KnockKnock/KnockKnock.pkg.recipe</a></td><td>2016-03-17 22:15:06 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
+			<tr><td><a href="KnockKnock/KnockKnock.download.recipe.html">KnockKnock/KnockKnock.download.recipe</a></td><td>2016-03-17 22:15:06 +0000</td><td>2019-09-30 12:23:22 +0100</td><td>1</td></tr>
 			<tr><td><a href="KnockKnock/KnockKnock.munki.recipe.html">KnockKnock/KnockKnock.munki.recipe</a></td><td>2016-03-17 22:15:06 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="DMGCanvas/DMGCanvas.munki.recipe.html">DMGCanvas/DMGCanvas.munki.recipe</a></td><td>2019-12-09 09:15:04 +0000</td><td>2019-12-09 09:15:04 +0000</td><td>0</td></tr>
 			<tr><td><a href="DMGCanvas/DMGCanvas.download.recipe.html">DMGCanvas/DMGCanvas.download.recipe</a></td><td>2019-12-09 09:15:04 +0000</td><td>2019-12-09 09:15:04 +0000</td><td>0</td></tr>
@@ -191,12 +192,12 @@
 			<tr><td><a href="JabRef/JabRef.download.recipe.html">JabRef/JabRef.download.recipe</a></td><td>2016-08-23 06:04:14 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="JabRef/JabRef.munki.recipe.html">JabRef/JabRef.munki.recipe</a></td><td>2016-08-23 06:04:14 +0100</td><td>2020-10-14 13:19:35 +0200</td><td>0</td></tr>
 			<tr><td><a href="DetectX/DetectX.munki.recipe.html">DetectX/DetectX.munki.recipe</a></td><td>2016-02-20 14:08:14 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
-			<tr><td><a href="Storyboarder/Storyboarder.munki.recipe.html">Storyboarder/Storyboarder.munki.recipe</a></td><td>2019-02-21 13:16:50 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>3</td></tr>
+			<tr><td><a href="Storyboarder/Storyboarder.munki.recipe.html">Storyboarder/Storyboarder.munki.recipe</a></td><td>2019-02-21 13:16:50 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>1</td></tr>
 			<tr><td><a href="TurningPoint/TurningPoint.munki.recipe.html">TurningPoint/TurningPoint.munki.recipe</a></td><td>2017-04-14 21:42:50 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="TurningPoint/TurningPoint.install.recipe.html">TurningPoint/TurningPoint.install.recipe</a></td><td>2017-04-14 21:42:50 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="TurningPoint/TurningPoint.download.recipe.html">TurningPoint/TurningPoint.download.recipe</a></td><td>2017-04-14 21:42:50 +0100</td><td>2019-09-30 16:47:37 +0100</td><td>0</td></tr>
 			<tr><td><a href="TurningPoint/TurningPoint.pkg.recipe.html">TurningPoint/TurningPoint.pkg.recipe</a></td><td>2017-04-14 21:42:50 +0100</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
-			<tr><td><a href="ImageJ/ImageJ.munki.recipe.html">ImageJ/ImageJ.munki.recipe</a></td><td>2016-04-05 09:55:09 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>6</td></tr>
+			<tr><td><a href="ImageJ/ImageJ.munki.recipe.html">ImageJ/ImageJ.munki.recipe</a></td><td>2016-04-05 09:55:09 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>2</td></tr>
 			<tr><td><a href="create-recovery-partition-installer/create-recovery-partition-installer.install.recipe.html">create-recovery-partition-installer/create-recovery-partition-installer.install.recipe</a></td><td>2016-01-30 07:52:58 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
 			<tr><td><a href="create-recovery-partition-installer/create-recovery-partition-installer.pkg.recipe.html">create-recovery-partition-installer/create-recovery-partition-installer.pkg.recipe</a></td><td>2016-01-30 07:52:58 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
 			<tr><td><a href="create-recovery-partition-installer/create-recovery-partition-installer.download.recipe.html">create-recovery-partition-installer/create-recovery-partition-installer.download.recipe</a></td><td>2016-01-30 07:52:58 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>1</td></tr>
@@ -222,16 +223,16 @@
 			<tr><td><a href="kismac2/kismac2.pkg.recipe.html">kismac2/kismac2.pkg.recipe</a></td><td>2016-02-09 21:32:35 +0000</td><td>2016-02-09 21:34:44 +0000</td><td>0</td></tr>
 			<tr><td><a href="kismac2/kismac2.munki.recipe.html">kismac2/kismac2.munki.recipe</a></td><td>2016-02-09 21:32:35 +0000</td><td>2016-02-09 21:34:44 +0000</td><td>0</td></tr>
 			<tr><td><a href="kismac2/kismac2.download.recipe.html">kismac2/kismac2.download.recipe</a></td><td>2016-02-09 21:32:35 +0000</td><td>2016-02-09 21:34:44 +0000</td><td>0</td></tr>
-			<tr><td><a href="BasicTeX/BasicTeX.download.recipe.html">BasicTeX/BasicTeX.download.recipe</a></td><td>2017-12-15 11:51:21 +0000</td><td>2020-11-30 13:59:39 -0600</td><td>2</td></tr>
+			<tr><td><a href="BasicTeX/BasicTeX.download.recipe.html">BasicTeX/BasicTeX.download.recipe</a></td><td>2017-12-15 11:51:21 +0000</td><td>2020-11-30 13:59:39 -0600</td><td>1</td></tr>
 			<tr><td><a href="BasicTeX/BasicTeX.munki.recipe.html">BasicTeX/BasicTeX.munki.recipe</a></td><td>2017-12-15 11:51:21 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="NativeInstruments/NativeAccess.munki.recipe.html">NativeInstruments/NativeAccess.munki.recipe</a></td><td>2019-10-11 10:16:09 +0100</td><td>2019-10-11 10:16:09 +0100</td><td>0</td></tr>
-			<tr><td><a href="Sloth/Sloth.munki.recipe.html">Sloth/Sloth.munki.recipe</a></td><td>2019-02-22 14:14:53 +0000</td><td>2019-09-30 12:35:48 +0100</td><td>3</td></tr>
-			<tr><td><a href="Sloth/Sloth.download.recipe.html">Sloth/Sloth.download.recipe</a></td><td>2019-02-22 14:14:53 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>3</td></tr>
+			<tr><td><a href="Sloth/Sloth.munki.recipe.html">Sloth/Sloth.munki.recipe</a></td><td>2019-02-22 14:14:53 +0000</td><td>2019-09-30 12:35:48 +0100</td><td>1</td></tr>
+			<tr><td><a href="Sloth/Sloth.download.recipe.html">Sloth/Sloth.download.recipe</a></td><td>2019-02-22 14:14:53 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>1</td></tr>
 			<tr><td><a href="MOTU MIDI Installer/MotuMidiInstaller.download.recipe.html">MOTU MIDI Installer/MotuMidiInstaller.download.recipe</a></td><td>2019-02-27 15:35:48 +0000</td><td>2019-08-31 11:05:44 -0700</td><td>1</td></tr>
 			<tr><td><a href="MOTU MIDI Installer/MotuMidiInstaller.munki.recipe.html">MOTU MIDI Installer/MotuMidiInstaller.munki.recipe</a></td><td>2019-02-27 15:35:48 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="Franz/Franz.munki.recipe.html">Franz/Franz.munki.recipe</a></td><td>2017-03-24 16:06:39 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="Franz/Franz.install.recipe.html">Franz/Franz.install.recipe</a></td><td>2017-03-24 16:06:39 +0000</td><td>2019-06-24 15:11:58 -0700</td><td>0</td></tr>
-			<tr><td><a href="Franz/Franz.download.recipe.html">Franz/Franz.download.recipe</a></td><td>2017-03-24 16:06:39 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>3</td></tr>
+			<tr><td><a href="Franz/Franz.download.recipe.html">Franz/Franz.download.recipe</a></td><td>2017-03-24 16:06:39 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>1</td></tr>
 			<tr><td><a href="OSXFUSE/osxfuse.install.recipe.html">OSXFUSE/osxfuse.install.recipe</a></td><td>2016-03-03 21:20:34 +0000</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="MachOView/MachOView.install.recipe.html">MachOView/MachOView.install.recipe</a></td><td>2016-06-06 21:07:38 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>
 			<tr><td><a href="MachOView/MachOView.munki.recipe.html">MachOView/MachOView.munki.recipe</a></td><td>2016-06-06 21:07:38 +0100</td><td>2019-06-21 21:55:21 -0700</td><td>0</td></tr>

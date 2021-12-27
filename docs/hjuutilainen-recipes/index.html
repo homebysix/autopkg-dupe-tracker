@@ -17,7 +17,8 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#recipes').DataTable({
-                "order": [[3, "desc"]]
+                order: [[3, "desc"]],
+                paging: false
             });
         });
     </script>
@@ -27,7 +28,7 @@
 
 <body>
     <h1>hjuutilainen-recipes</h1>
-    <p>Last refresh: 2021-12-26 17:41:52</p>
+    <p>Last refresh: 2021-12-27 00:09:10</p>
     <table id="recipes">
         <thead>
             <tr>
@@ -47,11 +48,11 @@
 			<tr><td><a href="Kaleidoscope/Kaleidoscope.install.recipe.html">Kaleidoscope/Kaleidoscope.install.recipe</a></td><td>2021-05-26 11:35:22 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>0</td></tr>
 			<tr><td><a href="Kaleidoscope/Kaleidoscope.munki.recipe.html">Kaleidoscope/Kaleidoscope.munki.recipe</a></td><td>2021-05-26 11:35:22 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>0</td></tr>
 			<tr><td><a href="Kaleidoscope/Kaleidoscope.pkg.recipe.html">Kaleidoscope/Kaleidoscope.pkg.recipe</a></td><td>2021-05-26 11:35:22 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>0</td></tr>
-			<tr><td><a href="CitrixReceiver/CitrixWorkspace.download.recipe.html">CitrixReceiver/CitrixWorkspace.download.recipe</a></td><td>2018-09-28 12:29:27 +0300</td><td>2021-09-18 17:28:42 -0700</td><td>4</td></tr>
-			<tr><td><a href="CitrixReceiver/CitrixReceiver.munki.recipe.html">CitrixReceiver/CitrixReceiver.munki.recipe</a></td><td>2013-09-12 12:08:17 +0300</td><td>2021-06-08 15:26:00 -0400</td><td>3</td></tr>
+			<tr><td><a href="CitrixReceiver/CitrixWorkspace.download.recipe.html">CitrixReceiver/CitrixWorkspace.download.recipe</a></td><td>2018-09-28 12:29:27 +0300</td><td>2021-09-18 17:28:42 -0700</td><td>2</td></tr>
+			<tr><td><a href="CitrixReceiver/CitrixReceiver.munki.recipe.html">CitrixReceiver/CitrixReceiver.munki.recipe</a></td><td>2013-09-12 12:08:17 +0300</td><td>2021-06-08 15:26:00 -0400</td><td>1</td></tr>
 			<tr><td><a href="CitrixReceiver/CitrixWorkspace.munki.recipe.html">CitrixReceiver/CitrixWorkspace.munki.recipe</a></td><td>2018-09-28 12:29:27 +0300</td><td>2021-06-08 15:26:00 -0400</td><td>0</td></tr>
-			<tr><td><a href="CitrixReceiver/CitrixReceiver.install.recipe.html">CitrixReceiver/CitrixReceiver.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>2</td></tr>
-			<tr><td><a href="CitrixReceiver/CitrixReceiver.download.recipe.html">CitrixReceiver/CitrixReceiver.download.recipe</a></td><td>2013-09-12 12:08:17 +0300</td><td>2021-09-18 17:28:42 -0700</td><td>3</td></tr>
+			<tr><td><a href="CitrixReceiver/CitrixReceiver.install.recipe.html">CitrixReceiver/CitrixReceiver.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>1</td></tr>
+			<tr><td><a href="CitrixReceiver/CitrixReceiver.download.recipe.html">CitrixReceiver/CitrixReceiver.download.recipe</a></td><td>2013-09-12 12:08:17 +0300</td><td>2021-09-18 17:28:42 -0700</td><td>1</td></tr>
 			<tr><td><a href="Fork/Fork.install.recipe.html">Fork/Fork.install.recipe</a></td><td>2017-05-11 16:10:45 +0300</td><td>2017-05-11 16:10:45 +0300</td><td>0</td></tr>
 			<tr><td><a href="Fork/Fork.pkg.recipe.html">Fork/Fork.pkg.recipe</a></td><td>2017-05-11 16:10:45 +0300</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="Fork/Fork.download.recipe.html">Fork/Fork.download.recipe</a></td><td>2017-05-11 16:10:45 +0300</td><td>2017-09-24 13:40:03 +0300</td><td>0</td></tr>
@@ -91,8 +92,8 @@
 			<tr><td><a href="HashiCorp/Vagrant.munki.recipe.html">HashiCorp/Vagrant.munki.recipe</a></td><td>2016-05-18 15:54:39 +0300</td><td>2016-05-18 15:54:39 +0300</td><td>0</td></tr>
 			<tr><td><a href="CoRD/CoRD.pkg.recipe.html">CoRD/CoRD.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
 			<tr><td><a href="CoRD/CoRD.install.recipe.html">CoRD/CoRD.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
-			<tr><td><a href="CoRD/CoRD.munki.recipe.html">CoRD/CoRD.munki.recipe</a></td><td>2013-09-10 15:53:22 +0300</td><td>2017-05-23 11:30:15 +0300</td><td>3</td></tr>
-			<tr><td><a href="CoRD/CoRD.download.recipe.html">CoRD/CoRD.download.recipe</a></td><td>2013-09-10 15:53:22 +0300</td><td>2021-05-17 14:51:24 +0300</td><td>4</td></tr>
+			<tr><td><a href="CoRD/CoRD.munki.recipe.html">CoRD/CoRD.munki.recipe</a></td><td>2013-09-10 15:53:22 +0300</td><td>2017-05-23 11:30:15 +0300</td><td>1</td></tr>
+			<tr><td><a href="CoRD/CoRD.download.recipe.html">CoRD/CoRD.download.recipe</a></td><td>2013-09-10 15:53:22 +0300</td><td>2021-05-17 14:51:24 +0300</td><td>1</td></tr>
 			<tr><td><a href="AlfredApp/Alfred2.munki.recipe.html">AlfredApp/Alfred2.munki.recipe</a></td><td>2013-10-20 11:44:14 +0300</td><td>2014-10-16 15:13:29 -0500</td><td>2</td></tr>
 			<tr><td><a href="AlfredApp/Alfred4.munki.recipe.html">AlfredApp/Alfred4.munki.recipe</a></td><td>2019-05-30 20:58:42 +0300</td><td>2019-05-30 20:58:42 +0300</td><td>2</td></tr>
 			<tr><td><a href="AlfredApp/Alfred3.munki.recipe.html">AlfredApp/Alfred3.munki.recipe</a></td><td>2016-05-30 11:42:54 +0200</td><td>2016-05-30 11:42:54 +0200</td><td>2</td></tr>
@@ -113,11 +114,11 @@
 			<tr><td><a href="CleverFiles/DiskDrill.download.recipe.html">CleverFiles/DiskDrill.download.recipe</a></td><td>2017-03-11 15:18:36 +0200</td><td>2019-12-23 10:41:09 -0800</td><td>0</td></tr>
 			<tr><td><a href="CleverFiles/DiskDrill.pkg.recipe.html">CleverFiles/DiskDrill.pkg.recipe</a></td><td>2017-03-11 15:18:36 +0200</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="CleverFiles/DiskDrill.install.recipe.html">CleverFiles/DiskDrill.install.recipe</a></td><td>2017-03-11 15:18:36 +0200</td><td>2017-03-11 15:18:36 +0200</td><td>0</td></tr>
-			<tr><td><a href="SmileOnMyMac/TextExpander6.download.recipe.html">SmileOnMyMac/TextExpander6.download.recipe</a></td><td>2017-01-02 21:32:46 +0200</td><td>2017-09-24 13:40:03 +0300</td><td>3</td></tr>
+			<tr><td><a href="SmileOnMyMac/TextExpander6.download.recipe.html">SmileOnMyMac/TextExpander6.download.recipe</a></td><td>2017-01-02 21:32:46 +0200</td><td>2017-09-24 13:40:03 +0300</td><td>2</td></tr>
 			<tr><td><a href="SmileOnMyMac/TextExpander.install.recipe.html">SmileOnMyMac/TextExpander.install.recipe</a></td><td>2014-08-31 11:48:41 +0300</td><td>2014-08-31 11:48:41 +0300</td><td>2</td></tr>
 			<tr><td><a href="SmileOnMyMac/TextExpander.munki.recipe.html">SmileOnMyMac/TextExpander.munki.recipe</a></td><td>2013-09-12 21:22:52 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>2</td></tr>
 			<tr><td><a href="SmileOnMyMac/TextExpander.pkg.recipe.html">SmileOnMyMac/TextExpander.pkg.recipe</a></td><td>2014-08-31 11:48:41 +0300</td><td>2021-02-25 18:56:56 -0500</td><td>2</td></tr>
-			<tr><td><a href="SmileOnMyMac/TextExpander7.download.recipe.html">SmileOnMyMac/TextExpander7.download.recipe</a></td><td>2021-11-26 02:02:07 -0500</td><td>2021-11-26 02:02:07 -0500</td><td>3</td></tr>
+			<tr><td><a href="SmileOnMyMac/TextExpander7.download.recipe.html">SmileOnMyMac/TextExpander7.download.recipe</a></td><td>2021-11-26 02:02:07 -0500</td><td>2021-11-26 02:02:07 -0500</td><td>2</td></tr>
 			<tr><td><a href="SmileOnMyMac/TextExpander7.pkg.recipe.html">SmileOnMyMac/TextExpander7.pkg.recipe</a></td><td>2021-11-26 02:02:07 -0500</td><td>2021-11-26 02:02:07 -0500</td><td>2</td></tr>
 			<tr><td><a href="SmileOnMyMac/TextExpander7.munki.recipe.html">SmileOnMyMac/TextExpander7.munki.recipe</a></td><td>2021-11-26 02:02:07 -0500</td><td>2021-11-26 02:02:07 -0500</td><td>2</td></tr>
 			<tr><td><a href="SmileOnMyMac/TextExpander7.install.recipe.html">SmileOnMyMac/TextExpander7.install.recipe</a></td><td>2021-11-26 02:02:07 -0500</td><td>2021-11-26 02:02:07 -0500</td><td>2</td></tr>
@@ -131,13 +132,13 @@
 			<tr><td><a href="Camunda/CamundaModeler.munki.recipe.html">Camunda/CamundaModeler.munki.recipe</a></td><td>2021-02-08 12:49:41 +0200</td><td>2021-02-08 12:49:41 +0200</td><td>0</td></tr>
 			<tr><td><a href="Thalmic Labs/MyoConnect.munki.recipe.html">Thalmic Labs/MyoConnect.munki.recipe</a></td><td>2016-05-27 13:21:28 +0300</td><td>2016-05-27 13:21:28 +0300</td><td>0</td></tr>
 			<tr><td><a href="Thalmic Labs/MyoConnect.download.recipe.html">Thalmic Labs/MyoConnect.download.recipe</a></td><td>2016-05-27 13:21:28 +0300</td><td>2021-01-07 21:18:54 -0800</td><td>0</td></tr>
-			<tr><td><a href="Kapeli/Dash3.download.recipe.html">Kapeli/Dash3.download.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2021-06-23 14:46:03 +0300</td><td>8</td></tr>
+			<tr><td><a href="Kapeli/Dash3.download.recipe.html">Kapeli/Dash3.download.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2021-06-23 14:46:03 +0300</td><td>4</td></tr>
 			<tr><td><a href="Kapeli/Dash3.install.recipe.html">Kapeli/Dash3.install.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2015-07-05 21:17:12 +0300</td><td>1</td></tr>
-			<tr><td><a href="Kapeli/Dash3.munki.recipe.html">Kapeli/Dash3.munki.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2015-07-05 21:17:12 +0300</td><td>5</td></tr>
-			<tr><td><a href="Kapeli/Dash3.pkg.recipe.html">Kapeli/Dash3.pkg.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2021-01-18 20:08:59 -0800</td><td>6</td></tr>
-			<tr><td><a href="R/R.munki.recipe.html">R/R.munki.recipe</a></td><td>2013-09-24 08:49:04 +0300</td><td>2021-06-08 15:26:00 -0400</td><td>3</td></tr>
-			<tr><td><a href="R/R.download.recipe.html">R/R.download.recipe</a></td><td>2013-09-24 08:49:04 +0300</td><td>2021-06-29 11:14:18 +0300</td><td>4</td></tr>
-			<tr><td><a href="R/R.install.recipe.html">R/R.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>2</td></tr>
+			<tr><td><a href="Kapeli/Dash3.munki.recipe.html">Kapeli/Dash3.munki.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2015-07-05 21:17:12 +0300</td><td>3</td></tr>
+			<tr><td><a href="Kapeli/Dash3.pkg.recipe.html">Kapeli/Dash3.pkg.recipe</a></td><td>2015-07-05 21:17:12 +0300</td><td>2021-01-18 20:08:59 -0800</td><td>3</td></tr>
+			<tr><td><a href="R/R.munki.recipe.html">R/R.munki.recipe</a></td><td>2013-09-24 08:49:04 +0300</td><td>2021-06-08 15:26:00 -0400</td><td>1</td></tr>
+			<tr><td><a href="R/R.download.recipe.html">R/R.download.recipe</a></td><td>2013-09-24 08:49:04 +0300</td><td>2021-06-29 11:14:18 +0300</td><td>2</td></tr>
+			<tr><td><a href="R/R.install.recipe.html">R/R.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>1</td></tr>
 			<tr><td><a href="mogenerator/mogenerator.download.recipe.html">mogenerator/mogenerator.download.recipe</a></td><td>2014-10-15 21:54:40 +0300</td><td>2021-01-07 21:18:54 -0800</td><td>0</td></tr>
 			<tr><td><a href="mogenerator/mogenerator.munki.recipe.html">mogenerator/mogenerator.munki.recipe</a></td><td>2014-10-15 21:54:40 +0300</td><td>2021-06-17 17:25:30 +0200</td><td>0</td></tr>
 			<tr><td><a href="mogenerator/mogenerator.install.recipe.html">mogenerator/mogenerator.install.recipe</a></td><td>2014-10-15 22:01:17 +0300</td><td>2016-05-18 15:54:39 +0300</td><td>0</td></tr>
@@ -149,20 +150,20 @@
 			<tr><td><a href="JetBrains/AppCode.install.recipe.html">JetBrains/AppCode.install.recipe</a></td><td>2014-08-27 17:21:01 +0300</td><td>2014-08-27 17:21:01 +0300</td><td>0</td></tr>
 			<tr><td><a href="JetBrains/PyCharmEdu.pkg.recipe.html">JetBrains/PyCharmEdu.pkg.recipe</a></td><td>2015-09-17 13:47:24 +0300</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="JetBrains/PyCharmEdu.download.recipe.html">JetBrains/PyCharmEdu.download.recipe</a></td><td>2015-09-17 13:47:24 +0300</td><td>2017-09-24 13:40:03 +0300</td><td>1</td></tr>
-			<tr><td><a href="JetBrains/AppCode.download.recipe.html">JetBrains/AppCode.download.recipe</a></td><td>2014-04-12 21:29:16 +0300</td><td>2021-11-26 10:44:44 +0000</td><td>3</td></tr>
-			<tr><td><a href="JetBrains/AppCode.munki.recipe.html">JetBrains/AppCode.munki.recipe</a></td><td>2014-04-12 21:29:16 +0300</td><td>2016-05-18 15:54:39 +0300</td><td>3</td></tr>
+			<tr><td><a href="JetBrains/AppCode.download.recipe.html">JetBrains/AppCode.download.recipe</a></td><td>2014-04-12 21:29:16 +0300</td><td>2021-11-26 10:44:44 +0000</td><td>1</td></tr>
+			<tr><td><a href="JetBrains/AppCode.munki.recipe.html">JetBrains/AppCode.munki.recipe</a></td><td>2014-04-12 21:29:16 +0300</td><td>2016-05-18 15:54:39 +0300</td><td>1</td></tr>
 			<tr><td><a href="JetBrains/AppCode.pkg.recipe.html">JetBrains/AppCode.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="JetBrains/PyCharmEdu.munki.recipe.html">JetBrains/PyCharmEdu.munki.recipe</a></td><td>2015-09-17 13:47:24 +0300</td><td>2015-09-17 13:47:24 +0300</td><td>1</td></tr>
 			<tr><td><a href="JetBrains/PyCharmEdu.install.recipe.html">JetBrains/PyCharmEdu.install.recipe</a></td><td>2015-09-17 13:47:24 +0300</td><td>2015-09-17 13:47:24 +0300</td><td>0</td></tr>
 			<tr><td><a href="Colloquy/Colloquy.pkg.recipe.html">Colloquy/Colloquy.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
 			<tr><td><a href="Colloquy/Colloquy.install.recipe.html">Colloquy/Colloquy.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
-			<tr><td><a href="Colloquy/Colloquy.download.recipe.html">Colloquy/Colloquy.download.recipe</a></td><td>2013-09-12 21:01:42 +0300</td><td>2021-09-18 17:28:42 -0700</td><td>3</td></tr>
-			<tr><td><a href="Colloquy/Colloquy.munki.recipe.html">Colloquy/Colloquy.munki.recipe</a></td><td>2013-09-12 21:01:42 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>3</td></tr>
+			<tr><td><a href="Colloquy/Colloquy.download.recipe.html">Colloquy/Colloquy.download.recipe</a></td><td>2013-09-12 21:01:42 +0300</td><td>2021-09-18 17:28:42 -0700</td><td>1</td></tr>
+			<tr><td><a href="Colloquy/Colloquy.munki.recipe.html">Colloquy/Colloquy.munki.recipe</a></td><td>2013-09-12 21:01:42 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>1</td></tr>
 			<tr><td><a href="TeamViewer/TeamViewerQuickSupport.install.recipe.html">TeamViewer/TeamViewerQuickSupport.install.recipe</a></td><td>2016-03-04 15:48:55 +0200</td><td>2016-03-04 15:48:55 +0200</td><td>0</td></tr>
 			<tr><td><a href="TeamViewer/TeamViewerHost.download.recipe.html">TeamViewer/TeamViewerHost.download.recipe</a></td><td>2016-03-04 15:50:12 +0200</td><td>2021-02-27 10:32:41 -0500</td><td>0</td></tr>
 			<tr><td><a href="TeamViewer/TeamViewer.download.recipe.html">TeamViewer/TeamViewer.download.recipe</a></td><td>2013-09-24 11:47:37 +0300</td><td>2021-06-29 11:14:18 +0300</td><td>0</td></tr>
-			<tr><td><a href="TeamViewer/TeamViewer.pkg.recipe.html">TeamViewer/TeamViewer.pkg.recipe</a></td><td>2021-03-02 14:11:35 -0500</td><td>2021-04-30 13:23:30 -0700</td><td>3</td></tr>
-			<tr><td><a href="TeamViewer/TeamViewerHost.pkg.recipe.html">TeamViewer/TeamViewerHost.pkg.recipe</a></td><td>2021-03-02 14:44:11 -0500</td><td>2021-04-28 11:38:07 -0700</td><td>3</td></tr>
+			<tr><td><a href="TeamViewer/TeamViewer.pkg.recipe.html">TeamViewer/TeamViewer.pkg.recipe</a></td><td>2021-03-02 14:11:35 -0500</td><td>2021-04-30 13:23:30 -0700</td><td>1</td></tr>
+			<tr><td><a href="TeamViewer/TeamViewerHost.pkg.recipe.html">TeamViewer/TeamViewerHost.pkg.recipe</a></td><td>2021-03-02 14:44:11 -0500</td><td>2021-04-28 11:38:07 -0700</td><td>1</td></tr>
 			<tr><td><a href="TeamViewer/TeamViewerQuickSupport.pkg.recipe.html">TeamViewer/TeamViewerQuickSupport.pkg.recipe</a></td><td>2016-03-04 15:48:55 +0200</td><td>2016-03-04 15:48:55 +0200</td><td>2</td></tr>
 			<tr><td><a href="TeamViewer/TeamViewerQuickSupport.download.recipe.html">TeamViewer/TeamViewerQuickSupport.download.recipe</a></td><td>2016-03-04 15:48:55 +0200</td><td>2016-03-04 15:48:55 +0200</td><td>1</td></tr>
 			<tr><td><a href="TeamViewer/TeamViewerQuickJoin.download.recipe.html">TeamViewer/TeamViewerQuickJoin.download.recipe</a></td><td>2016-03-04 15:50:12 +0200</td><td>2020-12-17 11:39:34 +0100</td><td>0</td></tr>
@@ -176,24 +177,24 @@
 			<tr><td><a href="PACE Anti-Piracy/iLokLicenseManager.munki.recipe.html">PACE Anti-Piracy/iLokLicenseManager.munki.recipe</a></td><td>2013-11-29 11:37:42 +0200</td><td>2020-01-14 08:36:45 +0200</td><td>0</td></tr>
 			<tr><td><a href="PACE Anti-Piracy/iLokLicenseManager.install.recipe.html">PACE Anti-Piracy/iLokLicenseManager.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
 			<tr><td><a href="PACE Anti-Piracy/iLokLicenseManager.download.recipe.html">PACE Anti-Piracy/iLokLicenseManager.download.recipe</a></td><td>2013-11-29 11:37:42 +0200</td><td>2019-08-31 11:27:17 -0700</td><td>0</td></tr>
-			<tr><td><a href="Atlassian/SourceTree.download.recipe.html">Atlassian/SourceTree.download.recipe</a></td><td>2013-09-09 22:58:30 +0300</td><td>2021-05-17 14:51:24 +0300</td><td>3</td></tr>
+			<tr><td><a href="Atlassian/SourceTree.download.recipe.html">Atlassian/SourceTree.download.recipe</a></td><td>2013-09-09 22:58:30 +0300</td><td>2021-05-17 14:51:24 +0300</td><td>1</td></tr>
 			<tr><td><a href="Atlassian/SourceTree.munki.recipe.html">Atlassian/SourceTree.munki.recipe</a></td><td>2013-09-09 22:58:30 +0300</td><td>2016-05-10 09:45:08 +0300</td><td>0</td></tr>
-			<tr><td><a href="Atlassian/SourceTree.pkg.recipe.html">Atlassian/SourceTree.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-01-18 20:08:59 -0800</td><td>3</td></tr>
+			<tr><td><a href="Atlassian/SourceTree.pkg.recipe.html">Atlassian/SourceTree.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-01-18 20:08:59 -0800</td><td>1</td></tr>
 			<tr><td><a href="Atlassian/SourceTree.install.recipe.html">Atlassian/SourceTree.install.recipe</a></td><td>2014-08-27 17:21:01 +0300</td><td>2016-05-10 09:45:08 +0300</td><td>0</td></tr>
 			<tr><td><a href="Axosoft/GitKraken.download.recipe.html">Axosoft/GitKraken.download.recipe</a></td><td>2017-01-02 21:56:05 +0200</td><td>2017-09-24 13:40:03 +0300</td><td>0</td></tr>
 			<tr><td><a href="Axosoft/GitKraken.munki.recipe.html">Axosoft/GitKraken.munki.recipe</a></td><td>2017-01-02 21:56:05 +0200</td><td>2017-01-02 21:56:05 +0200</td><td>0</td></tr>
 			<tr><td><a href="Axosoft/GitKraken.pkg.recipe.html">Axosoft/GitKraken.pkg.recipe</a></td><td>2017-01-02 21:56:05 +0200</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="Axosoft/GitKraken.install.recipe.html">Axosoft/GitKraken.install.recipe</a></td><td>2017-01-02 21:56:05 +0200</td><td>2017-01-02 21:56:05 +0200</td><td>0</td></tr>
-			<tr><td><a href="iTerm2/iTerm2.download.recipe.html">iTerm2/iTerm2.download.recipe</a></td><td>2013-09-12 21:59:04 +0300</td><td>2021-05-17 14:51:24 +0300</td><td>4</td></tr>
+			<tr><td><a href="iTerm2/iTerm2.download.recipe.html">iTerm2/iTerm2.download.recipe</a></td><td>2013-09-12 21:59:04 +0300</td><td>2021-05-17 14:51:24 +0300</td><td>2</td></tr>
 			<tr><td><a href="iTerm2/iTerm2.pkg.recipe.html">iTerm2/iTerm2.pkg.recipe</a></td><td>2014-08-31 11:38:44 +0300</td><td>2021-01-18 20:08:59 -0800</td><td>1</td></tr>
 			<tr><td><a href="iTerm2/iTerm2.install.recipe.html">iTerm2/iTerm2.install.recipe</a></td><td>2014-08-31 11:38:44 +0300</td><td>2021-05-26 11:35:22 +0300</td><td>0</td></tr>
-			<tr><td><a href="iTerm2/iTerm2.munki.recipe.html">iTerm2/iTerm2.munki.recipe</a></td><td>2013-09-12 21:59:04 +0300</td><td>2014-10-16 15:13:29 -0500</td><td>3</td></tr>
+			<tr><td><a href="iTerm2/iTerm2.munki.recipe.html">iTerm2/iTerm2.munki.recipe</a></td><td>2013-09-12 21:59:04 +0300</td><td>2014-10-16 15:13:29 -0500</td><td>1</td></tr>
 			<tr><td><a href="CodeRunner/CodeRunner2.install.recipe.html">CodeRunner/CodeRunner2.install.recipe</a></td><td>2014-12-16 10:00:00 +0200</td><td>2018-05-22 20:47:38 +0300</td><td>0</td></tr>
 			<tr><td><a href="CodeRunner/CodeRunner2.pkg.recipe.html">CodeRunner/CodeRunner2.pkg.recipe</a></td><td>2014-12-16 10:00:00 +0200</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="CodeRunner/CodeRunner2.munki.recipe.html">CodeRunner/CodeRunner2.munki.recipe</a></td><td>2014-12-16 10:00:00 +0200</td><td>2014-12-16 10:00:00 +0200</td><td>0</td></tr>
 			<tr><td><a href="CodeRunner/CodeRunner2.download.recipe.html">CodeRunner/CodeRunner2.download.recipe</a></td><td>2014-12-16 10:00:00 +0200</td><td>2021-06-23 14:46:03 +0300</td><td>0</td></tr>
-			<tr><td><a href="Packages/Packages.pkg.recipe.html">Packages/Packages.pkg.recipe</a></td><td>2014-12-17 10:01:15 +0200</td><td>2016-05-18 15:54:39 +0300</td><td>2</td></tr>
-			<tr><td><a href="Packages/Packages.install.recipe.html">Packages/Packages.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>2</td></tr>
+			<tr><td><a href="Packages/Packages.pkg.recipe.html">Packages/Packages.pkg.recipe</a></td><td>2014-12-17 10:01:15 +0200</td><td>2016-05-18 15:54:39 +0300</td><td>1</td></tr>
+			<tr><td><a href="Packages/Packages.install.recipe.html">Packages/Packages.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>1</td></tr>
 			<tr><td><a href="Packages/Packages.download.recipe.html">Packages/Packages.download.recipe</a></td><td>2013-11-19 09:32:24 +0200</td><td>2021-09-18 17:28:42 -0700</td><td>0</td></tr>
 			<tr><td><a href="Packages/Packages.munki.recipe.html">Packages/Packages.munki.recipe</a></td><td>2013-11-19 09:32:24 +0200</td><td>2014-10-16 15:13:29 -0500</td><td>0</td></tr>
 			<tr><td><a href="Plex/PlexMediaPlayer.munki.recipe.html">Plex/PlexMediaPlayer.munki.recipe</a></td><td>2017-02-13 09:42:40 +0100</td><td>2017-03-27 13:16:06 +0300</td><td>0</td></tr>
@@ -274,17 +275,17 @@
 			<tr><td><a href="TeXstudio/TeXstudio.install.recipe.html">TeXstudio/TeXstudio.install.recipe</a></td><td>2015-03-31 11:00:52 +0300</td><td>2018-05-22 20:47:38 +0300</td><td>0</td></tr>
 			<tr><td><a href="TeXstudio/TeXstudio.pkg.recipe.html">TeXstudio/TeXstudio.pkg.recipe</a></td><td>2015-03-31 11:00:52 +0300</td><td>2021-01-18 20:08:59 -0800</td><td>0</td></tr>
 			<tr><td><a href="GIMP/GIMP.munki.recipe.html">GIMP/GIMP.munki.recipe</a></td><td>2013-09-26 14:50:24 +0300</td><td>2021-06-17 17:25:30 +0200</td><td>1</td></tr>
-			<tr><td><a href="GIMP/GIMP.download.recipe.html">GIMP/GIMP.download.recipe</a></td><td>2013-09-26 14:50:24 +0300</td><td>2021-06-17 17:25:30 +0200</td><td>4</td></tr>
-			<tr><td><a href="GIMP/Gimp.pkg.recipe.html">GIMP/Gimp.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-01-18 20:08:59 -0800</td><td>4</td></tr>
+			<tr><td><a href="GIMP/GIMP.download.recipe.html">GIMP/GIMP.download.recipe</a></td><td>2013-09-26 14:50:24 +0300</td><td>2021-06-17 17:25:30 +0200</td><td>2</td></tr>
+			<tr><td><a href="GIMP/Gimp.pkg.recipe.html">GIMP/Gimp.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-01-18 20:08:59 -0800</td><td>2</td></tr>
 			<tr><td><a href="GIMP/Gimp.install.recipe.html">GIMP/Gimp.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
 			<tr><td><a href="AgileBits/1Password.munki.recipe.html">AgileBits/1Password.munki.recipe</a></td><td>2013-10-18 07:05:37 +0300</td><td>2014-10-16 15:13:29 -0500</td><td>0</td></tr>
 			<tr><td><a href="AgileBits/1Password.install.recipe.html">AgileBits/1Password.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
-			<tr><td><a href="AgileBits/1Password.pkg.recipe.html">AgileBits/1Password.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-05-26 11:35:22 +0300</td><td>5</td></tr>
-			<tr><td><a href="AgileBits/1Password.download.recipe.html">AgileBits/1Password.download.recipe</a></td><td>2013-10-18 07:05:37 +0300</td><td>2017-09-24 13:40:03 +0300</td><td>2</td></tr>
+			<tr><td><a href="AgileBits/1Password.pkg.recipe.html">AgileBits/1Password.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2021-05-26 11:35:22 +0300</td><td>2</td></tr>
+			<tr><td><a href="AgileBits/1Password.download.recipe.html">AgileBits/1Password.download.recipe</a></td><td>2013-10-18 07:05:37 +0300</td><td>2017-09-24 13:40:03 +0300</td><td>1</td></tr>
 			<tr><td><a href="OpenOffice/OpenOffice.install.recipe.html">OpenOffice/OpenOffice.install.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
-			<tr><td><a href="OpenOffice/OpenOffice.pkg.recipe.html">OpenOffice/OpenOffice.pkg.recipe</a></td><td>2014-07-30 10:17:44 +1000</td><td>2021-01-18 20:08:59 -0800</td><td>3</td></tr>
+			<tr><td><a href="OpenOffice/OpenOffice.pkg.recipe.html">OpenOffice/OpenOffice.pkg.recipe</a></td><td>2014-07-30 10:17:44 +1000</td><td>2021-01-18 20:08:59 -0800</td><td>1</td></tr>
 			<tr><td><a href="OpenOffice/OpenOffice.munki.recipe.html">OpenOffice/OpenOffice.munki.recipe</a></td><td>2013-09-25 12:25:06 +0300</td><td>2021-06-17 17:25:30 +0200</td><td>0</td></tr>
-			<tr><td><a href="OpenOffice/OpenOffice.download.recipe.html">OpenOffice/OpenOffice.download.recipe</a></td><td>2013-09-24 14:33:15 +0300</td><td>2020-11-10 11:29:34 +0000</td><td>3</td></tr>
+			<tr><td><a href="OpenOffice/OpenOffice.download.recipe.html">OpenOffice/OpenOffice.download.recipe</a></td><td>2013-09-24 14:33:15 +0300</td><td>2020-11-10 11:29:34 +0000</td><td>1</td></tr>
 			<tr><td><a href="CheatSheet/CheatSheet.download.recipe.html">CheatSheet/CheatSheet.download.recipe</a></td><td>2013-11-01 08:34:37 +0200</td><td>2014-10-10 08:11:16 +0300</td><td>0</td></tr>
 			<tr><td><a href="CheatSheet/CheatSheet.pkg.recipe.html">CheatSheet/CheatSheet.pkg.recipe</a></td><td>2014-11-10 08:01:58 -0500</td><td>2014-11-10 08:01:58 -0500</td><td>0</td></tr>
 			<tr><td><a href="CheatSheet/CheatSheet.munki.recipe.html">CheatSheet/CheatSheet.munki.recipe</a></td><td>2013-11-01 08:34:37 +0200</td><td>2017-05-23 11:30:15 +0300</td><td>0</td></tr>

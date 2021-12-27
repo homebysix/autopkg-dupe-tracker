@@ -17,7 +17,8 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#recipes').DataTable({
-                "order": [[3, "desc"]]
+                order: [[3, "desc"]],
+                paging: false
             });
         });
     </script>
@@ -27,7 +28,7 @@
 
 <body>
     <h1>ygini-recipes</h1>
-    <p>Last refresh: 2021-12-26 17:41:54</p>
+    <p>Last refresh: 2021-12-27 00:09:11</p>
     <table id="recipes">
         <thead>
             <tr>
@@ -44,8 +45,8 @@
 			<tr><td><a href="Hello-IT/Hello-IT.munki.recipe.html">Hello-IT/Hello-IT.munki.recipe</a></td><td>2015-11-23 11:18:45 +0100</td><td>2016-05-03 21:18:55 +0200</td><td>0</td></tr>
 			<tr><td><a href="RV64/RV64.munki.recipe.html">RV64/RV64.munki.recipe</a></td><td>2018-08-23 11:21:20 +0200</td><td>2018-08-23 11:21:20 +0200</td><td>2</td></tr>
 			<tr><td><a href="RV64/RV64.download.recipe.html">RV64/RV64.download.recipe</a></td><td>2018-08-23 11:21:20 +0200</td><td>2018-08-23 11:21:20 +0200</td><td>2</td></tr>
-			<tr><td><a href="Anaconda/Anaconda3.munki.recipe.html">Anaconda/Anaconda3.munki.recipe</a></td><td>2019-01-22 14:43:33 +0100</td><td>2021-05-14 17:41:15 +0200</td><td>7</td></tr>
-			<tr><td><a href="Anaconda/Anaconda2.munki.recipe.html">Anaconda/Anaconda2.munki.recipe</a></td><td>2019-01-22 14:43:33 +0100</td><td>2019-01-22 14:43:33 +0100</td><td>5</td></tr>
+			<tr><td><a href="Anaconda/Anaconda3.munki.recipe.html">Anaconda/Anaconda3.munki.recipe</a></td><td>2019-01-22 14:43:33 +0100</td><td>2021-05-14 17:41:15 +0200</td><td>4</td></tr>
+			<tr><td><a href="Anaconda/Anaconda2.munki.recipe.html">Anaconda/Anaconda2.munki.recipe</a></td><td>2019-01-22 14:43:33 +0100</td><td>2019-01-22 14:43:33 +0100</td><td>4</td></tr>
 			<tr><td><a href="NoMachine/NoMachine.munki.recipe.html">NoMachine/NoMachine.munki.recipe</a></td><td>2019-01-22 17:19:15 +0100</td><td>2019-01-22 17:19:15 +0100</td><td>0</td></tr>
 			<tr><td><a href="NoMachine/NoMachine.download.recipe.html">NoMachine/NoMachine.download.recipe</a></td><td>2019-01-22 17:19:15 +0100</td><td>2019-01-22 17:19:15 +0100</td><td>0</td></tr>
 			<tr><td><a href="MSOfficeUpdates/Word2016Updates-fr_FR.munki.recipe.html">MSOfficeUpdates/Word2016Updates-fr_FR.munki.recipe</a></td><td>2016-02-22 12:07:04 +0100</td><td>2016-02-22 14:31:46 +0100</td><td>0</td></tr>
@@ -86,7 +87,7 @@
 			<tr><td><a href="Prism/Prism.munki.recipe.html">Prism/Prism.munki.recipe</a></td><td>2016-05-29 17:17:06 +0200</td><td>2016-05-29 17:17:06 +0200</td><td>0</td></tr>
 			<tr><td><a href="DemoMonkey/DemoMonkey.munki.recipe.html">DemoMonkey/DemoMonkey.munki.recipe</a></td><td>2017-11-27 21:34:34 +0100</td><td>2017-11-27 21:34:34 +0100</td><td>0</td></tr>
 			<tr><td><a href="DemoMonkey/DemoMonkey.download.recipe.html">DemoMonkey/DemoMonkey.download.recipe</a></td><td>2017-11-27 21:34:34 +0100</td><td>2017-11-27 21:34:34 +0100</td><td>0</td></tr>
-			<tr><td><a href="MestReNova/MestReNova.download.recipe.html">MestReNova/MestReNova.download.recipe</a></td><td>2021-01-13 18:45:35 +0100</td><td>2021-01-13 18:45:35 +0100</td><td>5</td></tr>
+			<tr><td><a href="MestReNova/MestReNova.download.recipe.html">MestReNova/MestReNova.download.recipe</a></td><td>2021-01-13 18:45:35 +0100</td><td>2021-01-13 18:45:35 +0100</td><td>3</td></tr>
 			<tr><td><a href="Zulip/ZulipElectron.download.recipe.html">Zulip/ZulipElectron.download.recipe</a></td><td>2018-07-23 13:27:48 +0200</td><td>2018-07-23 17:56:59 +0200</td><td>1</td></tr>
 			<tr><td><a href="Zulip/ZulipElectron.munki.recipe.html">Zulip/ZulipElectron.munki.recipe</a></td><td>2018-07-23 13:27:48 +0200</td><td>2018-07-23 17:56:59 +0200</td><td>1</td></tr>
 			<tr><td><a href="DockServiceManager/DockServiceManager.download.recipe.html">DockServiceManager/DockServiceManager.download.recipe</a></td><td>2021-01-13 18:45:35 +0100</td><td>2021-01-13 18:45:35 +0100</td><td>0</td></tr>
@@ -105,8 +106,8 @@
 			<tr><td><a href="Datadog Agent/Datadog Agent v7.download.recipe.html">Datadog Agent/Datadog Agent v7.download.recipe</a></td><td>2021-06-22 11:32:46 +0200</td><td>2021-06-22 11:32:46 +0200</td><td>0</td></tr>
 			<tr><td><a href="JetBrains/PyCharmPro.munki.recipe.html">JetBrains/PyCharmPro.munki.recipe</a></td><td>2017-05-02 14:56:48 +0200</td><td>2017-05-02 14:56:48 +0200</td><td>0</td></tr>
 			<tr><td><a href="Techno-Grafik Christian Lackner eU/iTaskX3.install.recipe.html">Techno-Grafik Christian Lackner eU/iTaskX3.install.recipe</a></td><td>2016-08-10 11:46:50 +0200</td><td>2019-06-24 15:12:01 -0700</td><td>1</td></tr>
-			<tr><td><a href="Techno-Grafik Christian Lackner eU/iTaskX3.download.recipe.html">Techno-Grafik Christian Lackner eU/iTaskX3.download.recipe</a></td><td>2016-08-10 11:46:50 +0200</td><td>2019-06-24 15:12:01 -0700</td><td>3</td></tr>
-			<tr><td><a href="Techno-Grafik Christian Lackner eU/iTaskX3.munki.recipe.html">Techno-Grafik Christian Lackner eU/iTaskX3.munki.recipe</a></td><td>2016-08-10 11:46:50 +0200</td><td>2016-08-10 11:46:50 +0200</td><td>2</td></tr>
+			<tr><td><a href="Techno-Grafik Christian Lackner eU/iTaskX3.download.recipe.html">Techno-Grafik Christian Lackner eU/iTaskX3.download.recipe</a></td><td>2016-08-10 11:46:50 +0200</td><td>2019-06-24 15:12:01 -0700</td><td>2</td></tr>
+			<tr><td><a href="Techno-Grafik Christian Lackner eU/iTaskX3.munki.recipe.html">Techno-Grafik Christian Lackner eU/iTaskX3.munki.recipe</a></td><td>2016-08-10 11:46:50 +0200</td><td>2016-08-10 11:46:50 +0200</td><td>1</td></tr>
 			<tr><td><a href="Techno-Grafik Christian Lackner eU/iTaskX3.pkg.recipe.html">Techno-Grafik Christian Lackner eU/iTaskX3.pkg.recipe</a></td><td>2016-08-10 11:46:50 +0200</td><td>2017-03-09 09:22:02 +0100</td><td>1</td></tr>
 			<tr><td><a href="Termius/Termius.munki.recipe.html">Termius/Termius.munki.recipe</a></td><td>2021-04-12 19:12:55 +0100</td><td>2021-04-12 19:12:55 +0100</td><td>0</td></tr>
 			<tr><td><a href="Termius/Terminus.download.recipe.html">Termius/Terminus.download.recipe</a></td><td>2021-05-14 17:47:08 +0200</td><td>2021-05-14 17:47:08 +0200</td><td>1</td></tr>
@@ -136,7 +137,7 @@
 			<tr><td><a href="LifeSize/LifeSizeOnPremise.munki.recipe.html">LifeSize/LifeSizeOnPremise.munki.recipe</a></td><td>2016-02-24 11:31:08 +0100</td><td>2016-02-24 11:49:10 +0100</td><td>0</td></tr>
 			<tr><td><a href="FileMaker15/FileMaker15Updater.download.recipe.html">FileMaker15/FileMaker15Updater.download.recipe</a></td><td>2021-01-13 18:45:35 +0100</td><td>2021-01-13 18:45:35 +0100</td><td>3</td></tr>
 			<tr><td><a href="FileMaker15/FileMaker15Updater.munki.recipe.html">FileMaker15/FileMaker15Updater.munki.recipe</a></td><td>2021-01-13 18:45:35 +0100</td><td>2021-01-13 18:45:35 +0100</td><td>2</td></tr>
-			<tr><td><a href="Mattermost/Mattermost.download.recipe.html">Mattermost/Mattermost.download.recipe</a></td><td>2021-01-13 18:57:19 +0100</td><td>2021-01-13 18:57:19 +0100</td><td>3</td></tr>
+			<tr><td><a href="Mattermost/Mattermost.download.recipe.html">Mattermost/Mattermost.download.recipe</a></td><td>2021-01-13 18:57:19 +0100</td><td>2021-01-13 18:57:19 +0100</td><td>1</td></tr>
 			<tr><td><a href="Mattermost/Mattermost.munki.recipe.html">Mattermost/Mattermost.munki.recipe</a></td><td>2017-01-19 16:19:12 +0100</td><td>2021-01-13 18:57:19 +0100</td><td>0</td></tr>
 			<tr><td><a href="Elgato Systems GmbH/Elgato Video Capture.pkg.recipe.html">Elgato Systems GmbH/Elgato Video Capture.pkg.recipe</a></td><td>2016-01-04 16:47:01 +0100</td><td>2017-03-09 09:22:02 +0100</td><td>0</td></tr>
 			<tr><td><a href="Elgato Systems GmbH/Elgato Video Capture.install.recipe.html">Elgato Systems GmbH/Elgato Video Capture.install.recipe</a></td><td>2016-01-04 16:46:40 +0100</td><td>2016-05-03 21:18:55 +0200</td><td>0</td></tr>

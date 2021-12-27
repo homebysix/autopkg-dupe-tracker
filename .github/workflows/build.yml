@@ -15,822 +15,959 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: autopkg/48kRAM-recipes
+          fetch-depth: 0
           path: autopkg/48kRAM-recipes
 
       - name: Clone aanklewicz-recipes repository
         uses: actions/checkout@v2
         with:
           repository: autopkg/aanklewicz-recipes
+          fetch-depth: 0
           path: autopkg/aanklewicz-recipes
 
       # - name: Clone ahousseini-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/ahousseini-recipes
+      #     fetch-depth: 0
       #     path: autopkg/ahousseini-recipes
 
       # - name: Clone andredb90-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/andredb90-recipes
+      #     fetch-depth: 0
       #     path: autopkg/andredb90-recipes
 
       # - name: Clone andrewvalentine-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/andrewvalentine-recipes
+      #     fetch-depth: 0
       #     path: autopkg/andrewvalentine-recipes
 
       # - name: Clone andrewzirkel-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/andrewzirkel-recipes
+      #     fetch-depth: 0
       #     path: autopkg/andrewzirkel-recipes
 
       # - name: Clone apettinen-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/apettinen-recipes
+      #     fetch-depth: 0
       #     path: autopkg/apettinen-recipes
 
       # - name: Clone apizz-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/apizz-recipes
+      #     fetch-depth: 0
       #     path: autopkg/apizz-recipes
 
       # - name: Clone arubdesu-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/arubdesu-recipes
+      #     fetch-depth: 0
       #     path: autopkg/arubdesu-recipes
 
       # - name: Clone aysiu-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/aysiu-recipes
+      #     fetch-depth: 0
       #     path: autopkg/aysiu-recipes
 
       # - name: Clone bkerns-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/bkerns-recipes
+      #     fetch-depth: 0
       #     path: autopkg/bkerns-recipes
 
       # - name: Clone blackthroat-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/blackthroat-recipes
+      #     fetch-depth: 0
       #     path: autopkg/blackthroat-recipes
 
       # - name: Clone bnpl-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/bnpl-recipes
+      #     fetch-depth: 0
       #     path: autopkg/bnpl-recipes
 
       # - name: Clone bochoven-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/bochoven-recipes
+      #     fetch-depth: 0
       #     path: autopkg/bochoven-recipes
 
       # - name: Clone bradclare-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/bradclare-recipes
+      #     fetch-depth: 0
       #     path: autopkg/bradclare-recipes
 
       # - name: Clone brianwells-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/brianwells-recipes
+      #     fetch-depth: 0
       #     path: autopkg/brianwells-recipes
 
       # - name: Clone chalcahuite-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/chalcahuite-recipes
+      #     fetch-depth: 0
       #     path: autopkg/chalcahuite-recipes
 
       # - name: Clone chefaustin-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/chefaustin-recipes
+      #     fetch-depth: 0
       #     path: autopkg/chefaustin-recipes
 
       # - name: Clone chilcote-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/chilcote-recipes
+      #     fetch-depth: 0
       #     path: autopkg/chilcote-recipes
 
       # - name: Clone clburlison-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/clburlison-recipes
+      #     fetch-depth: 0
       #     path: autopkg/clburlison-recipes
 
       # - name: Clone crystalllized-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/crystalllized-recipes
+      #     fetch-depth: 0
       #     path: autopkg/crystalllized-recipes
 
       # - name: Clone ctueck-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/ctueck-recipes
+      #     fetch-depth: 0
       #     path: autopkg/ctueck-recipes
 
       # - name: Clone d33t5-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/d33t5-recipes
+      #     fetch-depth: 0
       #     path: autopkg/d33t5-recipes
 
       # - name: Clone dankeller-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/dankeller-recipes
+      #     fetch-depth: 0
       #     path: autopkg/dankeller-recipes
 
       # - name: Clone Darkomen78-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/Darkomen78-recipes
+      #     fetch-depth: 0
       #     path: autopkg/Darkomen78-recipes
 
       # - name: Clone dataJAR-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/dataJAR-recipes
+      #     fetch-depth: 0
       #     path: autopkg/dataJAR-recipes
 
       # - name: Clone dcoobs-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/dcoobs-recipes
+      #     fetch-depth: 0
       #     path: autopkg/dcoobs-recipes
 
       # - name: Clone denmoff-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/denmoff-recipes
+      #     fetch-depth: 0
       #     path: autopkg/denmoff-recipes
 
       # - name: Clone drewdiver-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/drewdiver-recipes
+      #     fetch-depth: 0
       #     path: autopkg/drewdiver-recipes
 
       # - name: Clone eholtam-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/eholtam-recipes
+      #     fetch-depth: 0
       #     path: autopkg/eholtam-recipes
 
       # - name: Clone erikng-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/erikng-recipes
+      #     fetch-depth: 0
       #     path: autopkg/erikng-recipes
 
       # - name: Clone faumac-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/faumac-recipes
+      #     fetch-depth: 0
       #     path: autopkg/faumac-recipes
 
       # - name: Clone filewave repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/filewave
+      #     fetch-depth: 0
       #     path: autopkg/filewave
 
       # - name: Clone fishd72-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/fishd72-recipes
+      #     fetch-depth: 0
       #     path: autopkg/fishd72-recipes
 
       # - name: Clone flammable-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/flammable-recipes
+      #     fetch-depth: 0
       #     path: autopkg/flammable-recipes
 
       # - name: Clone flywire-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/flywire-recipes
+      #     fetch-depth: 0
       #     path: autopkg/flywire-recipes
 
       # - name: Clone foigus-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/foigus-recipes
+      #     fetch-depth: 0
       #     path: autopkg/foigus-recipes
 
       # - name: Clone ftiff-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/ftiff-recipes
+      #     fetch-depth: 0
       #     path: autopkg/ftiff-recipes
 
       # - name: Clone gerardkok-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/gerardkok-recipes
+      #     fetch-depth: 0
       #     path: autopkg/gerardkok-recipes
 
       # - name: Clone gilbertpalau-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/gilbertpalau-recipes
+      #     fetch-depth: 0
       #     path: autopkg/gilbertpalau-recipes
 
       # - name: Clone giobbi-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/giobbi-recipes
+      #     fetch-depth: 0
       #     path: autopkg/giobbi-recipes
 
       # - name: Clone gmarnin-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/gmarnin-recipes
+      #     fetch-depth: 0
       #     path: autopkg/gmarnin-recipes
 
       # - name: Clone golbiga-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/golbiga-recipes
+      #     fetch-depth: 0
       #     path: autopkg/golbiga-recipes
 
       # - name: Clone grahamgilbert-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/grahamgilbert-recipes
+      #     fetch-depth: 0
       #     path: autopkg/grahamgilbert-recipes
 
       # - name: Clone grahampugh-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/grahampugh-recipes
+      #     fetch-depth: 0
       #     path: autopkg/grahampugh-recipes
 
       # - name: Clone gregneagle-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/gregneagle-recipes
+      #     fetch-depth: 0
       #     path: autopkg/gregneagle-recipes
 
       # - name: Clone groob-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/groob-recipes
+      #     fetch-depth: 0
       #     path: autopkg/groob-recipes
 
       # - name: Clone haircut-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/haircut-recipes
+      #     fetch-depth: 0
       #     path: autopkg/haircut-recipes
 
       # - name: Clone hansen-m-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/hansen-m-recipes
+      #     fetch-depth: 0
       #     path: autopkg/hansen-m-recipes
 
       # - name: Clone hjuutilainen-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/hjuutilainen-recipes
+      #     fetch-depth: 0
       #     path: autopkg/hjuutilainen-recipes
 
       # - name: Clone HobbitHardcase-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/HobbitHardcase-recipes
+      #     fetch-depth: 0
       #     path: autopkg/HobbitHardcase-recipes
 
       # - name: Clone homebysix-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/homebysix-recipes
+      #     fetch-depth: 0
       #     path: autopkg/homebysix-recipes
 
       # - name: Clone its-unibas-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/its-unibas-recipes
+      #     fetch-depth: 0
       #     path: autopkg/its-unibas-recipes
 
       # - name: Clone jaharmi-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jaharmi-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jaharmi-recipes
 
       # - name: Clone jannheider-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jannheider-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jannheider-recipes
 
       # - name: Clone jazzace-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jazzace-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jazzace-recipes
 
       # - name: Clone jbaker10-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jbaker10-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jbaker10-recipes
 
       # - name: Clone jessepeterson-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jessepeterson-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jessepeterson-recipes
 
       # - name: Clone jleggat-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jleggat-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jleggat-recipes
 
       # - name: Clone jlehikoinen-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jlehikoinen-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jlehikoinen-recipes
 
       # - name: Clone joncrain-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/joncrain-recipes
+      #     fetch-depth: 0
       #     path: autopkg/joncrain-recipes
 
       # - name: Clone joshua-d-miller-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/joshua-d-miller-recipes
+      #     fetch-depth: 0
       #     path: autopkg/joshua-d-miller-recipes
 
       # - name: Clone jpiel-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jpiel-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jpiel-recipes
 
       # - name: Clone jps3-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jps3-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jps3-recipes
 
       # - name: Clone jrsd-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jrsd-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jrsd-recipes
 
       # - name: Clone jss-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/jss-recipes
+      #     fetch-depth: 0
       #     path: autopkg/jss-recipes
 
       # - name: Clone justinrummel-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/justinrummel-recipes
+      #     fetch-depth: 0
       #     path: autopkg/justinrummel-recipes
 
       # - name: Clone keeleysam-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/keeleysam-recipes
+      #     fetch-depth: 0
       #     path: autopkg/keeleysam-recipes
 
       # - name: Clone kevinmcox-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/kevinmcox-recipes
+      #     fetch-depth: 0
       #     path: autopkg/kevinmcox-recipes
 
       # - name: Clone killahquam-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/killahquam-recipes
+      #     fetch-depth: 0
       #     path: autopkg/killahquam-recipes
 
       # - name: Clone kitzy-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/kitzy-recipes
+      #     fetch-depth: 0
       #     path: autopkg/kitzy-recipes
 
       # - name: Clone lashomb-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/lashomb-recipes
+      #     fetch-depth: 0
       #     path: autopkg/lashomb-recipes
 
       # - name: Clone lrz-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/lrz-recipes
+      #     fetch-depth: 0
       #     path: autopkg/lrz-recipes
 
       # - name: Clone luisgiraldo-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/luisgiraldo-recipes
+      #     fetch-depth: 0
       #     path: autopkg/luisgiraldo-recipes
 
       # - name: Clone macprince-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/macprince-recipes
+      #     fetch-depth: 0
       #     path: autopkg/macprince-recipes
 
       # - name: Clone macvfx-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/macvfx-recipes
+      #     fetch-depth: 0
       #     path: autopkg/macvfx-recipes
 
       # - name: Clone MichalMMac-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/MichalMMac-recipes
+      #     fetch-depth: 0
       #     path: autopkg/MichalMMac-recipes
 
       # - name: Clone mikestechshop-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/mikestechshop-recipes
+      #     fetch-depth: 0
       #     path: autopkg/mikestechshop-recipes
 
       # - name: Clone MLBZ521-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/MLBZ521-recipes
+      #     fetch-depth: 0
       #     path: autopkg/MLBZ521-recipes
 
       # - name: Clone moofit-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/moofit-recipes
+      #     fetch-depth: 0
       #     path: autopkg/moofit-recipes
 
       # - name: Clone morgrowe-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/morgrowe-recipes
+      #     fetch-depth: 0
       #     path: autopkg/morgrowe-recipes
 
       # - name: Clone mosen-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/mosen-recipes
+      #     fetch-depth: 0
       #     path: autopkg/mosen-recipes
 
       # - name: Clone munkireport-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/munkireport-recipes
+      #     fetch-depth: 0
       #     path: autopkg/munkireport-recipes
 
       # - name: Clone n8felton-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/n8felton-recipes
+      #     fetch-depth: 0
       #     path: autopkg/n8felton-recipes
 
       # - name: Clone natewalck-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/natewalck-recipes
+      #     fetch-depth: 0
       #     path: autopkg/natewalck-recipes
 
       # - name: Clone nbalonso-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/nbalonso-recipes
+      #     fetch-depth: 0
       #     path: autopkg/nbalonso-recipes
 
       # - name: Clone neilmartin83-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/neilmartin83-recipes
+      #     fetch-depth: 0
       #     path: autopkg/neilmartin83-recipes
 
       # - name: Clone nmcspadden-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/nmcspadden-recipes
+      #     fetch-depth: 0
       #     path: autopkg/nmcspadden-recipes
 
       # - name: Clone novaksam-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/novaksam-recipes
+      #     fetch-depth: 0
       #     path: autopkg/novaksam-recipes
 
       # - name: Clone nstrauss-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/nstrauss-recipes
+      #     fetch-depth: 0
       #     path: autopkg/nstrauss-recipes
 
       # - name: Clone nzmacgeek-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/nzmacgeek-recipes
+      #     fetch-depth: 0
       #     path: autopkg/nzmacgeek-recipes
 
       # - name: Clone oliverweinm-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/oliverweinm-recipes
+      #     fetch-depth: 0
       #     path: autopkg/oliverweinm-recipes
 
       # - name: Clone orbsmiv-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/orbsmiv-recipes
+      #     fetch-depth: 0
       #     path: autopkg/orbsmiv-recipes
 
       # - name: Clone orchard-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/orchard-recipes
+      #     fetch-depth: 0
       #     path: autopkg/orchard-recipes
 
       # - name: Clone patgmac-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/patgmac-recipes
+      #     fetch-depth: 0
       #     path: autopkg/patgmac-recipes
 
       # - name: Clone paul-cossey-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/paul-cossey-recipes
+      #     fetch-depth: 0
       #     path: autopkg/paul-cossey-recipes
 
       # - name: Clone peetinc-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/peetinc-recipes
+      #     fetch-depth: 0
       #     path: autopkg/peetinc-recipes
 
       # - name: Clone peshay-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/peshay-recipes
+      #     fetch-depth: 0
       #     path: autopkg/peshay-recipes
 
       # - name: Clone peterkelm-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/peterkelm-recipes
+      #     fetch-depth: 0
       #     path: autopkg/peterkelm-recipes
 
       # - name: Clone precursorca-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/precursorca-recipes
+      #     fetch-depth: 0
       #     path: autopkg/precursorca-recipes
 
       # - name: Clone primalcurve-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/primalcurve-recipes
+      #     fetch-depth: 0
       #     path: autopkg/primalcurve-recipes
 
       # - name: Clone prochat-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/prochat-recipes
+      #     fetch-depth: 0
       #     path: autopkg/prochat-recipes
 
       # - name: Clone psaintemarie-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/psaintemarie-recipes
+      #     fetch-depth: 0
       #     path: autopkg/psaintemarie-recipes
 
       # - name: Clone rderewianko-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/rderewianko-recipes
+      #     fetch-depth: 0
       #     path: autopkg/rderewianko-recipes
 
       # - name: Clone recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/recipes
+      #     fetch-depth: 0
       #     path: autopkg/recipes
 
       # - name: Clone rmanly-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/rmanly-recipes
+      #     fetch-depth: 0
       #     path: autopkg/rmanly-recipes
 
       # - name: Clone robperc-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/robperc-recipes
+      #     fetch-depth: 0
       #     path: autopkg/robperc-recipes
 
       # - name: Clone rtrouton-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/rtrouton-recipes
+      #     fetch-depth: 0
       #     path: autopkg/rtrouton-recipes
 
       # - name: Clone rustymyers-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/rustymyers-recipes
+      #     fetch-depth: 0
       #     path: autopkg/rustymyers-recipes
 
       # - name: Clone scriptingosx-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/scriptingosx-recipes
+      #     fetch-depth: 0
       #     path: autopkg/scriptingosx-recipes
 
       # - name: Clone seansgm-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/seansgm-recipes
+      #     fetch-depth: 0
       #     path: autopkg/seansgm-recipes
 
       # - name: Clone sebtomasi-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/sebtomasi-recipes
+      #     fetch-depth: 0
       #     path: autopkg/sebtomasi-recipes
 
       # - name: Clone skoobasteeve-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/skoobasteeve-recipes
+      #     fetch-depth: 0
       #     path: autopkg/skoobasteeve-recipes
 
       # - name: Clone smithjw-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/smithjw-recipes
+      #     fetch-depth: 0
       #     path: autopkg/smithjw-recipes
 
       # - name: Clone swy-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/swy-recipes
+      #     fetch-depth: 0
       #     path: autopkg/swy-recipes
 
       # - name: Clone tallfunnyjew-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/tallfunnyjew-recipes
+      #     fetch-depth: 0
       #     path: autopkg/tallfunnyjew-recipes
 
       # - name: Clone tbridge-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/tbridge-recipes
+      #     fetch-depth: 0
       #     path: autopkg/tbridge-recipes
 
       # - name: Clone Tecnico1931-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/Tecnico1931-recipes
+      #     fetch-depth: 0
       #     path: autopkg/Tecnico1931-recipes
 
       # - name: Clone TekTekkers-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/TekTekkers-recipes
+      #     fetch-depth: 0
       #     path: autopkg/TekTekkers-recipes
 
       # - name: Clone thenikola-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/thenikola-recipes
+      #     fetch-depth: 0
       #     path: autopkg/thenikola-recipes
 
       # - name: Clone timsutton-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/timsutton-recipes
+      #     fetch-depth: 0
       #     path: autopkg/timsutton-recipes
 
       # - name: Clone triti-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/triti-recipes
+      #     fetch-depth: 0
       #     path: autopkg/triti-recipes
 
       # - name: Clone ucam-apple-support-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/ucam-apple-support-recipes
+      #     fetch-depth: 0
       #     path: autopkg/ucam-apple-support-recipes
 
       # - name: Clone valdore86-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/valdore86-recipes
+      #     fetch-depth: 0
       #     path: autopkg/valdore86-recipes
 
       # - name: Clone Vinrobot-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/Vinrobot-recipes
+      #     fetch-depth: 0
       #     path: autopkg/Vinrobot-recipes
 
       # - name: Clone vmiller-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/vmiller-recipes
+      #     fetch-depth: 0
       #     path: autopkg/vmiller-recipes
 
       # - name: Clone vmule-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/vmule-recipes
+      #     fetch-depth: 0
       #     path: autopkg/vmule-recipes
 
       # - name: Clone wardsparadox-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/wardsparadox-recipes
+      #     fetch-depth: 0
       #     path: autopkg/wardsparadox-recipes
 
       # - name: Clone watchmanmonitoring-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/watchmanmonitoring-recipes
+      #     fetch-depth: 0
       #     path: autopkg/watchmanmonitoring-recipes
 
       # - name: Clone weswhet-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/weswhet-recipes
+      #     fetch-depth: 0
       #     path: autopkg/weswhet-recipes
 
       # - name: Clone wholtz-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/wholtz-recipes
+      #     fetch-depth: 0
       #     path: autopkg/wholtz-recipes
 
       # - name: Clone wycomco-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/wycomco-recipes
+      #     fetch-depth: 0
       #     path: autopkg/wycomco-recipes
 
       # - name: Clone ygini-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/ygini-recipes
+      #     fetch-depth: 0
       #     path: autopkg/ygini-recipes
 
       # - name: Clone Yohan460-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/Yohan460-recipes
+      #     fetch-depth: 0
       #     path: autopkg/Yohan460-recipes
 
       # - name: Clone zachtarr-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/zachtarr-recipes
+      #     fetch-depth: 0
       #     path: autopkg/zachtarr-recipes
 
       # - name: Clone zentral-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/zentral-recipes
+      #     fetch-depth: 0
       #     path: autopkg/zentral-recipes
 
       # - name: Clone znerol-recipes repository
       #   uses: actions/checkout@v2
       #   with:
       #     repository: autopkg/znerol-recipes
+      #     fetch-depth: 0
       #     path: autopkg/znerol-recipes
 
       - name: Clone this repository

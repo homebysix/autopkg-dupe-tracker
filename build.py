@@ -22,7 +22,7 @@ __version__ = "3.0.0"
 # The directory that contains clones of all AutoPkg repos. Recommend using a
 # bulk clone tool like Repo Lasso (https://github.com/homebysix/repo-lasso) to
 # create this base directory.
-REPOS_BASE = "./autopkg"
+REPOS_BASE = "../autopkg"
 
 # GitHub project name, for generating GitHub Pages URLs
 PROJECT = "autopkg-dupe-tracker"

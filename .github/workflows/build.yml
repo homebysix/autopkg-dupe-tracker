@@ -17,10 +17,9 @@ jobs:
           path: main
 
       - name: Clone AutoPkg org repos
-        working-directory: main
         env:
           PA_TOKEN: ${{ secrets.PAT_SECRET }}
-        run: .github/clone.sh
+        run: ./main/.github/clone.sh
         shell: bash
 
       - name: Analyze recipes and rebuild site
@@ -29,5 +28,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           ./build.py
-          git add -A
-          git commit -am "Analyze recipes and rebuild site" || true
+          git add docs/ || true
+          git commit -m "Analyze recipes and rebuild site" docs/ || true
+          # git push --set-upstream origin main || true

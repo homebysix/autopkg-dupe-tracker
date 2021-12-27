@@ -39,10 +39,6 @@ def get_recipes():
         + glob(f"{REPOS_BASE}/*/*/*.recipe.yaml")
     )
 
-    # DEBUG
-    print(recipe_paths)
-    exit(0)
-
     # Read contents and metadata of recipes
     recipes = {}
     for full_path in recipe_paths:

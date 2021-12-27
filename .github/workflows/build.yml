@@ -29,5 +29,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           ./build.py
-          # git add -A
-          # git commit -am "Analyze recipes and rebuild site" || true
+          git add -A
+          git commit -am "Analyze recipes and rebuild site" || true

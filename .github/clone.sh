@@ -3,11 +3,11 @@
 git config --global http.postBuffer 1024M
 
 clone() {
-    if ! git clone "git@github.com:$1.git" "$1"; then
+    if ! git clone "https://github.com/$1.git" "$1"; then
         echo "$1 try 2..."
-        if ! git clone "git@github.com:$1.git" "$1"; then
+        if ! git clone "https://github.com/$1.git" "$1"; then
             echo "$1 try 3..."
-            if ! git clone "git@github.com:$1.git" "$1"; then
+            if ! git clone "https://github.com/$1.git" "$1"; then
                 echo "WARNING: Failed to clone $1 after 3 tries."
             fi
         fi

@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    if: github.repository_owner == 'homebysix'
     runs-on: ubuntu-latest
 
     steps:
@@ -832,9 +833,16 @@ jobs:
       #     repository: autopkg/znerol-recipes
       #     path: autopkg/znerol-recipes
 
+      - name: Clone this repository
+        uses: actions/checkout@v2
+        with:
+          path: main
+
       - name: Rebuild site
+        working_directory: main
         run: |
-          # git config user.name github-actions
-          # git config user.email github-actions@github.com
-          pwd
-          ls -la
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          ./build.py
+          # git add -A
+          # git commit -am "Analyze recipes and rebuild site" || true

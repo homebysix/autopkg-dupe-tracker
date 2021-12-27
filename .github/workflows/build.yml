@@ -839,7 +839,7 @@ jobs:
           path: main
 
       - name: Rebuild site
-        working_directory: main
+        working-directory: main
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com

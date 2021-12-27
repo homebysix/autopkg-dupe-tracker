@@ -12,8 +12,20 @@
 
 <body>
     <h1>EgnyteDesktopSync.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: Downloads the latest version of Egnyte Desktop Sync and imports it into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/homebysix-recipes/">homebysix-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest version of Egnyte Desktop Sync and imports it into Munki.
 
 This recipe generally follows the guidelines outlined on this KB article:
     https://helpdesk.egnyte.com/hc/en-us/articles/202982694
@@ -28,11 +40,26 @@ The following input variables should be customized to your organization using a 
 - SYNC_SPECIAL_CHAR_FILENAME
 
 NOTE: According to Egnyte, Desktop Sync will no longer be supported after December 31st, 2019. This recipe will be deprecated at some point in the future.
-</p>
-    <p>Identifier: <code>com.github.homebysix.munki.EgnyteDesktopSync</code></p>
-    <p>Parent Recipes: com.github.homebysix.download.EgnyteDesktopSync</p>
-    <p>First commit: 2015-10-02 10:18:01 -0700</p>
-    <p>Latest commit: 2016-10-05 17:07:30 -0700</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.homebysix.munki.EgnyteDesktopSync</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.homebysix.download.EgnyteDesktopSync</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2015-10-02 10:18:01 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2016-10-05 17:07:30 -0700</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate NAMEs (<code>egnytedesktopsync.munki</code>):</p>

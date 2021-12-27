@@ -2,3 +2,10 @@ body {
   max-width: 1200px;
   margin: 3rem auto;
 }
+
+td.recipe_key {
+  text-align: right;
+}
+td.recipe_val {
+  text-align: left;
+}

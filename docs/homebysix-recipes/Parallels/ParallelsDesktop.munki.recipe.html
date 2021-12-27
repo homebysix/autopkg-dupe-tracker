@@ -12,8 +12,20 @@
 
 <body>
     <h1>ParallelsDesktop.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: Downloads the latest version of Parallels Desktop and imports it into Munki. This recipe has been tested with major versions 9 through 16.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/homebysix-recipes/">homebysix-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest version of Parallels Desktop and imports it into Munki. This recipe has been tested with major versions 9 through 16.
 
 For major versions 9 through 15, leave the PLATFORM_ARCH blank in your override.
 
@@ -21,11 +33,26 @@ For major version 16, set the PLATFORM_ARCH in your override to either "intel" o
 
 For major version 17, set the PLATFORM_ARCH in your override to "image"
 
-This recipe differs from the one in keeleysam-recipes because it offers code signature verification, does not require a ParallelsURLProvider processor, and also includes pkg and install recipes.</p>
-    <p>Identifier: <code>com.github.homebysix.munki.ParallelsDesktop</code></p>
-    <p>Parent Recipes: com.github.homebysix.pkg.ParallelsDesktop</p>
-    <p>First commit: 2015-09-15 15:46:34 -0700</p>
-    <p>Latest commit: 2020-12-15 10:06:00 -0800</p>
+This recipe differs from the one in keeleysam-recipes because it offers code signature verification, does not require a ParallelsURLProvider processor, and also includes pkg and install recipes.</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.homebysix.munki.ParallelsDesktop</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.homebysix.pkg.ParallelsDesktop</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2015-09-15 15:46:34 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2020-12-15 10:06:00 -0800</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>parallelsdesktop.munki.recipe</code>):</p>

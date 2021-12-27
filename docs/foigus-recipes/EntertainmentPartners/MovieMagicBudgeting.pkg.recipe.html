@@ -12,8 +12,20 @@
 
 <body>
     <h1>MovieMagicBudgeting.pkg.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Packages Movie Magic Budgeting.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/foigus-recipes/">foigus-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Packages Movie Magic Budgeting.
 
 Notes:
 - This recipe requires installing BOTH AutoPkg AND the Movie Magic Budgeting itself--the latter BY HAND.  IDEALLY this would occur in a clean virtual machine, and is not intended to occur on an AutoPkg "server".  Thank Flexera InstallAnywhere and a cross-platform Java-based application for this incredibly strange recipe.
@@ -22,11 +34,26 @@ Notes:
 
 I'm skipping a few things I normally do for my AutoPkg recipes:
 - CodeSignatureVerifier: Presumably this software has been manually sourced from a trusted location and then manually installed
-- A .munki Recipe: Since the retrieval of the Movie Magic Budgeting installer is manual, the installation is manual, and running this recipe on a clean VM is manual, there doesn't seem to make much sense to automate the import of the resulting package into Munki.  Due to the lack of a .munki recipe, please ensure your pkginfo has "MM Budgeting" as a blocking_application</p>
-    <p>Identifier: <code>com.github.foigus.pkg.MovieMagicBudgeting</code></p>
-    <p>Parent Recipes: None</p>
-    <p>First commit: 2019-08-21 15:06:51 -0500</p>
-    <p>Latest commit: 2019-08-21 15:29:35 -0500</p>
+- A .munki Recipe: Since the retrieval of the Movie Magic Budgeting installer is manual, the installation is manual, and running this recipe on a clean VM is manual, there doesn't seem to make much sense to automate the import of the resulting package into Munki.  Due to the lack of a .munki recipe, please ensure your pkginfo has "MM Budgeting" as a blocking_application</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.foigus.pkg.MovieMagicBudgeting</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">None</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2019-08-21 15:06:51 -0500</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2019-08-21 15:29:35 -0500</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

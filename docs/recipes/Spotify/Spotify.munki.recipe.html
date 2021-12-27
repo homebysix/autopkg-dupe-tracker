@@ -12,8 +12,20 @@
 
 <body>
     <h1>Spotify.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:11</p>
-    <p>Desciption: Downloads the latest Spotify and imports into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/recipes/">recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:08</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest Spotify and imports into Munki.
 
 Note: 1.0.50 and 1.0.51 versions of Spotify has mode 744 for its executables,
 causing the app to not launch for any user except the user who installed
@@ -22,11 +34,26 @@ by adding group and owner +x to these files.
 
 Related GitHub issue:
 https://github.com/autopkg/recipes/issues/196
-</p>
-    <p>Identifier: <code>com.github.autopkg.munki.Spotify</code></p>
-    <p>Parent Recipes: com.github.autopkg.download.Spotify</p>
-    <p>First commit: 2013-08-14 09:40:55 -0400</p>
-    <p>Latest commit: 2013-08-14 09:40:55 -0400</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.autopkg.munki.Spotify</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.autopkg.download.Spotify</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2013-08-14 09:40:55 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2013-08-14 09:40:55 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

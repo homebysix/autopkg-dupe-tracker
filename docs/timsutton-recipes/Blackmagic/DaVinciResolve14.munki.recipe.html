@@ -12,8 +12,20 @@
 
 <body>
     <h1>DaVinciResolve14.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:11</p>
-    <p>Desciption: Downloads the most recent version of DaVinci Resolve 14 and imports into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/timsutton-recipes/">timsutton-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:08</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the most recent version of DaVinci Resolve 14 and imports into Munki.
 
 Please see directions in the download recipe about additional Input variables required for this
 recipe.
@@ -33,11 +45,26 @@ One caveat with this package, is that this installer runs a script that evalutes
 the owner of /dev/console to derive a home directory, which then is configured system-wide
 as a cache location for Resolve. If this installer is run while a user is logged in, then
 this user's home will be used, and if run at the loginwindow, the root user's home will be.
-</p>
-    <p>Identifier: <code>com.github.timsutton.munki.davinciresolve14</code></p>
-    <p>Parent Recipes: com.github.timsutton.download.davinciresolve14</p>
-    <p>First commit: 2017-09-19 10:40:22 -0400</p>
-    <p>Latest commit: 2017-09-19 10:40:22 -0400</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.timsutton.munki.davinciresolve14</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.timsutton.download.davinciresolve14</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2017-09-19 10:40:22 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2017-09-19 10:40:22 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>davinciresolve.munki.recipe</code>):</p>

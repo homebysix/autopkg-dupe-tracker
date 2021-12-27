@@ -12,19 +12,46 @@
 
 <body>
     <h1>SketchUpPro.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: Downloads the latest version of SketchUp Pro by looking for the first match on the download page, then imports into your Munki repo. 
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/jps3-recipes/">jps3-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:07</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest version of SketchUp Pro by looking for the first match on the download page, then imports into your Munki repo. 
 		
 You can specify LOCALE (default: en) for alternative languages. At last check locales were: en, de, es, fr, it, ja, ko.
 
 Note (20-Mar-2018): The previous functionality of this recipe which attempted to allow for easy configuration of which "RELEASE_YEAR" version to download and process was not working well due to the not-quite-straightforward way the developer creates their URL patterns. For the time being that functionality has been reverted such that RELEASE_YEAR is used as a convenience variable to limit the number of locations you would need to edit in your overrides. (You will need to update or recreate your RecipeOverride(s) for these changes to take effect for you.
 
 Note (21-Mar-2018): If you encounter any errors in AutoPkg with these recipes, I recommend: (a) recreate your override(s); (b) rename or delete the cached downloads as that has cleared up the majority of hdiutil-related errors for me. Whether you save your receipts or not is up to your conscience and accountant.
-</p>
-    <p>Identifier: <code>com.github.jps3.munki.SketchUpPro</code></p>
-    <p>Parent Recipes: com.github.jps3.download.SketchUpPro</p>
-    <p>First commit: 2014-04-22 10:14:47 -0400</p>
-    <p>Latest commit: 2018-03-21 18:09:06 -0400</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jps3.munki.SketchUpPro</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jps3.download.SketchUpPro</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2014-04-22 10:14:47 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2018-03-21 18:09:06 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>sketchuppro.munki.recipe</code>):</p>

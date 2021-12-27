@@ -12,8 +12,20 @@
 
 <body>
     <h1>EpsonProDrivers.ds.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: Downloads latest version of the Epson product driver from Epson's site, 
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads latest version of the Epson product driver from Epson's site, 
 extracts the package from the dmg, and copies it to a local path of your choosing.
 These will generally be drivers for professional printers and the like not included in
 the drivers supplied by Apple.
@@ -30,11 +42,26 @@ Note 2: Normally, we would use the related .pkg recipe as a parent and copy the 
 local repo, but the way in which AutoPkg evaluates variables means that we cannot have a .pkg 
 recipe that copies the package to the AutoPkg cache or to a desired path using an input 
 variable. So this recipe is identical to the .pkg version except that a destination 
-path is included in the Input keys.</p>
-    <p>Identifier: <code>com.github.jazzace.ds.EpsonProDrivers</code></p>
-    <p>Parent Recipes: com.github.jazzace.download.EpsonProDrivers</p>
-    <p>First commit: 2015-05-05 12:14:33 -0600</p>
-    <p>Latest commit: 2015-09-02 16:45:40 -0600</p>
+path is included in the Input keys.</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.ds.EpsonProDrivers</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.download.EpsonProDrivers</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2015-05-05 12:14:33 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2015-09-02 16:45:40 -0600</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

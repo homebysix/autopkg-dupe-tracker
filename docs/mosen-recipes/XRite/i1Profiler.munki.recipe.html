@@ -12,8 +12,20 @@
 
 <body>
     <h1>i1Profiler.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: 
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/mosen-recipes/">mosen-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:07</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">
     Import X-Rite i1Profiler into your munki repository (Using the unattended package created by i1Profiler.pkg).
 
     OVERRIDES
@@ -29,11 +41,26 @@
         pkginfo - The default template pkginfo. The hasp installer does not always run (com.xrite.hasp.installer.pkg), therefore 
         by default it must be marked as optional to prevent munki from showing the item as not installed.
 
-    </p>
-    <p>Identifier: <code>com.github.mosen.munki.i1Profiler</code></p>
-    <p>Parent Recipes: com.github.mosen.download.i1Profiler</p>
-    <p>First commit: 2013-10-08 11:59:17 +1100</p>
-    <p>Latest commit: 2013-10-08 11:59:17 +1100</p>
+    </td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.mosen.munki.i1Profiler</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.mosen.download.i1Profiler</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2013-10-08 11:59:17 +1100</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2013-10-08 11:59:17 +1100</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames (<code>i1profiler.munki.recipe</code>):</p>

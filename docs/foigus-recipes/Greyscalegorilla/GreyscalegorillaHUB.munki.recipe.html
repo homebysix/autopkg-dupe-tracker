@@ -12,19 +12,46 @@
 
 <body>
     <h1>GreyscalegorillaHUB.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Packages Greyscalegorilla HUB plugin for Cinema 4D and imports it into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/foigus-recipes/">foigus-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Packages Greyscalegorilla HUB plugin for Cinema 4D and imports it into Munki.
 
 NOTES:
 - This recipe needs the version of Cinema 4D to be defined in the Input, since the installation is path-specific and hopefully _should_ work for many versions of Cinema 4D
 - This recipe needs the version of Greyscalegorilla HUB to be defined in the Input.  Right _now_ the "version.txt" file inside the download says version "1206", while the plugin itself says both "1.206" and "OSX_23_Build_117" so I leave this choice to the AutoPkg admin
 - This recipe does not download the Greyscalegorilla HUB installation media--feed the compressed file into the recipe via the following format:
 
-autopkg run GreyscalegorillaHUB.munki -p /path/to/the/appropriate/osx_rVERSION_greyscalegorillahub.zip</p>
-    <p>Identifier: <code>com.github.foigus.munki.GreyscalegorillaHUB</code></p>
-    <p>Parent Recipes: com.github.foigus.pkg.GreyscalegorillaHUB</p>
-    <p>First commit: 2021-10-20 16:27:32 -0500</p>
-    <p>Latest commit: 2021-10-20 16:27:32 -0500</p>
+autopkg run GreyscalegorillaHUB.munki -p /path/to/the/appropriate/osx_rVERSION_greyscalegorillahub.zip</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.foigus.munki.GreyscalegorillaHUB</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.foigus.pkg.GreyscalegorillaHUB</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2021-10-20 16:27:32 -0500</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2021-10-20 16:27:32 -0500</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

@@ -12,8 +12,20 @@
 
 <body>
     <h1>SassafrasK2Client.ds.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: Fetches the latest Sassafras KeyClient Mac installer for versions 7.0-7.6 and copies it to a location of your choosing.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Fetches the latest Sassafras KeyClient Mac installer for versions 7.0-7.6 and copies it to a location of your choosing.
 Additionally, fetches the k2clientconfig tool from the Sassafras website
 for the purposes of customizing the installer. If you do not wish/need to customize
 the installer (e.g., in order to copy the Client to a Self-Updates server), use the 
@@ -46,11 +58,26 @@ but it should be further investigated.
 Sassafras uses two decimals in their pkg versions (skipping the third) but
 uses three decimals everywhere else (webpage, actual bundle files, preference
 pane, etc.), so we use the three-decimal version.
-</p>
-    <p>Identifier: <code>com.github.jazzace.ds.sassafras-k2client</code></p>
-    <p>Parent Recipes: com.github.autopkg.download.sassafras-k2client</p>
-    <p>First commit: 2018-10-03 16:28:41 -0600</p>
-    <p>Latest commit: 2018-10-03 16:28:41 -0600</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.ds.sassafras-k2client</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.autopkg.download.sassafras-k2client</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2018-10-03 16:28:41 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2018-10-03 16:28:41 -0600</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate URLDownloader URLs (<code>https://www.sassafras.com/k2/revisions%REVISION%/current/Installers/Macintosh%20Installers/Misc/k2clientconfig</code>):</p>

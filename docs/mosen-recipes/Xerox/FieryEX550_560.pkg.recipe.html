@@ -12,8 +12,20 @@
 
 <body>
     <h1>FieryEX550_560.pkg.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:10</p>
-    <p>Desciption: 
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/mosen-recipes/">mosen-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:07</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">
     Convert the Fiery driver to a non-interactive installer package by removing the Install Wizard.app
 
     The original installer works by installing to "/tmp/Fiery Printer Driver Installer.app", then the postinstall executes or copies from
@@ -21,11 +33,26 @@
 
     Our strategy is to extract and unpack the inner package, delete the interactive wizard (causing the postinstall to skip the interactive setup),
     and then re-pack the installer with the original postinstall scripts.
-    </p>
-    <p>Identifier: <code>com.github.mosen.pkg.FieryEX550_560</code></p>
-    <p>Parent Recipes: com.github.mosen.download.FieryEX550_560</p>
-    <p>First commit: 2014-05-22 11:08:10 +1000</p>
-    <p>Latest commit: 2014-05-22 11:08:10 +1000</p>
+    </td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.mosen.pkg.FieryEX550_560</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.mosen.download.FieryEX550_560</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2014-05-22 11:08:10 +1000</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2014-05-22 11:08:10 +1000</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

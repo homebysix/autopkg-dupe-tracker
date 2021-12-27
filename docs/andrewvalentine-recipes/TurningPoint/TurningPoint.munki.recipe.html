@@ -12,8 +12,20 @@
 
 <body>
     <h1>TurningPoint.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Downloads and imports the current version of TurningPoint into Munki. Note the following:
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/andrewvalentine-recipes/">andrewvalentine-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:05</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads and imports the current version of TurningPoint into Munki. Note the following:
 
 - A preinstall script is provided that removes the old TurningPoint.app. As Turning Technologies changed the bundle name to TurningPoint App.app, this step is required if you want to remove the deprecated bundle as part of the update.
 - A postinstall script is provided that automates the setup of integration with Microsoft Powerpoint.
@@ -21,11 +33,26 @@
 
 If you do not wish to use these scripts, you should address this in your recipe override.
 
-If you work in a business or educational environment, you should be aware of what version of the software your organization currently supports and is licensed for before using this recipe.</p>
-    <p>Identifier: <code>com.github.andrewvalentine.munki.TurningPoint</code></p>
-    <p>Parent Recipes: com.github.andrewvalentine.download.TurningPoint</p>
-    <p>First commit: 2017-04-14 21:42:50 +0100</p>
-    <p>Latest commit: 2019-06-21 21:55:21 -0700</p>
+If you work in a business or educational environment, you should be aware of what version of the software your organization currently supports and is licensed for before using this recipe.</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.andrewvalentine.munki.TurningPoint</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.andrewvalentine.download.TurningPoint</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2017-04-14 21:42:50 +0100</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2019-06-21 21:55:21 -0700</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

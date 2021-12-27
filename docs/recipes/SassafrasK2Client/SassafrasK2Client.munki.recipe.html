@@ -12,8 +12,20 @@
 
 <body>
     <h1>SassafrasK2Client.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:11</p>
-    <p>Desciption: Fetches the latest Sassafras KeyClient Mac installer and imports into
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/recipes/">recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:08</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Fetches the latest Sassafras KeyClient Mac installer and imports into
 Munki. Additionally, fetch the k2clientconfig tool from the Sassafras website
 for the purposes of customizing the installer.
 
@@ -43,11 +55,26 @@ pane, etc.), so we use the three-decimal version.
 The 7.2.0.3 installer has a known issue with version numbers in the pkg
 components, but since we generate an installs item for KeyAccess.app already,
 we use its version in the pkginfo.
-</p>
-    <p>Identifier: <code>com.github.autopkg.munki.sassafras-k2client</code></p>
-    <p>Parent Recipes: com.github.autopkg.download.sassafras-k2client</p>
-    <p>First commit: 2013-08-14 09:40:55 -0400</p>
-    <p>Latest commit: 2013-08-14 09:40:55 -0400</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.autopkg.munki.sassafras-k2client</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.autopkg.download.sassafras-k2client</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2013-08-14 09:40:55 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2013-08-14 09:40:55 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate URLDownloader URLs (<code>https://www.sassafras.com/k2/revisions%REVISION%/current/Installers/Macintosh%20Installers/Misc/k2clientconfig</code>):</p>

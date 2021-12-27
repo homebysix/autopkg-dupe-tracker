@@ -12,17 +12,44 @@
 
 <body>
     <h1>CaptureOne.download.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Downloads the current release version of Capture One.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/foigus-recipes/">foigus-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the current release version of Capture One.
 
 NOTES:
 
 - Due to Phase One's decision to go with different versions for the software itself and marketing (e.g. Capture One version 13 is marketed as version 20), this recipe also has a MARKETING_VERSION variable to account for the discrepancy.
-- Major version upgrades of Capture One perpetual licenses are generally paid upgrades, however Phase One's update URL doesn't stop at major version boundaries (e.g. the update URL for Capture One 7 offers a download of Capture One 9) and new major versions of Capture One are paid updates.  In an attempt to avoid accidentally downloading (and subsequently importing) Capture One updates that require a paid update, we restrict to an ACTUAL_VERSION and a corresponding MARKETING_VERSION.  When Phase One releases a new major version, this recipe will break until ACTUAL_VERSION and MARKETING_VERSION are updated (either via override or by updating this recipe).</p>
-    <p>Identifier: <code>com.github.foigus.download.CaptureOne</code></p>
-    <p>Parent Recipes: None</p>
-    <p>First commit: 2016-02-24 20:46:27 -0600</p>
-    <p>Latest commit: 2021-12-11 09:42:19 -0600</p>
+- Major version upgrades of Capture One perpetual licenses are generally paid upgrades, however Phase One's update URL doesn't stop at major version boundaries (e.g. the update URL for Capture One 7 offers a download of Capture One 9) and new major versions of Capture One are paid updates.  In an attempt to avoid accidentally downloading (and subsequently importing) Capture One updates that require a paid update, we restrict to an ACTUAL_VERSION and a corresponding MARKETING_VERSION.  When Phase One releases a new major version, this recipe will break until ACTUAL_VERSION and MARKETING_VERSION are updated (either via override or by updating this recipe).</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.foigus.download.CaptureOne</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">None</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2016-02-24 20:46:27 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2021-12-11 09:42:19 -0600</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

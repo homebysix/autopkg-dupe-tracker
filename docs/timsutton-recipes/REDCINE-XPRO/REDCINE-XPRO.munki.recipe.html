@@ -12,8 +12,20 @@
 
 <body>
     <h1>REDCINE-XPRO.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:11</p>
-    <p>Desciption: Downloads the latest version of REDCINE-X PRO and imports into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/timsutton-recipes/">timsutton-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:08</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest version of REDCINE-X PRO and imports into Munki.
 
 There is some manipulation of the version info, to ensure a number
 that always increases. The REDCINE-X PRO.app contains a CFBundleVersion
@@ -22,11 +34,26 @@ version between these two numbers only for some releases, resulting
 in a version that doesn't always compare higher. For this reason
 we extract the CFBundleVersion and compare with this, as well as set
 the pkginfo version with this so that our latest is always the highest.
-</p>
-    <p>Identifier: <code>com.github.timsutton.munki.redcine-xpro</code></p>
-    <p>Parent Recipes: com.github.timsutton.download.redcine-xpro</p>
-    <p>First commit: 2013-11-11 12:58:08 -0500</p>
-    <p>Latest commit: 2017-05-31 15:32:47 -0400</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.timsutton.munki.redcine-xpro</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.timsutton.download.redcine-xpro</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2013-11-11 12:58:08 -0500</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2017-05-31 15:32:47 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

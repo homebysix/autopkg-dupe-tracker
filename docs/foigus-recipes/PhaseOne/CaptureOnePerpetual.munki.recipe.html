@@ -12,8 +12,20 @@
 
 <body>
     <h1>CaptureOnePerpetual.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Downloads the current release version of Capture One and imports it into Munki for use with perpetually-licensed Capture One.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/foigus-recipes/">foigus-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the current release version of Capture One and imports it into Munki for use with perpetually-licensed Capture One.
 
 Notes:
 
@@ -29,11 +41,26 @@ This recipe is made for Capture One when licensed perpetually and has the follow
 Expected uses of this recipe:
 
 - Capture One perpetual and Capture One subscription are in use: Recipe left in default state (STOP_ON_NO_NEW_DOWNLOAD is true, FORCE_MUNKIIMPORT is set)
-- Only Capture One perpetual licensing is in use: STOP_ON_NO_NEW_DOWNLOAD is overridden to false, FORCE_MUNKIIMPORT is overridden to a null/empty string (although the behavior _should_ be acceptable even if these variables are not overridden)</p>
-    <p>Identifier: <code>com.github.foigus.munki.CaptureOne</code></p>
-    <p>Parent Recipes: com.github.foigus.download.CaptureOne</p>
-    <p>First commit: 2020-12-15 08:36:13 -0600</p>
-    <p>Latest commit: 2020-12-15 08:36:13 -0600</p>
+- Only Capture One perpetual licensing is in use: STOP_ON_NO_NEW_DOWNLOAD is overridden to false, FORCE_MUNKIIMPORT is overridden to a null/empty string (although the behavior _should_ be acceptable even if these variables are not overridden)</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.foigus.munki.CaptureOne</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.foigus.download.CaptureOne</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2020-12-15 08:36:13 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2020-12-15 08:36:13 -0600</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

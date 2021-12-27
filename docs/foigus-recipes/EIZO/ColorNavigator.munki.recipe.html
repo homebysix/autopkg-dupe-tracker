@@ -12,8 +12,20 @@
 
 <body>
     <h1>ColorNavigator.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Downloads the latest ColorNavigator installer and imports it into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/foigus-recipes/">foigus-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:06</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest ColorNavigator installer and imports it into Munki.
 
 Relying on a package recipe to extract the ColorNavigator package since it currently ships on a read-write disk image.
 
@@ -21,11 +33,26 @@ Note this recipe adds the version number to the "name" of the recipe since EIZO 
 
 Reference: http://www.eizoglobal.com/support/db/products/software/search?k=colornavigators
 
-Requiring a logout since the GUI installer reopens ColorNavigator, but not from the CLI.  Also, updating calibration software while a user is using the monitor wouldn't be good.</p>
-    <p>Identifier: <code>com.github.foigus.munki.ColorNavigator</code></p>
-    <p>Parent Recipes: com.github.foigus.pkg.ColorNavigator</p>
-    <p>First commit: 2015-12-12 17:45:23 -0600</p>
-    <p>Latest commit: 2016-07-11 21:44:22 -0500</p>
+Requiring a logout since the GUI installer reopens ColorNavigator, but not from the CLI.  Also, updating calibration software while a user is using the monitor wouldn't be good.</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.foigus.munki.ColorNavigator</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.foigus.pkg.ColorNavigator</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2015-12-12 17:45:23 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2016-07-11 21:44:22 -0500</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>colornavigator.munki.recipe</code>):</p>

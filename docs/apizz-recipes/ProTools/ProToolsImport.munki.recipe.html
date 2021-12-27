@@ -12,8 +12,20 @@
 
 <body>
     <h1>ProToolsImport.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Copies the Pro Tools PKG out from a Pro Tools .dmg download, collects the version from the filename, and imports it into a munki_repo. Adds the specific Pro Tools Codecs and HD Driver versions to the `requires` array.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/apizz-recipes/">apizz-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:05</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Copies the Pro Tools PKG out from a Pro Tools .dmg download, collects the version from the filename, and imports it into a munki_repo. Adds the specific Pro Tools Codecs and HD Driver versions to the `requires` array.
 
 Refer to this article on the supported minimum & maximum supported macOS versions: http://avid.force.com/pkb/articles/en_US/Compatibility/Pro-Tools-System-Requirements
 
@@ -27,11 +39,26 @@ To use this recipe:
 6) Specify the munki item name for the Codecs as listed in your munki repo in the PROTOOLS_CODECS_NAME input variable. This name and the detected PKG version of the Codecs in the .dmg will be added to the `requires` array for Pro Tools.
 7) Refer to Avid's KB article on supported macOS versions (https://avid.secure.force.com/pkb/articles/en_US/Compatibility/Pro-Tools-System-Requirements) and update the PROTOOLS_MACOS_SUPPORTED_LIST accordingly. This will use the defined supported versions to compare with the installed version via a preinstall_script. If a supported version is not found, an exit status of 1 is produced and the item is not installed.
 8) Run the recipe.
-9) Profit.</p>
-    <p>Identifier: <code>com.github.apizz.munki.ProToolsImport</code></p>
-    <p>Parent Recipes: com.github.apizz.pkg.ProToolsImport</p>
-    <p>First commit: 2020-03-14 13:15:27 -0400</p>
-    <p>Latest commit: 2020-07-10 15:11:19 -0400</p>
+9) Profit.</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.apizz.munki.ProToolsImport</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.apizz.pkg.ProToolsImport</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2020-03-14 13:15:27 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2020-07-10 15:11:19 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

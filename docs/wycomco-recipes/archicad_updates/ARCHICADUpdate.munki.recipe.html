@@ -12,19 +12,46 @@
 
 <body>
     <h1>ARCHICADUpdate.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:11</p>
-    <p>Desciption: Imports the latest update build of ARCHICAD into munki which has been downloaded by its parent based on the override-able parameters: MAJOR_VERSION, LOCALIZATION, and RELEASE_TYPE
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/wycomco-recipes/">wycomco-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:08</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Imports the latest update build of ARCHICAD into munki which has been downloaded by its parent based on the override-able parameters: MAJOR_VERSION, LOCALIZATION, and RELEASE_TYPE
 The installation target can be changed by setting INSTALL_DIR to a different location. Useful e.g. if multiple language versions should be available on a Mac.
 
 MAJOR_VERSION options include:  20, 21, 22, 23, and 24
 LOCALIZATION options include:  INT (international english, part of many other licenses), AUS, AUT, BRA, CHE, CHI, CZE, FIN, FRA, GER, GRE, HUN, ITA, JPN, KOR, NED, NOR, NZE, POL, POR, RUS, SPA, SWE, TAI, TUR, UKI, UKR, and USA
 RELEASE_TYPE options include:  AC (for full version), SOLO, and START
 MINIMUM_OS_VERSION: AC 20: 10.9, AC 21: 10.10, AC 22: 10.11, AC 23: 10.13, AC 24: 10.13. These are the absolute minimum versions as stated by GRAPHISOFT. Some are listed as "untested but should run".
-</p>
-    <p>Identifier: <code>com.github.wycomco.munki.ARCHICADUpdate</code></p>
-    <p>Parent Recipes: com.github.wycomco.download.ARCHICADUpdate</p>
-    <p>First commit: 2020-08-20 12:07:56 +0200</p>
-    <p>Latest commit: 2021-03-25 09:32:05 +0100</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.wycomco.munki.ARCHICADUpdate</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.wycomco.download.ARCHICADUpdate</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2020-08-20 12:07:56 +0200</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2021-03-25 09:32:05 +0100</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>archicadupdate.munki.recipe</code>):</p>

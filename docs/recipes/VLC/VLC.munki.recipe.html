@@ -12,16 +12,43 @@
 
 <body>
     <h1>VLC.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:11</p>
-    <p>Desciption: Downloads latest VLC disk image and imports into Munki.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/recipes/">recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:08</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads latest VLC disk image and imports into Munki.
         This recipe defaults supported_architectures to x86_64. 
         If you override SPARKLE_FEED_URL to 
         "https://update.videolan.org/vlc/sparkle/vlc-intel64.xml", be sure to
-        adjust ARCH to "arm64".</p>
-    <p>Identifier: <code>com.github.autopkg.munki.VLC</code></p>
-    <p>Parent Recipes: com.github.autopkg.download.VLC</p>
-    <p>First commit: 2013-08-14 09:40:55 -0400</p>
-    <p>Latest commit: 2013-08-14 09:40:55 -0400</p>
+        adjust ARCH to "arm64".</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.autopkg.munki.VLC</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.autopkg.download.VLC</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2013-08-14 09:40:55 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2013-08-14 09:40:55 -0400</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     
 <p>The following recipes have duplicate NAMEs (<code>vlc.munki</code>):</p>

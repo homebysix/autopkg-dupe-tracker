@@ -12,8 +12,20 @@
 
 <body>
     <h1>EpsonSureColorDrivers.munki.recipe</h1>
-    <p>Last refresh: 2021-12-27 00:09:09</p>
-    <p>Desciption: Downloads the latest version of the Epson SureColor P-series product driver from Epson's site.
+    <nav>
+        <a href="/">Home</a> |
+        <a href="/apizz-recipes/">apizz-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2021-12-27 00:29:05</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest version of the Epson SureColor P-series product driver from Epson's site.
 These will generally be drivers and ICC profiles not included in the OS by Apple.
 Make separate overrides for each printer you may want. An override is required.
 
@@ -54,11 +66,26 @@ using this new developer identity, it can be used in place of EpsonProDrivers.do
 
 Known Limitation: This does not work on a page where the printer driver is not the first item listed
 in the Drivers section of the web page. Currently, the recipe fails for the P600 page because of this.
-</p>
-    <p>Identifier: <code>com.github.apizz.munki.EpsonSureColorDrivers</code></p>
-    <p>Parent Recipes: com.github.jazzace.download.EpsonSureColorDrivers</p>
-    <p>First commit: 2018-12-19 02:22:08 -0500</p>
-    <p>Latest commit: 2018-12-19 02:35:26 -0500</p>
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.apizz.munki.EpsonSureColorDrivers</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.download.EpsonSureColorDrivers</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2018-12-19 02:22:08 -0500</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2018-12-19 02:35:26 -0500</td>
+        </tr>
+    </table>
+
     <h2>Warnings</h2>
     <p>None</p>
 </body>

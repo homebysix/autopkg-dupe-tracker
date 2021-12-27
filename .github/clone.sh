@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git config --global http.postBuffer 1024M
+
 clone() {
     if ! git clone "https://github.com/$1.git" "$1"; then
         echo "$1 try 2..."

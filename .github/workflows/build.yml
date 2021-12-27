@@ -22,819 +22,819 @@ jobs:
           repository: autopkg/aanklewicz-recipes
           path: autopkg/aanklewicz-recipes
 
-      - name: Clone ahousseini-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/ahousseini-recipes
-          path: autopkg/ahousseini-recipes
-
-      - name: Clone andredb90-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/andredb90-recipes
-          path: autopkg/andredb90-recipes
-
-      - name: Clone andrewvalentine-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/andrewvalentine-recipes
-          path: autopkg/andrewvalentine-recipes
-
-      - name: Clone andrewzirkel-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/andrewzirkel-recipes
-          path: autopkg/andrewzirkel-recipes
-
-      - name: Clone apettinen-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/apettinen-recipes
-          path: autopkg/apettinen-recipes
-
-      - name: Clone apizz-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/apizz-recipes
-          path: autopkg/apizz-recipes
-
-      - name: Clone arubdesu-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/arubdesu-recipes
-          path: autopkg/arubdesu-recipes
-
-      - name: Clone aysiu-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/aysiu-recipes
-          path: autopkg/aysiu-recipes
-
-      - name: Clone bkerns-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/bkerns-recipes
-          path: autopkg/bkerns-recipes
-
-      - name: Clone blackthroat-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/blackthroat-recipes
-          path: autopkg/blackthroat-recipes
-
-      - name: Clone bnpl-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/bnpl-recipes
-          path: autopkg/bnpl-recipes
-
-      - name: Clone bochoven-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/bochoven-recipes
-          path: autopkg/bochoven-recipes
-
-      - name: Clone bradclare-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/bradclare-recipes
-          path: autopkg/bradclare-recipes
-
-      - name: Clone brianwells-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/brianwells-recipes
-          path: autopkg/brianwells-recipes
-
-      - name: Clone chalcahuite-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/chalcahuite-recipes
-          path: autopkg/chalcahuite-recipes
-
-      - name: Clone chefaustin-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/chefaustin-recipes
-          path: autopkg/chefaustin-recipes
-
-      - name: Clone chilcote-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/chilcote-recipes
-          path: autopkg/chilcote-recipes
-
-      - name: Clone clburlison-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/clburlison-recipes
-          path: autopkg/clburlison-recipes
-
-      - name: Clone crystalllized-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/crystalllized-recipes
-          path: autopkg/crystalllized-recipes
-
-      - name: Clone ctueck-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/ctueck-recipes
-          path: autopkg/ctueck-recipes
-
-      - name: Clone d33t5-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/d33t5-recipes
-          path: autopkg/d33t5-recipes
-
-      - name: Clone dankeller-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/dankeller-recipes
-          path: autopkg/dankeller-recipes
-
-      - name: Clone Darkomen78-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/Darkomen78-recipes
-          path: autopkg/Darkomen78-recipes
-
-      - name: Clone dataJAR-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/dataJAR-recipes
-          path: autopkg/dataJAR-recipes
-
-      - name: Clone dcoobs-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/dcoobs-recipes
-          path: autopkg/dcoobs-recipes
-
-      - name: Clone denmoff-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/denmoff-recipes
-          path: autopkg/denmoff-recipes
-
-      - name: Clone drewdiver-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/drewdiver-recipes
-          path: autopkg/drewdiver-recipes
-
-      - name: Clone eholtam-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/eholtam-recipes
-          path: autopkg/eholtam-recipes
-
-      - name: Clone erikng-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/erikng-recipes
-          path: autopkg/erikng-recipes
-
-      - name: Clone faumac-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/faumac-recipes
-          path: autopkg/faumac-recipes
-
-      - name: Clone filewave repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/filewave
-          path: autopkg/filewave
-
-      - name: Clone fishd72-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/fishd72-recipes
-          path: autopkg/fishd72-recipes
-
-      - name: Clone flammable-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/flammable-recipes
-          path: autopkg/flammable-recipes
-
-      - name: Clone flywire-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/flywire-recipes
-          path: autopkg/flywire-recipes
-
-      - name: Clone foigus-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/foigus-recipes
-          path: autopkg/foigus-recipes
-
-      - name: Clone ftiff-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/ftiff-recipes
-          path: autopkg/ftiff-recipes
-
-      - name: Clone gerardkok-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/gerardkok-recipes
-          path: autopkg/gerardkok-recipes
-
-      - name: Clone gilbertpalau-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/gilbertpalau-recipes
-          path: autopkg/gilbertpalau-recipes
-
-      - name: Clone giobbi-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/giobbi-recipes
-          path: autopkg/giobbi-recipes
-
-      - name: Clone gmarnin-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/gmarnin-recipes
-          path: autopkg/gmarnin-recipes
-
-      - name: Clone golbiga-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/golbiga-recipes
-          path: autopkg/golbiga-recipes
-
-      - name: Clone grahamgilbert-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/grahamgilbert-recipes
-          path: autopkg/grahamgilbert-recipes
-
-      - name: Clone grahampugh-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/grahampugh-recipes
-          path: autopkg/grahampugh-recipes
-
-      - name: Clone gregneagle-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/gregneagle-recipes
-          path: autopkg/gregneagle-recipes
-
-      - name: Clone groob-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/groob-recipes
-          path: autopkg/groob-recipes
-
-      - name: Clone haircut-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/haircut-recipes
-          path: autopkg/haircut-recipes
-
-      - name: Clone hansen-m-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/hansen-m-recipes
-          path: autopkg/hansen-m-recipes
-
-      - name: Clone hjuutilainen-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/hjuutilainen-recipes
-          path: autopkg/hjuutilainen-recipes
-
-      - name: Clone HobbitHardcase-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/HobbitHardcase-recipes
-          path: autopkg/HobbitHardcase-recipes
-
-      - name: Clone homebysix-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/homebysix-recipes
-          path: autopkg/homebysix-recipes
-
-      - name: Clone its-unibas-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/its-unibas-recipes
-          path: autopkg/its-unibas-recipes
-
-      - name: Clone jaharmi-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jaharmi-recipes
-          path: autopkg/jaharmi-recipes
-
-      - name: Clone jannheider-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jannheider-recipes
-          path: autopkg/jannheider-recipes
-
-      - name: Clone jazzace-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jazzace-recipes
-          path: autopkg/jazzace-recipes
-
-      - name: Clone jbaker10-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jbaker10-recipes
-          path: autopkg/jbaker10-recipes
-
-      - name: Clone jessepeterson-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jessepeterson-recipes
-          path: autopkg/jessepeterson-recipes
-
-      - name: Clone jleggat-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jleggat-recipes
-          path: autopkg/jleggat-recipes
-
-      - name: Clone jlehikoinen-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jlehikoinen-recipes
-          path: autopkg/jlehikoinen-recipes
-
-      - name: Clone joncrain-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/joncrain-recipes
-          path: autopkg/joncrain-recipes
-
-      - name: Clone joshua-d-miller-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/joshua-d-miller-recipes
-          path: autopkg/joshua-d-miller-recipes
-
-      - name: Clone jpiel-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jpiel-recipes
-          path: autopkg/jpiel-recipes
-
-      - name: Clone jps3-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jps3-recipes
-          path: autopkg/jps3-recipes
-
-      - name: Clone jrsd-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jrsd-recipes
-          path: autopkg/jrsd-recipes
-
-      - name: Clone jss-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/jss-recipes
-          path: autopkg/jss-recipes
-
-      - name: Clone justinrummel-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/justinrummel-recipes
-          path: autopkg/justinrummel-recipes
-
-      - name: Clone keeleysam-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/keeleysam-recipes
-          path: autopkg/keeleysam-recipes
-
-      - name: Clone kevinmcox-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/kevinmcox-recipes
-          path: autopkg/kevinmcox-recipes
-
-      - name: Clone killahquam-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/killahquam-recipes
-          path: autopkg/killahquam-recipes
-
-      - name: Clone kitzy-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/kitzy-recipes
-          path: autopkg/kitzy-recipes
-
-      - name: Clone lashomb-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/lashomb-recipes
-          path: autopkg/lashomb-recipes
-
-      - name: Clone lrz-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/lrz-recipes
-          path: autopkg/lrz-recipes
-
-      - name: Clone luisgiraldo-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/luisgiraldo-recipes
-          path: autopkg/luisgiraldo-recipes
-
-      - name: Clone macprince-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/macprince-recipes
-          path: autopkg/macprince-recipes
-
-      - name: Clone macvfx-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/macvfx-recipes
-          path: autopkg/macvfx-recipes
-
-      - name: Clone MichalMMac-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/MichalMMac-recipes
-          path: autopkg/MichalMMac-recipes
-
-      - name: Clone mikestechshop-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/mikestechshop-recipes
-          path: autopkg/mikestechshop-recipes
-
-      - name: Clone MLBZ521-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/MLBZ521-recipes
-          path: autopkg/MLBZ521-recipes
-
-      - name: Clone moofit-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/moofit-recipes
-          path: autopkg/moofit-recipes
-
-      - name: Clone morgrowe-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/morgrowe-recipes
-          path: autopkg/morgrowe-recipes
-
-      - name: Clone mosen-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/mosen-recipes
-          path: autopkg/mosen-recipes
-
-      - name: Clone munkireport-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/munkireport-recipes
-          path: autopkg/munkireport-recipes
-
-      - name: Clone n8felton-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/n8felton-recipes
-          path: autopkg/n8felton-recipes
-
-      - name: Clone natewalck-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/natewalck-recipes
-          path: autopkg/natewalck-recipes
-
-      - name: Clone nbalonso-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/nbalonso-recipes
-          path: autopkg/nbalonso-recipes
-
-      - name: Clone neilmartin83-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/neilmartin83-recipes
-          path: autopkg/neilmartin83-recipes
-
-      - name: Clone nmcspadden-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/nmcspadden-recipes
-          path: autopkg/nmcspadden-recipes
-
-      - name: Clone novaksam-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/novaksam-recipes
-          path: autopkg/novaksam-recipes
-
-      - name: Clone nstrauss-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/nstrauss-recipes
-          path: autopkg/nstrauss-recipes
-
-      - name: Clone nzmacgeek-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/nzmacgeek-recipes
-          path: autopkg/nzmacgeek-recipes
-
-      - name: Clone oliverweinm-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/oliverweinm-recipes
-          path: autopkg/oliverweinm-recipes
-
-      - name: Clone orbsmiv-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/orbsmiv-recipes
-          path: autopkg/orbsmiv-recipes
-
-      - name: Clone orchard-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/orchard-recipes
-          path: autopkg/orchard-recipes
-
-      - name: Clone patgmac-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/patgmac-recipes
-          path: autopkg/patgmac-recipes
-
-      - name: Clone paul-cossey-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/paul-cossey-recipes
-          path: autopkg/paul-cossey-recipes
-
-      - name: Clone peetinc-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/peetinc-recipes
-          path: autopkg/peetinc-recipes
-
-      - name: Clone peshay-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/peshay-recipes
-          path: autopkg/peshay-recipes
-
-      - name: Clone peterkelm-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/peterkelm-recipes
-          path: autopkg/peterkelm-recipes
-
-      - name: Clone precursorca-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/precursorca-recipes
-          path: autopkg/precursorca-recipes
-
-      - name: Clone primalcurve-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/primalcurve-recipes
-          path: autopkg/primalcurve-recipes
-
-      - name: Clone prochat-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/prochat-recipes
-          path: autopkg/prochat-recipes
-
-      - name: Clone psaintemarie-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/psaintemarie-recipes
-          path: autopkg/psaintemarie-recipes
-
-      - name: Clone rderewianko-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/rderewianko-recipes
-          path: autopkg/rderewianko-recipes
-
-      - name: Clone recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/recipes
-          path: autopkg/recipes
-
-      - name: Clone rmanly-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/rmanly-recipes
-          path: autopkg/rmanly-recipes
-
-      - name: Clone robperc-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/robperc-recipes
-          path: autopkg/robperc-recipes
-
-      - name: Clone rtrouton-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/rtrouton-recipes
-          path: autopkg/rtrouton-recipes
-
-      - name: Clone rustymyers-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/rustymyers-recipes
-          path: autopkg/rustymyers-recipes
-
-      - name: Clone scriptingosx-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/scriptingosx-recipes
-          path: autopkg/scriptingosx-recipes
-
-      - name: Clone seansgm-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/seansgm-recipes
-          path: autopkg/seansgm-recipes
-
-      - name: Clone sebtomasi-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/sebtomasi-recipes
-          path: autopkg/sebtomasi-recipes
-
-      - name: Clone skoobasteeve-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/skoobasteeve-recipes
-          path: autopkg/skoobasteeve-recipes
-
-      - name: Clone smithjw-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/smithjw-recipes
-          path: autopkg/smithjw-recipes
-
-      - name: Clone swy-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/swy-recipes
-          path: autopkg/swy-recipes
-
-      - name: Clone tallfunnyjew-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/tallfunnyjew-recipes
-          path: autopkg/tallfunnyjew-recipes
-
-      - name: Clone tbridge-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/tbridge-recipes
-          path: autopkg/tbridge-recipes
-
-      - name: Clone Tecnico1931-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/Tecnico1931-recipes
-          path: autopkg/Tecnico1931-recipes
-
-      - name: Clone TekTekkers-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/TekTekkers-recipes
-          path: autopkg/TekTekkers-recipes
-
-      - name: Clone thenikola-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/thenikola-recipes
-          path: autopkg/thenikola-recipes
-
-      - name: Clone timsutton-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/timsutton-recipes
-          path: autopkg/timsutton-recipes
-
-      - name: Clone triti-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/triti-recipes
-          path: autopkg/triti-recipes
-
-      - name: Clone ucam-apple-support-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/ucam-apple-support-recipes
-          path: autopkg/ucam-apple-support-recipes
-
-      - name: Clone valdore86-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/valdore86-recipes
-          path: autopkg/valdore86-recipes
-
-      - name: Clone Vinrobot-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/Vinrobot-recipes
-          path: autopkg/Vinrobot-recipes
-
-      - name: Clone vmiller-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/vmiller-recipes
-          path: autopkg/vmiller-recipes
-
-      - name: Clone vmule-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/vmule-recipes
-          path: autopkg/vmule-recipes
-
-      - name: Clone wardsparadox-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/wardsparadox-recipes
-          path: autopkg/wardsparadox-recipes
-
-      - name: Clone watchmanmonitoring-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/watchmanmonitoring-recipes
-          path: autopkg/watchmanmonitoring-recipes
-
-      - name: Clone weswhet-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/weswhet-recipes
-          path: autopkg/weswhet-recipes
-
-      - name: Clone wholtz-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/wholtz-recipes
-          path: autopkg/wholtz-recipes
-
-      - name: Clone wycomco-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/wycomco-recipes
-          path: autopkg/wycomco-recipes
-
-      - name: Clone ygini-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/ygini-recipes
-          path: autopkg/ygini-recipes
-
-      - name: Clone Yohan460-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/Yohan460-recipes
-          path: autopkg/Yohan460-recipes
-
-      - name: Clone zachtarr-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/zachtarr-recipes
-          path: autopkg/zachtarr-recipes
-
-      - name: Clone zentral-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/zentral-recipes
-          path: autopkg/zentral-recipes
-
-      - name: Clone znerol-recipes repository
-        uses: actions/checkout@v2
-        with:
-          repository: autopkg/znerol-recipes
-          path: autopkg/znerol-recipes
-
-      - name: Regenerate manifests and commit changes
+      # - name: Clone ahousseini-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/ahousseini-recipes
+      #     path: autopkg/ahousseini-recipes
+
+      # - name: Clone andredb90-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/andredb90-recipes
+      #     path: autopkg/andredb90-recipes
+
+      # - name: Clone andrewvalentine-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/andrewvalentine-recipes
+      #     path: autopkg/andrewvalentine-recipes
+
+      # - name: Clone andrewzirkel-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/andrewzirkel-recipes
+      #     path: autopkg/andrewzirkel-recipes
+
+      # - name: Clone apettinen-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/apettinen-recipes
+      #     path: autopkg/apettinen-recipes
+
+      # - name: Clone apizz-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/apizz-recipes
+      #     path: autopkg/apizz-recipes
+
+      # - name: Clone arubdesu-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/arubdesu-recipes
+      #     path: autopkg/arubdesu-recipes
+
+      # - name: Clone aysiu-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/aysiu-recipes
+      #     path: autopkg/aysiu-recipes
+
+      # - name: Clone bkerns-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/bkerns-recipes
+      #     path: autopkg/bkerns-recipes
+
+      # - name: Clone blackthroat-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/blackthroat-recipes
+      #     path: autopkg/blackthroat-recipes
+
+      # - name: Clone bnpl-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/bnpl-recipes
+      #     path: autopkg/bnpl-recipes
+
+      # - name: Clone bochoven-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/bochoven-recipes
+      #     path: autopkg/bochoven-recipes
+
+      # - name: Clone bradclare-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/bradclare-recipes
+      #     path: autopkg/bradclare-recipes
+
+      # - name: Clone brianwells-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/brianwells-recipes
+      #     path: autopkg/brianwells-recipes
+
+      # - name: Clone chalcahuite-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/chalcahuite-recipes
+      #     path: autopkg/chalcahuite-recipes
+
+      # - name: Clone chefaustin-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/chefaustin-recipes
+      #     path: autopkg/chefaustin-recipes
+
+      # - name: Clone chilcote-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/chilcote-recipes
+      #     path: autopkg/chilcote-recipes
+
+      # - name: Clone clburlison-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/clburlison-recipes
+      #     path: autopkg/clburlison-recipes
+
+      # - name: Clone crystalllized-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/crystalllized-recipes
+      #     path: autopkg/crystalllized-recipes
+
+      # - name: Clone ctueck-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/ctueck-recipes
+      #     path: autopkg/ctueck-recipes
+
+      # - name: Clone d33t5-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/d33t5-recipes
+      #     path: autopkg/d33t5-recipes
+
+      # - name: Clone dankeller-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/dankeller-recipes
+      #     path: autopkg/dankeller-recipes
+
+      # - name: Clone Darkomen78-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/Darkomen78-recipes
+      #     path: autopkg/Darkomen78-recipes
+
+      # - name: Clone dataJAR-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/dataJAR-recipes
+      #     path: autopkg/dataJAR-recipes
+
+      # - name: Clone dcoobs-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/dcoobs-recipes
+      #     path: autopkg/dcoobs-recipes
+
+      # - name: Clone denmoff-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/denmoff-recipes
+      #     path: autopkg/denmoff-recipes
+
+      # - name: Clone drewdiver-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/drewdiver-recipes
+      #     path: autopkg/drewdiver-recipes
+
+      # - name: Clone eholtam-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/eholtam-recipes
+      #     path: autopkg/eholtam-recipes
+
+      # - name: Clone erikng-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/erikng-recipes
+      #     path: autopkg/erikng-recipes
+
+      # - name: Clone faumac-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/faumac-recipes
+      #     path: autopkg/faumac-recipes
+
+      # - name: Clone filewave repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/filewave
+      #     path: autopkg/filewave
+
+      # - name: Clone fishd72-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/fishd72-recipes
+      #     path: autopkg/fishd72-recipes
+
+      # - name: Clone flammable-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/flammable-recipes
+      #     path: autopkg/flammable-recipes
+
+      # - name: Clone flywire-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/flywire-recipes
+      #     path: autopkg/flywire-recipes
+
+      # - name: Clone foigus-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/foigus-recipes
+      #     path: autopkg/foigus-recipes
+
+      # - name: Clone ftiff-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/ftiff-recipes
+      #     path: autopkg/ftiff-recipes
+
+      # - name: Clone gerardkok-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/gerardkok-recipes
+      #     path: autopkg/gerardkok-recipes
+
+      # - name: Clone gilbertpalau-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/gilbertpalau-recipes
+      #     path: autopkg/gilbertpalau-recipes
+
+      # - name: Clone giobbi-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/giobbi-recipes
+      #     path: autopkg/giobbi-recipes
+
+      # - name: Clone gmarnin-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/gmarnin-recipes
+      #     path: autopkg/gmarnin-recipes
+
+      # - name: Clone golbiga-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/golbiga-recipes
+      #     path: autopkg/golbiga-recipes
+
+      # - name: Clone grahamgilbert-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/grahamgilbert-recipes
+      #     path: autopkg/grahamgilbert-recipes
+
+      # - name: Clone grahampugh-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/grahampugh-recipes
+      #     path: autopkg/grahampugh-recipes
+
+      # - name: Clone gregneagle-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/gregneagle-recipes
+      #     path: autopkg/gregneagle-recipes
+
+      # - name: Clone groob-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/groob-recipes
+      #     path: autopkg/groob-recipes
+
+      # - name: Clone haircut-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/haircut-recipes
+      #     path: autopkg/haircut-recipes
+
+      # - name: Clone hansen-m-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/hansen-m-recipes
+      #     path: autopkg/hansen-m-recipes
+
+      # - name: Clone hjuutilainen-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/hjuutilainen-recipes
+      #     path: autopkg/hjuutilainen-recipes
+
+      # - name: Clone HobbitHardcase-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/HobbitHardcase-recipes
+      #     path: autopkg/HobbitHardcase-recipes
+
+      # - name: Clone homebysix-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/homebysix-recipes
+      #     path: autopkg/homebysix-recipes
+
+      # - name: Clone its-unibas-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/its-unibas-recipes
+      #     path: autopkg/its-unibas-recipes
+
+      # - name: Clone jaharmi-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jaharmi-recipes
+      #     path: autopkg/jaharmi-recipes
+
+      # - name: Clone jannheider-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jannheider-recipes
+      #     path: autopkg/jannheider-recipes
+
+      # - name: Clone jazzace-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jazzace-recipes
+      #     path: autopkg/jazzace-recipes
+
+      # - name: Clone jbaker10-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jbaker10-recipes
+      #     path: autopkg/jbaker10-recipes
+
+      # - name: Clone jessepeterson-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jessepeterson-recipes
+      #     path: autopkg/jessepeterson-recipes
+
+      # - name: Clone jleggat-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jleggat-recipes
+      #     path: autopkg/jleggat-recipes
+
+      # - name: Clone jlehikoinen-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jlehikoinen-recipes
+      #     path: autopkg/jlehikoinen-recipes
+
+      # - name: Clone joncrain-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/joncrain-recipes
+      #     path: autopkg/joncrain-recipes
+
+      # - name: Clone joshua-d-miller-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/joshua-d-miller-recipes
+      #     path: autopkg/joshua-d-miller-recipes
+
+      # - name: Clone jpiel-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jpiel-recipes
+      #     path: autopkg/jpiel-recipes
+
+      # - name: Clone jps3-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jps3-recipes
+      #     path: autopkg/jps3-recipes
+
+      # - name: Clone jrsd-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jrsd-recipes
+      #     path: autopkg/jrsd-recipes
+
+      # - name: Clone jss-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/jss-recipes
+      #     path: autopkg/jss-recipes
+
+      # - name: Clone justinrummel-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/justinrummel-recipes
+      #     path: autopkg/justinrummel-recipes
+
+      # - name: Clone keeleysam-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/keeleysam-recipes
+      #     path: autopkg/keeleysam-recipes
+
+      # - name: Clone kevinmcox-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/kevinmcox-recipes
+      #     path: autopkg/kevinmcox-recipes
+
+      # - name: Clone killahquam-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/killahquam-recipes
+      #     path: autopkg/killahquam-recipes
+
+      # - name: Clone kitzy-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/kitzy-recipes
+      #     path: autopkg/kitzy-recipes
+
+      # - name: Clone lashomb-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/lashomb-recipes
+      #     path: autopkg/lashomb-recipes
+
+      # - name: Clone lrz-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/lrz-recipes
+      #     path: autopkg/lrz-recipes
+
+      # - name: Clone luisgiraldo-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/luisgiraldo-recipes
+      #     path: autopkg/luisgiraldo-recipes
+
+      # - name: Clone macprince-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/macprince-recipes
+      #     path: autopkg/macprince-recipes
+
+      # - name: Clone macvfx-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/macvfx-recipes
+      #     path: autopkg/macvfx-recipes
+
+      # - name: Clone MichalMMac-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/MichalMMac-recipes
+      #     path: autopkg/MichalMMac-recipes
+
+      # - name: Clone mikestechshop-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/mikestechshop-recipes
+      #     path: autopkg/mikestechshop-recipes
+
+      # - name: Clone MLBZ521-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/MLBZ521-recipes
+      #     path: autopkg/MLBZ521-recipes
+
+      # - name: Clone moofit-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/moofit-recipes
+      #     path: autopkg/moofit-recipes
+
+      # - name: Clone morgrowe-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/morgrowe-recipes
+      #     path: autopkg/morgrowe-recipes
+
+      # - name: Clone mosen-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/mosen-recipes
+      #     path: autopkg/mosen-recipes
+
+      # - name: Clone munkireport-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/munkireport-recipes
+      #     path: autopkg/munkireport-recipes
+
+      # - name: Clone n8felton-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/n8felton-recipes
+      #     path: autopkg/n8felton-recipes
+
+      # - name: Clone natewalck-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/natewalck-recipes
+      #     path: autopkg/natewalck-recipes
+
+      # - name: Clone nbalonso-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/nbalonso-recipes
+      #     path: autopkg/nbalonso-recipes
+
+      # - name: Clone neilmartin83-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/neilmartin83-recipes
+      #     path: autopkg/neilmartin83-recipes
+
+      # - name: Clone nmcspadden-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/nmcspadden-recipes
+      #     path: autopkg/nmcspadden-recipes
+
+      # - name: Clone novaksam-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/novaksam-recipes
+      #     path: autopkg/novaksam-recipes
+
+      # - name: Clone nstrauss-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/nstrauss-recipes
+      #     path: autopkg/nstrauss-recipes
+
+      # - name: Clone nzmacgeek-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/nzmacgeek-recipes
+      #     path: autopkg/nzmacgeek-recipes
+
+      # - name: Clone oliverweinm-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/oliverweinm-recipes
+      #     path: autopkg/oliverweinm-recipes
+
+      # - name: Clone orbsmiv-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/orbsmiv-recipes
+      #     path: autopkg/orbsmiv-recipes
+
+      # - name: Clone orchard-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/orchard-recipes
+      #     path: autopkg/orchard-recipes
+
+      # - name: Clone patgmac-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/patgmac-recipes
+      #     path: autopkg/patgmac-recipes
+
+      # - name: Clone paul-cossey-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/paul-cossey-recipes
+      #     path: autopkg/paul-cossey-recipes
+
+      # - name: Clone peetinc-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/peetinc-recipes
+      #     path: autopkg/peetinc-recipes
+
+      # - name: Clone peshay-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/peshay-recipes
+      #     path: autopkg/peshay-recipes
+
+      # - name: Clone peterkelm-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/peterkelm-recipes
+      #     path: autopkg/peterkelm-recipes
+
+      # - name: Clone precursorca-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/precursorca-recipes
+      #     path: autopkg/precursorca-recipes
+
+      # - name: Clone primalcurve-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/primalcurve-recipes
+      #     path: autopkg/primalcurve-recipes
+
+      # - name: Clone prochat-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/prochat-recipes
+      #     path: autopkg/prochat-recipes
+
+      # - name: Clone psaintemarie-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/psaintemarie-recipes
+      #     path: autopkg/psaintemarie-recipes
+
+      # - name: Clone rderewianko-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/rderewianko-recipes
+      #     path: autopkg/rderewianko-recipes
+
+      # - name: Clone recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/recipes
+      #     path: autopkg/recipes
+
+      # - name: Clone rmanly-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/rmanly-recipes
+      #     path: autopkg/rmanly-recipes
+
+      # - name: Clone robperc-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/robperc-recipes
+      #     path: autopkg/robperc-recipes
+
+      # - name: Clone rtrouton-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/rtrouton-recipes
+      #     path: autopkg/rtrouton-recipes
+
+      # - name: Clone rustymyers-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/rustymyers-recipes
+      #     path: autopkg/rustymyers-recipes
+
+      # - name: Clone scriptingosx-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/scriptingosx-recipes
+      #     path: autopkg/scriptingosx-recipes
+
+      # - name: Clone seansgm-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/seansgm-recipes
+      #     path: autopkg/seansgm-recipes
+
+      # - name: Clone sebtomasi-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/sebtomasi-recipes
+      #     path: autopkg/sebtomasi-recipes
+
+      # - name: Clone skoobasteeve-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/skoobasteeve-recipes
+      #     path: autopkg/skoobasteeve-recipes
+
+      # - name: Clone smithjw-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/smithjw-recipes
+      #     path: autopkg/smithjw-recipes
+
+      # - name: Clone swy-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/swy-recipes
+      #     path: autopkg/swy-recipes
+
+      # - name: Clone tallfunnyjew-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/tallfunnyjew-recipes
+      #     path: autopkg/tallfunnyjew-recipes
+
+      # - name: Clone tbridge-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/tbridge-recipes
+      #     path: autopkg/tbridge-recipes
+
+      # - name: Clone Tecnico1931-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/Tecnico1931-recipes
+      #     path: autopkg/Tecnico1931-recipes
+
+      # - name: Clone TekTekkers-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/TekTekkers-recipes
+      #     path: autopkg/TekTekkers-recipes
+
+      # - name: Clone thenikola-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/thenikola-recipes
+      #     path: autopkg/thenikola-recipes
+
+      # - name: Clone timsutton-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/timsutton-recipes
+      #     path: autopkg/timsutton-recipes
+
+      # - name: Clone triti-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/triti-recipes
+      #     path: autopkg/triti-recipes
+
+      # - name: Clone ucam-apple-support-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/ucam-apple-support-recipes
+      #     path: autopkg/ucam-apple-support-recipes
+
+      # - name: Clone valdore86-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/valdore86-recipes
+      #     path: autopkg/valdore86-recipes
+
+      # - name: Clone Vinrobot-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/Vinrobot-recipes
+      #     path: autopkg/Vinrobot-recipes
+
+      # - name: Clone vmiller-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/vmiller-recipes
+      #     path: autopkg/vmiller-recipes
+
+      # - name: Clone vmule-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/vmule-recipes
+      #     path: autopkg/vmule-recipes
+
+      # - name: Clone wardsparadox-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/wardsparadox-recipes
+      #     path: autopkg/wardsparadox-recipes
+
+      # - name: Clone watchmanmonitoring-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/watchmanmonitoring-recipes
+      #     path: autopkg/watchmanmonitoring-recipes
+
+      # - name: Clone weswhet-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/weswhet-recipes
+      #     path: autopkg/weswhet-recipes
+
+      # - name: Clone wholtz-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/wholtz-recipes
+      #     path: autopkg/wholtz-recipes
+
+      # - name: Clone wycomco-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/wycomco-recipes
+      #     path: autopkg/wycomco-recipes
+
+      # - name: Clone ygini-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/ygini-recipes
+      #     path: autopkg/ygini-recipes
+
+      # - name: Clone Yohan460-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/Yohan460-recipes
+      #     path: autopkg/Yohan460-recipes
+
+      # - name: Clone zachtarr-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/zachtarr-recipes
+      #     path: autopkg/zachtarr-recipes
+
+      # - name: Clone zentral-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/zentral-recipes
+      #     path: autopkg/zentral-recipes
+
+      # - name: Clone znerol-recipes repository
+      #   uses: actions/checkout@v2
+      #   with:
+      #     repository: autopkg/znerol-recipes
+      #     path: autopkg/znerol-recipes
+
+      - name: Rebuild site
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          # git config user.name github-actions
+          # git config user.email github-actions@github.com
           pwd
           ls -la

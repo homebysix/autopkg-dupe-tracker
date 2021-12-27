@@ -1,9 +1,9 @@
 name: build
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
 
 jobs:
   build:
@@ -30,4 +30,4 @@ jobs:
           ./build.py
           git add docs/ || true
           git commit -m "Analyze recipes and rebuild site" docs/ || true
-          # git push --set-upstream origin main || true
+          git push --set-upstream origin main || true

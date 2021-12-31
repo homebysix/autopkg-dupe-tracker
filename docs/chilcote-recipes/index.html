@@ -17,7 +17,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#recipes').DataTable({
-                order: [[3, "desc"]],
+                order: [[4, "desc"]],
                 paging: false
             });
         });
@@ -29,9 +29,9 @@
 <body>
     <h1>chilcote-recipes</h1>
     <nav>
-        <a href="/">Home</a>
+        <a href="/autopkg-dupe-tracker/">Home</a>
     </nav>
-    <p>Last refresh: 2021-12-30 01:10:07</p>
+    <p>Last refresh: 2021-12-31 01:12:43</p>
     <table id="recipes">
         <thead>
             <tr>
@@ -39,18 +39,19 @@
                 <th>First Commit</th>
                 <th>Latest Commit</th>
                 <th>Warnings</th>
+                <th>Score</th>
             </tr>
         </thead>
         <tbody>
             
-			<tr><td><a href="JetBrains/WebStorm.pkg.recipe.html">JetBrains/WebStorm.pkg.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>0</td></tr>
-			<tr><td><a href="JetBrains/CLion.pkg.recipe.html">JetBrains/CLion.pkg.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>1</td></tr>
-			<tr><td><a href="JetBrains/CLion.download.recipe.html">JetBrains/CLion.download.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>2</td></tr>
-			<tr><td><a href="JetBrains/PyCharm.pkg.recipe.html">JetBrains/PyCharm.pkg.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>1</td></tr>
-			<tr><td><a href="Docker/Docker.munki.recipe.html">Docker/Docker.munki.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2021-08-03 12:33:43 +0100</td><td>1</td></tr>
-			<tr><td><a href="Docker/Docker.pkg.recipe.html">Docker/Docker.pkg.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2019-06-24 15:11:58 -0700</td><td>4</td></tr>
-			<tr><td><a href="Docker/Docker.download.recipe.html">Docker/Docker.download.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2017-02-13 10:54:01 -0500</td><td>4</td></tr>
-			<tr><td><a href="Docker/Docker.install.recipe.html">Docker/Docker.install.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2019-06-24 15:11:58 -0700</td><td>2</td></tr>
+			<tr><td><a href="JetBrains/WebStorm.pkg.recipe.html">JetBrains/WebStorm.pkg.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>0</td><td>0.00</td></tr>
+			<tr><td><a href="JetBrains/CLion.pkg.recipe.html">JetBrains/CLion.pkg.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>1</td><td>0.70</td></tr>
+			<tr><td><a href="JetBrains/CLion.download.recipe.html">JetBrains/CLion.download.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>2</td><td>0.70</td></tr>
+			<tr><td><a href="JetBrains/PyCharm.pkg.recipe.html">JetBrains/PyCharm.pkg.recipe</a></td><td>2016-07-15 15:39:14 -0700</td><td>2016-07-15 15:39:14 -0700</td><td>1</td><td>0.60</td></tr>
+			<tr><td><a href="Docker/Docker.munki.recipe.html">Docker/Docker.munki.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2021-08-03 12:33:43 +0100</td><td>1</td><td>0.10</td></tr>
+			<tr><td><a href="Docker/Docker.pkg.recipe.html">Docker/Docker.pkg.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2019-06-24 15:11:58 -0700</td><td>4</td><td>0.10</td></tr>
+			<tr><td><a href="Docker/Docker.download.recipe.html">Docker/Docker.download.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2017-02-13 10:54:01 -0500</td><td>4</td><td>0.10</td></tr>
+			<tr><td><a href="Docker/Docker.install.recipe.html">Docker/Docker.install.recipe</a></td><td>2016-07-15 17:11:52 -0700</td><td>2019-06-24 15:11:58 -0700</td><td>2</td><td>0.10</td></tr>
         </tbody>
     </table>
 </body>

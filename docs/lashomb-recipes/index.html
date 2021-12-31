@@ -17,7 +17,7 @@
     <script type="text/javascript">
         $(document).ready(function () {
             $('#recipes').DataTable({
-                order: [[3, "desc"]],
+                order: [[4, "desc"]],
                 paging: false
             });
         });
@@ -29,9 +29,9 @@
 <body>
     <h1>lashomb-recipes</h1>
     <nav>
-        <a href="/">Home</a>
+        <a href="/autopkg-dupe-tracker/">Home</a>
     </nav>
-    <p>Last refresh: 2021-12-30 01:10:08</p>
+    <p>Last refresh: 2021-12-31 01:13:06</p>
     <table id="recipes">
         <thead>
             <tr>
@@ -39,13 +39,14 @@
                 <th>First Commit</th>
                 <th>Latest Commit</th>
                 <th>Warnings</th>
+                <th>Score</th>
             </tr>
         </thead>
         <tbody>
             
-			<tr><td><a href="Invision/CraftManager.pkg.recipe.html">Invision/CraftManager.pkg.recipe</a></td><td>2018-08-13 12:19:55 -0500</td><td>2018-08-13 12:19:55 -0500</td><td>1</td></tr>
-			<tr><td><a href="Invision/CraftManager.jss.recipe.html">Invision/CraftManager.jss.recipe</a></td><td>2018-08-13 12:19:55 -0500</td><td>2018-08-13 12:19:55 -0500</td><td>1</td></tr>
-			<tr><td><a href="OpenJDK11/OpenJDK11.munki.recipe.html">OpenJDK11/OpenJDK11.munki.recipe</a></td><td>2020-05-26 15:05:42 -0500</td><td>2020-05-26 15:05:42 -0500</td><td>5</td></tr>
+			<tr><td><a href="Invision/CraftManager.pkg.recipe.html">Invision/CraftManager.pkg.recipe</a></td><td>2018-08-13 12:19:55 -0500</td><td>2018-08-13 12:19:55 -0500</td><td>1</td><td>0.70</td></tr>
+			<tr><td><a href="Invision/CraftManager.jss.recipe.html">Invision/CraftManager.jss.recipe</a></td><td>2018-08-13 12:19:55 -0500</td><td>2018-08-13 12:19:55 -0500</td><td>1</td><td>0.70</td></tr>
+			<tr><td><a href="OpenJDK11/OpenJDK11.munki.recipe.html">OpenJDK11/OpenJDK11.munki.recipe</a></td><td>2020-05-26 15:05:42 -0500</td><td>2020-05-26 15:05:42 -0500</td><td>5</td><td>0.10</td></tr>
         </tbody>
     </table>
 </body>

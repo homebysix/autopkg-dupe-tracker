@@ -107,6 +107,26 @@ def compare_contents(recipes):
     return results
 
 
+def compare_deprecations(recipes):
+    """Detect recipes with deprecated parents."""
+
+    deprecations = [
+        recipes[x]["contents"]["Identifier"]
+        for x in recipes
+        if "DeprecationWarning"
+        in [y.get("Processor") for y in recipes[x]["contents"].get("Process", [{}])]
+    ]
+
+    results = {}
+    for relpath, recipe in recipes.items():
+        if recipe["contents"].get("ParentRecipe") in deprecations:
+            results = append_result(
+                results, recipe["contents"]["ParentRecipe"], relpath
+            )
+
+    return results
+
+
 def compare_filenames(recipes, ignore_numbers=False):
     """Detect duplicate filenames, ignoring case and spaces."""
 
@@ -185,6 +205,10 @@ def compile_test_results(recipes):
         "duplicate contents": {
             "score": 1.0,
             "results": compare_contents(recipes),
+        },
+        "deprecated parent(s)": {
+            "score": 1.0,
+            "results": compare_deprecations(recipes),
         },
         "duplicate filenames": {
             "score": 0.5,
@@ -274,6 +298,7 @@ def generate_site(recipes):
                     f"<td>{recipe['first_commit']}</td>",
                     f"<td>{recipe['latest_commit']}</td>",
                     f"<td>{warnings_count}</td>",
+                    f"<td>{recipe['score']:.2f}</td>",
                     "</tr>",
                 )
             )
@@ -286,9 +311,7 @@ def generate_site(recipes):
                 warnings_html += f"\n<p>The following recipes have {issue}:</p>"
                 warnings_html += "\n<ul>"
                 for match in matches:
-                    warnings_html += (
-                        f'\n<li><a href="/{PROJECT}/{match}.html">{match}</a></li>'
-                    )
+                    warnings_html += f'\n<li><a href="/{PROJECT}/{match}.html">{match}</a> (first commit {recipes[match]["first_commit"]})</li>'
                 warnings_html += "\n</ul>"
             repl = {
                 "%TITLE%": recipe["filename"],
@@ -299,8 +322,17 @@ def generate_site(recipes):
                 "%DESCRIPTION%": recipe["contents"].get("Description", "None"),
                 "%IDENTIFIER%": recipe["contents"]["Identifier"],
                 "%PARENT_RECIPES%": recipe["contents"].get("ParentRecipe", "None"),
+                "%CHILD_RECIPES%": "<br />".join(
+                    [
+                        f'<a href="/{PROJECT}/{x}.html">{x}</a>'
+                        for x in recipes
+                        if recipes[x]["contents"].get("ParentRecipe")
+                        == recipe["contents"]["Identifier"]
+                    ]
+                ),
                 "%FIRST_COMMIT%": recipe["first_commit"],
                 "%LATEST_COMMIT%": recipe["latest_commit"],
+                "%SCORE%": "{:.2f}".format(recipe["score"]),
                 "%WARNINGS%": warnings_html,
             }
             for r in repl:

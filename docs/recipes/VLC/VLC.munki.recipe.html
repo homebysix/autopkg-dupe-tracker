@@ -21,15 +21,15 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2022-01-18 01:15:19</td>
+            <td class="recipe_val">2022-01-19 01:08:15</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
             <td class="recipe_val">Downloads latest VLC disk image and imports into Munki.
-        This recipe defaults supported_architectures to x86_64. 
-        If you override SPARKLE_FEED_URL to 
-        "https://update.videolan.org/vlc/sparkle/vlc-intel64.xml", be sure to
-        adjust ARCH to "arm64".</td>
+
+This recipe defaults supported_architectures to both "x86_64" and "arm64" for
+the Universal download of VLC. If you override the default ARCHITECTURE value,
+also remember to adjust the supported_architectures in your override.</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>

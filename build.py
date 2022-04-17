@@ -17,7 +17,7 @@ from glob import glob
 import yaml
 
 __author__ = "Elliot Jordan"
-__version__ = "3.0.0"
+__version__ = "3.1.0"
 
 # The directory that contains clones of all AutoPkg repos. Recommend using a
 # bulk clone tool like Repo Lasso (https://github.com/homebysix/repo-lasso) to
@@ -46,11 +46,11 @@ def get_recipes():
         print(f"Analyzing {path}")
         parents, filename = os.path.split(path)
         if path.endswith(".yaml"):
-            with open(os.path.join(REPOS_BASE, path), "rb") as f:
-                recipe = yaml.load(f, Loader=yaml.FullLoader)
+            with open(os.path.join(REPOS_BASE, path), "rb") as openfile:
+                recipe = yaml.load(openfile, Loader=yaml.FullLoader)
         else:
-            with open(os.path.join(REPOS_BASE, path), "rb") as f:
-                recipe = plistlib.load(f)
+            with open(os.path.join(REPOS_BASE, path), "rb") as openfile:
+                recipe = plistlib.load(openfile)
         mod_dates_proc = subprocess.run(
             [
                 "git",
@@ -63,6 +63,7 @@ def get_recipes():
                 "--pretty=format:%ad",
                 filename,
             ],
+            check=False,
             capture_output=True,
             text=True,
         )
@@ -82,13 +83,13 @@ def get_recipes():
     return recipes
 
 
-def append_result(results, hash, item):
+def append_result(results, result_hash, item):
     """Append to results, creating an index if needed."""
 
-    if hash not in results:
-        results[hash] = [item]
+    if result_hash not in results:
+        results[result_hash] = [item]
     else:
-        results[hash].append(item)
+        results[result_hash].append(item)
 
     return results
 
@@ -159,7 +160,7 @@ def compare_names(recipes):
 
     results = {}
     for relpath, recipe in recipes.items():
-        type = (
+        recipe_type = (
             recipe["filename"]
             .replace(".recipe", "")
             .replace(".yaml", "")
@@ -169,7 +170,7 @@ def compare_names(recipes):
             recipe["contents"].get("Input", {}).get("NAME", "").replace(" ", "").lower()
         )
         if name:
-            results = append_result(results, ".".join((name, type)), relpath)
+            results = append_result(results, ".".join((name, recipe_type)), relpath)
 
     return results
 
@@ -220,7 +221,9 @@ def compile_test_results(recipes):
         },
         "duplicate Sparkle feeds": {
             "score": 0.2,
-            "results": compare_urls(recipes, "SPARKLE_FEED_URL", "SparkleUpdateInfoProvider", "appcast_url"),
+            "results": compare_urls(
+                recipes, "SPARKLE_FEED_URL", "SparkleUpdateInfoProvider", "appcast_url"
+            ),
         },
         "duplicate filenames, ignoring numbers": {
             "score": 0.1,
@@ -268,12 +271,28 @@ def generate_site(recipes):
                         if match not in warning_recipes:
                             warning_recipes.append(match)
         warnings_count = len(warning_recipes)
+        first_repo_commit = min(
+            [
+                x["first_commit"]
+                for x in recipes.values()
+                if x["parent_repo"] == repo
+                if x["first_commit"]
+            ]
+        )
+        latest_repo_commit = max(
+            [
+                x["latest_commit"]
+                for x in recipes.values()
+                if x["parent_repo"] == repo
+                if x["latest_commit"]
+            ]
+        )
         repo_rows.extend(
             (
                 "\n\t\t\t<tr>",
                 f'<td><a href="{repo}">{repo}</a></td>',
-                f"<td>{min([x['first_commit'] for x in recipes.values() if x['parent_repo'] == repo if x['first_commit']])}</td>",
-                f"<td>{max([x['latest_commit'] for x in recipes.values() if x['parent_repo'] == repo if x['latest_commit']])}</td>",
+                f"<td>{first_repo_commit}</td>",
+                f"<td>{latest_repo_commit}</td>",
                 f"<td>{recipe_count}</td>",
                 "<td>unknown</td>",
                 f"<td>{warnings_count}</td>",
@@ -294,7 +313,8 @@ def generate_site(recipes):
             recipe_rows[repo].extend(
                 (
                     "\n\t\t\t<tr>",
-                    f'<td><a href="{"/".join(relpath.split("/")[1:])}.html">{relpath.replace(repo + "/", "")}</a></td>',
+                    f'<td><a href="{"/".join(relpath.split("/")[1:])}.html">',
+                    f'{relpath.replace(repo + "/", "")}</a></td>',
                     f"<td>{recipe['first_commit']}</td>",
                     f"<td>{recipe['latest_commit']}</td>",
                     f"<td>{warnings_count}</td>",
@@ -303,15 +323,19 @@ def generate_site(recipes):
                 )
             )
             # Write recipe html
-            with open("templates/recipe.html", "r") as f:
-                recipe_html = f.read()
+            with open("templates/recipe.html", "r", encoding="utf-8") as openfile:
+                recipe_html = openfile.read()
 
             warnings_html = "" if recipe["warnings"] else "<p>None</p>"
             for issue, matches in recipe["warnings"].items():
                 warnings_html += f"\n<p>The following recipes have {issue}:</p>"
                 warnings_html += "\n<ul>"
                 for match in matches:
-                    warnings_html += f'\n<li><a href="/{PROJECT}/{match}.html">{match}</a> (first commit {recipes[match]["first_commit"]})</li>'
+                    warnings_html += (
+                        f'\n<li><a href="/{PROJECT}/{match}.html">{match}</a> '
+                        f'(first commit {recipes[match]["first_commit"]})</li>'
+                    )
+
                 warnings_html += "\n</ul>"
             repl = {
                 "%TITLE%": recipe["filename"],
@@ -335,55 +359,55 @@ def generate_site(recipes):
                 "%SCORE%": "{:.2f}".format(recipe["score"]),
                 "%WARNINGS%": warnings_html,
             }
-            for r in repl:
-                recipe_html = recipe_html.replace(r, repl[r])
+            for old, new in repl.items():
+                recipe_html = recipe_html.replace(old, new)
             if not os.path.isdir(os.path.dirname(f"docs/{relpath}")):
                 os.makedirs(os.path.dirname(f"docs/{relpath}"))
-            with open(f"docs/{relpath}.html", "w") as f:
-                f.write(recipe_html)
+            with open(f"docs/{relpath}.html", "w", encoding="utf-8") as openfile:
+                openfile.write(recipe_html)
 
         # Write repo html
-        with open("templates/repo.html", "r") as f:
-            repo_html = f.read()
+        with open("templates/repo.html", "r", encoding="utf-8") as openfile:
+            repo_html = openfile.read()
         repl = {
             "%TITLE%": repo,
             "%LAST_REFRESH%": datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"),
             "%RECIPE_ROWS%": "".join(recipe_rows[repo]),
         }
-        for r in repl:
-            repo_html = repo_html.replace(r, repl[r])
+        for old, new in repl.items():
+            repo_html = repo_html.replace(old, new)
         if not os.path.isdir(f"docs/{repo}"):
             os.makedirs(f"docs/{repo}")
-        with open(f"docs/{repo}/index.html", "w") as f:
-            f.write(repo_html)
+        with open(f"docs/{repo}/index.html", "w", encoding="utf-8") as openfile:
+            openfile.write(repo_html)
 
     # Write homepage index.html
-    with open("templates/home.html", "r") as f:
-        home_html = f.read()
+    with open("templates/home.html", "r", encoding="utf-8") as openfile:
+        home_html = openfile.read()
     repl = {
         "%TITLE%": "AutoPkg Dupe Tracker",
         "%LAST_REFRESH%": datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"),
         "%REPO_ROWS%": "".join(repo_rows),
     }
-    for r in repl:
-        home_html = home_html.replace(r, repl[r])
+    for old, new in repl.items():
+        home_html = home_html.replace(old, new)
     if not os.path.isdir("docs"):
         os.makedirs("docs")
-    with open("docs/index.html", "w") as f:
-        f.write(home_html)
+    with open("docs/index.html", "w", encoding="utf-8") as openfile:
+        openfile.write(home_html)
 
 
 def main():
     """Main process."""
 
-    print("Analyzing all AutoPkg recipes from %s" % REPOS_BASE)
+    print(f"Analyzing all AutoPkg recipes from {REPOS_BASE}")
     if os.path.isfile("cache.json"):
-        with open("cache.json", "rb") as f:
-            recipes = json.load(f)
+        with open("cache.json", "rb") as openfile:
+            recipes = json.load(openfile)
     else:
         recipes = get_recipes()
-        with open("cache.json", "w") as f:
-            json.dump(recipes, f, indent=2)
+        with open("cache.json", "w", encoding="utf-8") as openfile:
+            json.dump(recipes, openfile, indent=2)
     recipes = compile_test_results(recipes)
 
     print("Generating site data...")

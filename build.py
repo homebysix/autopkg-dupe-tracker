@@ -17,12 +17,12 @@ from glob import glob
 import yaml
 
 __author__ = "Elliot Jordan"
-__version__ = "4.0.0"
+__version__ = "3.1.0"
 
 # The directory that contains clones of all AutoPkg repos. Recommend using a
 # bulk clone tool like Repo Lasso (https://github.com/homebysix/repo-lasso) to
 # create this base directory.
-REPOS_BASE = "../repo-lasso/repos/autopkg"
+REPOS_BASE = "../autopkg"
 
 # GitHub project name, for generating GitHub Pages URLs
 PROJECT = "autopkg-dupe-tracker"

@@ -13,6 +13,7 @@ import plistlib
 import subprocess
 from datetime import datetime
 from glob import glob
+from xml.parsers.expat import ExpatError
 
 import yaml
 
@@ -49,8 +50,12 @@ def get_recipes():
             with open(os.path.join(REPOS_BASE, path), "rb") as openfile:
                 recipe = yaml.load(openfile, Loader=yaml.FullLoader)
         else:
-            with open(os.path.join(REPOS_BASE, path), "rb") as openfile:
-                recipe = plistlib.load(openfile)
+            try:
+                with open(os.path.join(REPOS_BASE, path), "rb") as openfile:
+                    recipe = plistlib.load(openfile)
+            except ExpatError:
+                print(f"WARNING: Unable to parse {path} as a plist.")
+                continue
         mod_dates_proc = subprocess.run(
             [
                 "git",

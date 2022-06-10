@@ -21,12 +21,15 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2022-06-09 01:56:06</td>
+            <td class="recipe_val">2022-06-10 02:00:29</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
             <td class="recipe_val">Downloads the latest version of the Epson Scanner Driver and Epson Scan Utility
-from Epson's site and extracts the package from the dmg.
+from Epson's site, extracts the package from the dmg, and adds version information to the filename.
+(The versioning assumes that Epson Scan 2 is part of the payload and is in the EpsonScan2_Standalone
+component within the distribution pkg.)
+
 Make separate overrides for each scanner driver you may want (make sure to change the
 value of the NAME input key). An override is required.
 

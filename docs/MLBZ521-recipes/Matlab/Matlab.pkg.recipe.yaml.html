@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Matlab.pkg.recipe.yaml</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Matlab.pkg.recipe.yaml</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/MLBZ521-recipes/">MLBZ521-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2022-07-27 02:16:20</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads and packages the latest version of Matlab from a local file share.
+
+This recipe version uses the offline media created with the "MathWorks Installer" described in the guide here:  https://www.mathworks.com/matlabcentral/answers/259632-how-can-i-get-matlab-installation-files-for-use-on-an-offline-machine
+
+For information on how this recipe works, please see the README in my repo (https://github.com/autopkg/MLBZ521-recipes/blob/master/ReadMe.md).
+
+I license most software separately in my environment and do not use the installer.input's `licensePath` key.  If you want to use this key, you'll need to fork this recipe and adjust the postinstall script.
+
+An override variable is available to support the installation of Matlab:
+  * INSTALL_INPUT
+    * As the name suggests, this is the "installer.input" that allows you to customize the install
+      of Matlab.  The available parameters are included; customize for your environment.
+
+If you want to customize the products that are installed, a copy of an original, albeit old, installer_input.txt is available in the recipe directory.  I've seen people are unable to locate it as it's not included in newer ISO downloads even though the documentation points to it.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.mlbz521.pkg.Matlab</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.mlbz521.download.Matlab</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"><a href="/autopkg-dupe-tracker/MLBZ521-recipes/Matlab/Matlab.jss.recipe.html">MLBZ521-recipes/Matlab/Matlab.jss.recipe</a></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2022-07-25 22:54:05 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2022-07-25 22:54:05 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>matlab.pkg</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/MLBZ521-recipes/Matlab/Matlab-ISO.pkg.recipe.yaml.html">MLBZ521-recipes/Matlab/Matlab-ISO.pkg.recipe.yaml</a> (first commit 2022-07-25 22:53:29 -0700)</li>
+</ul>
+</body>
+
+</html>

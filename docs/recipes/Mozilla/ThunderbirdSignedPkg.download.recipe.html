@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>ThunderbirdSignedPkg.download.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>ThunderbirdSignedPkg.download.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/recipes/">recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2022-08-21 02:11:52</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">This recipe downloads the signed installer package that Mozilla made available starting in Thunderbird 69.0 and 68.1esr.
+
+You may choose a specific release stream by placing the appropriate key in the
+LATEST_RELEASE input variable. The two most common are:
+	LATEST_THUNDERBIRD_VERSION for the latest (regular) release (this is the default), and
+Other values to try can be found by examining the JSON file at:
+	https://product-details.mozilla.org/1.0/thunderbird_versions.json
+(Not all will work.)
+
+LOCALE controls the language localization to be downloaded.
+Examples include 'en-US', 'de', 'sv-SE', and 'zh-TW'
+See the following URL for possible LOCALE values:
+	http://ftp.mozilla.org/pub/thunderbird/releases/latest/README.txt
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.autopkg.download.ThunderbirdSignedPkg</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">None</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"><a href="/autopkg-dupe-tracker/recipes/Mozilla/ThunderbirdSignedPkg.pkg.recipe.html">recipes/Mozilla/ThunderbirdSignedPkg.pkg.recipe</a><br /><a href="/autopkg-dupe-tracker/recipes/Mozilla/ThunderbirdSignedPkg.install.recipe.html">recipes/Mozilla/ThunderbirdSignedPkg.install.recipe</a><br /><a href="/autopkg-dupe-tracker/recipes/Mozilla/ThunderbirdSignedPkg.munki.recipe.html">recipes/Mozilla/ThunderbirdSignedPkg.munki.recipe</a></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2022-08-10 16:28:17 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2022-08-10 16:28:17 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>thunderbird.download</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/recipes/Mozilla/Thunderbird.download.recipe.html">recipes/Mozilla/Thunderbird.download.recipe</a> (first commit 2013-08-25 20:54:44 -0700)</li>
+<li><a href="/autopkg-dupe-tracker/hansen-m-recipes/Mozilla/Thunderbird-Win.download.recipe.html">hansen-m-recipes/Mozilla/Thunderbird-Win.download.recipe</a> (first commit 2015-07-06 21:21:29 -0400)</li>
+</ul>
+</body>
+
+</html>

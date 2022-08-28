@@ -21,11 +21,11 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2022-08-27 02:25:34</td>
+            <td class="recipe_val">2022-08-28 02:33:02</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the latest version of Auralia as a pkg and imports it into a munki_repo. Need to set MAJOR_VERSION, PLATFORM, and FILETYPE variables. PLATFORM should be either m (Mac) or w (Windows). FILETYPE should be pkg (Mac) or exe (Windows).</td>
+            <td class="recipe_val">Downloads the latest version of Auralia as a pkg and imports it into a munki_repo. Need to set MAJOR_VERSION, PLATFORM, and FILETYPE variables. PLATFORM should be either m (Mac) or w (Windows). FILETYPE should be pkg (Mac) or exe (Windows). Set DERIVE_MIN_OS to a non-empty string to derive the minimum os version from MunkiInstallsItemsCreator, either via Input in an override or via the -k option, i.e.: `-k DERIVE_MIN_OS=yes`</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>

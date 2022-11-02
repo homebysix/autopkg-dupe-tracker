@@ -21,21 +21,20 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2022-11-01 02:32:22</td>
+            <td class="recipe_val">2022-11-02 02:19:34</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
             <td class="recipe_val">Downloads the latest Adobe Reader and imports into Munki.
-Set MAJOR_VERSION to "10" to get the latest/last version of Adobe Reader 10 instead of 11.
+For OS_VERSION, 'Mac OS 10.15.0' or 'Mac OS 12.0' are valid, not 10.15 or 12.0
 
 Additional notes:
-- Reader ships as an installer pkg that deploys a .app, so we add it and
-Adobe Acrobat Pro.app to blocking_applications.
-- An installs array is also generated for the above .app.
-- The Reader website states that 10.6.4 is a minimum requirement for 11.
+- Reader ships as an installer pkg that deploys a .app
+- Due to name changes, we add multiple variations on .app names to blocking_applications.
+- An installs array is also generated for the .app.
 - The preinstall_script is there to get around an oversight in the package's
 preflight script, looking to find a user's trash folder to copy the .app into.
-        </td>
+</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>
@@ -59,18 +58,12 @@ preflight script, looking to find a user's trash folder to copy the .app into.
         </tr>
         <tr>
             <td class="recipe_key">Score</td>
-            <td class="recipe_val">1.00</td>
+            <td class="recipe_val">0.00</td>
         </tr>
     </table>
 
     <h2>Warnings</h2>
-    
-<p>The following recipes have deprecated parent(s) (<code>com.github.autopkg.download.AdobeReader</code>):</p>
-<ul>
-<li><a href="/autopkg-dupe-tracker/recipes/AdobeReader/AdobeReader.pkg.recipe.html">recipes/AdobeReader/AdobeReader.pkg.recipe</a> (first commit 2013-08-18 09:23:44 -0700)</li>
-<li><a href="/autopkg-dupe-tracker/novaksam-recipes/Recipes - pkg/AdobeReader.pkg.recipe.html">novaksam-recipes/Recipes - pkg/AdobeReader.pkg.recipe</a> (first commit 2015-07-10 08:08:21 -0500)</li>
-<li><a href="/autopkg-dupe-tracker/filewave/AdobeReader/AdobeReader.filewave.recipe.html">filewave/AdobeReader/AdobeReader.filewave.recipe</a> (first commit 2015-10-21 00:37:32 +0200)</li>
-</ul>
+    <p>None</p>
 </body>
 
 </html>

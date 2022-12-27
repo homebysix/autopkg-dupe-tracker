@@ -21,17 +21,19 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2022-12-26 01:29:14</td>
+            <td class="recipe_val">2022-12-27 01:27:59</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
             <td class="recipe_val">Takes the file specified by the --pkg (or -p) run option and builds a package
 that will install the file to /usr/local/outset/%ACTION_TYPE%.
+If you require that the payload be run on the next login of all accounts even if an earlier
+script/package of the same name has already been run, use the OutsetLoginOverridePkgReqd.pkg recipe.
 
 This recipe requires the robperc-recipes and homebysix-recipes repos.
 
-The pkg will be named using the payload's file name (up to the first period) 
-with underscores and spaces removed.
+The pkg will be named using the payload’s file name (up to the first period). 
+Underscores and spaces are removed for the package ID.
 
 This recipe assumes the item being passed (like a script) may not have a version number,
 so it assigns an ever-increasing number (based on the current time) as the version number.
@@ -45,7 +47,7 @@ Suggested Usage:
         autopkg run Outset-login-once.pkg --pkg /path/to/payload
 
 Input Variables:
-The legal values for ACTION_TYPE are the same as the folders within Outset's structure:
+The legal values for ACTION_TYPE are the same as the folders within Outset’s structure:
 	boot-every
 	boot-once
 	login-every
@@ -77,7 +79,7 @@ It is recommended that you change this value in your override to match your orga
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2021-07-23 16:11:37 -0600</td>
+            <td class="recipe_val">2022-12-26 17:19:49 -0700</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

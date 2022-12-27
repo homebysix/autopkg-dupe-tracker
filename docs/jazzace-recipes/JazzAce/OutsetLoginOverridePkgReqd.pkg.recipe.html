@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>OutsetLoginOverridePkgReqd.pkg.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>OutsetLoginOverridePkgReqd.pkg.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2022-12-27 01:27:59</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Takes the file specified by the --pkg (or -p) run option and builds a package
+that will install the file to /usr/local/outset/%ACTION_TYPE%. An Outset login-once override 
+will be added to Outset’s preferences so that all users will run the updated version of the 
+file supplied on next login (see the Outset wiki for information on Outset login-once overrides: 
+https://github.com/chilcote/outset/wiki/ScriptOverrides).
+
+This recipe requires the robperc-recipes and homebysix-recipes repos.
+
+The pkg will be named using the payload’s file name (up to the first period). 
+Underscores and spaces are removed for the package ID.
+
+This recipe assumes the item being passed (usually a script) may not have a version number,
+so it assigns an ever-increasing number (based on the current time) as the version number.
+
+Suggested Usage:
+1.  Make a recipe override for each type of Outset folder you wish to target. Name the override
+    to match the target folder — for example: 
+        autopkg make-override OutsetLoginOverridePkgReqd.pkg -n Outset-login-once-with-override.pkg
+2.  Change the value of ACTION_TYPE to match the target folder for that recipe override.
+3.  Run the override with the --pkg option — for example:
+        autopkg run Outset-login-once-with-override.pkg --pkg /path/to/payload
+
+Input Variables:
+The value for ACTION_TYPE should be login-once or login-privileged-once as appropriate. 
+(If you want to deploy to another one of Outset’s folders, use the OutsetPayloadPkgReqd.pkg 
+recipe, as that recipe does not add a login-once override.)
+
+REVERSE_DOMAIN specifies what you would like the package identifier to begin with
+(it will be followed by a "." and the name of your payload file including extension).
+It is recommended that you change this value in your override to match your organization.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.pkg.OutsetLoginOverridePkgReqd</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">None</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2022-12-26 17:19:49 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2022-12-26 17:19:49 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.00</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

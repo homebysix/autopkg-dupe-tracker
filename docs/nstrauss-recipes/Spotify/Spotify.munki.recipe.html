@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Spotify.munki.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Spotify.munki.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/nstrauss-recipes/">nstrauss-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2023-04-06 01:22:22</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest Spotify and imports into Munki.
+
+For Apple Silicon set DOWNLOAD_ARCH to "ARM64" and SUPPORTED_ARCH to "arm64" (default)
+
+For Intel leave DOWNLOAD_ARCH empty and set SUPPORTED_ARCH to "x86_64"
+
+Note: 1.0.50 and 1.0.51 versions of Spotify has mode 744 for its executables,
+causing the app to not launch for any user except the user who installed
+it, root in the case of Munki. Currently a postinstall_script fixes this issue
+by adding group and owner +x to these files.
+
+Related GitHub issue:
+https://github.com/autopkg/recipes/issues/196
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.nstrauss.munki.Spotify</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.autopkg.download.Spotify</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2023-04-05 12:26:30 -0500</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2023-04-05 12:26:30 -0500</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.70</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames (<code>spotify.munki.recipe</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/recipes/Spotify/Spotify.munki.recipe.html">recipes/Spotify/Spotify.munki.recipe</a> (first commit 2013-08-14 09:40:55 -0400)</li>
+</ul>
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>spotify.munki.recipe</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/recipes/Spotify/Spotify.munki.recipe.html">recipes/Spotify/Spotify.munki.recipe</a> (first commit 2013-08-14 09:40:55 -0400)</li>
+</ul>
+<p>The following recipes have duplicate NAMEs (<code>spotify.munki</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/recipes/Spotify/Spotify.munki.recipe.html">recipes/Spotify/Spotify.munki.recipe</a> (first commit 2013-08-14 09:40:55 -0400)</li>
+</ul>
+</body>
+
+</html>

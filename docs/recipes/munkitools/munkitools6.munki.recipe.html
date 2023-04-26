@@ -21,17 +21,16 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2023-04-25 01:56:01</td>
+            <td class="recipe_val">2023-04-26 01:26:02</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Note: munkitools does not include a code signature. If your
-organization requires code signature, it is recommend to internally sign
-the application.
-
-Downloads and imports version 6 of the Munki tools via
-the official releases listing on GitHub. You can set INCLUDE_PRERELEASES
+            <td class="recipe_val">Downloads and imports the unsigned release of Munki tools version 6
+via the official releases listing on GitHub. You can set INCLUDE_PRERELEASES
 to any value to have this recipe pull prerelease versions.
+
+NOTE: Use the "com.github.autopkg.munki.munkitools6-signed" recipe to
+download the code signed version of the Munki tools via Mac Admins Open Source.
 
 Note that Munki 6 includes an optional component pkg, munkitools_app_usage.
 This recipe imports this to the Munki with the appropriate 'requires' key,
@@ -72,7 +71,7 @@ MUNKI_ICON should be overridden with your icon name.
         </tr>
         <tr>
             <td class="recipe_key">Score</td>
-            <td class="recipe_val">0.10</td>
+            <td class="recipe_val">0.20</td>
         </tr>
     </table>
 
@@ -85,6 +84,10 @@ MUNKI_ICON should be overridden with your icon name.
 <li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools.munki.recipe.html">recipes/munkitools/munkitools.munki.recipe</a> (first commit 2013-08-14 09:40:55 -0400)</li>
 <li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools2.munki.recipe.html">recipes/munkitools/munkitools2.munki.recipe</a> (first commit 2014-03-06 09:29:03 -0500)</li>
 <li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools4.munki.recipe.html">recipes/munkitools/munkitools4.munki.recipe</a> (first commit 2019-11-20 10:30:23 -0600)</li>
+</ul>
+<p>The following recipes have duplicate NAMEs (<code>munkitools6.munki</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools6-signed.munki.recipe.html">recipes/munkitools/munkitools6-signed.munki.recipe</a> (first commit 2023-04-25 17:16:03 -0500)</li>
 </ul>
 </body>
 

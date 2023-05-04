@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>Microsoft_Remote_Desktop.munki.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Microsoft_Remote_Desktop.munki.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/wycomco-recipes/">wycomco-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2023-05-04 01:25:03</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest Microsoft Remote Desktop installer package for Office 365 and imports into Munki.
+    This recipe is a fork of com.github.foigus.munki.microsoftremotedesktop and supports the automatic identification
+    of the minimum_os_version and creates a proper installs array.
+    You may also want to change the attributeSetting for com.microsoft.package.Microsoft_AutoUpdate.app in
+    installer_choices_xml to "0" to prevent Microsoft's own updater to be installed (line 47 in this recipe).</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.wycomco.munki.microsoftremotedesktop</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.wycomco.pkg.microsoftremotedesktop</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2023-05-03 10:00:15 +0200</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2023-05-03 10:00:15 +0200</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>microsoftremotedesktop.munki</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/jessepeterson-recipes/AppStorePkg/MicrosoftRemoteDesktop.munki.recipe.html">jessepeterson-recipes/AppStorePkg/MicrosoftRemoteDesktop.munki.recipe</a> (first commit 2015-12-02 14:16:51 -0800)</li>
+<li><a href="/autopkg-dupe-tracker/foigus-recipes/Microsoft/MicrosoftRemoteDesktop.munki.recipe.html">foigus-recipes/Microsoft/MicrosoftRemoteDesktop.munki.recipe</a> (first commit 2018-03-26 20:39:55 -0500)</li>
+<li><a href="/autopkg-dupe-tracker/valdore86-recipes/MicrosoftRemoteDesktop/MicrosoftRemoteDesktop.munki.recipe.html">valdore86-recipes/MicrosoftRemoteDesktop/MicrosoftRemoteDesktop.munki.recipe</a> (first commit 2018-08-15 15:23:46 +0200)</li>
+</ul>
+</body>
+
+</html>

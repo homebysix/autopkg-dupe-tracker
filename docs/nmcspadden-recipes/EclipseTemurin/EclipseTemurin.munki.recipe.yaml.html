@@ -1,0 +1,79 @@
+<html>
+
+<head>
+    <title>EclipseTemurin.munki.recipe.yaml</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>EclipseTemurin.munki.recipe.yaml</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/nmcspadden-recipes/">nmcspadden-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2023-07-18 02:06:15</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the current release version of Eclipse Temurin and imports into Munki. This is the signed pkg version rather than the tar version, for those that require a signed package rather than accurate version number.
+
+FEATURE_VERSION may be any valid whole number, e.g. 8, 11, 16, 17. See https://api.adoptium.net/v3/info/available_releases for available feature versions.
+
+RELEASE_TYPE can be 'ga' (general availablility) or 'ea' (early access).
+
+OS may be 'mac' or others.
+
+DOWNLOAD_ARCH may be 'x64' or 'aarch64' for macOS-specific builds. Note that if you change this, you MUST also change MUNKI_ARCH to match what Munki expects: https://github.com/munki/munki/wiki/Pkginfo-Files#supported_architectures
+
+IMAGE_TYPE may be 'jdk', 'jre', 'testimage', 'debugimage' or 'staticlibs'.
+
+JVM_IMPLEMENTATION may be "hotspot", "openj9" or "dragonwell".
+
+HEAP_SIZE may be 'normal' or 'large'.
+
+VENDOR may be 'adoptopenjdk', 'openjdk', 'adoptium', 'alibaba', 'ibm'.
+
+Note that not all options are available for all vendors, and not all listed vendors may be currently available.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.nmcspadden.munki.EclipseTemurin-11-installer</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.nmcspadden.recipes.download.EclipseTemurin</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2023-07-17 15:53:47 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2023-07-17 15:53:47 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.00</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

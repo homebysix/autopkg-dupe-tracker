@@ -21,11 +21,15 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2023-07-20 01:29:59</td>
+            <td class="recipe_val">2023-07-21 01:32:40</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the current release version of Postman, builds a package and imports it to Munki. Taken from bnpl-recipes repo</td>
+            <td class="recipe_val">Downloads the current release version of Postman, builds a DMG and imports it to Munki. Taken from bnpl-recipes repo
+
+For Intel set DOWNLOAD_ARCH to "64" and set SUPPORTED_ARCH to "x86_64" (default)
+
+For Apple Silicon set both DOWNLOAD_ARCH and SUPPORTED_ARCH to "arm64"</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>

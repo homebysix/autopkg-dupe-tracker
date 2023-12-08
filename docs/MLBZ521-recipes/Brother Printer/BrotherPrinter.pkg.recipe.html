@@ -21,11 +21,19 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2023-12-07 01:18:35</td>
+            <td class="recipe_val">2023-12-08 01:19:14</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the Brother Printer Driver, Software Package, Utility, or Firmware specified and creates a package.  Obviously some packages are compatible with different models, but I haven't been able to think of a way to specify this in the name without it being extremely long.  You will need to specify the model specifically for this to work, take a look at the examples below.
+            <td class="recipe_val">Downloads the Brother Printer Driver, Software Package, Utility, or Firmware specified and creates a package.
+
+Obviously some packages are compatible with different models, but I haven't been able to think of a way to specify this in the name without it being extremely long.
+
+You will need to specify the model specifically for this to work, take a look at the examples below.
+
+NEW INPUT VARIABLE:  DMG_SUB_PATH_TO_PKG
+  * Use this variable if the .pkg is not in the root of the .dmg
+  * This will allow support for more "types" described below
 
 How to specify the Model:
  - MFC-J6935DW = mfcj6935dw
@@ -33,6 +41,10 @@ How to specify the Model:
  - HL-L9310CDW = hll9310cdw
 
 Specify which OS Version:
+ - Sonoma = 10080
+ - Ventura = 10077
+ - Monterey = 10072
+ - Big Sur = 10065
  - Catalina = 10060
  - Mojave = 10052
  - High Sierra = 10045
@@ -69,7 +81,7 @@ This probably isn't the best way to do it, but it works...</td>
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2020-03-07 02:22:59 -0700</td>
+            <td class="recipe_val">2023-12-07 16:50:44 -0700</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>MSTeams2.munki.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>MSTeams2.munki.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/recipes/">recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2024-02-01 01:16:56</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest MS Teams pkg,
+appends the version to the end of the filename, and imports into
+Munki.
+
+If this is an update_for something, you may define this in your
+pkginfo Input override below.
+
+CHANNEL, LOCALE_ID, and VERSION are inherited from the .download recipe but can
+still be overridden in an override for this .munki recipe.
+
+CHANNEL can be set to several values in order to get more frequent updates
+that can be used for testing purposes. See the explanations in the 'Channel'
+table at http://macadmins.software/docs/MAU_ManifestServer.pdf. Supported
+values are 'Production', 'InsiderSlow', 'InsiderFast', or a custom UUID to be
+inserted into the Base URL.
+
+LOCALE_ID sets the locale for a descriptive text that will be
+extracted from the Microsoft update metadata. See
+https://msdn.microsoft.com/en-us/goglobal/bb964664.aspx
+for more information about locale IDs.
+
+VERSION supports one value: 'latest', which will download
+the latest full update for the given CHANNEL.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.autopkg.munki.MSTeams2</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.autopkg.download.MSTeams2</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2024-02-01 03:51:57 +1000</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2024-02-01 03:51:57 +1000</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.20</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>msteams.munki.recipe</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/apettinen-recipes/MSTeams/MSTeams.munki.recipe.html">apettinen-recipes/MSTeams/MSTeams.munki.recipe</a> (first commit 2017-03-30 15:20:47 +0300)</li>
+<li><a href="/autopkg-dupe-tracker/recipes/MSOfficeUpdates/MSTeams.munki.recipe.html">recipes/MSOfficeUpdates/MSTeams.munki.recipe</a> (first commit 2021-06-14 13:08:40 +0200)</li>
+</ul>
+<p>The following recipes have duplicate NAMEs (<code>msteams.munki</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/recipes/MSOfficeUpdates/MSTeams.munki.recipe.html">recipes/MSOfficeUpdates/MSTeams.munki.recipe</a> (first commit 2021-06-14 13:08:40 +0200)</li>
+</ul>
+</body>
+
+</html>

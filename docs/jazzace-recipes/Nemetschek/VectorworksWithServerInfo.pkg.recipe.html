@@ -21,29 +21,33 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2024-02-05 01:15:11</td>
+            <td class="recipe_val">2024-02-06 01:12:55</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
             <td class="recipe_val">This recipe downloads the latest Vectorworks installer app and creates a package that leverages the silent install 
 CLI method to automate installation. Input variables are used to specify which major version of Vectorworks you are 
-packaging (e.g., 2023) and to customize the installation package with the recipe user's license information. 
-The pkg is named with the name and the version number (e.g., the installer for Vectorworks 2023 SP2 would be named 
-"Vectorworks-28.0.2"); if you want to include the year/major version in the pkg name, change the NAME variable accordingly.
+packaging (e.g., 2024) and to customize the installation package with the recipe user's license information. 
+The pkg is named with the name and the version number (e.g., the installer for Vectorworks 2024 SP2 would be named 
+"Vectorworks-29.0.2"); if you want to include the year/major version in the pkg name, change the NAME variable accordingly.
 Should the download not have changed, no processing is done; this is done to save redundant copying of the 2+ GB installer.
 
-Note: Due to a change in how the command line install (“silent install”) method works in Vectorworks 2023,
+Note: Due to a change in how the command line install (“silent install”) method works starting in Vectorworks 2023,
 you should use the previous version of this recipe if you need to package Vectorworks 2021 or 2022.
 
 This recipe differs from the regular Vectorworks.pkg recipe in that it aims to skip the initial Server dialogue box
-that appears when the user launches the app, providing the necessary settings in advance. 
+that appears when the user launches the app, providing the necessary settings in advance.
+ 
+It also lets you set how you manage automatic updates. Set AUTO_UPDATES to 2 to turn auto updates off.
+(The default set by Vectorworks is 0, which is Weekly. If you want Monthly, use 1.)
+
 This requires that you supply as input variables:
 • the Series (VW_SERIES, usually set to G),
 • whether you want Vectorworks to AutoFind the server (AUTOFIND_SERVER, set to 0 or 1),
 • the address of the server (AUTOFIND_SERVER, set to localhost if you chose to AutoFind,
   set to the IP address or DNS name of the server otherwise), and
 • the identifier for the main module licensed (MAIN_MODULE, which will be designer for academic users).
-This recipe creates a LoginDialog.xml file with your settings and leverages Outset (https://github.com/chilcote/outset)
+This recipe creates a LoginDialog.xml file with your settings and leverages Outset (https://github.com/macadmins/outset)
 to copy the file into the correct location in each user's account when they login.
 There are no external file dependencies for this recipe; it creates all the files it needs during the recipe run.
 </td>
@@ -66,7 +70,7 @@ There are no external file dependencies for this recipe; it creates all the file
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2022-12-14 16:30:22 -0700</td>
+            <td class="recipe_val">2024-02-05 16:09:31 -0700</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>DisplayCalibrationSupportFiles.pkg.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>DisplayCalibrationSupportFiles.pkg.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2024-03-23 01:12:21</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest release of customdisplayprofiles for the architecture specified
+by ARCHITECTURE (intel or applesilicon) and then creates a package with it and other tools stored 
+locally:
+- a complied version of brightness (github.com/nriley/brightness);
+- login-every scripts for Outset (github.com/macadmins/outset, installed separately) to set the
+  calibration profile (iaml_configure_display_profiles.sh, located at OUTSET_PROFILES_PATH) and 
+  brightness (SetCalibratedBrightness.sh, located at OUTSET_BRIGHTNESS_PATH);
+- Drop Calibration Profile Here app (located at DROPLET_PATH) that is used to set the profile 
+  and brightness after calibration via the GUI.
+I have hardcoded the target filenames for everything except customdisplayprofiles. If you want to
+do something similar but instead use the filename of the file, see look inside the JazzAce folder 
+in my jazzace-recipes repo for an example of using StringSplitter to grab the filename from the pathname.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.pkg.DisplayCalibrationSupportFiles</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.download.customdisplayprofiles</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2024-03-22 16:31:31 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2024-03-22 16:31:31 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.00</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

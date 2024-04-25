@@ -21,11 +21,24 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2024-04-24 01:17:20</td>
+            <td class="recipe_val">2024-04-25 01:17:49</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the latest version of KeyShot for macOS.</td>
+            <td class="recipe_val">Downloads the latest version of a particular major version of KeyShot for macOS.
+The recipe user must determine the product download number (six digits) and set that as
+the value of PRODUCT_ID in the Input dictionary. That will be found at the end of the 
+download link within your account. Based on what is known at the time of this writing,
+the following PRODUCT_IDs match the versions listed:
+
+370762 - 2024 (13)
+357619 - 2023 (12)
+354524 - 11
+350990 - 10
+
+You could also create an override of this recipe to download the KeyShot Content pkg installer
+using the same principles.
+</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>

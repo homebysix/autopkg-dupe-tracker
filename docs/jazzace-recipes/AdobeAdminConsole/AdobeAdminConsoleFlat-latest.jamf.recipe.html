@@ -1,0 +1,70 @@
+<html>
+
+<head>
+    <title>AdobeAdminConsoleFlat-latest.jamf.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>AdobeAdminConsoleFlat-latest.jamf.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2024-05-25 01:17:58</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">This recipe takes a versioned Adobe flat package installer (generated as described in the parent 
+AdobeAdminConsoleFlat.pkg recipe), then uploads the pkg to your Jamf Pro Server/Distribution Point 
+and creates/updates the policy that deploys it (overwriting the existing policy but not flushing it).
+
+The server/share details must be set using variables set in the environment or specified in your override
+(see https://github.com/grahampugh/jamf-upload/wiki/JamfUploader-AutoPkg-Processors).
+
+Note that the (Package) CATEGORY and POLICY_CATEGORY specified by the Input variables 
+must each exist on the server, otherwise the recipe will fail. The value for SITE is 
+requested in the Input dictionary so that it may be used within the POLICY_TEMPLATE specified.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.jamf.AdobeAdminConsoleFlat-latest</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.pkg.AdobeAdminConsoleFlat</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2024-05-24 16:22:44 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2024-05-24 16:22:44 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.00</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    <p>None</p>
+</body>
+
+</html>

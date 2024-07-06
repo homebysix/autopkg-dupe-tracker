@@ -410,13 +410,14 @@ def generate_site(recipes):
 def main():
     """Main process."""
 
+    cache_path = "cache.json"
     print(f"Analyzing all AutoPkg recipes from {REPOS_BASE}")
-    if os.path.isfile("cache.json"):
-        with open("cache.json", "rb") as openfile:
+    if os.path.isfile(cache_path):
+        with open(cache_path, "rb") as openfile:
             recipes = json.load(openfile)
     else:
         recipes = get_recipes()
-        with open("cache.json", "w", encoding="utf-8") as openfile:
+        with open(cache_path, "w", encoding="utf-8") as openfile:
             json.dump(recipes, openfile, indent=2)
     recipes = compile_test_results(recipes)
     if not recipes:

@@ -44,6 +44,9 @@ def get_recipes():
     # Read contents and metadata of recipes
     recipes = {}
     for full_path in recipe_paths:
+        if not os.path.isfile(full_path):
+            # Skip folders that end in .recipe or .recipe.yaml
+            continue
         path = os.path.relpath(full_path, REPOS_BASE)
         print(f"Analyzing {path}")
         parents, filename = os.path.split(path)

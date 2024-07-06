@@ -419,8 +419,14 @@ def main():
         with open("cache.json", "w", encoding="utf-8") as openfile:
             json.dump(recipes, openfile, indent=2)
     recipes = compile_test_results(recipes)
+    if not recipes:
+        print(
+            "No recipes found. If this is unexpected, verify your "
+            f"REPOS_BASE variable, remove {cache_path}, and try again."
+        )
+        sys.exit(0)
 
-    print("Generating site data...")
+    print(f"Generating site data from {len(recipes)} recipes...")
     generate_site(recipes)
 
 

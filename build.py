@@ -11,14 +11,15 @@ import json
 import os
 import plistlib
 import subprocess
-from datetime import datetime
+import sys
+from datetime import datetime, timezone
 from glob import glob
 from xml.parsers.expat import ExpatError
 
 import yaml
 
 __author__ = "Elliot Jordan"
-__version__ = "3.1.0"
+__version__ = "3.2.0"
 
 # The directory that contains clones of all AutoPkg repos. Recommend using a
 # bulk clone tool like Repo Lasso (https://github.com/homebysix/repo-lasso) to
@@ -345,8 +346,8 @@ def generate_site(recipes):
             repl = {
                 "%TITLE%": recipe["filename"],
                 "%PARENT_REPO%": recipe["parent_repo"],
-                "%LAST_REFRESH%": datetime.strftime(
-                    datetime.utcnow(), "%Y-%m-%d %H:%M:%S"
+                "%LAST_REFRESH%": datetime.now(timezone.utc).strftime(
+                    "%Y-%m-%d %H:%M:%S"
                 ),
                 "%DESCRIPTION%": recipe["contents"].get("Description", "None"),
                 "%IDENTIFIER%": recipe["contents"]["Identifier"],
@@ -376,7 +377,9 @@ def generate_site(recipes):
             repo_html = openfile.read()
         repl = {
             "%TITLE%": repo,
-            "%LAST_REFRESH%": datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"),
+            "%LAST_REFRESH%": datetime.strftime(
+                datetime.now(timezone.utc), "%Y-%m-%d %H:%M:%S"
+            ),
             "%RECIPE_ROWS%": "".join(recipe_rows[repo]),
         }
         for old, new in repl.items():
@@ -391,7 +394,9 @@ def generate_site(recipes):
         home_html = openfile.read()
     repl = {
         "%TITLE%": "AutoPkg Dupe Tracker",
-        "%LAST_REFRESH%": datetime.strftime(datetime.utcnow(), "%Y-%m-%d %H:%M:%S"),
+        "%LAST_REFRESH%": datetime.strftime(
+            datetime.now(timezone.utc), "%Y-%m-%d %H:%M:%S"
+        ),
         "%REPO_ROWS%": "".join(repo_rows),
     }
     for old, new in repl.items():

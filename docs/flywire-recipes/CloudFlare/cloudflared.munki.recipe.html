@@ -21,19 +21,22 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2024-08-08 01:26:36</td>
+            <td class="recipe_val">2024-08-09 01:26:36</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the latest version of cloudflared, creates a pkg and imports it into Munki.</td>
+            <td class="recipe_val">Downloads the latest version of cloudflared and imports it into Munki.
+
+ARCH_TYPE=("arm64", "amd64")
+SUPPORTED_ARCH=("arm64", "x86_64")</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>
-            <td class="recipe_val"><code>com.github.peertransfer.munki.cloudflared</code></td>
+            <td class="recipe_val"><code>com.github.flywire.munki.cloudflared</code></td>
         </tr>
         <tr>
             <td class="recipe_key">Parent Recipes</td>
-            <td class="recipe_val">com.github.peertransfer.pkg.cloudflared</td>
+            <td class="recipe_val">com.github.flywire.download.cloudflared</td>
         </tr>
         <tr>
             <td class="recipe_key">Child Recipes</td>

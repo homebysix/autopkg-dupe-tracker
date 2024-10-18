@@ -21,11 +21,17 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2024-10-17 01:42:15</td>
+            <td class="recipe_val">2024-10-18 01:42:34</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads latest SonicPi zip and builds a package.</td>
+            <td class="recipe_val">Downloads latest Sonic Pi app and builds a package.
+
+For the ARCH_TYPE variable, please use Intel-Mac-x64 for Intel downloads and Mac-arm64 for Apple Silicon downloads.
+
+If you need both the Intel and Apple Silicon versions of the app, override the recipe once for each kind and
+change the value of NAME to include some reference to the architecture so that you can distinguish the packages 
+(e.g., set NAME to Sonic Pi Intel).</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>

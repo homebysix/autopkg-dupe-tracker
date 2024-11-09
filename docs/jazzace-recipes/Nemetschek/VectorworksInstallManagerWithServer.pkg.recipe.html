@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <title>VectorworksInstallManagerWithServer.pkg.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>VectorworksInstallManagerWithServer.pkg.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2024-11-09 01:31:34</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">This recipe downloads the latest Vectorworks Install Manager app (2025 or later) and creates a package that 
+runs the Vectorworks Install Manager via shell script. This recipe differs from the VectorworksInstallManager.pkg 
+recipe in that it aims to skip the initial Server dialogue box that appears when the user launches the app, 
+providing the necessary settings in advance.
+
+This recipe uses Vectorworks Install Manager’s capability to download the installer (.vwim) at runtime.
+
+Input variables are used to specify which major version of Vectorworks you are installing (e.g., 2025) and 
+to customize the installation package with the recipe user’s license information.
+You must also specify the numerical values for the USER_ID and GROUP_ID to be used for the install.
+The defaults are 0 and 80 respectively (root and admin).
+
+The pkg is named with the NAME and the version number of Vectorworks Install Manager; if you want to include the year/major version 
+in the pkg name, change the NAME variable accordingly.
+
+This recipe also lets you set how you manage automatic updates. Set AUTO_UPDATES to 2 to turn auto updates off.
+(The default set by Vectorworks is 0, which is Weekly. If you want Monthly, use 1.)
+
+This requires that you supply as input variables:
+• the Series (VW_SERIES, usually set to G),
+• whether you want Vectorworks to AutoFind the server (AUTOFIND_SERVER, set to 0 or 1),
+• the address of the server (AUTOFIND_SERVER, set to localhost if you chose to AutoFind,
+  set to the IP address or DNS name of the server otherwise), and
+• the identifier for the main module licensed (MAIN_MODULE, which will be designer for academic users).
+This recipe creates a LoginDialog.xml file with your settings and leverages Outset (https://github.com/macadmins/outset)
+to copy the file into the correct location in each user's account when they login.
+There are no external file dependencies for this recipe; it creates all the files it needs during the recipe run.
+
+Note: This recipe only works with Vectorworks 2025 (and later). Use VectorworksWithServer2024.pkg for Vectorworks 2023 or 2024.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.pkg.vectorworksinstallmgrwithserver</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.download.vectorworksinstallmanager</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2024-11-08 15:20:33 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2024-11-08 15:20:33 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>vectorworksinstallmanager.pkg</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/jazzace-recipes/Nemetschek/VectorworksInstallManager.pkg.recipe.html">jazzace-recipes/Nemetschek/VectorworksInstallManager.pkg.recipe</a> (first commit 2024-11-08 15:20:33 -0700)</li>
+</ul>
+</body>
+
+</html>

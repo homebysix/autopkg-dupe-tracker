@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>VectorworksWithServer2024-latest.jamf.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>VectorworksWithServer2024-latest.jamf.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2024-11-09 01:31:34</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">This recipe downloads Vectorworks 2023 or 2024, packages the proprietary installer as well as the info for your server, 
+then uploads the pkg to your Jamf Pro Server/Distribution Point and creates/updates the policy that deploys it.
+
+Note: For Vectorworks 2025 or later, use the VectorworksInstallManagerWithServer-latest.jamf recipe.
+
+The server/share details must be set using variables set in the environment or specified in your override
+(see https://github.com/grahampugh/jamf-upload/wiki/JamfUploader-AutoPkg-Processors).
+
+The grahampugh-recipes repo is required.
+
+Note that the (Package) CATEGORY, GROUP_NAME, and POLICY_CATEGORY specified by the Input variables 
+must each exist on the server, otherwise the recipe will fail. Values for SITE and GROUP_NAME are 
+requested in the Input dictionary so that they may be used within the POLICY_TEMPLATE specified.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.jamf.vectorworkswithserverinfo-latest</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.pkg.vectorworkswithserverinfo</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2024-11-08 15:20:33 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2024-11-08 15:20:33 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate identifiers (<code>com.github.jazzace.jamf.vectorworkswithserverinfo-latest</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/jazzace-recipes/Nemetschek/VectorworksWithServerInfo-latest.jamf.recipe.html">jazzace-recipes/Nemetschek/VectorworksWithServerInfo-latest.jamf.recipe</a> (first commit 2022-07-12 15:47:39 -0600)</li>
+</ul>
+</body>
+
+</html>

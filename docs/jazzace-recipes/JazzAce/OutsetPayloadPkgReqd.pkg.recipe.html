@@ -21,7 +21,7 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2025-02-04 01:41:13</td>
+            <td class="recipe_val">2025-02-05 01:42:48</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
@@ -30,7 +30,7 @@ that will install the file to /usr/local/outset/%ACTION_TYPE%.
 If you require that the payload be run on the next login of all accounts even if an earlier
 script/package of the same name has already been run, use the OutsetLoginOverridePkgReqd.pkg recipe.
 
-This recipe requires the robperc-recipes and homebysix-recipes repos.
+This recipe requires the homebysix-recipes repo.
 
 The pkg will be named using the payload’s file name (up to the first period). 
 Underscores and spaces are removed for the package ID.
@@ -39,10 +39,10 @@ This recipe assumes the item being passed (like a script) may not have a version
 so it assigns an ever-increasing number (based on the current time) as the version number.
 
 Suggested Usage:
-1.  Make an override for each type of Outset folder you wish to target. Name the override
+1.  Make a recipe override for each type of Outset folder you wish to target. Name the override
     to match the target folder — for example: 
         autopkg make-override OutsetPayloadPkgReqd.pkg -n Outset-login-once.pkg
-2.  Change the value of ACTION_TYPE to match the target folder for that override.
+2.  Change the value of ACTION_TYPE to match the target folder for that recipe override.
 3.  Run the override with the --pkg option — for example:
         autopkg run Outset-login-once.pkg --pkg /path/to/payload
 
@@ -79,7 +79,7 @@ It is recommended that you change this value in your override to match your orga
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2022-12-26 17:19:49 -0700</td>
+            <td class="recipe_val">2025-02-04 11:11:27 -0700</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

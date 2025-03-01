@@ -21,7 +21,7 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2025-02-28 01:46:00</td>
+            <td class="recipe_val">2025-03-01 01:51:27</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
@@ -29,9 +29,11 @@
 and creates/updates the policy that deploys it.
 
 To run this recipe, you must supply the location to the pkg you downloaded from 
-https://community.gopro.com/t5/en/GoPro-FX-Reframe/ta-p/412890. For example:
+https://community.gopro.com/s/article/GoPro-FX-Reframe?language=en_US. For example:
 
-    autopkg run GoProFXReframe-latest.jamf -p /path/to/GoPro-FX-Reframe-Plugin-1.4.1.266.pkg
+    autopkg run GoProFXReframe-latest.jamf -p "/path/to/GoPro Reframe for Adobe 2.0.0-12.pkg"
+
+You may need to mount a disk image if the pkg is wrapped in one (you cannot just specify the disk image).
 
 The server/share details must be set using variables set in the environment or specified in your override
 (see https://github.com/grahampugh/jamf-upload/wiki/JamfUploader-AutoPkg-Processors).

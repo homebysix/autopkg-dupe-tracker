@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>QLab5-patch.jamf.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>QLab5-patch.jamf.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/jazzace-recipes/">jazzace-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2025-04-19 01:48:25</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">This recipe takes QLab 5, packages it, uploads the pkg to your Jamf Pro Server/Distribution Point 
+and creates/updates both the initial installation policy and the Patch policy.
+
+The server/share details must be set using variables set in the environment or specified in your override
+(see https://github.com/grahampugh/jamf-upload/wiki/JamfUploader-AutoPkg-Processors).
+
+The grahampugh-recipes and dataJAR-recipes repos required.
+
+Note that the PATCH_SOFTWARE_TITLE specified in the Input variables must exist on the server, 
+otherwise the recipe will fail.
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.jazzace.jamf.QLab5-patch</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.jazzace.jamf.QLab5-latest</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2025-04-18 17:47:12 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2025-04-18 17:47:12 -0600</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>qlab-patch.jamf.recipe</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/jazzace-recipes/Figure53/QLab4-patch.jamf.recipe.html">jazzace-recipes/Figure53/QLab4-patch.jamf.recipe</a> (first commit 2022-07-11 14:58:37 -0600)</li>
+</ul>
+</body>
+
+</html>

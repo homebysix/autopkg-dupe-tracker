@@ -21,11 +21,18 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2025-06-02 02:04:38</td>
+            <td class="recipe_val">2025-06-03 02:01:56</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the latest PyCharm disk image and imports into Munki.</td>
+            <td class="recipe_val">Downloads the latest PyCharm disk image and imports into Munki.
+Defaults to the PyCharm Community Edition for intel architecture. Override the following keys for other versions:
+For macOS Silicon: 
+    - ARCHITECTURE == "M1"
+For PyCharm Professional Edition: 
+    - CODESIGNATUREAPPNAME == "PyCharm"
+    - CODESIGNATUREIDENTIFIER == "com.jetbrains.pycharm"
+    - EDITION == "PCP"</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>
@@ -37,7 +44,7 @@
         </tr>
         <tr>
             <td class="recipe_key">Child Recipes</td>
-            <td class="recipe_val"><a href="/autopkg-dupe-tracker/its-unibas-recipes/JetBrains/PyCharmProfessional.munki.recipe.html">its-unibas-recipes/JetBrains/PyCharmProfessional.munki.recipe</a></td>
+            <td class="recipe_val"></td>
         </tr>
         <tr>
             <td class="recipe_key">First commit</td>
@@ -45,7 +52,7 @@
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2019-03-13 16:36:45 +0100</td>
+            <td class="recipe_val">2025-06-02 16:47:09 +0200</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

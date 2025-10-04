@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>MATLAB_MPM.download.recipe.yaml</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>MATLAB_MPM.download.recipe.yaml</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/MLBZ521-recipes/">MLBZ521-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2025-10-04 01:45:33</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">Downloads the latest version of MATLAB using the "MATLAB Package Manager" (mpm) CLI utility.
+(See:  https://www.mathworks.com/help/install/ug/get-mpm-os-command-line.html)
+
+* Note:  As is this recipe downloads both the Intel & ARM MATLAB installer; adjust the below input variables as needed.
+
+Input Variables:
+  * MPM_ARCH = This is for the device running this recipe, use:
+    * `maca64` for ARM
+    * `maci64` for Intel
+  * DL_VERSION = optionally specify version of MATLAB to download, otherwise the latest release will be downloaded
+  * DL_PRODUCTS = The MATLAB 'products' to download.  This can include MATLAB, additional products, and support packages.
+  * DL_ARCHS = The architecture to download for.  Technically, in addition to macOS Intel/ARM, this can support Windows and Linux as well.
+  * INSTALLER_INPUT = A variable file used instead of the `DL_<...>` variables.
+      * For additional information, ee:  https://www.mathworks.com/help/install/ug/mpmdownload.html#d126e6114
+
+For information on how this recipe works, please see the README in my repo (https://github.com/autopkg/MLBZ521-recipes/blob/master/ReadMe.md).
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.mlbz521.download.MATLAB_MPM</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">None</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"><a href="/autopkg-dupe-tracker/MLBZ521-recipes/Matlab/MATLAB_MPM.pkg.recipe.yaml.html">MLBZ521-recipes/Matlab/MATLAB_MPM.pkg.recipe.yaml</a></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2025-10-03 12:09:32 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2025-10-03 12:09:32 -0700</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.10</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate NAMEs (<code>matlab.download</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/MLBZ521-recipes/Matlab/Matlab-ISO.download.recipe.yaml.html">MLBZ521-recipes/Matlab/Matlab-ISO.download.recipe.yaml</a> (first commit 2022-07-25 22:53:29 -0700)</li>
+<li><a href="/autopkg-dupe-tracker/MLBZ521-recipes/Matlab/Matlab-Offline_DL.download.recipe.yaml.html">MLBZ521-recipes/Matlab/Matlab-Offline_DL.download.recipe.yaml</a> (first commit 2025-10-03 12:38:14 -0700)</li>
+</ul>
+</body>
+
+</html>

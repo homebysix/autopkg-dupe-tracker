@@ -21,11 +21,18 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2025-10-06 01:51:26</td>
+            <td class="recipe_val">2025-10-07 01:49:55</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the latest Intellij disk image and imports into Munki.</td>
+            <td class="recipe_val">Downloads the latest Intellij disk image and imports into Munki.
+Defaults to the Intellij Community Edition for intel architecture. Override the following keys for other versions:
+For macOS Silicon: 
+    - arch == "aarch64"
+For IntelliJ Ultimate Edition: 
+    - CODESIGNATUREAPPNAME == "IntelliJ IDEA.app"
+    - CODESIGNATUREREQUIREMENT == "identifier "com.jetbrains.intellij" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "2ZEFAR8TH3""
+    - edition == "U"</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>
@@ -45,7 +52,7 @@
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2019-03-13 16:36:45 +0100</td>
+            <td class="recipe_val">2025-09-29 12:32:05 +0200</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

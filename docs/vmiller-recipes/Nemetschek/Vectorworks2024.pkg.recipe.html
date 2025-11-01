@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Vectorworks2024.pkg.recipe</title>
+    <!-- Milligram -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.min.css"
+        integrity="sha512-xiunq9hpKsIcz42zt0o2vCo34xV0j6Ny8hgEylN3XBglZDtTZ2nwnqF/Z/TTCc18sGdvCjbFInNd++6q3J0N6g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Vectorworks2024.pkg.recipe</h1>
+    <nav>
+        <a href="/autopkg-dupe-tracker/">Home</a> |
+        <a href="/autopkg-dupe-tracker/vmiller-recipes/">vmiller-recipes</a>
+    </nav>
+
+    <h2>Basics</h2>
+    <table>
+        <tr>
+            <td class="recipe_key">Last refresh</td>
+            <td class="recipe_val">2025-11-01 02:01:48</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Desciption</td>
+            <td class="recipe_val">This recipe downloads the latest Vectorworks 2023 or 2024 installer app and creates a package that leverages the silent install
+CLI method to automate installation. Input variables are used to specify which major version of Vectorworks you are
+packaging (e.g., 2024) and to customize the installation package with the recipe user's license information.
+The pkg is named with the name and the version number (e.g., the installer for Vectorworks 2024 SP2 would be named
+"Vectorworks-29.0.2"); if you want to include the year/major version in the pkg name, change the NAME variable accordingly.
+Should the download not have changed, no processing is done; this is done to save redundant copying of the 2+ GB installer.
+
+Note: Due to a change in how the command line install (“silent install”) method works in Vectorworks 2023 and 2024,
+use the following past build of this recipe if you need to package Vectorworks 2021 or 2022:
+https://github.com/autopkg/jazzace-recipes/blob/5cee14647e8a2016ffa98103b30820b9cf4d4133/Nemetschek/Vectorworks.pkg.recipe
+</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Identifier</td>
+            <td class="recipe_val"><code>com.github.vmiller.pkg.vectorworks2024</code></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Parent Recipes</td>
+            <td class="recipe_val">com.github.vmiller.download.vectorworks2024</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Child Recipes</td>
+            <td class="recipe_val"></td>
+        </tr>
+        <tr>
+            <td class="recipe_key">First commit</td>
+            <td class="recipe_val">2025-10-31 10:34:05 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Latest commit</td>
+            <td class="recipe_val">2025-10-31 10:34:05 -0400</td>
+        </tr>
+        <tr>
+            <td class="recipe_key">Score</td>
+            <td class="recipe_val">0.60</td>
+        </tr>
+    </table>
+
+    <h2>Warnings</h2>
+    
+<p>The following recipes have duplicate filenames (<code>vectorworks2024.pkg.recipe</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/jazzace-recipes/Nemetschek/Vectorworks2024.pkg.recipe.html">jazzace-recipes/Nemetschek/Vectorworks2024.pkg.recipe</a> (first commit 2024-10-04 16:45:09 -0600)</li>
+</ul>
+<p>The following recipes have duplicate filenames, ignoring numbers (<code>vectorworks.pkg.recipe</code>):</p>
+<ul>
+<li><a href="/autopkg-dupe-tracker/jazzace-recipes/Nemetschek/Vectorworks2024.pkg.recipe.html">jazzace-recipes/Nemetschek/Vectorworks2024.pkg.recipe</a> (first commit 2024-10-04 16:45:09 -0600)</li>
+</ul>
+</body>
+
+</html>

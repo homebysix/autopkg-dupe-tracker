@@ -21,29 +21,13 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2026-01-23 02:11:34</td>
+            <td class="recipe_val">2026-01-24 02:07:34</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Note: munkitools does not include a code signature. If your
-organization requires code signature, it is recommend to internally sign
-the application.
+            <td class="recipe_val">Downloads and imports Munki tools version via the official releases listing on GitHub.
 
-Downloads and imports the latest version of the Munki tools via
-the official releases listing on GitHub. You can set INCLUDE_PRERELEASES
-to any value to have this recipe pull prerelease versions.
-
-Note that Munki 4+ includes an additional component pkg, munkitools_app_usage.
-This recipe imports this to the Munki with the appropriate 'requires' key,
-however as it is considered an optional component, this recipe does not
-add it as an update_for any Munki component. Admins should add
-munkitools_app_usage to a manifest manually if its installation on clients
-is desired.
-
-Note that Munki 4+ offers the option to include Python to be embedded 
-in preparation for macOS no longer including the Python environment in future OSes.
-This recipe includes the embedded Python installation and adds the Python package
-as a requirement to the other munki pkginfos.
+You can set INCLUDE_PRERELEASES to any value to have this recipe pull prerelease versions.
 
 This recipe cannot be overridden to pull a download from an alternate location.
 
@@ -51,8 +35,6 @@ The GitHubReleasesInfoProvider processor used by this recipe also
 respects an input variable: 'sort_by_highest_tag_names', which
 if set, will ignore the post dates of the releases and instead sort
 descending by tag names according to LooseVersion semantics.
-
-MUNKI_ICON should be overridden with your icon name.
 </td>
         </tr>
         <tr>
@@ -85,11 +67,7 @@ MUNKI_ICON should be overridden with your icon name.
     
 <p>The following recipes have duplicate filenames, ignoring numbers (<code>munkitools.munki.recipe</code>):</p>
 <ul>
-<li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools3.munki.recipe.html">recipes/munkitools/munkitools3.munki.recipe</a> (first commit 2017-03-20 17:31:29 +0100)</li>
-<li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools2.munki.recipe.html">recipes/munkitools/munkitools2.munki.recipe</a> (first commit 2014-03-06 09:29:03 -0500)</li>
-<li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools5.munki.recipe.html">recipes/munkitools/munkitools5.munki.recipe</a> (first commit 2020-05-26 17:19:08 -0700)</li>
 <li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools7.munki.recipe.html">recipes/munkitools/munkitools7.munki.recipe</a> (first commit 2025-10-02 09:03:21 -0500)</li>
-<li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools4.munki.recipe.html">recipes/munkitools/munkitools4.munki.recipe</a> (first commit 2019-11-20 10:30:23 -0600)</li>
 <li><a href="/autopkg-dupe-tracker/recipes/munkitools/munkitools6.munki.recipe.html">recipes/munkitools/munkitools6.munki.recipe</a> (first commit 2022-10-19 08:28:35 -0700)</li>
 </ul>
 <p>The following recipes have duplicate NAMEs (<code>munkitools.munki</code>):</p>

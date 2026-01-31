@@ -21,11 +21,24 @@
     <table>
         <tr>
             <td class="recipe_key">Last refresh</td>
-            <td class="recipe_val">2026-01-30 02:36:06</td>
+            <td class="recipe_val">2026-01-31 02:31:09</td>
         </tr>
         <tr>
             <td class="recipe_key">Desciption</td>
-            <td class="recipe_val">Downloads the latest version of Mattermost.</td>
+            <td class="recipe_val">Downloads the latest version of Mattermost.
+
+Input options:
+
+- latest_only: Whether to only fetch the release marked as "latest" in GitHub. Mattermost often patches older major releases in a way that causes this recipe to potentially miss latest version builds, so this is set to true by default to avoid this issue. Set to false in an override to disable this behavior.
+- os: The Mattermost build for a specific operating system. Set to one of the following in an override:
+	- "mac-universal" for macOS Universal (default)
+	- "mac-x64" for macOS 64-Bit Intel
+	- "mac-m1" for macOS 64-Bit Apple Silicon
+	- "win-x64" for WINDOWS 64-Bit Intel
+	- "win-arm64" for WINDOWS 64-Bit ARM
+	- "linux-arm64" for LINUX 64-Bit ARM
+	- "linux-x64" for LINUX 64-Bit Intel
+</td>
         </tr>
         <tr>
             <td class="recipe_key">Identifier</td>
@@ -45,7 +58,7 @@
         </tr>
         <tr>
             <td class="recipe_key">Latest commit</td>
-            <td class="recipe_val">2025-10-26 20:29:11 -0700</td>
+            <td class="recipe_val">2026-01-30 09:12:55 -0800</td>
         </tr>
         <tr>
             <td class="recipe_key">Score</td>

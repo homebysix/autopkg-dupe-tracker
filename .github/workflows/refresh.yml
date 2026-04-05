@@ -1,0 +1,53 @@
+name: Dashboard Refresh
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "31 2 * * 1"  # Weekly Monday 2:31 UTC
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.repository_owner == 'homebysix'  # Remove to build dashboard on forks
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out this repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Clone AutoPkg org repos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scripts/clone_repos.sh autopkg
+
+      - name: Build candidate sets
+        run: >
+          python3 scripts/build_candidates.py
+          --repos-dir autopkg
+          --output data/candidates.json
+
+      - name: Check PR status
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/check_pr_status.py
+
+      - name: Build dashboard
+        run: python3 scripts/build_dashboard.py
+
+      - name: Commit and push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add docs/dashboard.json
+          git diff --staged --quiet || git commit -m "Refresh dashboard data"
+          git push

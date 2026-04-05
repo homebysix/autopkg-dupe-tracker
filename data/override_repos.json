@@ -1,0 +1,74 @@
+{
+  "jazzace-recipes": {
+    "flag": "never_keep",
+    "reason": "Maintainer is seeking to transfer ownership of recipes to other repos",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "Yohan460-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo is being deprecated and archived",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "valdore86-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo is being deprecated and archived",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "brianwells-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "natewalck-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "adobe-ccp-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "groob-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "Tecnico1931-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "skoobasteeve-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "chefaustin-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "crystalllized-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  },
+  "giobbi-recipes": {
+    "flag": "never_keep",
+    "reason": "Repo inactive 2+ years as of Apr 2026",
+    "date": "2026-04-05",
+    "action": "Prefer alternative repos as keepers"
+  }
+}

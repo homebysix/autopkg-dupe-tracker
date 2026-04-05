@@ -1,2 +1,12 @@
+# Cloned autopkg repos (large, fetched by scripts/clone_repos.sh)
+autopkg/
 
-cache.json
+# Auto-generated intermediate data (rebuilt by CI, not needed in repo)
+data/candidates.json
+data/pr_status.json
+
+# Virtual environment
+.venv/
+
+# OS
+.DS_Store

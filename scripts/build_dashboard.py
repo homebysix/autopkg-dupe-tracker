@@ -65,10 +65,7 @@ def determine_action_status(evaluation, prs, override):
 
     # Fall back to evaluation confidence
     if evaluation:
-        confidence = evaluation.get("confidence", "")
-        if confidence in ("HIGH", "MEDIUM"):
-            return "needs_pr"
-        return "needs_review"
+        return "needs_pr"
 
     # No evaluation yet
     return "needs_evaluation"

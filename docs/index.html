@@ -33,7 +33,6 @@
   --action-needs_pr-bg: #fff7ed; --action-needs_pr-text: #9a3412;
   --action-pr_open-bg: #fef9c3; --action-pr_open-text: #854d0e;
   --action-resolved-bg: #dcfce7; --action-resolved-text: #166534;
-  --action-needs_review-bg: #f1f5f9; --action-needs_review-text: #64748b;
   --action-wont_fix-bg: #f3e8ff; --action-wont_fix-text: #6b21a8;
   --action-exception-bg: #f3e8ff; --action-exception-text: #6b21a8;
   --action-deferred-bg: #fef9c3; --action-deferred-text: #854d0e;
@@ -85,7 +84,6 @@
     --action-needs_pr-bg: #431407; --action-needs_pr-text: #fdba74;
     --action-pr_open-bg: #422006; --action-pr_open-text: #fcd34d;
     --action-resolved-bg: #052e16; --action-resolved-text: #86efac;
-    --action-needs_review-bg: #1e293b; --action-needs_review-text: #94a3b8;
     --action-wont_fix-bg: #2e1065; --action-wont_fix-text: #c4b5fd;
     --action-exception-bg: #2e1065; --action-exception-text: #c4b5fd;
     --action-deferred-bg: #422006; --action-deferred-text: #fcd34d;
@@ -277,7 +275,6 @@ a:hover { text-decoration: underline; }
 .action-needs_pr { background: var(--action-needs_pr-bg); color: var(--action-needs_pr-text); }
 .action-pr_open { background: var(--action-pr_open-bg); color: var(--action-pr_open-text); }
 .action-resolved { background: var(--action-resolved-bg); color: var(--action-resolved-text); }
-.action-needs_review { background: var(--action-needs_review-bg); color: var(--action-needs_review-text); }
 .action-wont_fix { background: var(--action-wont_fix-bg); color: var(--action-wont_fix-text); }
 .action-exception { background: var(--action-exception-bg); color: var(--action-exception-text); }
 .action-deferred { background: var(--action-deferred-bg); color: var(--action-deferred-text); }
@@ -459,7 +456,6 @@ a:hover { text-decoration: underline; }
         <option value="needs_pr">Needs PR</option>
         <option value="pr_open">PR Open</option>
         <option value="resolved">Resolved</option>
-        <option value="needs_review">Needs Review</option>
         <option value="wont_fix">Won't Fix</option>
         <option value="exception">Exception</option>
         <option value="deferred">Deferred</option>
@@ -614,7 +610,7 @@ function linkPRRefs(html) {
 
 const ACTION_LABELS = {
   pr_open:"PR Open", resolved:"Resolved", needs_pr:"Needs PR",
-  needs_review:"Needs Review", wont_fix:"Won't Fix", exception:"Exception",
+  wont_fix:"Won't Fix", exception:"Exception",
   deferred:"Deferred", needs_evaluation:"Unevaluated"
 };
 

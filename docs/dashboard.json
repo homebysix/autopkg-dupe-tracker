@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-06T00:10:53.901473+00:00",
+  "generated_at": "2026-04-06T02:44:40.396983+00:00",
   "stats": {
     "HIGH": 30,
     "MEDIUM": 77,
     "LOW": 116,
     "SKIP": 42,
-    "RESOLVED": 3
+    "RESOLVED": 47
   },
   "total_sets": 266,
   "needs_reassessment": 3,
@@ -189,7 +189,7 @@
     {
       "id": "8f2a5c5e8e80",
       "app_name": "Anki",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "andrewzirkel-recipes",
@@ -197,6 +197,20 @@
           "title": "Deprecate Anki recipes",
           "url": "https://github.com/autopkg/andrewzirkel-recipes/pull/14",
           "state": "open"
+        },
+        {
+          "repo": "dataJAR-recipes",
+          "number": 395,
+          "title": "Change parent recipe of Anki.munki",
+          "url": "https://github.com/autopkg/dataJAR-recipes/pull/395",
+          "state": "merged"
+        },
+        {
+          "repo": "nstrauss-recipes",
+          "number": 98,
+          "title": "Change parent recipe of Anki.pkg",
+          "url": "https://github.com/autopkg/nstrauss-recipes/pull/98",
+          "state": "merged"
         }
       ],
       "member_count": 2,
@@ -414,8 +428,23 @@
     {
       "id": "c5e7b89093b0",
       "app_name": "balenaEtcher",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "ahousseini-recipes",
+          "number": 113,
+          "title": "Change parent recipe of balenaEtcher.pkg",
+          "url": "https://github.com/autopkg/ahousseini-recipes/pull/113",
+          "state": "merged"
+        },
+        {
+          "repo": "arubdesu-recipes",
+          "number": 142,
+          "title": "Change parent recipe of balenaEtcher.install",
+          "url": "https://github.com/autopkg/arubdesu-recipes/pull/142",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -515,7 +544,7 @@
     },
     {
       "id": "f3f4abe2b6a0",
-      "app_name": "Bambu Studio",
+      "app_name": "BambuStudio",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -712,8 +741,16 @@
     {
       "id": "0f29c7059fbc",
       "app_name": "fleetctl",
-      "action_status": "needs_evaluation",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "jc0b-recipes",
+          "number": 1,
+          "title": "Updated recipes to account for changes in Fleet",
+          "url": "https://github.com/autopkg/jc0b-recipes/pull/1",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -977,7 +1014,15 @@
       "id": "327487707720",
       "app_name": "Aftermath",
       "action_status": "needs_review",
-      "existing_prs": [],
+      "existing_prs": [
+        {
+          "repo": "dataJAR-recipes",
+          "number": 477,
+          "title": "Change parent of Aftermath.munki to rtrouton's download recipe",
+          "url": "https://github.com/autopkg/dataJAR-recipes/pull/477",
+          "state": "closed"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -1115,8 +1160,16 @@
     {
       "id": "67050daf8b01",
       "app_name": "jq",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "gerardkok-recipes",
+          "number": 230,
+          "title": "Skip building jq package when there is no change",
+          "url": "https://github.com/autopkg/gerardkok-recipes/pull/230",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -1216,7 +1269,7 @@
     },
     {
       "id": "adf849d2c2cf",
-      "app_name": "KeyStoreExplorer",
+      "app_name": "KeyStore Explorer",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -1314,8 +1367,8 @@
     },
     {
       "id": "8856528d651b",
-      "app_name": "dockutil",
-      "action_status": "pr_open",
+      "app_name": "dockutil/",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "andrewzirkel-recipes",
@@ -1323,6 +1376,20 @@
           "title": "Deprecate Dockutil recipes",
           "url": "https://github.com/autopkg/andrewzirkel-recipes/pull/12",
           "state": "open"
+        },
+        {
+          "repo": "andrewzirkel-recipes",
+          "number": 9,
+          "title": "Change the name from dockutil/ to dockutil",
+          "url": "https://github.com/autopkg/andrewzirkel-recipes/pull/9",
+          "state": "closed"
+        },
+        {
+          "repo": "jazzace-recipes",
+          "number": 53,
+          "title": "Change Dockutil parent recipe to jessepeterson's download",
+          "url": "https://github.com/autopkg/jazzace-recipes/pull/53",
+          "state": "merged"
         }
       ],
       "member_count": 2,
@@ -1425,8 +1492,23 @@
     {
       "id": "04095b9b5771",
       "app_name": "KeePassXC",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "crystalllized-recipes",
+          "number": 12,
+          "title": "Support upstream arch change in parent recipe",
+          "url": "https://github.com/autopkg/crystalllized-recipes/pull/12",
+          "state": "merged"
+        },
+        {
+          "repo": "n8felton-recipes",
+          "number": 123,
+          "title": "update identifier, certificate org name was changed",
+          "url": "https://github.com/autopkg/n8felton-recipes/pull/123",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -1617,8 +1699,16 @@
     {
       "id": "4254821ed59f",
       "app_name": "Kitty",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "jaharmi-recipes",
+          "number": 111,
+          "title": "Change parent recipe for Kitty download and pkg",
+          "url": "https://github.com/autopkg/jaharmi-recipes/pull/111",
+          "state": "open"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -1706,13 +1796,26 @@
         }
       ],
       "deprecation_message": "Consider switching to kitty recipes in the jaharmi-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "3 child recipe(s) across 2 repo(s)"
+      "dependency_impact": "3 child recipe(s) across 2 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "a2d98879f657",
       "app_name": "Logseq",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "jaharmi-recipes",
+          "number": 112,
+          "title": "Use Logseq download and pkg from w0-recipes as parent",
+          "url": "https://github.com/autopkg/jaharmi-recipes/pull/112",
+          "state": "open"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -1808,7 +1911,12 @@
         }
       ],
       "deprecation_message": "Consider switching to Logseq recipes in the w0-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "3 child recipe(s) across 1 repo(s)"
+      "dependency_impact": "3 child recipe(s) across 1 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "3e46442038f0",
@@ -1915,8 +2023,16 @@
     {
       "id": "f207706df597",
       "app_name": "Mattermost",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "ygini-recipes",
+          "number": 67,
+          "title": "Change Mattermost parent to peshay download",
+          "url": "https://github.com/autopkg/ygini-recipes/pull/67",
+          "state": "open"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -2012,7 +2128,12 @@
         }
       ],
       "deprecation_message": "Consider switching to Mattermost recipes in the peshay-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "3 child recipe(s) across 3 repo(s)"
+      "dependency_impact": "3 child recipe(s) across 3 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "5bf5fa58829f",
@@ -2257,7 +2378,7 @@
     },
     {
       "id": "0e123552c2b4",
-      "app_name": "SupportHelper",
+      "app_name": "Support Helper",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -2453,7 +2574,7 @@
     },
     {
       "id": "c93663f2d189",
-      "app_name": "UltiMaker Cura",
+      "app_name": "Ultimaker Cura",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -2653,7 +2774,7 @@
     },
     {
       "id": "3fe55c563a16",
-      "app_name": "Adobe Acrobat Pro",
+      "app_name": "AdobeAcrobatPro",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2756,8 +2877,16 @@
     {
       "id": "d597367390ec",
       "app_name": "AffinityDesigner",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "peterkelm-recipes",
+          "number": 6,
+          "title": "Changes to Serif (Affinity) Recipes",
+          "url": "https://github.com/autopkg/peterkelm-recipes/pull/6",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -2850,8 +2979,16 @@
     {
       "id": "bbcf43e8a24f",
       "app_name": "Affinity Photo",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "peterkelm-recipes",
+          "number": 6,
+          "title": "Changes to Serif (Affinity) Recipes",
+          "url": "https://github.com/autopkg/peterkelm-recipes/pull/6",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -2944,8 +3081,16 @@
     {
       "id": "069af748c779",
       "app_name": "Affinity Publisher",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "peterkelm-recipes",
+          "number": 6,
+          "title": "Changes to Serif (Affinity) Recipes",
+          "url": "https://github.com/autopkg/peterkelm-recipes/pull/6",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -3132,8 +3277,16 @@
     {
       "id": "ff272487e933",
       "app_name": "Airtame",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "Tecnico1931-recipes",
+          "number": 8,
+          "title": "Switched to new URL as previous stopped working",
+          "url": "https://github.com/autopkg/Tecnico1931-recipes/pull/8",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -3173,7 +3326,7 @@
     },
     {
       "id": "6313b4597c26",
-      "app_name": "AmadeusLite",
+      "app_name": "Amadeus Lite",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -3389,8 +3542,16 @@
     {
       "id": "0625e4bea008",
       "app_name": "AmazonCorretto%MAJOR_VERSION%",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "aws-recipes",
+          "number": 5,
+          "title": "Change supported_architectures to an array format",
+          "url": "https://github.com/autopkg/aws-recipes/pull/5",
+          "state": "merged"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -3766,8 +3927,23 @@
     {
       "id": "ea1749a53e73",
       "app_name": "BasicTeX",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "andrewvalentine-recipes",
+          "number": 75,
+          "title": "Change parent of BasicTeX.munki",
+          "url": "https://github.com/autopkg/andrewvalentine-recipes/pull/75",
+          "state": "open"
+        },
+        {
+          "repo": "grahampugh-recipes",
+          "number": 70,
+          "title": "Merge in upstream changes",
+          "url": "https://github.com/autopkg/grahampugh-recipes/pull/70",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -3855,7 +4031,12 @@
         }
       ],
       "deprecation_message": "Consider switching to BasicTeX recipes in the andrewvalentine-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
+      "dependency_impact": "1 child recipe(s) across 1 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "370be57abf20",
@@ -4057,7 +4238,15 @@
       "id": "02d0c04ffa7d",
       "app_name": "BlueJ",
       "action_status": "needs_pr",
-      "existing_prs": [],
+      "existing_prs": [
+        {
+          "repo": "orchard-recipes",
+          "number": 5,
+          "title": "Switch URL to HTTPS",
+          "url": "https://github.com/autopkg/orchard-recipes/pull/5",
+          "state": "closed"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -4260,8 +4449,16 @@
     {
       "id": "fb3b8571f113",
       "app_name": "BusyCal",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "scriptingosx-recipes",
+          "number": 23,
+          "title": "Switch to HTTPS for download URL",
+          "url": "https://github.com/autopkg/scriptingosx-recipes/pull/23",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -5129,9 +5326,17 @@
     },
     {
       "id": "bbf12a11d83f",
-      "app_name": "CloudFlareWarp",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "app_name": "Cloudflare WARP",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "dataJAR-recipes",
+          "number": 487,
+          "title": "Change Cloudflare WARP munki parent to mikestechshop download",
+          "url": "https://github.com/autopkg/dataJAR-recipes/pull/487",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -5350,7 +5555,7 @@
     },
     {
       "id": "a6ef14749155",
-      "app_name": "Composer",
+      "app_name": "composer",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -5384,8 +5589,16 @@
     {
       "id": "888fd9041e40",
       "app_name": "CrashPlan",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "rtrouton-recipes",
+          "number": 242,
+          "title": "Change CrashPlan pkg parent to dataJAR download",
+          "url": "https://github.com/autopkg/rtrouton-recipes/pull/242",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -5417,8 +5630,16 @@
     {
       "id": "f59f9692643b",
       "app_name": "Cryptomator",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "ahousseini-recipes",
+          "number": 56,
+          "title": "Switch to HomebrewCaskURL",
+          "url": "https://github.com/autopkg/ahousseini-recipes/pull/56",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -5628,7 +5849,7 @@
     },
     {
       "id": "adc9d93c5678",
-      "app_name": "DCPomatic2",
+      "app_name": "DCP-o-matic2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -5832,7 +6053,7 @@
     },
     {
       "id": "51ab490fcac2",
-      "app_name": "default-browser",
+      "app_name": "defaultbrowser",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6343,8 +6564,30 @@
     {
       "id": "6243a321455c",
       "app_name": "Docker",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "smithjw-recipes",
+          "number": 75,
+          "title": "Switching back to the autopkg version of `URLDownloaderPython` and ot\u2026",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/75",
+          "state": "merged"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 36,
+          "title": "Changes to Docker recipes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/36",
+          "state": "merged"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        }
+      ],
       "member_count": 5,
       "members_summary": [
         {
@@ -6644,7 +6887,7 @@
     },
     {
       "id": "a256e769f0fd",
-      "app_name": "erase-install",
+      "app_name": "EraseInstall",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -6652,6 +6895,13 @@
           "number": 106,
           "title": "Deprecate erase-install.download and change parent for erase-install.munki",
           "url": "https://github.com/autopkg/scriptingosx-recipes/pull/106",
+          "state": "open"
+        },
+        {
+          "repo": "scriptingosx-recipes",
+          "number": 105,
+          "title": "Deprecate JSS recipes",
+          "url": "https://github.com/autopkg/scriptingosx-recipes/pull/105",
           "state": "open"
         }
       ],
@@ -7155,8 +7405,37 @@
     {
       "id": "99f00a413c3f",
       "app_name": "Fetch",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "jleggat-recipes",
+          "number": 66,
+          "title": "Change the \"Version\" String to the Web Release",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/66",
+          "state": "merged"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 56,
+          "title": "Fetch download changes",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/56",
+          "state": "merged"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 54,
+          "title": "Fetch download location seems to have changed",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/54",
+          "state": "merged"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 42,
+          "title": "Switch to HTTPS for search URL",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/42",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -8007,8 +8286,23 @@
     {
       "id": "08b28d7ce854",
       "app_name": "GoogleChrome",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        },
+        {
+          "repo": "recipes",
+          "number": 493,
+          "title": "Pre-commit update and associated changes",
+          "url": "https://github.com/autopkg/recipes/pull/493",
+          "state": "merged"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -8047,7 +8341,7 @@
     },
     {
       "id": "1fa5059aa6b6",
-      "app_name": "Handbrake",
+      "app_name": "HandBrake",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -8149,7 +8443,7 @@
     },
     {
       "id": "b8bf9e2f138e",
-      "app_name": "Hudl Sportscode",
+      "app_name": "HudlSportscode",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -9302,6 +9596,20 @@
           "title": "Deprecate KnockKnock recipes",
           "url": "https://github.com/autopkg/andrewvalentine-recipes/pull/65",
           "state": "merged"
+        },
+        {
+          "repo": "andrewvalentine-recipes",
+          "number": 56,
+          "title": "KnockKnock: download URL changed to github repo",
+          "url": "https://github.com/autopkg/andrewvalentine-recipes/pull/56",
+          "state": "merged"
+        },
+        {
+          "repo": "andrewvalentine-recipes",
+          "number": 52,
+          "title": "change download from bitbucket to github",
+          "url": "https://github.com/autopkg/andrewvalentine-recipes/pull/52",
+          "state": "closed"
         }
       ],
       "member_count": 2,
@@ -9803,7 +10111,7 @@
     },
     {
       "id": "b925e75d946f",
-      "app_name": "LoggerPro",
+      "app_name": "Logger Pro",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -9972,8 +10280,16 @@
     {
       "id": "756adf31b715",
       "app_name": "LyX",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "joshua-d-miller-recipes",
+          "number": 70,
+          "title": "Switch from CURL* back to URL* processors",
+          "url": "https://github.com/autopkg/joshua-d-miller-recipes/pull/70",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -10074,8 +10390,16 @@
     {
       "id": "2fa0ac4e2edf",
       "app_name": "MacTeX",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "grahampugh-recipes",
+          "number": 70,
+          "title": "Merge in upstream changes",
+          "url": "https://github.com/autopkg/grahampugh-recipes/pull/70",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -10208,7 +10532,7 @@
     },
     {
       "id": "7858eb674089",
-      "app_name": "Marked 2",
+      "app_name": "Marked2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10617,7 +10941,7 @@
     {
       "id": "c42da125040c",
       "app_name": "MenuMeters",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "jleggat-recipes",
@@ -10625,6 +10949,20 @@
           "title": "Deprecate MenuMeters recipes",
           "url": "https://github.com/autopkg/jleggat-recipes/pull/125",
           "state": "open"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 44,
+          "title": "Switch download URL to HTTPS",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/44",
+          "state": "merged"
+        },
+        {
+          "repo": "peshay-recipes",
+          "number": 93,
+          "title": "Deprecate MenuMeters download recipe",
+          "url": "https://github.com/autopkg/peshay-recipes/pull/93",
+          "state": "merged"
         }
       ],
       "member_count": 2,
@@ -11119,8 +11457,23 @@
     {
       "id": "3270a6dedc84",
       "app_name": "MunkiAdmin",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "Lotusshaney-recipes",
+          "number": 19,
+          "title": "Change MunkiAdmin.pkg parent to jleggat download",
+          "url": "https://github.com/autopkg/Lotusshaney-recipes/pull/19",
+          "state": "merged"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 15,
+          "title": "Change Identifier name",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/15",
+          "state": "closed"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -11151,9 +11504,17 @@
     },
     {
       "id": "e602424eb9ec",
-      "app_name": "MuseScore 4",
+      "app_name": "MuseScore4",
       "action_status": "needs_pr",
-      "existing_prs": [],
+      "existing_prs": [
+        {
+          "repo": "jazzace-recipes",
+          "number": 9,
+          "title": "Change download regex",
+          "url": "https://github.com/autopkg/jazzace-recipes/pull/9",
+          "state": "closed"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -11262,9 +11623,17 @@
     },
     {
       "id": "03b1fe3fed35",
-      "app_name": "MySQLWorkbench",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "app_name": "MySQL Workbench",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "peshay-recipes",
+          "number": 52,
+          "title": "Change parent recipe for cgerke-recipes deprecation",
+          "url": "https://github.com/autopkg/peshay-recipes/pull/52",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -11684,8 +12053,37 @@
     {
       "id": "6e49231153c2",
       "app_name": "OBS",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "joshua-d-miller-recipes",
+          "number": 111,
+          "title": "OBS virtualcam plugin location has changed",
+          "url": "https://github.com/autopkg/joshua-d-miller-recipes/pull/111",
+          "state": "merged"
+        },
+        {
+          "repo": "nstrauss-recipes",
+          "number": 61,
+          "title": "OBS change ARCH value to match new values",
+          "url": "https://github.com/autopkg/nstrauss-recipes/pull/61",
+          "state": "merged"
+        },
+        {
+          "repo": "nstrauss-recipes",
+          "number": 36,
+          "title": "Change to accommodate multiple architecture downloads",
+          "url": "https://github.com/autopkg/nstrauss-recipes/pull/36",
+          "state": "merged"
+        },
+        {
+          "repo": "nstrauss-recipes",
+          "number": 35,
+          "title": "Change to accommodate multiple architecture downloads",
+          "url": "https://github.com/autopkg/nstrauss-recipes/pull/35",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -11896,8 +12294,23 @@
     {
       "id": "42e40e04154a",
       "app_name": "Papers",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "homebysix-recipes",
+          "number": 812,
+          "title": "Switch Papers recipes to ZIP + DMG creation",
+          "url": "https://github.com/autopkg/homebysix-recipes/pull/812",
+          "state": "merged"
+        },
+        {
+          "repo": "jessepeterson-recipes",
+          "number": 43,
+          "title": "Switch to HTTPS Sparkle URL",
+          "url": "https://github.com/autopkg/jessepeterson-recipes/pull/43",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -12125,8 +12538,16 @@
     {
       "id": "944e537912cf",
       "app_name": "PhotoMechanic",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "eholtam-recipes",
+          "number": 5,
+          "title": "Switch to HTTPS download URL",
+          "url": "https://github.com/autopkg/eholtam-recipes/pull/5",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -12227,8 +12648,23 @@
     {
       "id": "34a79e826628",
       "app_name": "PodmanDesktop",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "Lotusshaney-recipes",
+          "number": 9,
+          "title": "Change parent of PodmanDesktop pkg recipe, deprecate download recipe",
+          "url": "https://github.com/autopkg/Lotusshaney-recipes/pull/9",
+          "state": "merged"
+        },
+        {
+          "repo": "almenscorner-recipes",
+          "number": 81,
+          "title": "Change PodmanDesktop parent recipe",
+          "url": "https://github.com/autopkg/almenscorner-recipes/pull/81",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -12431,8 +12867,24 @@
     {
       "id": "5ef7a29cb54f",
       "app_name": "Postman",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "bnpl-recipes",
+          "number": 11,
+          "title": "Changed Download URL and added Code Signature Verification",
+          "url": "https://github.com/autopkg/bnpl-recipes/pull/11",
+          "state": "merged"
+        },
+        {
+          "repo": "psaintemarie-recipes",
+          "number": 4,
+          "title": "Deprecate arm64-specific Postman recipe",
+          "url": "https://github.com/autopkg/psaintemarie-recipes/pull/4",
+          "state": "open",
+          "source": "override"
+        }
+      ],
       "member_count": 4,
       "members_summary": [
         {
@@ -12570,7 +13022,12 @@
         }
       ],
       "deprecation_message": "Consider switching to Postman recipes in the dataJAR-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "3 child recipe(s) across 3 repo(s)"
+      "dependency_impact": "3 child recipe(s) across 3 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "df50c1e28024",
@@ -13049,7 +13506,7 @@
     },
     {
       "id": "a7a1b23a1c87",
-      "app_name": "ReadWrite",
+      "app_name": "Read&Write",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -13352,8 +13809,15 @@
     {
       "id": "5ce910bbe42a",
       "app_name": "RingCentral",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
+        {
+          "repo": "bradclare-recipes",
+          "number": 2,
+          "title": "Switch to HTTPS download URL",
+          "url": "https://github.com/autopkg/bradclare-recipes/pull/2",
+          "state": "merged"
+        },
         {
           "repo": "dbergstrom-recipes",
           "number": 3,
@@ -13760,6 +14224,13 @@
       "action_status": "resolved",
       "existing_prs": [
         {
+          "repo": "ahousseini-recipes",
+          "number": 64,
+          "title": "Switch to cask url",
+          "url": "https://github.com/autopkg/ahousseini-recipes/pull/64",
+          "state": "merged"
+        },
+        {
           "repo": "homebysix-recipes",
           "number": 741,
           "title": "Add various recipes and update/deprecate existing recipes",
@@ -13899,7 +14370,7 @@
     },
     {
       "id": "cf26fca7df78",
-      "app_name": "ShutterEncoder",
+      "app_name": "Shutter Encoder",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -13997,7 +14468,7 @@
     },
     {
       "id": "03a24987b36a",
-      "app_name": "Signiant App",
+      "app_name": "SigniantApp",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14108,7 +14579,7 @@
     },
     {
       "id": "b1918d094b5a",
-      "app_name": "SketchUpPro2023-EN",
+      "app_name": "SketchUp Pro 2023 EN",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -14203,8 +14674,23 @@
     {
       "id": "bb47b19b7912",
       "app_name": "Slack",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "peshay-recipes",
+          "number": 79,
+          "title": "Change parent recipes for Slack and VSCode filewave recipes",
+          "url": "https://github.com/autopkg/peshay-recipes/pull/79",
+          "state": "merged"
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "number": 208,
+          "title": "Update pkg signature expected authority name after recently change by Slack",
+          "url": "https://github.com/autopkg/rtrouton-recipes/pull/208",
+          "state": "merged"
+        }
+      ],
       "member_count": 5,
       "members_summary": [
         {
@@ -14554,8 +15040,30 @@
     {
       "id": "d4f7a5ebcc4d",
       "app_name": "swiftDialog",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "andredb90-recipes",
+          "number": 11,
+          "title": "Use zentral-recipes swiftDialog.download as parent",
+          "url": "https://github.com/autopkg/andredb90-recipes/pull/11",
+          "state": "merged"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 223,
+          "title": "Use zentral-recipes swiftDialog.download as parent",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/223",
+          "state": "merged"
+        },
+        {
+          "repo": "precursorca-recipes",
+          "number": 22,
+          "title": "Use zentral-recipes swiftDialog.download as parent",
+          "url": "https://github.com/autopkg/precursorca-recipes/pull/22",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -14651,7 +15159,7 @@
     },
     {
       "id": "d1935d81f37f",
-      "app_name": "Tableau Public",
+      "app_name": "TableauPublic",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14851,7 +15359,7 @@
     },
     {
       "id": "46f933ae9b86",
-      "app_name": "Termius",
+      "app_name": "termius",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -15056,8 +15564,16 @@
     {
       "id": "8cfd4cf97368",
       "app_name": "Topaz Gigapixel",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "markkenny-recipes",
+          "number": 1,
+          "title": "Changed MinimumVersion from float to string",
+          "url": "https://github.com/autopkg/markkenny-recipes/pull/1",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -15358,7 +15874,7 @@
     {
       "id": "58471f28bd53",
       "app_name": "Transmit",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "keeleysam-recipes",
@@ -15366,6 +15882,13 @@
           "title": "Deprecate Transmit recipes",
           "url": "https://github.com/autopkg/keeleysam-recipes/pull/188",
           "state": "open"
+        },
+        {
+          "repo": "recipes",
+          "number": 493,
+          "title": "Pre-commit update and associated changes",
+          "url": "https://github.com/autopkg/recipes/pull/493",
+          "state": "merged"
         }
       ],
       "member_count": 2,
@@ -15705,8 +16228,16 @@
     {
       "id": "4e1596eb88e5",
       "app_name": "VeraCrypt",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "andrewvalentine-recipes",
+          "number": 40,
+          "title": "change regex for Veracrypt URL",
+          "url": "https://github.com/autopkg/andrewvalentine-recipes/pull/40",
+          "state": "open"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -15901,8 +16432,16 @@
     {
       "id": "d2d841e47c26",
       "app_name": "VisualStudioCode",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "moofit-recipes",
+          "number": 234,
+          "title": "Match changes in download recipe",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/234",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -16101,8 +16640,30 @@
     {
       "id": "6482f59d3c4f",
       "app_name": "Webex",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "TekTekkers-recipes",
+          "number": 9,
+          "title": "Change Webex.munki parent to smithjw download",
+          "url": "https://github.com/autopkg/TekTekkers-recipes/pull/9",
+          "state": "open"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 73,
+          "title": "Update download URLs that changed after 44.8.0.30404",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/73",
+          "state": "merged"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -16219,7 +16780,12 @@
         }
       ],
       "deprecation_message": "Consider switching to Webex recipes in the smithjw-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "4 child recipe(s) across 2 repo(s)"
+      "dependency_impact": "4 child recipe(s) across 2 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "43d9670cddd4",
@@ -16318,8 +16884,15 @@
     {
       "id": "7f0740aa2b11",
       "app_name": "yo",
-      "action_status": "needs_pr",
+      "action_status": "resolved",
       "existing_prs": [
+        {
+          "repo": "apizz-recipes",
+          "number": 43,
+          "title": "Adjust parent recipes for sheagcraig-recipes repo deprecation",
+          "url": "https://github.com/autopkg/apizz-recipes/pull/43",
+          "state": "merged"
+        },
         {
           "repo": "moofit-recipes",
           "number": 200,
@@ -16624,7 +17197,7 @@
     {
       "id": "11473db570a2",
       "app_name": "AllSight",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
@@ -16632,6 +17205,13 @@
           "title": "Deprecate migrated recipes",
           "url": "https://github.com/autopkg/jazzace-recipes/pull/55",
           "state": "open"
+        },
+        {
+          "repo": "vmiller-recipes",
+          "number": 19,
+          "title": "change predicate for better readability",
+          "url": "https://github.com/autopkg/vmiller-recipes/pull/19",
+          "state": "merged"
         }
       ],
       "member_count": 2,
@@ -16750,16 +17330,16 @@
           "dependent_count": 1
         },
         {
-          "repo": "moofit-recipes",
-          "rel_path": "Autodesk/AutoCAD.download.recipe",
+          "repo": "MLBZ521-recipes",
+          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
         },
         {
-          "repo": "MLBZ521-recipes",
-          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
+          "repo": "moofit-recipes",
+          "rel_path": "Autodesk/AutoCAD.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -17131,8 +17711,30 @@
     {
       "id": "d1e74ca575c4",
       "app_name": "LibreOffice",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "hjuutilainen-recipes",
+          "number": 192,
+          "title": "Changed download strategy for LibreOffice",
+          "url": "https://github.com/autopkg/hjuutilainen-recipes/pull/192",
+          "state": "merged"
+        },
+        {
+          "repo": "peshay-recipes",
+          "number": 21,
+          "title": "FW import source change",
+          "url": "https://github.com/autopkg/peshay-recipes/pull/21",
+          "state": "merged"
+        },
+        {
+          "repo": "peshay-recipes",
+          "number": 20,
+          "title": "FW import source change",
+          "url": "https://github.com/autopkg/peshay-recipes/pull/20",
+          "state": "closed"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -17242,20 +17844,20 @@
           "dependent_count": 1
         },
         {
-          "repo": "rtrouton-recipes",
-          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
           "repo": "smithjw-recipes",
           "rel_path": "Microsoft_Edge/Microsoft_Edge_alt.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
         }
       ],
       "confidence": "LOW",
@@ -17352,8 +17954,23 @@
     {
       "id": "b2491f38b3f4",
       "app_name": "Opera",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "bochoven-recipes",
+          "number": 6,
+          "title": "CodeSignatureVerifier requirement string changed",
+          "url": "https://github.com/autopkg/bochoven-recipes/pull/6",
+          "state": "merged"
+        },
+        {
+          "repo": "bochoven-recipes",
+          "number": 5,
+          "title": "Change inline comment to separate key/value pair",
+          "url": "https://github.com/autopkg/bochoven-recipes/pull/5",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -17459,7 +18076,7 @@
           "dependent_count": 1
         },
         {
-          "repo": "homebysix-recipes",
+          "repo": "hjuutilainen-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -17467,7 +18084,7 @@
           "dependent_count": 4
         },
         {
-          "repo": "hjuutilainen-recipes",
+          "repo": "homebysix-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -17671,8 +18288,16 @@
     {
       "id": "51aa9dbe399f",
       "app_name": "Xcode",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "nmcspadden-recipes",
+          "number": 49,
+          "title": "Fixed incorrect parent processor",
+          "url": "https://github.com/autopkg/nmcspadden-recipes/pull/49",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -18194,7 +18819,7 @@
     {
       "id": "0cfa3e713bc7",
       "app_name": "iTerm2",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "keeleysam-recipes",
@@ -18202,6 +18827,20 @@
           "title": "Deprecate iTerm2 recipes",
           "url": "https://github.com/autopkg/keeleysam-recipes/pull/200",
           "state": "open"
+        },
+        {
+          "repo": "keeleysam-recipes",
+          "number": 99,
+          "title": "CodeSignatureVerifier requirement changed",
+          "url": "https://github.com/autopkg/keeleysam-recipes/pull/99",
+          "state": "merged"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
         }
       ],
       "member_count": 3,
@@ -18521,8 +19160,16 @@
     {
       "id": "37cafe304b31",
       "app_name": "TeXLiveUtility",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "grahampugh-recipes",
+          "number": 70,
+          "title": "Merge in upstream changes",
+          "url": "https://github.com/autopkg/grahampugh-recipes/pull/70",
+          "state": "merged"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -18857,17 +19504,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -18898,17 +19545,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin8.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin8.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin8.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin8.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -18926,8 +19573,24 @@
     {
       "id": "3f0e0470b5d8",
       "app_name": "GitHub Desktop",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        },
+        {
+          "repo": "keeleysam-recipes",
+          "number": 185,
+          "title": "Deprecate GitHub recipes",
+          "url": "https://github.com/autopkg/keeleysam-recipes/pull/185",
+          "state": "open",
+          "source": "override"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -18940,18 +19603,18 @@
         },
         {
           "repo": "smithjw-recipes",
-          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
-          "repo": "smithjw-recipes",
           "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
           "dependent_count": 1
         }
       ],
@@ -18962,7 +19625,12 @@
       "rationale": "",
       "criteria": [],
       "deprecation_message": "",
-      "dependency_impact": ""
+      "dependency_impact": "",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "539f950d416c",
@@ -19638,8 +20306,16 @@
     {
       "id": "d425623eb318",
       "app_name": "GoogleEarthPro",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "nmcspadden-recipes",
+          "number": 78,
+          "title": "Deprecate Google Earth recipes",
+          "url": "https://github.com/autopkg/nmcspadden-recipes/pull/78",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -19735,7 +20411,7 @@
     },
     {
       "id": "a4392e86f98f",
-      "app_name": "DotNet8SDK",
+      "app_name": "DotNet 8 SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20039,6 +20715,14 @@
       "member_count": 5,
       "members_summary": [
         {
+          "repo": "andrewvalentine-recipes",
+          "rel_path": "NVivo/NVivo12.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 0
+        },
+        {
           "repo": "jazzace-recipes",
           "rel_path": "QSRInternational/NVivo.download.recipe",
           "has_codesig": true,
@@ -20053,14 +20737,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
-        },
-        {
-          "repo": "andrewvalentine-recipes",
-          "rel_path": "NVivo/NVivo12.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 0
         },
         {
           "repo": "joshua-d-miller-recipes",
@@ -20100,8 +20776,17 @@
     {
       "id": "022965cce609",
       "app_name": "Spotify",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "psaintemarie-recipes",
+          "number": 5,
+          "title": "Deprecate arm64-specific Spotify recipe",
+          "url": "https://github.com/autopkg/psaintemarie-recipes/pull/5",
+          "state": "open",
+          "source": "override"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -20193,7 +20878,12 @@
         }
       ],
       "deprecation_message": "Consider switching to Spotify recipes in the recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
+      "dependency_impact": "1 child recipe(s) across 1 repo(s)",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
     },
     {
       "id": "2bf9d0dbe4d3",
@@ -20212,7 +20902,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password8.download.recipe",
+          "rel_path": "AgileBits/1Password7.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20220,7 +20910,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password7.download.recipe",
+          "rel_path": "AgileBits/1Password8.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20253,14 +20943,6 @@
       "members_summary": [
         {
           "repo": "dataJAR-recipes",
-          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "dataJAR-recipes",
           "rel_path": "Finale 27/Finale27.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -20270,6 +20952,14 @@
         {
           "repo": "jazzace-recipes",
           "rel_path": "MakeMusic/Finale.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20302,6 +20992,14 @@
       "member_count": 3,
       "members_summary": [
         {
+          "repo": "ahousseini-recipes",
+          "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
           "repo": "dataJAR-recipes",
           "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
           "has_codesig": true,
@@ -20312,14 +21010,6 @@
         {
           "repo": "nstrauss-recipes",
           "rel_path": "Lego Mindstorms/LegoMindstormsEducationEV3Classroom.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "ahousseini-recipes",
-          "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20561,7 +21251,7 @@
         },
         {
           "repo": "rtrouton-recipes",
-          "rel_path": "AmazonCorettoJDK17/AmazonCorettoIntelJDK17.download.recipe",
+          "rel_path": "AmazonCorettoJDK17/AmazonCorettoAppleSiliconJDK17.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20569,7 +21259,7 @@
         },
         {
           "repo": "rtrouton-recipes",
-          "rel_path": "AmazonCorettoJDK17/AmazonCorettoAppleSiliconJDK17.download.recipe",
+          "rel_path": "AmazonCorettoJDK17/AmazonCorettoIntelJDK17.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20587,7 +21277,7 @@
     },
     {
       "id": "aa1cce5c4f60",
-      "app_name": "MicrosoftAutoUpdate",
+      "app_name": "Microsoft AutoUpdate",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -20682,8 +21372,16 @@
     {
       "id": "3721c0f6aa24",
       "app_name": "Creative Cloud Installer",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "rtrouton-recipes",
+          "number": 103,
+          "title": "Identifier change for AdobeCreativeCloudInstaller",
+          "url": "https://github.com/autopkg/rtrouton-recipes/pull/103",
+          "state": "merged"
+        }
+      ],
       "member_count": 4,
       "members_summary": [
         {
@@ -20777,8 +21475,24 @@
       "member_count": 4,
       "members_summary": [
         {
+          "repo": "apettinen-recipes",
+          "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        },
+        {
           "repo": "drewdiver-recipes",
           "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "moofit-recipes",
+          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20791,22 +21505,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
-        },
-        {
-          "repo": "apettinen-recipes",
-          "rel_path": "Brave/Brave.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        },
-        {
-          "repo": "moofit-recipes",
-          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         }
       ],
       "confidence": "LOW",
@@ -20997,9 +21695,17 @@
     },
     {
       "id": "d4f8ed94c607",
-      "app_name": "MacDown",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "app_name": "macdown",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "jleggat-recipes",
+          "number": 53,
+          "title": "Switch various download URLs to HTTPS",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/53",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -21190,8 +21896,16 @@
     {
       "id": "8f89a97c6308",
       "app_name": "Microsoft Teams",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "apizz-recipes",
+          "number": 89,
+          "title": "App name has changed to \"Microsoft Teams classic\"",
+          "url": "https://github.com/autopkg/apizz-recipes/pull/89",
+          "state": "open"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -21370,8 +22084,23 @@
     {
       "id": "8c89e3804e4b",
       "app_name": "LaTeXiT",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "grahampugh-recipes",
+          "number": 70,
+          "title": "Merge in upstream changes",
+          "url": "https://github.com/autopkg/grahampugh-recipes/pull/70",
+          "state": "merged"
+        },
+        {
+          "repo": "scriptingosx-recipes",
+          "number": 19,
+          "title": "LaTeXiT: Changed download url to https",
+          "url": "https://github.com/autopkg/scriptingosx-recipes/pull/19",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -21477,6 +22206,14 @@
       "member_count": 4,
       "members_summary": [
         {
+          "repo": "Lotusshaney-recipes",
+          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
           "repo": "apizz-recipes",
           "rel_path": "TailScale/TailScale.download.recipe",
           "has_codesig": true,
@@ -21491,14 +22228,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 5
-        },
-        {
-          "repo": "Lotusshaney-recipes",
-          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         },
         {
           "repo": "macprince-recipes",
@@ -21521,7 +22250,7 @@
     {
       "id": "6a68c40531bf",
       "app_name": "Vectorworks",
-      "action_status": "pr_open",
+      "action_status": "resolved",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
@@ -21529,6 +22258,13 @@
           "title": "Deprecate migrated recipes",
           "url": "https://github.com/autopkg/jazzace-recipes/pull/55",
           "state": "open"
+        },
+        {
+          "repo": "vmiller-recipes",
+          "number": 40,
+          "title": "Change versioning strategy for munki recipe",
+          "url": "https://github.com/autopkg/vmiller-recipes/pull/40",
+          "state": "merged"
         }
       ],
       "member_count": 5,
@@ -21797,7 +22533,7 @@
     },
     {
       "id": "73ecccdc7b1a",
-      "app_name": "sipgate-softphone",
+      "app_name": "sipgate softphone",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -22366,8 +23102,16 @@
     {
       "id": "8eb7f5613f96",
       "app_name": "Topaz Photo AI",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "markkenny-recipes",
+          "number": 1,
+          "title": "Changed MinimumVersion from float to string",
+          "url": "https://github.com/autopkg/markkenny-recipes/pull/1",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -22677,7 +23421,7 @@
     },
     {
       "id": "1c28094cf005",
-      "app_name": "4K Video Downloader Plus",
+      "app_name": "4KVideoDownloaderPlus",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -22772,8 +23516,16 @@
     {
       "id": "14c865e4b6a2",
       "app_name": "Anaconda",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "hansen-m-recipes",
+          "number": 250,
+          "title": "Change Anaconda download url",
+          "url": "https://github.com/autopkg/hansen-m-recipes/pull/250",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -23061,7 +23813,7 @@
     },
     {
       "id": "acccf736bbe4",
-      "app_name": "FabFilterProC2",
+      "app_name": "FabFilter Pro-C 2",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -23155,7 +23907,7 @@
     },
     {
       "id": "6ce1d21197cd",
-      "app_name": "FabFilter Pro-L 2",
+      "app_name": "FabFilterProL2",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -23249,7 +24001,7 @@
     },
     {
       "id": "9d9956a109b2",
-      "app_name": "FinalDraft12",
+      "app_name": "Final Draft 12",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -23348,8 +24100,37 @@
     {
       "id": "e3bdac2e5ca0",
       "app_name": "GIMP",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "hjuutilainen-recipes",
+          "number": 235,
+          "title": "Fixes URL change",
+          "url": "https://github.com/autopkg/hjuutilainen-recipes/pull/235",
+          "state": "merged"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 237,
+          "title": "Changes to recipes",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/237",
+          "state": "merged"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 236,
+          "title": "Changes to the download and parent GIMP recipes",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/236",
+          "state": "closed"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 214,
+          "title": "Download URLs have changed slightly in GimpUniversal.download.recipe",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/214",
+          "state": "closed"
+        }
+      ],
       "member_count": 4,
       "members_summary": [
         {
@@ -23816,8 +24597,16 @@
     {
       "id": "a13f00b46533",
       "app_name": "Plantronics Hub",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -23914,8 +24703,16 @@
     {
       "id": "98699a7b781a",
       "app_name": "Reaper",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "orbsmiv-recipes",
+          "number": 1,
+          "title": "Switch to HTTPS download page URL",
+          "url": "https://github.com/autopkg/orbsmiv-recipes/pull/1",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -24016,8 +24813,16 @@
     {
       "id": "347dae539100",
       "app_name": "SourceTree",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "hjuutilainen-recipes",
+          "number": 305,
+          "title": "Change permissions of Sourcetree.app during PkgRequest",
+          "url": "https://github.com/autopkg/hjuutilainen-recipes/pull/305",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -24113,7 +24918,7 @@
     },
     {
       "id": "a2d29c7f45e3",
-      "app_name": "SQLProStudio",
+      "app_name": "SQLPro Studio",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -24249,8 +25054,16 @@
     {
       "id": "70c7dfc93f62",
       "app_name": "Tableau Reader",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "foigus-recipes",
+          "number": 14,
+          "title": "Switch to HTTPS download URL",
+          "url": "https://github.com/autopkg/foigus-recipes/pull/14",
+          "state": "merged"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -24442,20 +25255,20 @@
           "dependent_count": 2
         },
         {
-          "repo": "justinrummel-recipes",
-          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
           "repo": "nstrauss-recipes",
           "rel_path": "Wireshark/Wireshark.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
+        },
+        {
+          "repo": "justinrummel-recipes",
+          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
         }
       ],
       "confidence": "SKIP",
@@ -24572,8 +25385,23 @@
     {
       "id": "962ee66a9aeb",
       "app_name": "Zoom",
-      "action_status": "needs_review",
-      "existing_prs": [],
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "MLBZ521-recipes",
+          "number": 30,
+          "title": "Expected authority name changed to include team identifier",
+          "url": "https://github.com/autopkg/MLBZ521-recipes/pull/30",
+          "state": "closed"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        }
+      ],
       "member_count": 5,
       "members_summary": [
         {

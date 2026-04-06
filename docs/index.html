@@ -5,143 +5,430 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AutoPkg Recipe Deduplication</title>
 <style>
-*,*::before,*::after{box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;padding:0;background:#f8f9fa;color:#1a1a2e}
-a{color:#2563eb;text-decoration:none}
-a:hover{text-decoration:underline}
+/* === CSS Custom Properties (Light + Dark) === */
+:root {
+  --bg: #f4f5f7;
+  --bg-surface: #ffffff;
+  --bg-surface-alt: #f8f9fb;
+  --bg-hover: #f0f1f4;
+  --border: #e0e3e8;
+  --border-light: #eef0f3;
+  --text: #1a1d23;
+  --text-secondary: #5a6070;
+  --text-muted: #8891a0;
+  --link: #2563eb;
 
-.header{background:#1e293b;color:#fff;padding:1.5rem 2rem}
-.header h1{margin:0 0 .25rem;font-size:1.5rem;font-weight:600}
-.header .subtitle{opacity:.7;font-size:.85rem}
-.header .stats{display:flex;gap:1.5rem;margin-top:.75rem;font-size:.9rem;flex-wrap:wrap}
-.header .stat{display:flex;align-items:center;gap:.35rem}
-.header .stat .num{font-weight:700;font-size:1.1rem}
+  --header-bg: #1a1d23;
+  --header-text: #ffffff;
+  --header-muted: rgba(255,255,255,.6);
 
-.controls{background:#fff;border-bottom:1px solid #e2e8f0;padding:.75rem 2rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap;position:sticky;top:0;z-index:10}
-.tabs{display:flex;gap:0}
-.tab{padding:.4rem .9rem;border:1px solid #cbd5e1;cursor:pointer;font-size:.8rem;font-weight:500;background:#fff;transition:all .15s}
-.tab:first-child{border-radius:6px 0 0 6px}
-.tab:last-child{border-radius:0 6px 6px 0}
-.tab:not(:first-child){border-left:none}
-.tab.active{background:#1e293b;color:#fff;border-color:#1e293b}
-.tab .count{margin-left:.3rem;opacity:.6}
-.search{flex:1;min-width:180px}
-.search input{width:100%;padding:.4rem .75rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.85rem;outline:none}
-.search input:focus{border-color:#2563eb;box-shadow:0 0 0 2px rgba(37,99,235,.15)}
-.filter-select select{padding:.4rem .5rem;border:1px solid #cbd5e1;border-radius:6px;font-size:.8rem}
+  --badge-high-bg: #fde8e8; --badge-high-text: #991b1b; --badge-high-border: #fca5a5;
+  --badge-med-bg: #fef3c7; --badge-med-text: #854d0e; --badge-med-border: #fcd34d;
+  --badge-low-bg: #e0f2fe; --badge-low-text: #0c4a6e; --badge-low-border: #7dd3fc;
+  --badge-skip-bg: #f1f5f9; --badge-skip-text: #64748b; --badge-skip-border: #cbd5e1;
 
-.content{max-width:1200px;margin:0 auto;padding:1rem 2rem 4rem}
-.set-count{font-size:.8rem;color:#64748b;margin-bottom:.75rem}
+  --keep-bg: #dcfce7; --keep-text: #166534; --keep-border: #86efac;
+  --depr-bg: #fee2e2; --depr-text: #991b1b; --depr-border: #fca5a5;
 
-.card{background:#fff;border:1px solid #e2e8f0;border-radius:8px;margin-bottom:.6rem;overflow:hidden;transition:box-shadow .15s}
-.card:hover{box-shadow:0 2px 8px rgba(0,0,0,.06)}
-.card.resolved-card{opacity:.65}
-.card.resolved-card:hover{opacity:1}
-.card-header{display:flex;align-items:center;padding:.65rem 1rem;cursor:pointer;gap:.75rem;user-select:none}
-.card-header:hover{background:#f8fafc}
-.app-name{font-weight:600;font-size:.95rem;flex:1}
+  --action-needs_pr-bg: #fff7ed; --action-needs_pr-text: #9a3412;
+  --action-pr_open-bg: #fef9c3; --action-pr_open-text: #854d0e;
+  --action-resolved-bg: #dcfce7; --action-resolved-text: #166534;
+  --action-needs_review-bg: #f1f5f9; --action-needs_review-text: #64748b;
+  --action-wont_fix-bg: #f3e8ff; --action-wont_fix-text: #6b21a8;
+  --action-exception-bg: #f3e8ff; --action-exception-text: #6b21a8;
+  --action-deferred-bg: #fef9c3; --action-deferred-text: #854d0e;
+  --action-needs_evaluation-bg: #f1f5f9; --action-needs_evaluation-text: #94a3b8;
 
-.badge{font-size:.65rem;font-weight:600;padding:.15rem .45rem;border-radius:4px;text-transform:uppercase;letter-spacing:.02em}
-.badge-high{background:#fdf2f8;color:#9d174d;border:1px solid #f9a8d4}
-.badge-medium{background:#fefce8;color:#854d0e;border:1px solid #fde68a}
-.badge-low{background:#f0fdfa;color:#115e59;border:1px solid #99f6e4}
-.badge-skip{background:#f1f5f9;color:#64748b;border:1px solid #e2e8f0}
+  --pr-bg: #eff6ff; --pr-border: #bfdbfe;
+  --pr-open: #d97706; --pr-merged: #16a34a; --pr-closed: #94a3b8;
 
-.action-badge{font-size:.65rem;font-weight:500;padding:.15rem .45rem;border-radius:4px}
-.action-needs_pr{background:#fff7ed;color:#9a3412}
-.action-pr_open{background:#fefce8;color:#854d0e}
-.action-resolved{background:#f0fdfa;color:#115e59}
-.action-needs_review{background:#f1f5f9;color:#64748b}
+  --info-bg: #eff6ff; --info-text: #1e40af; --info-border: #bfdbfe;
+  --warn-bg: #fefce8; --warn-text: #854d0e; --warn-border: #fde68a;
+  --override-bg: #f5f3ff; --override-text: #6d28d9; --override-border: #c4b5fd;
 
-.expand-icon{font-size:.75rem;color:#94a3b8;transition:transform .2s}
-.card.expanded .expand-icon{transform:rotate(90deg)}
+  --shared-icon: #64748b;
+  --keep-icon: #16a34a;
+  --depr-icon: #dc2626;
+  --tie-icon: #d97706;
 
-.members{display:flex;flex-wrap:wrap;gap:.35rem;flex:2}
-.member{font-size:.75rem;padding:.1rem .4rem;border-radius:3px}
-.member-keep{background:#f0fdfa;color:#0f766e}
-.member-deprecate{background:#fff7ed;color:#9a3412}
-.member .repo{font-weight:500}
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md: 0 2px 8px rgba(0,0,0,.06);
+  --radius: 8px;
+  --radius-sm: 5px;
+}
 
-.card-body{display:none;padding:0 1rem 1rem;border-top:1px solid #f1f5f9}
-.card.expanded .card-body{display:block}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1117;
+    --bg-surface: #1a1d26;
+    --bg-surface-alt: #22252f;
+    --bg-hover: #272b36;
+    --border: #2e3340;
+    --border-light: #252830;
+    --text: #e4e6eb;
+    --text-secondary: #a0a6b4;
+    --text-muted: #6b7280;
+    --link: #60a5fa;
 
-.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:.75rem}
-@media(max-width:768px){.detail-grid{grid-template-columns:1fr}}
+    --header-bg: #12141b;
+    --header-text: #e4e6eb;
+    --header-muted: rgba(228,230,235,.5);
 
-.detail-section{background:#f8fafc;border-radius:6px;padding:.75rem}
-.detail-section h4{margin:0 0 .4rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.04em;color:#64748b}
-.detail-section p,.detail-section ul{margin:0;font-size:.82rem;line-height:1.5}
-.detail-section ul{padding-left:1.2rem}
-.detail-section li{margin-bottom:.2rem}
+    --badge-high-bg: #450a0a; --badge-high-text: #fca5a5; --badge-high-border: #7f1d1d;
+    --badge-med-bg: #451a03; --badge-med-text: #fcd34d; --badge-med-border: #78350f;
+    --badge-low-bg: #0c4a6e; --badge-low-text: #bae6fd; --badge-low-border: #075985;
+    --badge-skip-bg: #1e293b; --badge-skip-text: #94a3b8; --badge-skip-border: #334155;
 
-.member-detail{display:flex;align-items:flex-start;gap:.5rem;padding:.4rem 0;border-bottom:1px solid #f1f5f9}
-.member-detail:last-child{border-bottom:none}
-.member-label{font-size:.7rem;font-weight:600;padding:.1rem .3rem;border-radius:3px;white-space:nowrap;margin-top:.1rem}
-.member-label-keep{background:#ccfbf1;color:#0f766e}
-.member-label-deprecate{background:#ffedd5;color:#9a3412}
-.member-info{flex:1}
-.member-info .path{font-size:.82rem;font-weight:500}
-.member-info .path a{color:inherit}
-.member-info .reason{font-size:.78rem;color:#64748b;margin-top:.1rem}
+    --keep-bg: #052e16; --keep-text: #86efac; --keep-border: #166534;
+    --depr-bg: #450a0a; --depr-text: #fca5a5; --depr-border: #7f1d1d;
 
-/* Criteria tags */
-.criteria-list{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.5rem}
-.criterion{font-size:.7rem;padding:.15rem .4rem;border-radius:3px;display:inline-flex;align-items:center;gap:.25rem}
-.criterion-keep{background:#ccfbf1;color:#0f766e}
-.criterion-deprecate{background:#ffedd5;color:#9a3412}
-.criterion-neutral{background:#f1f5f9;color:#64748b}
-.criterion-icon{font-size:.6rem}
+    --action-needs_pr-bg: #431407; --action-needs_pr-text: #fdba74;
+    --action-pr_open-bg: #422006; --action-pr_open-text: #fcd34d;
+    --action-resolved-bg: #052e16; --action-resolved-text: #86efac;
+    --action-needs_review-bg: #1e293b; --action-needs_review-text: #94a3b8;
+    --action-wont_fix-bg: #2e1065; --action-wont_fix-text: #c4b5fd;
+    --action-exception-bg: #2e1065; --action-exception-text: #c4b5fd;
+    --action-deferred-bg: #422006; --action-deferred-text: #fcd34d;
+    --action-needs_evaluation-bg: #1e293b; --action-needs_evaluation-text: #64748b;
 
-/* Rationale structured */
-.rationale-section{grid-column:1/-1}
-.rationale-text{font-size:.82rem;line-height:1.6;color:#374151;margin-top:.4rem}
-.rationale-bullets{list-style:none;padding:0;margin:.4rem 0 0}
-.rationale-bullet{display:flex;gap:.5rem;padding:.25rem 0;font-size:.82rem;line-height:1.5;color:#374151}
-.rationale-bullet+.rationale-bullet{border-top:1px solid #f1f5f9}
-.rb-icon{flex-shrink:0;width:1.1rem;text-align:center;font-size:.7rem;margin-top:.15rem}
-.rb-shared .rb-icon{color:#64748b}
-.rb-favors_keep .rb-icon{color:#0f766e}
-.rb-favors_deprecate .rb-icon{color:#9a3412}
-.rb-tiebreaker .rb-icon{color:#854d0e}
+    --pr-bg: #172554; --pr-border: #1e3a5f;
+    --pr-open: #fbbf24; --pr-merged: #4ade80; --pr-closed: #6b7280;
 
+    --info-bg: #172554; --info-text: #93c5fd; --info-border: #1e3a5f;
+    --warn-bg: #422006; --warn-text: #fcd34d; --warn-border: #78350f;
+    --override-bg: #2e1065; --override-text: #c4b5fd; --override-border: #4c1d95;
 
-.pr-link{display:inline-flex;align-items:center;gap:.3rem;font-size:.8rem;padding:.2rem .5rem;background:#f0f9ff;border:1px solid #bae6fd;border-radius:4px;margin-right:.3rem;margin-bottom:.3rem}
-.pr-link .pr-state{width:6px;height:6px;border-radius:50%;display:inline-block}
-.pr-state-open{background:#d97706}
-.pr-state-merged{background:#0f766e}
-.pr-state-closed{background:#94a3b8}
+    --shared-icon: #6b7280;
+    --keep-icon: #4ade80;
+    --depr-icon: #f87171;
+    --tie-icon: #fbbf24;
 
-.skip-reason{font-size:.82rem;color:#64748b;font-style:italic}
+    --shadow-sm: 0 1px 2px rgba(0,0,0,.2);
+    --shadow-md: 0 2px 8px rgba(0,0,0,.3);
+  }
+}
 
-.override-banner{background:#f5f3ff;border:1px solid #c4b5fd;border-radius:6px;padding:.5rem .75rem;margin-top:.5rem;font-size:.8rem;color:#6d28d9}
-.override-banner strong{font-weight:600}
-.reassessment-banner{background:#fefce8;border:1px solid #fde68a;border-radius:6px;padding:.5rem .75rem;margin-top:.5rem;font-size:.8rem;color:#854d0e}
-.reassessment-banner strong{font-weight:600}
-.repo-flag-tag{font-size:.65rem;font-weight:500;padding:.1rem .35rem;border-radius:3px;background:#fefce8;color:#854d0e;border:1px solid #fde68a;margin-left:.25rem;vertical-align:middle}
-.action-wont_fix{background:#f5f3ff;color:#6d28d9}
-.action-exception{background:#f5f3ff;color:#6d28d9}
-.action-deferred{background:#fef9c3;color:#854d0e}
-.action-needs_evaluation{background:#f1f5f9;color:#94a3b8}
+/* === Reset & Base === */
+*, *::before, *::after { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: var(--bg); color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
-.info-bar{background:#eff6ff;border-bottom:1px solid #bfdbfe;padding:.6rem 2rem;font-size:.8rem;color:#1e40af;display:flex;align-items:center;gap:.5rem}
-.info-bar a{color:#1e40af;font-weight:500}
-.info-toggle{cursor:pointer;text-decoration:underline;font-weight:500}
-.info-panel{display:none;background:#eff6ff;padding:1rem 2rem;font-size:.82rem;color:#1e40af;border-bottom:1px solid #bfdbfe;line-height:1.6}
-.info-panel.visible{display:block}
-.info-panel ul{margin:.4rem 0;padding-left:1.5rem}
-.info-panel li{margin-bottom:.3rem}
+/* === Header === */
+.header {
+  background: var(--header-bg); color: var(--header-text);
+  padding: 1.25rem 1rem;
+}
+.header-inner {
+  max-width: 960px; margin: 0 auto;
+}
+.header h1 { margin: 0; font-size: 1.2rem; font-weight: 700; }
+.header .subtitle { color: var(--header-muted); font-size: .8rem; margin-top: .15rem; }
+.stat-row {
+  display: flex; flex-wrap: wrap; gap: .5rem 1.25rem;
+  margin-top: .6rem; font-size: .8rem;
+}
+.stat-item { display: flex; align-items: center; gap: .3rem; }
+.stat-num { font-weight: 700; font-size: 1rem; }
 
-.empty-state{text-align:center;padding:3rem;color:#94a3b8;font-size:.9rem}
+/* === Info Bar === */
+.info-bar {
+  background: var(--info-bg); border-bottom: 1px solid var(--info-border);
+  padding: .5rem 1rem; font-size: .78rem; color: var(--info-text);
+  display: flex; align-items: center; gap: .4rem; flex-wrap: wrap;
+}
+.info-bar a { color: var(--info-text); font-weight: 600; }
+.info-toggle { cursor: pointer; text-decoration: underline; font-weight: 600; }
+.info-panel {
+  display: none; background: var(--info-bg); padding: .75rem 1rem;
+  font-size: .78rem; color: var(--info-text); border-bottom: 1px solid var(--info-border);
+  line-height: 1.6;
+}
+.info-panel.visible { display: block; }
+.info-panel ul { margin: .3rem 0; padding-left: 1.3rem; }
+.info-panel li { margin-bottom: .2rem; }
 
-.footer{max-width:1200px;margin:0 auto;padding:0 2rem 2rem;font-size:.75rem;color:#94a3b8;text-align:center;line-height:1.5}
+/* === Controls === */
+.controls {
+  background: var(--bg-surface); border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 20;
+  padding: .5rem 1rem;
+}
+.controls-inner { max-width: 960px; margin: 0 auto; }
+
+/* Search row */
+.search-row {
+  display: flex; gap: .5rem; align-items: center;
+}
+.search-row input {
+  flex: 1; min-width: 0;
+  padding: .45rem .7rem; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  font-size: .85rem; background: var(--bg); color: var(--text); outline: none;
+}
+.search-row input:focus { border-color: var(--link); box-shadow: 0 0 0 2px rgba(37,99,235,.2); }
+.search-row input::placeholder { color: var(--text-muted); }
+
+.filter-toggle {
+  display: none; /* shown on mobile */
+  padding: .4rem .6rem; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  background: var(--bg); color: var(--text-secondary); cursor: pointer;
+  font-size: .85rem; white-space: nowrap; line-height: 1;
+}
+.filter-toggle.active { background: var(--link); color: #fff; border-color: var(--link); }
+
+/* Tab strip */
+.tab-strip {
+  display: flex; gap: 0; margin-top: .5rem;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tab-strip::-webkit-scrollbar { display: none; }
+.tab {
+  padding: .35rem .7rem; border: 1px solid var(--border);
+  cursor: pointer; font-size: .75rem; font-weight: 600;
+  background: var(--bg-surface); color: var(--text-secondary);
+  white-space: nowrap; transition: all .12s; flex-shrink: 0;
+}
+.tab:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
+.tab:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
+.tab:not(:first-child) { border-left: none; }
+.tab.active { background: var(--header-bg); color: var(--header-text); border-color: var(--header-bg); }
+.tab .cnt { margin-left: .25rem; opacity: .6; font-weight: 400; }
+
+/* Filter row (selects) */
+.filter-row {
+  display: flex; gap: .5rem; margin-top: .5rem; flex-wrap: wrap;
+}
+.filter-row select {
+  padding: .35rem .45rem; border: 1px solid var(--border); border-radius: var(--radius-sm);
+  font-size: .78rem; background: var(--bg); color: var(--text); outline: none;
+  min-width: 0; flex: 1;
+}
+
+/* Mobile: collapse filters behind toggle */
+@media (max-width: 640px) {
+  .filter-toggle { display: block; }
+  .filter-row { display: none; }
+  .filter-row.visible { display: flex; }
+  .tab-strip { margin-top: .4rem; }
+}
+
+/* === Content === */
+.content {
+  max-width: 960px; margin: 0 auto;
+  padding: .75rem 1rem 3rem;
+}
+.set-count { font-size: .75rem; color: var(--text-muted); margin-bottom: .5rem; }
+
+/* === Card === */
+.card {
+  background: var(--bg-surface); border: 1px solid var(--border);
+  border-radius: var(--radius); margin-bottom: .5rem;
+  box-shadow: var(--shadow-sm); transition: box-shadow .12s;
+  overflow: hidden;
+}
+.card:hover { box-shadow: var(--shadow-md); }
+.card.resolved { opacity: .55; }
+.card.resolved:hover { opacity: 1; }
+
+/* Card header */
+.card-hd {
+  display: flex; align-items: center; gap: .5rem;
+  padding: .6rem .75rem; cursor: pointer; user-select: none;
+  min-height: 44px; /* touch target */
+}
+.card-hd:hover { background: var(--bg-hover); }
+.expand-arrow {
+  font-size: .65rem; color: var(--text-muted); transition: transform .15s;
+  flex-shrink: 0; width: 1rem; text-align: center;
+}
+.card.open .expand-arrow { transform: rotate(90deg); }
+.card-app {
+  font-weight: 700; font-size: .9rem; flex: 1; min-width: 0;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.card-meta {
+  display: flex; gap: .35rem; align-items: center; flex-shrink: 0; flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/* Badges */
+.badge {
+  font-size: .6rem; font-weight: 700; padding: .15rem .4rem;
+  border-radius: 3px; text-transform: uppercase; letter-spacing: .03em;
+  border: 1px solid; white-space: nowrap; line-height: 1.3;
+}
+.badge-high { background: var(--badge-high-bg); color: var(--badge-high-text); border-color: var(--badge-high-border); }
+.badge-medium { background: var(--badge-med-bg); color: var(--badge-med-text); border-color: var(--badge-med-border); }
+.badge-low { background: var(--badge-low-bg); color: var(--badge-low-text); border-color: var(--badge-low-border); }
+.badge-skip { background: var(--badge-skip-bg); color: var(--badge-skip-text); border-color: var(--badge-skip-border); }
+.badge-unevaluated { background: var(--badge-skip-bg); color: var(--badge-skip-text); border-color: var(--badge-skip-border); }
+
+.action-badge {
+  font-size: .6rem; font-weight: 600; padding: .15rem .4rem;
+  border-radius: 3px; white-space: nowrap; line-height: 1.3;
+}
+.action-needs_pr { background: var(--action-needs_pr-bg); color: var(--action-needs_pr-text); }
+.action-pr_open { background: var(--action-pr_open-bg); color: var(--action-pr_open-text); }
+.action-resolved { background: var(--action-resolved-bg); color: var(--action-resolved-text); }
+.action-needs_review { background: var(--action-needs_review-bg); color: var(--action-needs_review-text); }
+.action-wont_fix { background: var(--action-wont_fix-bg); color: var(--action-wont_fix-text); }
+.action-exception { background: var(--action-exception-bg); color: var(--action-exception-text); }
+.action-deferred { background: var(--action-deferred-bg); color: var(--action-deferred-text); }
+.action-needs_evaluation { background: var(--action-needs_evaluation-bg); color: var(--action-needs_evaluation-text); }
+
+/* Card body */
+.card-body {
+  display: none; padding: 0 .75rem .75rem;
+  border-top: 1px solid var(--border-light);
+}
+.card.open .card-body { display: block; }
+
+/* === Recipe Row (per-recipe layout) === */
+.recipe-row {
+  display: flex; gap: .5rem; padding: .6rem 0;
+  border-bottom: 1px solid var(--border-light);
+  align-items: flex-start;
+}
+.recipe-row:last-of-type { border-bottom: none; }
+
+.role-tag {
+  font-size: .6rem; font-weight: 700; padding: .15rem .35rem;
+  border-radius: 3px; white-space: nowrap; flex-shrink: 0;
+  margin-top: .1rem; line-height: 1.3; text-transform: uppercase;
+  letter-spacing: .02em;
+}
+.role-keep { background: var(--keep-bg); color: var(--keep-text); }
+.role-deprecate { background: var(--depr-bg); color: var(--depr-text); }
+
+.recipe-info { flex: 1; min-width: 0; }
+.recipe-path {
+  font-size: .8rem; font-weight: 600; word-break: break-all; line-height: 1.35;
+}
+.recipe-path a { color: var(--text); }
+.recipe-path a:hover { color: var(--link); }
+.recipe-reason {
+  font-size: .75rem; color: var(--text-secondary); margin-top: .2rem; line-height: 1.4;
+}
+
+/* Inline feature tags per recipe */
+.feature-tags {
+  display: flex; flex-wrap: wrap; gap: .25rem; margin-top: .3rem;
+}
+.ftag {
+  font-size: .6rem; padding: .1rem .3rem; border-radius: 3px;
+  display: inline-flex; align-items: center; gap: .15rem;
+  font-weight: 500; line-height: 1.3;
+}
+.ftag-pos { background: var(--keep-bg); color: var(--keep-text); }
+.ftag-neg { background: var(--depr-bg); color: var(--depr-text); }
+.ftag-neutral { background: var(--bg-surface-alt); color: var(--text-muted); border: 1px solid var(--border-light); }
+
+.dep-count {
+  font-size: .7rem; color: var(--text-muted); white-space: nowrap;
+  flex-shrink: 0; margin-top: .1rem;
+  display: flex; align-items: center; gap: .2rem;
+}
+
+/* Repo flag */
+.repo-flag {
+  font-size: .55rem; font-weight: 600; padding: .1rem .3rem;
+  border-radius: 3px; background: var(--warn-bg); color: var(--warn-text);
+  border: 1px solid var(--warn-border); margin-left: .3rem;
+  vertical-align: middle; white-space: nowrap;
+}
+
+/* === Set-level info (shared rationale, tiebreaker, PRs) === */
+.set-info {
+  margin-top: .5rem; padding-top: .5rem;
+  border-top: 1px solid var(--border-light);
+}
+.set-info-row {
+  display: flex; gap: .35rem; padding: .15rem 0;
+  font-size: .75rem; line-height: 1.5; color: var(--text-secondary);
+  align-items: flex-start;
+}
+.set-info-icon {
+  flex-shrink: 0; width: .9rem; text-align: center;
+  font-size: .65rem; margin-top: .2rem;
+}
+.si-shared .set-info-icon { color: var(--shared-icon); }
+.si-favors_keep .set-info-icon { color: var(--keep-icon); }
+.si-favors_deprecate .set-info-icon { color: var(--depr-icon); }
+.si-tiebreaker .set-info-icon { color: var(--tie-icon); }
+
+/* PRs */
+.pr-row { margin-top: .4rem; display: flex; flex-wrap: wrap; gap: .3rem; }
+.pr-chip {
+  display: inline-flex; align-items: center; gap: .25rem;
+  font-size: .7rem; padding: .2rem .45rem;
+  background: var(--pr-bg); border: 1px solid var(--pr-border);
+  border-radius: 4px; color: var(--text); white-space: nowrap;
+}
+.pr-chip a { color: inherit; }
+.pr-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; flex-shrink: 0; }
+.pr-dot-open { background: var(--pr-open); }
+.pr-dot-merged { background: var(--pr-merged); }
+.pr-dot-closed { background: var(--pr-closed); }
+
+/* Skip card */
+.skip-text { font-size: .78rem; color: var(--text-muted); font-style: italic; padding-top: .4rem; }
+
+/* Banners */
+.banner {
+  border-radius: var(--radius-sm); padding: .45rem .65rem;
+  margin-top: .5rem; font-size: .75rem; line-height: 1.4;
+  border: 1px solid;
+}
+.banner strong { font-weight: 700; }
+.banner-warn { background: var(--warn-bg); color: var(--warn-text); border-color: var(--warn-border); }
+.banner-override { background: var(--override-bg); color: var(--override-text); border-color: var(--override-border); }
+
+/* Empty */
+.empty { text-align: center; padding: 2rem; color: var(--text-muted); font-size: .85rem; }
+
+/* Footer */
+.footer {
+  max-width: 960px; margin: 0 auto; padding: 0 1rem 2rem;
+  font-size: .7rem; color: var(--text-muted); text-align: center; line-height: 1.5;
+}
+.footer a { color: var(--text-muted); text-decoration: underline; }
+
+/* === Responsive tweaks === */
+@media (min-width: 641px) {
+  .header { padding: 1.25rem 1.5rem; }
+  .controls { padding: .5rem 1.5rem; }
+  .content { padding: .75rem 1.5rem 3rem; }
+  .info-bar, .info-panel { padding-left: 1.5rem; padding-right: 1.5rem; }
+}
+
+@media (min-width: 960px) {
+  .card-hd { padding: .6rem 1rem; }
+  .card-body { padding: 0 1rem .75rem; }
+}
+
+/* Print */
+@media print {
+  .controls, .info-bar, .info-panel, .footer { display: none; }
+  .card-body { display: block !important; }
+  .card { break-inside: avoid; }
+}
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h1>AutoPkg Recipe Deduplication</h1>
-  <div class="subtitle">Recommendations for consolidating redundant recipes across the AutoPkg org</div>
-  <div class="stats" id="stats"></div>
+  <div class="header-inner">
+    <h1>AutoPkg Recipe Deduplication</h1>
+    <div class="subtitle">Recommendations for consolidating redundant recipes across the AutoPkg org</div>
+    <div class="stat-row" id="stats"></div>
+  </div>
 </div>
 
 <div class="info-bar">
@@ -152,35 +439,36 @@ a:hover{text-decoration:underline}
   <p><strong>How recipe maintainers can help:</strong></p>
   <ul>
     <li><strong>Filter by your repo</strong> using the dropdown to find sets that affect your recipes.</li>
-    <li><strong>Merge open deprecation PRs</strong> that have been submitted to your repo.</li>
-    <li><strong>Add <code>DeprecationWarning</code></strong> to recipes flagged for deprecation if no PR exists yet.</li>
-    <li><strong>Update <code>ParentRecipe</code></strong> references in your downstream recipes to point to the recommended keeper.</li>
+    <li><strong>Merge open deprecation PRs</strong> submitted to your repo.</li>
+    <li><strong>Add <code>DeprecationWarning</code></strong> to recipes flagged for deprecation if no PR exists.</li>
+    <li><strong>Update <code>ParentRecipe</code></strong> references to point to the recommended keeper.</li>
   </ul>
-  <p>Questions or disagreements about a recommendation? <a href="https://github.com/homebysix/autopkg-dupe-tracker/issues">Open an issue</a>.</p>
+  <p>Questions? <a href="https://github.com/homebysix/autopkg-dupe-tracker/issues">Open an issue</a>.</p>
 </div>
 
 <div class="controls">
-  <div class="tabs" id="tabs"></div>
-  <div class="search">
-    <input type="text" id="searchInput" placeholder="Search by app name or repo...">
-  </div>
-  <div class="filter-select">
-    <select id="statusFilter">
-      <option value="">All statuses</option>
-      <option value="needs_pr">Needs PR</option>
-      <option value="pr_open">PR Open</option>
-      <option value="resolved">Resolved</option>
-      <option value="needs_review">Needs Review</option>
-      <option value="wont_fix">Won't Fix</option>
-      <option value="exception">Exception</option>
-      <option value="deferred">Deferred</option>
-      <option value="needs_reassessment">Needs Reassessment</option>
-    </select>
-  </div>
-  <div class="filter-select">
-    <select id="repoFilter">
-      <option value="">All repos</option>
-    </select>
+  <div class="controls-inner">
+    <div class="search-row">
+      <input type="text" id="searchInput" placeholder="Search by app name or repo...">
+      <button class="filter-toggle" id="filterToggle" aria-label="Toggle filters">&#9776; Filters</button>
+    </div>
+    <div class="tab-strip" id="tabs"></div>
+    <div class="filter-row" id="filterRow">
+      <select id="statusFilter" aria-label="Filter by status">
+        <option value="">All statuses</option>
+        <option value="needs_pr">Needs PR</option>
+        <option value="pr_open">PR Open</option>
+        <option value="resolved">Resolved</option>
+        <option value="needs_review">Needs Review</option>
+        <option value="wont_fix">Won't Fix</option>
+        <option value="exception">Exception</option>
+        <option value="deferred">Deferred</option>
+        <option value="needs_reassessment">Needs Reassessment</option>
+      </select>
+      <select id="repoFilter" aria-label="Filter by repo">
+        <option value="">All repos</option>
+      </select>
+    </div>
   </div>
 </div>
 
@@ -206,41 +494,45 @@ let statusFilter = "";
 async function init() {
   const resp = await fetch("dashboard.json");
   DATA = await resp.json();
+
+  DATA._repoFlags = DATA.repo_flags || {};
+
   renderStats();
   renderTabs();
   renderRepoFilter();
   renderSets();
 
-  let searchTimeout;
+  let debounce;
   document.getElementById("searchInput").addEventListener("input", e => {
     searchQuery = e.target.value.toLowerCase();
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(renderSets, 150);
+    clearTimeout(debounce);
+    debounce = setTimeout(renderSets, 120);
   });
   document.getElementById("repoFilter").addEventListener("change", e => {
-    repoFilter = e.target.value;
-    renderSets();
+    repoFilter = e.target.value; renderSets();
   });
   document.getElementById("statusFilter").addEventListener("change", e => {
-    statusFilter = e.target.value;
-    renderSets();
+    statusFilter = e.target.value; renderSets();
   });
   document.getElementById("infoToggle").addEventListener("click", () => {
     document.getElementById("infoPanel").classList.toggle("visible");
+  });
+  document.getElementById("filterToggle").addEventListener("click", function() {
+    this.classList.toggle("active");
+    document.getElementById("filterRow").classList.toggle("visible");
   });
 }
 
 function renderStats() {
   const s = DATA.stats;
   const actionable = s.HIGH + s.MEDIUM + s.LOW;
-  const resolved = s.RESOLVED || 0;
-  const generated = new Date(DATA.generated_at);
+  const d = new Date(DATA.generated_at);
   document.getElementById("stats").innerHTML = `
-    <div class="stat"><span class="num">${DATA.total_sets}</span> sets evaluated</div>
-    <div class="stat"><span class="num">${actionable}</span> recommendations</div>
-    <div class="stat"><span class="num">${resolved}</span> resolved</div>
-    <div class="stat"><span class="num">${DATA.repos_involved.length}</span> repos</div>
-    <div class="stat">Updated ${generated.toLocaleDateString()}</div>
+    <div class="stat-item"><span class="stat-num">${DATA.total_sets}</span> sets</div>
+    <div class="stat-item"><span class="stat-num">${actionable}</span> recommendations</div>
+    <div class="stat-item"><span class="stat-num">${s.RESOLVED || 0}</span> resolved</div>
+    <div class="stat-item"><span class="stat-num">${DATA.repos_involved.length}</span> repos</div>
+    <div class="stat-item">Updated ${d.toLocaleDateString()}</div>
   `;
 }
 
@@ -249,60 +541,47 @@ function renderTabs() {
   const tabs = [
     { key: "ALL", label: "All", count: s.HIGH + s.MEDIUM + s.LOW },
     { key: "HIGH", label: "High", count: s.HIGH },
-    { key: "MEDIUM", label: "Medium", count: s.MEDIUM },
+    { key: "MEDIUM", label: "Med", count: s.MEDIUM },
     { key: "LOW", label: "Low", count: s.LOW },
-    { key: "SKIP", label: "Skipped", count: s.SKIP },
+    { key: "SKIP", label: "Skip", count: s.SKIP },
   ];
-  const container = document.getElementById("tabs");
-  container.innerHTML = tabs.map(t =>
-    `<div class="tab ${t.key === activeTab ? 'active' : ''}" data-tab="${t.key}">${t.label}<span class="count">${t.count}</span></div>`
+  const el = document.getElementById("tabs");
+  el.innerHTML = tabs.map(t =>
+    `<div class="tab${t.key === activeTab ? ' active' : ''}" data-tab="${t.key}">${t.label}<span class="cnt">${t.count}</span></div>`
   ).join("");
-  container.querySelectorAll(".tab").forEach(el => {
-    el.addEventListener("click", () => {
-      activeTab = el.dataset.tab;
-      container.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-      el.classList.add("active");
+  el.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      activeTab = tab.dataset.tab;
+      el.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
       renderSets();
     });
   });
 }
 
 function renderRepoFilter() {
-  const select = document.getElementById("repoFilter");
-  DATA.repos_involved.forEach(repo => {
-    const opt = document.createElement("option");
-    opt.value = repo;
-    opt.textContent = repo;
-    select.appendChild(opt);
+  const sel = document.getElementById("repoFilter");
+  DATA.repos_involved.forEach(r => {
+    const o = document.createElement("option");
+    o.value = r; o.textContent = r; sel.appendChild(o);
   });
 }
 
-function getFilteredSets() {
+function filtered() {
   return DATA.sets.filter(s => {
-    // Tab filter
-    if (activeTab === "ALL") {
-      if (s.confidence === "SKIP") return false;
-    } else if (s.confidence !== activeTab) {
-      return false;
-    }
-    // Status filter
-    if (statusFilter === "needs_reassessment") {
-      if (!s.needs_reassessment) return false;
-    } else if (statusFilter && s.action_status !== statusFilter) {
-      return false;
-    }
-    // Search filter
+    if (activeTab === "ALL") { if (s.confidence === "SKIP") return false; }
+    else if (s.confidence !== activeTab) return false;
+    if (statusFilter === "needs_reassessment") { if (!s.needs_reassessment) return false; }
+    else if (statusFilter && s.action_status !== statusFilter) return false;
     if (searchQuery) {
-      const haystack = [
-        s.app_name,
-        ...(s.keep || []).map(m => m.repo + " " + (m.path || m.rel_path || "")),
-        ...(s.deprecate || []).map(m => m.repo + " " + (m.path || m.rel_path || "")),
-      ].join(" ").toLowerCase();
-      if (!haystack.includes(searchQuery)) return false;
+      const hay = [s.app_name, ...(s.keep||[]).map(m=>m.repo+" "+(m.rel_path||m.path||"")),
+                    ...(s.deprecate||[]).map(m=>m.repo+" "+(m.rel_path||m.path||"")),
+                    ...(s.members_summary||[]).map(m=>m.repo+" "+(m.rel_path||""))
+                   ].join(" ").toLowerCase();
+      if (!hay.includes(searchQuery)) return false;
     }
-    // Repo filter
     if (repoFilter) {
-      const repos = [...(s.keep || []), ...(s.deprecate || [])].map(m => m.repo);
+      const repos = [...(s.keep||[]),...(s.deprecate||[]),...(s.members_summary||[])].map(m=>m.repo);
       if (!repos.includes(repoFilter)) return false;
     }
     return true;
@@ -310,224 +589,200 @@ function getFilteredSets() {
 }
 
 function renderSets() {
-  const filtered = getFilteredSets();
+  const sets = filtered();
   document.getElementById("setCount").textContent =
-    `Showing ${filtered.length} of ${DATA.total_sets} sets`;
-
-  const container = document.getElementById("setList");
-  if (filtered.length === 0) {
-    container.innerHTML = '<div class="empty-state">No matching sets found.</div>';
-    return;
-  }
-
-  container.innerHTML = filtered.map((s, i) => renderCard(s, i)).join("");
-
-  // Attach event listeners
-  container.querySelectorAll(".card-header").forEach(el => {
-    el.addEventListener("click", () => {
-      el.parentElement.classList.toggle("expanded");
-    });
+    `Showing ${sets.length} of ${DATA.total_sets} sets`;
+  const el = document.getElementById("setList");
+  if (!sets.length) { el.innerHTML = '<div class="empty">No matching sets found.</div>'; return; }
+  el.innerHTML = sets.map(renderCard).join("");
+  el.querySelectorAll(".card-hd").forEach(hd => {
+    hd.addEventListener("click", () => hd.parentElement.classList.toggle("open"));
   });
 }
 
-function ghUrl(repo, path) {
-  return `https://github.com/autopkg/${repo}/blob/main/${path}`;
-}
-
-function actionLabel(status) {
-  const labels = {
-    pr_open: "PR Open",
-    resolved: "Resolved",
-    needs_pr: "Needs PR",
-    needs_review: "Needs Review",
-    wont_fix: "Won't Fix",
-    exception: "Exception",
-    deferred: "Deferred",
-    needs_evaluation: "Unevaluated",
-  };
-  return labels[status] || status;
-}
-
-function criterionIcon(favors) {
-  if (favors === "keep") return '<span class="criterion-icon">&#10003;</span>';
-  if (favors === "deprecate") return '<span class="criterion-icon">&#10007;</span>';
-  return "";
-}
-
-function criterionClass(favors) {
-  if (favors === "keep") return "criterion-keep";
-  if (favors === "deprecate") return "criterion-deprecate";
-  return "criterion-neutral";
-}
-
-function renderCriteria(criteria) {
-  if (!criteria || criteria.length === 0) return "";
-  return `
-    <div class="criteria-list">
-      ${criteria.map(c =>
-        `<span class="criterion ${criterionClass(c.favors)}">${criterionIcon(c.favors)}${esc(c.label)}</span>`
-      ).join("")}
-    </div>`;
-}
-
-function renderCard(s, idx) {
-  if (s.confidence === "SKIP") {
-    return `
-      <div class="card">
-        <div class="card-header">
-          <span class="expand-icon">&#9654;</span>
-          <span class="app-name">${esc(s.app_name)}</span>
-          <span class="badge badge-skip">Skipped</span>
-        </div>
-        <div class="card-body">
-          <p class="skip-reason">${esc(s.skip_reason)}</p>
-        </div>
-      </div>`;
-  }
-
-  const confClass = s.confidence.toLowerCase();
-  const isResolved = ["resolved", "wont_fix", "exception"].includes(s.action_status);
-  const membersHtml = [
-    ...s.keep.map(m => `<span class="member member-keep"><span class="repo">${esc(m.repo)}</span></span>`),
-    ...s.deprecate.map(m => `<span class="member member-deprecate"><span class="repo">${esc(m.repo)}</span></span>`),
-  ].join("");
-
-  const keepHtml = s.keep.map(m => `
-    <div class="member-detail">
-      <span class="member-label member-label-keep">KEEP</span>
-      <div class="member-info">
-        <div class="path"><a href="${ghUrl(m.repo, m.path || m.rel_path)}" target="_blank">${esc(m.repo)}/${esc(m.path || m.rel_path)}</a>${renderRepoFlag(m.repo, s)}</div>
-        <div class="reason">${linkPRRefs(esc(m.reason))}</div>
-      </div>
-    </div>`).join("");
-
-  const deprecateHtml = s.deprecate.map(m => `
-    <div class="member-detail">
-      <span class="member-label member-label-deprecate">DEPRECATE</span>
-      <div class="member-info">
-        <div class="path"><a href="${ghUrl(m.repo, m.path || m.rel_path)}" target="_blank">${esc(m.repo)}/${esc(m.path || m.rel_path)}</a>${renderRepoFlag(m.repo, s)}</div>
-        <div class="reason">${linkPRRefs(esc(m.reason))}</div>
-      </div>
-    </div>`).join("");
-
-  const prsHtml = s.existing_prs.length > 0
-    ? s.existing_prs.map(pr => `
-        <a class="pr-link" href="${esc(pr.url)}" target="_blank">
-          <span class="pr-state pr-state-${pr.state || 'open'}"></span>
-          ${esc(pr.repo)}#${pr.number}${pr.title ? ': ' + esc(pr.title) : ''}
-        </a>`).join("")
-    : '<span style="font-size:.8rem;color:#94a3b8">None</span>';
-
-  return `
-    <div class="card${isResolved ? ' resolved-card' : ''}">
-      <div class="card-header">
-        <span class="expand-icon">&#9654;</span>
-        <span class="app-name">${esc(s.app_name)}</span>
-        <div class="members">${membersHtml}</div>
-        <span class="badge badge-${confClass}">${s.confidence}</span>
-        <span class="action-badge action-${s.action_status}">${actionLabel(s.action_status)}</span>
-      </div>
-      <div class="card-body">
-        <div class="detail-grid">
-          <div class="detail-section">
-            <h4>Members</h4>
-            ${keepHtml}${deprecateHtml}
-          </div>
-          <div class="detail-section">
-            <h4>Dependency Impact</h4>
-            <p>${esc(s.dependency_impact || "None")}</p>
-            <h4 style="margin-top:.6rem">Existing PRs</h4>
-            <div>${prsHtml}</div>
-          </div>
-          <div class="detail-section rationale-section">
-            <h4>Decision Criteria</h4>
-            ${renderCriteria(s.criteria)}
-            <h4 style="margin-top:.6rem">Rationale</h4>
-            ${renderRationale(s.rationale)}
-          </div>
-
-        </div>
-        ${renderReassessment(s)}
-        ${renderOverride(s)}
-      </div>
-    </div>`;
-}
-
-function renderRationale(rationale) {
-  if (!rationale) return '<p class="rationale-text">No rationale available.</p>';
-  // Structured format: array of {category, text}
-  if (Array.isArray(rationale)) {
-    const icons = {
-      shared: "&#9679;",
-      favors_keep: "&#10003;",
-      favors_deprecate: "&#10007;",
-      tiebreaker: "&#9670;",
-    };
-    return `<ul class="rationale-bullets">${rationale.map(r => {
-      const cat = r.category || "shared";
-      const icon = icons[cat] || "&#9679;";
-      return `<li class="rationale-bullet rb-${cat}"><span class="rb-icon">${icon}</span><span>${linkPRRefs(esc(r.text))}</span></li>`;
-    }).join("")}</ul>`;
-  }
-  // Legacy format: prose string — split into sentences for readability
-  const text = String(rationale);
-  const sentences = text.split(/(?<=\.)\s+(?=[A-Z])/).filter(s => s.trim());
-  if (sentences.length <= 2) {
-    return `<p class="rationale-text">${linkPRRefs(esc(text))}</p>`;
-  }
-  return `<ul class="rationale-bullets">${sentences.map(s =>
-    `<li class="rationale-bullet rb-shared"><span class="rb-icon">&#9679;</span><span>${linkPRRefs(esc(s.trim()))}</span></li>`
-  ).join("")}</ul>`;
-}
-
-function renderRepoFlag(repo, s) {
-  if (!s.repo_flags) return "";
-  const flag = s.repo_flags.find(f => f.repo === repo);
-  if (!flag || !flag.flag) return "";
-  const labels = { never_keep: "never keep" };
-  return `<span class="repo-flag-tag">${labels[flag.flag] || flag.flag}</span>`;
-}
-
-function renderReassessment(s) {
-  if (!s.needs_reassessment) return "";
-  return `
-    <div class="reassessment-banner">
-      <strong>Needs reassessment:</strong> ${esc(s.reassessment_reason)}
-    </div>`;
-}
-
-function renderOverride(s) {
-  if (!s.override) return "";
-  const decision = s.override.decision;
-  const reason = s.override.reason;
-  const date = s.override.date;
-  const labels = {
-    wont_fix: "Won't Fix",
-    exception: "Exception",
-    deferred: "Deferred",
-  };
-  const label = labels[decision] || decision;
-  return `
-    <div class="override-banner">
-      <strong>${esc(label)}</strong>${date ? ` (${esc(date)})` : ''}:
-      ${esc(reason)}
-    </div>`;
-}
-
-function esc(str) {
-  if (!str) return "";
-  return str.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
-}
+/* === Helpers === */
+function esc(s) { return s ? s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;") : ""; }
+function ghUrl(repo, path) { return `https://github.com/autopkg/${encodeURIComponent(repo)}/blob/main/${path}`; }
 
 function linkPRRefs(html) {
-  // GitHub-style: autopkg/repo-name#123
-  html = html.replace(/autopkg\/([\w-]+)#(\d+)/g, (match, repo, num) =>
-    `<a href="https://github.com/autopkg/${repo}/pull/${num}" target="_blank">autopkg/${repo}#${num}</a>`
-  );
-  // Legacy: #14 on repo-name
-  html = html.replace(/#(\d+)\s+on\s+([\w-]+(?:-[\w-]+)*)/g, (match, num, repo) =>
-    `<a href="https://github.com/autopkg/${repo}/pull/${num}" target="_blank">#${num} on ${repo}</a>`
-  );
+  html = html.replace(/autopkg\/([\w-]+)#(\d+)/g, (_, r, n) =>
+    `<a href="https://github.com/autopkg/${r}/pull/${n}" target="_blank" rel="noopener">autopkg/${r}#${n}</a>`);
+  html = html.replace(/#(\d+)\s+on\s+([\w-]+(?:-[\w-]+)*)/g, (_, n, r) =>
+    `<a href="https://github.com/autopkg/${r}/pull/${n}" target="_blank" rel="noopener">#${n} on ${r}</a>`);
+  return html;
+}
+
+const ACTION_LABELS = {
+  pr_open:"PR Open", resolved:"Resolved", needs_pr:"Needs PR",
+  needs_review:"Needs Review", wont_fix:"Won't Fix", exception:"Exception",
+  deferred:"Deferred", needs_evaluation:"Unevaluated"
+};
+
+function repoFlagHtml(repo) {
+  const f = DATA._repoFlags[repo];
+  if (!f) return "";
+  const labels = { never_keep: "\u26a0 never keep" };
+  return ` <span class="repo-flag" title="${esc(f.reason)}">${labels[f.flag] || f.flag}</span>`;
+}
+
+/* Build a lookup: repo|path -> role in this set */
+function buildRoleMap(s) {
+  const m = {};
+  (s.keep||[]).forEach(k => { m[k.repo + "|" + (k.rel_path||k.path||"")] = { role: "keep", reason: k.reason }; });
+  (s.deprecate||[]).forEach(d => { m[d.repo + "|" + (d.rel_path||d.path||"")] = { role: "deprecate", reason: d.reason }; });
+  return m;
+}
+
+/* Build per-recipe criteria advantages */
+function criteriaForRole(criteria, role) {
+  if (!criteria || !criteria.length) return [];
+  return criteria.filter(c => c.favors === role);
+}
+
+/* === Card Rendering === */
+function renderCard(s) {
+  if (s.confidence === "SKIP") return renderSkipCard(s);
+
+  const isResolved = ["resolved","wont_fix","exception"].includes(s.action_status);
+  const confCls = s.confidence.toLowerCase();
+  const roleMap = buildRoleMap(s);
+  const members = s.members_summary || [];
+
+  // Sort: keep first, then deprecate, then undecided
+  const sorted = [...members].sort((a, b) => {
+    const ra = roleMap[a.repo + "|" + (a.rel_path||"")] || {};
+    const rb = roleMap[b.repo + "|" + (b.rel_path||"")] || {};
+    const order = { keep: 0, deprecate: 1 };
+    return (order[ra.role] ?? 2) - (order[rb.role] ?? 2);
+  });
+
+  const recipesHtml = sorted.map(m => {
+    const key = m.repo + "|" + (m.rel_path||"");
+    const info = roleMap[key] || {};
+    const role = info.role;
+    const reason = info.reason;
+
+    // Criteria that favor this recipe's role
+    const favCriteria = role ? criteriaForRole(s.criteria, role) : [];
+    // Features from members_summary
+    const feats = [];
+    if (m.has_codesig) feats.push({ label: "CodeSig", cls: "ftag-neutral" });
+    if (m.has_endofcheck) feats.push({ label: "EndOfCheck", cls: "ftag-neutral" });
+    if (m.has_arch_var) feats.push({ label: "Multi-arch", cls: role === "keep" ? "ftag-pos" : "ftag-neutral" });
+    // Add favoring criteria as tags (skip ones already covered by feature booleans)
+    const coveredKeys = new Set(["codesig", "endofcheck", "arch"]);
+    favCriteria.forEach(c => {
+      if (!coveredKeys.has(c.key)) {
+        feats.push({ label: c.label, cls: role === "keep" ? "ftag-pos" : "ftag-neg" });
+      }
+    });
+
+    const roleTag = role === "keep"
+      ? '<span class="role-tag role-keep">Keep</span>'
+      : role === "deprecate"
+      ? '<span class="role-tag role-deprecate">Depr</span>'
+      : '<span class="role-tag" style="background:var(--bg-surface-alt);color:var(--text-muted)">?</span>';
+
+    const featsHtml = feats.length ? `<div class="feature-tags">${feats.map(f =>
+      `<span class="ftag ${f.cls}">${esc(f.label)}</span>`
+    ).join("")}</div>` : "";
+
+    const reasonHtml = reason ? `<div class="recipe-reason">${linkPRRefs(esc(reason))}</div>` : "";
+
+    return `
+      <div class="recipe-row">
+        ${roleTag}
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="${ghUrl(m.repo, m.rel_path||"")}" target="_blank" rel="noopener">${esc(m.repo)}<span style="color:var(--text-muted)">/${esc(m.rel_path||"")}</span></a>${repoFlagHtml(m.repo)}</div>
+          ${reasonHtml}
+          ${featsHtml}
+        </div>
+        <div class="dep-count" title="Dependent recipes">\u2193${m.dependent_count || 0}</div>
+      </div>`;
+  }).join("");
+
+  const setInfoHtml = renderSetInfo(s);
+  const prsHtml = renderPRs(s);
+  const banners = renderBanners(s);
+
+  return `
+    <div class="card${isResolved ? ' resolved' : ''}">
+      <div class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">${esc(s.app_name)}</span>
+        <div class="card-meta">
+          <span class="badge badge-${confCls}">${s.confidence}</span>
+          <span class="action-badge action-${s.action_status}">${ACTION_LABELS[s.action_status] || s.action_status}</span>
+        </div>
+      </div>
+      <div class="card-body">
+        ${recipesHtml}
+        ${setInfoHtml}
+        ${prsHtml}
+        ${banners}
+      </div>
+    </div>`;
+}
+
+function renderSkipCard(s) {
+  const members = s.members_summary || [];
+  const memberList = members.map(m =>
+    `<div class="recipe-row">
+      <span class="role-tag" style="background:var(--badge-skip-bg);color:var(--badge-skip-text)">\u2014</span>
+      <div class="recipe-info">
+        <div class="recipe-path"><a href="${ghUrl(m.repo, m.rel_path||"")}" target="_blank" rel="noopener">${esc(m.repo)}<span style="color:var(--text-muted)">/${esc(m.rel_path||"")}</span></a>${repoFlagHtml(m.repo)}</div>
+      </div>
+      <div class="dep-count" title="Dependent recipes">\u2193${m.dependent_count || 0}</div>
+    </div>`
+  ).join("");
+
+  return `
+    <div class="card">
+      <div class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">${esc(s.app_name)}</span>
+        <div class="card-meta">
+          <span class="badge badge-skip">Skip</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="skip-text">${esc(s.skip_reason)}</div>
+        ${memberList}
+        ${renderBanners(s)}
+      </div>
+    </div>`;
+}
+
+function renderSetInfo(s) {
+  const rationale = s.rationale;
+  if (!rationale || !Array.isArray(rationale) || !rationale.length) return "";
+  const icons = { shared: "\u25cf", favors_keep: "\u2713", favors_deprecate: "\u2717", tiebreaker: "\u25c6" };
+  const rows = rationale.map(r => {
+    const cat = r.category || "shared";
+    const icon = icons[cat] || "\u25cf";
+    return `<div class="set-info-row si-${cat}"><span class="set-info-icon">${icon}</span><span>${linkPRRefs(esc(r.text))}</span></div>`;
+  }).join("");
+  return `<div class="set-info">${rows}</div>`;
+}
+
+function renderPRs(s) {
+  if (!s.existing_prs || !s.existing_prs.length) return "";
+  const chips = s.existing_prs.map(pr =>
+    `<a class="pr-chip" href="${esc(pr.url)}" target="_blank" rel="noopener"><span class="pr-dot pr-dot-${pr.state||'open'}"></span>${esc(pr.repo)}#${pr.number}</a>`
+  ).join("");
+  return `<div class="pr-row">${chips}</div>`;
+}
+
+function renderBanners(s) {
+  let html = "";
+  if (s.needs_reassessment) {
+    html += `<div class="banner banner-warn"><strong>Needs reassessment:</strong> ${esc(s.reassessment_reason)}</div>`;
+  }
+  if (s.override) {
+    const labels = { wont_fix: "Won't Fix", exception: "Exception", deferred: "Deferred" };
+    const label = labels[s.override.decision] || s.override.decision;
+    html += `<div class="banner banner-override"><strong>${esc(label)}</strong>${s.override.date ? ` (${esc(s.override.date)})` : ""}: ${esc(s.override.reason)}</div>`;
+  }
   return html;
 }
 

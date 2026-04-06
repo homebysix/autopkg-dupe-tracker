@@ -453,13 +453,6 @@ a:hover { text-decoration: underline; }
     <div class="filter-row" id="filterRow">
       <select id="statusFilter" aria-label="Filter by status">
         <option value="">All statuses</option>
-        <option value="needs_pr">Needs PR</option>
-        <option value="pr_open">PR Open</option>
-        <option value="resolved">Resolved</option>
-        <option value="wont_fix">Won't Fix</option>
-        <option value="exception">Exception</option>
-        <option value="deferred">Deferred</option>
-        <option value="needs_reassessment">Needs Reassessment</option>
       </select>
       <select id="repoFilter" aria-label="Filter by repo">
         <option value="">All repos</option>
@@ -495,6 +488,7 @@ async function init() {
 
   renderStats();
   renderTabs();
+  renderStatusFilter();
   renderRepoFilter();
   renderSets();
 
@@ -552,6 +546,22 @@ function renderTabs() {
       tab.classList.add("active");
       renderSets();
     });
+  });
+}
+
+function renderStatusFilter() {
+  const sel = document.getElementById("statusFilter");
+  const statuses = new Set(DATA.sets.map(s => s.action_status).filter(Boolean));
+  if (DATA.sets.some(s => s.needs_reassessment)) statuses.add("needs_reassessment");
+  const order = ["needs_pr","pr_open","resolved","wont_fix","exception","deferred","needs_evaluation","needs_reassessment"];
+  const labels = {
+    needs_pr:"Needs PR", pr_open:"PR Open", resolved:"Resolved",
+    wont_fix:"Won't Fix", exception:"Exception", deferred:"Deferred",
+    needs_evaluation:"Unevaluated", needs_reassessment:"Needs Reassessment"
+  };
+  order.filter(s => statuses.has(s)).forEach(s => {
+    const o = document.createElement("option");
+    o.value = s; o.textContent = labels[s] || s; sel.appendChild(o);
   });
 }
 

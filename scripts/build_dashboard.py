@@ -56,19 +56,16 @@ def determine_action_status(evaluation, prs, override):
 
     # Check PR states
     if prs:
-        has_merged = any(pr.get("state") == "merged" for pr in prs)
+        all_merged = all(pr.get("state") == "merged" for pr in prs)
         has_open = any(pr.get("state") == "open" for pr in prs)
-        if has_merged:
+        if all_merged:
             return "resolved"
         if has_open:
             return "pr_open"
 
     # Fall back to evaluation confidence
     if evaluation:
-        confidence = evaluation.get("confidence", "")
-        if confidence in ("HIGH", "MEDIUM"):
-            return "needs_pr"
-        return "needs_review"
+        return "needs_pr"
 
     # No evaluation yet
     return "needs_evaluation"

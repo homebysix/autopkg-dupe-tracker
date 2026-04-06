@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-04-06T05:11:45.794767+00:00",
+  "generated_at": "2026-04-06T17:26:32.517862+00:00",
   "stats": {
     "HIGH": 30,
     "MEDIUM": 77,
     "LOW": 116,
     "SKIP": 42,
-    "RESOLVED": 47
+    "RESOLVED": 32
   },
-  "total_sets": 266,
+  "total_sets": 265,
   "needs_reassessment": 3,
   "repos_involved": [
     "Darkomen78-recipes",
@@ -68,7 +68,6 @@
     "justinrummel-recipes",
     "keeleysam-recipes",
     "kevinmcox-recipes",
-    "kitzy-recipes",
     "kkeilson-recipes",
     "macprince-recipes",
     "macvfx-recipes",
@@ -189,7 +188,7 @@
     {
       "id": "8f2a5c5e8e80",
       "app_name": "Anki",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "andrewzirkel-recipes",
@@ -545,7 +544,7 @@
     {
       "id": "f3f4abe2b6a0",
       "app_name": "Bambu Studio",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -638,7 +637,7 @@
     },
     {
       "id": "f00e9f904e6b",
-      "app_name": "GitHub CLI",
+      "app_name": "GitHubCLI",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -737,66 +736,6 @@
       ],
       "deprecation_message": "Consider switching to GitHubCLI recipes in the homebysix-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
-    },
-    {
-      "id": "0f29c7059fbc",
-      "app_name": "fleetctl",
-      "action_status": "resolved",
-      "existing_prs": [
-        {
-          "repo": "jc0b-recipes",
-          "number": 1,
-          "title": "Updated recipes to account for changes in Fleet",
-          "url": "https://github.com/autopkg/jc0b-recipes/pull/1",
-          "state": "merged"
-        }
-      ],
-      "member_count": 2,
-      "members_summary": [
-        {
-          "repo": "jc0b-recipes",
-          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "kitzy-recipes",
-          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        }
-      ],
-      "confidence": "UNEVALUATED",
-      "keep": [],
-      "deprecate": [],
-      "rationale": "",
-      "criteria": [],
-      "deprecation_message": "",
-      "dependency_impact": "",
-      "candidate_members": [
-        {
-          "repo": "jc0b-recipes",
-          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
-          "identifier": "com.github.jc0b.download.fleetctl",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "source_type": "github"
-        },
-        {
-          "repo": "kitzy-recipes",
-          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
-          "identifier": "com.github.kitzy.download.fleetctl",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "source_type": "github"
-        }
-      ]
     },
     {
       "id": "e438d62a0d85",
@@ -1013,7 +952,7 @@
     {
       "id": "327487707720",
       "app_name": "Aftermath",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "dataJAR-recipes",
@@ -1062,7 +1001,7 @@
     {
       "id": "57977624d114",
       "app_name": "macOSLAPS",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -1270,7 +1209,7 @@
     {
       "id": "adf849d2c2cf",
       "app_name": "KeyStoreExplorer",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -1367,8 +1306,8 @@
     },
     {
       "id": "8856528d651b",
-      "app_name": "dockutil",
-      "action_status": "resolved",
+      "app_name": "dockutil/",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "andrewzirkel-recipes",
@@ -1605,7 +1544,7 @@
     {
       "id": "3ae33726dc22",
       "app_name": "Vysor",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -1698,7 +1637,7 @@
     },
     {
       "id": "4254821ed59f",
-      "app_name": "Kitty",
+      "app_name": "kitty",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -2138,7 +2077,7 @@
     {
       "id": "5bf5fa58829f",
       "app_name": "Franz",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -2338,7 +2277,7 @@
     {
       "id": "7430c358431a",
       "app_name": "Support",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -2379,7 +2318,7 @@
     {
       "id": "0e123552c2b4",
       "app_name": "Support Helper",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -2575,7 +2514,7 @@
     {
       "id": "c93663f2d189",
       "app_name": "Ultimaker Cura",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -2774,7 +2713,7 @@
     },
     {
       "id": "3fe55c563a16",
-      "app_name": "Adobe Acrobat Pro",
+      "app_name": "AdobeAcrobatPro",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -3183,7 +3122,7 @@
     {
       "id": "2f34af871f49",
       "app_name": "Airfoil",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -3326,7 +3265,7 @@
     },
     {
       "id": "6313b4597c26",
-      "app_name": "Amadeus Lite",
+      "app_name": "AmadeusLite",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -3927,7 +3866,7 @@
     {
       "id": "ea1749a53e73",
       "app_name": "BasicTeX",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "andrewvalentine-recipes",
@@ -4041,7 +3980,7 @@
     {
       "id": "370be57abf20",
       "app_name": "BeyondCompare4",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -5326,7 +5265,7 @@
     },
     {
       "id": "bbf12a11d83f",
-      "app_name": "CloudFlareWarp",
+      "app_name": "Cloudflare WARP",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -5437,7 +5376,7 @@
     {
       "id": "8803159b5889",
       "app_name": "Comic Life",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -5556,7 +5495,7 @@
     {
       "id": "a6ef14749155",
       "app_name": "Composer",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -5952,7 +5891,7 @@
     {
       "id": "fe9d920373f1",
       "app_name": "DeepL",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -6053,7 +5992,7 @@
     },
     {
       "id": "51ab490fcac2",
-      "app_name": "default-browser",
+      "app_name": "defaultbrowser",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6152,7 +6091,7 @@
     {
       "id": "6ed3a4ba4ec5",
       "app_name": "DEPNotify",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "moofit-recipes",
@@ -6847,7 +6786,7 @@
     {
       "id": "736d8c457b45",
       "app_name": "EndNote",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -7005,7 +6944,7 @@
     {
       "id": "16b0f37ebc00",
       "app_name": "ExpressVPN",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -7103,7 +7042,7 @@
     {
       "id": "f7f39a5042cb",
       "app_name": "Extensis Connect",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -7536,7 +7475,7 @@
     {
       "id": "82b436f5f90b",
       "app_name": "Figma",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -7634,7 +7573,7 @@
     {
       "id": "87f2b3819b96",
       "app_name": "Fission",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -7944,7 +7883,7 @@
     {
       "id": "395651a0c2b0",
       "app_name": "FreeFileSync",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "bnpl-recipes",
@@ -8155,7 +8094,7 @@
     {
       "id": "1d87d0a8b50f",
       "app_name": "Glean",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -8188,7 +8127,7 @@
     {
       "id": "a1f2e1f0f2aa",
       "app_name": "Go",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -8341,17 +8280,9 @@
     },
     {
       "id": "1fa5059aa6b6",
-      "app_name": "HandBrake",
-      "action_status": "pr_open",
-      "existing_prs": [
-        {
-          "repo": "keeleysam-recipes",
-          "number": 205,
-          "title": "Deprecate Handbrake download recipe",
-          "url": "https://github.com/autopkg/keeleysam-recipes/pull/205",
-          "state": "open"
-        }
-      ],
+      "app_name": "Handbrake",
+      "action_status": "needs_pr",
+      "existing_prs": [],
       "member_count": 2,
       "members_summary": [
         {
@@ -8451,7 +8382,7 @@
     },
     {
       "id": "b8bf9e2f138e",
-      "app_name": "HudlSportscode",
+      "app_name": "Hudl Sportscode",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -8652,7 +8583,7 @@
     {
       "id": "bf11110af945",
       "app_name": "ImageJ",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -8848,7 +8779,7 @@
     {
       "id": "2cdfdfad6b67",
       "app_name": "iStopMotion",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -8941,7 +8872,7 @@
     },
     {
       "id": "6a8a00c04f50",
-      "app_name": "JetBrains Toolbox",
+      "app_name": "JetBrainsToolbox",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -9053,7 +8984,7 @@
     {
       "id": "a6b59292fbf0",
       "app_name": "Karabiner-Elements",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -9155,7 +9086,7 @@
     {
       "id": "1edb16973e77",
       "app_name": "KeeperPasswordManager",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -9596,7 +9527,7 @@
     {
       "id": "295940dc7d3b",
       "app_name": "KnockKnock",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "andrewvalentine-recipes",
@@ -9720,7 +9651,7 @@
     {
       "id": "24d62dc5c358",
       "app_name": "kubectl",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -10026,7 +9957,7 @@
     {
       "id": "226ab6c45315",
       "app_name": "Lens",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -10119,8 +10050,8 @@
     },
     {
       "id": "b925e75d946f",
-      "app_name": "Logger Pro",
-      "action_status": "needs_review",
+      "app_name": "LoggerPro",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -10153,7 +10084,7 @@
     {
       "id": "2ddbd58f13b8",
       "app_name": "Logitech Control Center",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -10508,7 +10439,7 @@
     {
       "id": "85f377e747cf",
       "app_name": "Malwarebytes",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -10949,7 +10880,7 @@
     {
       "id": "c42da125040c",
       "app_name": "MenuMeters",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "jleggat-recipes",
@@ -11073,7 +11004,7 @@
     {
       "id": "6205742f771f",
       "app_name": "MestReNova",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -11167,7 +11098,7 @@
     {
       "id": "c21fc40cd6ea",
       "app_name": "Microsoft Office 365 Suite",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -11265,7 +11196,7 @@
     {
       "id": "45fa5acd5068",
       "app_name": "Mountain Duck",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -11363,7 +11294,7 @@
     {
       "id": "bf22efed0cd6",
       "app_name": "mtr",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -11465,7 +11396,7 @@
     {
       "id": "3270a6dedc84",
       "app_name": "MunkiAdmin",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "Lotusshaney-recipes",
@@ -11955,7 +11886,7 @@
     {
       "id": "44e3050f0891",
       "app_name": "Notion",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "moofit-recipes",
@@ -12452,7 +12383,7 @@
     {
       "id": "71d7484a3589",
       "app_name": "Pencil",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -12875,7 +12806,7 @@
     {
       "id": "5ef7a29cb54f",
       "app_name": "Postman",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "bnpl-recipes",
@@ -13040,7 +12971,7 @@
     {
       "id": "df50c1e28024",
       "app_name": "PrismaAccessBrowser",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13188,7 +13119,7 @@
     {
       "id": "06b3da3ba646",
       "app_name": "ProtonVPN",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13286,7 +13217,7 @@
     {
       "id": "62661e06fec8",
       "app_name": "Proxyman",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13384,7 +13315,7 @@
     {
       "id": "96fe5acf4708",
       "app_name": "QLab5",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13482,7 +13413,7 @@
     {
       "id": "a17f098e19e8",
       "app_name": "QuickBooks",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13514,8 +13445,8 @@
     },
     {
       "id": "a7a1b23a1c87",
-      "app_name": "ReadWrite",
-      "action_status": "needs_review",
+      "app_name": "Read&Write",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13723,7 +13654,7 @@
     {
       "id": "f89594872a4c",
       "app_name": "ReiKey",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -13817,7 +13748,7 @@
     {
       "id": "5ce910bbe42a",
       "app_name": "RingCentral",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "bradclare-recipes",
@@ -13865,7 +13796,7 @@
     {
       "id": "cdb039b9f80a",
       "app_name": "RODE Connect",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -14029,7 +13960,7 @@
     {
       "id": "94a3dff6c3a8",
       "app_name": "Scratch 3",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -14346,7 +14277,7 @@
     {
       "id": "3c6fe1d42962",
       "app_name": "Shadow",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -14378,8 +14309,8 @@
     },
     {
       "id": "cf26fca7df78",
-      "app_name": "ShutterEncoder",
-      "action_status": "needs_review",
+      "app_name": "Shutter Encoder",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -14476,7 +14407,7 @@
     },
     {
       "id": "03a24987b36a",
-      "app_name": "Signiant App",
+      "app_name": "SigniantApp",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14587,8 +14518,8 @@
     },
     {
       "id": "b1918d094b5a",
-      "app_name": "SketchUpPro2023-EN",
-      "action_status": "needs_review",
+      "app_name": "SketchUp Pro 2023 EN",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -14754,7 +14685,7 @@
     {
       "id": "ae4a1f3425b5",
       "app_name": "Sloth",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -14856,7 +14787,7 @@
     {
       "id": "bbeedc7b6fd1",
       "app_name": "Sonos",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -14954,7 +14885,7 @@
     {
       "id": "b5cbaf7ea8f7",
       "app_name": "SQLProforPostgres",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -15367,7 +15298,7 @@
     },
     {
       "id": "46f933ae9b86",
-      "app_name": "termius",
+      "app_name": "Termius",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -15784,7 +15715,7 @@
     {
       "id": "107061635702",
       "app_name": "Tower",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -15882,7 +15813,7 @@
     {
       "id": "58471f28bd53",
       "app_name": "Transmit",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "keeleysam-recipes",
@@ -15995,7 +15926,7 @@
     {
       "id": "c1faec7d42e5",
       "app_name": "Typora",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -16097,7 +16028,7 @@
     {
       "id": "ac5a8034243d",
       "app_name": "UI Browser",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -16550,7 +16481,7 @@
     {
       "id": "424d36ebbdcc",
       "app_name": "Warp",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -16648,7 +16579,7 @@
     {
       "id": "6482f59d3c4f",
       "app_name": "Webex",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "TekTekkers-recipes",
@@ -16798,7 +16729,7 @@
     {
       "id": "43d9670cddd4",
       "app_name": "WebStorm",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -16892,7 +16823,7 @@
     {
       "id": "7f0740aa2b11",
       "app_name": "yo",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "apizz-recipes",
@@ -17205,7 +17136,7 @@
     {
       "id": "11473db570a2",
       "app_name": "AllSight",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
@@ -17325,7 +17256,7 @@
     {
       "id": "cc6e0f7588c5",
       "app_name": "AutoCAD",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -17338,16 +17269,16 @@
           "dependent_count": 1
         },
         {
-          "repo": "moofit-recipes",
-          "rel_path": "Autodesk/AutoCAD.download.recipe",
+          "repo": "MLBZ521-recipes",
+          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
         },
         {
-          "repo": "MLBZ521-recipes",
-          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
+          "repo": "moofit-recipes",
+          "rel_path": "Autodesk/AutoCAD.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -17366,7 +17297,7 @@
     {
       "id": "51a9ea6be7d4",
       "app_name": "AzulZuluJava",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -17460,7 +17391,7 @@
     {
       "id": "0521e2d1514e",
       "app_name": "BlackmagicDesktopVideo",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -17579,7 +17510,7 @@
     {
       "id": "5b24287b41ab",
       "app_name": "DataGrip",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -17621,7 +17552,7 @@
     {
       "id": "bda6a50ac788",
       "app_name": "GoToMeeting",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -17719,7 +17650,7 @@
     {
       "id": "d1e74ca575c4",
       "app_name": "LibreOffice",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "hjuutilainen-recipes",
@@ -17839,7 +17770,7 @@
     {
       "id": "14d249236156",
       "app_name": "Microsoft Edge",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -17852,20 +17783,20 @@
           "dependent_count": 1
         },
         {
-          "repo": "rtrouton-recipes",
-          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
           "repo": "smithjw-recipes",
           "rel_path": "Microsoft_Edge/Microsoft_Edge_alt.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
         }
       ],
       "confidence": "LOW",
@@ -18084,7 +18015,7 @@
           "dependent_count": 1
         },
         {
-          "repo": "homebysix-recipes",
+          "repo": "hjuutilainen-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -18092,7 +18023,7 @@
           "dependent_count": 4
         },
         {
-          "repo": "hjuutilainen-recipes",
+          "repo": "homebysix-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -18194,7 +18125,7 @@
     {
       "id": "8a3d697e650c",
       "app_name": "Terraform",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -18402,7 +18333,7 @@
     {
       "id": "da6e45b55838",
       "app_name": "XMind",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -18496,7 +18427,7 @@
     {
       "id": "14d68338dca2",
       "app_name": "BetterDisplay",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -18827,7 +18758,7 @@
     {
       "id": "0cfa3e713bc7",
       "app_name": "iTerm2",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "keeleysam-recipes",
@@ -19074,7 +19005,7 @@
     {
       "id": "28c2f0382e35",
       "app_name": "ChatGPT Atlas",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -19405,7 +19336,7 @@
     {
       "id": "cf6ce9f298cc",
       "app_name": "3DCoat",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -19499,7 +19430,7 @@
     {
       "id": "917528ba4339",
       "app_name": "Eclipse Temurin 11",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -19512,17 +19443,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -19540,7 +19471,7 @@
     {
       "id": "511c7c2d7857",
       "app_name": "Eclipse Temurin 8",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -19581,7 +19512,7 @@
     {
       "id": "3f0e0470b5d8",
       "app_name": "GitHub Desktop",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "smithjw-recipes",
@@ -19611,18 +19542,18 @@
         },
         {
           "repo": "smithjw-recipes",
-          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
-          "repo": "smithjw-recipes",
           "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
           "dependent_count": 1
         }
       ],
@@ -19642,8 +19573,8 @@
     },
     {
       "id": "539f950d416c",
-      "app_name": "FCS Express 7 Research",
-      "action_status": "needs_review",
+      "app_name": "FCSExpress7Research",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -19850,7 +19781,7 @@
     {
       "id": "b99a606261a4",
       "app_name": "Canva",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -19948,7 +19879,7 @@
     {
       "id": "c423f7fd8317",
       "app_name": "Miro",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
@@ -20084,18 +20015,10 @@
     {
       "id": "fa11c3611cc1",
       "app_name": "AndroidStudio",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
-        {
-          "repo": "kevinmcox-recipes",
-          "rel_path": "Google/AndroidStudio.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
         {
           "repo": "novaksam-recipes",
           "rel_path": "Recipes - Download/AndroidStudio-Universal.download.recipe",
@@ -20115,6 +20038,14 @@
         {
           "repo": "smithjw-recipes",
           "rel_path": "Android Studio/Android_Studio.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "kevinmcox-recipes",
+          "rel_path": "Google/AndroidStudio.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
@@ -20220,7 +20151,7 @@
     {
       "id": "deba2a4286b6",
       "app_name": "YubicoPivTool",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -20419,7 +20350,7 @@
     },
     {
       "id": "a4392e86f98f",
-      "app_name": "DotNet8SDK",
+      "app_name": "DotNet 8 SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20521,7 +20452,7 @@
     },
     {
       "id": "dcd6c99b627a",
-      "app_name": "DotNet9SDK",
+      "app_name": "DotNet 9 SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20624,7 +20555,7 @@
     {
       "id": "46a8e6628f42",
       "app_name": "NVivo 15",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -20718,18 +20649,10 @@
     {
       "id": "3925e444856f",
       "app_name": "NVivo",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 5,
       "members_summary": [
-        {
-          "repo": "andrewvalentine-recipes",
-          "rel_path": "NVivo/NVivo12.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 0
-        },
         {
           "repo": "jazzace-recipes",
           "rel_path": "QSRInternational/NVivo.download.recipe",
@@ -20745,6 +20668,14 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "andrewvalentine-recipes",
+          "rel_path": "NVivo/NVivo12.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 0
         },
         {
           "repo": "joshua-d-miller-recipes",
@@ -20896,7 +20827,7 @@
     {
       "id": "2bf9d0dbe4d3",
       "app_name": "1Password",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
@@ -20910,7 +20841,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password7.download.recipe",
+          "rel_path": "AgileBits/1Password8.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20918,7 +20849,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password8.download.recipe",
+          "rel_path": "AgileBits/1Password7.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20945,18 +20876,10 @@
     {
       "id": "30bd8967fced",
       "app_name": "Finale",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
-        {
-          "repo": "dataJAR-recipes",
-          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
         {
           "repo": "dataJAR-recipes",
           "rel_path": "Finale 27/Finale27.download.recipe",
@@ -20968,6 +20891,14 @@
         {
           "repo": "jazzace-recipes",
           "rel_path": "MakeMusic/Finale.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20995,7 +20926,7 @@
     {
       "id": "0f635eb8868f",
       "app_name": "EV3 Classroom",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -21245,7 +21176,7 @@
     {
       "id": "6e4fbc6fa66c",
       "app_name": "Amazon Coretto JDK 17",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -21285,8 +21216,8 @@
     },
     {
       "id": "aa1cce5c4f60",
-      "app_name": "Microsoft AutoUpdate",
-      "action_status": "needs_review",
+      "app_name": "MicrosoftAutoUpdate",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -21437,7 +21368,7 @@
     {
       "id": "352bc4e7281c",
       "app_name": "OpenJDK 21",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -21478,7 +21409,7 @@
     {
       "id": "f208dc99400f",
       "app_name": "Brave",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
@@ -21610,7 +21541,7 @@
     {
       "id": "357c6eb55384",
       "app_name": "LivestreamStudio",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -21703,7 +21634,7 @@
     },
     {
       "id": "d4f8ed94c607",
-      "app_name": "MacDown",
+      "app_name": "macdown",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -21810,7 +21741,7 @@
     {
       "id": "18f04e64f47d",
       "app_name": "MediaInfo",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -21953,7 +21884,7 @@
     {
       "id": "4b2df161a0a5",
       "app_name": "Sleep Aid",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22051,7 +21982,7 @@
     {
       "id": "61eae045eaa9",
       "app_name": "ChatGPT",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -22209,7 +22140,7 @@
     {
       "id": "79790c3484d2",
       "app_name": "Tailscale",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
@@ -22258,7 +22189,7 @@
     {
       "id": "6a68c40531bf",
       "app_name": "Vectorworks",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
@@ -22346,7 +22277,7 @@
     {
       "id": "88cd3532e303",
       "app_name": "Remotix",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22444,7 +22375,7 @@
     {
       "id": "ee6197642028",
       "app_name": "Hive",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22542,7 +22473,7 @@
     {
       "id": "73ecccdc7b1a",
       "app_name": "sipgate softphone",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22636,7 +22567,7 @@
     {
       "id": "6ecc0d61993e",
       "app_name": "DjView",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22730,7 +22661,7 @@
     {
       "id": "9ad6a0bdb6b9",
       "app_name": "STAN4J",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22824,7 +22755,7 @@
     {
       "id": "4723df52c5e9",
       "app_name": "Steam",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -22922,7 +22853,7 @@
     {
       "id": "e1850424c1f0",
       "app_name": "SubEthaEdit",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23016,7 +22947,7 @@
     {
       "id": "be8e98b999da",
       "app_name": "TablePlus",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23212,7 +23143,7 @@
     {
       "id": "d7d9e44f8a7f",
       "app_name": "TopazVideoAI",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -23323,7 +23254,7 @@
     {
       "id": "eda463cc81f1",
       "app_name": "Signal",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23430,7 +23361,7 @@
     {
       "id": "1c28094cf005",
       "app_name": "4KVideoDownloaderPlus",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23630,7 +23561,7 @@
     {
       "id": "70136542670b",
       "app_name": "PostgreSQL",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23728,7 +23659,7 @@
     {
       "id": "ea4389f74dd7",
       "app_name": "UniversalTypeClient7",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23821,8 +23752,8 @@
     },
     {
       "id": "acccf736bbe4",
-      "app_name": "FabFilter Pro-C 2",
-      "action_status": "needs_review",
+      "app_name": "FabFilterProC2",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -23915,8 +23846,8 @@
     },
     {
       "id": "6ce1d21197cd",
-      "app_name": "FabFilter Pro-L 2",
-      "action_status": "needs_review",
+      "app_name": "FabFilterProL2",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -24009,8 +23940,8 @@
     },
     {
       "id": "9d9956a109b2",
-      "app_name": "FinalDraft12",
-      "action_status": "needs_review",
+      "app_name": "Final Draft 12",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -24108,7 +24039,7 @@
     {
       "id": "e3bdac2e5ca0",
       "app_name": "GIMP",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "hjuutilainen-recipes",
@@ -24150,20 +24081,20 @@
           "dependent_count": 1
         },
         {
-          "repo": "hjuutilainen-recipes",
-          "rel_path": "GIMP/GIMP.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 5
-        },
-        {
           "repo": "hansen-m-recipes",
           "rel_path": "GIMP/GimpOnOSX.download.recipe",
           "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "hjuutilainen-recipes",
+          "rel_path": "GIMP/GIMP.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 5
         },
         {
           "repo": "moofit-recipes",
@@ -24282,14 +24213,6 @@
       "member_count": 3,
       "members_summary": [
         {
-          "repo": "ahousseini-recipes",
-          "rel_path": "jamovi/jamovi.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "n8felton-recipes",
           "rel_path": "jamovi/jamovi.download.recipe",
           "has_codesig": true,
@@ -24304,6 +24227,14 @@
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 2
+        },
+        {
+          "repo": "ahousseini-recipes",
+          "rel_path": "jamovi/jamovi.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
         }
       ],
       "confidence": "HIGH",
@@ -24400,7 +24331,7 @@
     {
       "id": "647feb0e26bc",
       "app_name": "Lucid",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -24511,7 +24442,7 @@
     {
       "id": "48ef459eaa77",
       "app_name": "LucidLink",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -24604,7 +24535,7 @@
     },
     {
       "id": "a13f00b46533",
-      "app_name": "Plantronics Hub",
+      "app_name": "PlantronicsHub",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -24926,8 +24857,8 @@
     },
     {
       "id": "a2d29c7f45e3",
-      "app_name": "SQLProStudio",
-      "action_status": "needs_review",
+      "app_name": "SQLPro Studio",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -25021,7 +24952,7 @@
     {
       "id": "2ccd9b7d10e1",
       "app_name": "SmartGit",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 3,
       "members_summary": [
@@ -25193,7 +25124,7 @@
     {
       "id": "cd28e3669983",
       "app_name": "VirtualBox",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
@@ -25242,7 +25173,7 @@
     {
       "id": "e690a1828aad",
       "app_name": "Wireshark",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 4,
       "members_summary": [
@@ -25290,7 +25221,7 @@
     },
     {
       "id": "c38b475e54a3",
-      "app_name": "Youlean Loudness Meter 2",
+      "app_name": "YouleanLoudnessMeter2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -25393,7 +25324,7 @@
     {
       "id": "962ee66a9aeb",
       "app_name": "Zoom",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "MLBZ521-recipes",
@@ -25553,7 +25484,7 @@
     {
       "id": "b81452653520",
       "app_name": "Zoom Outlook Plugin",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -25647,7 +25578,7 @@
     {
       "id": "681b3bd8eb81",
       "app_name": "Zoom Rooms",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [
@@ -25741,7 +25672,7 @@
     {
       "id": "fd9c93f114f6",
       "app_name": "Zwift",
-      "action_status": "needs_review",
+      "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
       "members_summary": [

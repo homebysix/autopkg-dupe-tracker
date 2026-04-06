@@ -56,9 +56,9 @@ def determine_action_status(evaluation, prs, override):
 
     # Check PR states
     if prs:
-        has_merged = any(pr.get("state") == "merged" for pr in prs)
+        all_merged = all(pr.get("state") == "merged" for pr in prs)
         has_open = any(pr.get("state") == "open" for pr in prs)
-        if has_merged:
+        if all_merged:
             return "resolved"
         if has_open:
             return "pr_open"

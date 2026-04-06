@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-04-06T17:23:19.004633+00:00",
+  "generated_at": "2026-04-06T17:26:32.517862+00:00",
   "stats": {
     "HIGH": 30,
     "MEDIUM": 77,
     "LOW": 116,
     "SKIP": 42,
-    "RESOLVED": 47
+    "RESOLVED": 32
   },
   "total_sets": 265,
   "needs_reassessment": 3,
@@ -188,7 +188,7 @@
     {
       "id": "8f2a5c5e8e80",
       "app_name": "Anki",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "andrewzirkel-recipes",
@@ -1307,7 +1307,7 @@
     {
       "id": "8856528d651b",
       "app_name": "dockutil/",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "andrewzirkel-recipes",
@@ -3866,7 +3866,7 @@
     {
       "id": "ea1749a53e73",
       "app_name": "BasicTeX",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "andrewvalentine-recipes",
@@ -7883,7 +7883,7 @@
     {
       "id": "395651a0c2b0",
       "app_name": "FreeFileSync",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "bnpl-recipes",
@@ -9527,7 +9527,7 @@
     {
       "id": "295940dc7d3b",
       "app_name": "KnockKnock",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "andrewvalentine-recipes",
@@ -10880,7 +10880,7 @@
     {
       "id": "c42da125040c",
       "app_name": "MenuMeters",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "jleggat-recipes",
@@ -11396,7 +11396,7 @@
     {
       "id": "3270a6dedc84",
       "app_name": "MunkiAdmin",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "Lotusshaney-recipes",
@@ -12806,7 +12806,7 @@
     {
       "id": "5ef7a29cb54f",
       "app_name": "Postman",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "bnpl-recipes",
@@ -13748,7 +13748,7 @@
     {
       "id": "5ce910bbe42a",
       "app_name": "RingCentral",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "bradclare-recipes",
@@ -15813,7 +15813,7 @@
     {
       "id": "58471f28bd53",
       "app_name": "Transmit",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "keeleysam-recipes",
@@ -16579,7 +16579,7 @@
     {
       "id": "6482f59d3c4f",
       "app_name": "Webex",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "TekTekkers-recipes",
@@ -16823,7 +16823,7 @@
     {
       "id": "7f0740aa2b11",
       "app_name": "yo",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "apizz-recipes",
@@ -17136,7 +17136,7 @@
     {
       "id": "11473db570a2",
       "app_name": "AllSight",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
@@ -17650,7 +17650,7 @@
     {
       "id": "d1e74ca575c4",
       "app_name": "LibreOffice",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "hjuutilainen-recipes",
@@ -18758,7 +18758,7 @@
     {
       "id": "0cfa3e713bc7",
       "app_name": "iTerm2",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "keeleysam-recipes",
@@ -19512,7 +19512,7 @@
     {
       "id": "3f0e0470b5d8",
       "app_name": "GitHub Desktop",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "smithjw-recipes",
@@ -22189,7 +22189,7 @@
     {
       "id": "6a68c40531bf",
       "app_name": "Vectorworks",
-      "action_status": "resolved",
+      "action_status": "pr_open",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
@@ -24039,7 +24039,7 @@
     {
       "id": "e3bdac2e5ca0",
       "app_name": "GIMP",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "hjuutilainen-recipes",
@@ -25324,7 +25324,7 @@
     {
       "id": "962ee66a9aeb",
       "app_name": "Zoom",
-      "action_status": "resolved",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "MLBZ521-recipes",

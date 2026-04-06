@@ -1,1 +1,42 @@
-{}
+{
+  "Webex": {
+    "prs": [
+      "https://github.com/autopkg/TekTekkers-recipes/pull/9"
+    ]
+  },
+  "BasicTeX": {
+    "prs": [
+      "https://github.com/autopkg/andrewvalentine-recipes/pull/75"
+    ]
+  },
+  "Mattermost": {
+    "prs": [
+      "https://github.com/autopkg/ygini-recipes/pull/67"
+    ]
+  },
+  "Logseq": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/112"
+    ]
+  },
+  "kitty": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/111"
+    ]
+  },
+  "GitHub Desktop": {
+    "prs": [
+      "https://github.com/autopkg/keeleysam-recipes/pull/185"
+    ]
+  },
+  "Spotify": {
+    "prs": [
+      "https://github.com/autopkg/psaintemarie-recipes/pull/5"
+    ]
+  },
+  "Postman": {
+    "prs": [
+      "https://github.com/autopkg/psaintemarie-recipes/pull/4"
+    ]
+  }
+}

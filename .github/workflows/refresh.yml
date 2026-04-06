@@ -39,7 +39,7 @@ jobs:
       - name: Check PR status
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/check_pr_status.py
+        run: python3 scripts/check_pr_status.py --repos-dir autopkg
 
       - name: Build dashboard
         run: python3 scripts/build_dashboard.py

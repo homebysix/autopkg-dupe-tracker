@@ -2,6 +2,8 @@
 
 Tracks and resolves redundant recipes across the [AutoPkg](https://github.com/autopkg) GitHub organization.
 
+![Dashboard Screenshot](images/dashboard.png)
+
 **[View the dashboard](https://homebysix.github.io/autopkg-dupe-tracker/)**
 
 [![Dashboard Refresh Badge](https://github.com/homebysix/autopkg-dupe-tracker/actions/workflows/refresh.yml/badge.svg)](https://github.com/homebysix/autopkg-dupe-tracker/actions/workflows/refresh.yml)

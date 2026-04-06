@@ -56,6 +56,11 @@ Before evaluating, read the override files:
    - Multi-arch support via input variable (has_arch_var)
    - Multi-channel/release support via input variable (has_release_var)
    - Download source resilience: GitHub Releases > Sparkle > structured API > HTML scraping
+   - Pseudo-universal recipes (download both Intel and Apple Silicon, then
+     synthesize a combined installer) should be deprecated in favor of a recipe
+     that downloads a true universal binary, if one exists in the set. If no
+     true universal source exists, ignore the pseudo-universal recipe when
+     comparing.
 
    **Metadata quality:**
    - Useful Description? Clear Input variable names?

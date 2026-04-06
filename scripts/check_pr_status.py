@@ -227,8 +227,7 @@ def main():
                     continue
                 title_lower = title.lower()
                 is_dedup_pr = any(
-                    kw in title_lower
-                    for kw in ("deprecat", "parent", "migrat", "switch", "change")
+                    kw in title_lower for kw in ("deprecat", "parent", "migrat", "switch", "change")
                 )
                 if not is_dedup_pr:
                     continue
@@ -237,8 +236,10 @@ def main():
                     if set_id not in found_prs:
                         found_prs[set_id] = []
                     # Avoid duplicates
-                    if any(p.get("number") == pr_number and p.get("repo") == repo
-                           for p in found_prs[set_id]):
+                    if any(
+                        p.get("number") == pr_number and p.get("repo") == repo
+                        for p in found_prs[set_id]
+                    ):
                         continue
                     found_prs[set_id].append(
                         {
@@ -251,7 +252,8 @@ def main():
                     )
 
             matched_count = sum(
-                1 for pr in all_prs
+                1
+                for pr in all_prs
                 if any(path_to_sets.get((repo, f["path"]), []) for f in pr.get("files", []))
             )
             if matched_count:
@@ -304,9 +306,7 @@ def main():
                         }
                     )
                 else:
-                    found_prs[set_id].append(
-                        {"url": url, "state": "unknown", "source": "override"}
-                    )
+                    found_prs[set_id].append({"url": url, "state": "unknown", "source": "override"})
 
     # Write output
     output = {

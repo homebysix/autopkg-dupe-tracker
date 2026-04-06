@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-05T23:22:12.870208+00:00",
+  "generated_at": "2026-04-06T00:10:53.901473+00:00",
   "stats": {
     "HIGH": 30,
     "MEDIUM": 77,
@@ -7,7 +7,7 @@
     "SKIP": 42,
     "RESOLVED": 3
   },
-  "total_sets": 265,
+  "total_sets": 266,
   "needs_reassessment": 3,
   "repos_involved": [
     "Darkomen78-recipes",
@@ -68,6 +68,7 @@
     "justinrummel-recipes",
     "keeleysam-recipes",
     "kevinmcox-recipes",
+    "kitzy-recipes",
     "kkeilson-recipes",
     "macprince-recipes",
     "macvfx-recipes",
@@ -709,6 +710,58 @@
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "0f29c7059fbc",
+      "app_name": "fleetctl",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "jc0b-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "kitzy-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "jc0b-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "identifier": "com.github.jc0b.download.fleetctl",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        },
+        {
+          "repo": "kitzy-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "identifier": "com.github.kitzy.download.fleetctl",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        }
+      ]
+    },
+    {
       "id": "e438d62a0d85",
       "app_name": "Dangerzone",
       "action_status": "needs_pr",
@@ -1261,7 +1314,7 @@
     },
     {
       "id": "8856528d651b",
-      "app_name": "dockutil/",
+      "app_name": "dockutil",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -1563,7 +1616,7 @@
     },
     {
       "id": "4254821ed59f",
-      "app_name": "kitty",
+      "app_name": "Kitty",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -2204,7 +2257,7 @@
     },
     {
       "id": "0e123552c2b4",
-      "app_name": "Support Helper",
+      "app_name": "SupportHelper",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -2400,7 +2453,7 @@
     },
     {
       "id": "c93663f2d189",
-      "app_name": "Ultimaker Cura",
+      "app_name": "UltiMaker Cura",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -2600,7 +2653,7 @@
     },
     {
       "id": "3fe55c563a16",
-      "app_name": "AdobeAcrobatPro",
+      "app_name": "Adobe Acrobat Pro",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2702,7 +2755,7 @@
     },
     {
       "id": "d597367390ec",
-      "app_name": "Affinity Designer",
+      "app_name": "AffinityDesigner",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -5076,7 +5129,7 @@
     },
     {
       "id": "bbf12a11d83f",
-      "app_name": "Cloudflare WARP",
+      "app_name": "CloudFlareWarp",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -5779,7 +5832,7 @@
     },
     {
       "id": "51ab490fcac2",
-      "app_name": "defaultbrowser",
+      "app_name": "default-browser",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -8586,7 +8639,7 @@
     },
     {
       "id": "6a8a00c04f50",
-      "app_name": "JetBrainsToolbox",
+      "app_name": "JetBrains Toolbox",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -9097,7 +9150,7 @@
     },
     {
       "id": "8a3aad74485f",
-      "app_name": "Kite Student Portal",
+      "app_name": "KiteStudentPortal",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -10155,7 +10208,7 @@
     },
     {
       "id": "7858eb674089",
-      "app_name": "Marked2",
+      "app_name": "Marked 2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -11098,7 +11151,7 @@
     },
     {
       "id": "e602424eb9ec",
-      "app_name": "MuseScore4",
+      "app_name": "MuseScore 4",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -11209,7 +11262,7 @@
     },
     {
       "id": "03b1fe3fed35",
-      "app_name": "MySQL Workbench",
+      "app_name": "MySQLWorkbench",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -12996,7 +13049,7 @@
     },
     {
       "id": "a7a1b23a1c87",
-      "app_name": "Read&Write",
+      "app_name": "ReadWrite",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -13846,7 +13899,7 @@
     },
     {
       "id": "cf26fca7df78",
-      "app_name": "Shutter Encoder",
+      "app_name": "ShutterEncoder",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -13944,7 +13997,7 @@
     },
     {
       "id": "03a24987b36a",
-      "app_name": "SigniantApp",
+      "app_name": "Signiant App",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14055,7 +14108,7 @@
     },
     {
       "id": "b1918d094b5a",
-      "app_name": "SketchUp Pro 2023 EN",
+      "app_name": "SketchUpPro2023-EN",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -14598,7 +14651,7 @@
     },
     {
       "id": "d1935d81f37f",
-      "app_name": "TableauPublic",
+      "app_name": "Tableau Public",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16697,16 +16750,16 @@
           "dependent_count": 1
         },
         {
-          "repo": "MLBZ521-recipes",
-          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
+          "repo": "moofit-recipes",
+          "rel_path": "Autodesk/AutoCAD.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
         },
         {
-          "repo": "moofit-recipes",
-          "rel_path": "Autodesk/AutoCAD.download.recipe",
+          "repo": "MLBZ521-recipes",
+          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -17189,20 +17242,20 @@
           "dependent_count": 1
         },
         {
-          "repo": "smithjw-recipes",
-          "rel_path": "Microsoft_Edge/Microsoft_Edge_alt.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "rtrouton-recipes",
           "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 2
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Microsoft_Edge/Microsoft_Edge_alt.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
         }
       ],
       "confidence": "LOW",
@@ -17406,7 +17459,7 @@
           "dependent_count": 1
         },
         {
-          "repo": "hjuutilainen-recipes",
+          "repo": "homebysix-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -17414,7 +17467,7 @@
           "dependent_count": 4
         },
         {
-          "repo": "homebysix-recipes",
+          "repo": "hjuutilainen-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -18804,17 +18857,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -18887,18 +18940,18 @@
         },
         {
           "repo": "smithjw-recipes",
-          "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "smithjw-recipes",
           "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
           "dependent_count": 1
         }
       ],
@@ -19224,22 +19277,6 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "peshay-recipes",
-          "rel_path": "miro/miro.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "wegotoeleven-recipes",
-          "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "dataJAR-recipes",
           "rel_path": "Miro/Miro.download.recipe",
           "has_codesig": true,
@@ -19249,6 +19286,22 @@
         },
         {
           "repo": "moofit-recipes",
+          "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "peshay-recipes",
+          "rel_path": "miro/miro.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "wegotoeleven-recipes",
           "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -19682,7 +19735,7 @@
     },
     {
       "id": "a4392e86f98f",
-      "app_name": "DotNet 8 SDK",
+      "app_name": "DotNet8SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20200,6 +20253,14 @@
       "members_summary": [
         {
           "repo": "dataJAR-recipes",
+          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "dataJAR-recipes",
           "rel_path": "Finale 27/Finale27.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -20209,14 +20270,6 @@
         {
           "repo": "jazzace-recipes",
           "rel_path": "MakeMusic/Finale.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "dataJAR-recipes",
-          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20249,14 +20302,6 @@
       "member_count": 3,
       "members_summary": [
         {
-          "repo": "ahousseini-recipes",
-          "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "dataJAR-recipes",
           "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
           "has_codesig": true,
@@ -20267,6 +20312,14 @@
         {
           "repo": "nstrauss-recipes",
           "rel_path": "Lego Mindstorms/LegoMindstormsEducationEV3Classroom.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "ahousseini-recipes",
+          "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20724,24 +20777,8 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "apettinen-recipes",
-          "rel_path": "Brave/Brave.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        },
-        {
           "repo": "drewdiver-recipes",
           "rel_path": "Brave/Brave.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "moofit-recipes",
-          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20754,6 +20791,22 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
+        },
+        {
+          "repo": "apettinen-recipes",
+          "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        },
+        {
+          "repo": "moofit-recipes",
+          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
         }
       ],
       "confidence": "LOW",
@@ -20944,7 +20997,7 @@
     },
     {
       "id": "d4f8ed94c607",
-      "app_name": "macdown",
+      "app_name": "MacDown",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -21482,22 +21535,6 @@
       "members_summary": [
         {
           "repo": "jazzace-recipes",
-          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
-          "repo": "vmiller-recipes",
-          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
-          "repo": "jazzace-recipes",
           "rel_path": "Nemetschek/VectorworksInstallManager.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -21511,6 +21548,22 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 4
+        },
+        {
+          "repo": "jazzace-recipes",
+          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        },
+        {
+          "repo": "vmiller-recipes",
+          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
         },
         {
           "repo": "vmiller-recipes",
@@ -21744,7 +21797,7 @@
     },
     {
       "id": "73ecccdc7b1a",
-      "app_name": "sipgate softphone",
+      "app_name": "sipgate-softphone",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -22312,7 +22365,7 @@
     },
     {
       "id": "8eb7f5613f96",
-      "app_name": "TopazPhotoAI",
+      "app_name": "Topaz Photo AI",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -22624,7 +22677,7 @@
     },
     {
       "id": "1c28094cf005",
-      "app_name": "4KVideoDownloaderPlus",
+      "app_name": "4K Video Downloader Plus",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -23102,7 +23155,7 @@
     },
     {
       "id": "6ce1d21197cd",
-      "app_name": "FabFilterProL2",
+      "app_name": "FabFilter Pro-L 2",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -23196,7 +23249,7 @@
     },
     {
       "id": "9d9956a109b2",
-      "app_name": "Final Draft 12",
+      "app_name": "FinalDraft12",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -23762,7 +23815,7 @@
     },
     {
       "id": "a13f00b46533",
-      "app_name": "PlantronicsHub",
+      "app_name": "Plantronics Hub",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -24060,7 +24113,7 @@
     },
     {
       "id": "a2d29c7f45e3",
-      "app_name": "SQLPro Studio",
+      "app_name": "SQLProStudio",
       "action_status": "needs_review",
       "existing_prs": [],
       "member_count": 2,
@@ -24389,20 +24442,20 @@
           "dependent_count": 2
         },
         {
-          "repo": "nstrauss-recipes",
-          "rel_path": "Wireshark/Wireshark.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 3
-        },
-        {
           "repo": "justinrummel-recipes",
           "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
+        },
+        {
+          "repo": "nstrauss-recipes",
+          "rel_path": "Wireshark/Wireshark.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 3
         }
       ],
       "confidence": "SKIP",

@@ -94,7 +94,7 @@ recipe file is changed.
 ```
 Per the AutoPkg [repo maintenance expectations](https://github.com/autopkg/autopkg/wiki/Sharing-Recipes#repo-maintenance-expectations), duplicate recipes can appear in search results and cause confusion, especially for people getting started with AutoPkg. Consolidating in favor of recipes with the broadest utility helps reduce that noise.
 
-The <AppName> download recipe in <keeper-repo> is a more broadly useful alternative to this repo's recipe:
+The [<AppName> download recipe in <keeper-repo>](<link to keeper recipe on GitHub>) is a more broadly useful alternative to this repo's recipe:
 - **<Advantage 1>** — brief explanation
 - **<Advantage 2>** — brief explanation
 

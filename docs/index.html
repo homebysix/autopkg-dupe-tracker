@@ -546,7 +546,7 @@ function renderTabs() {
   ];
   const el = document.getElementById("tabs");
   el.innerHTML = tabs.map(t =>
-    `<div class="tab${t.key === activeTab ? ' active' : ''}" data-tab="${t.key}">${t.label}<span class="cnt">${t.count}</span></div>`
+    `<div class="tab${t.key === activeTab ? ' active' : ''}" data-tab="${t.key}">${t.label}<span class="cnt">(${t.count})</span></div>`
   ).join("");
   el.querySelectorAll(".tab").forEach(tab => {
     tab.addEventListener("click", () => {

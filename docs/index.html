@@ -18,7 +18,8 @@
   --text-muted: #8891a0;
   --link: #2563eb;
 
-  --header-bg: #1a1d23;
+  --header-bg: #1e293b;
+  --header-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
   --header-text: #ffffff;
   --header-muted: rgba(255,255,255,.6);
 
@@ -69,7 +70,8 @@
     --text-muted: #6b7280;
     --link: #60a5fa;
 
-    --header-bg: #12141b;
+    --header-bg: #0f172a;
+    --header-gradient: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
     --header-text: #e4e6eb;
     --header-muted: rgba(228,230,235,.5);
 
@@ -120,7 +122,7 @@ a:hover { text-decoration: underline; }
 
 /* === Header === */
 .header {
-  background: var(--header-bg); color: var(--header-text);
+  background: var(--header-gradient); color: var(--header-text);
   padding: 1.25rem 1rem;
 }
 .header-inner {
@@ -134,11 +136,19 @@ a:hover { text-decoration: underline; }
 }
 .stat-item { display: flex; align-items: center; gap: .3rem; }
 .stat-num { font-weight: 700; font-size: 1rem; }
+.stat-num-high { color: var(--badge-high-border); }
+.stat-num-med { color: var(--badge-med-border); }
+.stat-num-low { color: var(--badge-low-border); }
+.stat-num-resolved { color: #86efac; }
+.stat-num-pr { color: #fcd34d; }
 
 /* === Info Bar === */
 .info-bar {
   background: var(--info-bg); border-bottom: 1px solid var(--info-border);
   padding: .5rem 1rem; font-size: .78rem; color: var(--info-text);
+}
+.info-bar-inner {
+  max-width: 960px; margin: 0 auto;
   display: flex; align-items: center; gap: .4rem; flex-wrap: wrap;
 }
 .info-bar a { color: var(--info-text); font-weight: 600; }
@@ -148,6 +158,7 @@ a:hover { text-decoration: underline; }
   font-size: .78rem; color: var(--info-text); border-bottom: 1px solid var(--info-border);
   line-height: 1.6;
 }
+.info-panel-inner { max-width: 960px; margin: 0 auto; }
 .info-panel.visible { display: block; }
 .info-panel ul { margin: .3rem 0; padding-left: 1.3rem; }
 .info-panel li { margin-bottom: .2rem; }
@@ -189,15 +200,25 @@ a:hover { text-decoration: underline; }
 .tab-strip::-webkit-scrollbar { display: none; }
 .tab {
   padding: .35rem .7rem; border: 1px solid var(--border);
-  cursor: pointer; font-size: .75rem; font-weight: 600;
-  background: var(--bg-surface); color: var(--text-secondary);
+  cursor: pointer; font-size: .75rem; font-weight: 500;
+  background: var(--bg-surface); color: var(--text-muted);
   white-space: nowrap; transition: all .12s; flex-shrink: 0;
 }
 .tab:first-child { border-radius: var(--radius-sm) 0 0 var(--radius-sm); }
 .tab:last-child { border-radius: 0 var(--radius-sm) var(--radius-sm) 0; }
 .tab:not(:first-child) { border-left: none; }
-.tab.active { background: var(--header-bg); color: var(--header-text); border-color: var(--header-bg); }
+.tab[data-tab="HIGH"] { color: var(--badge-high-border); }
+.tab[data-tab="MEDIUM"] { color: var(--badge-med-border); }
+.tab[data-tab="LOW"] { color: var(--badge-low-border); }
+.tab[data-tab="SKIP"] { color: var(--badge-skip-border); }
+.tab.active { font-weight: 700; }
+.tab.active[data-tab="ALL"] { background: var(--header-bg); color: var(--header-text); border-color: var(--header-bg); }
+.tab.active[data-tab="HIGH"] { background: var(--badge-high-bg); color: var(--badge-high-text); border-color: var(--badge-high-border); }
+.tab.active[data-tab="MEDIUM"] { background: var(--badge-med-bg); color: var(--badge-med-text); border-color: var(--badge-med-border); }
+.tab.active[data-tab="LOW"] { background: var(--badge-low-bg); color: var(--badge-low-text); border-color: var(--badge-low-border); }
+.tab.active[data-tab="SKIP"] { background: var(--badge-skip-bg); color: var(--badge-skip-text); border-color: var(--badge-skip-border); }
 .tab .cnt { margin-left: .25rem; opacity: .6; font-weight: 400; }
+@media (max-width: 500px) { .tab .cnt { display: none; } }
 
 /* Filter row (selects) */
 .filter-row {
@@ -229,8 +250,12 @@ a:hover { text-decoration: underline; }
   background: var(--bg-surface); border: 1px solid var(--border);
   border-radius: var(--radius); margin-bottom: .5rem;
   box-shadow: var(--shadow-sm); transition: box-shadow .12s;
-  overflow: hidden;
+  overflow: hidden; border-left: 3px solid var(--border);
 }
+.card.conf-high { border-left-color: var(--badge-high-border); }
+.card.conf-medium { border-left-color: var(--badge-med-border); }
+.card.conf-low { border-left-color: var(--badge-low-border); }
+.card.conf-skip { border-left-color: var(--badge-skip-border); }
 .card:hover { box-shadow: var(--shadow-md); }
 .card.resolved { opacity: .55; }
 .card.resolved:hover { opacity: 1; }
@@ -293,7 +318,6 @@ a:hover { text-decoration: underline; }
   border-bottom: 1px solid var(--border-light);
   align-items: flex-start;
 }
-.recipe-row:last-of-type { border-bottom: none; }
 
 .role-tag {
   font-size: .6rem; font-weight: 700; padding: .15rem .35rem;
@@ -343,8 +367,7 @@ a:hover { text-decoration: underline; }
 
 /* === Set-level info (shared rationale, tiebreaker, PRs) === */
 .set-info {
-  margin-top: .5rem; padding-top: .5rem;
-  border-top: 1px solid var(--border-light);
+  padding-top: .5rem;
 }
 .set-info-row {
   display: flex; gap: .35rem; padding: .15rem 0;
@@ -429,18 +452,22 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="info-bar">
-  Maintain a recipe repo?
-  <span class="info-toggle" id="infoToggle">See how you can help</span>
+  <div class="info-bar-inner">
+    Maintain a recipe repo?
+    <span class="info-toggle" id="infoToggle">See how you can help</span>
+  </div>
 </div>
 <div class="info-panel" id="infoPanel">
-  <p><strong>How recipe maintainers can help:</strong></p>
-  <ul>
-    <li><strong>Filter by your repo</strong> using the dropdown to find sets that affect your recipes.</li>
-    <li><strong>Merge open deprecation PRs</strong> submitted to your repo.</li>
-    <li><strong>Add <code>DeprecationWarning</code></strong> to recipes flagged for deprecation if no PR exists.</li>
-    <li><strong>Update <code>ParentRecipe</code></strong> references to point to the recommended keeper.</li>
-  </ul>
-  <p>Questions? <a href="https://github.com/homebysix/autopkg-dupe-tracker/issues">Open an issue</a>.</p>
+  <div class="info-panel-inner">
+    <p><strong>How recipe maintainers can help:</strong></p>
+    <ul>
+      <li><strong>Filter by your repo</strong> using the dropdown to find sets that affect your recipes.</li>
+      <li><strong>Merge open deprecation PRs</strong> submitted to your repo.</li>
+      <li><strong>Add <code>DeprecationWarning</code></strong> to recipes flagged for deprecation if no PR exists.</li>
+      <li><strong>Update <code>ParentRecipe</code></strong> references to point to the recommended keeper.</li>
+    </ul>
+    <p>Questions? <a href="https://github.com/homebysix/autopkg-dupe-tracker/issues">Open an issue</a>.</p>
+  </div>
 </div>
 
 <div class="controls">
@@ -449,7 +476,10 @@ a:hover { text-decoration: underline; }
       <input type="text" id="searchInput" placeholder="Search by app name or repo...">
       <button class="filter-toggle" id="filterToggle" aria-label="Toggle filters">&#9776; Filters</button>
     </div>
-    <div class="tab-strip" id="tabs"></div>
+    <div style="display:flex;align-items:center;gap:.5rem;margin-top:.5rem">
+      <span style="font-size:.75rem;font-weight:600;color:var(--text-secondary);white-space:nowrap">Confidence</span>
+      <div class="tab-strip" id="tabs" style="margin-top:0"></div>
+    </div>
     <div class="filter-row" id="filterRow">
       <select id="statusFilter" aria-label="Filter by status">
         <option value="">All statuses</option>
@@ -516,13 +546,14 @@ async function init() {
 function renderStats() {
   const s = DATA.stats;
   const actionable = s.HIGH + s.MEDIUM + s.LOW;
+  const prOpen = DATA.sets.filter(x => x.action_status === "pr_open").length;
   const d = new Date(DATA.generated_at);
   document.getElementById("stats").innerHTML = `
-    <div class="stat-item"><span class="stat-num">${DATA.total_sets}</span> sets</div>
     <div class="stat-item"><span class="stat-num">${actionable}</span> recommendations</div>
-    <div class="stat-item"><span class="stat-num">${s.RESOLVED || 0}</span> resolved</div>
+    <div class="stat-item"><span class="stat-num stat-num-resolved">${s.RESOLVED || 0}</span> resolved</div>
+    <div class="stat-item"><span class="stat-num stat-num-pr">${prOpen}</span> PRs open</div>
     <div class="stat-item"><span class="stat-num">${DATA.repos_involved.length}</span> repos</div>
-    <div class="stat-item">Updated ${d.toLocaleDateString()}</div>
+    <div class="stat-item" style="margin-left:auto">Updated ${d.toLocaleDateString()} ${d.toLocaleTimeString([], {hour: "numeric", minute: "2-digit", timeZoneName: "short"})}</div>
   `;
 }
 
@@ -537,7 +568,7 @@ function renderTabs() {
   ];
   const el = document.getElementById("tabs");
   el.innerHTML = tabs.map(t =>
-    `<div class="tab${t.key === activeTab ? ' active' : ''}" data-tab="${t.key}">${t.label}<span class="cnt">${t.count}</span></div>`
+    `<div class="tab${t.key === activeTab ? ' active' : ''}" data-tab="${t.key}">${t.label}<span class="cnt">(${t.count})</span></div>`
   ).join("");
   el.querySelectorAll(".tab").forEach(tab => {
     tab.addEventListener("click", () => {
@@ -559,17 +590,27 @@ function renderStatusFilter() {
     wont_fix:"Won't Fix", exception:"Exception", deferred:"Deferred",
     needs_evaluation:"Unevaluated", needs_reassessment:"Needs Reassessment"
   };
+  const counts = {};
+  DATA.sets.forEach(s => {
+    if (s.action_status) counts[s.action_status] = (counts[s.action_status] || 0) + 1;
+    if (s.needs_reassessment) counts["needs_reassessment"] = (counts["needs_reassessment"] || 0) + 1;
+  });
   order.filter(s => statuses.has(s)).forEach(s => {
     const o = document.createElement("option");
-    o.value = s; o.textContent = labels[s] || s; sel.appendChild(o);
+    o.value = s; o.textContent = `${labels[s] || s} (${counts[s] || 0})`; sel.appendChild(o);
   });
 }
 
 function renderRepoFilter() {
   const sel = document.getElementById("repoFilter");
-  DATA.repos_involved.forEach(r => {
+  const counts = {};
+  DATA.sets.forEach(s => {
+    const repos = new Set([...(s.keep||[]),...(s.deprecate||[]),...(s.members_summary||[])].map(m=>m.repo));
+    repos.forEach(r => { counts[r] = (counts[r] || 0) + 1; });
+  });
+  Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b)).forEach(r => {
     const o = document.createElement("option");
-    o.value = r; o.textContent = r; sel.appendChild(o);
+    o.value = r; o.textContent = `${r} (${counts[r]})`; sel.appendChild(o);
   });
 }
 
@@ -597,7 +638,7 @@ function filtered() {
 function renderSets() {
   const sets = filtered();
   document.getElementById("setCount").textContent =
-    `Showing ${sets.length} of ${DATA.total_sets} sets`;
+    `Showing ${sets.length} of ${DATA.stats.HIGH + DATA.stats.MEDIUM + DATA.stats.LOW} recommendations`;
   const el = document.getElementById("setList");
   if (!sets.length) { el.innerHTML = '<div class="empty">No matching sets found.</div>'; return; }
   el.innerHTML = sets.map(renderCard).join("");
@@ -712,7 +753,7 @@ function renderCard(s) {
   const banners = renderBanners(s);
 
   return `
-    <div class="card${isResolved ? ' resolved' : ''}">
+    <div class="card conf-${confCls}${isResolved ? ' resolved' : ''}">
       <div class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">${esc(s.app_name)}</span>
@@ -743,7 +784,7 @@ function renderSkipCard(s) {
   ).join("");
 
   return `
-    <div class="card">
+    <div class="card conf-skip">
       <div class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">${esc(s.app_name)}</span>

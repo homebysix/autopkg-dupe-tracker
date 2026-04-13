@@ -139,6 +139,9 @@ a:hover { text-decoration: underline; }
 .info-bar {
   background: var(--info-bg); border-bottom: 1px solid var(--info-border);
   padding: .5rem 1rem; font-size: .78rem; color: var(--info-text);
+}
+.info-bar-inner {
+  max-width: 960px; margin: 0 auto;
   display: flex; align-items: center; gap: .4rem; flex-wrap: wrap;
 }
 .info-bar a { color: var(--info-text); font-weight: 600; }
@@ -148,6 +151,7 @@ a:hover { text-decoration: underline; }
   font-size: .78rem; color: var(--info-text); border-bottom: 1px solid var(--info-border);
   line-height: 1.6;
 }
+.info-panel-inner { max-width: 960px; margin: 0 auto; }
 .info-panel.visible { display: block; }
 .info-panel ul { margin: .3rem 0; padding-left: 1.3rem; }
 .info-panel li { margin-bottom: .2rem; }
@@ -438,18 +442,22 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="info-bar">
-  Maintain a recipe repo?
-  <span class="info-toggle" id="infoToggle">See how you can help</span>
+  <div class="info-bar-inner">
+    Maintain a recipe repo?
+    <span class="info-toggle" id="infoToggle">See how you can help</span>
+  </div>
 </div>
 <div class="info-panel" id="infoPanel">
-  <p><strong>How recipe maintainers can help:</strong></p>
-  <ul>
-    <li><strong>Filter by your repo</strong> using the dropdown to find sets that affect your recipes.</li>
-    <li><strong>Merge open deprecation PRs</strong> submitted to your repo.</li>
-    <li><strong>Add <code>DeprecationWarning</code></strong> to recipes flagged for deprecation if no PR exists.</li>
-    <li><strong>Update <code>ParentRecipe</code></strong> references to point to the recommended keeper.</li>
-  </ul>
-  <p>Questions? <a href="https://github.com/homebysix/autopkg-dupe-tracker/issues">Open an issue</a>.</p>
+  <div class="info-panel-inner">
+    <p><strong>How recipe maintainers can help:</strong></p>
+    <ul>
+      <li><strong>Filter by your repo</strong> using the dropdown to find sets that affect your recipes.</li>
+      <li><strong>Merge open deprecation PRs</strong> submitted to your repo.</li>
+      <li><strong>Add <code>DeprecationWarning</code></strong> to recipes flagged for deprecation if no PR exists.</li>
+      <li><strong>Update <code>ParentRecipe</code></strong> references to point to the recommended keeper.</li>
+    </ul>
+    <p>Questions? <a href="https://github.com/homebysix/autopkg-dupe-tracker/issues">Open an issue</a>.</p>
+  </div>
 </div>
 
 <div class="controls">

@@ -218,6 +218,7 @@ a:hover { text-decoration: underline; }
 .tab.active[data-tab="LOW"] { background: var(--badge-low-bg); color: var(--badge-low-text); border-color: var(--badge-low-border); }
 .tab.active[data-tab="SKIP"] { background: var(--badge-skip-bg); color: var(--badge-skip-text); border-color: var(--badge-skip-border); }
 .tab .cnt { margin-left: .25rem; opacity: .6; font-weight: 400; }
+@media (max-width: 500px) { .tab .cnt { display: none; } }
 
 /* Filter row (selects) */
 .filter-row {
@@ -477,7 +478,10 @@ a:hover { text-decoration: underline; }
       <input type="text" id="searchInput" placeholder="Search by app name or repo...">
       <button class="filter-toggle" id="filterToggle" aria-label="Toggle filters">&#9776; Filters</button>
     </div>
-    <div class="tab-strip" id="tabs"></div>
+    <div style="display:flex;align-items:center;gap:.5rem;margin-top:.5rem">
+      <span style="font-size:.75rem;font-weight:600;color:var(--text-secondary);white-space:nowrap">Confidence</span>
+      <div class="tab-strip" id="tabs" style="margin-top:0"></div>
+    </div>
     <div class="filter-row" id="filterRow">
       <select id="statusFilter" aria-label="Filter by status">
         <option value="">All statuses</option>

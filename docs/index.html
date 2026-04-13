@@ -551,7 +551,7 @@ function renderStats() {
     <div class="stat-item"><span class="stat-num stat-num-resolved">${s.RESOLVED || 0}</span> resolved</div>
     <div class="stat-item"><span class="stat-num stat-num-pr">${prOpen}</span> PRs open</div>
     <div class="stat-item"><span class="stat-num">${DATA.repos_involved.length}</span> repos</div>
-    <div class="stat-item">Updated ${d.toLocaleDateString()}</div>
+    <div class="stat-item">Updated ${d.toLocaleDateString()} ${d.toLocaleTimeString([], {hour: "numeric", minute: "2-digit", timeZoneName: "short"})}</div>
   `;
 }
 

@@ -568,9 +568,14 @@ function renderStatusFilter() {
     wont_fix:"Won't Fix", exception:"Exception", deferred:"Deferred",
     needs_evaluation:"Unevaluated", needs_reassessment:"Needs Reassessment"
   };
+  const counts = {};
+  DATA.sets.forEach(s => {
+    if (s.action_status) counts[s.action_status] = (counts[s.action_status] || 0) + 1;
+    if (s.needs_reassessment) counts["needs_reassessment"] = (counts["needs_reassessment"] || 0) + 1;
+  });
   order.filter(s => statuses.has(s)).forEach(s => {
     const o = document.createElement("option");
-    o.value = s; o.textContent = labels[s] || s; sel.appendChild(o);
+    o.value = s; o.textContent = `${labels[s] || s} (${counts[s] || 0})`; sel.appendChild(o);
   });
 }
 

@@ -576,9 +576,14 @@ function renderStatusFilter() {
 
 function renderRepoFilter() {
   const sel = document.getElementById("repoFilter");
-  DATA.repos_involved.forEach(r => {
+  const counts = {};
+  DATA.sets.forEach(s => {
+    const repos = new Set([...(s.keep||[]),...(s.deprecate||[]),...(s.members_summary||[])].map(m=>m.repo));
+    repos.forEach(r => { counts[r] = (counts[r] || 0) + 1; });
+  });
+  Object.keys(counts).sort((a, b) => counts[b] - counts[a] || a.localeCompare(b)).forEach(r => {
     const o = document.createElement("option");
-    o.value = r; o.textContent = r; sel.appendChild(o);
+    o.value = r; o.textContent = `${r} (${counts[r]})`; sel.appendChild(o);
   });
 }
 

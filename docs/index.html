@@ -547,7 +547,6 @@ function renderStats() {
   const prOpen = DATA.sets.filter(x => x.action_status === "pr_open").length;
   const d = new Date(DATA.generated_at);
   document.getElementById("stats").innerHTML = `
-    <div class="stat-item"><span class="stat-num">${DATA.total_sets}</span> sets</div>
     <div class="stat-item"><span class="stat-num">${actionable}</span> recommendations</div>
     <div class="stat-item"><span class="stat-num stat-num-resolved">${s.RESOLVED || 0}</span> resolved</div>
     <div class="stat-item"><span class="stat-num stat-num-pr">${prOpen}</span> PRs open</div>
@@ -637,7 +636,7 @@ function filtered() {
 function renderSets() {
   const sets = filtered();
   document.getElementById("setCount").textContent =
-    `Showing ${sets.length} of ${DATA.total_sets} sets`;
+    `Showing ${sets.length} of ${DATA.stats.HIGH + DATA.stats.MEDIUM + DATA.stats.LOW} recommendations`;
   const el = document.getElementById("setList");
   if (!sets.length) { el.innerHTML = '<div class="empty">No matching sets found.</div>'; return; }
   el.innerHTML = sets.map(renderCard).join("");

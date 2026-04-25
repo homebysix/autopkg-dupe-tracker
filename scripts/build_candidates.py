@@ -224,6 +224,41 @@ def git_first_commit(filepath, base):
         return None
 
 
+def find_worktree_dirs(base):
+    """Find directories under base whose .git is a file (i.e. git worktrees).
+
+    Stops descending at any repo boundary (.git file or directory) to avoid
+    walking through repo internals.
+    """
+    worktree_dirs = set()
+
+    def walk(d):
+        try:
+            entries = list(os.scandir(d))
+        except OSError:
+            return
+        for entry in entries:
+            if entry.name == ".git":
+                if entry.is_file(follow_symlinks=False):
+                    worktree_dirs.add(d)
+                return
+        for entry in entries:
+            if entry.is_dir(follow_symlinks=False):
+                walk(entry.path)
+
+    walk(str(base))
+    return worktree_dirs
+
+
+def is_under_any(filepath, dirs):
+    fp = os.path.abspath(filepath)
+    for d in dirs:
+        prefix = d if d.endswith(os.sep) else d + os.sep
+        if fp.startswith(prefix):
+            return True
+    return False
+
+
 def build_parent_index(all_recipe_files, base):
     """Build a one-pass index of ParentRecipe -> list of (repo,) for dependent counting."""
     index = defaultdict(lambda: {"count": 0, "repos": set()})
@@ -273,10 +308,18 @@ def main():
 
     base = args.repos_dir
 
+    # Identify git worktrees so we can exclude them — they duplicate recipes
+    # already counted in the primary clone.
+    worktree_dirs = find_worktree_dirs(base)
+    if worktree_dirs:
+        print(f"Excluding {len(worktree_dirs)} git worktree(s)", file=sys.stderr)
+
     # Find all recipe files (not just download) for dependent counting
     all_recipe_files = []
     for pattern in ["**/*.recipe", "**/*.recipe.yaml", "**/*.recipe.plist"]:
         all_recipe_files.extend(glob.glob(str(base / pattern), recursive=True))
+    if worktree_dirs:
+        all_recipe_files = [fp for fp in all_recipe_files if not is_under_any(fp, worktree_dirs)]
     print(f"Found {len(all_recipe_files)} total recipe files", file=sys.stderr)
 
     # Find download recipes
@@ -288,6 +331,8 @@ def main():
     all_files = []
     for pat in dl_patterns:
         all_files.extend(glob.glob(pat, recursive=True))
+    if worktree_dirs:
+        all_files = [fp for fp in all_files if not is_under_any(fp, worktree_dirs)]
     print(f"Found {len(all_files)} download recipe files", file=sys.stderr)
 
     # Parse and categorize (single pass over Process list per recipe)

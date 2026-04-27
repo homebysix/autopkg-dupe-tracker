@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-04-25T06:13:41.726538+00:00",
+  "generated_at": "2026-04-27T05:40:21.182224+00:00",
   "stats": {
     "HIGH": 28,
     "MEDIUM": 77,
     "LOW": 111,
     "SKIP": 43,
-    "RESOLVED": 29
+    "RESOLVED": 28
   },
-  "total_sets": 259,
+  "total_sets": 260,
   "needs_reassessment": 3,
   "repos_involved": [
     "Darkomen78-recipes",
@@ -67,6 +67,7 @@
     "justinrummel-recipes",
     "keeleysam-recipes",
     "kevinmcox-recipes",
+    "kitzy-recipes",
     "kkeilson-recipes",
     "macprince-recipes",
     "macvfx-recipes",
@@ -195,13 +196,6 @@
           "title": "Deprecate Anki recipes",
           "url": "https://github.com/autopkg/andrewzirkel-recipes/pull/14",
           "state": "open"
-        },
-        {
-          "repo": "dataJAR-recipes",
-          "number": 395,
-          "title": "Change parent recipe of Anki.munki",
-          "url": "https://github.com/autopkg/dataJAR-recipes/pull/395",
-          "state": "merged"
         },
         {
           "repo": "nstrauss-recipes",
@@ -542,7 +536,7 @@
     },
     {
       "id": "f3f4abe2b6a0",
-      "app_name": "Bambu Studio",
+      "app_name": "BambuStudio",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -636,7 +630,7 @@
     },
     {
       "id": "f00e9f904e6b",
-      "app_name": "GitHubCLI",
+      "app_name": "GitHub CLI",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -735,6 +729,66 @@
       ],
       "deprecation_message": "Consider switching to GitHubCLI recipes in the homebysix-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
+    },
+    {
+      "id": "0f29c7059fbc",
+      "app_name": "fleetctl",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "jc0b-recipes",
+          "number": 1,
+          "title": "Updated recipes to account for changes in Fleet",
+          "url": "https://github.com/autopkg/jc0b-recipes/pull/1",
+          "state": "merged"
+        }
+      ],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "jc0b-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "kitzy-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "jc0b-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "identifier": "com.github.jc0b.download.fleetctl",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        },
+        {
+          "repo": "kitzy-recipes",
+          "rel_path": "Fleet/fleetctl.download.recipe.yaml",
+          "identifier": "com.github.kitzy.download.fleetctl",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        }
+      ]
     },
     {
       "id": "e438d62a0d85",
@@ -1184,7 +1238,7 @@
     },
     {
       "id": "adf849d2c2cf",
-      "app_name": "KeyStore Explorer",
+      "app_name": "KeyStoreExplorer",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2293,7 +2347,7 @@
     },
     {
       "id": "0e123552c2b4",
-      "app_name": "SupportHelper",
+      "app_name": "Support Helper",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2489,7 +2543,7 @@
     },
     {
       "id": "c93663f2d189",
-      "app_name": "UltiMaker Cura",
+      "app_name": "Ultimaker Cura",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2689,7 +2743,7 @@
     },
     {
       "id": "3fe55c563a16",
-      "app_name": "Adobe Acrobat Pro",
+      "app_name": "AdobeAcrobatPro",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2791,7 +2845,7 @@
     },
     {
       "id": "d597367390ec",
-      "app_name": "AffinityDesigner",
+      "app_name": "Affinity Designer",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -3147,7 +3201,7 @@
     },
     {
       "id": "6313b4597c26",
-      "app_name": "AmadeusLite",
+      "app_name": "Amadeus Lite",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -4058,8 +4112,15 @@
     {
       "id": "02d0c04ffa7d",
       "app_name": "BlueJ",
-      "action_status": "needs_pr",
+      "action_status": "pr_open",
       "existing_prs": [
+        {
+          "repo": "orchard-recipes",
+          "number": 50,
+          "title": "Deprecate BlueJ recipes",
+          "url": "https://github.com/autopkg/orchard-recipes/pull/50",
+          "state": "open"
+        },
         {
           "repo": "orchard-recipes",
           "number": 5,
@@ -4718,7 +4779,7 @@
     },
     {
       "id": "a567509dc38c",
-      "app_name": "ClamXav",
+      "app_name": "ClamXAV",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -5451,16 +5512,8 @@
     {
       "id": "f59f9692643b",
       "app_name": "Cryptomator",
-      "action_status": "resolved",
-      "existing_prs": [
-        {
-          "repo": "ahousseini-recipes",
-          "number": 56,
-          "title": "Switch to HomebrewCaskURL",
-          "url": "https://github.com/autopkg/ahousseini-recipes/pull/56",
-          "state": "merged"
-        }
-      ],
+      "action_status": "needs_pr",
+      "existing_prs": [],
       "member_count": 2,
       "members_summary": [
         {
@@ -5670,7 +5723,7 @@
     },
     {
       "id": "adc9d93c5678",
-      "app_name": "DCP-o-matic2",
+      "app_name": "DCPomatic2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6282,7 +6335,7 @@
     },
     {
       "id": "a837ba032399",
-      "app_name": "DiskDrill",
+      "app_name": "Disk Drill",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6708,7 +6761,7 @@
     },
     {
       "id": "a256e769f0fd",
-      "app_name": "EraseInstall",
+      "app_name": "erase-install",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -8064,9 +8117,17 @@
     },
     {
       "id": "1fa5059aa6b6",
-      "app_name": "Handbrake",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "app_name": "HandBrake",
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "keeleysam-recipes",
+          "number": 205,
+          "title": "Deprecate Handbrake download recipe",
+          "url": "https://github.com/autopkg/keeleysam-recipes/pull/205",
+          "state": "open"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -8166,7 +8227,7 @@
     },
     {
       "id": "b8bf9e2f138e",
-      "app_name": "Hudl Sportscode",
+      "app_name": "HudlSportscode",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -8656,9 +8717,17 @@
     },
     {
       "id": "6a8a00c04f50",
-      "app_name": "JetBrains Toolbox",
-      "action_status": "needs_pr",
-      "existing_prs": [],
+      "app_name": "JetBrainsToolbox",
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "crystalllized-recipes",
+          "number": 17,
+          "title": "Deprecate JetBrains Toolbox recipes",
+          "url": "https://github.com/autopkg/crystalllized-recipes/pull/17",
+          "state": "open"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
@@ -9732,7 +9801,7 @@
     },
     {
       "id": "b925e75d946f",
-      "app_name": "LoggerPro",
+      "app_name": "Logger Pro",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10010,7 +10079,7 @@
     },
     {
       "id": "85f377e747cf",
-      "app_name": "Malwarebytes",
+      "app_name": "malwarebytes",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10043,7 +10112,7 @@
     },
     {
       "id": "7858eb674089",
-      "app_name": "Marked 2",
+      "app_name": "Marked2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10865,7 +10934,7 @@
     },
     {
       "id": "bf22efed0cd6",
-      "app_name": "MTR",
+      "app_name": "mtr",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -11015,7 +11084,7 @@
     },
     {
       "id": "e602424eb9ec",
-      "app_name": "MuseScore4",
+      "app_name": "MuseScore 4",
       "action_status": "needs_pr",
       "existing_prs": [
         {
@@ -11134,7 +11203,7 @@
     },
     {
       "id": "03b1fe3fed35",
-      "app_name": "MySQLWorkbench",
+      "app_name": "MySQL Workbench",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -13881,7 +13950,7 @@
     },
     {
       "id": "03a24987b36a",
-      "app_name": "SigniantApp",
+      "app_name": "Signiant App",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14474,7 +14543,7 @@
     },
     {
       "id": "d1935d81f37f",
-      "app_name": "TableauPublic",
+      "app_name": "Tableau Public",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14674,7 +14743,7 @@
     },
     {
       "id": "46f933ae9b86",
-      "app_name": "termius",
+      "app_name": "Termius",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16197,7 +16266,7 @@
     },
     {
       "id": "8421f9a1a517",
-      "app_name": "Yubico Authenticator",
+      "app_name": "yubico-authenticator",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16402,14 +16471,14 @@
     {
       "id": "11473db570a2",
       "app_name": "AllSight",
-      "action_status": "pr_open",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
           "number": 55,
           "title": "Deprecate migrated recipes",
           "url": "https://github.com/autopkg/jazzace-recipes/pull/55",
-          "state": "open"
+          "state": "closed"
         },
         {
           "repo": "vmiller-recipes",
@@ -16535,16 +16604,16 @@
           "dependent_count": 1
         },
         {
-          "repo": "moofit-recipes",
-          "rel_path": "Autodesk/AutoCAD.download.recipe",
+          "repo": "MLBZ521-recipes",
+          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
         },
         {
-          "repo": "MLBZ521-recipes",
-          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
+          "repo": "moofit-recipes",
+          "rel_path": "Autodesk/AutoCAD.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -18709,17 +18778,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin11.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin11.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -18808,18 +18877,18 @@
         },
         {
           "repo": "smithjw-recipes",
-          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
-          "repo": "smithjw-recipes",
           "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
           "dependent_count": 1
         }
       ],
@@ -19150,22 +19219,6 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "dataJAR-recipes",
-          "rel_path": "Miro/Miro.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        },
-        {
-          "repo": "moofit-recipes",
-          "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "peshay-recipes",
           "rel_path": "miro/miro.download.recipe",
           "has_codesig": false,
@@ -19175,6 +19228,22 @@
         },
         {
           "repo": "wegotoeleven-recipes",
+          "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Miro/Miro.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        },
+        {
+          "repo": "moofit-recipes",
           "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -19616,7 +19685,7 @@
     },
     {
       "id": "a4392e86f98f",
-      "app_name": "DotNet8SDK",
+      "app_name": "DotNet 8 SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -19820,7 +19889,7 @@
     },
     {
       "id": "46a8e6628f42",
-      "app_name": "NVivo 15",
+      "app_name": "NVivo15",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -19920,6 +19989,14 @@
       "member_count": 5,
       "members_summary": [
         {
+          "repo": "andrewvalentine-recipes",
+          "rel_path": "NVivo/NVivo12.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 0
+        },
+        {
           "repo": "jazzace-recipes",
           "rel_path": "QSRInternational/NVivo.download.recipe",
           "has_codesig": true,
@@ -19934,14 +20011,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
-        },
-        {
-          "repo": "andrewvalentine-recipes",
-          "rel_path": "NVivo/NVivo12.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 0
         },
         {
           "repo": "joshua-d-miller-recipes",
@@ -20107,7 +20176,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password7.download.recipe",
+          "rel_path": "AgileBits/1Password8.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20115,7 +20184,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password8.download.recipe",
+          "rel_path": "AgileBits/1Password7.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20197,14 +20266,6 @@
       "member_count": 3,
       "members_summary": [
         {
-          "repo": "ahousseini-recipes",
-          "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "dataJAR-recipes",
           "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
           "has_codesig": true,
@@ -20215,6 +20276,14 @@
         {
           "repo": "nstrauss-recipes",
           "rel_path": "Lego Mindstorms/LegoMindstormsEducationEV3Classroom.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "ahousseini-recipes",
+          "rel_path": "EV3 Classroom/EV3 Classroom.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20543,7 +20612,7 @@
         },
         {
           "repo": "rtrouton-recipes",
-          "rel_path": "AmazonCorettoJDK17/AmazonCorettoIntelJDK17.download.recipe",
+          "rel_path": "AmazonCorettoJDK17/AmazonCorettoAppleSiliconJDK17.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20551,7 +20620,7 @@
         },
         {
           "repo": "rtrouton-recipes",
-          "rel_path": "AmazonCorettoJDK17/AmazonCorettoAppleSiliconJDK17.download.recipe",
+          "rel_path": "AmazonCorettoJDK17/AmazonCorettoIntelJDK17.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20767,8 +20836,24 @@
       "member_count": 4,
       "members_summary": [
         {
+          "repo": "apettinen-recipes",
+          "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        },
+        {
           "repo": "drewdiver-recipes",
           "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "moofit-recipes",
+          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20781,22 +20866,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
-        },
-        {
-          "repo": "apettinen-recipes",
-          "rel_path": "Brave/Brave.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        },
-        {
-          "repo": "moofit-recipes",
-          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         }
       ],
       "confidence": "LOW",
@@ -20987,7 +21056,7 @@
     },
     {
       "id": "d4f8ed94c607",
-      "app_name": "macdown",
+      "app_name": "MacDown",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -21542,14 +21611,14 @@
     {
       "id": "6a68c40531bf",
       "app_name": "Vectorworks",
-      "action_status": "pr_open",
+      "action_status": "needs_pr",
       "existing_prs": [
         {
           "repo": "jazzace-recipes",
           "number": 55,
           "title": "Deprecate migrated recipes",
           "url": "https://github.com/autopkg/jazzace-recipes/pull/55",
-          "state": "open"
+          "state": "closed"
         },
         {
           "repo": "vmiller-recipes",
@@ -23192,7 +23261,7 @@
     },
     {
       "id": "acccf736bbe4",
-      "app_name": "FabFilter Pro-C 2",
+      "app_name": "FabFilterProC2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -23480,7 +23549,36 @@
       "id": "66c8ae2b2df6",
       "app_name": "GIMP",
       "action_status": "needs_pr",
-      "existing_prs": [],
+      "existing_prs": [
+        {
+          "repo": "hjuutilainen-recipes",
+          "number": 235,
+          "title": "Fixes URL change",
+          "url": "https://github.com/autopkg/hjuutilainen-recipes/pull/235",
+          "state": "merged"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 237,
+          "title": "Changes to recipes",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/237",
+          "state": "merged"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 236,
+          "title": "Changes to the download and parent GIMP recipes",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/236",
+          "state": "closed"
+        },
+        {
+          "repo": "moofit-recipes",
+          "number": 214,
+          "title": "Download URLs have changed slightly in GimpUniversal.download.recipe",
+          "url": "https://github.com/autopkg/moofit-recipes/pull/214",
+          "state": "closed"
+        }
+      ],
       "member_count": 3,
       "members_summary": [
         {
@@ -23525,6 +23623,14 @@
       "member_count": 3,
       "members_summary": [
         {
+          "repo": "ahousseini-recipes",
+          "rel_path": "jamovi/jamovi.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
           "repo": "n8felton-recipes",
           "rel_path": "jamovi/jamovi.download.recipe",
           "has_codesig": true,
@@ -23539,14 +23645,6 @@
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 2
-        },
-        {
-          "repo": "ahousseini-recipes",
-          "rel_path": "jamovi/jamovi.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         }
       ],
       "confidence": "HIGH",
@@ -24326,20 +24424,20 @@
           "dependent_count": 1
         },
         {
-          "repo": "foigus-recipes",
-          "rel_path": "Tableau/TableauReader.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
           "repo": "homebysix-recipes",
           "rel_path": "TableauReader/TableauReader.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "foigus-recipes",
+          "rel_path": "Tableau/TableauReader.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
         }
       ],
       "confidence": "MEDIUM",
@@ -24506,20 +24604,20 @@
           "dependent_count": 2
         },
         {
-          "repo": "justinrummel-recipes",
-          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
           "repo": "nstrauss-recipes",
           "rel_path": "Wireshark/Wireshark.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
+        },
+        {
+          "repo": "justinrummel-recipes",
+          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
         }
       ],
       "confidence": "SKIP",

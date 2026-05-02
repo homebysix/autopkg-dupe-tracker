@@ -48,7 +48,17 @@ Before evaluating, read the override files:
    what it actually does — the metadata gives you signals but reading the recipe
    reveals nuances (asset_regex patterns, hardcoded URLs, custom processors).
 
-2. **Compare recipes** using these criteria (in priority order):
+2. **Before comparing, check for intentionally distinct distributions.** If any
+   recipe explicitly sources from a custom fork or modified build of the
+   upstream project (e.g., rebranded binaries, custom icons, enterprise
+   variants), and the recipe's `Description` field documents that distinction,
+   the recipes are serving different purposes — skip the set rather than
+   deprecating either recipe. The description need not be elaborate; a brief
+   note like "Downloads the custom-icon build from the moofit fork" is
+   sufficient. If the description does *not* call out the difference, treat the
+   recipes as duplicates and proceed normally.
+
+3. **Compare recipes** using these criteria (in priority order):
 
    **Functional:**
    - CodeSignatureVerifier presence (absence is a negative signal)
@@ -78,11 +88,11 @@ Before evaluating, read the override files:
    - StopProcessingIf usage
    - Download format differences (DMG vs PKG vs ZIP) — NOT redundant
 
-3. **Run `autopkg run -vvq <full_path>`** only when sources differ and it's
+4. **Run `autopkg run -vvq <full_path>`** only when sources differ and it's
    unclear from reading alone whether the download works. Same-source recipes
    usually both work or both fail.
 
-4. **Check for existing PRs**: Run
+5. **Check for existing PRs**: Run
    `gh pr list --repo autopkg/<repo> --state all --search "deprecat OR <app-name>"`
 
    When mentioning PRs in rationale, reason, or dependency_impact text, always

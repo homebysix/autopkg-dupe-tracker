@@ -1,38 +1,76 @@
 # AutoPkg Recipe Deduplication — Pull Request Prompt
 
-You are opening pull requests to deprecate or reparent AutoPkg recipes based on
-evaluated candidate sets. Each PR should be clear, friendly, and provide enough
-context for maintainers to merge confidently.
+You are opening pull requests to deprecate or reparent AutoPkg recipes.
 
-## Background
+## Input
 
-Read `data/evaluations/<latest>.json` for the evaluated candidate sets. Each set
-with verdict `recommend` identifies recipes to keep and recipes to deprecate.
+If a set is provided below, process only that set. Otherwise, read
+`data/evaluations/<latest>.json`, also read the override files, and process
+each set with verdict `recommend` and `action_status` of `needs_pr`.
 
-Before starting, read the override files:
+```json
+{{SET_JSON}}
+```
+
+**Override files** (always read before processing):
 
 - **`data/override_repos.json`** — repos flagged `never_keep`
 - **`data/override_sets.json`** — per-set exceptions and manual PR links
 
-The AutoPkg org has OAuth restrictions that block `gh pr create`. Instead, push
-branches to the `homebysix` fork and use `open` to launch the PR creation page
-in the browser.
+## Environment
+
+- **Local recipe cache**: `/Users/elliotj/Developer/_personal/repo-lasso/repos/autopkg/<repo>/<rel_path>`
+- **Fork remotes**: each repo clone has `origin` pointing to `https://github.com/homebysix/<repo>` and `upstream` pointing to `https://github.com/autopkg/<repo>`. Push branches to `origin`; PRs target `upstream`.
+- **PR creation**: The autopkg org blocks `gh pr create`. After pushing a branch, get the upstream default branch with `git symbolic-ref refs/remotes/upstream/HEAD | sed 's|refs/remotes/upstream/||'` (most repos use `master`, not `main`), then pre-fill the PR form by URL-encoding the title and body and appending them as query parameters:
+  ```bash
+  DEFAULT_BRANCH=$(git symbolic-ref refs/remotes/upstream/HEAD | sed 's|refs/remotes/upstream/||')
+  TITLE="Deprecate <AppName> recipes"
+  BODY="Per the AutoPkg..."
+  ENCODED_TITLE=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.stdin.read().strip()))" <<< "$TITLE")
+  ENCODED_BODY=$(python3 -c "import urllib.parse,sys; print(urllib.parse.quote(sys.stdin.read().strip()))" <<< "$BODY")
+  open "https://github.com/autopkg/<repo>/compare/${DEFAULT_BRANCH}...homebysix:<branch>?expand=1&title=${ENCODED_TITLE}&body=${ENCODED_BODY}"
+  ```
+- **Anonymizer script**: `~/Library/CloudStorage/Dropbox-Personal/Scripts/anonymizer.py` — pipe autopkg run output through this before including it in PR bodies.
+
+## Workflow
+
+For each set:
+
+1. **Check for existing PRs** — stop and report if one is already open:
+   ```bash
+   gh pr list --repo autopkg/<deprecate-repo> --state all --search "deprecate OR deprecation OR deprecated OR duplicate OR <AppName>"
+   ```
+
+2. **Read the recipe files** at their local cache paths to verify the evaluation matches reality.
+
+3. **Open the deprecation PR**:
+   - Branch name: `deprecate-<appname-lowercase-kebab>`
+   - In the deprecate recipe: add a `DeprecationWarning` processor as the **first** entry in the Process array, with `warning_message` set to the `deprecation_message` from the set data.
+   - Bump `MinimumVersion` to `1.1` if currently lower (DeprecationWarning requires AutoPkg 1.1+).
+   - Commit and PR title: `Deprecate <AppName> recipes`
+   - Push branch to `origin`, open PR URL in browser.
+
+4. **Find child recipes** that reference the deprecated recipe's identifier:
+   ```bash
+   grep -r "<deprecated-identifier>" /Users/elliotj/Developer/_personal/repo-lasso/repos/autopkg \
+     --include="*.recipe" --include="*.recipe.yaml" -l
+   ```
+
+5. **For each affected child recipe in a different repo** than the deprecate repo:
+   - Keeper repo has an equivalent of the same type → child will be auto-deprecated, no PR needed.
+   - No equivalent in keeper AND download formats are compatible → open a reparent PR (see below).
+   - Formats incompatible (e.g., dmg vs zip) → note in the deprecation PR body instead.
+
+6. **Cross-reference PRs** once both exist. Prompt the user to share PR URLs so cross-references can be added as comments.
 
 ## PR types
 
-There are two kinds of PRs:
-
-### 1. Deprecation PR
-
-Add a `DeprecationWarning` processor to the recipe being deprecated. This is
-the most common PR type.
+### Deprecation PR
 
 **Recipe changes:**
 
-1. Add a `DeprecationWarning` processor as the **first** entry in the Process
-   array, with a `warning_message` pointing to the keeper repo.
-2. Bump `MinimumVersion` to `1.1` if it is currently lower (DeprecationWarning
-   requires AutoPkg 1.1+).
+1. Add a `DeprecationWarning` processor as the **first** entry in the Process array, with `warning_message` pointing to the keeper repo.
+2. Bump `MinimumVersion` to `1.1` if currently lower.
 
 **Deprecation message format:**
 
@@ -40,61 +78,32 @@ the most common PR type.
 Consider switching to <AppName> recipes in the <keeper-repo> repo. This recipe is deprecated and will be removed in the future.
 ```
 
-### 2. Reparent PR
+### Reparent PR
 
 Change the `ParentRecipe` identifier in a child recipe to point to the keeper's
-download recipe instead of the deprecated one. This is needed when a child
-recipe in a third-party repo depends on the recipe being deprecated, and an
-equivalent parent exists in the keeper repo.
+download recipe instead of the deprecated one.
 
 **Before opening a reparent PR:**
 
 1. Confirm the keeper repo has an equivalent download recipe.
 2. Verify the download format is compatible with the child recipe's processors
-   (e.g., if the child uses `Unarchiver`, the download must produce a format
-   Unarchiver supports: zip, tar, tar.gz, tar.bz2 — NOT dmg).
-3. Run the reparented recipe (only if it's a pkg or munki type, NOT install):
-   `autopkg run -vvq <recipe> 2>&1 > /tmp/recipe_output.log`
-4. Sanitize the captured output to remove references to local users, tokens/secrets,
-   or other proprietary information. Check whether this script exists for this
-   purpose: ~/Dropbox/Scripts/anonymizer.py
-5. Include the sanitized verbose output in the PR body (see template below).
+   (if the child uses `Unarchiver`, the download must be zip/tar/tar.gz/tar.bz2 — not dmg).
+3. Run and sanitize (only for pkg or munki recipes — not install):
+   ```bash
+   autopkg run -vvq <recipe> 2>&1 | python3 ~/Library/CloudStorage/Dropbox-Personal/Scripts/anonymizer.py > /tmp/recipe_output.log
+   ```
+4. Include the sanitized output in the PR body.
 
-If the download formats are incompatible (e.g., dmg vs zip), do NOT open a
-reparent PR. Note the incompatibility in the deprecation PR instead.
+If download formats are incompatible, do NOT open a reparent PR — note the incompatibility in the deprecation PR body instead.
 
-## Cross-referencing
-
-When opening both a deprecation PR and a reparent PR for the same candidate set,
-cross-reference them:
-
-- In the deprecation PR, mention the reparent PR with a GitHub-style reference:
-  `autopkg/other-repo#123`
-- In the reparent PR, mention the deprecation PR the same way
-
-Since the autopkg org blocks `gh pr create`, you may not know the PR number
-until after it's created. Add cross-references as comments after both PRs exist. Prompt the user to provide links to the PRs after they're opened.
-
-## Commit messages and PR titles
-
-Use the same text for both. One line, imperative mood, under 50 characters, no
-attribution lines.
-
-- Deprecation: `Deprecate <AppName> recipes`
-- Reparent: `Adjust <AppName> <type> recipe parent`
-
-Deprecating a download recipe implicitly deprecates its child recipes (munki,
-pkg, etc.), so use "Deprecate Foo recipes" (plural) even if only the download
-recipe file is changed.
-
-## PR body structure
+## PR body templates
 
 ### Deprecation PR
 
 ```
 Per the AutoPkg [repo maintenance expectations](https://github.com/autopkg/autopkg/wiki/Sharing-Recipes#repo-maintenance-expectations), duplicate recipes can appear in search results and cause confusion, especially for people getting started with AutoPkg. Consolidating in favor of recipes with the broadest utility helps reduce that noise.
 
-The [<AppName> download recipe in <keeper-repo>](<link to keeper recipe on GitHub>) is a more broadly useful alternative to this repo's recipe:
+The [<AppName> download recipe in <keeper-repo>](<link to keeper recipe file on GitHub>) is a more broadly useful alternative to this repo's recipe:
 - **<Advantage 1>** — brief explanation
 - **<Advantage 2>** — brief explanation
 
@@ -103,15 +112,12 @@ The [<AppName> download recipe in <keeper-repo>](<link to keeper recipe on GitHu
 This consolidation will help simplify search results and lower maintenance effort. Thank you for considering!
 ```
 
-List only **differentiating** advantages of the keeper (at least one). Omit
-features both recipes share. If the deprecated recipe's download source is
-broken, note that. Child recipes in the same repo are auto-deprecated — mention
-only if relevant, phrased as informational.
+Use the `rationale` entries from the set data with category `favors_keep` and `favors_deprecate` to populate the advantages list. List only **differentiating** features of the keeper; omit anything both recipes share. If the deprecated recipe's download source is broken, note that. Do **not** list dependent counts as a standalone bullet — maintainers don't control other repos and it reads as a weak justification.
 
 ### Reparent PR
 
 ```
-The <AppName> download recipe in <old-parent-repo> is under consideration for deprecation (<cross-ref>). This PR updates the <type> recipe in this repo to use <keeper-repo>'s download as a parent.
+The <AppName> download recipe in <deprecated-repo> is under consideration for deprecation (<cross-ref>). This PR updates the <type> recipe in this repo to use <keeper-repo>'s download as a parent.
 
 The download format is compatible — verified by running the recipe after the change:
 
@@ -127,34 +133,18 @@ The download format is compatible — verified by running the recipe after the c
 Thank you for considering!
 ```
 
+## Commit and PR title format
+
+Same text for both. One line, imperative mood, under 50 characters:
+- Deprecation: `Deprecate <AppName> recipes`
+- Reparent: `Adjust <AppName> <type> recipe parent`
+
+Deprecating a download recipe implicitly deprecates its child recipes, so use "Deprecate Foo recipes" (plural) even if only the download recipe file is changed.
+
+## Cross-referencing
+
+When opening both a deprecation PR and a reparent PR for the same set, cross-reference them using GitHub-style references (`autopkg/repo-name#123`). Since the PR number isn't known until after creation, add cross-references as comments after both PRs exist. Prompt the user to provide links after they're opened.
+
 ## Tone
 
-Friendly and appreciative — these are volunteer maintainers. Be factual, not
-prescriptive; brief, not verbose.
-
-## Checking for existing PRs
-
-Before opening a PR, check for existing deduplication/deprecation PRs:
-
-```bash
-gh pr list --repo autopkg/<repo> --state all --search "deprecate OR deprecation OR deprecated OR duplicate OR <AppName>"
-```
-
-Skip any set that already has an open deduplication/deprecation PR for the same recipe.
-
-## Workflow
-
-For each evaluated set with verdict `recommend`:
-
-1. Check for existing PRs (skip if found).
-2. Read the actual recipe files to verify the evaluation.
-3. Open the deprecation PR on the repo containing the recipe to deprecate.
-4. Identify child recipes in other repos that reference the deprecated recipe's
-   identifier (grep for the identifier across all repos).
-5. For each affected child recipe:
-   - If the keeper repo has an equivalent recipe of the same type (munki, pkg,
-     etc.), the child will be auto-deprecated — no PR needed.
-   - If the keeper repo does NOT have an equivalent, and the download format is
-     compatible, open a reparent PR.
-   - If the format is incompatible, note this in the deprecation PR body.
-6. Cross-reference related PRs.
+Friendly and appreciative — these are volunteer maintainers. Factual, not prescriptive; brief, not verbose.

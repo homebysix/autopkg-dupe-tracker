@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-04T05:50:03.235400+00:00",
+  "generated_at": "2026-05-11T06:14:23.217803+00:00",
   "stats": {
-    "HIGH": 27,
+    "HIGH": 26,
     "MEDIUM": 77,
     "LOW": 111,
-    "SKIP": 43,
-    "RESOLVED": 29
+    "SKIP": 42,
+    "RESOLVED": 30
   },
-  "total_sets": 260,
+  "total_sets": 261,
   "needs_reassessment": 3,
   "repos_involved": [
     "Darkomen78-recipes",
@@ -69,6 +69,7 @@
     "kevinmcox-recipes",
     "kitzy-recipes",
     "kkeilson-recipes",
+    "lashomb-recipes",
     "macprince-recipes",
     "macvfx-recipes",
     "markkenny-recipes",
@@ -791,211 +792,6 @@
       ]
     },
     {
-      "id": "e438d62a0d85",
-      "app_name": "Dangerzone",
-      "action_status": "pr_open",
-      "existing_prs": [
-        {
-          "repo": "precursorca-recipes",
-          "number": 26,
-          "title": "Deprecate Dangerzone recipes",
-          "url": "https://github.com/autopkg/precursorca-recipes/pull/26",
-          "state": "open"
-        }
-      ],
-      "member_count": 2,
-      "members_summary": [
-        {
-          "repo": "almenscorner-recipes",
-          "rel_path": "Dangerzone/Dangerzone.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
-          "repo": "precursorca-recipes",
-          "rel_path": "Freedom of the Press Foundation/Dangerzone-arm64.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        }
-      ],
-      "confidence": "HIGH",
-      "keep": [
-        {
-          "repo": "almenscorner-recipes",
-          "rel_path": "Dangerzone/Dangerzone.download.recipe",
-          "reason": "multi-arch support via ARCHITECTURE variable; flexible for both arm64 and x64"
-        }
-      ],
-      "deprecate": [
-        {
-          "repo": "precursorca-recipes",
-          "rel_path": "Freedom of the Press Foundation/Dangerzone-arm64.download.recipe",
-          "reason": "hardcoded to arm64 only; very new (April 2026)"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use GitHubReleasesInfoProvider with CodeSignatureVerifier from freedomofpress/dangerzone"
-        },
-        {
-          "category": "favors_keep",
-          "text": "Has ARCHITECTURE input variable supporting both arm64 and x64"
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "Hardcoded to arm64 architecture only; very recently created"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2024-05 vs 2026-04"
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Multi-architecture support",
-          "favors": "keep"
-        },
-        {
-          "key": "release",
-          "label": "Release channel variable",
-          "favors": null
-        },
-        {
-          "key": "source_resilience",
-          "label": "Source resilience",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Metadata quality",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "Commit history",
-          "favors": "keep"
-        },
-        {
-          "key": "format",
-          "label": "Recipe format",
-          "favors": null
-        }
-      ],
-      "deprecation_message": "Consider switching to Dangerzone recipes in the almenscorner-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
-    },
-    {
-      "id": "50c0df2285e9",
-      "app_name": "Contour",
-      "action_status": "pr_open",
-      "existing_prs": [
-        {
-          "repo": "jc0b-recipes",
-          "number": 22,
-          "title": "Switch to MacAdmins Open Source for new releases",
-          "url": "https://github.com/autopkg/jc0b-recipes/pull/22",
-          "state": "open"
-        }
-      ],
-      "member_count": 2,
-      "members_summary": [
-        {
-          "repo": "jc0b-recipes",
-          "rel_path": "Contour/Contour.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "kevinmcox-recipes",
-          "rel_path": "Henry Stamerjohann/Contour.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        }
-      ],
-      "confidence": "MEDIUM",
-      "keep": [
-        {
-          "repo": "jc0b-recipes",
-          "rel_path": "Contour/Contour.download.recipe.yaml",
-          "reason": "Older recipe with version normalization (strips 'v' prefix, converts '-beta' to 'b'); pins release_id to 'latest' for stability"
-        }
-      ],
-      "deprecate": [
-        {
-          "repo": "kevinmcox-recipes",
-          "rel_path": "Henry Stamerjohann/Contour.download.recipe.yaml",
-          "reason": "Same source, no version normalization; written ~6 weeks after jc0b's recipe"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use GitHubReleasesInfoProvider against headmin/contour with the same asset_regex, both have CodeSignatureVerifier and EndOfCheckPhase, both expect the same Declarative IT GmbH (D6G4X4D7C9) signing identity."
-        },
-        {
-          "category": "favors_keep",
-          "text": "jc0b normalizes the version string via FindAndReplace (strips leading 'v', maps '-beta' to 'b') and explicitly sets release_id='latest' with sort_by_highest_tag_names=true."
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "kevinmcox is a thinner wrapper without version normalization; tag/version output will include the upstream 'v' prefix."
-        },
-        {
-          "category": "tiebreaker",
-          "text": "jc0b first committed 2026-03-07; kevinmcox first committed 2026-04-18 (~6 weeks later)."
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier present",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase present",
-          "favors": null
-        },
-        {
-          "key": "source_resilience",
-          "label": "GitHub Releases (resilient)",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Version normalization",
-          "favors": "keep"
-        },
-        {
-          "key": "history",
-          "label": "Earlier first commit",
-          "favors": "keep"
-        }
-      ],
-      "deprecation_message": "Consider switching to Contour recipes in the jc0b-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "none"
-    },
-    {
       "id": "f537fb62f033",
       "app_name": "JabRef",
       "action_status": "pr_open",
@@ -1253,6 +1049,58 @@
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "284db2f71c6b",
+      "app_name": "jq",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "jq/jq.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "rel_path": "JQ/JQUniversal.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "jq/jq.download.recipe",
+          "identifier": "com.github.homebysix.download.jq",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "github"
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "rel_path": "JQ/JQUniversal.download.recipe",
+          "identifier": "com.github.rtrouton.download.JQUniversal",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        }
+      ]
+    },
+    {
       "id": "adf849d2c2cf",
       "app_name": "KeyStore Explorer",
       "action_status": "needs_pr",
@@ -1352,7 +1200,7 @@
     },
     {
       "id": "8856528d651b",
-      "app_name": "dockutil/",
+      "app_name": "dockutil",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -2219,27 +2067,35 @@
       "dependency_impact": "2 child recipe(s) across 2 repo(s)"
     },
     {
-      "id": "e484e9e34b86",
-      "app_name": "Notepad Plus Plus",
-      "action_status": "needs_evaluation",
-      "existing_prs": [],
+      "id": "97645aaac583",
+      "app_name": "Santa",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "davidbpirie-recipes",
+          "number": 14,
+          "title": "Change parent to Santa.download in zentral-recipes",
+          "url": "https://github.com/autopkg/davidbpirie-recipes/pull/14",
+          "state": "merged"
+        }
+      ],
       "member_count": 2,
       "members_summary": [
         {
-          "repo": "homebysix-recipes",
-          "rel_path": "NotepadPlusPlus/NotepadPlusPlus.download.recipe",
+          "repo": "thetornad0-recipes",
+          "rel_path": "Santa/Santa.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
         },
         {
-          "repo": "rtrouton-recipes",
-          "rel_path": "NotepadPlusPlus/NotepadPlusPlus.download.recipe",
+          "repo": "zentral-recipes",
+          "rel_path": "santa/santa.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
-          "dependent_count": 1
+          "dependent_count": 6
         }
       ],
       "confidence": "UNEVALUATED",
@@ -2251,18 +2107,18 @@
       "dependency_impact": "",
       "candidate_members": [
         {
-          "repo": "homebysix-recipes",
-          "rel_path": "NotepadPlusPlus/NotepadPlusPlus.download.recipe",
-          "identifier": "com.github.homebysix.download.NotepadPlusPlus",
+          "repo": "thetornad0-recipes",
+          "rel_path": "Santa/Santa.download.recipe",
+          "identifier": "com.github.thetornad0.download.Santa",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "source_type": "github"
         },
         {
-          "repo": "rtrouton-recipes",
-          "rel_path": "NotepadPlusPlus/NotepadPlusPlus.download.recipe",
-          "identifier": "com.github.rtrouton.download.NotepadPlusPlus",
+          "repo": "zentral-recipes",
+          "rel_path": "santa/santa.download.recipe",
+          "identifier": "com.github.autopkg.zentral.download.santa",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -2415,7 +2271,7 @@
     },
     {
       "id": "0e123552c2b4",
-      "app_name": "SupportHelper",
+      "app_name": "Support Helper",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2811,7 +2667,7 @@
     },
     {
       "id": "3fe55c563a16",
-      "app_name": "Adobe Acrobat Pro",
+      "app_name": "AdobeAcrobatPro",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2913,7 +2769,7 @@
     },
     {
       "id": "d597367390ec",
-      "app_name": "AffinityDesigner",
+      "app_name": "Affinity Designer",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -3015,7 +2871,7 @@
     },
     {
       "id": "bbcf43e8a24f",
-      "app_name": "AffinityPhoto",
+      "app_name": "Affinity Photo",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -3117,7 +2973,7 @@
     },
     {
       "id": "069af748c779",
-      "app_name": "AffinityPublisher",
+      "app_name": "Affinity Publisher",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -3269,7 +3125,7 @@
     },
     {
       "id": "6313b4597c26",
-      "app_name": "AmadeusLite",
+      "app_name": "Amadeus Lite",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -4855,7 +4711,7 @@
     },
     {
       "id": "a567509dc38c",
-      "app_name": "ClamXav",
+      "app_name": "ClamXAV",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -5284,7 +5140,7 @@
     },
     {
       "id": "bbf12a11d83f",
-      "app_name": "Cloudflare WARP",
+      "app_name": "CloudFlareWarp",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -5513,7 +5369,7 @@
     },
     {
       "id": "a6ef14749155",
-      "app_name": "composer",
+      "app_name": "Composer",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -5543,6 +5399,101 @@
       "criteria": [],
       "deprecation_message": "",
       "dependency_impact": ""
+    },
+    {
+      "id": "50c0df2285e9",
+      "app_name": "Contour",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "jc0b-recipes",
+          "number": 22,
+          "title": "Switch to MacAdmins Open Source for new releases",
+          "url": "https://github.com/autopkg/jc0b-recipes/pull/22",
+          "state": "merged"
+        }
+      ],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "jc0b-recipes",
+          "rel_path": "Contour/Contour.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "kevinmcox-recipes",
+          "rel_path": "Henry Stamerjohann/Contour.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "MEDIUM",
+      "keep": [
+        {
+          "repo": "jc0b-recipes",
+          "rel_path": "Contour/Contour.download.recipe.yaml",
+          "reason": "Older recipe with version normalization (strips 'v' prefix, converts '-beta' to 'b'); pins release_id to 'latest' for stability"
+        }
+      ],
+      "deprecate": [
+        {
+          "repo": "kevinmcox-recipes",
+          "rel_path": "Henry Stamerjohann/Contour.download.recipe.yaml",
+          "reason": "Same source, no version normalization; written ~6 weeks after jc0b's recipe"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "shared",
+          "text": "Both use GitHubReleasesInfoProvider against headmin/contour with the same asset_regex, both have CodeSignatureVerifier and EndOfCheckPhase, both expect the same Declarative IT GmbH (D6G4X4D7C9) signing identity."
+        },
+        {
+          "category": "favors_keep",
+          "text": "jc0b normalizes the version string via FindAndReplace (strips leading 'v', maps '-beta' to 'b') and explicitly sets release_id='latest' with sort_by_highest_tag_names=true."
+        },
+        {
+          "category": "favors_deprecate",
+          "text": "kevinmcox is a thinner wrapper without version normalization; tag/version output will include the upstream 'v' prefix."
+        },
+        {
+          "category": "tiebreaker",
+          "text": "jc0b first committed 2026-03-07; kevinmcox first committed 2026-04-18 (~6 weeks later)."
+        }
+      ],
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier present",
+          "favors": null
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase present",
+          "favors": null
+        },
+        {
+          "key": "source_resilience",
+          "label": "GitHub Releases (resilient)",
+          "favors": null
+        },
+        {
+          "key": "metadata",
+          "label": "Version normalization",
+          "favors": "keep"
+        },
+        {
+          "key": "history",
+          "label": "Earlier first commit",
+          "favors": "keep"
+        }
+      ],
+      "deprecation_message": "Consider switching to Contour recipes in the jc0b-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "dependency_impact": "none"
     },
     {
       "id": "888fd9041e40",
@@ -8232,7 +8183,7 @@
     },
     {
       "id": "b8bf9e2f138e",
-      "app_name": "Hudl Sportscode",
+      "app_name": "HudlSportscode",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -8429,6 +8380,58 @@
       ],
       "deprecation_message": "Consider switching to IBM Notifier recipes in the precursorca-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "none"
+    },
+    {
+      "id": "6ebb821ff47d",
+      "app_name": "IconikAgent",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "lashomb-recipes",
+          "rel_path": "Iconik/IconikAgent.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "mikestechshop-recipes",
+          "rel_path": "Iconik/IconikAgent.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "lashomb-recipes",
+          "rel_path": "Iconik/IconikAgent.download.recipe",
+          "identifier": "com.github.lashomb.download.IconikAgent",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
+        },
+        {
+          "repo": "mikestechshop-recipes",
+          "rel_path": "Iconik/IconikAgent.download.recipe",
+          "identifier": "com.github.mikestechshop.download.IconikAgent",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
+        }
+      ]
     },
     {
       "id": "bf11110af945",
@@ -10125,7 +10128,7 @@
     },
     {
       "id": "7858eb674089",
-      "app_name": "Marked2",
+      "app_name": "Marked 2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10947,7 +10950,7 @@
     },
     {
       "id": "bf22efed0cd6",
-      "app_name": "MTR",
+      "app_name": "mtr",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -11097,7 +11100,7 @@
     },
     {
       "id": "e602424eb9ec",
-      "app_name": "MuseScore4",
+      "app_name": "MuseScore 4",
       "action_status": "needs_pr",
       "existing_prs": [
         {
@@ -11216,7 +11219,7 @@
     },
     {
       "id": "03b1fe3fed35",
-      "app_name": "MySQL Workbench",
+      "app_name": "MySQLWorkbench",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -12623,12 +12626,20 @@
       }
     },
     {
-      "id": "df50c1e28024",
-      "app_name": "Prisma Access Browser",
-      "action_status": "needs_pr",
+      "id": "169a934c40d0",
+      "app_name": "PrismaAccessBrowser",
+      "action_status": "needs_evaluation",
       "existing_prs": [],
-      "member_count": 2,
+      "member_count": 3,
       "members_summary": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Prisma Access Browser/Prisma Access Browser.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
         {
           "repo": "erikng-recipes",
           "rel_path": "PaloAltoNetworks/PrismaAccessBrowser.download.recipe",
@@ -12646,14 +12657,42 @@
           "dependent_count": 2
         }
       ],
-      "confidence": "SKIP",
-      "skip_reason": "different formats (app bundle via Sparkle vs PKG installer via packaged channel)",
+      "confidence": "UNEVALUATED",
       "keep": [],
       "deprecate": [],
       "rationale": "",
       "criteria": [],
       "deprecation_message": "",
-      "dependency_impact": ""
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Prisma Access Browser/Prisma Access Browser.download.recipe",
+          "identifier": "com.github.dataJAR-recipes.download.Prisma Access Browser",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "sparkle"
+        },
+        {
+          "repo": "erikng-recipes",
+          "rel_path": "PaloAltoNetworks/PrismaAccessBrowser.download.recipe",
+          "identifier": "com.github.erikng.download.PrismaAccessBrowser",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "sparkle"
+        },
+        {
+          "repo": "patgmac-recipes",
+          "rel_path": "PaloAltoNetworks/PrismaAccessBrowserPKG.download.recipe",
+          "identifier": "com.github.patgmac-recipes.download.PrismaAccessBrowser",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "sparkle"
+        }
+      ]
     },
     {
       "id": "e6ba83304e65",
@@ -13822,13 +13861,6 @@
           "title": "Switch to cask url",
           "url": "https://github.com/autopkg/ahousseini-recipes/pull/64",
           "state": "merged"
-        },
-        {
-          "repo": "homebysix-recipes",
-          "number": 741,
-          "title": "Add various recipes and update/deprecate existing recipes",
-          "url": "https://github.com/autopkg/homebysix-recipes/pull/741",
-          "state": "merged"
         }
       ],
       "member_count": 2,
@@ -13963,7 +13995,7 @@
     },
     {
       "id": "03a24987b36a",
-      "app_name": "Signiant App",
+      "app_name": "SigniantApp",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14074,7 +14106,7 @@
     },
     {
       "id": "b1918d094b5a",
-      "app_name": "SketchUp Pro 2023 EN",
+      "app_name": "SketchUpPro2023-EN",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16279,7 +16311,7 @@
     },
     {
       "id": "8421f9a1a517",
-      "app_name": "yubico-authenticator",
+      "app_name": "Yubico Authenticator",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -17371,7 +17403,7 @@
           "dependent_count": 1
         },
         {
-          "repo": "hjuutilainen-recipes",
+          "repo": "homebysix-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -17379,7 +17411,7 @@
           "dependent_count": 4
         },
         {
-          "repo": "homebysix-recipes",
+          "repo": "hjuutilainen-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -18840,17 +18872,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin8.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin8.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin8.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin8.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -18929,7 +18961,7 @@
     },
     {
       "id": "539f950d416c",
-      "app_name": "FCS Express 7 Research",
+      "app_name": "FCSExpress7Research",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -19808,7 +19840,7 @@
     },
     {
       "id": "dcd6c99b627a",
-      "app_name": "DotNet 9 SDK",
+      "app_name": "DotNet9SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20010,6 +20042,14 @@
       "member_count": 5,
       "members_summary": [
         {
+          "repo": "andrewvalentine-recipes",
+          "rel_path": "NVivo/NVivo12.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 0
+        },
+        {
           "repo": "jazzace-recipes",
           "rel_path": "QSRInternational/NVivo.download.recipe",
           "has_codesig": true,
@@ -20024,14 +20064,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
-        },
-        {
-          "repo": "andrewvalentine-recipes",
-          "rel_path": "NVivo/NVivo12.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 0
         },
         {
           "repo": "joshua-d-miller-recipes",
@@ -20238,14 +20270,6 @@
       "members_summary": [
         {
           "repo": "dataJAR-recipes",
-          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "dataJAR-recipes",
           "rel_path": "Finale 27/Finale27.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -20255,6 +20279,14 @@
         {
           "repo": "jazzace-recipes",
           "rel_path": "MakeMusic/Finale.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Finale 26-Trial/Finale26-Trial.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -21077,7 +21109,7 @@
     },
     {
       "id": "d4f8ed94c607",
-      "app_name": "MacDown",
+      "app_name": "macdown",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -21588,6 +21620,14 @@
       "member_count": 4,
       "members_summary": [
         {
+          "repo": "Lotusshaney-recipes",
+          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
           "repo": "apizz-recipes",
           "rel_path": "TailScale/TailScale.download.recipe",
           "has_codesig": true,
@@ -21602,14 +21642,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 5
-        },
-        {
-          "repo": "Lotusshaney-recipes",
-          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         },
         {
           "repo": "macprince-recipes",
@@ -22483,7 +22515,7 @@
     },
     {
       "id": "8eb7f5613f96",
-      "app_name": "Topaz Photo AI",
+      "app_name": "TopazPhotoAI",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -23376,7 +23408,7 @@
     },
     {
       "id": "6ce1d21197cd",
-      "app_name": "FabFilter Pro-L 2",
+      "app_name": "FabFilterProL2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -23470,7 +23502,7 @@
     },
     {
       "id": "9d9956a109b2",
-      "app_name": "FinalDraft12",
+      "app_name": "Final Draft 12",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -23981,7 +24013,7 @@
     },
     {
       "id": "a13f00b46533",
-      "app_name": "PlantronicsHub",
+      "app_name": "Plantronics Hub",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -24640,20 +24672,20 @@
           "dependent_count": 2
         },
         {
-          "repo": "justinrummel-recipes",
-          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
           "repo": "nstrauss-recipes",
           "rel_path": "Wireshark/Wireshark.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
+        },
+        {
+          "repo": "justinrummel-recipes",
+          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
         }
       ],
       "confidence": "SKIP",

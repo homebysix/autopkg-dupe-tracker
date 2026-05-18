@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-05-11T06:14:23.217803+00:00",
+  "generated_at": "2026-05-18T06:38:30.989712+00:00",
   "stats": {
-    "HIGH": 26,
+    "HIGH": 25,
     "MEDIUM": 77,
-    "LOW": 111,
-    "SKIP": 42,
+    "LOW": 110,
+    "SKIP": 41,
     "RESOLVED": 30
   },
-  "total_sets": 261,
+  "total_sets": 266,
   "needs_reassessment": 3,
   "repos_involved": [
     "Darkomen78-recipes",
@@ -537,7 +537,7 @@
     },
     {
       "id": "f3f4abe2b6a0",
-      "app_name": "Bambu Studio",
+      "app_name": "BambuStudio",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -631,7 +631,7 @@
     },
     {
       "id": "f00e9f904e6b",
-      "app_name": "GitHub CLI",
+      "app_name": "GitHubCLI",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -1102,7 +1102,7 @@
     },
     {
       "id": "adf849d2c2cf",
-      "app_name": "KeyStore Explorer",
+      "app_name": "KeyStoreExplorer",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2271,7 +2271,7 @@
     },
     {
       "id": "0e123552c2b4",
-      "app_name": "Support Helper",
+      "app_name": "SupportHelper",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2467,7 +2467,7 @@
     },
     {
       "id": "c93663f2d189",
-      "app_name": "Ultimaker Cura",
+      "app_name": "UltiMaker Cura",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -2973,7 +2973,7 @@
     },
     {
       "id": "069af748c779",
-      "app_name": "Affinity Publisher",
+      "app_name": "AffinityPublisher",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -4711,7 +4711,7 @@
     },
     {
       "id": "a567509dc38c",
-      "app_name": "ClamXAV",
+      "app_name": "ClamXav",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -4810,6 +4810,58 @@
       ],
       "deprecation_message": "Consider switching to ClamXAV recipes in the homebysix-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
+    },
+    {
+      "id": "574705bb1044",
+      "app_name": "Claude",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "almenscorner-recipes",
+          "rel_path": "Anthropic/Claude.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 3
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Anthropic/Claude.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "almenscorner-recipes",
+          "rel_path": "Anthropic/Claude.download.recipe",
+          "identifier": "com.github.almenscorner.download.Claude",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Anthropic/Claude.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.Claude",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        }
+      ]
     },
     {
       "id": "9c98d1a0f0e3",
@@ -5140,7 +5192,7 @@
     },
     {
       "id": "bbf12a11d83f",
-      "app_name": "CloudFlareWarp",
+      "app_name": "Cloudflare WARP",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -5247,6 +5299,58 @@
       ],
       "deprecation_message": "Consider switching to Cloudflare WARP recipes in the haircut-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "3 child recipe(s) across 3 repo(s)"
+    },
+    {
+      "id": "e4c7f40dea6a",
+      "app_name": "Codex",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "OpenAI/Codex.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 3
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "OpenAI/Codex.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "OpenAI/Codex.download.recipe",
+          "identifier": "com.github.homebysix.download.Codex",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "OpenAI/Codex.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.Codex",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "unknown"
+        }
+      ]
     },
     {
       "id": "8803159b5889",
@@ -5369,7 +5473,7 @@
     },
     {
       "id": "a6ef14749155",
-      "app_name": "Composer",
+      "app_name": "composer",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6260,7 +6364,7 @@
     },
     {
       "id": "a837ba032399",
-      "app_name": "Disk Drill",
+      "app_name": "DiskDrill",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6686,7 +6790,7 @@
     },
     {
       "id": "a256e769f0fd",
-      "app_name": "EraseInstall",
+      "app_name": "erase-install",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -6909,7 +7013,7 @@
           "number": 100,
           "title": "Adjust Fantastical intune recipe parent",
           "url": "https://github.com/autopkg/almenscorner-recipes/pull/100",
-          "state": "open"
+          "state": "merged"
         },
         {
           "repo": "jaharmi-recipes",
@@ -6927,7 +7031,7 @@
           "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": false,
-          "dependent_count": 2
+          "dependent_count": 1
         },
         {
           "repo": "macprince-recipes",
@@ -6935,7 +7039,7 @@
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
-          "dependent_count": 3
+          "dependent_count": 4
         }
       ],
       "confidence": "HIGH",
@@ -7247,104 +7351,6 @@
         }
       ],
       "deprecation_message": "Consider switching to Fetch recipes in the hansen-m-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
-    },
-    {
-      "id": "82b436f5f90b",
-      "app_name": "Figma",
-      "action_status": "needs_pr",
-      "existing_prs": [],
-      "member_count": 2,
-      "members_summary": [
-        {
-          "repo": "dataJAR-recipes",
-          "rel_path": "Figma/Figma.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        },
-        {
-          "repo": "smithjw-recipes",
-          "rel_path": "Figma/Figma-Universal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        }
-      ],
-      "confidence": "LOW",
-      "keep": [
-        {
-          "repo": "dataJAR-recipes",
-          "rel_path": "Figma/Figma.download.recipe",
-          "reason": "4 dependents"
-        }
-      ],
-      "deprecate": [
-        {
-          "repo": "smithjw-recipes",
-          "rel_path": "Figma/Figma-Universal.download.recipe.yaml",
-          "reason": "newer duplicate (since 2022)"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use CodeSignatureVerifier, EndOfCheckPhase"
-        },
-        {
-          "category": "favors_keep",
-          "text": "4 dependent recipes"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2018-05 vs 2022-09"
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Multi-architecture support",
-          "favors": null
-        },
-        {
-          "key": "release",
-          "label": "Release channel variable",
-          "favors": null
-        },
-        {
-          "key": "source_resilience",
-          "label": "Source resilience",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Metadata quality",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "Commit history",
-          "favors": "keep"
-        },
-        {
-          "key": "format",
-          "label": "Recipe format",
-          "favors": "keep"
-        }
-      ],
-      "deprecation_message": "Consider switching to Figma recipes in the dataJAR-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
@@ -7885,6 +7891,68 @@
       "dependency_impact": "2 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "3f0e0470b5d8",
+      "app_name": "GitHub Desktop",
+      "action_status": "pr_open",
+      "existing_prs": [
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        },
+        {
+          "repo": "keeleysam-recipes",
+          "number": 185,
+          "title": "Deprecate GitHub recipes",
+          "url": "https://github.com/autopkg/keeleysam-recipes/pull/185",
+          "state": "open",
+          "source": "override"
+        }
+      ],
+      "member_count": 3,
+      "members_summary": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "GitHub/GitHubDesktop.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 5
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "SKIP",
+      "skip_reason": "different architecture handling approaches (single arch vs dual-download universal)",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "override": {
+        "decision": "",
+        "reason": "",
+        "date": ""
+      }
+    },
+    {
       "id": "1d87d0a8b50f",
       "app_name": "Glean",
       "action_status": "needs_pr",
@@ -8073,7 +8141,7 @@
     },
     {
       "id": "1fa5059aa6b6",
-      "app_name": "HandBrake",
+      "app_name": "Handbrake",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -8183,7 +8251,7 @@
     },
     {
       "id": "b8bf9e2f138e",
-      "app_name": "HudlSportscode",
+      "app_name": "Hudl Sportscode",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -10095,7 +10163,7 @@
     },
     {
       "id": "85f377e747cf",
-      "app_name": "Malwarebytes",
+      "app_name": "malwarebytes",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10753,6 +10821,58 @@
       "dependency_impact": "2 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "27a60eb6ee7d",
+      "app_name": "MicrosoftEdge",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "n8felton-recipes",
+          "rel_path": "Microsoft/MicrosoftEdge.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "n8felton-recipes",
+          "rel_path": "Microsoft/MicrosoftEdge.download.recipe",
+          "identifier": "com.github.n8felton.download.MicrosoftEdge",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "unknown"
+        },
+        {
+          "repo": "rtrouton-recipes",
+          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
+          "identifier": "com.github.rtrouton.download.microsoftedge",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        }
+      ]
+    },
+    {
       "id": "c21fc40cd6ea",
       "app_name": "Microsoft Office 365 Suite",
       "action_status": "needs_pr",
@@ -10950,7 +11070,7 @@
     },
     {
       "id": "bf22efed0cd6",
-      "app_name": "mtr",
+      "app_name": "MTR",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -11100,7 +11220,7 @@
     },
     {
       "id": "e602424eb9ec",
-      "app_name": "MuseScore 4",
+      "app_name": "MuseScore4",
       "action_status": "needs_pr",
       "existing_prs": [
         {
@@ -11778,18 +11898,62 @@
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "4583d88f652e",
+      "app_name": "OpenCode",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "OpenCode/OpenCode.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "OpenCode/OpenCode.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "OpenCode/OpenCode.download.recipe",
+          "identifier": "com.github.dataJAR-recipes.download.OpenCode",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "OpenCode/OpenCode.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.OpenCode",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "unknown"
+        }
+      ]
+    },
+    {
       "id": "df017bc01c4a",
       "app_name": "OverSight",
       "action_status": "needs_pr",
-      "existing_prs": [
-        {
-          "repo": "dataJAR-recipes",
-          "number": 412,
-          "title": "Deprecate OverSight recipes",
-          "url": "https://github.com/autopkg/dataJAR-recipes/pull/412",
-          "state": "closed"
-        }
-      ],
+      "existing_prs": [],
       "member_count": 2,
       "members_summary": [
         {
@@ -13104,6 +13268,58 @@
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "a041346c04de",
+      "app_name": "QLMarkdown",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "SbarexQLMarkdown/SbarexQLMarkdown.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 3
+        },
+        {
+          "repo": "jleggat-recipes",
+          "rel_path": "QLMarkdown/QLMarkdown.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "SbarexQLMarkdown/SbarexQLMarkdown.download.recipe",
+          "identifier": "com.github.homebysix.download.SbarexQLMarkdown",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "sparkle"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "rel_path": "QLMarkdown/QLMarkdown.download.recipe",
+          "identifier": "com.github.jleggat.download.qlmarkdown",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        }
+      ]
+    },
+    {
       "id": "a17f098e19e8",
       "app_name": "QuickBooks",
       "action_status": "needs_pr",
@@ -13138,7 +13354,7 @@
     },
     {
       "id": "a7a1b23a1c87",
-      "app_name": "ReadWrite",
+      "app_name": "Read&Write",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14106,7 +14322,7 @@
     },
     {
       "id": "b1918d094b5a",
-      "app_name": "SketchUpPro2023-EN",
+      "app_name": "SketchUp Pro 2023 EN",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14374,7 +14590,7 @@
     },
     {
       "id": "b5cbaf7ea8f7",
-      "app_name": "SQLProforPostgres",
+      "app_name": "SQLPro for Postgres",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16311,7 +16527,7 @@
     },
     {
       "id": "8421f9a1a517",
-      "app_name": "Yubico Authenticator",
+      "app_name": "yubico-authenticator",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16657,16 +16873,16 @@
           "dependent_count": 1
         },
         {
-          "repo": "moofit-recipes",
-          "rel_path": "Autodesk/AutoCAD.download.recipe",
+          "repo": "MLBZ521-recipes",
+          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
         },
         {
-          "repo": "MLBZ521-recipes",
-          "rel_path": "AutoCAD/AutoCADLegacy.download.recipe",
+          "repo": "moofit-recipes",
+          "rel_path": "Autodesk/AutoCAD.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -16938,6 +17154,104 @@
       ]
     },
     {
+      "id": "82b436f5f90b",
+      "app_name": "Figma",
+      "action_status": "needs_pr",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Figma/Figma.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Figma/Figma-Universal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "LOW",
+      "keep": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Figma/Figma.download.recipe",
+          "reason": "4 dependents"
+        }
+      ],
+      "deprecate": [
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Figma/Figma-Universal.download.recipe.yaml",
+          "reason": "newer duplicate (since 2022)"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "shared",
+          "text": "Both use CodeSignatureVerifier, EndOfCheckPhase"
+        },
+        {
+          "category": "favors_keep",
+          "text": "4 dependent recipes"
+        },
+        {
+          "category": "tiebreaker",
+          "text": "first committed 2018-05 vs 2022-09"
+        }
+      ],
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier",
+          "favors": null
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase",
+          "favors": null
+        },
+        {
+          "key": "arch",
+          "label": "Multi-architecture support",
+          "favors": null
+        },
+        {
+          "key": "release",
+          "label": "Release channel variable",
+          "favors": null
+        },
+        {
+          "key": "source_resilience",
+          "label": "Source resilience",
+          "favors": null
+        },
+        {
+          "key": "metadata",
+          "label": "Metadata quality",
+          "favors": null
+        },
+        {
+          "key": "history",
+          "label": "Commit history",
+          "favors": "keep"
+        },
+        {
+          "key": "format",
+          "label": "Recipe format",
+          "favors": "keep"
+        }
+      ],
+      "deprecation_message": "Consider switching to Figma recipes in the dataJAR-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
+    },
+    {
       "id": "bda6a50ac788",
       "app_name": "GoToMeeting",
       "action_status": "needs_pr",
@@ -17156,129 +17470,6 @@
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
-      "id": "14d249236156",
-      "app_name": "Microsoft Edge",
-      "action_status": "needs_pr",
-      "existing_prs": [],
-      "member_count": 3,
-      "members_summary": [
-        {
-          "repo": "n8felton-recipes",
-          "rel_path": "Microsoft/MicrosoftEdge.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "smithjw-recipes",
-          "rel_path": "Microsoft_Edge/Microsoft_Edge_alt.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "rtrouton-recipes",
-          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        }
-      ],
-      "confidence": "LOW",
-      "keep": [
-        {
-          "repo": "n8felton-recipes",
-          "rel_path": "Microsoft/MicrosoftEdge.download.recipe",
-          "reason": "release channel variable"
-        }
-      ],
-      "deprecate": [
-        {
-          "repo": "rtrouton-recipes",
-          "rel_path": "MicrosoftEdge/MicrosoftEdge.download.recipe",
-          "reason": "no release variable"
-        },
-        {
-          "repo": "smithjw-recipes",
-          "rel_path": "Microsoft_Edge/Microsoft_Edge_alt.download.recipe.yaml",
-          "reason": "no release variable"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use CodeSignatureVerifier, EndOfCheckPhase"
-        },
-        {
-          "category": "favors_keep",
-          "text": "has release channel input variable"
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "no release variable"
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "no release variable"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2016-08 vs 2017-11"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2016-08 vs 2024-02"
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Multi-architecture support",
-          "favors": null
-        },
-        {
-          "key": "release",
-          "label": "Release channel variable",
-          "favors": "keep"
-        },
-        {
-          "key": "source_resilience",
-          "label": "Source resilience",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Metadata quality",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "Commit history",
-          "favors": "keep"
-        },
-        {
-          "key": "format",
-          "label": "Recipe format",
-          "favors": "keep"
-        }
-      ],
-      "deprecation_message": "Consider switching to Microsoft Edge recipes in the n8felton-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "3 child recipe(s) across 2 repo(s)"
-    },
-    {
       "id": "b2491f38b3f4",
       "app_name": "Opera",
       "action_status": "resolved",
@@ -17403,7 +17594,7 @@
           "dependent_count": 1
         },
         {
-          "repo": "homebysix-recipes",
+          "repo": "hjuutilainen-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -17411,7 +17602,7 @@
           "dependent_count": 4
         },
         {
-          "repo": "hjuutilainen-recipes",
+          "repo": "homebysix-recipes",
           "rel_path": "R/R.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -18485,6 +18676,112 @@
       "dependency_impact": "3 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "347dae539100",
+      "app_name": "SourceTree",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "hjuutilainen-recipes",
+          "number": 305,
+          "title": "Change permissions of Sourcetree.app during PkgRequest",
+          "url": "https://github.com/autopkg/hjuutilainen-recipes/pull/305",
+          "state": "merged"
+        }
+      ],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "faumac-recipes",
+          "rel_path": "Sourcetree/Sourcetree.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "hjuutilainen-recipes",
+          "rel_path": "Atlassian/SourceTree.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        }
+      ],
+      "confidence": "LOW",
+      "keep": [
+        {
+          "repo": "hjuutilainen-recipes",
+          "rel_path": "Atlassian/SourceTree.download.recipe",
+          "reason": "4 dependents"
+        }
+      ],
+      "deprecate": [
+        {
+          "repo": "faumac-recipes",
+          "rel_path": "Sourcetree/Sourcetree.download.recipe",
+          "reason": "newer duplicate (since 2021)"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "shared",
+          "text": "Both use CodeSignatureVerifier, EndOfCheckPhase, url source (www.sourcetreeapp.com)"
+        },
+        {
+          "category": "favors_keep",
+          "text": "4 dependent recipes"
+        },
+        {
+          "category": "tiebreaker",
+          "text": "first committed 2013-09 vs 2021-02"
+        }
+      ],
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier",
+          "favors": null
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase",
+          "favors": null
+        },
+        {
+          "key": "arch",
+          "label": "Multi-architecture support",
+          "favors": null
+        },
+        {
+          "key": "release",
+          "label": "Release channel variable",
+          "favors": null
+        },
+        {
+          "key": "source_resilience",
+          "label": "Source resilience",
+          "favors": null
+        },
+        {
+          "key": "metadata",
+          "label": "Metadata quality",
+          "favors": null
+        },
+        {
+          "key": "history",
+          "label": "Commit history",
+          "favors": "keep"
+        },
+        {
+          "key": "format",
+          "label": "Recipe format",
+          "favors": null
+        }
+      ],
+      "deprecation_message": "Consider switching to SourceTree recipes in the hjuutilainen-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
+    },
+    {
       "id": "37cafe304b31",
       "app_name": "TeXLiveUtility",
       "action_status": "resolved",
@@ -18872,17 +19169,17 @@
           "dependent_count": 1
         },
         {
-          "repo": "novaksam-recipes",
-          "rel_path": "Recipes - Download/EclipseTemurin8.download.recipe",
-          "has_codesig": true,
+          "repo": "grahampugh-recipes",
+          "rel_path": "EclipseTemurin/EclipseTemurin8.download.recipe.yaml",
+          "has_codesig": false,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
         },
         {
-          "repo": "grahampugh-recipes",
-          "rel_path": "EclipseTemurin/EclipseTemurin8.download.recipe.yaml",
-          "has_codesig": false,
+          "repo": "novaksam-recipes",
+          "rel_path": "Recipes - Download/EclipseTemurin8.download.recipe",
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 1
@@ -18896,68 +19193,6 @@
       "criteria": [],
       "deprecation_message": "",
       "dependency_impact": ""
-    },
-    {
-      "id": "3f0e0470b5d8",
-      "app_name": "GitHub Desktop",
-      "action_status": "pr_open",
-      "existing_prs": [
-        {
-          "repo": "smithjw-recipes",
-          "number": 18,
-          "title": "Feature friendly path deleter + formatting changes",
-          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
-          "state": "merged"
-        },
-        {
-          "repo": "keeleysam-recipes",
-          "number": 185,
-          "title": "Deprecate GitHub recipes",
-          "url": "https://github.com/autopkg/keeleysam-recipes/pull/185",
-          "state": "open",
-          "source": "override"
-        }
-      ],
-      "member_count": 3,
-      "members_summary": [
-        {
-          "repo": "homebysix-recipes",
-          "rel_path": "GitHub/GitHubDesktop.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 5
-        },
-        {
-          "repo": "smithjw-recipes",
-          "rel_path": "GitHub/GitHub_Desktop.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
-          "repo": "smithjw-recipes",
-          "rel_path": "GitHub/GitHub_Desktop-Universal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        }
-      ],
-      "confidence": "SKIP",
-      "skip_reason": "different architecture handling approaches (single arch vs dual-download universal)",
-      "keep": [],
-      "deprecate": [],
-      "rationale": "",
-      "criteria": [],
-      "deprecation_message": "",
-      "dependency_impact": "",
-      "override": {
-        "decision": "",
-        "reason": "",
-        "date": ""
-      }
     },
     {
       "id": "539f950d416c",
@@ -19433,7 +19668,7 @@
         },
         {
           "repo": "smithjw-recipes",
-          "rel_path": "Android Studio/Android_Studio.download.recipe.yaml",
+          "rel_path": "Android_Studio/Android_Studio.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
@@ -19737,8 +19972,60 @@
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
+      "id": "9defca2007ba",
+      "app_name": "DotNet 10 SDK",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "DotNet 10 SDK/DotNet 10 SDK.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "markkenny-recipes",
+          "rel_path": "Microsoft DotNet/DotNet 10 SDK-Universal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "DotNet 10 SDK/DotNet 10 SDK.download.recipe",
+          "identifier": "com.github.dataJAR-recipes.download.DotNet 10 SDK",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
+        },
+        {
+          "repo": "markkenny-recipes",
+          "rel_path": "Microsoft DotNet/DotNet 10 SDK-Universal.download.recipe.yaml",
+          "identifier": "com.github.markkenny.autopkg.download.dotnet10sdk-universal",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        }
+      ]
+    },
+    {
       "id": "a4392e86f98f",
-      "app_name": "DotNet8SDK",
+      "app_name": "DotNet 8 SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20042,14 +20329,6 @@
       "member_count": 5,
       "members_summary": [
         {
-          "repo": "andrewvalentine-recipes",
-          "rel_path": "NVivo/NVivo12.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 0
-        },
-        {
           "repo": "jazzace-recipes",
           "rel_path": "QSRInternational/NVivo.download.recipe",
           "has_codesig": true,
@@ -20064,6 +20343,14 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "andrewvalentine-recipes",
+          "rel_path": "NVivo/NVivo12.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 0
         },
         {
           "repo": "joshua-d-miller-recipes",
@@ -20229,7 +20516,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password8.download.recipe",
+          "rel_path": "AgileBits/1Password7.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20237,7 +20524,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password7.download.recipe",
+          "rel_path": "AgileBits/1Password8.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20691,7 +20978,7 @@
     },
     {
       "id": "aa1cce5c4f60",
-      "app_name": "Microsoft AutoUpdate",
+      "app_name": "MicrosoftAutoUpdate",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20889,8 +21176,24 @@
       "member_count": 4,
       "members_summary": [
         {
+          "repo": "apettinen-recipes",
+          "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 4
+        },
+        {
           "repo": "drewdiver-recipes",
           "rel_path": "Brave/Brave.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "moofit-recipes",
+          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -20903,22 +21206,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
-        },
-        {
-          "repo": "apettinen-recipes",
-          "rel_path": "Brave/Brave.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        },
-        {
-          "repo": "moofit-recipes",
-          "rel_path": "Brave/BraveUniversal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         }
       ],
       "confidence": "LOW",
@@ -21620,14 +21907,6 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "Lotusshaney-recipes",
-          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "apizz-recipes",
           "rel_path": "TailScale/TailScale.download.recipe",
           "has_codesig": true,
@@ -21642,6 +21921,14 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 5
+        },
+        {
+          "repo": "Lotusshaney-recipes",
+          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
         },
         {
           "repo": "macprince-recipes",
@@ -21675,6 +21962,13 @@
         },
         {
           "repo": "vmiller-recipes",
+          "number": 73,
+          "title": "Vectorworks changed package AGAIN",
+          "url": "https://github.com/autopkg/vmiller-recipes/pull/73",
+          "state": "merged"
+        },
+        {
+          "repo": "vmiller-recipes",
           "number": 40,
           "title": "Change versioning strategy for munki recipe",
           "url": "https://github.com/autopkg/vmiller-recipes/pull/40",
@@ -21683,6 +21977,22 @@
       ],
       "member_count": 5,
       "members_summary": [
+        {
+          "repo": "jazzace-recipes",
+          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        },
+        {
+          "repo": "vmiller-recipes",
+          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        },
         {
           "repo": "jazzace-recipes",
           "rel_path": "Nemetschek/VectorworksInstallManager.download.recipe",
@@ -21698,22 +22008,6 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 4
-        },
-        {
-          "repo": "jazzace-recipes",
-          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
-          "repo": "vmiller-recipes",
-          "rel_path": "Nemetschek/Vectorworks2024.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
         },
         {
           "repo": "vmiller-recipes",
@@ -23314,7 +23608,7 @@
     },
     {
       "id": "acccf736bbe4",
-      "app_name": "FabFilterProC2",
+      "app_name": "FabFilter Pro-C 2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -23502,7 +23796,7 @@
     },
     {
       "id": "9d9956a109b2",
-      "app_name": "Final Draft 12",
+      "app_name": "FinalDraft12",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -23669,17 +23963,10 @@
       "dependency_impact": ""
     },
     {
-      "id": "baabd71d2eb0",
+      "id": "ad138b3f20cf",
       "app_name": "jamovi",
       "action_status": "pr_open",
       "existing_prs": [
-        {
-          "repo": "ahousseini-recipes",
-          "number": 163,
-          "title": "Deprecate jamovi recipes",
-          "url": "https://github.com/autopkg/ahousseini-recipes/pull/163",
-          "state": "open"
-        },
         {
           "repo": "n8felton-recipes",
           "number": 251,
@@ -23688,7 +23975,7 @@
           "state": "open"
         }
       ],
-      "member_count": 3,
+      "member_count": 2,
       "members_summary": [
         {
           "repo": "n8felton-recipes",
@@ -23705,106 +23992,35 @@
           "has_endofcheck": true,
           "has_arch_var": true,
           "dependent_count": 2
-        },
-        {
-          "repo": "ahousseini-recipes",
-          "rel_path": "jamovi/jamovi.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
         }
       ],
-      "confidence": "HIGH",
-      "keep": [
-        {
-          "repo": "novaksam-recipes",
-          "rel_path": "Jamovi/Jamovi.download.recipe",
-          "reason": "multi-arch support; release channel variable"
-        }
-      ],
-      "deprecate": [
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
         {
           "repo": "n8felton-recipes",
           "rel_path": "jamovi/jamovi.download.recipe",
-          "reason": "no architecture variable; no release variable"
+          "identifier": "com.github.n8felton.download.jamovi",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
         },
         {
-          "repo": "ahousseini-recipes",
-          "rel_path": "jamovi/jamovi.download.recipe",
-          "reason": "no architecture variable; no release variable"
+          "repo": "novaksam-recipes",
+          "rel_path": "Jamovi/Jamovi.download.recipe",
+          "identifier": "com.github.novaksam.download.jamovi",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
         }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use CodeSignatureVerifier, EndOfCheckPhase"
-        },
-        {
-          "category": "favors_keep",
-          "text": "has architecture input variable for arm64/x64 selection; has release channel input variable; more resilient source (url vs unknown); 2 dependent recipes"
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "no architecture variable; no release variable"
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "no architecture variable; no release variable; less resilient source (unknown)"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2024-10 vs 2016-08"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2024-10 vs 2020-05"
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Multi-architecture support",
-          "favors": "keep"
-        },
-        {
-          "key": "release",
-          "label": "Release channel variable",
-          "favors": "keep"
-        },
-        {
-          "key": "source_resilience",
-          "label": "Source resilience",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Metadata quality",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "Commit history",
-          "favors": "deprecate"
-        },
-        {
-          "key": "format",
-          "label": "Recipe format",
-          "favors": null
-        }
-      ],
-      "deprecation_message": "Consider switching to jamovi recipes in the novaksam-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "2 child recipe(s) across 2 repo(s)"
+      ]
     },
     {
       "id": "647feb0e26bc",
@@ -24013,7 +24229,7 @@
     },
     {
       "id": "a13f00b46533",
-      "app_name": "Plantronics Hub",
+      "app_name": "PlantronicsHub",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -24225,112 +24441,6 @@
         }
       ],
       "deprecation_message": "Consider switching to Reaper recipes in the orbsmiv-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "dependency_impact": "1 child recipe(s) across 1 repo(s)"
-    },
-    {
-      "id": "347dae539100",
-      "app_name": "SourceTree",
-      "action_status": "resolved",
-      "existing_prs": [
-        {
-          "repo": "hjuutilainen-recipes",
-          "number": 305,
-          "title": "Change permissions of Sourcetree.app during PkgRequest",
-          "url": "https://github.com/autopkg/hjuutilainen-recipes/pull/305",
-          "state": "merged"
-        }
-      ],
-      "member_count": 2,
-      "members_summary": [
-        {
-          "repo": "faumac-recipes",
-          "rel_path": "Sourcetree/Sourcetree.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "hjuutilainen-recipes",
-          "rel_path": "Atlassian/SourceTree.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 4
-        }
-      ],
-      "confidence": "LOW",
-      "keep": [
-        {
-          "repo": "hjuutilainen-recipes",
-          "rel_path": "Atlassian/SourceTree.download.recipe",
-          "reason": "4 dependents"
-        }
-      ],
-      "deprecate": [
-        {
-          "repo": "faumac-recipes",
-          "rel_path": "Sourcetree/Sourcetree.download.recipe",
-          "reason": "newer duplicate (since 2021)"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use CodeSignatureVerifier, EndOfCheckPhase, url source (www.sourcetreeapp.com)"
-        },
-        {
-          "category": "favors_keep",
-          "text": "4 dependent recipes"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "first committed 2013-09 vs 2021-02"
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Multi-architecture support",
-          "favors": null
-        },
-        {
-          "key": "release",
-          "label": "Release channel variable",
-          "favors": null
-        },
-        {
-          "key": "source_resilience",
-          "label": "Source resilience",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Metadata quality",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "Commit history",
-          "favors": "keep"
-        },
-        {
-          "key": "format",
-          "label": "Recipe format",
-          "favors": null
-        }
-      ],
-      "deprecation_message": "Consider switching to SourceTree recipes in the hjuutilainen-recipes repo. This recipe is deprecated and will be removed in the future.",
       "dependency_impact": "1 child recipe(s) across 1 repo(s)"
     },
     {
@@ -24649,11 +24759,26 @@
       "dependency_impact": ""
     },
     {
-      "id": "e690a1828aad",
+      "id": "0a4edc762218",
       "app_name": "Wireshark",
-      "action_status": "needs_pr",
-      "existing_prs": [],
-      "member_count": 4,
+      "action_status": "needs_evaluation",
+      "existing_prs": [
+        {
+          "repo": "smithjw-recipes",
+          "number": 59,
+          "title": "Deprecate Wireshark recipes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/59",
+          "state": "closed"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "number": 18,
+          "title": "Feature friendly path deleter + formatting changes",
+          "url": "https://github.com/autopkg/smithjw-recipes/pull/18",
+          "state": "merged"
+        }
+      ],
+      "member_count": 5,
       "members_summary": [
         {
           "repo": "homebysix-recipes",
@@ -24680,6 +24805,14 @@
           "dependent_count": 3
         },
         {
+          "repo": "smithjw-recipes",
+          "rel_path": "Wireshark/Wireshark.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
           "repo": "justinrummel-recipes",
           "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
           "has_codesig": true,
@@ -24688,14 +24821,60 @@
           "dependent_count": 1
         }
       ],
-      "confidence": "SKIP",
-      "skip_reason": "different channels (Wireshark stable release vs Wireshark development builds)",
+      "confidence": "UNEVALUATED",
       "keep": [],
       "deprecate": [],
       "rationale": "",
       "criteria": [],
       "deprecation_message": "",
-      "dependency_impact": ""
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "homebysix-recipes",
+          "rel_path": "Wireshark/Wireshark.download.recipe",
+          "identifier": "com.github.homebysix.download.Wireshark",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "rel_path": "Wireshark/Wireshark.download.recipe",
+          "identifier": "com.github.jleggat.Wireshark.download",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "nstrauss-recipes",
+          "rel_path": "Wireshark/Wireshark.download.recipe",
+          "identifier": "com.github.nstrauss.download.Wireshark",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Wireshark/Wireshark.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.wireshark",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "justinrummel-recipes",
+          "rel_path": "WiresharkDev/WiresharkDev.download.recipe",
+          "identifier": "com.justinrummel.download.WiresharkDev",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
+        }
+      ]
     },
     {
       "id": "962ee66a9aeb",

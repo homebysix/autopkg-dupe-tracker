@@ -17,9 +17,16 @@ Use `.venv/bin/python` for any Python commands (e.g., running `build_candidates.
 
 ## Input
 
-Read `data/candidates.json`. It contains candidate sets as JSON. Each set has
-an `id`, `display_name`, and `members` array. Each member includes pre-computed
-metadata:
+Read `data/candidates.json`. The top-level JSON object has four keys:
+
+- `generated_at` — ISO timestamp of when the file was built
+- `repos_dir` — relative path to the cloned recipe repos (e.g.,
+  `../repo-lasso/repos/autopkg`)
+- `stats` — summary counts (total files, parsed, skipped, candidate sets)
+- `sets` — **the array you will iterate over**
+
+Each element in `sets` has an `id`, `display_name`, and `members` array. Each
+member includes pre-computed metadata:
 
 - `has_codesig`, `has_endofcheck`, `has_arch_var`, `has_release_var`
 - `first_commit` (ISO date of the recipe's first git commit)
@@ -44,7 +51,7 @@ Before evaluating, read the override files:
 
 ## What to do for each set
 
-1. **Read each recipe file** at `repos/autopkg/<repo>/<rel_path>` to understand
+1. **Read each recipe file** at `<repos_dir>/<repo>/<rel_path>` to understand
    what it actually does — the metadata gives you signals but reading the recipe
    reveals nuances (asset_regex patterns, hardcoded URLs, custom processors).
 

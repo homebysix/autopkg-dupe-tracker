@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-06-01T07:30:06.960481+00:00",
+  "generated_at": "2026-06-08T07:15:33.687058+00:00",
   "stats": {
     "HIGH": 84,
     "MEDIUM": 105,
-    "LOW": 34,
+    "LOW": 32,
     "SKIP": 43,
     "RESOLVED": 32
   },
-  "total_sets": 266,
+  "total_sets": 272,
   "needs_reassessment": 0,
   "repos_involved": [
     "Darkomen78-recipes",
@@ -424,18 +424,18 @@
       "action_status": "needs_pr",
       "existing_prs": [
         {
-          "repo": "ahousseini-recipes",
-          "number": 113,
-          "title": "Change parent recipe of balenaEtcher.pkg",
-          "url": "https://github.com/autopkg/ahousseini-recipes/pull/113",
-          "state": "merged"
-        },
-        {
           "repo": "andrewvalentine-recipes",
           "number": 81,
           "title": "Deprecate Balena Etcher recipes",
           "url": "https://github.com/autopkg/andrewvalentine-recipes/pull/81",
           "state": "closed"
+        },
+        {
+          "repo": "ahousseini-recipes",
+          "number": 113,
+          "title": "Change parent recipe of balenaEtcher.pkg",
+          "url": "https://github.com/autopkg/ahousseini-recipes/pull/113",
+          "state": "merged"
         },
         {
           "repo": "arubdesu-recipes",
@@ -544,7 +544,7 @@
     },
     {
       "id": "f3f4abe2b6a0",
-      "app_name": "BambuStudio",
+      "app_name": "Bambu Studio",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -646,7 +646,7 @@
     },
     {
       "id": "f00e9f904e6b",
-      "app_name": "GitHubCLI",
+      "app_name": "GitHub CLI",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -1323,7 +1323,7 @@
     },
     {
       "id": "8856528d651b",
-      "app_name": "dockutil",
+      "app_name": "dockutil/",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -1658,7 +1658,7 @@
       "dependency_impact": "1 child recipe across 1 repo (ahousseini-recipes)"
     },
     {
-      "id": "4254821ed59f",
+      "id": "38ad61f38644",
       "app_name": "kitty",
       "action_status": "pr_open",
       "existing_prs": [
@@ -1670,7 +1670,7 @@
           "state": "open"
         }
       ],
-      "member_count": 2,
+      "member_count": 3,
       "members_summary": [
         {
           "repo": "apizz-recipes",
@@ -1687,85 +1687,52 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 3
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "kitty/kitty.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
         }
       ],
-      "confidence": "LOW",
-      "keep": [
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
         {
           "repo": "apizz-recipes",
           "rel_path": "Kitty/Kitty.download.recipe",
-          "reason": "Has PRERELEASE support, more dependents (3 across 2 repos), uses PlistReader for version extraction"
-        }
-      ],
-      "deprecate": [
+          "identifier": "com.github.apizz.download.Kitty",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        },
         {
           "repo": "jaharmi-recipes",
           "rel_path": "KovidGoyal/kitty.download.recipe",
-          "reason": "No prerelease support, earlier first_commit but fewer features, existing deprecation PR open"
+          "identifier": "com.github.jaharmi.download.kitty",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "kitty/kitty.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.kitty",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
         }
       ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both use GitHubReleasesInfoProvider for kovidgoyal/kitty with .*\\.dmg$ regex, both have CodeSignatureVerifier and EndOfCheckPhase, both plist, same code signing requirement"
-        },
-        {
-          "category": "favors_keep",
-          "text": "apizz has PRERELEASE support and more dependents (3 across 2 repos). Uses PlistReader for version extraction"
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "jaharmi has no prerelease option but uses Versioner. Has fewer dependents (3 across 1 repo). Existing PR autopkg/jaharmi-recipes#111 already proposes changing parent"
-        },
-        {
-          "category": "tiebreaker",
-          "text": "jaharmi has earlier first_commit (2015 vs 2018) but the existing deprecation PR and feature gap favor apizz"
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "Both have CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "Both have EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Neither has architecture variable",
-          "favors": null
-        },
-        {
-          "key": "release",
-          "label": "apizz has PRERELEASE support",
-          "favors": "keep"
-        },
-        {
-          "key": "source_resilience",
-          "label": "Both use GitHub Releases",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Both have minimal descriptions",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "jaharmi earlier (2015 vs 2018)",
-          "favors": "deprecate"
-        },
-        {
-          "key": "format",
-          "label": "Both plist",
-          "favors": null
-        }
-      ],
-      "deprecation_message": "Consider switching to kitty recipes in the apizz-recipes repo.",
-      "dependency_impact": "3 child recipes across 1 repo (jaharmi-recipes)",
       "override": {
         "decision": "",
         "reason": "",
@@ -1919,6 +1886,58 @@
       "criteria": [],
       "deprecation_message": "",
       "dependency_impact": ""
+    },
+    {
+      "id": "9e38ae1d7136",
+      "app_name": "cmux",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "kevinmcox-recipes",
+          "rel_path": "Manaflow/cmux.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "cmux/cmux.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "kevinmcox-recipes",
+          "rel_path": "Manaflow/cmux.download.recipe.yaml",
+          "identifier": "com.github.kevinmcox.download.cmux",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "cmux/cmux.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.cmux",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        }
+      ]
     },
     {
       "id": "f207706df597",
@@ -2139,7 +2158,7 @@
     },
     {
       "id": "97645aaac583",
-      "app_name": "Santa",
+      "app_name": "santa",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -2253,6 +2272,66 @@
       ],
       "deprecation_message": "Consider switching to santa recipes in the zentral-recipes repo.",
       "dependency_impact": "3 child recipes across 1 repo (thetornad0-recipes)"
+    },
+    {
+      "id": "61e22e5bcaad",
+      "app_name": "CodexCLI",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "rderewianko-recipes",
+          "number": 67,
+          "title": "CodexCLI: switch to dataJAR QuarantineRemover",
+          "url": "https://github.com/autopkg/rderewianko-recipes/pull/67",
+          "state": "merged"
+        }
+      ],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "rderewianko-recipes",
+          "rel_path": "CodexCLI/CodexCLI.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "OpenAI/Codex_CLI.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "rderewianko-recipes",
+          "rel_path": "CodexCLI/CodexCLI.download.recipe",
+          "identifier": "com.rderewianko.download.CodexCLI",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "OpenAI/Codex_CLI.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.Codex_CLI",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        }
+      ]
     },
     {
       "id": "c75b82c6ddc8",
@@ -2778,8 +2857,68 @@
       "dependency_impact": "1 child recipe across 1 repo (MLBZ521-recipes)"
     },
     {
+      "id": "faddab812d10",
+      "app_name": "Zed",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "almenscorner-recipes",
+          "number": 83,
+          "title": "Change Zed parent to dataJAR's download",
+          "url": "https://github.com/autopkg/almenscorner-recipes/pull/83",
+          "state": "merged"
+        }
+      ],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Zed/Zed.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 2
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Zed/Zed.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "dataJAR-recipes",
+          "rel_path": "Zed/Zed.download.recipe",
+          "identifier": "com.github.dataJAR-recipes.download.Zed",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "github"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Zed/Zed.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.Zed",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "github"
+        }
+      ]
+    },
+    {
       "id": "1c28094cf005",
-      "app_name": "4K Video Downloader Plus",
+      "app_name": "4KVideoDownloaderPlus",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -3126,7 +3265,7 @@
     },
     {
       "id": "bbcf43e8a24f",
-      "app_name": "Affinity Photo",
+      "app_name": "AffinityPhoto",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -5337,6 +5476,58 @@
       "dependency_impact": "1 child recipe across 1 repo"
     },
     {
+      "id": "3f2fbe3088ae",
+      "app_name": "ClaudeCode",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "gregneagle-recipes",
+          "rel_path": "ClaudeCode/ClaudeCode.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Anthropic/Claude_Code.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "gregneagle-recipes",
+          "rel_path": "ClaudeCode/ClaudeCode.download.recipe",
+          "identifier": "com.github.autopkg.gregneagle-recipes.claude-code.download",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "source_type": "url"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Anthropic/Claude_Code.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.Claude_Code",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "unknown"
+        }
+      ]
+    },
+    {
       "id": "9c98d1a0f0e3",
       "app_name": "ClickUp",
       "action_status": "needs_pr",
@@ -5657,7 +5848,7 @@
     },
     {
       "id": "bbf12a11d83f",
-      "app_name": "CloudFlareWarp",
+      "app_name": "Cloudflare WARP",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -5841,7 +6032,7 @@
     },
     {
       "id": "a6ef14749155",
-      "app_name": "Composer",
+      "app_name": "composer",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -6270,7 +6461,7 @@
     },
     {
       "id": "51ab490fcac2",
-      "app_name": "default-browser",
+      "app_name": "defaultbrowser",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -7557,6 +7748,75 @@
       "dependency_impact": "1 child recipe across 1 repo"
     },
     {
+      "id": "c0a14d48d072",
+      "app_name": "FFmpeg",
+      "action_status": "needs_evaluation",
+      "existing_prs": [],
+      "member_count": 3,
+      "members_summary": [
+        {
+          "repo": "faumac-recipes",
+          "rel_path": "FFmpeg/FFmpeg.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "lashomb-recipes",
+          "rel_path": "Martin Riedl/FFmpeg-amd64.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        },
+        {
+          "repo": "lashomb-recipes",
+          "rel_path": "Martin Riedl/FFmpeg-arm64.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "faumac-recipes",
+          "rel_path": "FFmpeg/FFmpeg.download.recipe",
+          "identifier": "com.github.faumac.download.FFmpeg",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "lashomb-recipes",
+          "rel_path": "Martin Riedl/FFmpeg-amd64.download.recipe",
+          "identifier": "com.github.lashomb.download.FFmpeg-amd64",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "lashomb-recipes",
+          "rel_path": "Martin Riedl/FFmpeg-arm64.download.recipe",
+          "identifier": "com.github.lashomb.download.FFmpeg-arm64",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        }
+      ]
+    },
+    {
       "id": "87f2b3819b96",
       "app_name": "Fission",
       "action_status": "needs_pr",
@@ -8611,7 +8871,7 @@
     },
     {
       "id": "b8bf9e2f138e",
-      "app_name": "Hudl Sportscode",
+      "app_name": "HudlSportscode",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -9493,7 +9753,7 @@
     },
     {
       "id": "1edb16973e77",
-      "app_name": "KeeperPasswordManager",
+      "app_name": "Keeper Password Manager",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -9697,7 +9957,7 @@
     },
     {
       "id": "8a3aad74485f",
-      "app_name": "KiteStudentPortal",
+      "app_name": "Kite Student Portal",
       "action_status": "pr_open",
       "existing_prs": [
         {
@@ -10666,7 +10926,7 @@
     },
     {
       "id": "85f377e747cf",
-      "app_name": "malwarebytes",
+      "app_name": "Malwarebytes",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -10699,7 +10959,7 @@
     },
     {
       "id": "7858eb674089",
-      "app_name": "Marked2",
+      "app_name": "Marked 2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -11570,7 +11830,7 @@
     },
     {
       "id": "bf22efed0cd6",
-      "app_name": "MTR",
+      "app_name": "mtr",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -13152,6 +13412,80 @@
       ],
       "deprecation_message": "Consider switching to Poll Everywhere recipes in the dataJAR-recipes repo.",
       "dependency_impact": "1 child recipe across 1 repo (haircut-recipes)"
+    },
+    {
+      "id": "402d47bbfc61",
+      "app_name": "PostgresApp",
+      "action_status": "resolved",
+      "existing_prs": [
+        {
+          "repo": "jleggat-recipes",
+          "number": 113,
+          "title": "Release URL changed",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/113",
+          "state": "merged"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 108,
+          "title": "Sparkle update file URL changed",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/108",
+          "state": "merged"
+        },
+        {
+          "repo": "jleggat-recipes",
+          "number": 52,
+          "title": "Switch to Sparkle feed and .dmg files for PostgresApp download",
+          "url": "https://github.com/autopkg/jleggat-recipes/pull/52",
+          "state": "merged"
+        }
+      ],
+      "member_count": 2,
+      "members_summary": [
+        {
+          "repo": "jleggat-recipes",
+          "rel_path": "PostgresApp/PostgresApp.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 3
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "PostgresApp/PostgresApp.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        }
+      ],
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
+        {
+          "repo": "jleggat-recipes",
+          "rel_path": "PostgresApp/PostgresApp.download.recipe",
+          "identifier": "com.github.jleggat.PostgresApp.download",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "sparkle"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "PostgresApp/PostgresApp.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.PostgresApp",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "github"
+        }
+      ]
     },
     {
       "id": "5ef7a29cb54f",
@@ -14849,7 +15183,7 @@
     },
     {
       "id": "03a24987b36a",
-      "app_name": "Signiant App",
+      "app_name": "SigniantApp",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -14960,7 +15294,7 @@
     },
     {
       "id": "b1918d094b5a",
-      "app_name": "SketchUp Pro 2023 EN",
+      "app_name": "SketchUpPro2023-EN",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -15236,7 +15570,7 @@
     },
     {
       "id": "b5cbaf7ea8f7",
-      "app_name": "SQLPro for Postgres",
+      "app_name": "SQLProforPostgres",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -16953,7 +17287,7 @@
     },
     {
       "id": "8421f9a1a517",
-      "app_name": "yubico-authenticator",
+      "app_name": "Yubico Authenticator",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -19857,7 +20191,7 @@
     },
     {
       "id": "539f950d416c",
-      "app_name": "FCS Express 7 Research",
+      "app_name": "FCSExpress7Research",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -20186,22 +20520,6 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "peshay-recipes",
-          "rel_path": "miro/miro.download.recipe",
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
-          "repo": "wegotoeleven-recipes",
-          "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "dataJAR-recipes",
           "rel_path": "Miro/Miro.download.recipe",
           "has_codesig": true,
@@ -20211,6 +20529,22 @@
         },
         {
           "repo": "moofit-recipes",
+          "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "peshay-recipes",
+          "rel_path": "miro/miro.download.recipe",
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "wegotoeleven-recipes",
           "rel_path": "Miro/MiroUniversal.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
@@ -20424,14 +20758,6 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "kevinmcox-recipes",
-          "rel_path": "Google/AndroidStudio.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": true,
-          "dependent_count": 1
-        },
-        {
           "repo": "novaksam-recipes",
           "rel_path": "Recipes - Download/AndroidStudio-Universal.download.recipe",
           "has_codesig": true,
@@ -20450,6 +20776,14 @@
         {
           "repo": "smithjw-recipes",
           "rel_path": "Android_Studio/Android_Studio.download.recipe.yaml",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": true,
+          "dependent_count": 1
+        },
+        {
+          "repo": "kevinmcox-recipes",
+          "rel_path": "Google/AndroidStudio.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": true,
@@ -20758,7 +21092,7 @@
     },
     {
       "id": "9defca2007ba",
-      "app_name": "DotNet 10 SDK",
+      "app_name": "DotNet10SDK",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -21064,7 +21398,7 @@
     },
     {
       "id": "46a8e6628f42",
-      "app_name": "NVivo 15",
+      "app_name": "NVivo15",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -21363,7 +21697,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password8.download.recipe",
+          "rel_path": "AgileBits/1Password7.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -21371,7 +21705,7 @@
         },
         {
           "repo": "hjuutilainen-recipes",
-          "rel_path": "AgileBits/1Password7.download.recipe",
+          "rel_path": "AgileBits/1Password8.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -21684,15 +22018,23 @@
       "dependency_impact": "moofit: 1 child across 1 repo; wycomco: 1 child across 1 repo"
     },
     {
-      "id": "47eb8edb7cb8",
+      "id": "533445d89946",
       "app_name": "Ghostty",
-      "action_status": "needs_pr",
+      "action_status": "needs_evaluation",
       "existing_prs": [],
-      "member_count": 2,
+      "member_count": 3,
       "members_summary": [
         {
           "repo": "dataJAR-recipes",
           "rel_path": "Ghostty/Ghostty.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Ghostty/Ghostty.download.recipe.yaml",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
@@ -21707,83 +22049,42 @@
           "dependent_count": 4
         }
       ],
-      "confidence": "LOW",
-      "keep": [
-        {
-          "repo": "wardsparadox-recipes",
-          "rel_path": "Ghostty/Ghostty.download.recipe.yaml",
-          "reason": "Adds Versioner and Copier for version-stamped DMG; 4 dependents across 2 repos"
-        }
-      ],
-      "deprecate": [
+      "confidence": "UNEVALUATED",
+      "keep": [],
+      "deprecate": [],
+      "rationale": "",
+      "criteria": [],
+      "deprecation_message": "",
+      "dependency_impact": "",
+      "candidate_members": [
         {
           "repo": "dataJAR-recipes",
           "rel_path": "Ghostty/Ghostty.download.recipe",
-          "reason": "Simpler but fewer features; 1 dependent; earlier first commit (2018)"
+          "identifier": "com.github.dataJAR-recipes.download.Ghostty",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
+        },
+        {
+          "repo": "smithjw-recipes",
+          "rel_path": "Ghostty/Ghostty.download.recipe.yaml",
+          "identifier": "com.github.smithjw.download.Ghostty",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "sparkle"
+        },
+        {
+          "repo": "wardsparadox-recipes",
+          "rel_path": "Ghostty/Ghostty.download.recipe.yaml",
+          "identifier": "com.github.autopkg.wardsparadox.download.Ghostty",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "source_type": "url"
         }
-      ],
-      "rationale": [
-        {
-          "category": "shared",
-          "text": "Both scrape ghostty.org/download for release URL, have CodeSignatureVerifier with same requirement, and EndOfCheckPhase."
-        },
-        {
-          "category": "favors_keep",
-          "text": "wardsparadox-recipes adds Versioner for version extraction and Copier for version-stamped output. Has 4 dependents across 2 repos, significantly more adoption."
-        },
-        {
-          "category": "favors_deprecate",
-          "text": "dataJAR-recipes is simpler but lacks Versioner. Has only 1 dependent despite earlier first commit."
-        },
-        {
-          "category": "tiebreaker",
-          "text": "dataJAR has earlier first commit (2018 for repo) but Ghostty was released in late 2024, so wardsparadox (Jan 2025) was one of the first Ghostty recipes."
-        }
-      ],
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "Both have identical CodeSignatureVerifier",
-          "favors": null
-        },
-        {
-          "key": "endofcheck",
-          "label": "Both have EndOfCheckPhase",
-          "favors": null
-        },
-        {
-          "key": "arch",
-          "label": "Neither has arch variable",
-          "favors": null
-        },
-        {
-          "key": "release",
-          "label": "Neither has release variable",
-          "favors": null
-        },
-        {
-          "key": "source_resilience",
-          "label": "Both scrape same page",
-          "favors": null
-        },
-        {
-          "key": "metadata",
-          "label": "Both have same description",
-          "favors": null
-        },
-        {
-          "key": "history",
-          "label": "wardsparadox Jan 2025 recipe for Ghostty; dataJAR repo older but Ghostty is new",
-          "favors": null
-        },
-        {
-          "key": "format",
-          "label": "dataJAR plist vs wardsparadox yaml",
-          "favors": "deprecate"
-        }
-      ],
-      "deprecation_message": "Consider switching to Ghostty recipes in the wardsparadox-recipes repo.",
-      "dependency_impact": "1 child recipe across 1 repo (dataJAR-recipes)"
+      ]
     },
     {
       "id": "6e4fbc6fa66c",
@@ -21828,7 +22129,7 @@
     },
     {
       "id": "aa1cce5c4f60",
-      "app_name": "MicrosoftAutoUpdate",
+      "app_name": "Microsoft AutoUpdate",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -22938,14 +23239,6 @@
       "member_count": 4,
       "members_summary": [
         {
-          "repo": "Lotusshaney-recipes",
-          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 1
-        },
-        {
           "repo": "apizz-recipes",
           "rel_path": "TailScale/TailScale.download.recipe",
           "has_codesig": true,
@@ -22960,6 +23253,14 @@
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 5
+        },
+        {
+          "repo": "Lotusshaney-recipes",
+          "rel_path": "Tailscale_unstable/Tailscale_unstable.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 1
         },
         {
           "repo": "macprince-recipes",
@@ -23364,7 +23665,7 @@
     },
     {
       "id": "73ecccdc7b1a",
-      "app_name": "sipgate softphone",
+      "app_name": "sipgate-softphone",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -24618,7 +24919,7 @@
     },
     {
       "id": "acccf736bbe4",
-      "app_name": "FabFilterProC2",
+      "app_name": "FabFilter Pro-C 2",
       "action_status": "needs_pr",
       "existing_prs": [],
       "member_count": 2,
@@ -25285,7 +25586,7 @@
     },
     {
       "id": "a13f00b46533",
-      "app_name": "PlantronicsHub",
+      "app_name": "Plantronics Hub",
       "action_status": "resolved",
       "existing_prs": [
         {
@@ -25670,20 +25971,20 @@
           "dependent_count": 1
         },
         {
-          "repo": "foigus-recipes",
-          "rel_path": "Tableau/TableauReader.download.recipe",
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_arch_var": false,
-          "dependent_count": 2
-        },
-        {
           "repo": "homebysix-recipes",
           "rel_path": "TableauReader/TableauReader.download.recipe",
           "has_codesig": true,
           "has_endofcheck": true,
           "has_arch_var": false,
           "dependent_count": 1
+        },
+        {
+          "repo": "foigus-recipes",
+          "rel_path": "Tableau/TableauReader.download.recipe",
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_arch_var": false,
+          "dependent_count": 2
         }
       ],
       "confidence": "MEDIUM",
@@ -25972,14 +26273,35 @@
     {
       "id": "962ee66a9aeb",
       "app_name": "Zoom",
-      "action_status": "needs_pr",
+      "action_status": "pr_open",
       "existing_prs": [
+        {
+          "repo": "Lotusshaney-recipes",
+          "number": 31,
+          "title": "Deprecate Zoom recipes",
+          "url": "https://github.com/autopkg/Lotusshaney-recipes/pull/31",
+          "state": "open"
+        },
+        {
+          "repo": "MLBZ521-recipes",
+          "number": 82,
+          "title": "Deprecate Zoom recipes",
+          "url": "https://github.com/autopkg/MLBZ521-recipes/pull/82",
+          "state": "open"
+        },
         {
           "repo": "MLBZ521-recipes",
           "number": 30,
           "title": "Expected authority name changed to include team identifier",
           "url": "https://github.com/autopkg/MLBZ521-recipes/pull/30",
           "state": "closed"
+        },
+        {
+          "repo": "kkeilson-recipes",
+          "number": 8,
+          "title": "Deprecate Zoom recipes",
+          "url": "https://github.com/autopkg/kkeilson-recipes/pull/8",
+          "state": "open"
         },
         {
           "repo": "smithjw-recipes",

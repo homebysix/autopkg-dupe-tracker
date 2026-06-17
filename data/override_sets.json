@@ -1,7 +1,50 @@
 {
-  "Webex": {
+  "1Password": {
+    "decision": "exception",
+    "id": "2bf9d0dbe4d3",
+    "reason": "These recipes target fundamentally different 1Password versions and download sources: hjuutilainen 1Password7 downloads from app-updates.agilebits.com/download/OPM7 (1Password 7), hjuutilainen 1Password8 and dataJAR both download from downloads.1password.com/mac/1Password.pkg (1Password 8 PKG), and nstrauss downloads the ZIP from a different URL with ARCH and build channel support. The 1Password7 recipe is a distinct version. The nstrauss recipe provides beta/nightly channel access and ZIP format vs PKG. While hjuutilainen-1Password8 and dataJAR target the same source, hjuutilainen additionally unpacks the pkg to verify the inner app signature, serving a different verification purpose."
+  },
+  "AdobeUninstaller": {
+    "id": "7bb96ced9923",
     "prs": [
-      "https://github.com/autopkg/TekTekkers-recipes/pull/9"
+      "https://github.com/autopkg/jazzace-recipes/pull/57"
+    ]
+  },
+  "Aftermath": {
+    "decision": "exception",
+    "id": "327487707720",
+    "reason": "The rtrouton-recipes AftermathUninstaller.download.recipe is a distinct product (Aftermath Uninstaller vs Aftermath main installer) that downloads a different asset (AftermathUninstaller.pkg). The dataJAR recipe also downloads both Aftermath.pkg and AftermathUninstaller.pkg in a single recipe, making it a combined recipe rather than a true duplicate. Additionally, rtrouton's Aftermath.download.recipe uses a different signing authority (JAMF Software/483DWKW443) vs dataJAR (Jaron Bradley/C793NB2B2B), suggesting they may target different release channels or versions of the same tool. This set requires manual review to determine the correct signing authority and whether the combined vs separate approach should be standardized."
+  },
+  "AllSight": {
+    "prs": [
+      "https://github.com/autopkg/jazzace-recipes/pull/55",
+      "https://github.com/autopkg/vmiller-recipes/pull/58"
+    ]
+  },
+  "Amazon Coretto JDK 17": {
+    "decision": "exception",
+    "id": "80fd28506c2a",
+    "reason": "rtrouton-recipes has separate Intel and Apple Silicon recipes targeting different architectures (x64 and aarch64 respectively with different SEARCH_PATTERN). Lotusshaney downloads x64 only (matches the Intel recipe from rtrouton). The rtrouton Apple Silicon recipe downloads a distinct architecture-specific binary. These serve as complementary architecture-specific recipes rather than true duplicates. The Lotusshaney recipe overlaps with rtrouton Intel but rtrouton's pair provides complete architecture coverage."
+  },
+  "Anki": {
+    "prs": [
+      "https://github.com/autopkg/andrewzirkel-recipes/pull/14"
+    ]
+  },
+  "AppCleaner": {
+    "prs": [
+      "https://github.com/autopkg/jleggat-recipes/pull/132",
+      "https://github.com/autopkg/jleggat-recipes/pull/126"
+    ]
+  },
+  "AppleSupportArticle": {
+    "decision": "exception",
+    "id": "3069bb80be43",
+    "reason": "These are fundamentally different recipes that happen to share a name. davidbpirie-recipes downloads a linked binary/pkg from an Apple Support article and verifies its code signature (has CodeSignatureVerifier, designed for downloading Apple software updates). jazzace-recipes downloads the HTML content of an Apple Support article, saves it as an HTML file with a date stamp, and uses Copier to archive it (no CodeSignatureVerifier, designed for monitoring article changes). They serve entirely different purposes: one downloads software, the other archives web content."
+  },
+  "Bartender": {
+    "prs": [
+      "https://github.com/autopkg/keeleysam-recipes/pull/181"
     ]
   },
   "BasicTeX": {
@@ -9,19 +52,66 @@
       "https://github.com/autopkg/andrewvalentine-recipes/pull/75"
     ]
   },
-  "Mattermost": {
+  "Bitwarden": {
     "prs": [
-      "https://github.com/autopkg/ygini-recipes/pull/67"
+      "https://github.com/autopkg/blackthroat-recipes/pull/36"
     ]
   },
-  "Logseq": {
+  "ChatGPT": {
+    "decision": "exception",
+    "id": "61eae045eaa9",
+    "reason": "ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as 'ChatGPT Atlas'. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions."
+  },
+  "Contour": {
+    "decision": "exception",
+    "id": "50c0df2285e9",
+    "reason": "These recipes download from different GitHub repos representing distinct forks/distributions: jc0b-recipes downloads from macadmins/contour (the Mac Admins community fork), while kevinmcox-recipes downloads from headmin/contour (the original author's repo). While both verify the same Mac Admins Open Source signing identity, jc0b recently switched to macadmins/contour via autopkg/jc0b-recipes#22, indicating these are separate release tracks."
+  },
+  "DEPNotify": {
     "prs": [
-      "https://github.com/autopkg/jaharmi-recipes/pull/112"
+      "https://github.com/autopkg/moofit-recipes/pull/206"
     ]
   },
-  "kitty": {
+  "Dash": {
     "prs": [
-      "https://github.com/autopkg/jaharmi-recipes/pull/111"
+      "https://github.com/autopkg/andrewvalentine-recipes/pull/76"
+    ]
+  },
+  "Fantastical": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/119"
+    ]
+  },
+  "FileZilla": {
+    "prs": [
+      "https://github.com/autopkg/primalcurve-recipes/pull/3"
+    ]
+  },
+  "Finale": {
+    "decision": "exception",
+    "id": "30bd8967fced",
+    "reason": "These recipes target distinct Finale versions: dataJAR Finale27 downloads Finale 27 (MAJOR_VERSION=27), dataJAR Finale26-Trial downloads Finale 26 trial (MAJOR_VERSION=26 with different URL), and jazzace downloads Finale using a configurable FINALE_VERS variable (tested with 26 and 27). While jazzace and dataJAR Finale27 overlap when FINALE_VERS=27, jazzace is in a never_keep repo and the dataJAR recipes are version-specific. Additionally, dataJAR has version 26 and 27 as separate recipes targeting distinct distributions."
+  },
+  "Fluid": {
+    "decision": "exception",
+    "id": "c47c03a9a3c9",
+    "reason": "These download different major versions: arubdesu-recipes uses the fluid2.rss Sparkle feed (Fluid 2, identifier com.fluidapp.Fluid2), while jaharmi-recipes uses the fluid1.rss Sparkle feed (Fluid 1). These are distinct major versions. Existing PR autopkg/jaharmi-recipes#98 proposes deprecating the Fluid 1 recipes."
+  },
+  "Flux": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/120"
+    ]
+  },
+  "FreeFileSync": {
+    "prs": [
+      "https://github.com/autopkg/bnpl-recipes/pull/82",
+      "https://github.com/autopkg/dataJAR-recipes/pull/392",
+      "https://github.com/autopkg/dataJAR-recipes/pull/416"
+    ]
+  },
+  "GanttProject": {
+    "prs": [
+      "https://github.com/autopkg/orchard-recipes/pull/51"
     ]
   },
   "GitHub Desktop": {
@@ -29,14 +119,193 @@
       "https://github.com/autopkg/keeleysam-recipes/pull/185"
     ]
   },
-  "Spotify": {
+  "HandBrake": {
     "prs": [
-      "https://github.com/autopkg/psaintemarie-recipes/pull/5"
+      "https://github.com/autopkg/keeleysam-recipes/pull/205"
+    ]
+  },
+  "LibreOffice": {
+    "decision": "exception",
+    "id": "d1e74ca575c4",
+    "reason": "jpiel-recipes Localized-LibreOffice explicitly downloads a language pack alongside LibreOffice, which is a distinct distribution (localized bundle with language pack integration). The Description clearly documents this distinction: 'This recipe downloads latest LibreOffice and the language pack of the specified language.'"
+  },
+  "Logger Pro": {
+    "decision": "exception",
+    "id": "b925e75d946f",
+    "reason": "These are distinct distributions: andrewzirkel downloads the free Logger Pro Update (from vernier.com/download-logger-pro-update-mac, yielding 'Update Logger Pro 3.pkg') while apizz downloads the licensed full installer (from vernier.com/d/XXXXX, requiring a unique download code, yielding 'Install Logger Pro 3.pkg'). The apizz description explicitly states the user must substitute their unique 5-digit code. These serve different deployment scenarios (update vs full licensed install)."
+  },
+  "Logseq": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/112"
+    ]
+  },
+  "Maestral": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/113"
+    ]
+  },
+  "Malwarebytes": {
+    "decision": "exception",
+    "id": "85f377e747cf",
+    "reason": "These are distinct products: homebysix downloads the standard consumer/free Malwarebytes from downloads.malwarebytes.com/file/mb-mac, while weswhet downloads Malwarebytes Incident Response (enterprise/Nebula agent) via a custom API requiring CLIENT_ID, CLIENT_SECRET, and ACCOUNT_ID credentials. The weswhet description explicitly states 'Downloads Malwarebytes Incident Response via the API' and requires enterprise account credentials. Different products serving different use cases."
+  },
+  "Mattermost": {
+    "prs": [
+      "https://github.com/autopkg/ygini-recipes/pull/67"
+    ]
+  },
+  "Microsoft Teams": {
+    "decision": "exception",
+    "id": "8f89a97c6308",
+    "reason": "MicrosoftTeamsClassic.download.recipe downloads a different product (Teams Classic via go.microsoft.com/fwlink/?linkid=869428) from the other two recipes (Teams new via MAU XML). The dataJAR and rtrouton Teams recipes are functionally equivalent but rtrouton also includes Teams Classic as a separate recipe. These are distinct distributions (Teams vs Teams Classic) within the same set."
+  },
+  "MunkiAdmin": {
+    "decision": "exception",
+    "id": "3270a6dedc84",
+    "reason": "These are completely different applications: jleggat downloads MunkiAdmin (hjuutilainen/munkiadmin) - a macOS admin tool for Munki, while orchard downloads Protege (protegeproject/protege-distribution) - an ontology editor. Different GitHub repos, different products. They were incorrectly grouped, likely because the orchard recipe has NAME input set to 'MunkiAdmin' which appears to be a copy-paste error in the recipe extract data."
+  },
+  "NVivo": {
+    "decision": "exception",
+    "id": "3925e444856f",
+    "reason": "These recipes target distinct NVivo versions: andrewvalentine targets NVivo 12 (download URL: NVivo12forMac), joshua-d-miller has separate recipes for NVivo 10, 11, and current, and jazzace targets NVivo 20+ (current with VersionSplitter for major version). They download from version-specific URLs at download.qsrinternational.com. These are distinct version-pinned distributions, not true duplicates."
+  },
+  "Nessus Agent": {
+    "prs": [
+      "https://github.com/autopkg/skoobasteeve-recipes/pull/6"
+    ]
+  },
+  "Nudge": {
+    "decision": "exception",
+    "id": "3e46442038f0",
+    "reason": "The aanklewicz-recipes NudgeLogger.download.recipe downloads specifically Nudge_Logger (TYPE=\"_Logger\"), while erikng-recipes Nudge.download.recipe downloads Nudge itself (TYPE=\"\"). These are distinct products from the same GitHub repo (macadmins/nudge) targeting different assets. The TYPE variable selects different pkg assets (Nudge vs Nudge_Logger vs Nudge_Suite). These are not duplicates but rather recipes for distinct distribution variants."
+  },
+  "Opera": {
+    "prs": [
+      "https://github.com/autopkg/keeleysam-recipes/pull/200"
     ]
   },
   "Postman": {
     "prs": [
       "https://github.com/autopkg/psaintemarie-recipes/pull/4"
     ]
+  },
+  "PritunlClient": {
+    "prs": [
+      "https://github.com/autopkg/Tecnico1931-recipes/pull/14"
+    ]
+  },
+  "Rectangle": {
+    "prs": [
+      "https://github.com/autopkg/peetinc-recipes/pull/17"
+    ]
+  },
+  "RingCentral": {
+    "decision": "exception",
+    "id": "5ce910bbe42a",
+    "reason": "These recipes download architecture-specific builds: bradclare downloads Intel by default (with documented override for arm64), while dbergstrom downloads the arm64 build specifically. They are complementary architecture-specific recipes, not true duplicates. The bradclare recipe already documents how to switch architectures via DOWNLOAD_URL override."
+  },
+  "ScummVM": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/114"
+    ]
+  },
+  "SmartGit": {
+    "decision": "exception",
+    "id": "2ccd9b7d10e1",
+    "reason": "This set includes ygini-recipes/arm/armforge.download.recipe which downloads Arm Forge (a completely different application from developer.arm.com) despite being grouped in the same set. Its NAME variable is incorrectly set to 'SmartGit' in the extract, but it downloads from a different URL (developer.arm.com/tools-and-software/server-and-hpc/downloads/arm-forge) and is a distinct product. The two actual SmartGit recipes (almenscorner and ygini) both have ARCH support but differ: almenscorner has CodeSignatureVerifier while ygini does not. The mixed product types make this set unsuitable for a single recommendation."
+  },
+  "Spotify": {
+    "prs": [
+      "https://github.com/autopkg/psaintemarie-recipes/pull/5"
+    ]
+  },
+  "TeXLiveUtility": {
+    "prs": [
+      "https://github.com/autopkg/bnpl-recipes/pull/91"
+    ]
+  },
+  "Terraform": {
+    "prs": [
+      "https://github.com/autopkg/timsutton-recipes/pull/119"
+    ]
+  },
+  "Topaz Gigapixel": {
+    "decision": "exception",
+    "id": "be4da9cdeb75",
+    "reason": "These recipes download different Topaz products. markkenny downloads 'gigapixel' (Topaz Gigapixel AI) while rderewianko downloads 'gigapixelstudio' (Topaz Gigapixel Studio) from different Topaz download paths. The different product slugs (d/gigapixel vs d/gigapixelstudio) indicate distinct products."
+  },
+  "Touche": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/85"
+    ]
+  },
+  "Transmit": {
+    "decision": "exception",
+    "id": "25ed63de622b",
+    "reason": "These recipes download different major versions of Transmit. The recipes repo downloads Transmit 4 (description says 'latest Transmit 4') using Panic's general update.php feed, while keeleysam downloads the current release using the transmit-en.xml feed. The recipes repo version is likely obsolete as Transmit 5 is current, but they target different product versions. A deprecation PR is already open at autopkg/keeleysam-recipes#188."
+  },
+  "Typora": {
+    "prs": [
+      "https://github.com/autopkg/andrewvalentine-recipes/pull/79"
+    ]
+  },
+  "Vectorworks": {
+    "prs": [
+      "https://github.com/autopkg/jazzace-recipes/pull/55",
+      "https://github.com/autopkg/vmiller-recipes/pull/58"
+    ]
+  },
+  "Webex": {
+    "prs": [
+      "https://github.com/autopkg/TekTekkers-recipes/pull/9"
+    ]
+  },
+  "Wireshark": {
+    "decision": "exception",
+    "id": "0a4edc762218",
+    "reason": "This set contains recipes for distinct distributions: justinrummel-recipes/WiresharkDev downloads automated development builds (RC releases from wireshark.org/download/automated/osx/) which is explicitly a different distribution from the stable builds downloaded by the other four recipes. The WiresharkDev description says 'For stable versions of Wireshark, see the Wireshark recipes in homebysix-recipes.' The remaining stable recipes (homebysix, jleggat, nstrauss, smithjw) are duplicates but the mixed set with a dev build makes this complex. A previous deprecation PR for smithjw-recipes (autopkg/smithjw-recipes#59) was closed."
+  },
+  "Zoom": {
+    "prs": [
+      "https://github.com/autopkg/smithjw-recipes/pull/58"
+    ]
+  },
+  "Zulip": {
+    "prs": [
+      "https://github.com/autopkg/ygini-recipes/pull/70",
+      "https://github.com/autopkg/keeleysam-recipes/pull/179",
+      "https://github.com/autopkg/keeleysam-recipes/pull/203"
+    ]
+  },
+  "balenaEtcher": {
+    "prs": [
+      "https://github.com/autopkg/andrewvalentine-recipes/pull/81"
+    ]
+  },
+  "dockutil": {
+    "id": "8856528d651b",
+    "prs": [
+      "https://github.com/autopkg/andrewzirkel-recipes/pull/12"
+    ]
+  },
+  "iTerm2": {
+    "prs": [
+      "https://github.com/autopkg/keeleysam-recipes/pull/200"
+    ]
+  },
+  "kitty": {
+    "prs": [
+      "https://github.com/autopkg/jaharmi-recipes/pull/111"
+    ]
+  },
+  "swiftDialog": {
+    "prs": [
+      "https://github.com/autopkg/moofit-recipes/pull/223"
+    ]
+  },
+  "yo": {
+    "decision": "exception",
+    "id": "7f0740aa2b11",
+    "reason": "These recipes download from different GitHub repos (forks). homebysix downloads from sheagcraig/yo (original), while moofit downloads from moofit/yo (fork) with additional CLIENT and VERSION input variables for customization. The moofit recipe explicitly sources from a custom fork. A closed deprecation PR exists at autopkg/moofit-recipes#200."
   }
 }

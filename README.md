@@ -1,8 +1,8 @@
 # AutoPkg Dupe Tracker
 
-Tracks and resolves redundant recipes across the [AutoPkg](https://github.com/autopkg) GitHub organization.
+Finds and helps resolve redundant recipes across the [AutoPkg](https://github.com/autopkg) GitHub organization.
 
-![Dashboard Screenshot](images/dashboard.png)
+[![Screenshot of Dashboard](images/dashboard.png)](https://homebysix.github.io/autopkg-dupe-tracker/)
 
 **[View the dashboard](https://homebysix.github.io/autopkg-dupe-tracker/)**
 
@@ -10,65 +10,108 @@ Tracks and resolves redundant recipes across the [AutoPkg](https://github.com/au
 
 ## What this does
 
-Multiple AutoPkg recipe repos often contain recipes for the same application. This project identifies those duplicates and recommends which to keep and which to deprecate, based on functional criteria specific to each recipe type.
+Multiple AutoPkg recipe repos often contain download recipes for the same application. This project finds those duplicates across the AutoPkg org and recommends which recipe to keep as the long-term parent, which to deprecate or reparent, and which sets still need a human to look closer. The recommendations are deterministic — they come from recipe quality signals and explicit overrides, not from an LLM or any other stochastic scorer.
+
+The output is advisory. It does not open PRs, edit recipe repos, or remove recipes. It produces a static dashboard plus the JSON behind it from a local cohort of AutoPkg repos.
+
+It keeps two decisions separate:
+
+1. **Duplicate detection** — are these recipes trying to serve the same role?
+2. **Keeper selection** — if so, which recipe is the best parent to keep?
+
+### Duplicate detection
+
+The tool scans download recipes and groups the ones that appear to target the same software. Stronger matches come from shared upstream sources: the same GitHub release repo, the same Sparkle appcast, a normalized download URL, a code signing authority plus normalized name, or a source domain plus normalized name.
+
+Name-only and fuzzy name matches are treated cautiously. They can still form a candidate set, but they produce lower duplicate confidence and usually route to `review` rather than an automatic deprecation recommendation.
+
+The tool also looks for evidence that similar recipes are *not* actually substitutable. Sets with incompatible artifact formats, or descriptions that signal a fork, enterprise build, portable variant, rebrand, community edition, or other distinct distribution, stay visible but are not treated as simple deprecation candidates.
+
+### Keeper selection
+
+For sets that look substitutable, each member recipe gets a deterministic quality score. The score favors recipes with `CodeSignatureVerifier`, `EndOfCheckPhase`, resilient source providers (especially GitHub releases and Sparkle appcasts), architecture or release/channel input variables, useful descriptions, and dependent child recipes that already rely on the recipe as a parent. Repo-level override metadata can keep a repo from being preferred as a keeper.
+
+Keeper ordering is based on those quality signals first, then repo-level overrides, then `first_commit` for close ties, and finally repo/path identity for anything still tied. Display names only label and sort the dashboard groups — they never choose the keeper. `first_commit` matters because the older recipe is often the established parent when two recipes are otherwise similar, but it is only a tiebreaker and never outweighs a clear quality difference.
 
 ## How recipe maintainers can help
 
-If you maintain a recipe repo in the AutoPkg org, check the [dashboard](https://homebysix.github.io/autopkg-dupe-tracker/) and filter by your repo name. You can help by:
+If you maintain a recipe repo in the AutoPkg org, check the [dashboard](https://homebysix.github.io/autopkg-dupe-tracker/) and filter by your repo name to see the sets that affect you.
 
-- **Merging open deprecation PRs** submitted to your repo
-- **Adding `DeprecationWarning`** to recipes flagged for deprecation
-- **Updating `ParentRecipe`** references in downstream recipes to point to the recommended keeper
+When the dashboard flags one of your recipes for deprecation, you can:
 
-## Workflow
+- **Add a `DeprecationWarning`** (or a clear deprecation message) pointing to the recommended keeper.
+- **Update `ParentRecipe`** references in downstream recipes to point to the keeper.
+- **Reparent or remove the duplicate** once dependents have moved over.
 
-### Local evaluation
+You can also make the recommendations themselves more accurate by making each recipe's intent and quality explicit:
 
-These steps should be run periodically, manually:
+- Add `CodeSignatureVerifier` whenever the downloaded app or package can be verified.
+- Add `EndOfCheckPhase` so recipes stop cleanly after determining the latest version.
+- Prefer durable upstream providers like `GitHubReleasesInfoProvider` or Sparkle appcasts over brittle scrape/download URLs.
+- Use clear `NAME`, `Identifier`, and folder naming so equivalent recipes normalize to the same product name.
+- Add a concise description when a recipe is intentionally distinct (enterprise build, fork, portable variant, rebrand, special channel, or architecture-specific distribution).
+- Preserve parent/child relationships when a download recipe is the canonical parent for install, pkg, munki, or other child recipes.
 
-1. **Clone the AutoPkg repos** locally by running `scripts/clone_repos.sh`. This fetches all repos in the AutoPkg org into an `autopkg/` sibling directory. Re-run periodically to pull updates. (Alternatively, [repo-lasso](https://github.com/homebysix/repo-lasso) can maintain the local clones.)
+If a set is marked `review`, the most useful fixes are usually a more precise source URL or provider, a code signing verifier, or a description that explains why the recipe should stay separate.
 
-2. **Build candidates** from your local clones (`--repos-dir` points to wherever the AutoPkg repos live):
+## Hosted refreshes
 
-   ```bash
-   python3 scripts/build_candidates.py --repos-dir ./autopkg -o data/candidates.json
-   ```
+The [refresh workflow](.github/workflows/refresh.yml) is self-contained: it checks out this repo, installs the Python dependencies, runs the tests, clones the AutoPkg org repos, builds the dashboard into `docs/`, and commits the result. GitHub Pages serves `docs/` from the default branch, so the published site updates on each weekly run.
 
-3. **Run LLM evaluation** using the prompt at [`prompts/evaluate_candidates.md`](prompts/evaluate_candidates.md). The prompt reads `data/candidates.json` directly and writes results to `data/evaluations/YYYY-MM-DD.json`. For large candidate lists, tell the LLM to process ~50 sets at a time. Commit the results. Works with any LLM that can read files and run shell commands.
+## Run
 
-4. **Record exceptions** in `data/override_sets.json` when a recommendation should be overridden (won't-fix decisions, manual PR links for historical PRs, or cases where the normal criteria don't apply).
+Build the dashboard from a local cohort of AutoPkg repos:
 
-5. **Flag repos** in `data/override_repos.json` when a repo should never be the recommended keeper (unmaintained, maintainer handing off recipes, etc.).
+```bash
+python3 dedupe.py \
+  --repos-dir ~/Developer/_personal/repo-lasso/repos/autopkg \
+  --output-dir docs \
+  --override-repos data/override_repos.json \
+  --override-sets data/override_sets.json
+```
 
-6. **Create deprecation PRs** in the appropriate AutoPkg recipe repos. The dashboard detects these automatically via GitHub API.
+For faster local iteration without git history (skips `first_commit` lookups):
 
-### Dashboard refresh
+```bash
+python3 dedupe.py --repos-dir ~/Developer/_personal/repo-lasso/repos/autopkg --skip-git
+```
 
-The [dashboard](https://homebysix.github.io/autopkg-dupe-tracker/) renders `docs/dashboard.json` and displays each candidate set with its recommendation, rationale, PR status, dependency impact, and any overrides or repo flags. Recipe maintainers can filter by repo to see what affects them.
+`generated_at` in the output is run metadata so a published dashboard can be told apart from a stale one. It is not an input to duplicate detection, keeper selection, or ranking.
 
-The [refresh workflow](.github/workflows/refresh.yml) runs the full pipeline weekly: cloning repos, building candidates, checking PR status, and assembling the dashboard. It uses the same scripts you run locally (steps 1-2 above), plus:
+## Outputs
 
-- **`scripts/check_pr_status.py`** — searches for deprecation PRs that touch tracked recipes, merges with manual PR links from `data/override_sets.json` &rarr; `data/pr_status.json`
-- **`scripts/build_dashboard.py`** — assembles candidates + evaluations + overrides + PR status &rarr; `docs/dashboard.json`
+- `docs/dashboard.json` — ranked structured data.
+- `docs/index.html` — the static dashboard.
+
+## Tests
+
+```bash
+python3 -m unittest discover -s tests
+```
 
 ## Disclaimer
 
-The deduplication recommendations on this dashboard are generated with the assistance of generative AI and are meant as a starting point for human review. They may contain errors or miss important context. Always read the actual recipes and consider the broader impact before acting on any recommendation.
+These recommendations are produced by automated heuristics and are meant as a starting point for human review. They can be wrong or miss important context. Always read the actual recipes and consider the broader impact before acting on any recommendation.
 
 ## Repository structure
 
 ```
-scripts/                 Automation scripts (run by GH Actions and locally)
-prompts/                 LLM prompt templates for evaluation (one per recipe type)
+dedupe.py                Convenience entry point (wraps recipe_dedupe.cli)
+recipe_dedupe/           Analysis package
+  recipe.py              Scans and parses download recipes
+  candidates.py          Groups recipes into candidate duplicate sets
+  scoring.py             Scores keepers; assigns duplicate and keeper confidence
+  dashboard.py           Renders dashboard.json and index.html
+  cli.py, io.py, models.py
+scripts/
+  clone_repos.sh         Clones the AutoPkg org repos locally
 data/
-  candidates.json        Auto-generated candidate sets
-  evaluations/           LLM evaluation results (committed manually)
-  override_sets.json     Per-set exceptions and manual PR links
-  override_repos.json    Per-repo flags (e.g., never_keep)
-  pr_status.json         Auto-generated PR status
+  override_repos.json    Per-repo flags (e.g. never_keep)
+  override_sets.json     Per-set exceptions
 docs/
-  index.html             The dashboard
-  dashboard.json             Dashboard data (auto-generated)
+  index.html             The dashboard (generated)
+  dashboard.json         Dashboard data (generated)
+tests/                   Unit tests
 ```
 
 ## License

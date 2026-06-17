@@ -1,4 +1,4 @@
-target-version = "py38"
+target-version = "py310"
 line-length = 100
 
 [lint]
@@ -11,4 +11,8 @@ select = [
 ]
 
 [lint.isort]
-known-first-party = ["scripts"]
+known-first-party = ["recipe_dedupe"]
+
+[lint.per-file-ignores]
+# CSS/JS/HTML string templates exceed the line-length limit.
+"recipe_dedupe/dashboard.py" = ["E501"]

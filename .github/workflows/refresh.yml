@@ -3,10 +3,14 @@ name: Dashboard Refresh
 on:
   workflow_dispatch:
   schedule:
-    - cron: "31 2 * * 1"  # Weekly Monday 2:31 UTC
+    - cron: "47 2 * * 1"  # Weekly Monday 2:47 UTC
 
 permissions:
   contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: false
 
 jobs:
   refresh:
@@ -14,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out this repo
+      - name: Check out tracker repo
         uses: actions/checkout@v4
 
       - name: Set up Python
@@ -23,31 +27,28 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install pyyaml
+        run: python3 -m pip install -r requirements.txt
+
+      - name: Run tests
+        run: python3 -m unittest discover -s tests
 
       - name: Clone AutoPkg org repos
         env:
           GH_TOKEN: ${{ github.token }}
         run: bash scripts/clone_repos.sh autopkg
 
-      - name: Build candidate sets
-        run: >
-          python3 scripts/build_candidates.py
-          --repos-dir autopkg
-          --output data/candidates.json
-
-      - name: Check PR status
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/check_pr_status.py --repos-dir autopkg
-
       - name: Build dashboard
-        run: python3 scripts/build_dashboard.py
+        run: >
+          python3 dedupe.py
+          --repos-dir autopkg
+          --output-dir docs
+          --override-repos data/override_repos.json
+          --override-sets data/override_sets.json
 
       - name: Commit and push
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add docs/dashboard.json
+          git add docs/index.html docs/dashboard.json
           git diff --staged --quiet || git commit -m "Refresh dashboard data"
           git push

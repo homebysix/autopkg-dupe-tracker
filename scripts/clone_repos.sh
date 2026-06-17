@@ -21,12 +21,17 @@ for REPO in $REPOS; do
     COUNT=$((COUNT + 1))
     if [ -d "$REPO" ]; then
         echo "[$COUNT/$TOTAL] Updating $REPO..."
+        # Backfill history for clones made before the blobless switch, else
+        # first_commit stays blind to anything past the shallow boundary.
+        if [ -f "$REPO/.git/shallow" ]; then
+            git -C "$REPO" fetch --unshallow --filter=blob:none --quiet 2>/dev/null || true
+        fi
         git -C "$REPO" pull --ff-only --quiet 2>/dev/null || true
     else
         echo "[$COUNT/$TOTAL] Cloning $REPO..."
-        git clone --depth 1 "https://github.com/autopkg/$REPO.git" "$REPO" 2>/dev/null || {
+        git clone --filter=blob:none "https://github.com/autopkg/$REPO.git" "$REPO" 2>/dev/null || {
             echo "  Warning: failed to clone $REPO, retrying..."
-            git clone --depth 1 "https://github.com/autopkg/$REPO.git" "$REPO" 2>/dev/null || {
+            git clone --filter=blob:none "https://github.com/autopkg/$REPO.git" "$REPO" 2>/dev/null || {
                 echo "  Warning: failed to clone $REPO after 2 tries, skipping."
             }
         }

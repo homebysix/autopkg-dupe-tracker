@@ -64,7 +64,7 @@ Build the dashboard from a local cohort of AutoPkg repos:
 
 ```bash
 python3 dedupe.py \
-  --repos-dir ~/Developer/_personal/repo-lasso/repos/autopkg \
+  --repos-dir ../repo-lasso/repos/autopkg \
   --output-dir docs \
   --override-repos data/override_repos.json \
   --override-sets data/override_sets.json
@@ -73,7 +73,7 @@ python3 dedupe.py \
 For faster local iteration without git history (skips `first_commit` lookups):
 
 ```bash
-python3 dedupe.py --repos-dir ~/Developer/_personal/repo-lasso/repos/autopkg --skip-git
+python3 dedupe.py --repos-dir ../repo-lasso/repos/autopkg --skip-git
 ```
 
 `generated_at` in the output is run metadata so a published dashboard can be told apart from a stale one. It is not an input to duplicate detection, keeper selection, or ranking.

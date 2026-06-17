@@ -67,7 +67,7 @@ If an aligned PR exists, update the ledger (Step 4) and skip the rest.
 
 Read the recipe files at their local cache paths to confirm the dashboard's call matches reality:
 
-- **Local recipe cache**: `~/Developer/_personal/repo-lasso/repos/autopkg/<repo>/<rel_path>`
+- **Local recipe cache**: `../repo-lasso/repos/autopkg/<repo>/<rel_path>`
 
 Confirm the keeper (`keep[0]`) really is the better long-term parent and the `deprecate` entries really are substitutable duplicates — not forks, enterprise builds, portable variants, rebrands, or architecture-specific distributions. If reading the recipes contradicts the dashboard, stop and report rather than opening a PR.
 
@@ -103,7 +103,7 @@ Recipes are either plist (`.recipe`) or YAML (`.recipe.yaml`); edit in the file'
 ### Find child recipes (for reparenting)
 
 ```bash
-grep -r "<deprecated-identifier>" ~/Developer/_personal/repo-lasso/repos/autopkg \
+grep -r "<deprecated-identifier>" ../repo-lasso/repos/autopkg \
   --include="*.recipe" --include="*.recipe.yaml" -l
 ```
 

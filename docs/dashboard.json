@@ -2284,7 +2284,6 @@
           "parent_recipe": "",
           "processors": [
             "SparkleUpdateInfoProvider",
-            "FindAndReplace",
             "URLDownloader",
             "EndOfCheckPhase",
             "CodeSignatureVerifier"
@@ -12219,168 +12218,6 @@
       "verdict": "recommend"
     },
     {
-      "app_name": "YubicoPivTool",
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier"
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase"
-        },
-        {
-          "key": "source",
-          "label": "Source resilience"
-        },
-        {
-          "key": "arch",
-          "label": "Architecture support"
-        },
-        {
-          "key": "release",
-          "label": "Release/channel support"
-        },
-        {
-          "key": "history",
-          "label": "First commit tiebreaker"
-        }
-      ],
-      "deprecate": [
-        {
-          "dependent_count": 1,
-          "reason": "weaker duplicate",
-          "rel_path": "Yubico/YubicoPivTool.download.recipe.yaml",
-          "repo": "discentem-recipes",
-          "score": 6.75
-        }
-      ],
-      "deprecation_message": "Consider switching to YubicoPivTool recipes in the rderewianko-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "duplicate_confidence": "HIGH",
-      "id": "deba2a4286b6",
-      "keep": [
-        {
-          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
-          "rel_path": "YubicoPivTool/YubicoPivTool.download.recipe",
-          "repo": "rderewianko-recipes",
-          "score": 7.35
-        }
-      ],
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "same url source",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Yubico Limited (LQA3CS5MM7)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "discentem-recipes"
-          ],
-          "description": "",
-          "display_name": "YubicoPivTool",
-          "first_commit": "2021-08-05T11:48:09-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.discentem.download.YubicoPivTool",
-          "input_vars": [
-            "re_pattern"
-          ],
-          "name_key": "yubicopivtool",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Yubico/YubicoPivTool.download.recipe.yaml",
-          "repo": "discentem-recipes",
-          "skip_reason": null,
-          "source_domain": "developers.yubico.com",
-          "source_key": "developers.yubico.com/yubico-piv-tool/releases",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Yubico Limited (LQA3CS5MM7)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "rderewianko-recipes"
-          ],
-          "description": "Downloads the latest Yubico PIV Tool installer package.",
-          "display_name": "YubicoPivTool",
-          "first_commit": "2026-02-20T08:59:59-08:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.rderewianko.download.YubicoPivTool",
-          "input_vars": [
-            "DOWNLOAD_URL",
-            "NAME"
-          ],
-          "name_key": "yubicopivtool",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLTextSearcher",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "YubicoPivTool/YubicoPivTool.download.recipe",
-          "repo": "rderewianko-recipes",
-          "skip_reason": null,
-          "source_domain": "developers.yubico.com",
-          "source_key": "developers.yubico.com/yubico-piv-tool/releases",
-          "source_type": "url"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match"
-        },
-        {
-          "category": "artifact",
-          "text": "same artifact format: pkg"
-        },
-        {
-          "category": "keeper",
-          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
-        }
-      ],
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: pkg"
-        ],
-        "same_product": true
-      },
-      "verdict": "recommend"
-    },
-    {
       "app_name": "Zoom Outlook Plugin",
       "criteria": [
         {
@@ -16332,7 +16169,7 @@
     {
       "app_name": "Zoom",
       "duplicate_confidence": "HIGH",
-      "id": "962ee66a9aeb",
+      "id": "3ffc0c6b1fc8",
       "keeper_confidence": "NONE",
       "match_reasons": [
         "same normalized name and code signing authority",
@@ -16341,48 +16178,8 @@
         "same url source",
         "similar name plus weak identity match"
       ],
-      "member_count": 5,
+      "member_count": 4,
       "members": [
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Zoom Video Communications, Inc. (BJ4HAAB9B3)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "Lotusshaney-recipes"
-          ],
-          "description": "Downloads the latest version of Zoom.",
-          "display_name": "Zoom",
-          "first_commit": "2024-10-15T10:01:36+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.Lotusshaney.download.zoomus",
-          "input_vars": [
-            "DOWNLOAD_URL",
-            "NAME",
-            "USER_AGENT"
-          ],
-          "name_key": "zoom",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Zoom/Zoom.download.recipe",
-          "repo": "Lotusshaney-recipes",
-          "skip_reason": null,
-          "source_domain": "zoom.us",
-          "source_key": "zoom.us/client/latest/zoominstallerit.pkg",
-          "source_type": "url"
-        },
         {
           "artifact_formats": [
             "pkg"
@@ -25881,7 +25678,6 @@
           "parent_recipe": "",
           "processors": [
             "SparkleUpdateInfoProvider",
-            "FindAndReplace",
             "URLDownloader",
             "EndOfCheckPhase",
             "Unarchiver",
@@ -30373,6 +30169,99 @@
       "verdict": "review"
     },
     {
+      "app_name": "Adobe RemoteUpdateManager",
+      "duplicate_confidence": "LOW",
+      "id": "bac79347924d",
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized recipe name"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "jgstew-recipes"
+          ],
+          "description": "Downloads the latest version of Adobe Remote Update Manager. Input TYPE must be `dmg` or `zip`. Input ARCH must be `Win`, `WinARM64`, `MacIntel`, or `AppleSilicon`.",
+          "display_name": "AdobeRemoteUpdateManager",
+          "first_commit": "2022-08-19T21:33:56-04:00",
+          "has_arch_var": true,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jgstew.download.AdobeRemoteUpdateManager",
+          "input_vars": [
+            "ARCH",
+            "NAME",
+            "TYPE"
+          ],
+          "name_key": "adoberemoteupdatemanager",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloaderPython",
+            "EndOfCheckPhase"
+          ],
+          "rel_path": "Adobe/RemoteUpdateManager.download.recipe.yaml",
+          "repo": "jgstew-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:URLDownloaderPython",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"JQ525L2MZD\")"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "moofit-recipes"
+          ],
+          "description": "Downloads the latest version of Adobe's RemoteUpdateManager from Adobe. The \"ARCH\" input variable must be\n    set to either \"MacIntel\" (default) or \"AppleSilicon\"",
+          "display_name": "Adobe RemoteUpdateManager",
+          "first_commit": "2019-08-20T17:47:14+01:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.moofit-recipes.download.RemoteUpdateManager",
+          "input_vars": [
+            "ARCH",
+            "NAME"
+          ],
+          "name_key": "adoberemoteupdatemanager",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Adobe/RemoteUpdateManager.download.recipe",
+          "repo": "moofit-recipes",
+          "skip_reason": null,
+          "source_domain": "deploymenttools.acp.adobeoobe.com",
+          "source_key": "deploymenttools.acp.adobeoobe.com/rum/macintel/remoteupdatemanager.dmg",
+          "source_type": "url"
+        }
+      ],
+      "skip_reason": "different artifact formats: dmg, zip",
+      "substitutability": {
+        "compatible_artifact": false,
+        "notes": [
+          "different artifact formats: dmg, zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "review"
+    },
+    {
       "app_name": "Affinity Designer",
       "duplicate_confidence": "LOW",
       "id": "d597367390ec",
@@ -31235,6 +31124,135 @@
       "verdict": "review"
     },
     {
+      "app_name": "autopkg",
+      "duplicate_confidence": "LOW",
+      "id": "1cfdfbc060c9",
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same github source",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 3,
+      "members": [
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "jgstew-recipes"
+          ],
+          "description": "download zip for released AutoPkg",
+          "display_name": "autopkg",
+          "first_commit": "2022-04-15T13:07:13-04:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jgstew.download.AutoPkgReleasePkg",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "autopkg",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase"
+          ],
+          "rel_path": "AutoPkgRecipe/AutoPkgReleasePkg.download.recipe.yaml",
+          "repo": "jgstew-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "autopkg/autopkg",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "jgstew-recipes"
+          ],
+          "description": "download zip for released AutoPkg",
+          "display_name": "autopkg",
+          "first_commit": "2022-04-15T13:07:13-04:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jgstew.download.AutoPkgReleaseSource",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "autopkg",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase"
+          ],
+          "rel_path": "AutoPkgRecipe/AutoPkgReleaseSource.download.recipe.yaml",
+          "repo": "jgstew-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "autopkg/autopkg",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "fleet-recipes",
+            "recipes",
+            "thenikola-recipes"
+          ],
+          "description": "Downloads the current release of AutoPkg from the AutoPkg release page on Github: https://github.com/autopkg/autopkg/releases",
+          "display_name": "AutoPkg",
+          "first_commit": "2020-09-03T09:52:32-07:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.autopkg.download.AutoPkg-Release",
+          "input_vars": [
+            "INCLUDE_PRERELEASES",
+            "NAME"
+          ],
+          "name_key": "autopkg",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase"
+          ],
+          "rel_path": "AutoPkg/AutoPkg-Release.download.recipe",
+          "repo": "recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "autopkg/autopkg",
+          "source_type": "github"
+        }
+      ],
+      "skip_reason": "different artifact formats: pkg, zip",
+      "substitutability": {
+        "compatible_artifact": false,
+        "notes": [
+          "different artifact formats: pkg, zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "review"
+    },
+    {
       "app_name": "AzulZuluJava",
       "duplicate_confidence": "LOW",
       "id": "51a9ea6be7d4",
@@ -31893,7 +31911,9 @@
       "keeper_confidence": "LOW",
       "match_reasons": [
         "same normalized name and code signing authority",
+        "same normalized name and source domain",
         "same normalized recipe name",
+        "same url source",
         "similar name plus weak identity match"
       ],
       "member_count": 2,
@@ -31944,6 +31964,7 @@
         },
         {
           "artifact_formats": [
+            "dmg",
             "pkg"
           ],
           "codesig_authorities": [
@@ -31967,13 +31988,9 @@
           "has_release_var": false,
           "identifier": "com.github.rtrouton.download.citrixworkspace",
           "input_vars": [
-            "ARCHITECHTURE",
-            "DOWNLOAD_URL",
             "NAME",
             "SEARCH_PATTERN",
-            "SEARCH_URL",
-            "SOFTWARETITLE",
-            "VENDOR"
+            "SEARCH_URL"
           ],
           "name_key": "citrixworkspace",
           "parent_recipe": "",
@@ -31986,8 +32003,8 @@
           "rel_path": "CitrixWorkspace/CitrixWorkspace.download.recipe",
           "repo": "rtrouton-recipes",
           "skip_reason": null,
-          "source_domain": "downloadplugins.citrix.com",
-          "source_key": "downloadplugins.citrix.com/receiverupdates/prod/catalog_macos.xml",
+          "source_domain": "www.citrix.com",
+          "source_key": "www.citrix.com/downloads/workspace-app/mac/workspace-app-for-mac-latest.html",
           "source_type": "url"
         }
       ],
@@ -34531,6 +34548,212 @@
         "compatible_artifact": false,
         "notes": [
           "different artifact formats: dmg, pkg, zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "review"
+    },
+    {
+      "app_name": "Firefox",
+      "duplicate_confidence": "LOW",
+      "id": "88914f532ac9",
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 4,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"43AQ936H96\""
+          ],
+          "dependent_count": 11,
+          "dependent_repos": [
+            "dataJAR-recipes",
+            "discentem-recipes",
+            "gregneagle-recipes",
+            "mosen-recipes",
+            "neilmartin83-recipes",
+            "peshay-recipes",
+            "recipes",
+            "scriptingosx-recipes",
+            "seansgm-recipes"
+          ],
+          "description": "Download recipe for Firefox. Finds and downloads a Firefox release disk image.\nSome useful values for RELEASE are: 'latest', 'esr-latest', 'beta-latest'.\nLOCALE controls the language localization to be downloaded.\nExamples include 'en-US', 'de', 'sv-SE', and 'zh-TW'\nSee the following URLs for more info:\n    http://ftp.mozilla.org/pub/firefox/releases/latest/README.txt\n    http://ftp.mozilla.org/pub/firefox/releases/latest-esr/README.txt\n    http://ftp.mozilla.org/pub/firefox/releases/latest-beta/README.txt",
+          "display_name": "Firefox",
+          "first_commit": "2026-06-26T17:07:10+02:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": true,
+          "identifier": "com.github.autopkg.download.firefox-rc-en_US",
+          "input_vars": [
+            "LOCALE",
+            "NAME",
+            "RELEASE"
+          ],
+          "name_key": "firefox",
+          "parent_recipe": "",
+          "processors": [
+            "MozillaURLProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Mozilla/Firefox.download.recipe.yaml",
+          "repo": "discentem-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:MozillaURLProvider",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "jgstew-recipes"
+          ],
+          "description": "Downloads the latest version of Firefox for macOS. Input product is the Mozilla product string (e.g. `firefox-latest-ssl`). Input OS is the platform string used in the download URL (e.g. `osx`). Input filename is the output filename for the downloaded file.",
+          "display_name": "Firefox",
+          "first_commit": "2024-07-02T23:07:41-04:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jgstew.download.Firefox-Mac",
+          "input_vars": [
+            "NAME",
+            "OS",
+            "filename",
+            "product"
+          ],
+          "name_key": "firefox",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloaderPython",
+            "EndOfCheckPhase",
+            "TextSearcher",
+            "DateTimeFromString",
+            "BigFixPrefetchItem",
+            "FileHasher",
+            "BigFixSetupTemplateDictionary",
+            "TemplateDictionaryAppend"
+          ],
+          "rel_path": "Mozilla/Firefox-Mac.download.recipe.yaml",
+          "repo": "jgstew-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:URLDownloaderPython",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"43AQ936H96\""
+          ],
+          "dependent_count": 11,
+          "dependent_repos": [
+            "dataJAR-recipes",
+            "discentem-recipes",
+            "gregneagle-recipes",
+            "mosen-recipes",
+            "neilmartin83-recipes",
+            "peshay-recipes",
+            "recipes",
+            "scriptingosx-recipes",
+            "seansgm-recipes"
+          ],
+          "description": "Download recipe for Firefox. Finds and downloads a Firefox release disk image.\nSome useful values for RELEASE are: 'latest', 'esr-latest', 'beta-latest'.\nLOCALE controls the language localization to be downloaded.\nExamples include 'en-US', 'de', 'sv-SE', and 'zh-TW'\nSee the following URLs for more info:\n    http://ftp.mozilla.org/pub/firefox/releases/latest/README.txt\n    http://ftp.mozilla.org/pub/firefox/releases/latest-esr/README.txt\n    http://ftp.mozilla.org/pub/firefox/releases/latest-beta/README.txt",
+          "display_name": "Firefox",
+          "first_commit": "2013-08-25T20:54:44-07:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": true,
+          "identifier": "com.github.autopkg.download.firefox-rc-en_US",
+          "input_vars": [
+            "LOCALE",
+            "NAME",
+            "RELEASE"
+          ],
+          "name_key": "firefox",
+          "parent_recipe": "",
+          "processors": [
+            "MozillaURLProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Mozilla/Firefox.download.recipe",
+          "repo": "recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:MozillaURLProvider",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Mozilla Corporation (43AQ936H96)"
+          ],
+          "dependent_count": 11,
+          "dependent_repos": [
+            "almenscorner-recipes",
+            "discentem-recipes",
+            "jazzace-recipes",
+            "peshay-recipes",
+            "recipes",
+            "rtrouton-recipes",
+            "smithjw-recipes"
+          ],
+          "description": "This recipe downloads the signed installer package that Mozilla made available starting in Firefox 69.0 and 68.1esr.\n\nYou may choose a specific release stream by placing the appropriate key in the \nLATEST_RELEASE input variable. The two most common are:\n    LATEST_FIREFOX_VERSION for the latest (regular) release (this is the default), and\n    FIREFOX_ESR for latest ESR release.\nOther values to try can be found by examining the JSON file at:\n    https://product-details.mozilla.org/1.0/firefox_versions.json\n(Not all will work.)\n\nLOCALE controls the language localization to be downloaded.\nExamples include 'en-US', 'de', 'sv-SE', and 'zh-TW'\nSee the following URL for possible LOCALE values:\n    http://ftp.mozilla.org/pub/firefox/releases/latest/README.txt\n",
+          "display_name": "Firefox",
+          "first_commit": "2019-09-06T14:16:57-07:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.autopkg.download.FirefoxSignedPkg",
+          "input_vars": [
+            "LATEST_RELEASE",
+            "LOCALE",
+            "NAME"
+          ],
+          "name_key": "firefox",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Mozilla/FirefoxSignedPkg.download.recipe",
+          "repo": "recipes",
+          "skip_reason": null,
+          "source_domain": "product-details.mozilla.org",
+          "source_key": "product-details.mozilla.org/1.0/firefox_versions.json",
+          "source_type": "url"
+        }
+      ],
+      "skip_reason": "different artifact formats: dmg, pkg",
+      "substitutability": {
+        "compatible_artifact": false,
+        "notes": [
+          "different artifact formats: dmg, pkg"
         ],
         "same_product": true
       },
@@ -47896,31 +48119,31 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 100,
-      "LOW": 147,
+      "HIGH": 99,
+      "LOW": 150,
       "MEDIUM": 89
     },
-    "generated_at": "2026-06-22T08:47:02.227237+00:00",
+    "generated_at": "2026-06-29T07:17:30.153937+00:00",
     "keeper_confidence": {
       "HIGH": 9,
-      "LOW": 202,
+      "LOW": 204,
       "MEDIUM": 47,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4122,
+      "download_recipes": 4143,
       "skipped": {
-        "child_of_download": 87,
-        "deprecated": 591,
+        "child_of_download": 96,
+        "deprecated": 590,
         "package_required": 22,
-        "windows": 240
+        "windows": 270
       },
-      "total_recipe_files": 16673
+      "total_recipe_files": 16927
     },
-    "total_sets": 336,
+    "total_sets": 338,
     "verdicts": {
-      "recommend": 139,
-      "review": 119,
+      "recommend": 138,
+      "review": 122,
       "skip": 78
     }
   }

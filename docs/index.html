@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">139</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">100</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">119</span> to review</div><div class="stat-item"><span class="stat-num">104</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-06-22T08:47:02.227237+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">138</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">99</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">105</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-06-29T07:17:30.153937+00:00"></div></div>
   </div>
 </div>
 
@@ -3008,43 +3008,6 @@ a:hover { text-decoration: underline; }
       data-tab="HIGH"
       data-dup="HIGH"
       data-keep="LOW"
-      data-repos="discentem-recipes|rderewianko-recipes"
-      data-search="yubicopivtool discentem-recipes/yubico/yubicopivtool.download.recipe.yaml rderewianko-recipes/yubicopivtool/yubicopivtool.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">YubicoPivTool</span>
-        <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/discentem-recipes/blob/HEAD/Yubico/YubicoPivTool.download.recipe.yaml" target="_blank" rel="noopener">discentem-recipes<span class="path-rest">/Yubico/YubicoPivTool.download.recipe.yaml</span></a></div>
-          <div class="recipe-reason">weaker duplicate</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/rderewianko-recipes/blob/HEAD/YubicoPivTool/YubicoPivTool.download.recipe" target="_blank" rel="noopener">rderewianko-recipes<span class="path-rest">/YubicoPivTool/YubicoPivTool.download.recipe</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: pkg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
-        
-      </div>
-    </details>
-
-    <details class="card verdict-recommend dup-high"
-      data-tab="HIGH"
-      data-dup="HIGH"
-      data-keep="LOW"
       data-repos="MLBZ521-recipes|joshua-d-miller-recipes"
       data-search="zoom outlook plugin mlbz521-recipes/zoom/zoom-outlookplugin.download.recipe joshua-d-miller-recipes/zoom/zoomoutlookplugin.download.recipe">
       <summary class="card-hd">
@@ -4308,8 +4271,8 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="HIGH"
       data-keep="NONE"
-      data-repos="Lotusshaney-recipes|MLBZ521-recipes|hansen-m-recipes|kkeilson-recipes|smithjw-recipes"
-      data-search="zoom lotusshaney-recipes/zoom/zoom.download.recipe mlbz521-recipes/zoom/zoom-forit.download.recipe hansen-m-recipes/zoom/zoom.download.recipe kkeilson-recipes/zoom.us/zoomit.download.recipe smithjw-recipes/zoom/zoom_it.download.recipe.yaml">
+      data-repos="MLBZ521-recipes|hansen-m-recipes|kkeilson-recipes|smithjw-recipes"
+      data-search="zoom mlbz521-recipes/zoom/zoom-forit.download.recipe hansen-m-recipes/zoom/zoom.download.recipe kkeilson-recipes/zoom.us/zoomit.download.recipe smithjw-recipes/zoom/zoom_it.download.recipe.yaml">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">Zoom</span>
@@ -4318,15 +4281,6 @@ a:hover { text-decoration: underline; }
       <div class="card-body">
         <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
         <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/Zoom/Zoom.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/Zoom/Zoom.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
         <div class="recipe-info">
@@ -7855,6 +7809,43 @@ a:hover { text-decoration: underline; }
       data-tab="REVIEW"
       data-dup="LOW"
       data-keep="LOW"
+      data-repos="jgstew-recipes|moofit-recipes"
+      data-search="adobe remoteupdatemanager jgstew-recipes/adobe/remoteupdatemanager.download.recipe.yaml moofit-recipes/adobe/remoteupdatemanager.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Adobe RemoteUpdateManager</span>
+        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized recipe name</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jgstew-recipes/blob/HEAD/Adobe/RemoteUpdateManager.download.recipe.yaml" target="_blank" rel="noopener">jgstew-recipes<span class="path-rest">/Adobe/RemoteUpdateManager.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/moofit-recipes/blob/HEAD/Adobe/RemoteUpdateManager.download.recipe" target="_blank" rel="noopener">moofit-recipes<span class="path-rest">/Adobe/RemoteUpdateManager.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, zip</div>
+      </div>
+    </details>
+
+    <details class="card verdict-review dup-low"
+      data-tab="REVIEW"
+      data-dup="LOW"
+      data-keep="LOW"
       data-repos="faumac-recipes|peterkelm-recipes"
       data-search="affinity designer faumac-recipes/affinity designer/affinity designer.download.recipe peterkelm-recipes/serif/affinitydesigner.download.recipe">
       <summary class="card-hd">
@@ -8160,6 +8151,52 @@ a:hover { text-decoration: underline; }
       data-tab="REVIEW"
       data-dup="LOW"
       data-keep="LOW"
+      data-repos="jgstew-recipes|recipes"
+      data-search="autopkg jgstew-recipes/autopkgrecipe/autopkgreleasepkg.download.recipe.yaml jgstew-recipes/autopkgrecipe/autopkgreleasesource.download.recipe.yaml recipes/autopkg/autopkg-release.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">autopkg</span>
+        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jgstew-recipes/blob/HEAD/AutoPkgRecipe/AutoPkgReleasePkg.download.recipe.yaml" target="_blank" rel="noopener">jgstew-recipes<span class="path-rest">/AutoPkgRecipe/AutoPkgReleasePkg.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jgstew-recipes/blob/HEAD/AutoPkgRecipe/AutoPkgReleaseSource.download.recipe.yaml" target="_blank" rel="noopener">jgstew-recipes<span class="path-rest">/AutoPkgRecipe/AutoPkgReleaseSource.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/recipes/blob/HEAD/AutoPkg/AutoPkg-Release.download.recipe" target="_blank" rel="noopener">recipes<span class="path-rest">/AutoPkg/AutoPkg-Release.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: pkg, zip</div>
+      </div>
+    </details>
+
+    <details class="card verdict-review dup-low"
+      data-tab="REVIEW"
+      data-dup="LOW"
+      data-keep="LOW"
       data-repos="Lotusshaney-recipes|davidbpirie-recipes"
       data-search="azulzulujava lotusshaney-recipes/azulzulujava/azulzulujava.download.recipe davidbpirie-recipes/azulzulujava/azulzulujava.download.recipe.yaml">
       <summary class="card-hd">
@@ -8399,7 +8436,7 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
@@ -8415,7 +8452,7 @@ a:hover { text-decoration: underline; }
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/CitrixWorkspace/CitrixWorkspace.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/CitrixWorkspace/CitrixWorkspace.download.recipe</span></a></div>
           
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;4</div>
       </div></div>
@@ -9269,6 +9306,61 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, pkg, zip</div>
+      </div>
+    </details>
+
+    <details class="card verdict-review dup-low"
+      data-tab="REVIEW"
+      data-dup="LOW"
+      data-keep="LOW"
+      data-repos="discentem-recipes|jgstew-recipes|recipes"
+      data-search="firefox discentem-recipes/mozilla/firefox.download.recipe.yaml jgstew-recipes/mozilla/firefox-mac.download.recipe.yaml recipes/mozilla/firefox.download.recipe recipes/mozilla/firefoxsignedpkg.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Firefox</span>
+        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/discentem-recipes/blob/HEAD/Mozilla/Firefox.download.recipe.yaml" target="_blank" rel="noopener">discentem-recipes<span class="path-rest">/Mozilla/Firefox.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Channel</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;11</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jgstew-recipes/blob/HEAD/Mozilla/Firefox-Mac.download.recipe.yaml" target="_blank" rel="noopener">jgstew-recipes<span class="path-rest">/Mozilla/Firefox-Mac.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/recipes/blob/HEAD/Mozilla/Firefox.download.recipe" target="_blank" rel="noopener">recipes<span class="path-rest">/Mozilla/Firefox.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Channel</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;11</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/recipes/blob/HEAD/Mozilla/FirefoxSignedPkg.download.recipe" target="_blank" rel="noopener">recipes<span class="path-rest">/Mozilla/FirefoxSignedPkg.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;11</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, pkg</div>
       </div>
     </details>
 
@@ -13823,7 +13915,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4122 download recipes out of 16673 recipe files.
+  Scanned 4143 download recipes out of 16927 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

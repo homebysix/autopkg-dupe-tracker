@@ -540,7 +540,6 @@
       "keeper_confidence": "MEDIUM",
       "match_reasons": [
         "same github source",
-        "same normalized name and code signing authority",
         "same normalized name and source domain",
         "same normalized recipe name",
         "similar name plus weak identity match"
@@ -552,7 +551,7 @@
             "dmg"
           ],
           "codesig_authorities": [
-            "identifier \"com.usebruno.app\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = W7LPPWA48L"
+            "identifier \"com.usebruno.app\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = P3WTZH48ZB"
           ],
           "dependent_count": 2,
           "dependent_repos": [
@@ -633,7 +632,7 @@
       "rationale": [
         {
           "category": "duplicate",
-          "text": "same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+          "text": "same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
         },
         {
           "category": "artifact",
@@ -14262,161 +14261,6 @@
         "compatible_artifact": true,
         "notes": [
           "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
-      "app_name": "Microsoft Teams",
-      "duplicate_confidence": "HIGH",
-      "id": "8f89a97c6308",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "same url source",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 3,
-      "members": [
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "dataJAR-recipes"
-          ],
-          "description": "Downloads the latest version of Microsoft Teams.",
-          "display_name": "MicrosoftTeams",
-          "first_commit": "2024-05-14T11:19:52+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.dataJAR-recipes.download.Microsoft Teams",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "microsoftteams",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "PlistReader",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Microsoft Teams/Microsoft Teams.download.recipe",
-          "repo": "dataJAR-recipes",
-          "skip_reason": null,
-          "source_domain": "officecdnmac.microsoft.com",
-          "source_key": "officecdnmac.microsoft.com/pr/c1297a47-86c4-4c1f-97fa-950631f94777/macautoupdate/0409teams21-chk.xml",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
-          ],
-          "dependent_count": 5,
-          "dependent_repos": [
-            "apizz-recipes",
-            "primalcurve-recipes",
-            "rtrouton-recipes",
-            "wycomco-recipes"
-          ],
-          "description": "Downloads the latest Microsoft Teams installer pkg.",
-          "display_name": "Microsoft Teams",
-          "first_commit": "2018-08-01T16:44:29-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.microsoftteams",
-          "input_vars": [
-            "NAME",
-            "SOFTWARETITLE",
-            "VENDOR"
-          ],
-          "name_key": "microsoftteams",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "PlistReader",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "PathDeleter"
-          ],
-          "rel_path": "MicrosoftTeams/MicrosoftTeams.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "officecdnmac.microsoft.com",
-          "source_key": "officecdnmac.microsoft.com/pr/c1297a47-86c4-4c1f-97fa-950631f94777/macautoupdate/0409teams21-chk.xml",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "dataJAR-recipes",
-            "rtrouton-recipes"
-          ],
-          "description": "Downloads the latest Microsoft Teams Classic installer pkg.",
-          "display_name": "Microsoft Teams",
-          "first_commit": "2023-10-09T16:00:35-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.microsoftteamsclassic",
-          "input_vars": [
-            "DOWNLOADURL",
-            "NAME",
-            "PRODUCTID",
-            "SOFTWARETITLE1",
-            "SOFTWARETITLE2",
-            "VENDOR"
-          ],
-          "name_key": "microsoftteams",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "MicrosoftTeams/MicrosoftTeamsClassic.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "go.microsoft.com",
-          "source_key": "go.microsoft.com/fwlink",
-          "source_type": "url"
-        }
-      ],
-      "skip_reason": "MicrosoftTeamsClassic.download.recipe downloads a different product (Teams Classic via go.microsoft.com/fwlink/?linkid=869428) from the other two recipes (Teams new via MAU XML). The dataJAR and rtrouton Teams recipes are functionally equivalent but rtrouton also includes Teams Classic as a separate recipe. These are distinct distributions (Teams vs Teams Classic) within the same set.",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: pkg"
         ],
         "same_product": true
       },
@@ -29012,6 +28856,160 @@
       "verdict": "skip"
     },
     {
+      "app_name": "Microsoft Teams",
+      "duplicate_confidence": "MEDIUM",
+      "id": "8f89a97c6308",
+      "keeper_confidence": "NONE",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 3,
+      "members": [
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "dataJAR-recipes"
+          ],
+          "description": "Downloads the latest version of Microsoft Teams.\n\nSet MAU_CHANNEL_URL (must end with a trailing slash) to use a different Microsoft AutoUpdate channel:\n- Current (default): https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/\n- Preview: https://res.public.onecdn.static.microsoft/mro1cdnstorage/1ac37578-5a24-40fb-892e-b89d85b6dfaa/MacAutoupdate/\n- Beta: https://res.public.onecdn.static.microsoft/mro1cdnstorage/4B2D7701-0A4F-49C8-B4CB-0C2D4043F51F/MacAutoupdate/",
+          "display_name": "MicrosoftTeams",
+          "first_commit": "2024-05-14T11:19:52+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.dataJAR-recipes.download.Microsoft Teams",
+          "input_vars": [
+            "MAU_CHANNEL_URL",
+            "NAME"
+          ],
+          "name_key": "microsoftteams",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "PlistReader",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Microsoft Teams/Microsoft Teams.download.recipe",
+          "repo": "dataJAR-recipes",
+          "skip_reason": null,
+          "source_domain": "res.public.onecdn.static.microsoft",
+          "source_key": "res.public.onecdn.static.microsoft/mro1cdnstorage/c1297a47-86c4-4c1f-97fa-950631f94777/macautoupdate/0409teams21-chk.xml",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
+          ],
+          "dependent_count": 5,
+          "dependent_repos": [
+            "apizz-recipes",
+            "primalcurve-recipes",
+            "rtrouton-recipes",
+            "wycomco-recipes"
+          ],
+          "description": "Downloads the latest Microsoft Teams installer pkg.",
+          "display_name": "Microsoft Teams",
+          "first_commit": "2018-08-01T16:44:29-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.microsoftteams",
+          "input_vars": [
+            "NAME",
+            "SOFTWARETITLE",
+            "VENDOR"
+          ],
+          "name_key": "microsoftteams",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "PlistReader",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "PathDeleter"
+          ],
+          "rel_path": "MicrosoftTeams/MicrosoftTeams.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "officecdnmac.microsoft.com",
+          "source_key": "officecdnmac.microsoft.com/pr/c1297a47-86c4-4c1f-97fa-950631f94777/macautoupdate/0409teams21-chk.xml",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Microsoft Corporation (UBF8T346G9)"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "dataJAR-recipes",
+            "rtrouton-recipes"
+          ],
+          "description": "Downloads the latest Microsoft Teams Classic installer pkg.",
+          "display_name": "Microsoft Teams",
+          "first_commit": "2023-10-09T16:00:35-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.microsoftteamsclassic",
+          "input_vars": [
+            "DOWNLOADURL",
+            "NAME",
+            "PRODUCTID",
+            "SOFTWARETITLE1",
+            "SOFTWARETITLE2",
+            "VENDOR"
+          ],
+          "name_key": "microsoftteams",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "MicrosoftTeams/MicrosoftTeamsClassic.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "go.microsoft.com",
+          "source_key": "go.microsoft.com/fwlink",
+          "source_type": "url"
+        }
+      ],
+      "skip_reason": "MicrosoftTeamsClassic.download.recipe downloads a different product (Teams Classic via go.microsoft.com/fwlink/?linkid=869428) from the other two recipes (Teams new via MAU XML). The dataJAR and rtrouton Teams recipes are functionally equivalent but rtrouton also includes Teams Classic as a separate recipe. These are distinct distributions (Teams vs Teams Classic) within the same set.",
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: pkg"
+        ],
+        "same_product": true
+      },
+      "verdict": "skip"
+    },
+    {
       "app_name": "Postman",
       "duplicate_confidence": "MEDIUM",
       "id": "5ef7a29cb54f",
@@ -31899,120 +31897,6 @@
         "compatible_artifact": true,
         "notes": [
           "same artifact format: zip"
-        ],
-        "same_product": true
-      },
-      "verdict": "review"
-    },
-    {
-      "app_name": "CitrixWorkspace",
-      "duplicate_confidence": "LOW",
-      "id": "95318a0cbff8",
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "same url source",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg",
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Citrix Systems, Inc. (S272Y5R93J)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "davidbpirie-recipes"
-          ],
-          "description": "Downloads the latest Citrix Workspace disk image.",
-          "display_name": "CitrixWorkspace",
-          "first_commit": "2026-06-17T09:22:47+10:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.davidbpirie.download.CitrixWorkspace",
-          "input_vars": [
-            "NAME",
-            "SEARCH_PATTERN",
-            "SEARCH_URL",
-            "USER_AGENT"
-          ],
-          "name_key": "citrixworkspace",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "FileFinder",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "CitrixWorkspace/CitrixWorkspace.download.recipe.yaml",
-          "repo": "davidbpirie-recipes",
-          "skip_reason": null,
-          "source_domain": "www.citrix.com",
-          "source_key": "www.citrix.com/downloads/workspace-app/mac/workspace-app-for-mac-latest.html",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg",
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Citrix Systems, Inc. (S272Y5R93J)"
-          ],
-          "dependent_count": 4,
-          "dependent_repos": [
-            "Lotusshaney-recipes",
-            "Yohan460-recipes",
-            "hjuutilainen-recipes",
-            "rtrouton-recipes"
-          ],
-          "description": "Downloads the latest Citrix Workspace disk image.",
-          "display_name": "CitrixWorkspace",
-          "first_commit": "2018-09-27T18:40:46+02:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.citrixworkspace",
-          "input_vars": [
-            "NAME",
-            "SEARCH_PATTERN",
-            "SEARCH_URL"
-          ],
-          "name_key": "citrixworkspace",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "CitrixWorkspace/CitrixWorkspace.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "www.citrix.com",
-          "source_key": "www.citrix.com/downloads/workspace-app/mac/workspace-app-for-mac-latest.html",
-          "source_type": "url"
-        }
-      ],
-      "skip_reason": "different artifact formats: dmg, pkg",
-      "substitutability": {
-        "compatible_artifact": false,
-        "notes": [
-          "different artifact formats: dmg, pkg"
         ],
         "same_product": true
       },
@@ -42698,9 +42582,7 @@
       "id": "4e1596eb88e5",
       "keeper_confidence": "LOW",
       "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
+        "same normalized recipe name"
       ],
       "member_count": 2,
       "members": [
@@ -42756,7 +42638,7 @@
           "codesig_authorities": [
             "Apple Root CA",
             "Developer ID Certification Authority",
-            "Developer ID Installer: IDRIX (Z933746L2S)"
+            "Developer ID Installer: Mounir Joseph IDRASSI (HLTN5GLG99)"
           ],
           "dependent_count": 2,
           "dependent_repos": [
@@ -48119,31 +48001,31 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 99,
-      "LOW": 150,
-      "MEDIUM": 89
+      "HIGH": 98,
+      "LOW": 149,
+      "MEDIUM": 90
     },
-    "generated_at": "2026-06-29T07:17:30.153937+00:00",
+    "generated_at": "2026-07-06T06:59:28.249794+00:00",
     "keeper_confidence": {
       "HIGH": 9,
-      "LOW": 204,
+      "LOW": 203,
       "MEDIUM": 47,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4143,
+      "download_recipes": 4166,
       "skipped": {
         "child_of_download": 96,
-        "deprecated": 590,
+        "deprecated": 591,
         "package_required": 22,
         "windows": 270
       },
-      "total_recipe_files": 16927
+      "total_recipe_files": 17050
     },
-    "total_sets": 338,
+    "total_sets": 337,
     "verdicts": {
       "recommend": 138,
-      "review": 122,
+      "review": 121,
       "skip": 78
     }
   }

@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">138</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">105</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-07-06T06:59:28.249794+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">137</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">105</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-07-13T05:56:34.508867+00:00"></div></div>
   </div>
 </div>
 
@@ -386,7 +386,7 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="match">Matched by: same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-keep">Keep</span>
@@ -406,7 +406,7 @@ a:hover { text-decoration: underline; }
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source</span></div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source</span></div></div>
         
       </div>
     </details>
@@ -4078,52 +4078,6 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="HIGH"
       data-keep="NONE"
-      data-repos="moofit-recipes|smithjw-recipes|zentral-recipes"
-      data-search="swiftdialog moofit-recipes/swiftdialog/swiftdialog-local.download.recipe.yaml smithjw-recipes/swiftdialog/swiftdialog.download.recipe.yaml zentral-recipes/swiftdialog/swiftdialog.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">swiftDialog</span>
-        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/moofit-recipes/blob/HEAD/swiftDialog/swiftDialog-local.download.recipe.yaml" target="_blank" rel="noopener">moofit-recipes<span class="path-rest">/swiftDialog/swiftDialog-local.download.recipe.yaml</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/smithjw-recipes/blob/HEAD/swiftDialog/swiftDialog.download.recipe.yaml" target="_blank" rel="noopener">smithjw-recipes<span class="path-rest">/swiftDialog/swiftDialog.download.recipe.yaml</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/zentral-recipes/blob/HEAD/swiftDialog/swiftDialog.download.recipe" target="_blank" rel="noopener">zentral-recipes<span class="path-rest">/swiftDialog/swiftDialog.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;11</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/moofit-recipes/pull/223" target="_blank" rel="noopener">PR</a></div>
-      </div>
-    </details>
-
-    <details class="card verdict-skip dup-high"
-      data-tab="SKIP"
-      data-dup="HIGH"
-      data-keep="NONE"
       data-repos="homebysix-recipes|jleggat-recipes|justinrummel-recipes|nstrauss-recipes|smithjw-recipes"
       data-search="wireshark homebysix-recipes/wireshark/wireshark.download.recipe jleggat-recipes/wireshark/wireshark.download.recipe justinrummel-recipes/wiresharkdev/wiresharkdev.download.recipe nstrauss-recipes/wireshark/wireshark.download.recipe smithjw-recipes/wireshark/wireshark.download.recipe.yaml">
       <summary class="card-hd">
@@ -5243,43 +5197,6 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;2</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; github source; has useful description</span></div></div>
-        
-      </div>
-    </details>
-
-    <details class="card verdict-recommend dup-medium"
-      data-tab="MEDIUM"
-      data-dup="MEDIUM"
-      data-keep="MEDIUM"
-      data-repos="andredb90-recipes|zentral-recipes"
-      data-search="languagetool for desktop andredb90-recipes/languagetool for desktop/languagetoolfordesktop.download.recipe zentral-recipes/languagetool/languagetooldesktop.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">LanguageTool for Desktop</span>
-        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/andredb90-recipes/blob/HEAD/LanguageTool for Desktop/LanguageToolforDesktop.download.recipe" target="_blank" rel="noopener">andredb90-recipes<span class="path-rest">/LanguageTool for Desktop/LanguageToolforDesktop.download.recipe</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/zentral-recipes/blob/HEAD/LanguageTool/LanguageToolDesktop.download.recipe" target="_blank" rel="noopener">zentral-recipes<span class="path-rest">/LanguageTool/LanguageToolDesktop.download.recipe</span></a></div>
-          <div class="recipe-reason">weaker duplicate</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -6526,8 +6443,8 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="LOW"
-      data-repos="Lotusshaney-recipes|zentral-recipes"
-      data-search="proxyman lotusshaney-recipes/proxyman/proxyman.download.recipe zentral-recipes/proxyman/proxyman.download.recipe">
+      data-repos="Lotusshaney-recipes|aanklewicz-recipes"
+      data-search="proxyman lotusshaney-recipes/proxyman/proxyman.download.recipe aanklewicz-recipes/proxyman/proxyman.download.recipe">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">Proxyman</span>
@@ -6537,22 +6454,22 @@ a:hover { text-decoration: underline; }
         <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
+        <span class="role-tag role-keep">Keep</span>
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/Proxyman/Proxyman.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/Proxyman/Proxyman.download.recipe</span></a></div>
-          <div class="recipe-reason">weaker duplicate</div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;2</div>
       </div>
       <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
+        <span class="role-tag role-deprecate">Depr</span>
         <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/zentral-recipes/blob/HEAD/Proxyman/Proxyman.download.recipe" target="_blank" rel="noopener">zentral-recipes<span class="path-rest">/Proxyman/Proxyman.download.recipe</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="recipe-path"><a href="https://github.com/autopkg/aanklewicz-recipes/blob/HEAD/Proxyman/Proxyman.download.recipe" target="_blank" rel="noopener">aanklewicz-recipes<span class="path-rest">/Proxyman/Proxyman.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
         </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
@@ -13603,6 +13520,43 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="LOW"
       data-keep="NONE"
+      data-repos="moofit-recipes|smithjw-recipes"
+      data-search="swiftdialog moofit-recipes/swiftdialog/swiftdialog-local.download.recipe.yaml smithjw-recipes/swiftdialog/swiftdialog.download.recipe.yaml">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">swiftDialog</span>
+        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized recipe name</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/moofit-recipes/blob/HEAD/swiftDialog/swiftDialog-local.download.recipe.yaml" target="_blank" rel="noopener">moofit-recipes<span class="path-rest">/swiftDialog/swiftDialog-local.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/smithjw-recipes/blob/HEAD/swiftDialog/swiftDialog.download.recipe.yaml" target="_blank" rel="noopener">smithjw-recipes<span class="path-rest">/swiftDialog/swiftDialog.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;4</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/moofit-recipes/pull/223" target="_blank" rel="noopener">PR</a></div>
+      </div>
+    </details>
+
+    <details class="card verdict-skip dup-low"
+      data-tab="SKIP"
+      data-dup="LOW"
+      data-keep="NONE"
       data-repos="Lotusshaney-recipes|apizz-recipes|macprince-recipes"
       data-search="tailscale lotusshaney-recipes/tailscale_unstable/tailscale_unstable.download.recipe apizz-recipes/tailscale/tailscale.download.recipe macprince-recipes/tailscale/tailscale.download.recipe macprince-recipes/tailscale/tailscalepkg.download.recipe">
       <summary class="card-hd">
@@ -13878,7 +13832,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4166 download recipes out of 17050 recipe files.
+  Scanned 4179 download recipes out of 17197 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

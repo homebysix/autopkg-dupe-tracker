@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">137</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">105</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-07-13T05:56:34.508867+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">140</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">106</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-07-20T05:58:40.651187+00:00"></div></div>
   </div>
 </div>
 
@@ -386,7 +386,7 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="match">Matched by: same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-keep">Keep</span>
@@ -406,7 +406,7 @@ a:hover { text-decoration: underline; }
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source</span></div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source</span></div></div>
         
       </div>
     </details>
@@ -1799,6 +1799,43 @@ a:hover { text-decoration: underline; }
       data-tab="HIGH"
       data-dup="HIGH"
       data-keep="LOW"
+      data-repos="rtrouton-recipes|wegotoeleven-recipes"
+      data-search="logi optionsplus offline rtrouton-recipes/logioptionsplusoffline/logioptionsplusoffline.download.recipe wegotoeleven-recipes/logitech/logioptionsplus.download.recipe.yaml">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Logi OptionsPlus Offline</span>
+        <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/LogiOptionsPlusOffline/LogiOptionsPlusOffline.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/LogiOptionsPlusOffline/LogiOptionsPlusOffline.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/wegotoeleven-recipes/blob/HEAD/Logitech/LogiOptionsPlus.download.recipe.yaml" target="_blank" rel="noopener">wegotoeleven-recipes<span class="path-rest">/Logitech/LogiOptionsPlus.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-high"
+      data-tab="HIGH"
+      data-dup="HIGH"
+      data-keep="LOW"
       data-repos="macvfx-recipes|markkenny-recipes|moofit-recipes"
       data-search="lucid macvfx-recipes/lucid/lucid.download.recipe markkenny-recipes/lucidlink/lucid.download.recipe.yaml moofit-recipes/lucidlink/lucid.download.recipe.yaml">
       <summary class="card-hd">
@@ -2067,16 +2104,25 @@ a:hover { text-decoration: underline; }
       data-tab="HIGH"
       data-dup="HIGH"
       data-keep="LOW"
-      data-repos="jlehikoinen-recipes|rtrouton-recipes"
-      data-search="microsoft autoupdate jlehikoinen-recipes/microsoftautoupdate/microsoftautoupdate.download.recipe rtrouton-recipes/microsoftautoupdate/microsoftautoupdate.download.recipe">
+      data-repos="jgstew-recipes|jlehikoinen-recipes|rtrouton-recipes"
+      data-search="microsoftautoupdate jgstew-recipes/microsoft/microsoftautoupdate-mac.download.recipe.yaml jlehikoinen-recipes/microsoftautoupdate/microsoftautoupdate.download.recipe rtrouton-recipes/microsoftautoupdate/microsoftautoupdate.download.recipe">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Microsoft AutoUpdate</span>
+        <span class="card-app">MicrosoftAutoUpdate</span>
         <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
       </summary>
       <div class="card-body">
         <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
         <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jgstew-recipes/blob/HEAD/Microsoft/MicrosoftAutoUpdate-Mac.download.recipe.yaml" target="_blank" rel="noopener">jgstew-recipes<span class="path-rest">/Microsoft/MicrosoftAutoUpdate-Mac.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">no CodeSignatureVerifier</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
       <div class="recipe-row">
         <span class="role-tag role-keep">Keep</span>
         <div class="recipe-info">
@@ -2095,7 +2141,7 @@ a:hover { text-decoration: underline; }
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: pkg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: pkg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div><div class="set-info-row si-depr"><span class="set-info-icon">✗</span><span><strong>Deprecate:</strong> jgstew-recipes: no CodeSignatureVerifier</span></div></div>
         
       </div>
     </details>
@@ -3210,7 +3256,7 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; same sparkle source; similar name plus weak identity match</div>
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same sparkle source; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
@@ -3226,7 +3272,7 @@ a:hover { text-decoration: underline; }
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/jleggat-recipes/blob/HEAD/AppCleaner/AppCleaner.download.recipe" target="_blank" rel="noopener">jleggat-recipes<span class="path-rest">/AppCleaner/AppCleaner.download.recipe</span></a></div>
           
-          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-warn">format unknown</span></div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">zip</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;6</div>
       </div></div>
@@ -3269,52 +3315,6 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/andrewvalentine-recipes/pull/81" target="_blank" rel="noopener">PR</a></div>
-      </div>
-    </details>
-
-    <details class="card verdict-skip dup-high"
-      data-tab="SKIP"
-      data-dup="HIGH"
-      data-keep="NONE"
-      data-repos="Lotusshaney-recipes|rtrouton-recipes"
-      data-search="chatgpt lotusshaney-recipes/openai/chatgpt.download.recipe rtrouton-recipes/chatgpt/chatgpt.download.recipe rtrouton-recipes/chatgptatlas/chatgptatlas.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">ChatGPT</span>
-        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/OpenAI/ChatGPT.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/OpenAI/ChatGPT.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPT/ChatGPT.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPT/ChatGPT.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPTAtlas/ChatGPTAtlas.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPTAtlas/ChatGPTAtlas.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Skipped:</strong> ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as &#x27;ChatGPT Atlas&#x27;. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.</div>
       </div>
     </details>
 
@@ -5732,6 +5732,80 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="LOW"
+      data-repos="blackthroat-recipes|kevinmcox-recipes"
+      data-search="adobecreativecloudcleanertool blackthroat-recipes/adobe systems, inc./adobecreativecloudcleanertool.download.recipe kevinmcox-recipes/adobe/adobecreativecloudcleanertool.download.recipe.yaml">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">AdobeCreativeCloudCleanerTool</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/blackthroat-recipes/blob/HEAD/Adobe Systems, Inc./AdobeCreativeCloudCleanerTool.download.recipe" target="_blank" rel="noopener">blackthroat-recipes<span class="path-rest">/Adobe Systems, Inc./AdobeCreativeCloudCleanerTool.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/kevinmcox-recipes/blob/HEAD/Adobe/AdobeCreativeCloudCleanerTool.download.recipe.yaml" target="_blank" rel="noopener">kevinmcox-recipes<span class="path-rest">/Adobe/AdobeCreativeCloudCleanerTool.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="LOW"
+      data-repos="blackthroat-recipes|kevinmcox-recipes"
+      data-search="adobelogcollectortool blackthroat-recipes/adobe systems, inc./adobelogcollectortool.download.recipe kevinmcox-recipes/adobe/adobelogcollectortool.download.recipe.yaml">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">AdobeLogCollectorTool</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/blackthroat-recipes/blob/HEAD/Adobe Systems, Inc./AdobeLogCollectorTool.download.recipe" target="_blank" rel="noopener">blackthroat-recipes<span class="path-rest">/Adobe Systems, Inc./AdobeLogCollectorTool.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/kevinmcox-recipes/blob/HEAD/Adobe/AdobeLogCollectorTool.download.recipe.yaml" target="_blank" rel="noopener">kevinmcox-recipes<span class="path-rest">/Adobe/AdobeLogCollectorTool.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="LOW"
       data-repos="aws-recipes|dataJAR-recipes|n8felton-recipes"
       data-search="amazoncorretto%major_version% aws-recipes/corretto/amazoncorrettojdk.download.recipe datajar-recipes/amazon corretto/amazon corretto.download.recipe n8felton-recipes/amazon/amazoncorretto.download.recipe">
       <summary class="card-hd">
@@ -6917,6 +6991,52 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/blackthroat-recipes/pull/36" target="_blank" rel="noopener">PR</a></div>
+      </div>
+    </details>
+
+    <details class="card verdict-skip dup-medium"
+      data-tab="SKIP"
+      data-dup="MEDIUM"
+      data-keep="NONE"
+      data-repos="Lotusshaney-recipes|rtrouton-recipes"
+      data-search="chatgpt lotusshaney-recipes/openai/chatgpt.download.recipe rtrouton-recipes/chatgpt/chatgpt.download.recipe rtrouton-recipes/chatgptatlas/chatgptatlas.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">ChatGPT</span>
+        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/OpenAI/ChatGPT.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/OpenAI/ChatGPT.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPT/ChatGPT.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPT/ChatGPT.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPTAtlas/ChatGPTAtlas.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPTAtlas/ChatGPTAtlas.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Skipped:</strong> ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as &#x27;ChatGPT Atlas&#x27;. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.</div>
       </div>
     </details>
 
@@ -10126,43 +10246,6 @@ a:hover { text-decoration: underline; }
       data-tab="REVIEW"
       data-dup="LOW"
       data-keep="LOW"
-      data-repos="jleggat-recipes|kevinmcox-recipes"
-      data-search="menumeters jleggat-recipes/ragingmenace/menumeters.download.recipe kevinmcox-recipes/yuji tachikawa/menumeters.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">MenuMeters</span>
-        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized recipe name</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/jleggat-recipes/blob/HEAD/RagingMenace/MenuMeters.download.recipe" target="_blank" rel="noopener">jleggat-recipes<span class="path-rest">/RagingMenace/MenuMeters.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/kevinmcox-recipes/blob/HEAD/Yuji Tachikawa/MenuMeters.download.recipe" target="_blank" rel="noopener">kevinmcox-recipes<span class="path-rest">/Yuji Tachikawa/MenuMeters.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">zip</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;4</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, zip</div>
-      </div>
-    </details>
-
-    <details class="card verdict-review dup-low"
-      data-tab="REVIEW"
-      data-dup="LOW"
-      data-keep="LOW"
       data-repos="dataJAR-recipes|rtrouton-recipes"
       data-search="mindmanager rtrouton-recipes/mindmanager/mindmanager.download.recipe datajar-recipes/mindmanager 22/mindmanager 22.download.recipe">
       <summary class="card-hd">
@@ -10396,6 +10479,43 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, pkg</div>
+      </div>
+    </details>
+
+    <details class="card verdict-review dup-low"
+      data-tab="REVIEW"
+      data-dup="LOW"
+      data-keep="LOW"
+      data-repos="ScruffyInLondon-recipes|peshay-recipes"
+      data-search="onyx scruffyinlondon-recipes/onyxdesktop/onyxdesktop.download.recipe peshay-recipes/onyx/onyx.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Onyx</span>
+        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized recipe name</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/ScruffyInLondon-recipes/blob/HEAD/OnyxDesktop/OnyxDesktop.download.recipe" target="_blank" rel="noopener">ScruffyInLondon-recipes<span class="path-rest">/OnyxDesktop/OnyxDesktop.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/peshay-recipes/blob/HEAD/Onyx/Onyx.download.recipe" target="_blank" rel="noopener">peshay-recipes<span class="path-rest">/Onyx/Onyx.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;4</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Needs review:</strong> low duplicate confidence; needs qualitative review</div>
       </div>
     </details>
 
@@ -13832,7 +13952,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4179 download recipes out of 17197 recipe files.
+  Scanned 4201 download recipes out of 17302 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

@@ -540,7 +540,6 @@
       "keeper_confidence": "MEDIUM",
       "match_reasons": [
         "same github source",
-        "same normalized name and code signing authority",
         "same normalized name and source domain",
         "same normalized recipe name",
         "similar name plus weak identity match"
@@ -552,7 +551,7 @@
             "dmg"
           ],
           "codesig_authorities": [
-            "identifier \"com.usebruno.app\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = P3WTZH48ZB"
+            "identifier \"com.usebruno.app\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = W7LPPWA48L"
           ],
           "dependent_count": 2,
           "dependent_repos": [
@@ -633,7 +632,7 @@
       "rationale": [
         {
           "category": "duplicate",
-          "text": "same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+          "text": "same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
         },
         {
           "category": "artifact",
@@ -6891,6 +6890,172 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "Logi OptionsPlus Offline",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 2,
+          "reason": "weaker duplicate",
+          "rel_path": "LogiOptionsPlusOffline/LogiOptionsPlusOffline.download.recipe",
+          "repo": "rtrouton-recipes",
+          "score": 7.6
+        }
+      ],
+      "deprecation_message": "Consider switching to Logi OptionsPlus Offline recipes in the wegotoeleven-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "HIGH",
+      "id": "ec1c27c58956",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "Logitech/LogiOptionsPlus.download.recipe.yaml",
+          "repo": "wegotoeleven-recipes",
+          "score": 7.25
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "same url source",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.logi.optionsplus.installer\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = QED4VVPZWA"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "rtrouton-recipes"
+          ],
+          "description": "Downloads the current release version of Logitech's Logi OptionsPlus offline installer.",
+          "display_name": "Logi OptionsPlus Offline",
+          "first_commit": "2024-12-10T08:38:01-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.LogiOptionsPlusOffline",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME",
+            "SOFTWARETITLE1",
+            "SOFTWARETITLE2",
+            "SOFTWARETITLE3",
+            "VENDOR"
+          ],
+          "name_key": "logioptionsplusoffline",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "Unarchiver",
+            "FileFinder",
+            "CodeSignatureVerifier",
+            "PlistReader",
+            "EndOfCheckPhase"
+          ],
+          "rel_path": "LogiOptionsPlusOffline/LogiOptionsPlusOffline.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "download01.logi.com",
+          "source_key": "download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer_offline.zip",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.logi.optionsplus.installer\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = QED4VVPZWA"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "wegotoeleven-recipes"
+          ],
+          "description": "Unzip the latest version of the Logi Options+ offline installer app",
+          "display_name": "Logi OptionsPlus Offline",
+          "first_commit": "2022-10-19T13:43:49+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.wegotoeleven-recipes.download.LogiOptionsPlus",
+          "input_vars": [
+            "NAME",
+            "URL"
+          ],
+          "name_key": "logioptionsplusoffline",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "FileFinder",
+            "CodeSignatureVerifier",
+            "PlistReader"
+          ],
+          "rel_path": "Logitech/LogiOptionsPlus.download.recipe.yaml",
+          "repo": "wegotoeleven-recipes",
+          "skip_reason": null,
+          "source_domain": "download01.logi.com",
+          "source_key": "download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer_offline.zip",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: zip"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "Lucid",
       "criteria": [
         {
@@ -8059,7 +8224,7 @@
       "verdict": "recommend"
     },
     {
-      "app_name": "Microsoft AutoUpdate",
+      "app_name": "MicrosoftAutoUpdate",
       "criteria": [
         {
           "key": "codesig",
@@ -8093,11 +8258,18 @@
           "rel_path": "MicrosoftAutoUpdate/MicrosoftAutoUpdate.download.recipe",
           "repo": "rtrouton-recipes",
           "score": 7.35
+        },
+        {
+          "dependent_count": 1,
+          "reason": "no CodeSignatureVerifier",
+          "rel_path": "Microsoft/MicrosoftAutoUpdate-Mac.download.recipe.yaml",
+          "repo": "jgstew-recipes",
+          "score": 3.25
         }
       ],
-      "deprecation_message": "Consider switching to Microsoft AutoUpdate recipes in the jlehikoinen-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "deprecation_message": "Consider switching to MicrosoftAutoUpdate recipes in the jlehikoinen-recipes repo. This recipe is deprecated and will be removed in the future.",
       "duplicate_confidence": "HIGH",
-      "id": "aa1cce5c4f60",
+      "id": "ff4cb640e514",
       "keep": [
         {
           "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
@@ -8114,8 +8286,43 @@
         "same url source",
         "similar name plus weak identity match"
       ],
-      "member_count": 2,
+      "member_count": 3,
       "members": [
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "jgstew-recipes"
+          ],
+          "description": "Downloads the latest version of Microsoft AutoUpdate (MAU) for macOS. Input filename is the output filename for the downloaded file.",
+          "display_name": "MicrosoftAutoUpdate",
+          "first_commit": "2026-07-14T13:38:53-04:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jgstew.download.MicrosoftAutoUpdate-Mac",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "microsoftautoupdate",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloaderPython",
+            "EndOfCheckPhase",
+            "DateTimeFromString",
+            "TextSearcher"
+          ],
+          "rel_path": "Microsoft/MicrosoftAutoUpdate-Mac.download.recipe.yaml",
+          "repo": "jgstew-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:URLDownloaderPython",
+          "source_type": "unknown"
+        },
         {
           "artifact_formats": [
             "pkg"
@@ -8213,6 +8420,10 @@
         {
           "category": "keeper",
           "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        },
+        {
+          "category": "deprecate",
+          "text": "jgstew-recipes: no CodeSignatureVerifier"
         }
       ],
       "substitutability": {
@@ -12899,6 +13110,7 @@
       "id": "d964d6c2468f",
       "keeper_confidence": "NONE",
       "match_reasons": [
+        "same normalized name and code signing authority",
         "same normalized name and source domain",
         "same normalized recipe name",
         "same sparkle source",
@@ -12946,8 +13158,12 @@
           "source_type": "sparkle"
         },
         {
-          "artifact_formats": [],
-          "codesig_authorities": [],
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"net.freemacsoft.AppCleaner\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = X85ZX835W9)"
+          ],
           "dependent_count": 6,
           "dependent_repos": [
             "almenscorner-recipes",
@@ -12960,7 +13176,7 @@
           "display_name": "AppCleaner",
           "first_commit": "2013-10-17T13:21:27-07:00",
           "has_arch_var": false,
-          "has_codesig": false,
+          "has_codesig": true,
           "has_endofcheck": true,
           "has_release_var": false,
           "identifier": "com.github.jleggat.AppCleaner.download",
@@ -12973,7 +13189,9 @@
           "processors": [
             "SparkleUpdateInfoProvider",
             "URLDownloader",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "AppCleaner/AppCleaner.download.recipe",
           "repo": "jleggat-recipes",
@@ -12991,7 +13209,7 @@
       "substitutability": {
         "compatible_artifact": true,
         "notes": [
-          "artifact formats unknown or not comparable"
+          "same artifact format: zip"
         ],
         "same_product": true
       },
@@ -13099,148 +13317,6 @@
         "https://github.com/autopkg/andrewvalentine-recipes/pull/81"
       ],
       "skip_reason": "PR(s) already opened",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
-      "app_name": "ChatGPT",
-      "duplicate_confidence": "HIGH",
-      "id": "61eae045eaa9",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "same url source",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 3,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.openai.chat\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
-          ],
-          "dependent_count": 2,
-          "dependent_repos": [
-            "Lotusshaney-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT.",
-          "display_name": "ChatGPT",
-          "first_commit": "2024-06-13T11:52:01+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.Lotusshaney.download.ChatGPT",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "chatgpt",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "OpenAI/ChatGPT.download.recipe",
-          "repo": "Lotusshaney-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/sidekick/public/chatgpt_desktop_public_latest.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.openai.chat\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
-          ],
-          "dependent_count": 2,
-          "dependent_repos": [
-            "almenscorner-recipes",
-            "rtrouton-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT.",
-          "display_name": "ChatGPT",
-          "first_commit": "2024-07-30T14:45:54-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.ChatGPT",
-          "input_vars": [
-            "DOWNLOADURL",
-            "NAME",
-            "SOFTWARETITLE",
-            "VENDOR"
-          ],
-          "name_key": "chatgpt",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "ChatGPT/ChatGPT.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/sidekick/public/chatgpt_desktop_public_latest.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.openai.atlas\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "rtrouton-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT Atlas.",
-          "display_name": "ChatGPT",
-          "first_commit": "2025-10-22T09:11:04-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.ChatGPTAtlas",
-          "input_vars": [
-            "DOWNLOADURL",
-            "NAME",
-            "SOFTWARETITLE1",
-            "SOFTWARETITLE2",
-            "VENDOR"
-          ],
-          "name_key": "chatgpt",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "ChatGPTAtlas/ChatGPTAtlas.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/atlas/public/chatgpt_atlas.dmg",
-          "source_type": "url"
-        }
-      ],
-      "skip_reason": "ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as 'ChatGPT Atlas'. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.",
       "substitutability": {
         "compatible_artifact": true,
         "notes": [
@@ -22475,6 +22551,318 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "AdobeCreativeCloudCleanerTool",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 3,
+          "reason": "weaker duplicate",
+          "rel_path": "Adobe/AdobeCreativeCloudCleanerTool.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "score": 7.75
+        }
+      ],
+      "deprecation_message": "Consider switching to AdobeCreativeCloudCleanerTool recipes in the blackthroat-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "4df921b72958",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "Adobe Systems, Inc./AdobeCreativeCloudCleanerTool.download.recipe",
+          "repo": "blackthroat-recipes",
+          "score": 7.85
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.Adobe.Installers.AdobeCreativeCloudCleanerTool\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = JQ525L2MZD"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "blackthroat-recipes"
+          ],
+          "description": "Downloads the latest version of Adobe Creative Cloud Cleaner Tool.",
+          "display_name": "AdobeCreativeCloudCleanerTool",
+          "first_commit": "2018-10-30T16:43:58-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.blackthroat.download.AdobeCreativeCloudCleanerTool",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME"
+          ],
+          "name_key": "adobecreativecloudcleanertool",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Adobe Systems, Inc./AdobeCreativeCloudCleanerTool.download.recipe",
+          "repo": "blackthroat-recipes",
+          "skip_reason": null,
+          "source_domain": "download.adobe.com",
+          "source_key": "download.adobe.com/pub/adobe/supporttools/cleaner/mac/adobecreativecloudcleanertool.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.Adobe.Installers.AdobeCreativeCloudCleanerTool\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = JQ525L2MZD"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "kevinmcox-recipes"
+          ],
+          "description": "Downloads the latest version of Adobe Creative Cloud Cleaner Tool.",
+          "display_name": "AdobeCreativeCloudCleanerTool",
+          "first_commit": "2026-07-16T17:46:49-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.kevinmcox.download.AdobeCreativeCloudCleanerTool",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME"
+          ],
+          "name_key": "adobecreativecloudcleanertool",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "AppDmgVersioner"
+          ],
+          "rel_path": "Adobe/AdobeCreativeCloudCleanerTool.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "skip_reason": null,
+          "source_domain": "swupmf.adobe.com",
+          "source_key": "swupmf.adobe.com/webfeed/cleanertool/mac/adobecreativecloudcleanertool.dmg",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
+      "app_name": "AdobeLogCollectorTool",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 3,
+          "reason": "weaker duplicate",
+          "rel_path": "Adobe/AdobeLogCollectorTool.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "score": 7.75
+        }
+      ],
+      "deprecation_message": "Consider switching to AdobeLogCollectorTool recipes in the blackthroat-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "2352f538a2e6",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "Adobe Systems, Inc./AdobeLogCollectorTool.download.recipe",
+          "repo": "blackthroat-recipes",
+          "score": 7.85
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.Adobe.Installers.AdobeLogCollectorTool\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = JQ525L2MZD"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "blackthroat-recipes"
+          ],
+          "description": "Downloads the latest version of Log Collector tool.",
+          "display_name": "AdobeLogCollectorTool",
+          "first_commit": "2018-10-30T16:06:11-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.blackthroat.download.AdobeLogCollectorTool",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME"
+          ],
+          "name_key": "adobelogcollectortool",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Adobe Systems, Inc./AdobeLogCollectorTool.download.recipe",
+          "repo": "blackthroat-recipes",
+          "skip_reason": null,
+          "source_domain": "download.adobe.com",
+          "source_key": "download.adobe.com/pub/adobe/supporttools/logcollector/mac/logcollectortool.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.Adobe.Installers.AdobeLogCollectorTool\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = JQ525L2MZD"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "kevinmcox-recipes"
+          ],
+          "description": "Downloads the latest version of Adobe Log Collector Tool.",
+          "display_name": "AdobeLogCollectorTool",
+          "first_commit": "2026-07-16T18:10:01-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.kevinmcox.download.AdobeLogCollectorTool",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME"
+          ],
+          "name_key": "adobelogcollectortool",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "AppDmgVersioner"
+          ],
+          "rel_path": "Adobe/AdobeLogCollectorTool.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "skip_reason": null,
+          "source_domain": "swupmf.adobe.com",
+          "source_key": "swupmf.adobe.com/webfeed/adobelogcollectortool/macarm/logcollectortool.dmg",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "AmazonCorretto%MAJOR_VERSION%",
       "criteria": [
         {
@@ -27433,6 +27821,146 @@
         "https://github.com/autopkg/blackthroat-recipes/pull/36"
       ],
       "skip_reason": "PR(s) already opened",
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "skip"
+    },
+    {
+      "app_name": "ChatGPT",
+      "duplicate_confidence": "MEDIUM",
+      "id": "61eae045eaa9",
+      "keeper_confidence": "NONE",
+      "match_reasons": [
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 3,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.openai.chat\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "Lotusshaney-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT.",
+          "display_name": "ChatGPT",
+          "first_commit": "2024-06-13T11:52:01+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.Lotusshaney.download.ChatGPT",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "chatgpt",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "OpenAI/ChatGPT.download.recipe",
+          "repo": "Lotusshaney-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/sidekick/public/chatgpt_desktop_public_latest.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "almenscorner-recipes",
+            "rtrouton-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT.",
+          "display_name": "ChatGPT",
+          "first_commit": "2024-07-30T14:45:54-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.ChatGPT",
+          "input_vars": [
+            "DOWNLOADURL",
+            "NAME",
+            "SOFTWARETITLE",
+            "VENDOR"
+          ],
+          "name_key": "chatgpt",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "ChatGPT/ChatGPT.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/codex-app-prod/chatgpt.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.openai.atlas\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "rtrouton-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT Atlas.",
+          "display_name": "ChatGPT",
+          "first_commit": "2025-10-22T09:11:04-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.ChatGPTAtlas",
+          "input_vars": [
+            "DOWNLOADURL",
+            "NAME",
+            "SOFTWARETITLE1",
+            "SOFTWARETITLE2",
+            "VENDOR"
+          ],
+          "name_key": "chatgpt",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "ChatGPTAtlas/ChatGPTAtlas.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/atlas/public/chatgpt_atlas.dmg",
+          "source_type": "url"
+        }
+      ],
+      "skip_reason": "ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as 'ChatGPT Atlas'. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.",
       "substitutability": {
         "compatible_artifact": true,
         "notes": [
@@ -36708,100 +37236,6 @@
       "verdict": "review"
     },
     {
-      "app_name": "MenuMeters",
-      "duplicate_confidence": "LOW",
-      "id": "c42da125040c",
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized recipe name"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "jleggat-recipes"
-          ],
-          "description": "Downloads latest MenuMeters disk image.",
-          "display_name": "MenuMeters",
-          "first_commit": "2013-11-19T13:12:18-07:00",
-          "has_arch_var": false,
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.jleggat.MenuMeters.download",
-          "input_vars": [
-            "DOWNLOAD_URL",
-            "NAME"
-          ],
-          "name_key": "menumeters",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase"
-          ],
-          "rel_path": "RagingMenace/MenuMeters.download.recipe",
-          "repo": "jleggat-recipes",
-          "skip_reason": null,
-          "source_domain": "www.ragingmenace.com",
-          "source_key": "www.ragingmenace.com/software/download/menumeters.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "zip"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.yujitach.MenuMeters\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"95AQ7YKR5A\")"
-          ],
-          "dependent_count": 4,
-          "dependent_repos": [
-            "kevinmcox-recipes",
-            "peshay-recipes"
-          ],
-          "description": "Downloads the latest version of MenuMeters (yujitach).",
-          "display_name": "MenuMeters",
-          "first_commit": "2021-01-12T12:47:45-06:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.kevinmcox.download.MenuMeters",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "menumeters",
-          "parent_recipe": "",
-          "processors": [
-            "SparkleUpdateInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Yuji Tachikawa/MenuMeters.download.recipe",
-          "repo": "kevinmcox-recipes",
-          "skip_reason": null,
-          "source_domain": "member.ipmu.jp",
-          "source_key": "member.ipmu.jp/yuji.tachikawa/menumeterselcapitan/menumeters-update.xml",
-          "source_type": "sparkle"
-        }
-      ],
-      "skip_reason": "different artifact formats: dmg, zip",
-      "substitutability": {
-        "compatible_artifact": false,
-        "notes": [
-          "different artifact formats: dmg, zip"
-        ],
-        "same_product": true
-      },
-      "verdict": "review"
-    },
-    {
       "app_name": "MindManager",
       "duplicate_confidence": "LOW",
       "id": "8eb1c3659363",
@@ -37468,6 +37902,103 @@
         "compatible_artifact": false,
         "notes": [
           "different artifact formats: dmg, pkg"
+        ],
+        "same_product": true
+      },
+      "verdict": "review"
+    },
+    {
+      "app_name": "Onyx",
+      "duplicate_confidence": "LOW",
+      "id": "07d95a3a9468",
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized recipe name"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"app.onyx.desktop\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = SWL96PZA3N"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "ScruffyInLondon-recipes"
+          ],
+          "description": "Downloads the latest version of Onyx Desktop App.",
+          "display_name": "Onyx",
+          "first_commit": "2026-06-12T13:54:59+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.ScruffyInLondon.download.OnyxDesktop",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "onyx",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "OnyxDesktop/OnyxDesktop.download.recipe",
+          "repo": "ScruffyInLondon-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "onyx-dot-app/onyx",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.titanium.OnyX\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T49MRBL8UL)"
+          ],
+          "dependent_count": 4,
+          "dependent_repos": [
+            "almenscorner-recipes",
+            "peshay-recipes"
+          ],
+          "description": "Downloads the specified Onyx client for macOS",
+          "display_name": "Onyx",
+          "first_commit": "2022-09-11T11:24:16+02:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.peshay.download.OnyX",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME",
+            "VERSION"
+          ],
+          "name_key": "onyx",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Onyx/Onyx.download.recipe",
+          "repo": "peshay-recipes",
+          "skip_reason": null,
+          "source_domain": "www.titanium-software.fr",
+          "source_key": "www.titanium-software.fr/download/{var}/onyx.dmg",
+          "source_type": "url"
+        }
+      ],
+      "skip_reason": "low duplicate confidence; needs qualitative review",
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
         ],
         "same_product": true
       },
@@ -47792,28 +48323,28 @@
     "duplicate_confidence": {
       "HIGH": 97,
       "LOW": 150,
-      "MEDIUM": 89
+      "MEDIUM": 92
     },
-    "generated_at": "2026-07-13T05:56:34.508867+00:00",
+    "generated_at": "2026-07-20T05:58:40.651187+00:00",
     "keeper_confidence": {
       "HIGH": 9,
-      "LOW": 203,
+      "LOW": 206,
       "MEDIUM": 46,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4179,
+      "download_recipes": 4201,
       "skipped": {
         "child_of_download": 96,
-        "deprecated": 621,
+        "deprecated": 627,
         "package_required": 22,
         "windows": 270
       },
-      "total_recipe_files": 17197
+      "total_recipe_files": 17302
     },
-    "total_sets": 336,
+    "total_sets": 339,
     "verdicts": {
-      "recommend": 137,
+      "recommend": 140,
       "review": 121,
       "skip": 78
     }

@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">140</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">106</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-07-20T05:58:40.651187+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">139</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">106</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-07-27T06:16:39.722544+00:00"></div></div>
   </div>
 </div>
 
@@ -5020,43 +5020,6 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="MEDIUM"
-      data-repos="hjuutilainen-recipes|homebysix-recipes"
-      data-search="disk drill hjuutilainen-recipes/cleverfiles/diskdrill.download.recipe homebysix-recipes/diskdrill/diskdrill.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Disk Drill</span>
-        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/hjuutilainen-recipes/blob/HEAD/CleverFiles/DiskDrill.download.recipe" target="_blank" rel="noopener">hjuutilainen-recipes<span class="path-rest">/CleverFiles/DiskDrill.download.recipe</span></a></div>
-          <div class="recipe-reason">weaker duplicate</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/homebysix-recipes/blob/HEAD/DiskDrill/DiskDrill.download.recipe" target="_blank" rel="noopener">homebysix-recipes<span class="path-rest">/DiskDrill/DiskDrill.download.recipe</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description</span></div></div>
-        
-      </div>
-    </details>
-
-    <details class="card verdict-recommend dup-medium"
-      data-tab="MEDIUM"
-      data-dup="MEDIUM"
-      data-keep="MEDIUM"
       data-repos="peshay-recipes|smithjw-recipes"
       data-search="globalprotect peshay-recipes/paloalto/globalprotect.download.recipe smithjw-recipes/palo_alto/globalprotect.download.recipe.yaml">
       <summary class="card-hd">
@@ -8809,6 +8772,43 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: tgz, zip</div>
+      </div>
+    </details>
+
+    <details class="card verdict-review dup-low"
+      data-tab="REVIEW"
+      data-dup="LOW"
+      data-keep="LOW"
+      data-repos="hjuutilainen-recipes|homebysix-recipes"
+      data-search="disk drill hjuutilainen-recipes/cleverfiles/diskdrill.download.recipe homebysix-recipes/diskdrill/diskdrill.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Disk Drill</span>
+        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized recipe name</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/hjuutilainen-recipes/blob/HEAD/CleverFiles/DiskDrill.download.recipe" target="_blank" rel="noopener">hjuutilainen-recipes<span class="path-rest">/CleverFiles/DiskDrill.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/homebysix-recipes/blob/HEAD/DiskDrill/DiskDrill.download.recipe" target="_blank" rel="noopener">homebysix-recipes<span class="path-rest">/DiskDrill/DiskDrill.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Needs review:</strong> low duplicate confidence; needs qualitative review</div>
       </div>
     </details>
 
@@ -13952,7 +13952,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4201 download recipes out of 17302 recipe files.
+  Scanned 4226 download recipes out of 17398 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

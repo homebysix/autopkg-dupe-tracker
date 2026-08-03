@@ -25361,6 +25361,163 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "Modern CSV",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
+          "rel_path": "Modern CSV/Modern CSV.download.recipe",
+          "repo": "dataJAR-recipes",
+          "score": 7.35
+        }
+      ],
+      "deprecation_message": "Consider switching to Modern CSV recipes in the jannheider-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "742f68a3e4a3",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "ModernCSV/ModernCSV.download.recipe",
+          "repo": "jannheider-recipes",
+          "score": 7.85
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"net.galliumdigital.Modern-CSV\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"YZ85PK6LNM\""
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "dataJAR-recipes"
+          ],
+          "description": "Download recipe for the latest version of Modern CSV.",
+          "display_name": "ModernCSV",
+          "first_commit": "2026-07-31T15:02:40+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.dataJAR-recipes.download.Modern CSV",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "moderncsv",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Modern CSV/Modern CSV.download.recipe",
+          "repo": "dataJAR-recipes",
+          "skip_reason": null,
+          "source_domain": "www.moderncsv.com",
+          "source_key": "www.moderncsv.com/download-mac",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"net.galliumdigital.Modern-CSV\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = YZ85PK6LNM"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "jannheider-recipes"
+          ],
+          "description": "Downloads the latest version of Modern CSV.",
+          "display_name": "Modern CSV",
+          "first_commit": "2024-05-07T14:53:38+02:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jannheider.download.ModernCSV",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME",
+            "SEARCH_PATTERN",
+            "SEARCH_URL"
+          ],
+          "name_key": "moderncsv",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "ModernCSV/ModernCSV.download.recipe",
+          "repo": "jannheider-recipes",
+          "skip_reason": null,
+          "source_domain": "www.moderncsv.com",
+          "source_key": "www.moderncsv.com/download",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "Mountain Duck",
       "criteria": [
         {
@@ -46454,7 +46611,6 @@
       "match_reasons": [
         "same normalized name and source domain",
         "same normalized recipe name",
-        "same url source",
         "similar name plus weak identity match"
       ],
       "member_count": 2,
@@ -46474,7 +46630,7 @@
             "neilmartin83-recipes",
             "smithjw-recipes"
           ],
-          "description": "Downloads the latest version of Nessus Agent",
+          "description": "Downloads the latest Tenable Nessus Agent disk image (.dmg) from Tenable and verifies the Install Nessus Agent.pkg signature.",
           "display_name": "Nessus Agent",
           "first_commit": "2025-01-31T11:09:03Z",
           "has_arch_var": false,
@@ -46491,14 +46647,13 @@
             "URLTextSearcher",
             "URLDownloader",
             "EndOfCheckPhase",
-            "FileFinder",
             "CodeSignatureVerifier"
           ],
           "rel_path": "Tenable/Nessus Agent.download.recipe.yaml",
           "repo": "neilmartin83-recipes",
           "skip_reason": null,
           "source_domain": "www.tenable.com",
-          "source_key": "www.tenable.com/downloads/nessus-agents",
+          "source_key": "www.tenable.com/downloads/api/v2/pages/nessus-agents",
           "source_type": "url"
         },
         {
@@ -48263,28 +48418,28 @@
     "duplicate_confidence": {
       "HIGH": 97,
       "LOW": 151,
-      "MEDIUM": 91
+      "MEDIUM": 92
     },
-    "generated_at": "2026-07-27T06:16:39.722544+00:00",
+    "generated_at": "2026-08-03T06:03:35.687183+00:00",
     "keeper_confidence": {
       "HIGH": 9,
-      "LOW": 207,
+      "LOW": 208,
       "MEDIUM": 45,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4226,
+      "download_recipes": 4401,
       "skipped": {
         "child_of_download": 96,
-        "deprecated": 626,
+        "deprecated": 627,
         "package_required": 22,
         "windows": 271
       },
-      "total_recipe_files": 17398
+      "total_recipe_files": 18087
     },
-    "total_sets": 339,
+    "total_sets": 340,
     "verdicts": {
-      "recommend": 139,
+      "recommend": 140,
       "review": 122,
       "skip": 78
     }

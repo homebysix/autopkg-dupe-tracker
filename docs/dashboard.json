@@ -3109,7 +3109,6 @@
           "parent_recipe": "",
           "processors": [
             "URLTextSearcher",
-            "URLTextSearcher",
             "URLDownloader",
             "EndOfCheckPhase",
             "CodeSignatureVerifier",
@@ -19319,6 +19318,165 @@
         "compatible_artifact": true,
         "notes": [
           "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
+      "app_name": "DevToys",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 3,
+          "reason": "weaker duplicate",
+          "rel_path": "DevToys/DevToys.download.recipe",
+          "repo": "homebysix-recipes",
+          "score": 9.35
+        }
+      ],
+      "deprecation_message": "Consider switching to DevToys recipes in the almenscorner-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "37516694d155",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source",
+          "rel_path": "DevToys/DevToys.download.recipe",
+          "repo": "almenscorner-recipes",
+          "score": 10.35
+        }
+      ],
+      "keeper_confidence": "MEDIUM",
+      "match_reasons": [
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = V6QF45RK9R"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "almenscorner-recipes"
+          ],
+          "description": "Downloads the latest version of DevToys.\nSet PRERELEASE to a non-empty string to download prereleases, either\nvia Input in an override or via the -k option,\ni.e.: `-k PRERELEASE=yes`\n\nDownloads arm64 version by default. Set ARCH to \"x64\" to download x64 version.\n",
+          "display_name": "DevToys",
+          "first_commit": "2025-03-05T10:04:13+01:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.almenscorner.download.DevToys",
+          "input_vars": [
+            "ARCH",
+            "NAME",
+            "PRERELEASE"
+          ],
+          "name_key": "devtoys",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "DevToys/DevToys.download.recipe",
+          "repo": "almenscorner-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "devtoys-app/devtoys",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.yuki.DevToys\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = T5HMUWWK5R)"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "homebysix-recipes"
+          ],
+          "description": "Downloads the latest version of DevToys.",
+          "display_name": "DevToys",
+          "first_commit": "2026-08-07T10:47:51-07:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.homebysix.download.DevToys",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "devtoys",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "DevToys/DevToys.download.recipe",
+          "repo": "homebysix-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "obuchiyuki/devtoysmac",
+          "source_type": "github"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: zip"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: zip"
         ],
         "same_product": true
       },
@@ -48418,28 +48576,28 @@
     "duplicate_confidence": {
       "HIGH": 97,
       "LOW": 151,
-      "MEDIUM": 92
+      "MEDIUM": 93
     },
-    "generated_at": "2026-08-03T06:03:35.687183+00:00",
+    "generated_at": "2026-08-10T04:22:15.195065+00:00",
     "keeper_confidence": {
       "HIGH": 9,
       "LOW": 208,
-      "MEDIUM": 45,
+      "MEDIUM": 46,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4401,
+      "download_recipes": 4619,
       "skipped": {
         "child_of_download": 96,
         "deprecated": 627,
         "package_required": 22,
-        "windows": 271
+        "windows": 272
       },
-      "total_recipe_files": 18087
+      "total_recipe_files": 18954
     },
-    "total_sets": 340,
+    "total_sets": 341,
     "verdicts": {
-      "recommend": 140,
+      "recommend": 141,
       "review": 122,
       "skip": 78
     }

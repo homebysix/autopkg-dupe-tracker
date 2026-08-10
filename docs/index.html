@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">140</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">106</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-03T06:03:35.687183+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">106</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-10T04:22:15.195065+00:00"></div></div>
   </div>
 </div>
 
@@ -4975,6 +4975,43 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="MEDIUM"
+      data-repos="almenscorner-recipes|homebysix-recipes"
+      data-search="devtoys almenscorner-recipes/devtoys/devtoys.download.recipe homebysix-recipes/devtoys/devtoys.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">DevToys</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/almenscorner-recipes/blob/HEAD/DevToys/DevToys.download.recipe" target="_blank" rel="noopener">almenscorner-recipes<span class="path-rest">/DevToys/DevToys.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/homebysix-recipes/blob/HEAD/DevToys/DevToys.download.recipe" target="_blank" rel="noopener">homebysix-recipes<span class="path-rest">/DevToys/DevToys.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source</span></div></div>
         
       </div>
     </details>
@@ -13989,7 +14026,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4401 download recipes out of 18087 recipe files.
+  Scanned 4619 download recipes out of 18954 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

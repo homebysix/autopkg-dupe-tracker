@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">106</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-10T04:22:15.195065+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">123</span> to review</div><div class="stat-item"><span class="stat-num">107</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-17T03:37:21.094244+00:00"></div></div>
   </div>
 </div>
 
@@ -3322,6 +3322,52 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="HIGH"
       data-keep="NONE"
+      data-repos="Lotusshaney-recipes|rtrouton-recipes"
+      data-search="chatgpt lotusshaney-recipes/openai/chatgpt.download.recipe rtrouton-recipes/chatgpt/chatgpt.download.recipe rtrouton-recipes/chatgptatlas/chatgptatlas.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">ChatGPT</span>
+        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/OpenAI/ChatGPT.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/OpenAI/ChatGPT.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPT/ChatGPT.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPT/ChatGPT.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPTAtlas/ChatGPTAtlas.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPTAtlas/ChatGPTAtlas.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Skipped:</strong> ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as &#x27;ChatGPT Atlas&#x27;. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.</div>
+      </div>
+    </details>
+
+    <details class="card verdict-skip dup-high"
+      data-tab="SKIP"
+      data-dup="HIGH"
+      data-keep="NONE"
       data-repos="kevinmcox-recipes|smithjw-recipes"
       data-search="cmux kevinmcox-recipes/manaflow/cmux.download.recipe.yaml smithjw-recipes/cmux/cmux.download.recipe.yaml">
       <summary class="card-hd">
@@ -5139,14 +5185,14 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-deprecate">Depr</span>
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/n8felton-recipes/blob/HEAD/jamovi/jamovi.download.recipe" target="_blank" rel="noopener">n8felton-recipes<span class="path-rest">/jamovi/jamovi.download.recipe</span></a></div>
           <div class="recipe-reason">weaker duplicate</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-pos">Channel</span><span class="ftag ftag-neutral">dmg</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div>
@@ -5159,7 +5205,7 @@ a:hover { text-decoration: underline; }
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;2</div>
       </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; has release/channel input</span></div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; has release/channel input</span></div></div>
         
       </div>
     </details>
@@ -7035,52 +7081,6 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="MEDIUM"
       data-keep="NONE"
-      data-repos="Lotusshaney-recipes|rtrouton-recipes"
-      data-search="chatgpt lotusshaney-recipes/openai/chatgpt.download.recipe rtrouton-recipes/chatgpt/chatgpt.download.recipe rtrouton-recipes/chatgptatlas/chatgptatlas.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">ChatGPT</span>
-        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/OpenAI/ChatGPT.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/OpenAI/ChatGPT.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPT/ChatGPT.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPT/ChatGPT.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/rtrouton-recipes/blob/HEAD/ChatGPTAtlas/ChatGPTAtlas.download.recipe" target="_blank" rel="noopener">rtrouton-recipes<span class="path-rest">/ChatGPTAtlas/ChatGPTAtlas.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Skipped:</strong> ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as &#x27;ChatGPT Atlas&#x27;. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.</div>
-      </div>
-    </details>
-
-    <details class="card verdict-skip dup-medium"
-      data-tab="SKIP"
-      data-dup="MEDIUM"
-      data-keep="NONE"
       data-repos="jc0b-recipes|kevinmcox-recipes"
       data-search="contour jc0b-recipes/contour/contour.download.recipe.yaml kevinmcox-recipes/henry stamerjohann/contour.download.recipe.yaml">
       <summary class="card-hd">
@@ -8735,6 +8735,43 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> low duplicate confidence; needs qualitative review</div>
+      </div>
+    </details>
+
+    <details class="card verdict-review dup-low"
+      data-tab="REVIEW"
+      data-dup="LOW"
+      data-keep="LOW"
+      data-repos="almenscorner-recipes|guehl-recipes"
+      data-search="copyq almenscorner-recipes/copyq/copyq.download.recipe guehl-recipes/copyq/copyq.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">CopyQ</span>
+        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/almenscorner-recipes/blob/HEAD/CopyQ/CopyQ.download.recipe" target="_blank" rel="noopener">almenscorner-recipes<span class="path-rest">/CopyQ/CopyQ.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/guehl-recipes/blob/HEAD/CopyQ/CopyQ.download.recipe" target="_blank" rel="noopener">guehl-recipes<span class="path-rest">/CopyQ/CopyQ.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, zip</div>
       </div>
     </details>
 
@@ -14026,7 +14063,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4619 download recipes out of 18954 recipe files.
+  Scanned 4639 download recipes out of 19050 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

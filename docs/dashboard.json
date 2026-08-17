@@ -13326,6 +13326,148 @@
       "verdict": "skip"
     },
     {
+      "app_name": "ChatGPT",
+      "duplicate_confidence": "HIGH",
+      "id": "61eae045eaa9",
+      "keeper_confidence": "NONE",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "same url source",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 3,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "Lotusshaney-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT.",
+          "display_name": "ChatGPT",
+          "first_commit": "2024-06-13T11:52:01+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.Lotusshaney.download.ChatGPT",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "chatgpt",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "OpenAI/ChatGPT.download.recipe",
+          "repo": "Lotusshaney-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/codex-app-prod/chatgpt.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "almenscorner-recipes",
+            "rtrouton-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT.",
+          "display_name": "ChatGPT",
+          "first_commit": "2024-07-30T14:45:54-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.ChatGPT",
+          "input_vars": [
+            "DOWNLOADURL",
+            "NAME",
+            "SOFTWARETITLE",
+            "VENDOR"
+          ],
+          "name_key": "chatgpt",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "ChatGPT/ChatGPT.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/codex-app-prod/chatgpt.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.openai.atlas\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "rtrouton-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT Atlas.",
+          "display_name": "ChatGPT",
+          "first_commit": "2025-10-22T09:11:04-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.rtrouton.download.ChatGPTAtlas",
+          "input_vars": [
+            "DOWNLOADURL",
+            "NAME",
+            "SOFTWARETITLE1",
+            "SOFTWARETITLE2",
+            "VENDOR"
+          ],
+          "name_key": "chatgpt",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "ChatGPTAtlas/ChatGPTAtlas.download.recipe",
+          "repo": "rtrouton-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/atlas/public/chatgpt_atlas.dmg",
+          "source_type": "url"
+        }
+      ],
+      "skip_reason": "ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as 'ChatGPT Atlas'. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.",
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "skip"
+    },
+    {
       "app_name": "cmux",
       "duplicate_confidence": "HIGH",
       "id": "9e38ae1d7136",
@@ -20014,7 +20156,6 @@
       "keeper_confidence": "MEDIUM",
       "match_reasons": [
         "same normalized name and code signing authority",
-        "same normalized name and source domain",
         "same normalized recipe name",
         "similar name plus weak identity match"
       ],
@@ -20031,23 +20172,23 @@
           "dependent_repos": [
             "n8felton-recipes"
           ],
-          "description": "Downloads the latest version of jamovi.\n\nARCH: macos-arm64 (Apple Silicon) or macos-x64 (Intel)",
+          "description": "Downloads the latest version of jamovi.\n\nARCH selects the architecture:\n- macos-arm64 (default): Apple Silicon\n- macos-x64: Intel\nCHANNEL selects the release track:\n- solid (default): the tried and tested release jamovi recommends\n- current: the newest features, ahead of solid\n- legacy: the previous long-term release\n",
           "display_name": "jamovi",
           "first_commit": "2021-08-20T10:22:52-04:00",
           "has_arch_var": true,
           "has_codesig": true,
           "has_endofcheck": true,
-          "has_release_var": false,
+          "has_release_var": true,
           "identifier": "com.github.n8felton.download.jamovi",
           "input_vars": [
             "ARCH",
+            "CHANNEL",
             "NAME"
           ],
           "name_key": "jamovi",
           "parent_recipe": "",
           "processors": [
-            "URLTextSearcher",
-            "VariableSetter",
+            "JSONURLGetter",
             "URLDownloader",
             "EndOfCheckPhase",
             "CodeSignatureVerifier"
@@ -20055,9 +20196,9 @@
           "rel_path": "jamovi/jamovi.download.recipe",
           "repo": "n8felton-recipes",
           "skip_reason": null,
-          "source_domain": "www.jamovi.org",
-          "source_key": "www.jamovi.org/release-notes.html",
-          "source_type": "url"
+          "source_domain": null,
+          "source_key": "processor:JSONURLGetter",
+          "source_type": "unknown"
         },
         {
           "artifact_formats": [
@@ -20103,7 +20244,7 @@
       "rationale": [
         {
           "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
         },
         {
           "category": "artifact",
@@ -22984,7 +23125,7 @@
             "almenscorner-recipes",
             "dataJAR-recipes"
           ],
-          "description": "Downloads the latest version of Amazon Corretto.\n\nTo download Apple Silicon use: \"aarch64\" in the DOWNLOAD_ARCH variable\nTo download Intel use: \"x64\" in the DOWNLOAD_ARCH variable\n\nSet MAJOR_VERSION to the major version you wish to download. Currently: 8, 11, 15, 16, 17, 18, 19, 20, 21, 22 or 23",
+          "description": "Downloads the latest version of Amazon Corretto.\n\nTo download Apple Silicon use: \"aarch64\" in the DOWNLOAD_ARCH variable\nTo download Intel use: \"x64\" in the DOWNLOAD_ARCH variable\n\nSet MAJOR_VERSION to the major version you wish to download. Currently: 8, 11, 15, 16, 17, 18, 19, 20, 21, 22, 24, 25 or 26",
           "display_name": "AmazonCorretto%MAJOR_VERSION%",
           "first_commit": "2024-12-11T17:44:38Z",
           "has_arch_var": true,
@@ -23008,7 +23149,7 @@
           "repo": "dataJAR-recipes",
           "skip_reason": null,
           "source_domain": "corretto.aws",
-          "source_key": "corretto.aws/downloads/latest/amazon-corretto---macos-jdk.pkg",
+          "source_key": "corretto.aws/downloads/latest/amazon-corretto-26-aarch64-macos-jdk.pkg",
           "source_type": "url"
         },
         {
@@ -23024,7 +23165,7 @@
           "dependent_repos": [
             "n8felton-recipes"
           ],
-          "description": "Downloads Amazon Corretto, a no-cost, multiplatform, production-ready distribution of OpenJDK",
+          "description": "Downloads Amazon Corretto, a no-cost, multiplatform, production-ready distribution of OpenJDK.\n\nSet ARCH to \"aarch64\" for Apple silicon, or \"x64\" for Intel.\n",
           "display_name": "AmazonCorretto%MAJOR_VERSION%",
           "first_commit": "2019-08-22T08:04:11-04:00",
           "has_arch_var": true,
@@ -27991,146 +28132,6 @@
       "verdict": "skip"
     },
     {
-      "app_name": "ChatGPT",
-      "duplicate_confidence": "MEDIUM",
-      "id": "61eae045eaa9",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 3,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.openai.chat\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
-          ],
-          "dependent_count": 2,
-          "dependent_repos": [
-            "Lotusshaney-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT.",
-          "display_name": "ChatGPT",
-          "first_commit": "2024-06-13T11:52:01+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.Lotusshaney.download.ChatGPT",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "chatgpt",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "OpenAI/ChatGPT.download.recipe",
-          "repo": "Lotusshaney-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/sidekick/public/chatgpt_desktop_public_latest.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
-          ],
-          "dependent_count": 2,
-          "dependent_repos": [
-            "almenscorner-recipes",
-            "rtrouton-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT.",
-          "display_name": "ChatGPT",
-          "first_commit": "2024-07-30T14:45:54-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.ChatGPT",
-          "input_vars": [
-            "DOWNLOADURL",
-            "NAME",
-            "SOFTWARETITLE",
-            "VENDOR"
-          ],
-          "name_key": "chatgpt",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "ChatGPT/ChatGPT.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/codex-app-prod/chatgpt.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.openai.atlas\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\")"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "rtrouton-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT Atlas.",
-          "display_name": "ChatGPT",
-          "first_commit": "2025-10-22T09:11:04-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.rtrouton.download.ChatGPTAtlas",
-          "input_vars": [
-            "DOWNLOADURL",
-            "NAME",
-            "SOFTWARETITLE1",
-            "SOFTWARETITLE2",
-            "VENDOR"
-          ],
-          "name_key": "chatgpt",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "ChatGPTAtlas/ChatGPTAtlas.download.recipe",
-          "repo": "rtrouton-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/atlas/public/chatgpt_atlas.dmg",
-          "source_type": "url"
-        }
-      ],
-      "skip_reason": "ChatGPTAtlas.download.recipe in rtrouton-recipes downloads a different product (ChatGPT Atlas from persistent.oaistatic.com/atlas/public/ChatGPT_Atlas.dmg with identifier com.openai.atlas) distinct from standard ChatGPT (com.openai.chat). Its Description explicitly documents it as 'ChatGPT Atlas'. The standard ChatGPT recipes in Lotusshaney and rtrouton are also different enough (Lotusshaney adds Versioner, rtrouton adds VENDOR/SOFTWARETITLE input vars) that this set mixes distinct distributions.",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
       "app_name": "Contour",
       "duplicate_confidence": "MEDIUM",
       "id": "50c0df2285e9",
@@ -32951,6 +32952,100 @@
         "compatible_artifact": true,
         "notes": [
           "artifact formats unknown or not comparable"
+        ],
+        "same_product": true
+      },
+      "verdict": "review"
+    },
+    {
+      "app_name": "CopyQ",
+      "duplicate_confidence": "LOW",
+      "id": "a61f40e06acf",
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same github source",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg",
+            "zip"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "almenscorner-recipes"
+          ],
+          "description": "Downloads the latest version of CopyQ.",
+          "display_name": "CopyQ",
+          "first_commit": "2025-05-09T16:48:45+02:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.almenscorner.download.CopyQ",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "copyq",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver"
+          ],
+          "rel_path": "CopyQ/CopyQ.download.recipe",
+          "repo": "almenscorner-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "hluk/copyq",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "guehl-recipes"
+          ],
+          "description": "Downloads the latest arm64 macOS build of CopyQ.",
+          "display_name": "CopyQ",
+          "first_commit": "2026-08-12T18:19:43+02:00",
+          "has_arch_var": false,
+          "has_codesig": false,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.guehl.download.CopyQ",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "copyq",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase"
+          ],
+          "rel_path": "CopyQ/CopyQ.download.recipe",
+          "repo": "guehl-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "hluk/copyq",
+          "source_type": "github"
+        }
+      ],
+      "skip_reason": "different artifact formats: dmg, zip",
+      "substitutability": {
+        "compatible_artifact": false,
+        "notes": [
+          "different artifact formats: dmg, zip"
         ],
         "same_product": true
       },
@@ -48574,31 +48669,31 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 97,
-      "LOW": 151,
-      "MEDIUM": 93
+      "HIGH": 98,
+      "LOW": 152,
+      "MEDIUM": 92
     },
-    "generated_at": "2026-08-10T04:22:15.195065+00:00",
+    "generated_at": "2026-08-17T03:37:21.094244+00:00",
     "keeper_confidence": {
       "HIGH": 9,
-      "LOW": 208,
+      "LOW": 209,
       "MEDIUM": 46,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4619,
+      "download_recipes": 4639,
       "skipped": {
         "child_of_download": 96,
-        "deprecated": 627,
+        "deprecated": 630,
         "package_required": 22,
-        "windows": 272
+        "windows": 273
       },
-      "total_recipe_files": 18954
+      "total_recipe_files": 19050
     },
-    "total_sets": 341,
+    "total_sets": 342,
     "verdicts": {
       "recommend": 141,
-      "review": 122,
+      "review": 123,
       "skip": 78
     }
   }

@@ -28026,112 +28026,6 @@
       "verdict": "skip"
     },
     {
-      "app_name": "Bitwarden",
-      "duplicate_confidence": "MEDIUM",
-      "id": "c071bb6fec33",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.bitwarden.desktop\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LTZ2PFU5D6"
-          ],
-          "dependent_count": 2,
-          "dependent_repos": [
-            "blackthroat-recipes"
-          ],
-          "description": "Downloads the latest version of Bitwarden.",
-          "display_name": "Bitwarden",
-          "first_commit": "2019-01-21T12:50:52-06:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.blackthroat.download.Bitwarden",
-          "input_vars": [
-            "GITHUB_REPO",
-            "NAME"
-          ],
-          "name_key": "bitwarden",
-          "parent_recipe": "",
-          "processors": [
-            "GitHubReleasesInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "8bit Solutions LLC/Bitwarden.download.recipe",
-          "repo": "blackthroat-recipes",
-          "skip_reason": null,
-          "source_domain": "github.com",
-          "source_key": "bitwarden/desktop",
-          "source_type": "github"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.bitwarden.desktop\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LTZ2PFU5D6"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "almenscorner-recipes",
-            "drewdiver-recipes",
-            "wycomco-recipes"
-          ],
-          "description": "Download recipe for Bitwarden.",
-          "display_name": "Bitwarden",
-          "first_commit": "2019-01-22T15:31:49+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.grumpydrew.download.Bitwarden",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "bitwarden",
-          "parent_recipe": "",
-          "processors": [
-            "GitHubReleasesInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "Bitwarden/Bitwarden.download.recipe",
-          "repo": "drewdiver-recipes",
-          "skip_reason": null,
-          "source_domain": "github.com",
-          "source_key": "bitwarden/clients",
-          "source_type": "github"
-        }
-      ],
-      "prs": [
-        "https://github.com/autopkg/blackthroat-recipes/pull/36"
-      ],
-      "skip_reason": "PR(s) already opened",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
       "app_name": "Contour",
       "duplicate_confidence": "MEDIUM",
       "id": "50c0df2285e9",
@@ -43220,12 +43114,13 @@
           "has_release_var": false,
           "identifier": "com.github.dataJAR-recipes.download.VeraCrypt",
           "input_vars": [
-            "NAME"
+            "NAME",
+            "PRERELEASE"
           ],
           "name_key": "veracrypt",
           "parent_recipe": "",
           "processors": [
-            "URLTextSearcher",
+            "GitHubReleasesInfoProvider",
             "URLDownloader",
             "EndOfCheckPhase",
             "CodeSignatureVerifier"
@@ -43233,9 +43128,9 @@
           "rel_path": "VeraCrypt/VeraCrypt.download.recipe",
           "repo": "dataJAR-recipes",
           "skip_reason": null,
-          "source_domain": "www.veracrypt.fr",
-          "source_key": "www.veracrypt.fr/en/downloads.html",
-          "source_type": "url"
+          "source_domain": "github.com",
+          "source_key": "veracrypt/veracrypt",
+          "source_type": "github"
         }
       ],
       "skip_reason": "different artifact formats: dmg, pkg",
@@ -48671,30 +48566,30 @@
     "duplicate_confidence": {
       "HIGH": 98,
       "LOW": 152,
-      "MEDIUM": 92
+      "MEDIUM": 91
     },
-    "generated_at": "2026-08-17T03:37:21.094244+00:00",
+    "generated_at": "2026-08-24T03:41:49.098174+00:00",
     "keeper_confidence": {
       "HIGH": 9,
       "LOW": 209,
       "MEDIUM": 46,
-      "NONE": 78
+      "NONE": 77
     },
     "scan": {
-      "download_recipes": 4639,
+      "download_recipes": 4641,
       "skipped": {
         "child_of_download": 96,
-        "deprecated": 630,
+        "deprecated": 629,
         "package_required": 22,
         "windows": 273
       },
-      "total_recipe_files": 19050
+      "total_recipe_files": 19061
     },
-    "total_sets": 342,
+    "total_sets": 341,
     "verdicts": {
       "recommend": 141,
       "review": 123,
-      "skip": 78
+      "skip": 77
     }
   }
 }

@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">123</span> to review</div><div class="stat-item"><span class="stat-num">107</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-24T03:41:49.098174+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">123</span> to review</div><div class="stat-item"><span class="stat-num">107</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-31T08:58:46.776509+00:00"></div></div>
   </div>
 </div>
 
@@ -7044,6 +7044,43 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="MEDIUM"
       data-keep="NONE"
+      data-repos="blackthroat-recipes|wycomco-recipes"
+      data-search="bitwarden blackthroat-recipes/8bit solutions llc/bitwarden.download.recipe wycomco-recipes/bitwarden/bitwarden.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Bitwarden</span>
+        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/blackthroat-recipes/blob/HEAD/8bit Solutions LLC/Bitwarden.download.recipe" target="_blank" rel="noopener">blackthroat-recipes<span class="path-rest">/8bit Solutions LLC/Bitwarden.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/wycomco-recipes/blob/HEAD/Bitwarden/Bitwarden.download.recipe" target="_blank" rel="noopener">wycomco-recipes<span class="path-rest">/Bitwarden/Bitwarden.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/blackthroat-recipes/pull/36" target="_blank" rel="noopener">PR</a></div>
+      </div>
+    </details>
+
+    <details class="card verdict-skip dup-medium"
+      data-tab="SKIP"
+      data-dup="MEDIUM"
+      data-keep="NONE"
       data-repos="jc0b-recipes|kevinmcox-recipes"
       data-search="contour jc0b-recipes/contour/contour.download.recipe.yaml kevinmcox-recipes/henry stamerjohann/contour.download.recipe.yaml">
       <summary class="card-hd">
@@ -12275,7 +12312,7 @@ a:hover { text-decoration: underline; }
           
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, pkg</div>
@@ -12963,7 +13000,7 @@ a:hover { text-decoration: underline; }
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/rderewianko-recipes/blob/HEAD/CodexCLI/CodexCLI.download.recipe" target="_blank" rel="noopener">rderewianko-recipes<span class="path-rest">/CodexCLI/CodexCLI.download.recipe</span></a></div>
           
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">gz</span><span class="ftag ftag-neutral">tar</span><span class="ftag ftag-neutral">zip</span></div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">gz</span><span class="ftag ftag-neutral">tar</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div>
@@ -14026,7 +14063,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4641 download recipes out of 19061 recipe files.
+  Scanned 4647 download recipes out of 19083 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

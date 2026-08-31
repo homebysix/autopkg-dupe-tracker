@@ -28026,6 +28026,108 @@
       "verdict": "skip"
     },
     {
+      "app_name": "Bitwarden",
+      "duplicate_confidence": "MEDIUM",
+      "id": "1b6a7ecf2a7c",
+      "keeper_confidence": "NONE",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.bitwarden.desktop\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LTZ2PFU5D6"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "blackthroat-recipes"
+          ],
+          "description": "Downloads the latest version of Bitwarden.",
+          "display_name": "Bitwarden",
+          "first_commit": "2019-01-21T12:50:52-06:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.blackthroat.download.Bitwarden",
+          "input_vars": [
+            "GITHUB_REPO",
+            "NAME"
+          ],
+          "name_key": "bitwarden",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "8bit Solutions LLC/Bitwarden.download.recipe",
+          "repo": "blackthroat-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "bitwarden/desktop",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.bitwarden.desktop\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LTZ2PFU5D6"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "wycomco-recipes"
+          ],
+          "description": "Downloads the latest version of Bitwarden.",
+          "display_name": "Bitwarden",
+          "first_commit": "2026-08-25T17:24:23+02:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.wycomco.download.Bitwarden",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "bitwarden",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Bitwarden/Bitwarden.download.recipe",
+          "repo": "wycomco-recipes",
+          "skip_reason": null,
+          "source_domain": "bitwarden.com",
+          "source_key": "bitwarden.com/download",
+          "source_type": "url"
+        }
+      ],
+      "prs": [
+        "https://github.com/autopkg/blackthroat-recipes/pull/36"
+      ],
+      "skip_reason": "PR(s) already opened",
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "skip"
+    },
+    {
       "app_name": "Contour",
       "duplicate_confidence": "MEDIUM",
       "id": "50c0df2285e9",
@@ -43100,10 +43202,11 @@
             "Developer ID Certification Authority",
             "Developer ID Installer: Mounir Joseph IDRASSI (HLTN5GLG99)"
           ],
-          "dependent_count": 2,
+          "dependent_count": 3,
           "dependent_repos": [
             "almenscorner-recipes",
-            "dataJAR-recipes"
+            "dataJAR-recipes",
+            "jrmfong-recipes"
           ],
           "description": "Downloads the latest version of VeraCrypt.",
           "display_name": "VeraCrypt",
@@ -45309,8 +45412,7 @@
         {
           "artifact_formats": [
             "gz",
-            "tar",
-            "zip"
+            "tar"
           ],
           "codesig_authorities": [
             "identifier \"codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
@@ -45339,10 +45441,16 @@
             "FindAndReplace",
             "GitHubReleasesInfoProvider",
             "FindAndReplace",
+            "GitHubReleasesInfoProvider",
+            "FindAndReplace",
+            "URLDownloader",
             "URLDownloader",
             "EndOfCheckPhase",
             "Unarchiver",
+            "Unarchiver",
             "CodeSignatureVerifier",
+            "CodeSignatureVerifier",
+            "QuarantineRemover",
             "QuarantineRemover"
           ],
           "rel_path": "CodexCLI/CodexCLI.download.recipe",
@@ -45405,7 +45513,7 @@
       "substitutability": {
         "compatible_artifact": false,
         "notes": [
-          "different artifact formats: gz, tar, zip",
+          "different artifact formats: gz, tar",
           "smithjw-recipes description indicates distinct distribution: modified"
         ],
         "same_product": false
@@ -48566,30 +48674,30 @@
     "duplicate_confidence": {
       "HIGH": 98,
       "LOW": 152,
-      "MEDIUM": 91
+      "MEDIUM": 92
     },
-    "generated_at": "2026-08-24T03:41:49.098174+00:00",
+    "generated_at": "2026-08-31T08:58:46.776509+00:00",
     "keeper_confidence": {
       "HIGH": 9,
       "LOW": 209,
       "MEDIUM": 46,
-      "NONE": 77
+      "NONE": 78
     },
     "scan": {
-      "download_recipes": 4641,
+      "download_recipes": 4647,
       "skipped": {
         "child_of_download": 96,
         "deprecated": 629,
         "package_required": 22,
         "windows": 273
       },
-      "total_recipe_files": 19061
+      "total_recipe_files": 19083
     },
-    "total_sets": 341,
+    "total_sets": 342,
     "verdicts": {
       "recommend": 141,
       "review": 123,
-      "skip": 77
+      "skip": 78
     }
   }
 }

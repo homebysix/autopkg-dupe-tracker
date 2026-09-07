@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">123</span> to review</div><div class="stat-item"><span class="stat-num">107</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-08-31T08:58:46.776509+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">141</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">97</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">123</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-09-07T07:36:52.060842+00:00"></div></div>
   </div>
 </div>
 
@@ -2612,43 +2612,6 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;3</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
-        
-      </div>
-    </details>
-
-    <details class="card verdict-recommend dup-high"
-      data-tab="HIGH"
-      data-dup="HIGH"
-      data-keep="LOW"
-      data-repos="Lotusshaney-recipes|apizz-recipes"
-      data-search="sqlpro studio lotusshaney-recipes/sqlpro studio/sqlpro studio.download.recipe apizz-recipes/sqlpro_studio/sqlprostudio.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">SQLPro Studio</span>
-        <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/SQLPro Studio/SQLPro Studio.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/SQLPro Studio/SQLPro Studio.download.recipe</span></a></div>
-          <div class="recipe-reason">weaker duplicate</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">zip</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/apizz-recipes/blob/HEAD/SQLPro_Studio/SQLProStudio.download.recipe" target="_blank" rel="noopener">apizz-recipes<span class="path-rest">/SQLPro_Studio/SQLProStudio.download.recipe</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">zip</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -5103,8 +5066,8 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="MEDIUM"
-      data-repos="peshay-recipes|smithjw-recipes"
-      data-search="globalprotect peshay-recipes/paloalto/globalprotect.download.recipe smithjw-recipes/palo_alto/globalprotect.download.recipe.yaml">
+      data-repos="peshay-recipes|smithjw-recipes|vmiller-recipes"
+      data-search="globalprotect peshay-recipes/paloalto/globalprotect.download.recipe smithjw-recipes/palo_alto/globalprotect.download.recipe.yaml vmiller-recipes/paloalto/globalprotect.download.recipe">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">GlobalProtect</span>
@@ -5128,6 +5091,15 @@ a:hover { text-decoration: underline; }
           <div class="recipe-path"><a href="https://github.com/autopkg/smithjw-recipes/blob/HEAD/Palo_Alto/GlobalProtect.download.recipe.yaml" target="_blank" rel="noopener">smithjw-recipes<span class="path-rest">/Palo_Alto/GlobalProtect.download.recipe.yaml</span></a></div>
           <div class="recipe-reason">weaker duplicate</div>
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/vmiller-recipes/blob/HEAD/PaloAlto/GlobalProtect.download.recipe" target="_blank" rel="noopener">vmiller-recipes<span class="path-rest">/PaloAlto/GlobalProtect.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Channel</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
@@ -6814,6 +6786,43 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="LOW"
+      data-repos="Lotusshaney-recipes|apizz-recipes"
+      data-search="sqlpro studio lotusshaney-recipes/sqlpro studio/sqlpro studio.download.recipe apizz-recipes/sqlpro_studio/sqlprostudio.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">SQLPro Studio</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/Lotusshaney-recipes/blob/HEAD/SQLPro Studio/SQLPro Studio.download.recipe" target="_blank" rel="noopener">Lotusshaney-recipes<span class="path-rest">/SQLPro Studio/SQLPro Studio.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/apizz-recipes/blob/HEAD/SQLPro_Studio/SQLProStudio.download.recipe" target="_blank" rel="noopener">apizz-recipes<span class="path-rest">/SQLPro_Studio/SQLProStudio.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -9009,11 +9018,11 @@ a:hover { text-decoration: underline; }
       data-tab="REVIEW"
       data-dup="LOW"
       data-keep="LOW"
-      data-repos="dataJAR-recipes|nmcspadden-recipes"
-      data-search="eclipsetemurin nmcspadden-recipes/eclipsetemurin/eclipsetemurin.download.recipe.yaml datajar-recipes/visual studio/eclipse temurin jdk.download.recipe">
+      data-repos="dataJAR-recipes|jrmfong-recipes|nmcspadden-recipes"
+      data-search="eclipse temurin jdk 25 nmcspadden-recipes/eclipsetemurin/eclipsetemurin.download.recipe.yaml datajar-recipes/visual studio/eclipse temurin jdk.download.recipe jrmfong-recipes/eclipse temurin/eclipsetemurinjdk25.download.recipe.yaml">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">EclipseTemurin</span>
+        <span class="card-app">Eclipse Temurin JDK 25</span>
         <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
       </summary>
       <div class="card-body">
@@ -9034,6 +9043,15 @@ a:hover { text-decoration: underline; }
           <div class="recipe-path"><a href="https://github.com/autopkg/dataJAR-recipes/blob/HEAD/Visual Studio/Eclipse Temurin JDK.download.recipe" target="_blank" rel="noopener">dataJAR-recipes<span class="path-rest">/Visual Studio/Eclipse Temurin JDK.download.recipe</span></a></div>
           
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jrmfong-recipes/blob/HEAD/Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml" target="_blank" rel="noopener">jrmfong-recipes<span class="path-rest">/Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
       </div></div>
@@ -14063,7 +14081,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4647 download recipes out of 19083 recipe files.
+  Scanned 4656 download recipes out of 19105 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

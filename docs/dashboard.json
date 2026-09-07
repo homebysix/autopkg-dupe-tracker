@@ -10539,165 +10539,6 @@
       "verdict": "recommend"
     },
     {
-      "app_name": "SQLPro Studio",
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier"
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase"
-        },
-        {
-          "key": "source",
-          "label": "Source resilience"
-        },
-        {
-          "key": "arch",
-          "label": "Architecture support"
-        },
-        {
-          "key": "release",
-          "label": "Release/channel support"
-        },
-        {
-          "key": "history",
-          "label": "First commit tiebreaker"
-        }
-      ],
-      "deprecate": [
-        {
-          "dependent_count": 1,
-          "reason": "weaker duplicate",
-          "rel_path": "SQLPro Studio/SQLPro Studio.download.recipe",
-          "repo": "Lotusshaney-recipes",
-          "score": 7.35
-        }
-      ],
-      "deprecation_message": "Consider switching to SQLPro Studio recipes in the apizz-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "duplicate_confidence": "HIGH",
-      "id": "a2d29c7f45e3",
-      "keep": [
-        {
-          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
-          "rel_path": "SQLPro_Studio/SQLProStudio.download.recipe",
-          "repo": "apizz-recipes",
-          "score": 7.35
-        }
-      ],
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "same url source",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "zip"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.hankinsoft.osx.sqlprostudio\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LKJB72232C)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "Lotusshaney-recipes"
-          ],
-          "description": "Downloads the latest version of SQLPro Studio.",
-          "display_name": "SQLPro Studio",
-          "first_commit": "2024-11-18T16:10:20Z",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.Lotusshaney.download.SQLProStudio",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "sqlprostudio",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "SQLPro Studio/SQLPro Studio.download.recipe",
-          "repo": "Lotusshaney-recipes",
-          "skip_reason": null,
-          "source_domain": "www.sqlprostudio.com",
-          "source_key": "www.sqlprostudio.com/download.php",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "zip"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.hankinsoft.osx.sqlprostudio\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LKJB72232C)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "apizz-recipes"
-          ],
-          "description": "Downloads the latest verison of SQLPro Studio.",
-          "display_name": "SQLProStudio",
-          "first_commit": "2020-12-01T21:58:38-05:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.apizz.download.SQLProStudio",
-          "input_vars": [
-            "NAME",
-            "USER_AGENT"
-          ],
-          "name_key": "sqlprostudio",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "CodeSignatureVerifier",
-            "PlistReader"
-          ],
-          "rel_path": "SQLPro_Studio/SQLProStudio.download.recipe",
-          "repo": "apizz-recipes",
-          "skip_reason": null,
-          "source_domain": "www.sqlprostudio.com",
-          "source_key": "www.sqlprostudio.com/download.php",
-          "source_type": "url"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match"
-        },
-        {
-          "category": "artifact",
-          "text": "same artifact format: zip"
-        },
-        {
-          "category": "keeper",
-          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
-        }
-      ],
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: zip"
-        ],
-        "same_product": true
-      },
-      "verdict": "recommend"
-    },
-    {
       "app_name": "STAN4J",
       "criteria": [
         {
@@ -19812,6 +19653,13 @@
         {
           "dependent_count": 1,
           "reason": "weaker duplicate",
+          "rel_path": "PaloAlto/GlobalProtect.download.recipe",
+          "repo": "vmiller-recipes",
+          "score": 7.35
+        },
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
           "rel_path": "Palo_Alto/GlobalProtect.download.recipe.yaml",
           "repo": "smithjw-recipes",
           "score": 5.75
@@ -19819,7 +19667,7 @@
       ],
       "deprecation_message": "Consider switching to GlobalProtect recipes in the peshay-recipes repo. This recipe is deprecated and will be removed in the future.",
       "duplicate_confidence": "MEDIUM",
-      "id": "6b5b104cb378",
+      "id": "522549459c0f",
       "keep": [
         {
           "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
@@ -19834,7 +19682,7 @@
         "same normalized recipe name",
         "similar name plus weak identity match"
       ],
-      "member_count": 2,
+      "member_count": 3,
       "members": [
         {
           "artifact_formats": [
@@ -19923,6 +19771,47 @@
           "skip_reason": null,
           "source_domain": null,
           "source_key": "processor:GlobalProtectVersionURLProvider",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Palo Alto Networks (PXPZ95SK77)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "vmiller-recipes"
+          ],
+          "description": "Downloads the latest GlobalProtect client for a given major version (i.e. 6.2, 6.3, 6.4).",
+          "display_name": "GlobalProtect",
+          "first_commit": "2026-09-01T15:43:48-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": true,
+          "identifier": "com.github.vmiller.download.globalprotect",
+          "input_vars": [
+            "MAJOR_VERSION",
+            "NAME",
+            "URL"
+          ],
+          "name_key": "globalprotect",
+          "parent_recipe": "",
+          "processors": [
+            "URLHighestVersionTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "PaloAlto/GlobalProtect.download.recipe",
+          "repo": "vmiller-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:URLHighestVersionTextSearcher",
           "source_type": "unknown"
         }
       ],
@@ -27235,6 +27124,164 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "SQLPro Studio",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
+          "rel_path": "SQLPro Studio/SQLPro Studio.download.recipe",
+          "repo": "Lotusshaney-recipes",
+          "score": 7.35
+        }
+      ],
+      "deprecation_message": "Consider switching to SQLPro Studio recipes in the apizz-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "a2d29c7f45e3",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "SQLPro_Studio/SQLProStudio.download.recipe",
+          "repo": "apizz-recipes",
+          "score": 7.35
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.hankinsoft.osx.sqlprostudio\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LKJB72232C)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "Lotusshaney-recipes"
+          ],
+          "description": "Downloads the latest version of SQLPro Studio.",
+          "display_name": "SQLPro Studio",
+          "first_commit": "2024-11-18T16:10:20Z",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.Lotusshaney.download.SQLProStudio",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "sqlprostudio",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "SQLPro Studio/SQLPro Studio.download.recipe",
+          "repo": "Lotusshaney-recipes",
+          "skip_reason": null,
+          "source_domain": "www.sqlprostudio.com",
+          "source_key": "www.sqlprostudio.com/download",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.hankinsoft.osx.sqlprostudio\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LKJB72232C)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "apizz-recipes"
+          ],
+          "description": "Downloads the latest verison of SQLPro Studio.",
+          "display_name": "SQLProStudio",
+          "first_commit": "2020-12-01T21:58:38-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.apizz.download.SQLProStudio",
+          "input_vars": [
+            "NAME",
+            "USER_AGENT"
+          ],
+          "name_key": "sqlprostudio",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier",
+            "PlistReader"
+          ],
+          "rel_path": "SQLPro_Studio/SQLProStudio.download.recipe",
+          "repo": "apizz-recipes",
+          "skip_reason": null,
+          "source_domain": "www.sqlprostudio.com",
+          "source_key": "www.sqlprostudio.com/download.php",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: zip"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "Tower",
       "criteria": [
         {
@@ -33782,14 +33829,14 @@
       "verdict": "review"
     },
     {
-      "app_name": "EclipseTemurin",
+      "app_name": "Eclipse Temurin JDK 25",
       "duplicate_confidence": "LOW",
-      "id": "9348384528bf",
+      "id": "c480ea0ae02f",
       "keeper_confidence": "LOW",
       "match_reasons": [
         "similar name plus weak identity match"
       ],
-      "member_count": 2,
+      "member_count": 3,
       "members": [
         {
           "artifact_formats": [
@@ -33876,6 +33923,49 @@
           "source_domain": "aka.ms",
           "source_key": "aka.ms/vsmac/manifest/17-stable",
           "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Eclipse Foundation, Inc. (JCDTMS22B4)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "jrmfong-recipes"
+          ],
+          "description": "Downloads the latest signed installer package of Eclipse Temurin JDK 25.\n\nThe source is the GitHub releases of adoptium/temurin25-binaries. Pre-release\nbuilds, tagged \"-ea-beta\", are skipped.\n\nARCH defaults to aarch64, for Apple silicon. Set it to x64 for Intel.\n",
+          "display_name": "Eclipse Temurin JDK 25",
+          "first_commit": "2026-09-04T17:46:01+01:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jrmfong.download.EclipseTemurinJDK25",
+          "input_vars": [
+            "ARCH",
+            "BYPASS_STOP_PROCESSING_IF_DOWNLOAD_UNCHANGED",
+            "GITHUB_REPO",
+            "NAME"
+          ],
+          "name_key": "eclipsetemurinjdk25",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "StopProcessingIf",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml",
+          "repo": "jrmfong-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "adoptium/temurin25-binaries",
+          "source_type": "github"
         }
       ],
       "skip_reason": "low duplicate confidence; needs qualitative review",
@@ -37596,7 +37686,7 @@
             "dmg"
           ],
           "codesig_authorities": [
-            "identifier \"com.mindjet.mindmanager.24\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = ZF6ZZ779N5"
+            "identifier \"com.mindjet.mindmanager.25\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = ZF6ZZ779N5"
           ],
           "dependent_count": 1,
           "dependent_repos": [
@@ -48672,11 +48762,11 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 98,
+      "HIGH": 97,
       "LOW": 152,
-      "MEDIUM": 92
+      "MEDIUM": 93
     },
-    "generated_at": "2026-08-31T08:58:46.776509+00:00",
+    "generated_at": "2026-09-07T07:36:52.060842+00:00",
     "keeper_confidence": {
       "HIGH": 9,
       "LOW": 209,
@@ -48684,14 +48774,14 @@
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4647,
+      "download_recipes": 4656,
       "skipped": {
         "child_of_download": 96,
-        "deprecated": 629,
+        "deprecated": 630,
         "package_required": 22,
-        "windows": 273
+        "windows": 272
       },
-      "total_recipe_files": 19083
+      "total_recipe_files": 19105
     },
     "total_sets": 342,
     "verdicts": {

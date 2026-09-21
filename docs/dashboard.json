@@ -1209,6 +1209,165 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "GitHub Copilot",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 2,
+          "reason": "weaker duplicate",
+          "rel_path": "GitHub/GitHubCopilotApp.download.recipe",
+          "repo": "patgmac-recipes",
+          "score": 9.1
+        }
+      ],
+      "deprecation_message": "Consider switching to GitHub Copilot recipes in the markkenny-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "HIGH",
+      "id": "76c18616f9b0",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source",
+          "rel_path": "GitHub Copilot/GitHubCopilot.download.recipe.yaml",
+          "repo": "markkenny-recipes",
+          "score": 10.75
+        }
+      ],
+      "keeper_confidence": "MEDIUM",
+      "match_reasons": [
+        "same github source",
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.github.githubapp\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VEKTX9H2N7"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "markkenny-recipes"
+          ],
+          "description": "Downloads the latest version of GitHub Copilot for macOS from GitHub.",
+          "display_name": "GitHub Copilot",
+          "first_commit": "2026-09-17T15:43:11+02:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.markkenny.autopkg.download.githubcopilot",
+          "input_vars": [
+            "ARCH",
+            "NAME"
+          ],
+          "name_key": "githubcopilot",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "GitHub Copilot/GitHubCopilot.download.recipe.yaml",
+          "repo": "markkenny-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "github/app",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.github.githubapp\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VEKTX9H2N7"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "patgmac-recipes"
+          ],
+          "description": "Downloads the latest version of GitHub Copilot.",
+          "display_name": "GitHub Copilot",
+          "first_commit": "2026-05-20T23:43:58-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.patgmac-recipes.download.GitHubCopilot",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "githubcopilot",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "GitHub/GitHubCopilotApp.download.recipe",
+          "repo": "patgmac-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "github/app",
+          "source_type": "github"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; github source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "jq",
       "criteria": [
         {
@@ -15975,7 +16134,7 @@
           "codesig_authorities": [
             "Apple Root CA",
             "Developer ID Certification Authority",
-            "Developer ID Installer: Zoom Video Communications, Inc. (BJ4HAAB9B3)"
+            "Developer ID Installer: Zoom Communications, Inc. (BJ4HAAB9B3)"
           ],
           "dependent_count": 2,
           "dependent_repos": [
@@ -16256,6 +16415,164 @@
         "compatible_artifact": true,
         "notes": [
           "same artifact format: zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
+      "app_name": "Codex",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
+          "rel_path": "OpenAI/Codex.download.recipe.yaml",
+          "repo": "smithjw-recipes",
+          "score": 6.25
+        }
+      ],
+      "deprecation_message": "Consider switching to Codex recipes in the homebysix-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "e4c7f40dea6a",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source",
+          "rel_path": "OpenAI/Codex.download.recipe",
+          "repo": "homebysix-recipes",
+          "score": 9.35
+        }
+      ],
+      "keeper_confidence": "HIGH",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "homebysix-recipes"
+          ],
+          "description": "Downloads the latest version of ChatGPT (formerly Codex).\n\nSupported values for PLATFORM_ARCH include:\n- \"\" (Apple Silicon, default)\n- \"-latest-x64\" (Intel)\n",
+          "display_name": "Codex",
+          "first_commit": "2026-02-08T11:40:57-08:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.homebysix.download.Codex",
+          "input_vars": [
+            "NAME",
+            "PLATFORM_ARCH"
+          ],
+          "name_key": "codex",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "OpenAI/Codex.download.recipe",
+          "repo": "homebysix-recipes",
+          "skip_reason": null,
+          "source_domain": "persistent.oaistatic.com",
+          "source_key": "persistent.oaistatic.com/codex-app-prod/chatgpt.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "smithjw-recipes"
+          ],
+          "description": "Downloads the latest version of Codex.",
+          "display_name": "Codex",
+          "first_commit": "2026-05-13T19:56:54+10:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.smithjw.download.Codex",
+          "input_vars": [
+            "BYPASS_STOP_PROCESSING_IF_DOWNLOAD_UNCHANGED",
+            "DOWNLOAD_MISSING_FILE",
+            "NAME"
+          ],
+          "name_key": "codex",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloaderPython",
+            "EndOfCheckPhase",
+            "StopProcessingIf",
+            "AppDmgVersioner",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "OpenAI/Codex.download.recipe.yaml",
+          "repo": "smithjw-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:URLDownloaderPython",
+          "source_type": "unknown"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
         ],
         "same_product": true
       },
@@ -19124,163 +19441,6 @@
           "source_domain": "data.services.jetbrains.com",
           "source_key": "data.services.jetbrains.com/products/releases",
           "source_type": "url"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
-        },
-        {
-          "category": "artifact",
-          "text": "same artifact format: dmg"
-        },
-        {
-          "category": "keeper",
-          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
-        }
-      ],
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "recommend"
-    },
-    {
-      "app_name": "Codex",
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier"
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase"
-        },
-        {
-          "key": "source",
-          "label": "Source resilience"
-        },
-        {
-          "key": "arch",
-          "label": "Architecture support"
-        },
-        {
-          "key": "release",
-          "label": "Release/channel support"
-        },
-        {
-          "key": "history",
-          "label": "First commit tiebreaker"
-        }
-      ],
-      "deprecate": [
-        {
-          "dependent_count": 1,
-          "reason": "weaker duplicate",
-          "rel_path": "OpenAI/Codex.download.recipe.yaml",
-          "repo": "smithjw-recipes",
-          "score": 6.25
-        }
-      ],
-      "deprecation_message": "Consider switching to Codex recipes in the homebysix-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "duplicate_confidence": "MEDIUM",
-      "id": "e4c7f40dea6a",
-      "keep": [
-        {
-          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
-          "rel_path": "OpenAI/Codex.download.recipe",
-          "repo": "homebysix-recipes",
-          "score": 7.85
-        }
-      ],
-      "keeper_confidence": "MEDIUM",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "homebysix-recipes"
-          ],
-          "description": "Downloads the latest version of ChatGPT (formerly Codex).",
-          "display_name": "Codex",
-          "first_commit": "2026-02-08T11:40:57-08:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.homebysix.download.Codex",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "codex",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "OpenAI/Codex.download.recipe",
-          "repo": "homebysix-recipes",
-          "skip_reason": null,
-          "source_domain": "persistent.oaistatic.com",
-          "source_key": "persistent.oaistatic.com/codex-app-prod/chatgpt.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.openai.codex\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"2DC432GLL2\""
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "smithjw-recipes"
-          ],
-          "description": "Downloads the latest version of Codex.",
-          "display_name": "Codex",
-          "first_commit": "2026-05-13T19:56:54+10:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.smithjw.download.Codex",
-          "input_vars": [
-            "BYPASS_STOP_PROCESSING_IF_DOWNLOAD_UNCHANGED",
-            "DOWNLOAD_MISSING_FILE",
-            "NAME"
-          ],
-          "name_key": "codex",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloaderPython",
-            "EndOfCheckPhase",
-            "StopProcessingIf",
-            "AppDmgVersioner",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "OpenAI/Codex.download.recipe.yaml",
-          "repo": "smithjw-recipes",
-          "skip_reason": null,
-          "source_domain": null,
-          "source_key": "processor:URLDownloaderPython",
-          "source_type": "unknown"
         }
       ],
       "rationale": [
@@ -26655,6 +26815,165 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "Screen Studio",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 2,
+          "reason": "weaker duplicate",
+          "rel_path": "Screen Studio/ScreenStudio.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "score": 8.0
+        }
+      ],
+      "deprecation_message": "Consider switching to Screen Studio recipes in the almenscorner-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "4db7185452dd",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source",
+          "rel_path": "Screen Studio/ScreenStudio.download.recipe",
+          "repo": "almenscorner-recipes",
+          "score": 8.85
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.timpler.screenstudio\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = SXF593CX2N"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "almenscorner-recipes"
+          ],
+          "description": "Downloads the latest version of Screen Studio.",
+          "display_name": "Screen Studio",
+          "first_commit": "2025-03-27T15:06:26+01:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.almenscorner.download.ScreenStudio",
+          "input_vars": [
+            "ARCH",
+            "NAME"
+          ],
+          "name_key": "screenstudio",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Screen Studio/ScreenStudio.download.recipe",
+          "repo": "almenscorner-recipes",
+          "skip_reason": null,
+          "source_domain": "screen.studio",
+          "source_key": "screen.studio/download",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.timpler.screenstudio\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = SXF593CX2N"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "kevinmcox-recipes"
+          ],
+          "description": "Downloads the latest version of Screen Studio. Set ARCH to arm64 or x86_64.",
+          "display_name": "ScreenStudio",
+          "first_commit": "2026-09-19T14:18:08-05:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.kevinmcox.download.ScreenStudio",
+          "input_vars": [
+            "ARCH",
+            "NAME"
+          ],
+          "name_key": "screenstudio",
+          "parent_recipe": "",
+          "processors": [
+            "FindAndReplace",
+            "FindAndReplace",
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Screen Studio/ScreenStudio.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:FindAndReplace",
+          "source_type": "unknown"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "sipgate softphone",
       "criteria": [
         {
@@ -33947,7 +34266,6 @@
           "identifier": "com.github.jrmfong.download.EclipseTemurinJDK25",
           "input_vars": [
             "ARCH",
-            "BYPASS_STOP_PROCESSING_IF_DOWNLOAD_UNCHANGED",
             "GITHUB_REPO",
             "NAME"
           ],
@@ -33957,7 +34275,6 @@
             "GitHubReleasesInfoProvider",
             "URLDownloader",
             "EndOfCheckPhase",
-            "StopProcessingIf",
             "CodeSignatureVerifier"
           ],
           "rel_path": "Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml",
@@ -40337,7 +40654,7 @@
     {
       "app_name": "SFSymbols",
       "duplicate_confidence": "LOW",
-      "id": "3ae03a9560cd",
+      "id": "a4b64455a98e",
       "keeper_confidence": "LOW",
       "match_reasons": [
         "similar name plus weak identity match"
@@ -40398,18 +40715,18 @@
           "dependent_repos": [
             "dataJAR-recipes"
           ],
-          "description": "Downloads the latest version of SF Symbols 5",
-          "display_name": "SFSymbols5",
-          "first_commit": "2023-10-10T14:16:20+01:00",
+          "description": "Downloads the latest version of SF Symbols 27",
+          "display_name": "SFSymbols27",
+          "first_commit": "2026-09-17T10:30:27+01:00",
           "has_arch_var": false,
           "has_codesig": true,
           "has_endofcheck": true,
           "has_release_var": false,
-          "identifier": "com.github.dataJAR-recipes.download.SF Symbols 5",
+          "identifier": "com.github.dataJAR-recipes.download.SF Symbols 27",
           "input_vars": [
             "NAME"
           ],
-          "name_key": "sfsymbols5",
+          "name_key": "sfsymbols27",
           "parent_recipe": "",
           "processors": [
             "URLTextSearcher",
@@ -40417,7 +40734,7 @@
             "EndOfCheckPhase",
             "CodeSignatureVerifier"
           ],
-          "rel_path": "SF Symbols 5/SF Symbols 5.download.recipe",
+          "rel_path": "SF Symbols 27/SF Symbols 27.download.recipe",
           "repo": "dataJAR-recipes",
           "skip_reason": null,
           "source_domain": "developer.apple.com",
@@ -48762,30 +49079,30 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 97,
+      "HIGH": 98,
       "LOW": 152,
-      "MEDIUM": 93
+      "MEDIUM": 94
     },
-    "generated_at": "2026-09-14T08:09:14.227857+00:00",
+    "generated_at": "2026-09-21T08:14:50.194691+00:00",
     "keeper_confidence": {
-      "HIGH": 9,
-      "LOW": 209,
+      "HIGH": 10,
+      "LOW": 210,
       "MEDIUM": 46,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4662,
+      "download_recipes": 4668,
       "skipped": {
-        "child_of_download": 96,
-        "deprecated": 630,
+        "child_of_download": 98,
+        "deprecated": 633,
         "package_required": 22,
         "windows": 272
       },
-      "total_recipe_files": 19129
+      "total_recipe_files": 19158
     },
-    "total_sets": 342,
+    "total_sets": 344,
     "verdicts": {
-      "recommend": 141,
+      "recommend": 143,
       "review": 123,
       "skip": 78
     }

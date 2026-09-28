@@ -12110,6 +12110,165 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "VisualVM",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
+          "rel_path": "VisualVM/VisualVM.download.recipe",
+          "repo": "dataJAR-recipes",
+          "score": 8.85
+        }
+      ],
+      "deprecation_message": "Consider switching to VisualVM recipes in the fishd72-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "HIGH",
+      "id": "931b123c1dc7",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; github source; has useful description",
+          "rel_path": "VisualVM/visualvm.download.recipe",
+          "repo": "fishd72-recipes",
+          "score": 9.1
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same github source",
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier io.visualvm.VisualVM and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VB5E2TV963"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "dataJAR-recipes"
+          ],
+          "description": "Downloads the latest version of VisualVM.\n\nSet PRERELEASE to a non-empty string to download prereleases, either\nvia Input in an override or via the -k option,\ni.e.: `-k PRERELEASE=yes`",
+          "display_name": "VisualVM",
+          "first_commit": "2026-09-22T13:46:52+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.dataJAR-recipes.download.VisualVM",
+          "input_vars": [
+            "NAME",
+            "PRERELEASE"
+          ],
+          "name_key": "visualvm",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "VisualVM/VisualVM.download.recipe",
+          "repo": "dataJAR-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "oracle/visualvm",
+          "source_type": "github"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier io.visualvm.VisualVM and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VB5E2TV963"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "fishd72-recipes"
+          ],
+          "description": "Downloads the latest version of VisualVM.",
+          "display_name": "VisualVM",
+          "first_commit": "2018-12-14T18:07:41Z",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.fishd72.download.VisualVM",
+          "input_vars": [
+            "GITHUB_REPO",
+            "NAME"
+          ],
+          "name_key": "visualvm",
+          "parent_recipe": "",
+          "processors": [
+            "GitHubReleasesInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "VisualVM/visualvm.download.recipe",
+          "repo": "fishd72-recipes",
+          "skip_reason": null,
+          "source_domain": "github.com",
+          "source_key": "oracle/visualvm",
+          "source_type": "github"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; github source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "Warp",
       "criteria": [
         {
@@ -16136,8 +16295,9 @@
             "Developer ID Certification Authority",
             "Developer ID Installer: Zoom Communications, Inc. (BJ4HAAB9B3)"
           ],
-          "dependent_count": 2,
+          "dependent_count": 3,
           "dependent_repos": [
+            "Lotusshaney-recipes",
             "homebysix-recipes",
             "peshay-recipes"
           ],
@@ -49079,30 +49239,30 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 98,
+      "HIGH": 99,
       "LOW": 152,
       "MEDIUM": 94
     },
-    "generated_at": "2026-09-21T08:14:50.194691+00:00",
+    "generated_at": "2026-09-28T09:00:53.094883+00:00",
     "keeper_confidence": {
       "HIGH": 10,
-      "LOW": 210,
+      "LOW": 211,
       "MEDIUM": 46,
       "NONE": 78
     },
     "scan": {
-      "download_recipes": 4668,
+      "download_recipes": 4676,
       "skipped": {
         "child_of_download": 98,
         "deprecated": 633,
         "package_required": 22,
         "windows": 272
       },
-      "total_recipe_files": 19158
+      "total_recipe_files": 19191
     },
-    "total_sets": 344,
+    "total_sets": 345,
     "verdicts": {
-      "recommend": 143,
+      "recommend": 144,
       "review": 123,
       "skip": 78
     }

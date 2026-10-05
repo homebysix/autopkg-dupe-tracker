@@ -8970,7 +8970,7 @@
             "dmg"
           ],
           "codesig_authorities": [
-            "identifier \"com.oracle.workbench.MySQLWorkbench\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VB5E2TV963"
+            "identifier \"com.oracle.mysqlworkbench\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = VB5E2TV963"
           ],
           "dependent_count": 4,
           "dependent_repos": [
@@ -8978,7 +8978,7 @@
             "homebysix-recipes",
             "peshay-recipes"
           ],
-          "description": "Downloads the latest version of MySQLWorkbench.\n\nSet the ARCH input variable based on the desired architecture:\n- \"x86_64\" (default) - Intel\n- \"arm64\" - Apple Silicon\n",
+          "description": "Downloads the latest version of MySQLWorkbench.\n\nStarting with version 26.7.0, MySQL Workbench is only available for Apple Silicon (arm64). Intel (x86_64) downloads are no longer offered.\n",
           "display_name": "MySQLWorkbench",
           "first_commit": "2021-04-18T17:25:05-07:00",
           "has_arch_var": true,
@@ -12792,7 +12792,6 @@
       ],
       "keeper_confidence": "LOW",
       "match_reasons": [
-        "same normalized name and code signing authority",
         "same normalized name and source domain",
         "same normalized recipe name",
         "same url source",
@@ -12807,7 +12806,7 @@
           "codesig_authorities": [
             "Apple Root CA",
             "Developer ID Certification Authority",
-            "Developer ID Installer: Zoom Video Communications, Inc. (BJ4HAAB9B3)"
+            "Developer ID Installer: Zoom Communications, Inc. (BJ4HAAB9B3)"
           ],
           "dependent_count": 1,
           "dependent_repos": [
@@ -12886,7 +12885,7 @@
       "rationale": [
         {
           "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match"
+          "text": "same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match"
         },
         {
           "category": "artifact",
@@ -14526,109 +14525,6 @@
       ],
       "prs": [
         "https://github.com/autopkg/jaharmi-recipes/pull/112"
-      ],
-      "skip_reason": "PR(s) already opened",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
-      "app_name": "Maestral",
-      "duplicate_confidence": "HIGH",
-      "id": "9b360e9950ff",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "same sparkle source",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.samschott.maestral-cocoa\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = G34LNR8C4Y"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "jaharmi-recipes"
-          ],
-          "description": "Downloads the latest version of Maestral.",
-          "display_name": "Maestral",
-          "first_commit": "2022-12-23T16:30:35-05:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.jaharmi.download.Maestral",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "maestral",
-          "parent_recipe": "",
-          "processors": [
-            "SparkleUpdateInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "Maestral/Maestral.download.recipe",
-          "repo": "jaharmi-recipes",
-          "skip_reason": null,
-          "source_domain": "maestral.app",
-          "source_key": "maestral.app/appcast.xml",
-          "source_type": "sparkle"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.samschott.maestral\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = G34LNR8C4Y"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "macprince-recipes"
-          ],
-          "description": "Downloads the latest version of Maestral.",
-          "display_name": "Maestral",
-          "first_commit": "2022-02-17T09:08:57-06:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.macprince.download.Maestral",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "maestral",
-          "parent_recipe": "",
-          "processors": [
-            "SparkleUpdateInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "Sam Schott/Maestral.download.recipe",
-          "repo": "macprince-recipes",
-          "skip_reason": null,
-          "source_domain": "maestral.app",
-          "source_key": "maestral.app/appcast.xml",
-          "source_type": "sparkle"
-        }
-      ],
-      "prs": [
-        "https://github.com/autopkg/jaharmi-recipes/pull/113"
       ],
       "skip_reason": "PR(s) already opened",
       "substitutability": {
@@ -23427,6 +23323,171 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "AWS VPN Client",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 2,
+          "reason": "weaker duplicate",
+          "rel_path": "Amazon/AWSVPNClient.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "score": 8.0
+        }
+      ],
+      "deprecation_message": "Consider switching to AWS VPN Client recipes in the ygini-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "8fe26ce3a87f",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; unknown source",
+          "rel_path": "AWS VPN Client/AWS VPN Client.download.recipe",
+          "repo": "ygini-recipes",
+          "score": 8.35
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: AMZN Mobile LLC (94KV3E626L)"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "kevinmcox-recipes"
+          ],
+          "description": "Downloads the latest version of AWS VPN Client. Set ARCH to either arm64 or x86_64.",
+          "display_name": "AWSVPNClient",
+          "first_commit": "2026-09-30T21:32:50-05:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.kevinmcox.download.AWSVPNClient",
+          "input_vars": [
+            "ARCH",
+            "NAME"
+          ],
+          "name_key": "awsvpnclient",
+          "parent_recipe": "",
+          "processors": [
+            "FindAndReplace",
+            "FindAndReplace",
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Amazon/AWSVPNClient.download.recipe.yaml",
+          "repo": "kevinmcox-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:FindAndReplace",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: AMZN Mobile LLC (94KV3E626L)"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "mikestechshop-recipes",
+            "ygini-recipes"
+          ],
+          "description": "Downloads the latest version of AWS VPN Client. Set ARCH to either arm64 or x86_64.",
+          "display_name": "AWS VPN Client",
+          "first_commit": "2021-06-22T10:18:25+02:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.ygini.download.AWSVPNClient",
+          "input_vars": [
+            "ARCH",
+            "NAME"
+          ],
+          "name_key": "awsvpnclient",
+          "parent_recipe": "",
+          "processors": [
+            "FindAndReplace",
+            "FindAndReplace",
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "AWS VPN Client/AWS VPN Client.download.recipe",
+          "repo": "ygini-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:FindAndReplace",
+          "source_type": "unknown"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: pkg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; unknown source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: pkg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "BeyondCompare4",
       "criteria": [
         {
@@ -25430,6 +25491,161 @@
         {
           "category": "keeper",
           "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
+      "app_name": "Kite Student Portal",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
+          "rel_path": "Achievement and Assessment Institute/KiteStudentPortal.download.recipe",
+          "repo": "andrewzirkel-recipes",
+          "score": 7.35
+        }
+      ],
+      "deprecation_message": "Consider switching to Kite Student Portal recipes in the macprince-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "8a3aad74485f",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "Achievement and Assessment Institute/KiteStudentPortal.download.recipe",
+          "repo": "macprince-recipes",
+          "score": 7.85
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"org.ats.kitestudentportal\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = BK4732M7XX)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "andrewzirkel-recipes"
+          ],
+          "description": "Downloads the latest version of KiteStudentPortal.",
+          "display_name": "KiteStudentPortal",
+          "first_commit": "2023-12-18T14:49:56-05:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.andrewzirkel.download.KiteStudentPortal",
+          "input_vars": [
+            "APP_FILENAME",
+            "NAME"
+          ],
+          "name_key": "kitestudentportal",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Achievement and Assessment Institute/KiteStudentPortal.download.recipe",
+          "repo": "andrewzirkel-recipes",
+          "skip_reason": null,
+          "source_domain": "files.kiteaai.org",
+          "source_key": "files.kiteaai.org/installers/studentportal/latest/mac/kite%20student%20portal.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"org.ats.kitestudentportal\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = BK4732M7XX"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "macprince-recipes"
+          ],
+          "description": "Downloads the latest version of Kite Student Portal.",
+          "display_name": "Kite Student Portal",
+          "first_commit": "2020-01-29T16:42:31-06:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.macprince.download.KiteStudentPortal",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "kitestudentportal",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Achievement and Assessment Institute/KiteStudentPortal.download.recipe",
+          "repo": "macprince-recipes",
+          "skip_reason": null,
+          "source_domain": "files.kiteaai.org",
+          "source_key": "files.kiteaai.org/installers/studentportal/prod/latest/mac/kite%20student%20portal.dmg",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
         }
       ],
       "substitutability": {
@@ -36955,105 +37171,6 @@
       "verdict": "review"
     },
     {
-      "app_name": "Kite Student Portal",
-      "duplicate_confidence": "LOW",
-      "id": "8a3aad74485f",
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"org.ats.kitestudentportal\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = BK4732M7XX)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "andrewzirkel-recipes"
-          ],
-          "description": "Downloads the latest version of KiteStudentPortal.",
-          "display_name": "KiteStudentPortal",
-          "first_commit": "2023-12-18T14:49:56-05:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.andrewzirkel.download.KiteStudentPortal",
-          "input_vars": [
-            "APP_FILENAME",
-            "NAME"
-          ],
-          "name_key": "kitestudentportal",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "Achievement and Assessment Institute/KiteStudentPortal.download.recipe",
-          "repo": "andrewzirkel-recipes",
-          "skip_reason": null,
-          "source_domain": "files.kiteaai.org",
-          "source_key": "files.kiteaai.org/installers/studentportal/latest/mac/kite%20student%20portal.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Achievement and Assessment Institute (BK4732M7XX)"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "macprince-recipes"
-          ],
-          "description": "Downloads the latest version of Kite Student Portal.",
-          "display_name": "Kite Student Portal",
-          "first_commit": "2020-01-29T16:42:31-06:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.macprince.download.KiteStudentPortal",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "kitestudentportal",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Achievement and Assessment Institute/KiteStudentPortal.download.recipe",
-          "repo": "macprince-recipes",
-          "skip_reason": null,
-          "source_domain": "files.kiteaai.org",
-          "source_key": "files.kiteaai.org/installers/studentportal/prod/latest/mac/kite%20student%20portal.pkg",
-          "source_type": "url"
-        }
-      ],
-      "skip_reason": "different artifact formats: dmg, pkg",
-      "substitutability": {
-        "compatible_artifact": false,
-        "notes": [
-          "different artifact formats: dmg, pkg"
-        ],
-        "same_product": true
-      },
-      "verdict": "review"
-    },
-    {
       "app_name": "Knock",
       "duplicate_confidence": "LOW",
       "id": "0c709f3326c1",
@@ -47845,117 +47962,6 @@
       "verdict": "skip"
     },
     {
-      "app_name": "PritunlClient",
-      "duplicate_confidence": "LOW",
-      "id": "e6ba83304e65",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "pkg",
-            "zip"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Zachary Huff (73CNTLZRFJ)"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "Tecnico1931-recipes"
-          ],
-          "description": "Downloads the latest version of PritunlClient.",
-          "display_name": "PritunlClient",
-          "first_commit": "2016-12-30T15:34:57-05:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.tecnico1931.download.PritunlClient",
-          "input_vars": [
-            "GITHUB_REPO",
-            "NAME"
-          ],
-          "name_key": "pritunlclient",
-          "parent_recipe": "",
-          "processors": [
-            "GitHubReleasesInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "PritunlClient/PritunlClient.download.recipe",
-          "repo": "Tecnico1931-recipes",
-          "skip_reason": null,
-          "source_domain": "github.com",
-          "source_key": "pritunl/pritunlclient",
-          "source_type": "github"
-        },
-        {
-          "artifact_formats": [
-            "pkg",
-            "zip"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Pritunl, Inc. (U22BLATN63)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "dataJAR-recipes"
-          ],
-          "description": "Downloads the latest Pritunl Client.\n\nSet PRERELEASE to a non-empty string to download prereleases, either\nvia Input in an override or via the -k option,\ni.e.: `-k PRERELEASE=yes`",
-          "display_name": "PritunlClient",
-          "first_commit": "2020-02-10T21:58:41Z",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.dataJAR-recipes.download.pritunlclient",
-          "input_vars": [
-            "NAME",
-            "PRERELEASE"
-          ],
-          "name_key": "pritunlclient",
-          "parent_recipe": "",
-          "processors": [
-            "GitHubReleasesInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Pritunl Client/PritunlClient.download.recipe",
-          "repo": "dataJAR-recipes",
-          "skip_reason": null,
-          "source_domain": "github.com",
-          "source_key": "pritunl/pritunl-client-electron",
-          "source_type": "github"
-        }
-      ],
-      "prs": [
-        "https://github.com/autopkg/Tecnico1931-recipes/pull/14"
-      ],
-      "skip_reason": "PR(s) already opened",
-      "substitutability": {
-        "compatible_artifact": false,
-        "notes": [
-          "different artifact formats: pkg, zip"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
       "app_name": "Sublime Text",
       "duplicate_confidence": "LOW",
       "id": "ab5e68a421ec",
@@ -49239,32 +49245,32 @@
   ],
   "summary": {
     "duplicate_confidence": {
-      "HIGH": 99,
-      "LOW": 152,
-      "MEDIUM": 94
+      "HIGH": 98,
+      "LOW": 150,
+      "MEDIUM": 96
     },
-    "generated_at": "2026-09-28T09:00:53.094883+00:00",
+    "generated_at": "2026-10-05T09:40:45.214716+00:00",
     "keeper_confidence": {
       "HIGH": 10,
-      "LOW": 211,
+      "LOW": 212,
       "MEDIUM": 46,
-      "NONE": 78
+      "NONE": 76
     },
     "scan": {
-      "download_recipes": 4676,
+      "download_recipes": 4669,
       "skipped": {
         "child_of_download": 98,
-        "deprecated": 633,
+        "deprecated": 632,
         "package_required": 22,
-        "windows": 272
+        "windows": 273
       },
-      "total_recipe_files": 19191
+      "total_recipe_files": 19163
     },
-    "total_sets": 345,
+    "total_sets": 344,
     "verdicts": {
-      "recommend": 144,
-      "review": 123,
-      "skip": 78
+      "recommend": 146,
+      "review": 122,
+      "skip": 76
     }
   }
 }

@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">144</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">99</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">123</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-09-28T09:00:53.094883+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">146</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-10-05T09:40:45.214716+00:00"></div></div>
   </div>
 </div>
 
@@ -3136,7 +3136,7 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
+        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-deprecate">Depr</span>
@@ -3156,7 +3156,7 @@ a:hover { text-decoration: underline; }
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;0</div>
       </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: pkg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: pkg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -3693,43 +3693,6 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/jaharmi-recipes/pull/112" target="_blank" rel="noopener">PR</a></div>
-      </div>
-    </details>
-
-    <details class="card verdict-skip dup-high"
-      data-tab="SKIP"
-      data-dup="HIGH"
-      data-keep="NONE"
-      data-repos="jaharmi-recipes|macprince-recipes"
-      data-search="maestral jaharmi-recipes/maestral/maestral.download.recipe macprince-recipes/sam schott/maestral.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Maestral</span>
-        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; same sparkle source; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/jaharmi-recipes/blob/HEAD/Maestral/Maestral.download.recipe" target="_blank" rel="noopener">jaharmi-recipes<span class="path-rest">/Maestral/Maestral.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/macprince-recipes/blob/HEAD/Sam Schott/Maestral.download.recipe" target="_blank" rel="noopener">macprince-recipes<span class="path-rest">/Sam Schott/Maestral.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/jaharmi-recipes/pull/113" target="_blank" rel="noopener">PR</a></div>
       </div>
     </details>
 
@@ -5944,6 +5907,43 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="LOW"
+      data-repos="kevinmcox-recipes|ygini-recipes"
+      data-search="aws vpn client kevinmcox-recipes/amazon/awsvpnclient.download.recipe.yaml ygini-recipes/aws vpn client/aws vpn client.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">AWS VPN Client</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/kevinmcox-recipes/blob/HEAD/Amazon/AWSVPNClient.download.recipe.yaml" target="_blank" rel="noopener">kevinmcox-recipes<span class="path-rest">/Amazon/AWSVPNClient.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/ygini-recipes/blob/HEAD/AWS VPN Client/AWS VPN Client.download.recipe" target="_blank" rel="noopener">ygini-recipes<span class="path-rest">/AWS VPN Client/AWS VPN Client.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; unknown source</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: pkg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; unknown source</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="LOW"
       data-repos="blackthroat-recipes|dataJAR-recipes"
       data-search="beyondcompare4 blackthroat-recipes/scooter software, inc./beyondcompare4.download.recipe datajar-recipes/beyond compare 4/beyond compare 4.download.recipe datajar-recipes/beyond compare 5/beyond compare 5.download.recipe">
       <summary class="card-hd">
@@ -6398,6 +6398,43 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;4</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="LOW"
+      data-repos="andrewzirkel-recipes|macprince-recipes"
+      data-search="kite student portal andrewzirkel-recipes/achievement and assessment institute/kitestudentportal.download.recipe macprince-recipes/achievement and assessment institute/kitestudentportal.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Kite Student Portal</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/andrewzirkel-recipes/blob/HEAD/Achievement and Assessment Institute/KiteStudentPortal.download.recipe" target="_blank" rel="noopener">andrewzirkel-recipes<span class="path-rest">/Achievement and Assessment Institute/KiteStudentPortal.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/macprince-recipes/blob/HEAD/Achievement and Assessment Institute/KiteStudentPortal.download.recipe" target="_blank" rel="noopener">macprince-recipes<span class="path-rest">/Achievement and Assessment Institute/KiteStudentPortal.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -10023,43 +10060,6 @@ a:hover { text-decoration: underline; }
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, pkg</div>
-      </div>
-    </details>
-
-    <details class="card verdict-review dup-low"
-      data-tab="REVIEW"
-      data-dup="LOW"
-      data-keep="LOW"
-      data-repos="andrewzirkel-recipes|macprince-recipes"
-      data-search="kite student portal andrewzirkel-recipes/achievement and assessment institute/kitestudentportal.download.recipe macprince-recipes/achievement and assessment institute/kitestudentportal.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Kite Student Portal</span>
-        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/andrewzirkel-recipes/blob/HEAD/Achievement and Assessment Institute/KiteStudentPortal.download.recipe" target="_blank" rel="noopener">andrewzirkel-recipes<span class="path-rest">/Achievement and Assessment Institute/KiteStudentPortal.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/macprince-recipes/blob/HEAD/Achievement and Assessment Institute/KiteStudentPortal.download.recipe" target="_blank" rel="noopener">macprince-recipes<span class="path-rest">/Achievement and Assessment Institute/KiteStudentPortal.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: dmg, pkg</div>
@@ -13742,43 +13742,6 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="LOW"
       data-keep="NONE"
-      data-repos="Tecnico1931-recipes|dataJAR-recipes"
-      data-search="pritunlclient tecnico1931-recipes/pritunlclient/pritunlclient.download.recipe datajar-recipes/pritunl client/pritunlclient.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">PritunlClient</span>
-        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/Tecnico1931-recipes/blob/HEAD/PritunlClient/PritunlClient.download.recipe" target="_blank" rel="noopener">Tecnico1931-recipes<span class="path-rest">/PritunlClient/PritunlClient.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span><span class="ftag ftag-neutral">zip</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/dataJAR-recipes/blob/HEAD/Pritunl Client/PritunlClient.download.recipe" target="_blank" rel="noopener">dataJAR-recipes<span class="path-rest">/Pritunl Client/PritunlClient.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span><span class="ftag ftag-neutral">zip</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/Tecnico1931-recipes/pull/14" target="_blank" rel="noopener">PR</a></div>
-      </div>
-    </details>
-
-    <details class="card verdict-skip dup-low"
-      data-tab="SKIP"
-      data-dup="LOW"
-      data-keep="NONE"
       data-repos="gregneagle-recipes|keeleysam-recipes|smithjw-recipes"
       data-search="sublime text smithjw-recipes/sublime_text/sublime_text.download.recipe.yaml keeleysam-recipes/sublimetext/sublimetext2.download.recipe keeleysam-recipes/sublimetext/sublimetext3.download.recipe gregneagle-recipes/sublimetext/sublimetext4.download.recipe">
       <summary class="card-hd">
@@ -14192,7 +14155,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4676 download recipes out of 19191 recipe files.
+  Scanned 4669 download recipes out of 19163 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

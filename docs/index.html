@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">146</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">122</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-10-05T09:40:45.214716+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">147</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-10-12T09:49:37.832049+00:00"></div></div>
   </div>
 </div>
 
@@ -3210,7 +3210,7 @@ a:hover { text-decoration: underline; }
         <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-high" title="Duplicate confidence">Dup&nbsp;High</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: same github source; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="match">Matched by: same github source; same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
@@ -5103,6 +5103,43 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="MEDIUM"
+      data-repos="hjuutilainen-recipes|homebysix-recipes"
+      data-search="disk drill hjuutilainen-recipes/cleverfiles/diskdrill.download.recipe homebysix-recipes/diskdrill/diskdrill.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Disk Drill</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/hjuutilainen-recipes/blob/HEAD/CleverFiles/DiskDrill.download.recipe" target="_blank" rel="noopener">hjuutilainen-recipes<span class="path-rest">/CleverFiles/DiskDrill.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/homebysix-recipes/blob/HEAD/DiskDrill/DiskDrill.download.recipe" target="_blank" rel="noopener">homebysix-recipes<span class="path-rest">/DiskDrill/DiskDrill.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="MEDIUM"
       data-repos="peshay-recipes|smithjw-recipes|vmiller-recipes"
       data-search="globalprotect peshay-recipes/paloalto/globalprotect.download.recipe smithjw-recipes/palo_alto/globalprotect.download.recipe.yaml vmiller-recipes/paloalto/globalprotect.download.recipe">
       <summary class="card-hd">
@@ -5252,43 +5289,6 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;2</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; github source; has useful description</span></div></div>
-        
-      </div>
-    </details>
-
-    <details class="card verdict-recommend dup-medium"
-      data-tab="MEDIUM"
-      data-dup="MEDIUM"
-      data-keep="MEDIUM"
-      data-repos="grahampugh-recipes|joshua-d-miller-recipes"
-      data-search="mendeley reference manager grahampugh-recipes/mendeleyreferencemanager/mendeleyreferencemanager.download.recipe.yaml joshua-d-miller-recipes/mendeley/mendeleyreferencemanager.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Mendeley Reference Manager</span>
-        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/grahampugh-recipes/blob/HEAD/MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml" target="_blank" rel="noopener">grahampugh-recipes<span class="path-rest">/MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/joshua-d-miller-recipes/blob/HEAD/Mendeley/MendeleyReferenceManager.download.recipe" target="_blank" rel="noopener">joshua-d-miller-recipes<span class="path-rest">/Mendeley/MendeleyReferenceManager.download.recipe</span></a></div>
-          <div class="recipe-reason">no EndOfCheckPhase</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div><div class="set-info-row si-depr"><span class="set-info-icon">✗</span><span><strong>Deprecate:</strong> joshua-d-miller-recipes: no EndOfCheckPhase</span></div></div>
         
       </div>
     </details>
@@ -6435,6 +6435,43 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;3</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="LOW"
+      data-repos="grahampugh-recipes|joshua-d-miller-recipes"
+      data-search="mendeley reference manager grahampugh-recipes/mendeleyreferencemanager/mendeleyreferencemanager.download.recipe.yaml joshua-d-miller-recipes/mendeley/mendeleyreferencemanager.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Mendeley Reference Manager</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/grahampugh-recipes/blob/HEAD/MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml" target="_blank" rel="noopener">grahampugh-recipes<span class="path-rest">/MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/joshua-d-miller-recipes/blob/HEAD/Mendeley/MendeleyReferenceManager.download.recipe" target="_blank" rel="noopener">joshua-d-miller-recipes<span class="path-rest">/Mendeley/MendeleyReferenceManager.download.recipe</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -9040,43 +9077,6 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: tgz, zip</div>
-      </div>
-    </details>
-
-    <details class="card verdict-review dup-low"
-      data-tab="REVIEW"
-      data-dup="LOW"
-      data-keep="LOW"
-      data-repos="hjuutilainen-recipes|homebysix-recipes"
-      data-search="disk drill hjuutilainen-recipes/cleverfiles/diskdrill.download.recipe homebysix-recipes/diskdrill/diskdrill.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Disk Drill</span>
-        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized recipe name</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/hjuutilainen-recipes/blob/HEAD/CleverFiles/DiskDrill.download.recipe" target="_blank" rel="noopener">hjuutilainen-recipes<span class="path-rest">/CleverFiles/DiskDrill.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/homebysix-recipes/blob/HEAD/DiskDrill/DiskDrill.download.recipe" target="_blank" rel="noopener">homebysix-recipes<span class="path-rest">/DiskDrill/DiskDrill.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">sparkle</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Needs review:</strong> low duplicate confidence; needs qualitative review</div>
       </div>
     </details>
 
@@ -14155,7 +14155,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4669 download recipes out of 19163 recipe files.
+  Scanned 4678 download recipes out of 19199 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

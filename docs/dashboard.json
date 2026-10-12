@@ -12708,8 +12708,8 @@
           "parent_recipe": "",
           "processors": [
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "Zoom/ZoomOutlookPlugin.download.recipe",
           "repo": "joshua-d-miller-recipes",
@@ -13013,6 +13013,7 @@
       "keeper_confidence": "NONE",
       "match_reasons": [
         "same github source",
+        "same normalized name and code signing authority",
         "same normalized name and source domain",
         "same normalized recipe name",
         "similar name plus weak identity match"
@@ -13111,7 +13112,7 @@
           "codesig_authorities": [
             "Apple Root CA",
             "Developer ID Certification Authority",
-            "Developer ID Installer: JAMF Software (483DWKW443)"
+            "Developer ID Installer: Jaron Bradley (C793NB2B2B)"
           ],
           "dependent_count": 1,
           "dependent_repos": [
@@ -18971,8 +18972,8 @@
           "processors": [
             "URLTextSearcher",
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "Cisco/CiscoJabber.download.recipe",
           "repo": "joshua-d-miller-recipes",
@@ -19838,6 +19839,161 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "Disk Drill",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 3,
+          "reason": "weaker duplicate",
+          "rel_path": "CleverFiles/DiskDrill.download.recipe",
+          "repo": "hjuutilainen-recipes",
+          "score": 7.85
+        }
+      ],
+      "deprecation_message": "Consider switching to Disk Drill recipes in the homebysix-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "a837ba032399",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description",
+          "rel_path": "DiskDrill/DiskDrill.download.recipe",
+          "repo": "homebysix-recipes",
+          "score": 8.85
+        }
+      ],
+      "keeper_confidence": "MEDIUM",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.cleverfiles.DiskDrill\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Z6C22PNU8R)"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "almenscorner-recipes",
+            "hjuutilainen-recipes"
+          ],
+          "description": "Downloads the current release version of Disk Drill.",
+          "display_name": "DiskDrill",
+          "first_commit": "2017-03-11T15:18:36+02:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "io.github.hjuutilainen.download.DiskDrill",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME"
+          ],
+          "name_key": "diskdrill",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "CleverFiles/DiskDrill.download.recipe",
+          "repo": "hjuutilainen-recipes",
+          "skip_reason": null,
+          "source_domain": "dl.cleverfiles.com",
+          "source_key": "dl.cleverfiles.com/diskdrill.dmg",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "anchor apple generic and identifier \"com.cleverfiles.DiskDrill\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Z6C22PNU8R)"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "homebysix-recipes"
+          ],
+          "description": "Downloads the latest version of Disk Drill.",
+          "display_name": "Disk Drill",
+          "first_commit": "2025-12-05T20:40:51-08:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.homebysix.download.DiskDrill",
+          "input_vars": [
+            "NAME"
+          ],
+          "name_key": "diskdrill",
+          "parent_recipe": "",
+          "processors": [
+            "SparkleUpdateInfoProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "DiskDrill/DiskDrill.download.recipe",
+          "repo": "homebysix-recipes",
+          "skip_reason": null,
+          "source_domain": "www.cleverfiles.com",
+          "source_key": "www.cleverfiles.com/releases/auto-update/dd6-newestr.xml",
+          "source_type": "sparkle"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; sparkle source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "GlobalProtect",
       "criteria": [
         {
@@ -20521,169 +20677,6 @@
         "compatible_artifact": true,
         "notes": [
           "same artifact format: zip"
-        ],
-        "same_product": true
-      },
-      "verdict": "recommend"
-    },
-    {
-      "app_name": "Mendeley Reference Manager",
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier"
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase"
-        },
-        {
-          "key": "source",
-          "label": "Source resilience"
-        },
-        {
-          "key": "arch",
-          "label": "Architecture support"
-        },
-        {
-          "key": "release",
-          "label": "Release/channel support"
-        },
-        {
-          "key": "history",
-          "label": "First commit tiebreaker"
-        }
-      ],
-      "deprecate": [
-        {
-          "dependent_count": 1,
-          "reason": "no EndOfCheckPhase",
-          "rel_path": "Mendeley/MendeleyReferenceManager.download.recipe",
-          "repo": "joshua-d-miller-recipes",
-          "score": 5.35
-        }
-      ],
-      "deprecation_message": "Consider switching to Mendeley Reference Manager recipes in the grahampugh-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "duplicate_confidence": "MEDIUM",
-      "id": "f3206dec7452",
-      "keep": [
-        {
-          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
-          "rel_path": "MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml",
-          "repo": "grahampugh-recipes",
-          "score": 7.25
-        }
-      ],
-      "keeper_confidence": "MEDIUM",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.elsevier.mendeley\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"45K89Y5X9B\""
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "grahampugh-recipes"
-          ],
-          "description": "Downloads the latest version of Mendeley Reference Manager",
-          "display_name": "Mendeley Reference Manager",
-          "first_commit": "2021-08-24T13:54:55+02:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.grahampugh.recipes.download.MendeleyReferenceManager",
-          "input_vars": [
-            "DOWNLOAD_URL",
-            "NAME",
-            "SEARCH_URL"
-          ],
-          "name_key": "mendeleyreferencemanager",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "AppDmgVersioner",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml",
-          "repo": "grahampugh-recipes",
-          "skip_reason": null,
-          "source_domain": "static.mendeley.com",
-          "source_key": "static.mendeley.com/bin/desktop/latest-mac.yml",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"com.elsevier.mendeley\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"45K89Y5X9B\""
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "joshua-d-miller-recipes"
-          ],
-          "description": "Downloads the latest verison of Mendeley Reference Manager",
-          "display_name": "Mendeley Reference Manager",
-          "first_commit": "2021-09-02T15:01:10-04:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": false,
-          "has_release_var": false,
-          "identifier": "com.github.joshua-d-miller.download.mendeleyreferencemanager",
-          "input_vars": [
-            "DOWNLOAD_PART_URL",
-            "NAME",
-            "SEARCH_URL",
-            "USER_AGENT"
-          ],
-          "name_key": "mendeleyreferencemanager",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLDownloader",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Mendeley/MendeleyReferenceManager.download.recipe",
-          "repo": "joshua-d-miller-recipes",
-          "skip_reason": null,
-          "source_domain": "www.mendeley.com",
-          "source_key": "www.mendeley.com/download-reference-manager/macos",
-          "source_type": "url"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
-        },
-        {
-          "category": "artifact",
-          "text": "same artifact format: dmg"
-        },
-        {
-          "category": "keeper",
-          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
-        },
-        {
-          "category": "deprecate",
-          "text": "joshua-d-miller-recipes: no EndOfCheckPhase"
-        }
-      ],
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
         ],
         "same_product": true
       },
@@ -23982,8 +23975,8 @@
           "processors": [
             "URLTextSearcher",
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "Skymatic/Cryptomator.download.recipe",
           "repo": "joshua-d-miller-recipes",
@@ -24295,8 +24288,8 @@
           "parent_recipe": "",
           "processors": [
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "Dropbox/DropboxCapture.download.recipe",
           "repo": "joshua-d-miller-recipes",
@@ -25638,6 +25631,166 @@
         {
           "category": "duplicate",
           "text": "same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
+      "app_name": "Mendeley Reference Manager",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 1,
+          "reason": "weaker duplicate",
+          "rel_path": "Mendeley/MendeleyReferenceManager.download.recipe",
+          "repo": "joshua-d-miller-recipes",
+          "score": 7.35
+        }
+      ],
+      "deprecation_message": "Consider switching to Mendeley Reference Manager recipes in the grahampugh-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "f3206dec7452",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
+          "rel_path": "MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml",
+          "repo": "grahampugh-recipes",
+          "score": 7.25
+        }
+      ],
+      "keeper_confidence": "LOW",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.elsevier.mendeley\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"45K89Y5X9B\""
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "grahampugh-recipes"
+          ],
+          "description": "Downloads the latest version of Mendeley Reference Manager",
+          "display_name": "Mendeley Reference Manager",
+          "first_commit": "2021-08-24T13:54:55+02:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.grahampugh.recipes.download.MendeleyReferenceManager",
+          "input_vars": [
+            "DOWNLOAD_URL",
+            "NAME",
+            "SEARCH_URL"
+          ],
+          "name_key": "mendeleyreferencemanager",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "AppDmgVersioner",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "MendeleyReferenceManager/MendeleyReferenceManager.download.recipe.yaml",
+          "repo": "grahampugh-recipes",
+          "skip_reason": null,
+          "source_domain": "static.mendeley.com",
+          "source_key": "static.mendeley.com/bin/desktop/latest-mac.yml",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"com.elsevier.mendeley\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = \"45K89Y5X9B\""
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "joshua-d-miller-recipes"
+          ],
+          "description": "Downloads the latest verison of Mendeley Reference Manager",
+          "display_name": "Mendeley Reference Manager",
+          "first_commit": "2021-09-02T15:01:10-04:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.joshua-d-miller.download.mendeleyreferencemanager",
+          "input_vars": [
+            "DOWNLOAD_PART_URL",
+            "NAME",
+            "SEARCH_URL",
+            "USER_AGENT"
+          ],
+          "name_key": "mendeleyreferencemanager",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Mendeley/MendeleyReferenceManager.download.recipe",
+          "repo": "joshua-d-miller-recipes",
+          "skip_reason": null,
+          "source_domain": "www.mendeley.com",
+          "source_key": "www.mendeley.com/download-reference-manager/macos",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match"
         },
         {
           "category": "artifact",
@@ -34089,102 +34242,6 @@
       "verdict": "review"
     },
     {
-      "app_name": "Disk Drill",
-      "duplicate_confidence": "LOW",
-      "id": "a837ba032399",
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized recipe name"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.cleverfiles.DiskDrill\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = Z6C22PNU8R)"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "almenscorner-recipes",
-            "hjuutilainen-recipes"
-          ],
-          "description": "Downloads the current release version of Disk Drill.",
-          "display_name": "DiskDrill",
-          "first_commit": "2017-03-11T15:18:36+02:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "io.github.hjuutilainen.download.DiskDrill",
-          "input_vars": [
-            "DOWNLOAD_URL",
-            "NAME"
-          ],
-          "name_key": "diskdrill",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "CleverFiles/DiskDrill.download.recipe",
-          "repo": "hjuutilainen-recipes",
-          "skip_reason": null,
-          "source_domain": "dl.cleverfiles.com",
-          "source_key": "dl.cleverfiles.com/diskdrill.dmg",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "anchor apple generic and identifier \"com.cleverfiles.DiskDrill\" and (certificate leaf[field.1.2.840.113635.100.6.1.9] /* exists */ or certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = A3W62KZY8Z)"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "homebysix-recipes"
-          ],
-          "description": "Downloads the latest version of Disk Drill.",
-          "display_name": "Disk Drill",
-          "first_commit": "2025-12-05T20:40:51-08:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.homebysix.download.DiskDrill",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "diskdrill",
-          "parent_recipe": "",
-          "processors": [
-            "SparkleUpdateInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "DiskDrill/DiskDrill.download.recipe",
-          "repo": "homebysix-recipes",
-          "skip_reason": null,
-          "source_domain": "www.cleverfiles.com",
-          "source_key": "www.cleverfiles.com/releases/auto-update/dd6-newestr.xml",
-          "source_type": "sparkle"
-        }
-      ],
-      "skip_reason": "low duplicate confidence; needs qualitative review",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
-        ],
-        "same_product": true
-      },
-      "verdict": "review"
-    },
-    {
       "app_name": "Eclipse Temurin 11",
       "duplicate_confidence": "LOW",
       "id": "72f232fddbed",
@@ -38052,8 +38109,8 @@
           "processors": [
             "URLTextSearcher",
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "LyX/lyx.download.recipe",
           "repo": "joshua-d-miller-recipes",
@@ -38244,8 +38301,8 @@
           "parent_recipe": "",
           "processors": [
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "makeblock/mBlock.download.recipe",
           "repo": "joshua-d-miller-recipes",
@@ -49246,10 +49303,10 @@
   "summary": {
     "duplicate_confidence": {
       "HIGH": 98,
-      "LOW": 150,
-      "MEDIUM": 96
+      "LOW": 149,
+      "MEDIUM": 97
     },
-    "generated_at": "2026-10-05T09:40:45.214716+00:00",
+    "generated_at": "2026-10-12T09:49:37.832049+00:00",
     "keeper_confidence": {
       "HIGH": 10,
       "LOW": 212,
@@ -49257,19 +49314,19 @@
       "NONE": 76
     },
     "scan": {
-      "download_recipes": 4669,
+      "download_recipes": 4678,
       "skipped": {
         "child_of_download": 98,
-        "deprecated": 632,
+        "deprecated": 633,
         "package_required": 22,
         "windows": 273
       },
-      "total_recipe_files": 19163
+      "total_recipe_files": 19199
     },
     "total_sets": 344,
     "verdicts": {
-      "recommend": 146,
-      "review": 122,
+      "recommend": 147,
+      "review": 121,
       "skip": 76
     }
   }

@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">147</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-10-12T09:49:37.832049+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">147</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-10-19T08:07:14.433769+00:00"></div></div>
   </div>
 </div>
 
@@ -7828,6 +7828,43 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="MEDIUM"
       data-keep="NONE"
+      data-repos="jc0b-recipes|timsutton-recipes"
+      data-search="terraform jc0b-recipes/hashicorp/terraformuniversal.download.recipe.yaml timsutton-recipes/hashicorp/terraform.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Terraform</span>
+        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/jc0b-recipes/blob/HEAD/Hashicorp/TerraformUniversal.download.recipe.yaml" target="_blank" rel="noopener">jc0b-recipes<span class="path-rest">/Hashicorp/TerraformUniversal.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/timsutton-recipes/blob/HEAD/HashiCorp/Terraform.download.recipe" target="_blank" rel="noopener">timsutton-recipes<span class="path-rest">/HashiCorp/Terraform.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">zip</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div></div>
+        
+        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/timsutton-recipes/pull/119" target="_blank" rel="noopener">PR</a></div>
+      </div>
+    </details>
+
+    <details class="card verdict-skip dup-medium"
+      data-tab="SKIP"
+      data-dup="MEDIUM"
+      data-keep="NONE"
       data-repos="jps3-recipes|markkenny-recipes|rderewianko-recipes"
       data-search="topaz gigapixel markkenny-recipes/topaz/topazgigapixel.download.recipe.yaml rderewianko-recipes/topazgigapixel/topazgigapixel.download.recipe jps3-recipes/topaz/topazgigapixelai.download.recipe.yaml">
       <summary class="card-hd">
@@ -13683,7 +13720,7 @@ a:hover { text-decoration: underline; }
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/bochoven-recipes/blob/HEAD/Opera/Opera.download.recipe" target="_blank" rel="noopener">bochoven-recipes<span class="path-rest">/Opera/Opera.download.recipe</span></a></div>
           
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">zip</span></div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-warn">format unknown</span></div>
         </div>
         <div class="dep-count" title="Dependent recipes">&#8595;3</div>
       </div>
@@ -13972,43 +14009,6 @@ a:hover { text-decoration: underline; }
       data-tab="SKIP"
       data-dup="LOW"
       data-keep="NONE"
-      data-repos="jc0b-recipes|timsutton-recipes"
-      data-search="terraform jc0b-recipes/hashicorp/terraformuniversal.download.recipe.yaml timsutton-recipes/hashicorp/terraform.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Terraform</span>
-        <span class="card-meta"><span class="badge badge-skip">Skip</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized recipe name</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/jc0b-recipes/blob/HEAD/Hashicorp/TerraformUniversal.download.recipe.yaml" target="_blank" rel="noopener">jc0b-recipes<span class="path-rest">/Hashicorp/TerraformUniversal.download.recipe.yaml</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">zip</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/timsutton-recipes/blob/HEAD/HashiCorp/Terraform.download.recipe" target="_blank" rel="noopener">timsutton-recipes<span class="path-rest">/HashiCorp/Terraform.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-warn">format unknown</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Skipped:</strong> PR(s) already opened <a href="https://github.com/autopkg/timsutton-recipes/pull/119" target="_blank" rel="noopener">PR</a></div>
-      </div>
-    </details>
-
-    <details class="card verdict-skip dup-low"
-      data-tab="SKIP"
-      data-dup="LOW"
-      data-keep="NONE"
       data-repos="bnpl-recipes|grahampugh-recipes|scriptingosx-recipes"
       data-search="texliveutility bnpl-recipes/texliveutility/texliveutility.download.recipe grahampugh-recipes/tex/texliveutility.download.recipe.yaml scriptingosx-recipes/texliveutility/texliveutility.download.recipe">
       <summary class="card-hd">
@@ -14155,7 +14155,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4678 download recipes out of 19199 recipe files.
+  Scanned 4678 download recipes out of 19206 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

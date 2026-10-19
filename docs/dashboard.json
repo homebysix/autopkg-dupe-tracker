@@ -30720,6 +30720,116 @@
       "verdict": "skip"
     },
     {
+      "app_name": "Terraform",
+      "duplicate_confidence": "MEDIUM",
+      "id": "8a3d697e650c",
+      "keeper_confidence": "NONE",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "identifier terraform and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = D38WU7D763"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "jc0b-recipes"
+          ],
+          "description": "Downloads the latest versions of Terraform (arm and intel) and unzips them.",
+          "display_name": "Terraform",
+          "first_commit": "2024-01-23T20:28:45+01:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.jc0b.download.TerraformUniversal",
+          "input_vars": [
+            "NAME",
+            "PRODUCT"
+          ],
+          "name_key": "terraform",
+          "parent_recipe": "",
+          "processors": [
+            "HashiCorpURLProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "HashiCorpURLProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Hashicorp/TerraformUniversal.download.recipe.yaml",
+          "repo": "jc0b-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:HashiCorpURLProvider",
+          "source_type": "unknown"
+        },
+        {
+          "artifact_formats": [
+            "zip"
+          ],
+          "codesig_authorities": [
+            "identifier terraform and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = D38WU7D763"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "timsutton-recipes"
+          ],
+          "description": "Downloads the current release of Terraform from http://terraform.io\n        Use e.g. -k ARCH=arm64 to specify Apple Silicon-specific builds.",
+          "display_name": "Terraform",
+          "first_commit": "2015-04-05T12:25:16-04:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.timsutton.download.Terraform",
+          "input_vars": [
+            "ARCH",
+            "NAME",
+            "PRODUCT"
+          ],
+          "name_key": "terraform",
+          "parent_recipe": "",
+          "processors": [
+            "HashiCorpURLProvider",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "Unarchiver",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "HashiCorp/Terraform.download.recipe",
+          "repo": "timsutton-recipes",
+          "skip_reason": null,
+          "source_domain": null,
+          "source_key": "processor:HashiCorpURLProvider",
+          "source_type": "unknown"
+        }
+      ],
+      "prs": [
+        "https://github.com/autopkg/timsutton-recipes/pull/119"
+      ],
+      "skip_reason": "PR(s) already opened",
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: zip"
+        ],
+        "same_product": true
+      },
+      "verdict": "skip"
+    },
+    {
       "app_name": "Topaz Gigapixel",
       "duplicate_confidence": "MEDIUM",
       "id": "be4da9cdeb75",
@@ -47823,9 +47933,7 @@
       "member_count": 2,
       "members": [
         {
-          "artifact_formats": [
-            "zip"
-          ],
+          "artifact_formats": [],
           "codesig_authorities": [
             "identifier \"com.operasoftware.Opera\" and certificate leaf = H\"89584386993936e6f38e64eed006f705f2570cbf\" or certificate leaf = H\"cdf1c39967986616b6cd64c6bd04833a9cb7450d\""
           ],
@@ -47844,8 +47952,8 @@
           "has_release_var": false,
           "identifier": "com.github.bochoven.recipes.Opera.download",
           "input_vars": [
+            "LISTING_URL",
             "NAME",
-            "UPDATE_URL",
             "USER_AGENT"
           ],
           "name_key": "opera",
@@ -47854,7 +47962,7 @@
             "OperaUpdateInfoProvider",
             "URLDownloader",
             "EndOfCheckPhase",
-            "Unarchiver",
+            "Copier",
             "CodeSignatureVerifier"
           ],
           "rel_path": "Opera/Opera.download.recipe",
@@ -47908,9 +48016,9 @@
       ],
       "skip_reason": "PR(s) already opened",
       "substitutability": {
-        "compatible_artifact": false,
+        "compatible_artifact": true,
         "notes": [
-          "different artifact formats: dmg, zip"
+          "artifact formats unknown or not comparable"
         ],
         "same_product": true
       },
@@ -48733,108 +48841,6 @@
       "verdict": "skip"
     },
     {
-      "app_name": "Terraform",
-      "duplicate_confidence": "LOW",
-      "id": "8a3d697e650c",
-      "keeper_confidence": "NONE",
-      "match_reasons": [
-        "same normalized recipe name"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "zip"
-          ],
-          "codesig_authorities": [
-            "identifier terraform and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = D38WU7D763"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "jc0b-recipes"
-          ],
-          "description": "Downloads the latest versions of Terraform (arm and intel) and unzips them.",
-          "display_name": "Terraform",
-          "first_commit": "2024-01-23T20:28:45+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.jc0b.download.TerraformUniversal",
-          "input_vars": [
-            "NAME",
-            "PRODUCT"
-          ],
-          "name_key": "terraform",
-          "parent_recipe": "",
-          "processors": [
-            "HashiCorpURLProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "HashiCorpURLProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "Unarchiver",
-            "CodeSignatureVerifier",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Hashicorp/TerraformUniversal.download.recipe.yaml",
-          "repo": "jc0b-recipes",
-          "skip_reason": null,
-          "source_domain": null,
-          "source_key": "processor:HashiCorpURLProvider",
-          "source_type": "unknown"
-        },
-        {
-          "artifact_formats": [],
-          "codesig_authorities": [],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "timsutton-recipes"
-          ],
-          "description": "Downloads the current release of Terraform from http://terraform.io\n\t\tUse e.g. -k ARCH=arm64 to specify Apple Silicon-specific builds.",
-          "display_name": "Terraform",
-          "first_commit": "2015-04-05T12:25:16-04:00",
-          "has_arch_var": true,
-          "has_codesig": false,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.timsutton.download.Terraform",
-          "input_vars": [
-            "ARCH",
-            "NAME",
-            "PRODUCT"
-          ],
-          "name_key": "terraform",
-          "parent_recipe": "",
-          "processors": [
-            "HashiCorpURLProvider",
-            "URLDownloader",
-            "EndOfCheckPhase"
-          ],
-          "rel_path": "HashiCorp/Terraform.download.recipe",
-          "repo": "timsutton-recipes",
-          "skip_reason": null,
-          "source_domain": null,
-          "source_key": "processor:HashiCorpURLProvider",
-          "source_type": "unknown"
-        }
-      ],
-      "prs": [
-        "https://github.com/autopkg/timsutton-recipes/pull/119"
-      ],
-      "skip_reason": "PR(s) already opened",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "artifact formats unknown or not comparable"
-        ],
-        "same_product": true
-      },
-      "verdict": "skip"
-    },
-    {
       "app_name": "TeXLiveUtility",
       "duplicate_confidence": "LOW",
       "id": "37cafe304b31",
@@ -49303,10 +49309,10 @@
   "summary": {
     "duplicate_confidence": {
       "HIGH": 98,
-      "LOW": 149,
-      "MEDIUM": 97
+      "LOW": 148,
+      "MEDIUM": 98
     },
-    "generated_at": "2026-10-12T09:49:37.832049+00:00",
+    "generated_at": "2026-10-19T08:07:14.433769+00:00",
     "keeper_confidence": {
       "HIGH": 10,
       "LOW": 212,
@@ -49317,11 +49323,11 @@
       "download_recipes": 4678,
       "skipped": {
         "child_of_download": 98,
-        "deprecated": 633,
+        "deprecated": 635,
         "package_required": 22,
         "windows": 273
       },
-      "total_recipe_files": 19199
+      "total_recipe_files": 19206
     },
     "total_sets": 344,
     "verdicts": {

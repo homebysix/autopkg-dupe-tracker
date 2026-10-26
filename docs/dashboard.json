@@ -49312,7 +49312,7 @@
       "LOW": 148,
       "MEDIUM": 98
     },
-    "generated_at": "2026-10-19T08:07:14.433769+00:00",
+    "generated_at": "2026-10-26T08:10:07.419361+00:00",
     "keeper_confidence": {
       "HIGH": 10,
       "LOW": 212,
@@ -49320,14 +49320,14 @@
       "NONE": 76
     },
     "scan": {
-      "download_recipes": 4678,
+      "download_recipes": 4685,
       "skipped": {
         "child_of_download": 98,
         "deprecated": 635,
         "package_required": 22,
-        "windows": 273
+        "windows": 274
       },
-      "total_recipe_files": 19206
+      "total_recipe_files": 19248
     },
     "total_sets": 344,
     "verdicts": {

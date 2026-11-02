@@ -207,7 +207,7 @@ a:hover { text-decoration: underline; }
   <div class="header-inner">
     <h1>AutoPkg Recipe Deduplication Dashboard</h1>
     <div class="subtitle">Potentially duplicated recipes across the AutoPkg org, categorized and quantified for review.</div>
-    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">147</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">121</span> to review</div><div class="stat-item"><span class="stat-num">108</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-10-26T08:10:07.419361+00:00"></div></div>
+    <div class="stat-row" id="stats"><div class="stat-item"><span class="stat-num">147</span> recommendations</div><div class="stat-item"><span class="stat-num stat-num-high">98</span> high dup. confidence</div><div class="stat-item"><span class="stat-num stat-num-review">120</span> to review</div><div class="stat-item"><span class="stat-num">107</span> repos</div><div class="stat-item" style="margin-left:auto" id="genTime" data-iso="2026-11-02T10:00:13.904033+00:00"></div></div>
   </div>
 </div>
 
@@ -5417,6 +5417,43 @@ a:hover { text-decoration: underline; }
       data-tab="MEDIUM"
       data-dup="MEDIUM"
       data-keep="MEDIUM"
+      data-repos="moofit-recipes|swy-recipes"
+      data-search="notion moofit-recipes/notion labs/notionuniversal.download.recipe.yaml swy-recipes/notion labs, inc./notion.download.recipe">
+      <summary class="card-hd">
+        <span class="expand-arrow">&#9654;</span>
+        <span class="card-app">Notion</span>
+        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-medium" title="Keeper confidence">Keep&nbsp;Medium</span></span>
+      </summary>
+      <div class="card-body">
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
+        <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-deprecate">Depr</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/moofit-recipes/blob/HEAD/Notion Labs/NotionUniversal.download.recipe.yaml" target="_blank" rel="noopener">moofit-recipes<span class="path-rest">/Notion Labs/NotionUniversal.download.recipe.yaml</span></a></div>
+          <div class="recipe-reason">weaker duplicate</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-keep">Keep</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/swy-recipes/blob/HEAD/Notion Labs, Inc./Notion.download.recipe" target="_blank" rel="noopener">swy-recipes<span class="path-rest">/Notion Labs, Inc./Notion.download.recipe</span></a></div>
+          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source</div>
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
+      </div></div>
+        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source</span></div></div>
+        
+      </div>
+    </details>
+
+    <details class="card verdict-recommend dup-medium"
+      data-tab="MEDIUM"
+      data-dup="MEDIUM"
+      data-keep="MEDIUM"
       data-repos="ahousseini-recipes|nstrauss-recipes"
       data-search="obs ahousseini-recipes/obs/obs.download.recipe nstrauss-recipes/obs/obs.download.recipe">
       <summary class="card-hd">
@@ -6638,43 +6675,6 @@ a:hover { text-decoration: underline; }
         <div class="dep-count" title="Dependent recipes">&#8595;3</div>
       </div></div>
         <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: zip</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; has release/channel input; sparkle source</span></div></div>
-        
-      </div>
-    </details>
-
-    <details class="card verdict-recommend dup-medium"
-      data-tab="MEDIUM"
-      data-dup="MEDIUM"
-      data-keep="LOW"
-      data-repos="moofit-recipes|swy-recipes"
-      data-search="notion moofit-recipes/notion labs/notionuniversal.download.recipe.yaml swy-recipes/notion labs, inc./notion.download.recipe">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Notion</span>
-        <span class="card-meta"><span class="badge badge-conf-medium" title="Duplicate confidence">Dup&nbsp;Medium</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-deprecate">Depr</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/moofit-recipes/blob/HEAD/Notion Labs/NotionUniversal.download.recipe.yaml" target="_blank" rel="noopener">moofit-recipes<span class="path-rest">/Notion Labs/NotionUniversal.download.recipe.yaml</span></a></div>
-          <div class="recipe-reason">weaker duplicate</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;2</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-keep">Keep</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/swy-recipes/blob/HEAD/Notion Labs, Inc./Notion.download.recipe" target="_blank" rel="noopener">swy-recipes<span class="path-rest">/Notion Labs, Inc./Notion.download.recipe</span></a></div>
-          <div class="recipe-reason">has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</div>
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;3</div>
-      </div></div>
-        <div class="set-info"><div class="set-info-row si-shared"><span class="set-info-icon">●</span><span><strong>Duplicate:</strong> same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match</span></div><div class="set-info-row si-artifact"><span class="set-info-icon">◆</span><span><strong>Artifact:</strong> same artifact format: dmg</span></div><div class="set-info-row si-keep"><span class="set-info-icon">✓</span><span><strong>Keeper:</strong> has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description</span></div></div>
         
       </div>
     </details>
@@ -9121,8 +9121,8 @@ a:hover { text-decoration: underline; }
       data-tab="REVIEW"
       data-dup="LOW"
       data-keep="LOW"
-      data-repos="grahampugh-recipes|novaksam-recipes"
-      data-search="eclipse temurin 11 grahampugh-recipes/eclipsetemurin/eclipsetemurin11-signed-installer.download.recipe.yaml grahampugh-recipes/eclipsetemurin/eclipsetemurin11.download.recipe.yaml novaksam-recipes/recipes - download/eclipsetemurin11.download.recipe novaksam-recipes/recipes - download/eclipsetemurin17.download.recipe grahampugh-recipes/eclipsetemurin/eclipsetemurin8-signed-installer.download.recipe.yaml grahampugh-recipes/eclipsetemurin/eclipsetemurin8.download.recipe.yaml novaksam-recipes/recipes - download/eclipsetemurin8.download.recipe">
+      data-repos="grahampugh-recipes|nmcspadden-recipes|novaksam-recipes"
+      data-search="eclipse temurin 11 nmcspadden-recipes/eclipsetemurin/eclipsetemurin.download.recipe.yaml grahampugh-recipes/eclipsetemurin/eclipsetemurin11-signed-installer.download.recipe.yaml grahampugh-recipes/eclipsetemurin/eclipsetemurin11.download.recipe.yaml novaksam-recipes/recipes - download/eclipsetemurin11.download.recipe novaksam-recipes/recipes - download/eclipsetemurin17.download.recipe grahampugh-recipes/eclipsetemurin/eclipsetemurin8-signed-installer.download.recipe.yaml grahampugh-recipes/eclipsetemurin/eclipsetemurin8.download.recipe.yaml novaksam-recipes/recipes - download/eclipsetemurin8.download.recipe">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">Eclipse Temurin 11</span>
@@ -9131,6 +9131,15 @@ a:hover { text-decoration: underline; }
       <div class="card-body">
         <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
         <div class="members">
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/nmcspadden-recipes/blob/HEAD/EclipseTemurin/EclipseTemurin.download.recipe.yaml" target="_blank" rel="noopener">nmcspadden-recipes<span class="path-rest">/EclipseTemurin/EclipseTemurin.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-pos">Channel</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
         <div class="recipe-info">
@@ -9196,52 +9205,6 @@ a:hover { text-decoration: underline; }
       </div></div>
         
         <div class="banner banner-warn"><strong>Needs review:</strong> different artifact formats: gz, pkg, tar</div>
-      </div>
-    </details>
-
-    <details class="card verdict-review dup-low"
-      data-tab="REVIEW"
-      data-dup="LOW"
-      data-keep="LOW"
-      data-repos="dataJAR-recipes|jrmfong-recipes|nmcspadden-recipes"
-      data-search="eclipse temurin jdk 25 nmcspadden-recipes/eclipsetemurin/eclipsetemurin.download.recipe.yaml datajar-recipes/visual studio/eclipse temurin jdk.download.recipe jrmfong-recipes/eclipse temurin/eclipsetemurinjdk25.download.recipe.yaml">
-      <summary class="card-hd">
-        <span class="expand-arrow">&#9654;</span>
-        <span class="card-app">Eclipse Temurin JDK 25</span>
-        <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
-      </summary>
-      <div class="card-body">
-        <div class="match">Matched by: similar name plus weak identity match</div>
-        <div class="members">
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/nmcspadden-recipes/blob/HEAD/EclipseTemurin/EclipseTemurin.download.recipe.yaml" target="_blank" rel="noopener">nmcspadden-recipes<span class="path-rest">/EclipseTemurin/EclipseTemurin.download.recipe.yaml</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-pos">Channel</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/dataJAR-recipes/blob/HEAD/Visual Studio/Eclipse Temurin JDK.download.recipe" target="_blank" rel="noopener">dataJAR-recipes<span class="path-rest">/Visual Studio/Eclipse Temurin JDK.download.recipe</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div>
-      <div class="recipe-row">
-        <span class="role-tag role-member">&mdash;</span>
-        <div class="recipe-info">
-          <div class="recipe-path"><a href="https://github.com/autopkg/jrmfong-recipes/blob/HEAD/Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml" target="_blank" rel="noopener">jrmfong-recipes<span class="path-rest">/Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml</span></a></div>
-          
-          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-pos">Multi-arch</span><span class="ftag ftag-neutral">github</span><span class="ftag ftag-neutral">pkg</span></div>
-        </div>
-        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
-      </div></div>
-        
-        <div class="banner banner-warn"><strong>Needs review:</strong> low duplicate confidence; needs qualitative review</div>
       </div>
     </details>
 
@@ -9333,7 +9296,7 @@ a:hover { text-decoration: underline; }
       data-dup="LOW"
       data-keep="LOW"
       data-repos="dataJAR-recipes|davidbpirie-recipes"
-      data-search="fabfilter pro-c 2 datajar-recipes/fabfilter pro-c 2/fabfilter pro-c 2.download.recipe davidbpirie-recipes/fabfilter/fabfilterproc2.download.recipe.yaml datajar-recipes/fabfilter pro-l 2/fabfilter pro-l 2.download.recipe davidbpirie-recipes/fabfilter/fabfilterprol2.download.recipe.yaml">
+      data-search="fabfilter pro-c 2 datajar-recipes/fabfilter pro-c 2/fabfilter pro-c 2.download.recipe davidbpirie-recipes/fabfilter/fabfilterproc2.download.recipe.yaml davidbpirie-recipes/fabfilter/fabfilterproc3.download.recipe.yaml datajar-recipes/fabfilter pro-l 2/fabfilter pro-l 2.download.recipe davidbpirie-recipes/fabfilter/fabfilterprol2.download.recipe.yaml davidbpirie-recipes/fabfilter/fabfilterpror2.download.recipe.yaml">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">FabFilter Pro-C 2</span>
@@ -9363,6 +9326,15 @@ a:hover { text-decoration: underline; }
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
         <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/davidbpirie-recipes/blob/HEAD/FabFilter/FabFilterProC3.download.recipe.yaml" target="_blank" rel="noopener">davidbpirie-recipes<span class="path-rest">/FabFilter/FabFilterProC3.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/dataJAR-recipes/blob/HEAD/FabFilter Pro-L 2/FabFilter Pro-L 2.download.recipe" target="_blank" rel="noopener">dataJAR-recipes<span class="path-rest">/FabFilter Pro-L 2/FabFilter Pro-L 2.download.recipe</span></a></div>
           
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
@@ -9373,6 +9345,15 @@ a:hover { text-decoration: underline; }
         <span class="role-tag role-member">&mdash;</span>
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/davidbpirie-recipes/blob/HEAD/FabFilter/FabFilterProL2.download.recipe.yaml" target="_blank" rel="noopener">davidbpirie-recipes<span class="path-rest">/FabFilter/FabFilterProL2.download.recipe.yaml</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/davidbpirie-recipes/blob/HEAD/FabFilter/FabFilterProR2.download.recipe.yaml" target="_blank" rel="noopener">davidbpirie-recipes<span class="path-rest">/FabFilter/FabFilterProR2.download.recipe.yaml</span></a></div>
           
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
@@ -9388,14 +9369,14 @@ a:hover { text-decoration: underline; }
       data-dup="LOW"
       data-keep="LOW"
       data-repos="dataJAR-recipes|davidbpirie-recipes"
-      data-search="fabfilterpro-q4 davidbpirie-recipes/fabfilter/fabfilterproq3.download.recipe.yaml datajar-recipes/fabfilter pro-q 4/fabfilter pro-q 4.download.recipe">
+      data-search="fabfilterpro-q4 davidbpirie-recipes/fabfilter/fabfilterproq3.download.recipe.yaml datajar-recipes/fabfilter pro-q 4/fabfilter pro-q 4.download.recipe davidbpirie-recipes/fabfilter/fabfilterproq4.download.recipe.yaml">
       <summary class="card-hd">
         <span class="expand-arrow">&#9654;</span>
         <span class="card-app">FabFilterPro-Q4</span>
         <span class="card-meta"><span class="badge badge-review">Review</span><span class="badge badge-conf-low" title="Duplicate confidence">Dup&nbsp;Low</span><span class="badge badge-conf-low" title="Keeper confidence">Keep&nbsp;Low</span></span>
       </summary>
       <div class="card-body">
-        <div class="match">Matched by: similar name plus weak identity match</div>
+        <div class="match">Matched by: same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; same url source; similar name plus weak identity match</div>
         <div class="members">
       <div class="recipe-row">
         <span class="role-tag role-member">&mdash;</span>
@@ -9410,6 +9391,15 @@ a:hover { text-decoration: underline; }
         <span class="role-tag role-member">&mdash;</span>
         <div class="recipe-info">
           <div class="recipe-path"><a href="https://github.com/autopkg/dataJAR-recipes/blob/HEAD/FabFilter Pro-Q 4/FabFilter Pro-Q 4.download.recipe" target="_blank" rel="noopener">dataJAR-recipes<span class="path-rest">/FabFilter Pro-Q 4/FabFilter Pro-Q 4.download.recipe</span></a></div>
+          
+          <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
+        </div>
+        <div class="dep-count" title="Dependent recipes">&#8595;1</div>
+      </div>
+      <div class="recipe-row">
+        <span class="role-tag role-member">&mdash;</span>
+        <div class="recipe-info">
+          <div class="recipe-path"><a href="https://github.com/autopkg/davidbpirie-recipes/blob/HEAD/FabFilter/FabFilterProQ4.download.recipe.yaml" target="_blank" rel="noopener">davidbpirie-recipes<span class="path-rest">/FabFilter/FabFilterProQ4.download.recipe.yaml</span></a></div>
           
           <div class="feature-tags"><span class="ftag ftag-pos">CodeSig</span><span class="ftag ftag-pos">EndOfCheck</span><span class="ftag ftag-neutral">url</span><span class="ftag ftag-neutral">dmg</span><span class="ftag ftag-neutral">pkg</span></div>
         </div>
@@ -14155,7 +14145,7 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="footer">
-  Scanned 4685 download recipes out of 19248 recipe files.
+  Scanned 4692 download recipes out of 19367 recipe files.
   Recommendations are AI-free and deterministic, intended as a basis for human review.
   Always read the actual recipes before acting on any recommendation.
 </div>

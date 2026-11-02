@@ -21202,6 +21202,171 @@
       "verdict": "recommend"
     },
     {
+      "app_name": "Notion",
+      "criteria": [
+        {
+          "key": "codesig",
+          "label": "CodeSignatureVerifier"
+        },
+        {
+          "key": "endofcheck",
+          "label": "EndOfCheckPhase"
+        },
+        {
+          "key": "source",
+          "label": "Source resilience"
+        },
+        {
+          "key": "arch",
+          "label": "Architecture support"
+        },
+        {
+          "key": "release",
+          "label": "Release/channel support"
+        },
+        {
+          "key": "history",
+          "label": "First commit tiebreaker"
+        }
+      ],
+      "deprecate": [
+        {
+          "dependent_count": 2,
+          "reason": "weaker duplicate",
+          "rel_path": "Notion Labs/NotionUniversal.download.recipe.yaml",
+          "repo": "moofit-recipes",
+          "score": 7.5
+        }
+      ],
+      "deprecation_message": "Consider switching to Notion recipes in the swy-recipes repo. This recipe is deprecated and will be removed in the future.",
+      "duplicate_confidence": "MEDIUM",
+      "id": "44e3050f0891",
+      "keep": [
+        {
+          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source",
+          "rel_path": "Notion Labs, Inc./Notion.download.recipe",
+          "repo": "swy-recipes",
+          "score": 9.35
+        }
+      ],
+      "keeper_confidence": "MEDIUM",
+      "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "similar name plus weak identity match"
+      ],
+      "member_count": 2,
+      "members": [
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"notion.id\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LBQJ96FQ8D"
+          ],
+          "dependent_count": 2,
+          "dependent_repos": [
+            "grahampugh-recipes",
+            "moofit-recipes"
+          ],
+          "description": "Downloads the latest amd64 and arm64 versions of Notion",
+          "display_name": "Notion",
+          "first_commit": "2022-01-05T00:58:44Z",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.moofit-recipes.download.NotionUniversal",
+          "input_vars": [
+            "AMD64_DOWNLOAD_URL",
+            "ARM64_DOWNLOAD_URL",
+            "NAME",
+            "USER_AGENT"
+          ],
+          "name_key": "notion",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier",
+            "Versioner"
+          ],
+          "rel_path": "Notion Labs/NotionUniversal.download.recipe.yaml",
+          "repo": "moofit-recipes",
+          "skip_reason": null,
+          "source_domain": "www.notion.so",
+          "source_key": "www.notion.so/desktop/mac/download",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg"
+          ],
+          "codesig_authorities": [
+            "identifier \"notion.id\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LBQJ96FQ8D"
+          ],
+          "dependent_count": 3,
+          "dependent_repos": [
+            "swy-recipes"
+          ],
+          "description": "Downloads the latest version of Notion. Set ARCH to universal (default), apple-silicon, or intel.",
+          "display_name": "Notion",
+          "first_commit": "2017-06-27T09:19:49-05:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.swy.download.Notion",
+          "input_vars": [
+            "ARCH",
+            "DOWNLOAD_URL",
+            "NAME",
+            "USER_AGENT"
+          ],
+          "name_key": "notion",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "Notion Labs, Inc./Notion.download.recipe",
+          "repo": "swy-recipes",
+          "skip_reason": null,
+          "source_domain": "www.notion.so",
+          "source_key": "www.notion.so/desktop/mac-{var}/download",
+          "source_type": "url"
+        }
+      ],
+      "rationale": [
+        {
+          "category": "duplicate",
+          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
+        },
+        {
+          "category": "artifact",
+          "text": "same artifact format: dmg"
+        },
+        {
+          "category": "keeper",
+          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; has architecture input; url source"
+        }
+      ],
+      "substitutability": {
+        "compatible_artifact": true,
+        "notes": [
+          "same artifact format: dmg"
+        ],
+        "same_product": true
+      },
+      "verdict": "recommend"
+    },
+    {
       "app_name": "OBS",
       "criteria": [
         {
@@ -26549,170 +26714,6 @@
         "compatible_artifact": true,
         "notes": [
           "same artifact format: zip"
-        ],
-        "same_product": true
-      },
-      "verdict": "recommend"
-    },
-    {
-      "app_name": "Notion",
-      "criteria": [
-        {
-          "key": "codesig",
-          "label": "CodeSignatureVerifier"
-        },
-        {
-          "key": "endofcheck",
-          "label": "EndOfCheckPhase"
-        },
-        {
-          "key": "source",
-          "label": "Source resilience"
-        },
-        {
-          "key": "arch",
-          "label": "Architecture support"
-        },
-        {
-          "key": "release",
-          "label": "Release/channel support"
-        },
-        {
-          "key": "history",
-          "label": "First commit tiebreaker"
-        }
-      ],
-      "deprecate": [
-        {
-          "dependent_count": 2,
-          "reason": "weaker duplicate",
-          "rel_path": "Notion Labs/NotionUniversal.download.recipe.yaml",
-          "repo": "moofit-recipes",
-          "score": 7.5
-        }
-      ],
-      "deprecation_message": "Consider switching to Notion recipes in the swy-recipes repo. This recipe is deprecated and will be removed in the future.",
-      "duplicate_confidence": "MEDIUM",
-      "id": "44e3050f0891",
-      "keep": [
-        {
-          "reason": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description",
-          "rel_path": "Notion Labs, Inc./Notion.download.recipe",
-          "repo": "swy-recipes",
-          "score": 7.85
-        }
-      ],
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "same normalized name and code signing authority",
-        "same normalized name and source domain",
-        "same normalized recipe name",
-        "similar name plus weak identity match"
-      ],
-      "member_count": 2,
-      "members": [
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"notion.id\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LBQJ96FQ8D"
-          ],
-          "dependent_count": 2,
-          "dependent_repos": [
-            "grahampugh-recipes",
-            "moofit-recipes"
-          ],
-          "description": "Downloads the latest amd64 and arm64 versions of Notion",
-          "display_name": "Notion",
-          "first_commit": "2022-01-05T00:58:44Z",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.moofit-recipes.download.NotionUniversal",
-          "input_vars": [
-            "AMD64_DOWNLOAD_URL",
-            "ARM64_DOWNLOAD_URL",
-            "NAME",
-            "USER_AGENT"
-          ],
-          "name_key": "notion",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier",
-            "Versioner"
-          ],
-          "rel_path": "Notion Labs/NotionUniversal.download.recipe.yaml",
-          "repo": "moofit-recipes",
-          "skip_reason": null,
-          "source_domain": "www.notion.so",
-          "source_key": "www.notion.so/desktop/mac/download",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "dmg"
-          ],
-          "codesig_authorities": [
-            "identifier \"notion.id\" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = LBQJ96FQ8D"
-          ],
-          "dependent_count": 3,
-          "dependent_repos": [
-            "swy-recipes"
-          ],
-          "description": "Downloads the latest universal version of Notion.",
-          "display_name": "Notion",
-          "first_commit": "2017-06-27T09:19:49-05:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.swy.download.Notion",
-          "input_vars": [
-            "DOWNLOAD_URL",
-            "NAME",
-            "USER_AGENT"
-          ],
-          "name_key": "notion",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Notion Labs, Inc./Notion.download.recipe",
-          "repo": "swy-recipes",
-          "skip_reason": null,
-          "source_domain": "www.notion.so",
-          "source_key": "www.notion.so/desktop/mac-universal/download",
-          "source_type": "url"
-        }
-      ],
-      "rationale": [
-        {
-          "category": "duplicate",
-          "text": "same normalized name and code signing authority; same normalized name and source domain; same normalized recipe name; similar name plus weak identity match"
-        },
-        {
-          "category": "artifact",
-          "text": "same artifact format: dmg"
-        },
-        {
-          "category": "keeper",
-          "text": "has CodeSignatureVerifier; has EndOfCheckPhase; url source; has useful description"
-        }
-      ],
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: dmg"
         ],
         "same_product": true
       },
@@ -34354,7 +34355,7 @@
     {
       "app_name": "Eclipse Temurin 11",
       "duplicate_confidence": "LOW",
-      "id": "72f232fddbed",
+      "id": "ebad2c3e6e54",
       "keeper_confidence": "LOW",
       "match_reasons": [
         "same normalized name and code signing authority",
@@ -34363,8 +34364,54 @@
         "same url source",
         "similar name plus weak identity match"
       ],
-      "member_count": 7,
+      "member_count": 8,
       "members": [
+        {
+          "artifact_formats": [
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: Eclipse Foundation, Inc. (JCDTMS22B4)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "nmcspadden-recipes"
+          ],
+          "description": "This is a slight rewrite of grahampugh-recipes/EclipseTemurin recipes.\nDownloads the current release version of Eclipse Temurin 8. This is based from the tar version rather than the signed pkg version, so that the true version number can be obtained.\n\nFEATURE_VERSION may be any valid whole number, e.g. 8, 11, 16, 17. See https://api.adoptium.net/v3/info/available_releases for available feature versions.\n\nRELEASE_TYPE can be 'ga' (general availablility) or 'ea' (early access).\n\nOS may be 'mac' or others.\n\nDOWNLOAD_ARCH may be 'x64' or 'aarch64' for macOS-specific builds. Note that if you change this, you MUST also change the supported_architectures in the pkginfo dictionary to match what Munki expects: https://github.com/munki/munki/wiki/Pkginfo-Files#supported_architectures\n\nIMAGE_TYPE may be 'jdk', 'jre', 'testimage', 'debugimage' or 'staticlibs'.\n\nJVM_IMPLEMENTATION may be \"hotspot\", \"openj9\" or \"dragonwell\".\n\nHEAP_SIZE may be 'normal' or 'large'.\n\nVENDOR may be 'adoptopenjdk', 'openjdk', 'adoptium', 'alibaba', 'ibm'.\n\nNote that not all options are available for all vendors, and not all listed vendors may be currently available.\n",
+          "display_name": "EclipseTemurin",
+          "first_commit": "2023-07-17T15:57:14-07:00",
+          "has_arch_var": true,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": true,
+          "identifier": "com.github.nmcspadden.recipes.download.EclipseTemurin",
+          "input_vars": [
+            "DOWNLOAD_ARCH",
+            "FEATURE_VERSION",
+            "HEAP_SIZE",
+            "IMAGE_TYPE",
+            "JVM_IMPLEMENTATION",
+            "NAME",
+            "OS",
+            "RELEASE_TYPE",
+            "VENDOR"
+          ],
+          "name_key": "eclipsetemurin",
+          "parent_recipe": "",
+          "processors": [
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "EclipseTemurin/EclipseTemurin.download.recipe.yaml",
+          "repo": "nmcspadden-recipes",
+          "skip_reason": null,
+          "source_domain": "api.adoptium.net",
+          "source_key": "api.adoptium.net/v3/installer/latest/11/ga/mac/x64/jdk/hotspot/normal/adoptium",
+          "source_type": "url"
+        },
         {
           "artifact_formats": [
             "pkg"
@@ -34691,154 +34738,6 @@
       "verdict": "review"
     },
     {
-      "app_name": "Eclipse Temurin JDK 25",
-      "duplicate_confidence": "LOW",
-      "id": "c480ea0ae02f",
-      "keeper_confidence": "LOW",
-      "match_reasons": [
-        "similar name plus weak identity match"
-      ],
-      "member_count": 3,
-      "members": [
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Eclipse Foundation, Inc. (JCDTMS22B4)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "nmcspadden-recipes"
-          ],
-          "description": "This is a slight rewrite of grahampugh-recipes/EclipseTemurin recipes.\nDownloads the current release version of Eclipse Temurin 8. This is based from the tar version rather than the signed pkg version, so that the true version number can be obtained.\n\nFEATURE_VERSION may be any valid whole number, e.g. 8, 11, 16, 17. See https://api.adoptium.net/v3/info/available_releases for available feature versions.\n\nRELEASE_TYPE can be 'ga' (general availablility) or 'ea' (early access).\n\nOS may be 'mac' or others.\n\nDOWNLOAD_ARCH may be 'x64' or 'aarch64' for macOS-specific builds. Note that if you change this, you MUST also change the supported_architectures in the pkginfo dictionary to match what Munki expects: https://github.com/munki/munki/wiki/Pkginfo-Files#supported_architectures\n\nIMAGE_TYPE may be 'jdk', 'jre', 'testimage', 'debugimage' or 'staticlibs'.\n\nJVM_IMPLEMENTATION may be \"hotspot\", \"openj9\" or \"dragonwell\".\n\nHEAP_SIZE may be 'normal' or 'large'.\n\nVENDOR may be 'adoptopenjdk', 'openjdk', 'adoptium', 'alibaba', 'ibm'.\n\nNote that not all options are available for all vendors, and not all listed vendors may be currently available.\n",
-          "display_name": "EclipseTemurin",
-          "first_commit": "2023-07-17T15:57:14-07:00",
-          "has_arch_var": true,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": true,
-          "identifier": "com.github.nmcspadden.recipes.download.EclipseTemurin",
-          "input_vars": [
-            "DOWNLOAD_ARCH",
-            "FEATURE_VERSION",
-            "HEAP_SIZE",
-            "IMAGE_TYPE",
-            "JVM_IMPLEMENTATION",
-            "NAME",
-            "OS",
-            "RELEASE_TYPE",
-            "VENDOR"
-          ],
-          "name_key": "eclipsetemurin",
-          "parent_recipe": "",
-          "processors": [
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "EclipseTemurin/EclipseTemurin.download.recipe.yaml",
-          "repo": "nmcspadden-recipes",
-          "skip_reason": null,
-          "source_domain": "api.adoptium.net",
-          "source_key": "api.adoptium.net/v3/installer/latest/11/ga/mac/x64/jdk/hotspot/normal/adoptium",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Eclipse Foundation, Inc. (JCDTMS22B4)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "dataJAR-recipes"
-          ],
-          "description": "Downloads the latest version of Eclipse Temurin JDK for Visual Studio.",
-          "display_name": "EclipseTemurinJDK",
-          "first_commit": "2023-06-23T15:47:32+01:00",
-          "has_arch_var": false,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.dataJAR-recipes.download.Eclipse Temurin JDK",
-          "input_vars": [
-            "NAME"
-          ],
-          "name_key": "eclipsetemurinjdk",
-          "parent_recipe": "",
-          "processors": [
-            "URLTextSearcher",
-            "URLTextSearcher",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Visual Studio/Eclipse Temurin JDK.download.recipe",
-          "repo": "dataJAR-recipes",
-          "skip_reason": null,
-          "source_domain": "aka.ms",
-          "source_key": "aka.ms/vsmac/manifest/17-stable",
-          "source_type": "url"
-        },
-        {
-          "artifact_formats": [
-            "pkg"
-          ],
-          "codesig_authorities": [
-            "Apple Root CA",
-            "Developer ID Certification Authority",
-            "Developer ID Installer: Eclipse Foundation, Inc. (JCDTMS22B4)"
-          ],
-          "dependent_count": 1,
-          "dependent_repos": [
-            "jrmfong-recipes"
-          ],
-          "description": "Downloads the latest signed installer package of Eclipse Temurin JDK 25.\n\nThe source is the GitHub releases of adoptium/temurin25-binaries. Pre-release\nbuilds, tagged \"-ea-beta\", are skipped.\n\nARCH defaults to aarch64, for Apple silicon. Set it to x64 for Intel.\n",
-          "display_name": "Eclipse Temurin JDK 25",
-          "first_commit": "2026-09-04T17:46:01+01:00",
-          "has_arch_var": true,
-          "has_codesig": true,
-          "has_endofcheck": true,
-          "has_release_var": false,
-          "identifier": "com.github.jrmfong.download.EclipseTemurinJDK25",
-          "input_vars": [
-            "ARCH",
-            "GITHUB_REPO",
-            "NAME"
-          ],
-          "name_key": "eclipsetemurinjdk25",
-          "parent_recipe": "",
-          "processors": [
-            "GitHubReleasesInfoProvider",
-            "URLDownloader",
-            "EndOfCheckPhase",
-            "CodeSignatureVerifier"
-          ],
-          "rel_path": "Eclipse Temurin/EclipseTemurinJDK25.download.recipe.yaml",
-          "repo": "jrmfong-recipes",
-          "skip_reason": null,
-          "source_domain": "github.com",
-          "source_key": "adoptium/temurin25-binaries",
-          "source_type": "github"
-        }
-      ],
-      "skip_reason": "low duplicate confidence; needs qualitative review",
-      "substitutability": {
-        "compatible_artifact": true,
-        "notes": [
-          "same artifact format: pkg"
-        ],
-        "same_product": true
-      },
-      "verdict": "review"
-    },
-    {
       "app_name": "EndNote",
       "duplicate_confidence": "LOW",
       "id": "736d8c457b45",
@@ -35081,7 +34980,7 @@
     {
       "app_name": "FabFilter Pro-C 2",
       "duplicate_confidence": "LOW",
-      "id": "505eeda0ff92",
+      "id": "be6f83ff219b",
       "keeper_confidence": "LOW",
       "match_reasons": [
         "same normalized name and code signing authority",
@@ -35090,7 +34989,7 @@
         "same url source",
         "similar name plus weak identity match"
       ],
-      "member_count": 4,
+      "member_count": 6,
       "members": [
         {
           "artifact_formats": [
@@ -35168,6 +35067,48 @@
             "CodeSignatureVerifier"
           ],
           "rel_path": "FabFilter/FabFilterProC2.download.recipe.yaml",
+          "repo": "davidbpirie-recipes",
+          "skip_reason": null,
+          "source_domain": "www.fabfilter.com",
+          "source_key": "www.fabfilter.com/support/downloads",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg",
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: FabFilter (43SG2JNHFW)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "davidbpirie-recipes"
+          ],
+          "description": "Downloads the latest version of FabFilter Pro-C 3 as a dmg,\nthen verifies the signature of the enclosed pkg.\n",
+          "display_name": "FabFilterProC3",
+          "first_commit": "2026-10-29T13:28:50+11:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.davidbpirie.download.FabFilterProC3",
+          "input_vars": [
+            "NAME",
+            "SEARCH_RE",
+            "SEARCH_URL"
+          ],
+          "name_key": "fabfilterproc3",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "FabFilter/FabFilterProC3.download.recipe.yaml",
           "repo": "davidbpirie-recipes",
           "skip_reason": null,
           "source_domain": "www.fabfilter.com",
@@ -35255,6 +35196,48 @@
           "source_domain": "www.fabfilter.com",
           "source_key": "www.fabfilter.com/download",
           "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg",
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: FabFilter (43SG2JNHFW)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "davidbpirie-recipes"
+          ],
+          "description": "Downloads the latest version of FabFilter Pro-R as a dmg,\nthen verifies the signature of the enclosed pkg.\n",
+          "display_name": "FabFilterProR2",
+          "first_commit": "2026-10-29T13:29:10+11:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.davidbpirie.download.FabFilterProR2",
+          "input_vars": [
+            "NAME",
+            "SEARCH_RE",
+            "SEARCH_URL"
+          ],
+          "name_key": "fabfilterpror2",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "FabFilter/FabFilterProR2.download.recipe.yaml",
+          "repo": "davidbpirie-recipes",
+          "skip_reason": null,
+          "source_domain": "www.fabfilter.com",
+          "source_key": "www.fabfilter.com/download",
+          "source_type": "url"
         }
       ],
       "skip_reason": "different artifact formats: dmg, pkg",
@@ -35270,12 +35253,16 @@
     {
       "app_name": "FabFilterPro-Q4",
       "duplicate_confidence": "LOW",
-      "id": "2914917f4ce3",
+      "id": "c9b61a85b395",
       "keeper_confidence": "LOW",
       "match_reasons": [
+        "same normalized name and code signing authority",
+        "same normalized name and source domain",
+        "same normalized recipe name",
+        "same url source",
         "similar name plus weak identity match"
       ],
-      "member_count": 2,
+      "member_count": 3,
       "members": [
         {
           "artifact_formats": [
@@ -35354,6 +35341,48 @@
           ],
           "rel_path": "FabFilter Pro-Q 4/FabFilter Pro-Q 4.download.recipe",
           "repo": "dataJAR-recipes",
+          "skip_reason": null,
+          "source_domain": "www.fabfilter.com",
+          "source_key": "www.fabfilter.com/download",
+          "source_type": "url"
+        },
+        {
+          "artifact_formats": [
+            "dmg",
+            "pkg"
+          ],
+          "codesig_authorities": [
+            "Apple Root CA",
+            "Developer ID Certification Authority",
+            "Developer ID Installer: FabFilter (43SG2JNHFW)"
+          ],
+          "dependent_count": 1,
+          "dependent_repos": [
+            "davidbpirie-recipes"
+          ],
+          "description": "Downloads the latest version of FabFilter Pro-Q 4 as a dmg,\nthen verifies the signature of the enclosed pkg.\n",
+          "display_name": "FabFilterProQ4",
+          "first_commit": "2026-10-29T13:29:00+11:00",
+          "has_arch_var": false,
+          "has_codesig": true,
+          "has_endofcheck": true,
+          "has_release_var": false,
+          "identifier": "com.github.davidbpirie.download.FabFilterProQ4",
+          "input_vars": [
+            "NAME",
+            "SEARCH_RE",
+            "SEARCH_URL"
+          ],
+          "name_key": "fabfilterproq4",
+          "parent_recipe": "",
+          "processors": [
+            "URLTextSearcher",
+            "URLDownloader",
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
+          ],
+          "rel_path": "FabFilter/FabFilterProQ4.download.recipe.yaml",
+          "repo": "davidbpirie-recipes",
           "skip_reason": null,
           "source_domain": "www.fabfilter.com",
           "source_key": "www.fabfilter.com/download",
@@ -49309,30 +49338,30 @@
   "summary": {
     "duplicate_confidence": {
       "HIGH": 98,
-      "LOW": 148,
+      "LOW": 147,
       "MEDIUM": 98
     },
-    "generated_at": "2026-10-26T08:10:07.419361+00:00",
+    "generated_at": "2026-11-02T10:00:13.904033+00:00",
     "keeper_confidence": {
       "HIGH": 10,
-      "LOW": 212,
-      "MEDIUM": 46,
+      "LOW": 210,
+      "MEDIUM": 47,
       "NONE": 76
     },
     "scan": {
-      "download_recipes": 4685,
+      "download_recipes": 4692,
       "skipped": {
-        "child_of_download": 98,
-        "deprecated": 635,
+        "child_of_download": 113,
+        "deprecated": 645,
         "package_required": 22,
         "windows": 274
       },
-      "total_recipe_files": 19248
+      "total_recipe_files": 19367
     },
-    "total_sets": 344,
+    "total_sets": 343,
     "verdicts": {
       "recommend": 147,
-      "review": 121,
+      "review": 120,
       "skip": 76
     }
   }

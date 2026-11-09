@@ -7136,11 +7136,11 @@
           "parent_recipe": "",
           "processors": [
             "URLDownloader",
+            "EndOfCheckPhase",
             "Unarchiver",
             "FileFinder",
             "CodeSignatureVerifier",
-            "PlistReader",
-            "EndOfCheckPhase"
+            "PlistReader"
           ],
           "rel_path": "LogiOptionsPlusOffline/LogiOptionsPlusOffline.download.recipe",
           "repo": "rtrouton-recipes",
@@ -13095,8 +13095,8 @@
           "processors": [
             "GitHubReleasesInfoProvider",
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "Aftermath/Aftermath.download.recipe",
           "repo": "rtrouton-recipes",
@@ -13137,8 +13137,8 @@
           "processors": [
             "GitHubReleasesInfoProvider",
             "URLDownloader",
-            "CodeSignatureVerifier",
-            "EndOfCheckPhase"
+            "EndOfCheckPhase",
+            "CodeSignatureVerifier"
           ],
           "rel_path": "Aftermath/AftermathUninstaller.download.recipe",
           "repo": "rtrouton-recipes",
@@ -49341,7 +49341,7 @@
       "LOW": 147,
       "MEDIUM": 98
     },
-    "generated_at": "2026-11-02T10:00:13.904033+00:00",
+    "generated_at": "2026-11-09T10:23:13.950085+00:00",
     "keeper_confidence": {
       "HIGH": 10,
       "LOW": 210,
@@ -49349,14 +49349,14 @@
       "NONE": 76
     },
     "scan": {
-      "download_recipes": 4692,
+      "download_recipes": 4708,
       "skipped": {
         "child_of_download": 113,
-        "deprecated": 645,
+        "deprecated": 646,
         "package_required": 22,
-        "windows": 274
+        "windows": 275
       },
-      "total_recipe_files": 19367
+      "total_recipe_files": 19437
     },
     "total_sets": 343,
     "verdicts": {
